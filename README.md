@@ -1,26 +1,24 @@
-# 👋 Hi, I'm Michael
+# Cool, you made it!
 
 > Gemini Pro, Claude Pro, Kimi in Workflows. GPT 5.6 for my chat. 
 ---
 
-## 🚀 About Me
+## Intro
 
-Brief introduction about yourself.
+Michael Louard. DragBallots. AgentChiefLou.
 
-- 💼 Current role: Business Analytics Consultant at PNC
-- 🎓 Education: BA in Economics, Secondary in Finance at CWRU
-- 🌱 Currently learning: Agentic Workflows, RAG concepts (within the scope of token cost optimization). 
-- 🔭 Working on: A football game that I'll eventually publish on STEAM, custom Audio VSTs and plugins, and a DAW. 
-- 🎯 Interests: All sports, small and upcoming artists, outdoors
-- 📍 Location: Raleigh, NC. 
+- Current role: Business Analytics Consultant at PNC
+- Currently learning: Agentic Workflows, RAG concepts (within the scope of token cost optimization). 
+- Working on: A football game that I'll eventually publish on STEAM, custom Audio VSTs and plugins, and a DAW. 
+- Current Place I'm Respirating At: Raleigh, NC. 
 
 ---
 
-## 🛠️ Tech Stack
+## Technical Capabilities
 I'm capable of coding myself in python, sql, and spark. I oftentimes, though, am reading code until it gets to a point where I am comfortable not reading it nowadays. This, of course, happens less at work, and more with my personal projects. I haven't prepped for a coding interview in awhile, don't scare me. 
 ---
 
-## 📂 Featured Projects
+## Working Projects
 
 ### Project One: Play Sports
 A game I want to eventually publish on Steam. That's all for now. 
@@ -38,45 +36,27 @@ DAW, like SUNO, but you still have to have some idea on how to make songs. So it
 
 ## 📈 GitHub Stats
 
-<!-- Replace "yourusername" -->
-
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=agentchieflou&show_icons=true)
 
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=agentchieflou&layout=compact)
 
 ---
 
-## 📝 Writing / Blog
-
-- [Article Title](https://example.com)
-- [Another Article](https://example.com)
-
----
-
-## 🏆 Achievements
-
-- 🥇 Achievement or certification
-- 🎤 Conference talk
-- 📜 Certification
-
----
-
-## 🤝 Connect With Me
+## Connect
 
 - Website: https://yourwebsite.com
-- LinkedIn: https://linkedin.com/in/yourname
-- GitHub: https://github.com/yourusername
-- Email: your.email@example.com
+- LinkedIn: [https://linkedin.com/in/yourname](https://www.linkedin.com/in/michael-louard)
+- GitHub: https://github.com/agentchieflou
+- Email: mbf.louard@gmail.com
 
 ---
 
-## 💡 Fun Facts
+## Fun Facts
 
-- ☕ Favorite drink:
-- 🎮 Hobbies:
-- 📚 Favorite book:
-- 🚴 Outside of coding:
-
+- Favorite drink: Coffee, black.
+- Hobbies: This?
+- Favorite book: 11/22/63
+- Outside of coding: Inside of coding.
 ---
 
-> *"Your favorite quote goes here."*
+> *"When in doubt, question the doubt, deny the doubt, then stop doubting."*
