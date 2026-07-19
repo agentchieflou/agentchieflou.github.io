@@ -3,12 +3,12 @@
 A scheduled pipeline (`.github/workflows/career-agent.yml`) that:
 
 1. Indexes `resume.html` + GitHub repos (READMEs, topics, commits) into a
-   structured skill profile — via one Claude call, **only when the source
+   structured skill profile — via one Gemini call, **only when the source
    material changes**.
 2. Fetches remote job postings from free APIs: Remotive, RemoteOK, Arbeitnow,
    HN "Who is hiring" (keyless) + Adzuna, USAJobs (free keys).
 3. Prefilters with local embeddings (fastembed ONNX — zero API cost), then
-   scores the top candidates with one Claude Haiku call (skipped when there is
+   scores the top candidates with one Gemini Flash call (skipped when there is
    nothing new).
 4. Emails a top-5 digest to the owner and publishes `skills_graph.json` to the
    `agent-data` branch, which powers `skills.html`.
@@ -18,14 +18,15 @@ fills forms, or contacts anyone. Its only outputs are the email digest (to the
 owner's own address) and commits to `agent-data`.
 
 **Cost:** GitHub Actions minutes are free (public repo); embeddings are local;
-Claude usage is one small Haiku call per run at most — typically a few cents
-per month, $0 on days with nothing new to score.
+Gemini usage is one small Flash call per run at most — within the API free
+tier for a daily run, so typically $0, and never more than a few cents per
+month.
 
 ## One-time setup (repo → Settings → Secrets and variables → Actions)
 
 | Secret | Where to get it | Required? |
 |---|---|---|
-| `ANTHROPIC_API_KEY` | console.anthropic.com → API keys | For real scoring/profiles (heuristic fallback without it) |
+| `GEMINI_API_KEY` | aistudio.google.com → Get API key (free tier) | For real scoring/profiles (heuristic fallback without it) |
 | `GMAIL_APP_PASSWORD` | Google Account → Security → 2-Step Verification → App passwords | For the email digest |
 | `ADZUNA_APP_ID` + `ADZUNA_APP_KEY` | developer.adzuna.com (free) | Optional — adds general US listings |
 | `USAJOBS_API_KEY` + `USAJOBS_USER_AGENT` | developer.usajobs.gov (free; user agent = your email) | Optional — adds federal remote roles |

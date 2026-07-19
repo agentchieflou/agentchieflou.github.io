@@ -3,9 +3,9 @@
 Cost controls:
 - GitHub API calls use ETag conditional requests (304s are free against the
   rate limit and skip re-downloading bodies).
-- The Claude extraction call runs ONLY when the hashed source material
+- The Gemini extraction call runs ONLY when the hashed source material
   (resume text + repo metadata/READMEs/commits) has changed since last run.
-- Without an ANTHROPIC_API_KEY (or on API failure) a heuristic profile is
+- Without a GEMINI_API_KEY (or on API failure) a heuristic profile is
   derived from repo languages/topics so the pipeline still completes.
 """
 import datetime as dt
@@ -14,7 +14,8 @@ import re
 
 import requests
 
-from config import (ANTHROPIC_API_KEY, CLAUDE_MODEL, GITHUB_TOKEN, GITHUB_USER,
+import llm
+from config import (GEMINI_API_KEY, GITHUB_TOKEN, GITHUB_USER,
                     REPO_ROOT, STATE_DIR, USER_AGENT)
 from util import html_to_text, load_json, log, save_json, sha256
 
@@ -106,9 +107,7 @@ def _extract_json(text):
     return json.loads(text[start:text.rfind("}") + 1])
 
 
-def _claude_profile(resume_text, repo_summaries):
-    import anthropic
-    client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
+def _gemini_profile(resume_text, repo_summaries):
     prompt = (
         "Analyze this person's resume and GitHub portfolio and produce a structured "
         "skill profile as JSON with exactly these keys:\n"
@@ -123,11 +122,7 @@ def _claude_profile(resume_text, repo_summaries):
         f"RESUME:\n{resume_text[:6000]}\n\nGITHUB PORTFOLIO:\n"
         f"{json.dumps(repo_summaries, ensure_ascii=False)[:8000]}"
     )
-    msg = client.messages.create(
-        model=CLAUDE_MODEL, max_tokens=2500,
-        messages=[{"role": "user", "content": prompt}],
-    )
-    return _extract_json(msg.content[0].text)
+    return _extract_json(llm.generate(prompt, max_tokens=2500))
 
 
 def _heuristic_profile(resume_text, repo_summaries):
@@ -161,11 +156,11 @@ def build_profile():
         return existing, False, ""
 
     profile = None
-    if ANTHROPIC_API_KEY:
+    if GEMINI_API_KEY:
         try:
-            profile = _claude_profile(resume_text, repo_summaries)
+            profile = _gemini_profile(resume_text, repo_summaries)
         except Exception as e:
-            log.warning("Claude profile extraction failed, using heuristic: %s", e)
+            log.warning("Gemini profile extraction failed, using heuristic: %s", e)
     if profile is None:
         profile = _heuristic_profile(resume_text, repo_summaries)
 

@@ -15,11 +15,12 @@ STATE_DIR = Path(os.environ.get("AGENT_STATE_DIR", str(REPO_ROOT / "agent-state"
 GITHUB_USER = "agentchieflou"
 EMAIL_TO = "mbf.louard@gmail.com"
 
-# Haiku: cheapest current-generation model; one small call per run.
-CLAUDE_MODEL = "claude-haiku-4-5"
+# Flash: fast, cheap, and free-tier eligible; one small call per run.
+GEMINI_MODEL = "gemini-2.5-flash"
 EMBED_MODEL = "BAAI/bge-small-en-v1.5"
 
-ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
+# GOOGLE_API_KEY accepted as an alias — both names are common for Gemini keys.
+GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY") or os.environ.get("GOOGLE_API_KEY", "")
 GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN", "")
 ADZUNA_APP_ID = os.environ.get("ADZUNA_APP_ID", "")
 ADZUNA_APP_KEY = os.environ.get("ADZUNA_APP_KEY", "")
@@ -28,7 +29,7 @@ USAJOBS_USER_AGENT = os.environ.get("USAJOBS_USER_AGENT", EMAIL_TO)
 GMAIL_ADDRESS = os.environ.get("GMAIL_ADDRESS", EMAIL_TO)
 GMAIL_APP_PASSWORD = os.environ.get("GMAIL_APP_PASSWORD", "")
 
-MAX_LLM_CANDIDATES = 15   # jobs sent to Claude per run, after embedding prefilter
+MAX_LLM_CANDIDATES = 15   # jobs sent to Gemini per run, after embedding prefilter
 DESC_TRUNCATE = 800       # chars of description per job in the LLM prompt
 TOP_N_DIGEST = 5
 TOP_N_GRAPH_JOBS = 8

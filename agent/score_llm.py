@@ -1,16 +1,17 @@
-"""Claude scoring of prefiltered candidates.
+"""Gemini scoring of prefiltered candidates.
 
-Exactly one Messages call per run, and only when there are new candidates:
-scores are cached by job id + profile version, so a job is scored once per
-profile revision. Descriptions are truncated before prompting. Without an
-API key a heuristic score derived from the embedding prefilter is stored so
-the digest still ships.
+Exactly one generateContent call per run, and only when there are new
+candidates: scores are cached by job id + profile version, so a job is
+scored once per profile revision. Descriptions are truncated before
+prompting. Without an API key a heuristic score derived from the embedding
+prefilter is stored so the digest still ships.
 """
 import datetime as dt
 import json
 import re
 
-from config import (ANTHROPIC_API_KEY, CLAUDE_MODEL, DESC_TRUNCATE,
+import llm
+from config import (DESC_TRUNCATE, GEMINI_API_KEY,
                     MAX_LLM_CANDIDATES, STATE_DIR)
 from util import load_json, log, save_json
 
@@ -25,9 +26,7 @@ def _extract_json_array(text):
     return json.loads(text[start:text.rfind("]") + 1])
 
 
-def _claude_score(profile, candidates):
-    import anthropic
-    client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
+def _gemini_score(profile, candidates):
     skill_names = [s["name"] for s in profile.get("skills", [])]
     jobs_payload = [{
         "id": j["id"],
@@ -52,11 +51,7 @@ def _claude_score(profile, candidates):
         "from CANDIDATE SKILLS], \"missing_skills\": [skills the posting wants that the "
         'candidate lacks], "resume_suggestions": [0-2 short concrete resume tweaks]}'
     )
-    msg = client.messages.create(
-        model=CLAUDE_MODEL, max_tokens=3000,
-        messages=[{"role": "user", "content": prompt}],
-    )
-    return _extract_json_array(msg.content[0].text)
+    return _extract_json_array(llm.generate(prompt, max_tokens=3000))
 
 
 def _heuristic_score(candidates):
@@ -64,7 +59,7 @@ def _heuristic_score(candidates):
         "id": j["id"],
         "match_score": int(min(1.0, j.get("prefilter", 0) * 1.4) * 100),
         "confidence": 0.3,
-        "why": "Heuristic score (no ANTHROPIC_API_KEY set): ranked by embedding "
+        "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding "
                "similarity to your profile.",
         "matched_skills": [], "missing_skills": [], "resume_suggestions": [],
         "heuristic": True,
@@ -81,20 +76,20 @@ def score_candidates(profile, ranked_jobs):
         if not s or s.get("profile_version") != version:
             return True
         # Upgrade heuristic scores to real ones once an API key is available
-        return bool(s.get("heuristic")) and bool(ANTHROPIC_API_KEY)
+        return bool(s.get("heuristic")) and bool(GEMINI_API_KEY)
 
     # Only the prefiltered top is ever sent to the LLM — on a typical day with
     # no new strong candidates this list is empty and no API call is made.
     candidates = [j for j in ranked_jobs[:MAX_LLM_CANDIDATES] if needs_scoring(j)]
     if not candidates:
-        log.info("no new candidates to score - skipping Claude call")
+        log.info("no new candidates to score - skipping Gemini call")
         return scores, 0
 
-    if ANTHROPIC_API_KEY:
+    if GEMINI_API_KEY:
         try:
-            results = _claude_score(profile, candidates)
+            results = _gemini_score(profile, candidates)
         except Exception as e:
-            log.warning("Claude scoring failed, storing heuristic scores: %s", e)
+            log.warning("Gemini scoring failed, storing heuristic scores: %s", e)
             results = _heuristic_score(candidates)
     else:
         results = _heuristic_score(candidates)
