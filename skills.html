@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Michael Louard — Skills Graph</title>
+<meta name="description" content="Live skill-to-market alignment graph: my skills, current top job matches, and the gaps between them." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --bg: #05060a;
+    --ink: #eef1f6;
+    --dim: #9aa3b2;
+    --line: rgba(255, 255, 255, 0.12);
+    --accent: #7dd3fc;
+    --accent-2: #c4b5fd;
+    --nebula-1: #2563eb;
+    --nebula-2: #7c3aed;
+    --card-bg: linear-gradient(160deg, rgba(255, 255, 255, 0.075), rgba(255, 255, 255, 0.02) 45%, rgba(125, 211, 252, 0.05));
+    --hover-bg: rgba(125, 211, 252, 0.07);
+    /* Validated categorical palette (passes CVD/contrast checks on both surfaces).
+       Same hues in both themes — identity colors follow the entity, not the theme. */
+    --cat-analytics: #3987e5;
+    --cat-engineering: #d55181;
+    --cat-tools: #c98500;
+    --cat-domain: #008300;
+  }
+
+  body.kate-mode {
+    --bg: #1a0f15;
+    --ink: #fff5f7;
+    --dim: #d9c2c7;
+    --line: rgba(255, 182, 197, 0.18);
+    --accent: #ffb7c5;
+    --accent-2: #ffd15c;
+    --nebula-1: #ffb7c5;
+    --nebula-2: #ffd15c;
+    --card-bg: linear-gradient(160deg, rgba(255, 182, 197, 0.1), rgba(255, 182, 197, 0.03) 70%, rgba(253, 216, 93, 0.04));
+    --hover-bg: rgba(255, 182, 197, 0.1);
+  }
+
+  body.kate-mode .normal-only { display: none !important; }
+  body:not(.kate-mode) .kate-only { display: none !important; }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { height: 100%; }
+
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Inter", system-ui, -apple-system, sans-serif;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100dvh;
+    transition: background 0.4s ease, color 0.4s ease;
+  }
+
+  #stars { position: fixed; inset: 0; z-index: 0; }
+
+  .nebula {
+    position: fixed;
+    width: 60vmax;
+    height: 60vmax;
+    border-radius: 50%;
+    opacity: 0.16;
+    z-index: 0;
+    pointer-events: none;
+  }
+  .n1 { background: radial-gradient(circle closest-side, var(--nebula-1) 0%, var(--nebula-1) 22%, transparent 72%); top: -20vmax; left: -15vmax; }
+  .n2 { background: radial-gradient(circle closest-side, var(--nebula-2) 0%, var(--nebula-2) 22%, transparent 72%); bottom: -25vmax; right: -15vmax; }
+
+  .hud {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding: 22px clamp(20px, 4vw, 48px);
+    font-family: "Space Grotesk", sans-serif;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: var(--dim);
+  }
+  .brand { color: var(--ink); font-weight: 700; letter-spacing: 0.3em; text-decoration: none; }
+  .hud-title { flex: 1; text-align: center; }
+
+  .kate-toggle-btn {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--line);
+    color: var(--ink);
+    padding: 8px 16px;
+    border-radius: 999px;
+    cursor: pointer;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transition: border-color 0.2s ease, background 0.2s ease;
+    outline: none;
+  }
+  .kate-toggle-btn:hover { border-color: var(--accent); background: var(--hover-bg); }
+
+  .stage { position: relative; z-index: 4; min-height: 0; }
+  #graph { position: absolute; inset: 0; width: 100%; height: 100%; touch-action: manipulation; }
+
+  /* Detail panel */
+  .panel {
+    position: absolute;
+    z-index: 6;
+    right: clamp(12px, 3vw, 40px);
+    top: 12px;
+    width: min(340px, calc(100vw - 24px));
+    max-height: calc(100% - 24px);
+    overflow-y: auto;
+    padding: 20px;
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    background: var(--card-bg);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    display: none;
+  }
+  .panel.open { display: block; }
+  .panel h2 { font-family: "Space Grotesk", sans-serif; font-size: 19px; line-height: 1.25; margin-bottom: 4px; }
+  .panel .sub { font-size: 13px; color: var(--dim); margin-bottom: 12px; }
+  .panel .why { font-size: 13.5px; line-height: 1.55; margin: 10px 0; }
+  .panel .score-row { display: flex; gap: 14px; font-size: 12px; color: var(--dim); margin-bottom: 6px; }
+  .panel .score-row b { color: var(--ink); font-size: 15px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; }
+  .chip {
+    font-size: 11px;
+    padding: 4px 10px;
+    border-radius: 999px;
+    border: 1px solid var(--line);
+    color: var(--ink);
+  }
+  .chip.missing { border-style: dashed; color: var(--dim); }
+  .chip .dot { display: inline-block; width: 7px; height: 7px; border-radius: 50%; margin-right: 5px; }
+  .panel .apply {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 18px;
+    border-radius: 999px;
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    text-decoration: none;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .panel .apply:hover { background: var(--hover-bg); }
+  .panel .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    background: none;
+    border: none;
+    color: var(--dim);
+    font-size: 18px;
+    cursor: pointer;
+  }
+  .strength-bar { height: 6px; border-radius: 3px; background: rgba(255,255,255,0.08); margin: 8px 0 4px; overflow: hidden; }
+  .strength-bar span { display: block; height: 100%; border-radius: 3px; }
+  .panel h3 { font-size: 12px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--dim); margin-top: 14px; }
+  .panel ul.job-list { list-style: none; margin-top: 6px; }
+  .panel ul.job-list li { font-size: 13px; padding: 4px 0; }
+
+  /* Legend + footer */
+  .legend {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 14px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px clamp(12px, 3vw, 40px) 16px;
+    font-size: 11px;
+    color: var(--dim);
+    letter-spacing: 0.06em;
+  }
+  .legend .key { display: inline-flex; align-items: center; gap: 6px; }
+  .legend .swatch { width: 10px; height: 10px; border-radius: 50%; }
+  .legend .swatch.ghost { background: none; border: 1.5px dashed var(--dim); }
+  .legend .swatch.job { background: none; border: 2px solid var(--accent); }
+  .legend .meta-note { flex-basis: 100%; text-align: center; opacity: 0.75; }
+  .legend a { color: var(--dim); }
+
+  details.data-table {
+    position: absolute;
+    left: clamp(12px, 3vw, 40px);
+    bottom: 12px;
+    z-index: 6;
+    font-size: 12px;
+    color: var(--dim);
+    max-width: min(360px, calc(100vw - 24px));
+  }
+  details.data-table summary { cursor: pointer; letter-spacing: 0.08em; text-transform: uppercase; font-size: 11px; }
+  details.data-table[open] {
+    background: var(--card-bg);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 12px;
+    max-height: 40vh;
+    overflow-y: auto;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+  details.data-table table { border-collapse: collapse; margin-top: 8px; width: 100%; }
+  details.data-table th, details.data-table td { text-align: left; padding: 3px 8px 3px 0; font-weight: 400; vertical-align: top; }
+  details.data-table th { color: var(--ink); font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; }
+  details.data-table a { color: var(--accent); }
+
+  @media (max-width: 700px) {
+    .panel { left: 12px; right: 12px; top: auto; bottom: 12px; width: auto; max-height: 55%; }
+    details.data-table { display: none; }
+    .hud-title { display: none; }
+  }
+
+  @media (pointer: coarse) {
+    .panel { backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { transition-duration: 0.01s !important; }
+  }
+</style>
+</head>
+<body>
+  <canvas id="stars"></canvas>
+  <div class="nebula n1"></div>
+  <div class="nebula n2"></div>
+
+  <header class="hud">
+    <a class="brand" href="index.html" aria-label="Back to home">ML</a>
+    <span class="hud-title normal-only">Skills · Market Alignment</span>
+    <span class="hud-title kate-only">Things Michael Pretends To Know 🎀</span>
+    <button id="kateToggle" class="kate-toggle-btn">
+      <span class="normal-only">Kate Mode 🎀</span>
+      <span class="kate-only">Standard Mode 💻</span>
+    </button>
+  </header>
+
+  <main class="stage">
+    <canvas id="graph" aria-label="Interactive graph of skills and matching job postings"></canvas>
+
+    <aside class="panel" id="panel" aria-live="polite">
+      <button class="close-btn" id="panelClose" aria-label="Close details">✕</button>
+      <div id="panelBody"></div>
+    </aside>
+
+    <details class="data-table" id="dataTable">
+      <summary>View as list</summary>
+      <div id="tableBody"></div>
+    </details>
+  </main>
+
+  <footer class="legend" id="legend">
+    <span class="key"><span class="swatch" style="background:var(--cat-analytics)"></span>Analytics</span>
+    <span class="key"><span class="swatch" style="background:var(--cat-engineering)"></span>Engineering</span>
+    <span class="key"><span class="swatch" style="background:var(--cat-tools)"></span>Tools</span>
+    <span class="key"><span class="swatch" style="background:var(--cat-domain)"></span>Domain</span>
+    <span class="key"><span class="swatch job"></span>Job match</span>
+    <span class="key"><span class="swatch ghost"></span>Skill gap</span>
+    <span class="meta-note" id="metaNote">Node size = skill strength / match score · tap anything for details</span>
+  </footer>
+
+<script>
+  /* ---------- Kate mode (shared localStorage key with the other pages) ---------- */
+  const isKateMode = localStorage.getItem('kateMode') === 'true';
+  let kateStars = isKateMode;
+  if (isKateMode) document.body.classList.add('kate-mode');
+  document.getElementById('kateToggle').addEventListener('click', () => {
+    const active = document.body.classList.toggle('kate-mode');
+    kateStars = active;
+    localStorage.setItem('kateMode', active ? 'true' : 'false');
+    redrawStarsIfStatic();
+    drawGraph();
+  });
+
+  /* ---------- starfield (same optimized pattern as index.html) ---------- */
+  const sCanvas = document.getElementById('stars');
+  const sCtx = sCanvas.getContext('2d');
+  const DPR = Math.min(window.devicePixelRatio || 1, 2);
+  const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)');
+  const STAR_COLORS = ['220, 230, 255', '254, 216, 93', '255, 182, 197'];
+  let stars = [], sRaf = null, sLast = 0;
+
+  function seedStars() {
+    sCanvas.width = innerWidth * DPR;
+    sCanvas.height = innerHeight * DPR;
+    sCanvas.style.width = innerWidth + 'px';
+    sCanvas.style.height = innerHeight + 'px';
+    stars = Array.from({ length: Math.min(180, innerWidth / 7) }, () => ({
+      x: Math.random() * sCanvas.width,
+      y: Math.random() * sCanvas.height,
+      r: Math.random() * 1.3 + 0.2,
+      p: Math.random() * Math.PI * 2,
+      s: Math.random() * 0.015 + 0.004
+    }));
+  }
+  function starGroup(st) { return kateStars ? (st.r > 1.0 ? 1 : 2) : 0; }
+  function drawStars(t, staticAlpha) {
+    sCtx.clearRect(0, 0, sCanvas.width, sCanvas.height);
+    const BUCKETS = 8, groups = new Map();
+    for (const st of stars) {
+      const a = staticAlpha != null ? staticAlpha
+        : 0.25 + 0.55 * (0.5 + 0.5 * Math.sin(st.p + t * 0.0004));
+      const b = staticAlpha != null ? 0
+        : Math.min(BUCKETS - 1, Math.max(0, ((a - 0.25) / 0.55 * BUCKETS) | 0));
+      const key = starGroup(st) * BUCKETS + b;
+      let g = groups.get(key);
+      if (!g) groups.set(key, g = []);
+      g.push(st);
+    }
+    for (const [key, g] of groups) {
+      const a = staticAlpha != null ? staticAlpha : 0.25 + 0.55 * ((key % BUCKETS + 0.5) / BUCKETS);
+      sCtx.fillStyle = `rgba(${STAR_COLORS[(key / BUCKETS) | 0]}, ${a.toFixed(3)})`;
+      sCtx.beginPath();
+      for (const st of g) {
+        sCtx.moveTo(st.x + st.r * DPR, st.y);
+        sCtx.arc(st.x, st.y, st.r * DPR, 0, Math.PI * 2);
+      }
+      sCtx.fill();
+    }
+  }
+  function starTick(t) {
+    sRaf = requestAnimationFrame(starTick);
+    const dt = t - sLast;
+    if (dt < 33) return;
+    sLast = t;
+    const step = Math.min(dt, 100) / 16.67;
+    for (const st of stars) st.p += st.s * step;
+    drawStars(t, null);
+  }
+  function startStarLoop() { if (sRaf === null) { sLast = performance.now(); sRaf = requestAnimationFrame(starTick); } }
+  function stopStarLoop() { if (sRaf !== null) { cancelAnimationFrame(sRaf); sRaf = null; } }
+  function applyStarMotionPref() {
+    if (reduceMotion.matches) { stopStarLoop(); drawStars(0, 0.55); } else startStarLoop();
+  }
+  function redrawStarsIfStatic() { if (reduceMotion.matches) drawStars(0, 0.55); }
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) stopStarLoop(); else applyStarMotionPref();
+  });
+  if (reduceMotion.addEventListener) reduceMotion.addEventListener('change', applyStarMotionPref);
+  seedStars();
+  applyStarMotionPref();
+
+  /* ---------- data: live from the agent-data branch, sample fallback ---------- */
+  const DATA_URL = 'https://raw.githubusercontent.com/agentchieflou/agentchieflou.github.io/agent-data/skills_graph.json';
+  const SAMPLE = {
+    sample: true,
+    skills: [
+      { id: 'data analysis', name: 'Data Analysis', category: 'analytics', strength: 0.9 },
+      { id: 'business intelligence', name: 'Business Intelligence', category: 'analytics', strength: 0.85 },
+      { id: 'forecasting', name: 'Forecasting', category: 'analytics', strength: 0.7 },
+      { id: 'sql', name: 'SQL', category: 'engineering', strength: 0.9 },
+      { id: 'python', name: 'Python', category: 'engineering', strength: 0.8 },
+      { id: 'rag', name: 'RAG', category: 'engineering', strength: 0.65 },
+      { id: 'agentic workflows', name: 'Agentic Workflows', category: 'engineering', strength: 0.7 },
+      { id: 'tableau', name: 'Tableau', category: 'tools', strength: 0.8 },
+      { id: 'power bi', name: 'Power BI', category: 'tools', strength: 0.75 },
+      { id: 'excel', name: 'Excel', category: 'tools', strength: 0.85 },
+      { id: 'banking', name: 'Banking', category: 'domain', strength: 0.8 },
+      { id: 'risk analytics', name: 'Risk Analytics', category: 'domain', strength: 0.7 }
+    ],
+    ghost_skills: [
+      { id: 'ghost-dbt', name: 'dbt', ghost: true },
+      { id: 'ghost-snowflake', name: 'Snowflake', ghost: true }
+    ],
+    jobs: [
+      { id: 'j1', title: 'Senior Business Analyst', company: 'Sample Co', location: 'Remote (US)',
+        url: '#', source: 'sample', score: 84, confidence: 0.8,
+        why: 'Sample match — strong overlap with BI tooling and banking analytics experience.' },
+      { id: 'j2', title: 'Analytics Consultant', company: 'Example Corp', location: 'Remote',
+        url: '#', source: 'sample', score: 78, confidence: 0.7,
+        why: 'Sample match — consulting background plus dashboarding skills fit the role.' },
+      { id: 'j3', title: 'Data Analyst, AI Products', company: 'Demo Labs', location: 'Remote (US)',
+        url: '#', source: 'sample', score: 72, confidence: 0.6,
+        why: 'Sample match — Python and RAG experience align with the AI product focus.' }
+    ],
+    edges: [
+      { skill: 'business intelligence', job: 'j1', weight: 1, missing: false },
+      { skill: 'sql', job: 'j1', weight: 0.9, missing: false },
+      { skill: 'tableau', job: 'j1', weight: 0.8, missing: false },
+      { skill: 'banking', job: 'j1', weight: 0.7, missing: false },
+      { skill: 'ghost-snowflake', job: 'j1', weight: 0.5, missing: true },
+      { skill: 'data analysis', job: 'j2', weight: 1, missing: false },
+      { skill: 'power bi', job: 'j2', weight: 0.85, missing: false },
+      { skill: 'excel', job: 'j2', weight: 0.7, missing: false },
+      { skill: 'forecasting', job: 'j2', weight: 0.6, missing: false },
+      { skill: 'ghost-dbt', job: 'j2', weight: 0.5, missing: true },
+      { skill: 'python', job: 'j3', weight: 1, missing: false },
+      { skill: 'rag', job: 'j3', weight: 0.9, missing: false },
+      { skill: 'agentic workflows', job: 'j3', weight: 0.85, missing: false },
+      { skill: 'sql', job: 'j3', weight: 0.6, missing: false }
+    ]
+  };
+
+  /* ---------- graph ---------- */
+  const canvas = document.getElementById('graph');
+  const ctx = canvas.getContext('2d');
+  const CAT_COLORS = {
+    analytics: '#3987e5',
+    engineering: '#d55181',
+    tools: '#c98500',
+    domain: '#008300'
+  };
+  let DATA = null;
+  let nodes = [], edges = [];
+  let hoverNode = null, selectedNode = null;
+  let simRaf = null;
+
+  function chrome() {
+    const kate = document.body.classList.contains('kate-mode');
+    return kate
+      ? { ink: '#fff5f7', dim: '#d9c2c7', line: 'rgba(255,182,197,0.25)', accent: '#ffb7c5', ghost: '#d9c2c7' }
+      : { ink: '#eef1f6', dim: '#9aa3b2', line: 'rgba(255,255,255,0.22)', accent: '#7dd3fc', ghost: '#9aa3b2' };
+  }
+
+  function sizeGraphCanvas() {
+    const rect = canvas.parentElement.getBoundingClientRect();
+    canvas.width = rect.width * DPR;
+    canvas.height = rect.height * DPR;
+  }
+
+  function buildGraph(data) {
+    DATA = data;
+    const W = canvas.width, H = canvas.height;
+    const cx = W / 2, cy = H / 2;
+    // Keep the ring inside the viewport with room for job labels at the edge
+    const ringR = Math.min(Math.min(W, H) * 0.38, Math.min(W, H) / 2 - 62 * DPR);
+    // Shrink nodes on small viewports so the cluster fits inside the ring
+    const nodeScale = Math.max(0.65, Math.min(1, Math.min(W, H) / (900 * DPR)));
+    nodes = [];
+    const byId = {};
+
+    data.skills.forEach((s, i) => {
+      const a = (i / data.skills.length) * Math.PI * 2;
+      const r0 = ringR * 0.35 * Math.sqrt(Math.random());
+      const n = {
+        kind: 'skill', id: s.id, name: s.name, category: s.category,
+        strength: s.strength,
+        x: cx + Math.cos(a) * r0, y: cy + Math.sin(a) * r0, vx: 0, vy: 0,
+        r: (5 + 16 * s.strength) * DPR * nodeScale
+      };
+      nodes.push(n); byId[s.id] = n;
+    });
+    (data.ghost_skills || []).forEach(g => {
+      const a = Math.random() * Math.PI * 2;
+      const n = {
+        kind: 'ghost', id: g.id, name: g.name,
+        x: cx + Math.cos(a) * ringR * 1.15, y: cy + Math.sin(a) * ringR * 1.15, vx: 0, vy: 0,
+        r: 7 * DPR * nodeScale
+      };
+      nodes.push(n); byId[g.id] = n;
+    });
+    // Start each ghost near the first job that wants it so its tether reads clearly
+    (data.edges || []).forEach(e => {
+      const g = byId[e.skill], j = byId[e.job];
+      if (g && j && g.kind === 'ghost' && j.kind === 'job' && !g.placed) {
+        g.placed = true;
+        const jx = j.x - cx, jy = j.y - cy;
+        const d = Math.max(1, Math.sqrt(jx * jx + jy * jy));
+        g.x = cx + jx / d * ringR * 1.15;
+        g.y = cy + jy / d * ringR * 1.15;
+      }
+    });
+    data.jobs.forEach((j, i) => {
+      const a = (i / data.jobs.length) * Math.PI * 2 - Math.PI / 2;
+      const n = {
+        kind: 'job', id: j.id, job: j, angle: a,
+        x: cx + Math.cos(a) * ringR, y: cy + Math.sin(a) * ringR, vx: 0, vy: 0,
+        r: (10 + 10 * (j.score / 100)) * DPR * nodeScale
+      };
+      nodes.push(n); byId[j.id] = n;
+    });
+    edges = (data.edges || [])
+      .filter(e => byId[e.skill] && byId[e.job])
+      .map(e => ({ a: byId[e.skill], b: byId[e.job], weight: e.weight, missing: e.missing }));
+
+    runSim(cx, cy, ringR);
+    buildTable(data);
+    const note = document.getElementById('metaNote');
+    if (data.sample) {
+      note.textContent = 'Sample data — live matches appear after the career agent’s first run.';
+    } else if (data.generated_at) {
+      note.textContent = 'Node size = skill strength / match score · updated ' +
+        new Date(data.generated_at).toLocaleDateString();
+    }
+  }
+
+  function simStep(cx, cy, ringR) {
+    // Pairwise repulsion (n is small — at most a few dozen nodes)
+    for (let i = 0; i < nodes.length; i++) {
+      for (let j = i + 1; j < nodes.length; j++) {
+        const a = nodes[i], b = nodes[j];
+        let dx = b.x - a.x, dy = b.y - a.y;
+        let d2 = dx * dx + dy * dy;
+        if (d2 < 1) { dx = Math.random() - 0.5; dy = Math.random() - 0.5; d2 = 1; }
+        const d = Math.sqrt(d2);
+        const minD = (a.r + b.r) * 1.9 + 18 * DPR;
+        const f = d < minD ? (minD - d) * 0.06 : Math.min(900 * DPR * DPR / d2, 2);
+        const fx = dx / d * f, fy = dy / d * f;
+        a.vx -= fx; a.vy -= fy;
+        b.vx += fx; b.vy += fy;
+      }
+    }
+    // Edge springs
+    for (const e of edges) {
+      const rest = e.missing ? ringR * 0.22 : ringR * 0.62 / Math.max(0.4, e.weight);
+      const dx = e.b.x - e.a.x, dy = e.b.y - e.a.y;
+      const d = Math.max(1, Math.sqrt(dx * dx + dy * dy));
+      const f = (d - rest) * 0.004 * e.weight;
+      e.a.vx += dx / d * f; e.a.vy += dy / d * f;
+      e.b.vx -= dx / d * f; e.b.vy -= dy / d * f;
+    }
+    // Role constraints
+    for (const n of nodes) {
+      if (n.kind === 'skill') {
+        // weak pull toward the center cluster
+        n.vx += (cx - n.x) * 0.0028;
+        n.vy += (cy - n.y) * 0.0028;
+      } else if (n.kind === 'ghost') {
+        // ghosts live just outside the ring
+        const dx = n.x - cx, dy = n.y - cy;
+        const d = Math.max(1, Math.sqrt(dx * dx + dy * dy));
+        const target = ringR * 1.18;
+        n.vx += dx / d * (target - d) * 0.01;
+        n.vy += dy / d * (target - d) * 0.01;
+      }
+      n.vx *= 0.86; n.vy *= 0.86;
+      n.x += n.vx; n.y += n.vy;
+    }
+    // Jobs are pinned to the ring; skills are clamped inside it
+    let energy = 0;
+    for (const n of nodes) {
+      const dx = n.x - cx, dy = n.y - cy;
+      const d = Math.max(1, Math.sqrt(dx * dx + dy * dy));
+      if (n.kind === 'job') {
+        n.x = cx + dx / d * ringR;
+        n.y = cy + dy / d * ringR;
+      } else if (n.kind === 'skill') {
+        const maxR = ringR * 0.72;
+        if (d > maxR) {
+          n.x = cx + dx / d * maxR;
+          n.y = cy + dy / d * maxR;
+        }
+      }
+      energy += n.vx * n.vx + n.vy * n.vy;
+    }
+    return energy;
+  }
+
+  function runSim(cx, cy, ringR) {
+    if (simRaf !== null) { cancelAnimationFrame(simRaf); simRaf = null; }
+    let ticks = 0;
+    if (reduceMotion.matches) {
+      // settle instantly, draw once — no animation
+      while (ticks++ < 300 && simStep(cx, cy, ringR) > 0.5 * DPR) {}
+      drawGraph();
+      return;
+    }
+    const animate = () => {
+      const energy = simStep(cx, cy, ringR);
+      drawGraph();
+      // The simulation STOPS once settled — no perpetual rAF loop
+      if (++ticks < 400 && energy > 0.5 * DPR) simRaf = requestAnimationFrame(animate);
+      else simRaf = null;
+    };
+    simRaf = requestAnimationFrame(animate);
+  }
+
+  function neighborSet(node) {
+    const set = new Set([node]);
+    for (const e of edges) {
+      if (e.a === node) set.add(e.b);
+      if (e.b === node) set.add(e.a);
+    }
+    return set;
+  }
+
+  function drawGraph() {
+    if (!DATA) return;
+    const c = chrome();
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    const focus = hoverNode || selectedNode;
+    const lit = focus ? neighborSet(focus) : null;
+
+    // edges
+    for (const e of edges) {
+      const active = !lit || (lit.has(e.a) && lit.has(e.b) && (e.a === focus || e.b === focus));
+      ctx.globalAlpha = active ? (0.25 + 0.55 * e.weight) : 0.05;
+      ctx.strokeStyle = e.missing ? c.ghost : (CAT_COLORS[e.a.category] || c.accent);
+      ctx.lineWidth = (0.8 + 2.2 * e.weight) * DPR;
+      ctx.setLineDash(e.missing ? [4 * DPR, 4 * DPR] : []);
+      ctx.beginPath();
+      ctx.moveTo(e.a.x, e.a.y);
+      ctx.lineTo(e.b.x, e.b.y);
+      ctx.stroke();
+    }
+    ctx.setLineDash([]);
+    ctx.globalAlpha = 1;
+
+    // nodes
+    for (const n of nodes) {
+      const dimmed = lit && !lit.has(n);
+      ctx.globalAlpha = dimmed ? 0.16 : 1;
+      ctx.beginPath();
+      ctx.arc(n.x, n.y, n.r, 0, Math.PI * 2);
+      if (n.kind === 'skill') {
+        ctx.fillStyle = CAT_COLORS[n.category] || c.accent;
+        ctx.fill();
+      } else if (n.kind === 'ghost') {
+        ctx.strokeStyle = c.ghost;
+        ctx.lineWidth = 1.5 * DPR;
+        ctx.setLineDash([3 * DPR, 3 * DPR]);
+        ctx.stroke();
+        ctx.setLineDash([]);
+      } else {
+        ctx.fillStyle = kateStars ? 'rgba(26,15,21,0.9)' : 'rgba(5,6,10,0.9)';
+        ctx.fill();
+        ctx.strokeStyle = c.accent;
+        ctx.lineWidth = 2 * DPR;
+        ctx.stroke();
+        // score inside the job node
+        ctx.fillStyle = c.ink;
+        ctx.font = `600 ${9 * DPR}px Inter, sans-serif`;
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        ctx.fillText(String(n.job.score), n.x, n.y);
+      }
+      if (n === focus) {
+        ctx.beginPath();
+        ctx.arc(n.x, n.y, n.r + 4 * DPR, 0, Math.PI * 2);
+        ctx.strokeStyle = c.ink;
+        ctx.lineWidth = 1 * DPR;
+        ctx.stroke();
+      }
+    }
+
+    // labels — skills always (they carry the identity), jobs by company
+    ctx.textAlign = 'center';
+    for (const n of nodes) {
+      const dimmed = lit && !lit.has(n);
+      ctx.globalAlpha = dimmed ? 0.14 : 1;
+      if (n.kind === 'skill') {
+        ctx.font = `500 ${10 * DPR}px Inter, sans-serif`;
+        ctx.fillStyle = c.ink;
+        ctx.textBaseline = 'top';
+        ctx.fillText(n.name, n.x, n.y + n.r + 3 * DPR);
+      } else if (n.kind === 'ghost') {
+        ctx.font = `400 ${9 * DPR}px Inter, sans-serif`;
+        ctx.fillStyle = c.dim;
+        ctx.textBaseline = 'top';
+        ctx.fillText(n.name, n.x, n.y + n.r + 3 * DPR);
+      } else {
+        ctx.font = `500 ${10 * DPR}px "Space Grotesk", sans-serif`;
+        ctx.fillStyle = c.dim;
+        ctx.textBaseline = 'bottom';
+        ctx.fillText(n.job.company || n.job.title, n.x, n.y - n.r - 4 * DPR);
+      }
+    }
+    ctx.globalAlpha = 1;
+  }
+
+  /* ---------- interaction ---------- */
+  function hitTest(px, py) {
+    const x = px * DPR, y = py * DPR;
+    let best = null, bestD = Infinity;
+    for (const n of nodes) {
+      const dx = n.x - x, dy = n.y - y;
+      const d = Math.sqrt(dx * dx + dy * dy);
+      const hitR = Math.max(n.r, 14 * DPR) + 6 * DPR; // touch-friendly target
+      if (d < hitR && d < bestD) { best = n; bestD = d; }
+    }
+    return best;
+  }
+
+  const panel = document.getElementById('panel');
+  const panelBody = document.getElementById('panelBody');
+  document.getElementById('panelClose').addEventListener('click', () => {
+    selectedNode = null;
+    panel.classList.remove('open');
+    drawGraph();
+  });
+
+  function esc(s) {
+    return String(s ?? '').replace(/[&<>"']/g, m =>
+      ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[m]));
+  }
+
+  function openPanel(node) {
+    if (node.kind === 'job') {
+      const j = node.job;
+      const matched = edges.filter(e => e.b === node && !e.missing).map(e => e.a);
+      const missing = edges.filter(e => e.b === node && e.missing).map(e => e.a);
+      panelBody.innerHTML = `
+        <h2>${esc(j.title)}</h2>
+        <div class="sub">${esc(j.company)} · ${esc(j.location)}${j.salary ? ' · ' + esc(j.salary) : ''}</div>
+        <div class="score-row"><span>Match <b>${esc(j.score)}</b>/100</span>
+          <span>Confidence <b>${Math.round((j.confidence || 0) * 100)}%</b></span></div>
+        <div class="why">${esc(j.why)}</div>
+        ${matched.length ? `<h3>Matching skills</h3><div class="chips">${matched.map(s =>
+          `<span class="chip"><span class="dot" style="background:${CAT_COLORS[s.category] || '#888'}"></span>${esc(s.name)}</span>`).join('')}</div>` : ''}
+        ${missing.length ? `<h3>Skill gaps</h3><div class="chips">${missing.map(s =>
+          `<span class="chip missing">${esc(s.name)}</span>`).join('')}</div>` : ''}
+        ${j.url && j.url !== '#' ? `<a class="apply" href="${esc(j.url)}" target="_blank" rel="noopener">View &amp; apply ↗</a>` : ''}
+        <p style="font-size:11px;color:var(--dim);margin-top:12px;">Found via ${esc(j.source)} — applying is always your call; nothing is submitted automatically.</p>`;
+    } else {
+      const jobs = edges.filter(e => e.a === node).map(e => ({ j: e.b.job, missing: e.missing }));
+      const color = node.kind === 'ghost' ? 'var(--dim)' : (CAT_COLORS[node.category] || 'var(--accent)');
+      panelBody.innerHTML = `
+        <h2>${esc(node.name)}</h2>
+        <div class="sub">${node.kind === 'ghost'
+          ? 'Skill gap — the market wants this, your profile doesn’t show it yet'
+          : esc(node.category) + ' · strength ' + Math.round(node.strength * 100) + '%'}</div>
+        ${node.kind === 'skill' ? `<div class="strength-bar"><span style="width:${node.strength * 100}%;background:${color}"></span></div>` : ''}
+        ${jobs.length
+          ? `<h3>${node.kind === 'ghost' ? 'Wanted by' : 'In demand at'}</h3>
+             <ul class="job-list">${jobs.map(({ j }) => `<li>${esc(j.title)} — ${esc(j.company)} (${esc(j.score)}/100)</li>`).join('')}</ul>`
+          : '<p class="why">No current top match lists this skill — it may still be a differentiator.</p>'}`;
+    }
+    panel.classList.add('open');
+  }
+
+  canvas.addEventListener('pointermove', e => {
+    if (e.pointerType === 'touch') return;
+    const rect = canvas.getBoundingClientRect();
+    const n = hitTest(e.clientX - rect.left, e.clientY - rect.top);
+    if (n !== hoverNode) {
+      hoverNode = n;
+      canvas.style.cursor = n ? 'pointer' : 'default';
+      drawGraph();
+    }
+  });
+  canvas.addEventListener('pointerleave', () => {
+    if (hoverNode) { hoverNode = null; drawGraph(); }
+  });
+  canvas.addEventListener('click', e => {
+    const rect = canvas.getBoundingClientRect();
+    const n = hitTest(e.clientX - rect.left, e.clientY - rect.top);
+    selectedNode = n;
+    if (n) openPanel(n);
+    else panel.classList.remove('open');
+    drawGraph();
+  });
+
+  /* ---------- accessible list view ---------- */
+  function buildTable(data) {
+    const rows = data.jobs.map(j =>
+      `<tr><td>${esc(j.title)}</td><td>${esc(j.company)}</td><td>${esc(j.score)}/100</td>
+       <td>${j.url && j.url !== '#' ? `<a href="${esc(j.url)}" target="_blank" rel="noopener">link</a>` : '—'}</td></tr>`).join('');
+    const skills = data.skills.map(s => `${esc(s.name)} (${Math.round(s.strength * 100)}%)`).join(', ');
+    document.getElementById('tableBody').innerHTML = `
+      <table><tr><th>Role</th><th>Company</th><th>Match</th><th></th></tr>${rows}</table>
+      <p style="margin-top:8px;">Skills: ${skills}</p>`;
+  }
+
+  /* ---------- boot ---------- */
+  let resizeTimer;
+  addEventListener('resize', () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(() => {
+      seedStars();
+      redrawStarsIfStatic();
+      sizeGraphCanvas();
+      if (DATA) buildGraph(DATA);
+    }, 200);
+  });
+
+  sizeGraphCanvas();
+  fetch(DATA_URL)
+    .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(data => buildGraph((data.jobs || []).length ? data : SAMPLE))
+    .catch(() => buildGraph(SAMPLE));
+</script>
+</body>
+</html>
