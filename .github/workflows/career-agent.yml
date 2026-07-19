@@ -52,7 +52,7 @@ jobs:
           AGENT_STATE_DIR: ${{ github.workspace }}/state
           FASTEMBED_CACHE_DIR: ~/.cache/fastembed
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           ADZUNA_APP_ID: ${{ secrets.ADZUNA_APP_ID }}
           ADZUNA_APP_KEY: ${{ secrets.ADZUNA_APP_KEY }}
           USAJOBS_API_KEY: ${{ secrets.USAJOBS_API_KEY }}
