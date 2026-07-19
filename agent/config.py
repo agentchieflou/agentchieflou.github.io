@@ -16,7 +16,9 @@ GITHUB_USER = "agentchieflou"
 EMAIL_TO = "mbf.louard@gmail.com"
 
 # Flash: fast, cheap, and free-tier eligible; one small call per run.
-GEMINI_MODEL = "gemini-2.5-flash"
+# If this name 404s (model retired/renamed), llm.py auto-discovers the best
+# available flash model for the key and retries.
+GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash")
 EMBED_MODEL = "BAAI/bge-small-en-v1.5"
 
 # GOOGLE_API_KEY accepted as an alias — both names are common for Gemini keys.

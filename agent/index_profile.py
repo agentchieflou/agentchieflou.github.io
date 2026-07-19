@@ -154,6 +154,11 @@ def build_profile():
     existing = load_json(PROFILE_PATH, None)
     if existing and existing.get("version") == version:
         return existing, False, ""
+    # A heuristic profile carries a "-h" version suffix so that once a working
+    # GEMINI_API_KEY exists it gets re-extracted (and downstream embedding/
+    # score caches keyed by version invalidate) even with unchanged sources.
+    if existing and existing.get("version") == version + "-h" and not GEMINI_API_KEY:
+        return existing, False, ""
 
     profile = None
     if GEMINI_API_KEY:
@@ -163,6 +168,8 @@ def build_profile():
             log.warning("Gemini profile extraction failed, using heuristic: %s", e)
     if profile is None:
         profile = _heuristic_profile(resume_text, repo_summaries)
+        profile["heuristic"] = True
+        version += "-h"
 
     profile["version"] = version
     profile["remote_only"] = True
