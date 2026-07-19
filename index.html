@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Michael Louard</title>
+<meta name="description" content="Michael Louard — Business Analytics Consultant. Projects, résumé, and contact." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --w: min(82vw, 540px);
+    --h: min(64vh, 600px);
+    --bg: #05060a;
+    --ink: #eef1f6;
+    --dim: #9aa3b2;
+    --line: rgba(255, 255, 255, 0.12);
+    --accent: #7dd3fc;
+    --accent-2: #c4b5fd;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html, body { height: 100%; }
+
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Inter", system-ui, -apple-system, sans-serif;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: auto 1fr auto auto;
+    height: 100dvh;
+  }
+
+  /* ---------- backdrop ---------- */
+  #stars { position: fixed; inset: 0; z-index: 0; }
+
+  .nebula {
+    position: fixed;
+    width: 60vmax;
+    height: 60vmax;
+    border-radius: 50%;
+    filter: blur(120px);
+    opacity: 0.16;
+    z-index: 0;
+    pointer-events: none;
+    animation: drift 26s ease-in-out infinite alternate;
+  }
+  .n1 { background: #2563eb; top: -20vmax; left: -15vmax; }
+  .n2 { background: #7c3aed; bottom: -25vmax; right: -15vmax; animation-delay: -13s; }
+
+  @keyframes drift {
+    from { transform: translate(0, 0) scale(1); }
+    to   { transform: translate(6vmax, 4vmax) scale(1.15); }
+  }
+
+  /* ---------- HUD ---------- */
+  .hud {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px clamp(20px, 4vw, 48px);
+    font-family: "Space Grotesk", sans-serif;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: var(--dim);
+  }
+  .brand {
+    color: var(--ink);
+    font-weight: 700;
+    letter-spacing: 0.3em;
+  }
+  .face-label { transition: opacity 0.3s ease; }
+
+  /* ---------- stage / prism ---------- */
+  .stage {
+    position: relative;
+    z-index: 4;
+    display: grid;
+    place-items: center;
+    perspective: 1600px;
+    perspective-origin: 50% 42%;
+  }
+
+  .float { animation: hover 7s ease-in-out infinite; transform-style: preserve-3d; }
+
+  @keyframes hover {
+    0%, 100% { transform: translateY(0); }
+    50%      { transform: translateY(-12px); }
+  }
+
+  .prism {
+    position: relative;
+    width: var(--w);
+    height: var(--h);
+    transform-style: preserve-3d;
+    transform: rotateX(-7deg) rotateY(calc(var(--ry, 0) * 1deg));
+    transition: transform 1.05s cubic-bezier(0.22, 0.9, 0.24, 1.12);
+  }
+
+  .float::after {
+    content: "";
+    position: absolute;
+    inset: -18%;
+    background: radial-gradient(closest-side, rgba(125, 211, 252, 0.14), transparent 70%);
+    transform: translateZ(-220px);
+    filter: blur(10px);
+    pointer-events: none;
+  }
+
+  .face {
+    position: absolute;
+    inset: 0;
+    transform: rotateY(calc(var(--i) * 120deg)) translateZ(calc(var(--w) * 0.2887));
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 18px;
+    padding: clamp(28px, 5vw, 52px);
+    background: linear-gradient(160deg, rgba(255, 255, 255, 0.075), rgba(255, 255, 255, 0.02) 45%, rgba(125, 211, 252, 0.05));
+    border: 1px solid var(--line);
+    border-radius: 22px;
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    overflow: hidden;
+  }
+
+  .face::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(120deg, transparent 30%, rgba(255, 255, 255, 0.05) 50%, transparent 70%);
+    pointer-events: none;
+  }
+
+  /* ---------- face content ---------- */
+  .kicker {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.34em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+
+  h1, h2 { font-family: "Space Grotesk", sans-serif; line-height: 0.98; }
+
+  h1 {
+    font-size: clamp(44px, 8vw, 76px);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    background: linear-gradient(120deg, #fff 30%, var(--accent) 75%, var(--accent-2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  h2 { font-size: clamp(30px, 4.5vw, 44px); font-weight: 700; letter-spacing: -0.01em; }
+
+  .tagline { font-size: clamp(14px, 1.6vw, 17px); color: var(--ink); font-weight: 500; }
+  .meta { font-size: 13px; color: var(--dim); }
+
+  blockquote {
+    margin-top: 6px;
+    padding-left: 14px;
+    border-left: 2px solid var(--accent);
+    font-size: 13px;
+    font-style: italic;
+    color: var(--dim);
+    line-height: 1.6;
+  }
+
+  /* repos */
+  .repos {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: auto;
+    max-height: calc(var(--h) - 260px);
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255,255,255,0.2) transparent;
+  }
+
+  .repos a {
+    display: block;
+    padding: 12px 16px;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    text-decoration: none;
+    color: var(--ink);
+    background: rgba(255, 255, 255, 0.03);
+    transition: border-color 0.2s ease, background 0.2s ease, transform 0.2s ease;
+  }
+  .repos a:hover {
+    border-color: rgba(125, 211, 252, 0.55);
+    background: rgba(125, 211, 252, 0.07);
+    transform: translateX(4px);
+  }
+  .repo-name {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .repo-desc { font-size: 12px; color: var(--dim); margin-top: 4px; line-height: 1.5; }
+  .lang { display: inline-flex; align-items: center; gap: 5px; font-size: 11px; color: var(--dim); margin-left: auto; }
+  .lang::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--lc, #888); }
+
+  .skeleton {
+    height: 62px;
+    border-radius: 12px;
+    border: 1px solid var(--line);
+    background: linear-gradient(100deg, rgba(255,255,255,0.03) 40%, rgba(255,255,255,0.08) 50%, rgba(255,255,255,0.03) 60%);
+    background-size: 200% 100%;
+    animation: shimmer 1.4s linear infinite;
+  }
+  @keyframes shimmer { to { background-position: -200% 0; } }
+
+  /* connect links */
+  .links { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+  .links a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 20px;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    text-decoration: none;
+    color: var(--ink);
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    background: rgba(255, 255, 255, 0.03);
+    transition: border-color 0.2s ease, background 0.2s ease, transform 0.2s ease;
+  }
+  .links a:hover {
+    border-color: rgba(196, 181, 253, 0.6);
+    background: rgba(196, 181, 253, 0.08);
+    transform: translateX(4px);
+  }
+  .links a small { display: block; font-family: "Inter", sans-serif; font-size: 11px; color: var(--dim); font-weight: 400; margin-top: 3px; }
+  .arrow { color: var(--dim); transition: color 0.2s ease, transform 0.2s ease; }
+  .links a:hover .arrow { color: var(--accent-2); transform: translate(2px, -2px); }
+
+  .pill {
+    align-self: flex-start;
+    font-size: 12px;
+    color: var(--accent);
+    text-decoration: none;
+    border: 1px solid rgba(125, 211, 252, 0.35);
+    padding: 8px 14px;
+    border-radius: 999px;
+    transition: background 0.2s ease;
+  }
+  .pill:hover { background: rgba(125, 211, 252, 0.1); }
+
+  /* ---------- controls ---------- */
+  .controls {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+    padding: 10px 0 6px;
+  }
+
+  .rot-btn {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    border: 1px solid var(--line);
+    background: rgba(255, 255, 255, 0.04);
+    color: var(--ink);
+    font-size: 20px;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    transition: border-color 0.2s ease, background 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+    backdrop-filter: blur(8px);
+  }
+  .rot-btn:hover {
+    border-color: var(--accent);
+    background: rgba(125, 211, 252, 0.1);
+    box-shadow: 0 0 24px rgba(125, 211, 252, 0.25);
+  }
+  .rot-btn:active { transform: scale(0.92); }
+
+  .dots { display: flex; gap: 10px; }
+  .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.18);
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  .dot.active { background: var(--accent); transform: scale(1.35); }
+
+  .hint {
+    position: relative;
+    z-index: 5;
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: rgba(154, 163, 178, 0.6);
+  }
+
+  @media (max-width: 520px) {
+    :root { --h: min(58vh, 520px); }
+    .controls { gap: 20px; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .float, .nebula { animation: none; }
+    .prism { transition-duration: 0.4s; }
+  }
+</style>
+</head>
+<body>
+  <canvas id="stars"></canvas>
+  <div class="nebula n1"></div>
+  <div class="nebula n2"></div>
+
+  <header class="hud">
+    <span class="brand">ML</span>
+    <span class="face-label" id="faceLabel">01 · Name</span>
+  </header>
+
+  <main class="stage">
+    <div class="float">
+      <div class="prism" id="prism">
+
+        <section class="face" style="--i:0" aria-label="Name">
+          <p class="kicker">Portfolio</p>
+          <h1>Michael<br />Louard</h1>
+          <p class="tagline">Business Analytics Consultant · PNC</p>
+          <p class="meta">Agentic workflows · RAG · Raleigh, NC</p>
+          <blockquote>&ldquo;When in doubt, question the doubt, deny the doubt, then stop doubting.&rdquo;</blockquote>
+        </section>
+
+        <section class="face" style="--i:1" aria-label="GitHub projects">
+          <p class="kicker">GitHub</p>
+          <h2>Projects</h2>
+          <ul class="repos" id="repoList">
+            <li class="skeleton"></li>
+            <li class="skeleton"></li>
+            <li class="skeleton"></li>
+          </ul>
+          <a class="pill" href="https://github.com/agentchieflou?tab=repositories" target="_blank" rel="noopener">All repositories ↗</a>
+        </section>
+
+        <section class="face" style="--i:2" aria-label="LinkedIn and resume">
+          <p class="kicker">Connect</p>
+          <h2>Find me</h2>
+          <ul class="links">
+            <li>
+              <a href="https://www.linkedin.com/in/michael-louard" target="_blank" rel="noopener">
+                <span>LinkedIn<small>linkedin.com/in/michael-louard</small></span>
+                <span class="arrow">↗</span>
+              </a>
+            </li>
+            <li>
+              <a href="resume.html">
+                <span>Résumé<small>Current CV — Interactive & Printable</small></span>
+                <span class="arrow">→</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/agentchieflou" target="_blank" rel="noopener">
+                <span>GitHub<small>github.com/agentchieflou</small></span>
+                <span class="arrow">↗</span>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:mbf.louard@gmail.com">
+                <span>Email<small>mbf.louard@gmail.com</small></span>
+                <span class="arrow">↗</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <nav class="controls" aria-label="Rotate the prism">
+    <button class="rot-btn" id="ccw" aria-label="Rotate counter-clockwise">⟲</button>
+    <div class="dots" id="dots">
+      <span class="dot active"></span><span class="dot"></span><span class="dot"></span>
+    </div>
+    <button class="rot-btn" id="cw" aria-label="Rotate clockwise">⟳</button>
+  </nav>
+
+  <p class="hint">Rotate · ← → · Swipe</p>
+
+<script>
+  /* ---------- prism rotation ---------- */
+  const prism = document.getElementById('prism');
+  const dots = [...document.querySelectorAll('#dots .dot')];
+  const faceLabel = document.getElementById('faceLabel');
+  const labels = ['01 · Name', '02 · Projects', '03 · Connect'];
+  let idx = 0;
+
+  function render() {
+    prism.style.setProperty('--ry', idx * -120);
+    const active = ((idx % 3) + 3) % 3;
+    dots.forEach((d, i) => d.classList.toggle('active', i === active));
+    faceLabel.style.opacity = 0;
+    setTimeout(() => { faceLabel.textContent = labels[active]; faceLabel.style.opacity = 1; }, 200);
+  }
+
+  const rotate = dir => { idx += dir; render(); };
+  document.getElementById('cw').addEventListener('click', () => rotate(1));
+  document.getElementById('ccw').addEventListener('click', () => rotate(-1));
+  addEventListener('keydown', e => {
+    if (e.key === 'ArrowRight') rotate(1);
+    if (e.key === 'ArrowLeft') rotate(-1);
+  });
+
+  let touchX = null;
+  addEventListener('touchstart', e => { touchX = e.touches[0].clientX; }, { passive: true });
+  addEventListener('touchend', e => {
+    if (touchX === null) return;
+    const dx = e.changedTouches[0].clientX - touchX;
+    if (Math.abs(dx) > 48) rotate(dx < 0 ? 1 : -1);
+    touchX = null;
+  }, { passive: true });
+
+  /* ---------- starfield ---------- */
+  const canvas = document.getElementById('stars');
+  const ctx = canvas.getContext('2d');
+  let stars = [];
+
+  function seed() {
+    canvas.width = innerWidth * devicePixelRatio;
+    canvas.height = innerHeight * devicePixelRatio;
+    canvas.style.width = innerWidth + 'px';
+    canvas.style.height = innerHeight + 'px';
+    stars = Array.from({ length: Math.min(220, innerWidth / 6) }, () => ({
+      x: Math.random() * canvas.width,
+      y: Math.random() * canvas.height,
+      r: Math.random() * 1.3 + 0.2,
+      p: Math.random() * Math.PI * 2,
+      s: Math.random() * 0.015 + 0.004
+    }));
+  }
+
+  function tick(t) {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    for (const st of stars) {
+      st.p += st.s;
+      const a = 0.25 + 0.55 * (0.5 + 0.5 * Math.sin(st.p + t * 0.0004));
+      ctx.beginPath();
+      ctx.arc(st.x, st.y, st.r * devicePixelRatio, 0, Math.PI * 2);
+      ctx.fillStyle = `rgba(220, 230, 255, ${a})`;
+      ctx.fill();
+    }
+    requestAnimationFrame(tick);
+  }
+  seed();
+  addEventListener('resize', seed);
+  requestAnimationFrame(tick);
+
+  /* ---------- GitHub repos ---------- */
+  const LANG_COLORS = {
+    'C++': '#f34b7d', 'C': '#9b9b9b', 'TypeScript': '#3178c6',
+    'JavaScript': '#f1e05a', 'Python': '#3572a5', 'HTML': '#e34c26',
+    'CSS': '#563d7c', 'Jupyter Notebook': '#da5b0b'
+  };
+
+  const FALLBACK = [
+    { name: 'play-sports', language: 'C++', description: "Testing out Unreal's capabilities.", html_url: 'https://github.com/agentchieflou/play-sports' },
+    { name: 'v-loudio-t', language: 'C', description: 'Virtual Studio Technologies, created by Lou — Virtual Loudio Technologies.', html_url: 'https://github.com/agentchieflou/v-loudio-t' },
+    { name: 'noprod', language: 'TypeScript', description: 'An easier way to make the instrumentals I want to hear.', html_url: 'https://github.com/agentchieflou/noprod' },
+    { name: 'SandD', language: null, description: 'Finding documents, destroying issues.', html_url: 'https://github.com/agentchieflou/SandD' },
+    { name: 'agentchieflou.github.io', language: 'HTML', description: 'This very site.', html_url: 'https://github.com/agentchieflou/agentchieflou.github.io' }
+  ];
+
+  function renderRepos(repos) {
+    const list = document.getElementById('repoList');
+    list.innerHTML = repos.map(r => `
+      <li>
+        <a href="${r.html_url}" target="_blank" rel="noopener">
+          <span class="repo-name">${r.name}
+            ${r.language ? `<span class="lang" style="--lc:${LANG_COLORS[r.language] || '#888'}">${r.language}</span>` : ''}
+          </span>
+          ${r.description ? `<span class="repo-desc">${r.description}</span>` : ''}
+        </a>
+      </li>`).join('');
+  }
+
+  fetch('https://api.github.com/users/agentchieflou/repos?per_page=100&sort=updated')
+    .then(res => { if (!res.ok) throw new Error(res.status); return res.json(); })
+    .then(data => {
+      const repos = data.filter(r => !r.fork && r.name !== 'agentchieflou');
+      renderRepos(repos.length ? repos : FALLBACK);
+    })
+    .catch(() => renderRepos(FALLBACK));
+</script>
+</body>
+</html>
