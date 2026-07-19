@@ -25,6 +25,7 @@
     --hover-bg: rgba(125, 211, 252, 0.07);
     --hover-border-2: rgba(196, 181, 253, 0.6);
     --hover-bg-2: rgba(196, 181, 253, 0.08);
+    --seam-color: rgba(255, 255, 255, 0.15);
   }
 
   body.kate-mode {
@@ -41,6 +42,7 @@
     --hover-bg: rgba(255, 182, 197, 0.1);
     --hover-border-2: rgba(254, 216, 93, 0.6);
     --hover-bg-2: rgba(254, 216, 93, 0.08);
+    --seam-color: rgba(255, 182, 197, 0.35);
   }
 
   /* Toggle content based on mode */
@@ -324,37 +326,89 @@
   }
   .pill:hover { background: var(--hover-bg); }
 
-  /* ---------- controls ---------- */
+  /* ---------- puzzle assembly ---------- */
+  .puzzle-container {
+    position: absolute;
+    inset: 0;
+    transform: rotateY(0deg) translateZ(calc(var(--w) * 0.2887));
+    transform-style: preserve-3d;
+    pointer-events: none;
+    z-index: 10;
+  }
+  .puzzle-piece {
+    position: absolute;
+    inset: 0;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+  }
+  .puzzle-seam {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 2;
+  }
+
+  /* ---------- navigation controls & arrows ---------- */
   .controls {
     position: relative;
     z-index: 5;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 28px;
     padding: 10px 0 6px;
   }
 
-  .rot-btn {
-    width: 58px;
-    height: 58px;
+  .nav-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 52px;
+    height: 52px;
     border-radius: 50%;
     border: 1px solid var(--line);
     background: rgba(255, 255, 255, 0.04);
     color: var(--ink);
-    font-size: 20px;
+    font-size: 22px;
     cursor: pointer;
     display: grid;
     place-items: center;
-    transition: border-color 0.2s ease, background 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+    transition: border-color 0.2s ease, background 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease, opacity 0.3s ease;
     backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    z-index: 10;
+    outline: none;
   }
-  .rot-btn:hover {
+  .nav-arrow:hover {
     border-color: var(--accent);
-    background: rgba(125, 211, 252, 0.1);
-    box-shadow: 0 0 24px rgba(125, 211, 252, 0.25);
+    background: var(--hover-bg);
+    box-shadow: 0 0 16px rgba(125, 211, 252, 0.2);
+    transform: translateY(-50%) scale(1.06);
   }
-  .rot-btn:active { transform: scale(0.92); }
+  .nav-arrow:active {
+    transform: translateY(-50%) scale(0.94);
+  }
+  .nav-arrow:disabled {
+    opacity: 0.2;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+
+  @media (min-width: 769px) {
+    .nav-arrow.prev { left: -75px; }
+    .nav-arrow.next { right: -75px; }
+  }
+  @media (max-width: 768px) {
+    .nav-arrow {
+      width: 44px;
+      height: 44px;
+      font-size: 18px;
+    }
+    .nav-arrow.prev { left: -22px; }
+    .nav-arrow.next { right: -22px; }
+  }
 
   .dots { display: flex; gap: 10px; }
   .dot {
@@ -362,9 +416,29 @@
     height: 8px;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.18);
-    transition: background 0.3s ease, transform 0.3s ease;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline: none;
   }
   .dot.active { background: var(--accent); transform: scale(1.35); }
+  .dot:hover:not(:disabled) {
+    background: var(--accent);
+    transform: scale(1.2);
+    box-shadow: 0 0 8px var(--accent);
+  }
+  .dot.active:hover:not(:disabled) {
+    transform: scale(1.35);
+  }
+  .dot:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+  }
+  .dot:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
 
   .hint {
     position: relative;
@@ -404,6 +478,7 @@
 
   <main class="stage">
     <div class="float">
+      <button class="nav-arrow prev" id="ccw" aria-label="Previous Page">←</button>
       <div class="prism" id="prism">
 
         <section class="face" style="--i:0" aria-label="Name">
@@ -467,15 +542,16 @@
         </section>
 
       </div>
+      <button class="nav-arrow next" id="cw" aria-label="Next Page">→</button>
     </div>
   </main>
 
   <nav class="controls" aria-label="Rotate the prism">
-    <button class="rot-btn" id="ccw" aria-label="Rotate counter-clockwise">⟲</button>
     <div class="dots" id="dots">
-      <span class="dot active"></span><span class="dot"></span><span class="dot"></span>
+      <button class="dot active" aria-label="Go to slide 1"></button>
+      <button class="dot" aria-label="Go to slide 2"></button>
+      <button class="dot" aria-label="Go to slide 3"></button>
     </div>
-    <button class="rot-btn" id="cw" aria-label="Rotate clockwise">⟳</button>
   </nav>
 
   <p class="hint">Rotate · ← → · Swipe</p>
@@ -495,6 +571,9 @@
     });
   }
 
+  /* ---------- navigation state & lock ---------- */
+  let navigationEnabled = false;
+
   /* ---------- prism rotation ---------- */
   const prism = document.getElementById('prism');
   const dots = [...document.querySelectorAll('#dots .dot')];
@@ -510,22 +589,312 @@
     setTimeout(() => { faceLabel.textContent = labels[active]; faceLabel.style.opacity = 1; }, 200);
   }
 
-  const rotate = dir => { idx += dir; render(); };
+  const rotate = dir => {
+    if (!navigationEnabled) return;
+    idx += dir;
+    render();
+  };
   document.getElementById('cw').addEventListener('click', () => rotate(1));
   document.getElementById('ccw').addEventListener('click', () => rotate(-1));
   addEventListener('keydown', e => {
+    if (!navigationEnabled) return;
     if (e.key === 'ArrowRight') rotate(1);
     if (e.key === 'ArrowLeft') rotate(-1);
+  });
+
+  // Direct dot navigation click handler
+  dots.forEach((btn, dIdx) => {
+    btn.addEventListener('click', () => {
+      if (!navigationEnabled) return;
+      const currentActive = ((idx % 3) + 3) % 3;
+      const diff = dIdx - currentActive;
+      if (diff !== 0) {
+        rotate(diff);
+      }
+    });
   });
 
   let touchX = null;
   addEventListener('touchstart', e => { touchX = e.touches[0].clientX; }, { passive: true });
   addEventListener('touchend', e => {
+    if (!navigationEnabled) return;
     if (touchX === null) return;
     const dx = e.changedTouches[0].clientX - touchX;
     if (Math.abs(dx) > 48) rotate(dx < 0 ? 1 : -1);
     touchX = null;
   }, { passive: true });
+
+  /* ---------- puzzle assembly animation ---------- */
+  function initPuzzle() {
+    const heroFace = document.querySelector('.face[style*="--i:0"]');
+    if (!heroFace) {
+      navigationEnabled = true;
+      return;
+    }
+
+    // Prepare hero face for fading
+    heroFace.style.transition = 'opacity 0.4s ease';
+    heroFace.style.opacity = '0';
+
+    const puzzleContainer = document.createElement('div');
+    puzzleContainer.className = 'puzzle-container';
+    prism.appendChild(puzzleContainer);
+
+    const svgNS = "http://www.w3.org/2000/svg";
+    const svgDefs = document.createElementNS(svgNS, "svg");
+    svgDefs.style.position = 'absolute';
+    svgDefs.style.width = '0';
+    svgDefs.style.height = '0';
+    const defs = document.createElementNS(svgNS, "defs");
+    svgDefs.appendChild(defs);
+    puzzleContainer.appendChild(svgDefs);
+
+    // Randomize grid sizes around 12-25 pieces
+    const configs = [
+      { cols: 3, rows: 4 }, // 12
+      { cols: 4, rows: 3 }, // 12
+      { cols: 3, rows: 5 }, // 15
+      { cols: 5, rows: 3 }, // 15
+      { cols: 4, rows: 4 }, // 16
+      { cols: 4, rows: 5 }, // 20
+      { cols: 5, rows: 4 }, // 20
+      { cols: 5, rows: 5 }  // 25
+    ];
+    const config = configs[Math.floor(Math.random() * configs.length)];
+    const C = config.cols;
+    const R = config.rows;
+
+    // Generate coordinate grid
+    const G = [];
+    for (let c = 0; c <= C; c++) {
+      G[c] = [];
+      for (let r = 0; r <= R; r++) {
+        let x = c / C;
+        let y = r / R;
+        // Perturb internal vertices randomly
+        if (c > 0 && c < C && r > 0 && r < R) {
+          x += (Math.random() - 0.5) * (0.28 / C);
+          y += (Math.random() - 0.5) * (0.28 / R);
+        } else if (c > 0 && c < C) {
+          x += (Math.random() - 0.5) * (0.28 / C);
+        } else if (r > 0 && r < R) {
+          y += (Math.random() - 0.5) * (0.28 / R);
+        }
+        G[c][r] = { x, y };
+      }
+    }
+
+    // Pre-generate horizontal & vertical edge tab directions
+    const hDirs = [];
+    for (let c = 0; c < C; c++) {
+      hDirs[c] = [];
+      for (let r = 0; r <= R; r++) {
+        hDirs[c][r] = Math.random() < 0.5 ? 1 : -1;
+      }
+    }
+    const vDirs = [];
+    for (let c = 0; c <= C; c++) {
+      vDirs[c] = [];
+      for (let r = 0; r < R; r++) {
+        vDirs[c][r] = Math.random() < 0.5 ? 1 : -1;
+      }
+    }
+
+    // Helper to generate edge paths (straight line or jigsaw tab)
+    function getEdgePath(A, B, dir, isOuter, cellSize) {
+      if (isOuter) {
+        return `L ${B.x.toFixed(4)},${B.y.toFixed(4)}`;
+      }
+      const dx = B.x - A.x;
+      const dy = B.y - A.y;
+      const L = Math.sqrt(dx * dx + dy * dy);
+      const tx = dx / L;
+      const ty = dy / L;
+      const nx = -ty * dir;
+      const ny = tx * dir;
+
+      const tabH = cellSize * 0.16;
+      const tabW = cellSize * 0.16;
+
+      const p1 = { x: A.x + dx * 0.38, y: A.y + dy * 0.38 };
+      const p2 = { x: A.x + dx * 0.62, y: A.y + dy * 0.62 };
+      const m = { x: A.x + dx * 0.5, y: A.y + dy * 0.5 };
+
+      const cp1x = p1.x + nx * tabH * 0.15 - tx * tabW * 0.08;
+      const cp1y = p1.y + ny * tabH * 0.15 - ty * tabW * 0.08;
+
+      const cp2x = m.x + nx * tabH * 1.35 - tx * tabW * 0.65;
+      const cp2y = m.y + ny * tabH * 1.35 - ty * tabW * 0.65;
+
+      const cp3x = m.x + nx * tabH * 1.35 + tx * tabW * 0.65;
+      const cp3y = m.y + ny * tabH * 1.35 + ty * tabW * 0.65;
+
+      const cp4x = p2.x + nx * tabH * 0.15 + tx * tabW * 0.08;
+      const cp4y = p2.y + ny * tabH * 0.15 + ty * tabW * 0.08;
+
+      const apexX = m.x + nx * tabH;
+      const apexY = m.y + ny * tabH;
+
+      return `L ${p1.x.toFixed(4)},${p1.y.toFixed(4)} ` +
+             `C ${cp1x.toFixed(4)},${cp1y.toFixed(4)} ${cp2x.toFixed(4)},${cp2y.toFixed(4)} ${apexX.toFixed(4)},${apexY.toFixed(4)} ` +
+             `C ${cp3x.toFixed(4)},${cp3y.toFixed(4)} ${cp4x.toFixed(4)},${cp4y.toFixed(4)} ${p2.x.toFixed(4)},${p2.y.toFixed(4)} ` +
+             `L ${B.x.toFixed(4)},${B.y.toFixed(4)}`;
+    }
+
+    const cellSize = Math.max(1 / C, 1 / R);
+    const pieces = [];
+
+    // Create pieces and add to container
+    for (let c = 0; c < C; c++) {
+      for (let r = 0; r < R; r++) {
+        // Construct boundaries
+        const topPath = getEdgePath(G[c][r], G[c+1][r], hDirs[c][r], r === 0, cellSize);
+        const rightPath = getEdgePath(G[c+1][r], G[c+1][r+1], vDirs[c+1][r], c === C - 1, cellSize);
+        const bottomPath = getEdgePath(G[c+1][r+1], G[c][r+1], -hDirs[c][r+1], r === R - 1, cellSize);
+        const leftPath = getEdgePath(G[c][r+1], G[c][r], -vDirs[c][r], c === 0, cellSize);
+
+        const piecePath = `M ${G[c][r].x.toFixed(4)},${G[c][r].y.toFixed(4)} ${topPath} ${rightPath} ${bottomPath} ${leftPath} Z`;
+
+        // Define clip path
+        const clipPath = document.createElementNS(svgNS, "clipPath");
+        clipPath.setAttribute("id", `clip-piece-${c}-${r}`);
+        clipPath.setAttribute("clipPathUnits", "objectBoundingBox");
+        const path = document.createElementNS(svgNS, "path");
+        path.setAttribute("d", piecePath);
+        clipPath.appendChild(path);
+        defs.appendChild(clipPath);
+
+        // Piece div
+        const piece = document.createElement('div');
+        piece.className = 'puzzle-piece';
+        piece.style.clipPath = `url(#clip-piece-${c}-${r})`;
+        piece.style.webkitClipPath = `url(#clip-piece-${c}-${r})`;
+
+        // Clone content
+        const faceClone = heroFace.cloneNode(true);
+        faceClone.style.transform = 'none';
+        faceClone.style.position = 'absolute';
+        faceClone.style.inset = '0';
+        faceClone.style.opacity = '1';
+        piece.appendChild(faceClone);
+
+        // Seam SVG
+        const seamSvg = document.createElementNS(svgNS, "svg");
+        seamSvg.setAttribute("viewBox", "0 0 1 1");
+        seamSvg.classList.add('puzzle-seam');
+        const seamPath = document.createElementNS(svgNS, "path");
+        seamPath.setAttribute("d", piecePath);
+        seamPath.setAttribute("fill", "none");
+        seamPath.setAttribute("stroke", "var(--seam-color)");
+        seamPath.setAttribute("stroke-width", "0.003");
+        seamSvg.appendChild(seamPath);
+        piece.appendChild(seamSvg);
+
+        puzzleContainer.appendChild(piece);
+
+        // Initial offsets for assembly animation
+        const xMid = (c + 0.5) / C;
+        const yMid = (r + 0.5) / R;
+        const dx = xMid - 0.5;
+        const dy = yMid - 0.5;
+        const dist = Math.sqrt(dx * dx + dy * dy);
+        const angle = Math.atan2(dy, dx);
+
+        const pushDist = 45 + dist * 110 + Math.random() * 40;
+        const startX = Math.cos(angle) * pushDist + (Math.random() - 0.5) * 30;
+        const startY = Math.sin(angle) * pushDist + (Math.random() - 0.5) * 30;
+        const startZ = 150 + Math.random() * 180;
+        const startRot = (Math.random() - 0.5) * 14;
+        const startScale = 0.94 + Math.random() * 0.12;
+
+        pieces.push({
+          element: piece,
+          seam: seamSvg,
+          startX, startY, startZ, startRot, startScale
+        });
+      }
+    }
+
+    // Shuffle for organic stagger order
+    const shuffled = [...pieces];
+    for (let i = shuffled.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+
+    // Trigger animations
+    const promises = shuffled.map((p, idx) => {
+      const delay = idx * 25; // 25ms stagger
+      const duration = 900 + Math.random() * 200; // 900-1100ms
+
+      p.element.style.transform = `translate3d(${p.startX}px, ${p.startY}px, ${p.startZ}px) rotate(${p.startRot}deg) scale(${p.startScale})`;
+      p.element.style.opacity = '0';
+
+      const anim = p.element.animate([
+        {
+          transform: `translate3d(${p.startX}px, ${p.startY}px, ${p.startZ}px) rotate(${p.startRot}deg) scale(${p.startScale})`,
+          opacity: 0
+        },
+        {
+          transform: 'translate3d(0px, 0px, 0px) rotate(0deg) scale(1)',
+          opacity: 1
+        }
+      ], {
+        duration: duration,
+        delay: delay,
+        easing: 'cubic-bezier(0.175, 0.885, 0.32, 1.05)', // easeOutBack with custom subtle overshoot
+        fill: 'forwards'
+      });
+
+      return anim.finished;
+    });
+
+    // Handle completed assembly
+    Promise.all(promises).then(() => {
+      // Hold for 400ms
+      setTimeout(() => {
+        // Fade out seams
+        shuffled.forEach(p => {
+          p.seam.animate([
+            { opacity: 1 },
+            { opacity: 0 }
+          ], {
+            duration: 400,
+            fill: 'forwards',
+            easing: 'ease-out'
+          });
+        });
+
+        // Crossfade puzzle container and original card
+        const fadeOutPieces = puzzleContainer.animate([
+          { opacity: 1 },
+          { opacity: 0 }
+        ], {
+          duration: 400,
+          fill: 'forwards',
+          easing: 'ease-out'
+        });
+
+        const fadeInOriginal = heroFace.animate([
+          { opacity: 0 },
+          { opacity: 1 }
+        ], {
+          duration: 400,
+          fill: 'forwards',
+          easing: 'ease-out'
+        });
+
+        fadeInOriginal.finished.then(() => {
+          puzzleContainer.remove();
+          heroFace.style.opacity = '1';
+          navigationEnabled = true;
+        });
+      }, 400);
+    });
+  }
+
+  // Initialize puzzle assembly
+  initPuzzle();
 
   /* ---------- starfield ---------- */
   const canvas = document.getElementById('stars');
