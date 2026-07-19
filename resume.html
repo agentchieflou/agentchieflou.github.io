@@ -1,417 +1,460 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Résumé — Michael Louard</title>
-<meta name="description" content="Résumé of Michael Louard — Business Analytics Consultant & Quantitative Analyst." />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
-<style>
-  :root {
-    --bg: #05060a;
-    --card-bg: linear-gradient(160deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.01) 70%, rgba(125, 211, 252, 0.02));
-    --border: rgba(255, 255, 255, 0.08);
-    --border-hover: rgba(125, 211, 252, 0.3);
-    --ink: #eef1f6;
-    --dim: #9aa3b2;
-    --accent: #7dd3fc;
-    --accent-2: #c4b5fd;
-    --line: rgba(255, 255, 255, 0.06);
-  }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Résumé — Michael Louard</title>
+  <meta name="description" content="Résumé of Michael Louard — Business Analytics Consultant & Quantitative Analyst." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #05060a;
+      --card-bg: linear-gradient(160deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.01) 70%, rgba(125, 211, 252, 0.02));
+      --border: rgba(255, 255, 255, 0.08);
+      --border-hover: rgba(125, 211, 252, 0.3);
+      --ink: #eef1f6;
+      --dim: #9aa3b2;
+      --accent: #7dd3fc;
+      --accent-2: #c4b5fd;
+      --line: rgba(255, 255, 255, 0.06);
+    }
 
-  * { margin: 0; padding: 0; box-sizing: border-box; }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-  body {
-    min-height: 100dvh;
-    background: var(--bg);
-    color: var(--ink);
-    font-family: "Inter", system-ui, sans-serif;
-    padding: clamp(16px, 4vw, 48px);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    overflow-x: hidden;
-  }
-
-  /* Blurry decorative background */
-  .blur-bg {
-    position: fixed;
-    width: 50vmax;
-    height: 50vmax;
-    border-radius: 50%;
-    filter: blur(120px);
-    opacity: 0.08;
-    z-index: 0;
-    pointer-events: none;
-  }
-  .b1 { background: #2563eb; top: -10%; left: -10%; }
-  .b2 { background: #7c3aed; bottom: -10%; right: -10%; }
-
-  .actions-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    max-width: 820px;
-    margin-bottom: 24px;
-    z-index: 10;
-  }
-
-  a.back-btn, button.print-btn {
-    font-family: "Space Grotesk", sans-serif;
-    font-size: 13px;
-    font-weight: 500;
-    color: var(--ink);
-    text-decoration: none;
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid var(--border);
-    padding: 10px 18px;
-    border-radius: 999px;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-  }
-
-  a.back-btn:hover {
-    border-color: var(--accent);
-    background: rgba(125, 211, 252, 0.08);
-    transform: translateX(-2px);
-  }
-
-  button.print-btn:hover {
-    border-color: var(--accent-2);
-    background: rgba(196, 181, 253, 0.08);
-    transform: translateY(-1px);
-  }
-
-  .resume-container {
-    width: 100%;
-    max-width: 820px;
-    padding: clamp(24px, 5vw, 48px);
-    border: 1px solid var(--border);
-    border-radius: 24px;
-    background: var(--card-bg);
-    box-shadow: 0 40px 100px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-    z-index: 5;
-  }
-
-  /* Header Section */
-  header {
-    border-bottom: 1px solid var(--line);
-    padding-bottom: 28px;
-    margin-bottom: 28px;
-    text-align: center;
-  }
-
-  .kicker {
-    font-family: "Space Grotesk", sans-serif;
-    font-size: 11px;
-    letter-spacing: 0.34em;
-    text-transform: uppercase;
-    color: var(--accent);
-    margin-bottom: 10px;
-  }
-
-  h1 {
-    font-family: "Space Grotesk", sans-serif;
-    font-size: clamp(32px, 6vw, 48px);
-    font-weight: 700;
-    margin-bottom: 12px;
-    background: linear-gradient(120deg, #fff 30%, var(--accent) 75%, var(--accent-2));
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-  }
-
-  .contact-info {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 12px 20px;
-    font-size: 13px;
-    color: var(--dim);
-  }
-
-  .contact-info a {
-    color: var(--dim);
-    text-decoration: none;
-    transition: color 0.2s ease;
-  }
-
-  .contact-info a:hover {
-    color: var(--accent);
-  }
-
-  /* Section Styles */
-  section {
-    margin-bottom: 32px;
-  }
-
-  section:last-of-type {
-    margin-bottom: 0;
-  }
-
-  h2 {
-    font-family: "Space Grotesk", sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--accent-2);
-    margin-bottom: 18px;
-    border-bottom: 1px solid var(--line);
-    padding-bottom: 6px;
-  }
-
-  /* Skills Grid */
-  .skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
-  }
-
-  .skill-category {
-    background: rgba(255, 255, 255, 0.015);
-    border: 1px solid var(--line);
-    border-radius: 12px;
-    padding: 16px;
-  }
-
-  .skill-category h3 {
-    font-family: "Space Grotesk", sans-serif;
-    font-size: 14px;
-    font-weight: 600;
-    color: var(--accent);
-    margin-bottom: 8px;
-  }
-
-  .skill-category p {
-    font-size: 13px;
-    color: var(--dim);
-    line-height: 1.5;
-  }
-
-  /* Experience list */
-  .experience-item {
-    margin-bottom: 24px;
-  }
-
-  .experience-item:last-child {
-    margin-bottom: 0;
-  }
-
-  .exp-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 4px;
-    margin-bottom: 8px;
-  }
-
-  .exp-title {
-    font-family: "Space Grotesk", sans-serif;
-    font-size: 16px;
-    font-weight: 600;
-    color: #fff;
-  }
-
-  .exp-company {
-    font-family: "Space Grotesk", sans-serif;
-    font-size: 16px;
-    font-weight: 600;
-    color: var(--accent);
-  }
-
-  .exp-meta {
-    font-size: 13px;
-    color: var(--dim);
-    font-family: "Space Grotesk", sans-serif;
-  }
-
-  ul.exp-bullets {
-    list-style-type: none;
-    padding-left: 0;
-  }
-
-  ul.exp-bullets li {
-    font-size: 13.5px;
-    line-height: 1.6;
-    color: var(--dim);
-    margin-bottom: 6px;
-    position: relative;
-    padding-left: 18px;
-  }
-
-  ul.exp-bullets li::before {
-    content: "•";
-    color: var(--accent);
-    position: absolute;
-    left: 4px;
-    top: 0;
-  }
-
-  ul.exp-bullets li strong {
-    color: var(--ink);
-    font-weight: 500;
-  }
-
-  /* Education */
-  .edu-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 4px;
-    margin-bottom: 8px;
-  }
-
-  .edu-degree {
-    font-family: "Space Grotesk", sans-serif;
-    font-size: 16px;
-    font-weight: 600;
-    color: #fff;
-  }
-
-  .edu-school {
-    font-family: "Space Grotesk", sans-serif;
-    font-size: 16px;
-    font-weight: 600;
-    color: var(--accent);
-  }
-
-  .edu-meta {
-    font-size: 13px;
-    color: var(--dim);
-    font-family: "Space Grotesk", sans-serif;
-  }
-
-  .edu-details {
-    font-size: 13.5px;
-    line-height: 1.6;
-    color: var(--dim);
-  }
-
-  .edu-details strong {
-    color: var(--ink);
-    font-weight: 500;
-  }
-
-  /* Print and ATS Optimization rules */
-  @media print {
     body {
-      background: #fff !important;
-      color: #111 !important;
-      font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
-      padding: 0 !important;
-      margin: 0 !important;
-      min-height: auto;
+      min-height: 100dvh;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: "Inter", system-ui, sans-serif;
+      padding: clamp(16px, 4vw, 48px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      overflow-x: hidden;
     }
-    .blur-bg, .actions-nav {
-      display: none !important;
+
+    /* Blurry decorative background */
+    .blur-bg {
+      position: fixed;
+      width: 50vmax;
+      height: 50vmax;
+      border-radius: 50%;
+      filter: blur(120px);
+      opacity: 0.08;
+      z-index: 0;
+      pointer-events: none;
     }
+
+    .b1 {
+      background: #2563eb;
+      top: -10%;
+      left: -10%;
+    }
+
+    .b2 {
+      background: #7c3aed;
+      bottom: -10%;
+      right: -10%;
+    }
+
+    .actions-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      max-width: 820px;
+      margin-bottom: 24px;
+      z-index: 10;
+    }
+
+    a.back-btn,
+    button.print-btn {
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--ink);
+      text-decoration: none;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border);
+      padding: 10px 18px;
+      border-radius: 999px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    a.back-btn:hover {
+      border-color: var(--accent);
+      background: rgba(125, 211, 252, 0.08);
+      transform: translateX(-2px);
+    }
+
+    button.print-btn:hover {
+      border-color: var(--accent-2);
+      background: rgba(196, 181, 253, 0.08);
+      transform: translateY(-1px);
+    }
+
     .resume-container {
-      max-width: 100% !important;
-      border: none !important;
-      background: none !important;
-      box-shadow: none !important;
-      padding: 0 !important;
-      margin: 0 !important;
-      backdrop-filter: none !important;
-      -webkit-backdrop-filter: none !important;
+      width: 100%;
+      max-width: 820px;
+      padding: clamp(24px, 5vw, 48px);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      background: var(--card-bg);
+      box-shadow: 0 40px 100px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      z-index: 5;
     }
+
+    /* Header Section */
     header {
-      border-bottom: 1px solid #222 !important;
-      padding-bottom: 14px !important;
-      margin-bottom: 20px !important;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 28px;
+      margin-bottom: 28px;
+      text-align: center;
     }
+
+    .kicker {
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 11px;
+      letter-spacing: 0.34em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 10px;
+    }
+
     h1 {
-      font-size: 28px !important;
-      margin-bottom: 6px !important;
-      background: none !important;
-      -webkit-text-fill-color: initial !important;
-      color: #000 !important;
+      font-family: "Space Grotesk", sans-serif;
+      font-size: clamp(32px, 6vw, 48px);
+      font-weight: 700;
+      margin-bottom: 12px;
+      background: linear-gradient(120deg, #fff 30%, var(--accent) 75%, var(--accent-2));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
     }
+
     .contact-info {
-      font-size: 11px !important;
-      gap: 6px 12px !important;
-      color: #444 !important;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px 20px;
+      font-size: 13px;
+      color: var(--dim);
     }
+
     .contact-info a {
-      color: #444 !important;
+      color: var(--dim);
+      text-decoration: none;
+      transition: color 0.2s ease;
     }
+
+    .contact-info a:hover {
+      color: var(--accent);
+    }
+
+    /* Section Styles */
+    section {
+      margin-bottom: 32px;
+    }
+
+    section:last-of-type {
+      margin-bottom: 0;
+    }
+
     h2 {
-      font-size: 13px !important;
-      color: #000 !important;
-      border-bottom: 1px solid #222 !important;
-      padding-bottom: 2px !important;
-      margin-bottom: 12px !important;
-      margin-top: 18px !important;
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent-2);
+      margin-bottom: 18px;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 6px;
     }
+
+    /* Skills Grid */
     .skills-grid {
-      grid-template-columns: 1fr 1fr !important;
-      gap: 12px !important;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
     }
+
     .skill-category {
-      background: none !important;
-      border: 1px solid #ddd !important;
-      padding: 10px !important;
-      border-radius: 6px !important;
+      background: rgba(255, 255, 255, 0.015);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 16px;
     }
+
     .skill-category h3 {
-      font-size: 11px !important;
-      color: #000 !important;
-      margin-bottom: 4px !important;
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--accent);
+      margin-bottom: 8px;
     }
+
     .skill-category p {
-      font-size: 10.5px !important;
-      color: #333 !important;
+      font-size: 13px;
+      color: var(--dim);
+      line-height: 1.5;
     }
+
+    /* Experience list */
     .experience-item {
-      margin-bottom: 14px !important;
-      page-break-inside: avoid;
+      margin-bottom: 24px;
     }
-    .exp-title, .exp-company, .edu-degree, .edu-school {
-      font-size: 12px !important;
-      color: #000 !important;
+
+    .experience-item:last-child {
+      margin-bottom: 0;
     }
-    .exp-meta, .edu-meta {
-      font-size: 11px !important;
-      color: #444 !important;
+
+    .exp-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 4px;
+      margin-bottom: 8px;
     }
+
+    .exp-title {
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      color: #fff;
+    }
+
+    .exp-company {
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--accent);
+    }
+
+    .exp-meta {
+      font-size: 13px;
+      color: var(--dim);
+      font-family: "Space Grotesk", sans-serif;
+    }
+
+    ul.exp-bullets {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
     ul.exp-bullets li {
-      font-size: 11px !important;
-      line-height: 1.4 !important;
-      color: #333 !important;
-      margin-bottom: 3px !important;
-      padding-left: 12px !important;
+      font-size: 13.5px;
+      line-height: 1.6;
+      color: var(--dim);
+      margin-bottom: 6px;
+      position: relative;
+      padding-left: 18px;
     }
+
     ul.exp-bullets li::before {
-      content: "•" !important;
-      color: #000 !important;
-      left: 0 !important;
+      content: "•";
+      color: var(--accent);
+      position: absolute;
+      left: 4px;
+      top: 0;
     }
+
     ul.exp-bullets li strong {
-      color: #000 !important;
+      color: var(--ink);
+      font-weight: 500;
     }
+
+    /* Education */
+    .edu-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 4px;
+      margin-bottom: 8px;
+    }
+
+    .edu-degree {
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      color: #fff;
+    }
+
+    .edu-school {
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--accent);
+    }
+
+    .edu-meta {
+      font-size: 13px;
+      color: var(--dim);
+      font-family: "Space Grotesk", sans-serif;
+    }
+
     .edu-details {
-      font-size: 11px !important;
-      line-height: 1.4 !important;
-      color: #333 !important;
+      font-size: 13.5px;
+      line-height: 1.6;
+      color: var(--dim);
     }
+
     .edu-details strong {
-      color: #000 !important;
+      color: var(--ink);
+      font-weight: 500;
     }
-  }
-</style>
+
+    /* Print and ATS Optimization rules */
+    @media print {
+      body {
+        background: #fff !important;
+        color: #111 !important;
+        font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+        padding: 0 !important;
+        margin: 0 !important;
+        min-height: auto;
+      }
+
+      .blur-bg,
+      .actions-nav {
+        display: none !important;
+      }
+
+      .resume-container {
+        max-width: 100% !important;
+        border: none !important;
+        background: none !important;
+        box-shadow: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
+      }
+
+      header {
+        border-bottom: 1px solid #222 !important;
+        padding-bottom: 14px !important;
+        margin-bottom: 20px !important;
+      }
+
+      h1 {
+        font-size: 28px !important;
+        margin-bottom: 6px !important;
+        background: none !important;
+        -webkit-text-fill-color: initial !important;
+        color: #000 !important;
+      }
+
+      .contact-info {
+        font-size: 11px !important;
+        gap: 6px 12px !important;
+        color: #444 !important;
+      }
+
+      .contact-info a {
+        color: #444 !important;
+      }
+
+      h2 {
+        font-size: 13px !important;
+        color: #000 !important;
+        border-bottom: 1px solid #222 !important;
+        padding-bottom: 2px !important;
+        margin-bottom: 12px !important;
+        margin-top: 18px !important;
+      }
+
+      .skills-grid {
+        grid-template-columns: 1fr 1fr !important;
+        gap: 12px !important;
+      }
+
+      .skill-category {
+        background: none !important;
+        border: 1px solid #ddd !important;
+        padding: 10px !important;
+        border-radius: 6px !important;
+      }
+
+      .skill-category h3 {
+        font-size: 11px !important;
+        color: #000 !important;
+        margin-bottom: 4px !important;
+      }
+
+      .skill-category p {
+        font-size: 10.5px !important;
+        color: #333 !important;
+      }
+
+      .experience-item {
+        margin-bottom: 14px !important;
+        page-break-inside: avoid;
+      }
+
+      .exp-title,
+      .exp-company,
+      .edu-degree,
+      .edu-school {
+        font-size: 12px !important;
+        color: #000 !important;
+      }
+
+      .exp-meta,
+      .edu-meta {
+        font-size: 11px !important;
+        color: #444 !important;
+      }
+
+      ul.exp-bullets li {
+        font-size: 11px !important;
+        line-height: 1.4 !important;
+        color: #333 !important;
+        margin-bottom: 3px !important;
+        padding-left: 12px !important;
+      }
+
+      ul.exp-bullets li::before {
+        content: "•" !important;
+        color: #000 !important;
+        left: 0 !important;
+      }
+
+      ul.exp-bullets li strong {
+        color: #000 !important;
+      }
+
+      .edu-details {
+        font-size: 11px !important;
+        line-height: 1.4 !important;
+        color: #333 !important;
+      }
+
+      .edu-details strong {
+        color: #000 !important;
+      }
+    }
+  </style>
 </head>
+
 <body>
   <div class="blur-bg b1"></div>
   <div class="blur-bg b2"></div>
@@ -451,7 +494,8 @@
         </div>
         <div class="skill-category">
           <h3>Core Competencies</h3>
-          <p>API Development, NLP / BERT, Agentic &amp; RAG Strategy, Quantitative Analytics, CECL Forecasting, Mainframe Migrations, Telemetry &amp; Analytics</p>
+          <p>API Development, NLP / BERT, Agentic &amp; RAG Strategy, Quantitative Analytics, CECL Forecasting,
+            Mainframe Migrations, Telemetry &amp; Analytics</p>
         </div>
       </div>
     </section>
@@ -462,81 +506,112 @@
       <div class="experience-item">
         <div class="exp-header">
           <div>
-            <span class="exp-title">Business Analytics Consultant</span> — 
+            <span class="exp-title">Business Analytics Consultant</span> —
             <span class="exp-company">PNC Bank</span>
           </div>
           <span class="exp-meta">McLean, VA | Nov 2025 — Present</span>
         </div>
         <ul class="exp-bullets">
-          <li><strong>Legacy Mainframe Migration:</strong> Led the migration of a major asset class off the legacy OLNACS mainframe onto a proprietary internal orchestrator, meeting a critical June 30, 2026 deadline and avoiding a <strong>$30 million</strong> contract renewal cost.</li>
-          <li><strong>Document Sourcing Automation:</strong> Developed a multi-scraper Python automation suite managed by a master orchestrator to retrieve loan files, successfully closing out Document Process Management (DPM) issues; engineered a proof-of-concept using Selenium before transitioning to a high-throughput API headless browser connection.</li>
-          <li><strong>Telemetry &amp; Usage Analytics:</strong> Architected grid-wide usage analytics and telemetry tools, allowing database administrators (DBAs) to track table-level utilization and optimize database performance.</li>
-          <li><strong>REST API Deployment:</strong> Currently containerizing custom scrapers and data parsing systems to deploy them as new hosted REST APIs on OpenShift.</li>
-          <li><strong>AI Strategy &amp; Research:</strong> Served as an internal Subject Matter Expert (SME) on agentic workflows and RAG architectures, researching and presenting strategies optimized for strict enterprise resource and token constraints.</li>
+          <li><strong>Legacy Mainframe Migration:</strong> Designed and implemented a parameterized data validation
+            framework to compare and reconcile outputs across MongoDB, SOM DI, and OLNACS during a major asset class
+            migration. Enabled SME validation of 1,930 data fields, including 443 migration-impacted mappings and 207
+            business-critical fields, supporting on-time project delivery, avoiding a $30M contract renewal.</li>
+          <li><strong>Document Sourcing Automation:</strong> Developed a multi-scraper Python automation suite managed
+            by a master orchestrator to retrieve loan files, successfully closing out Document Process Management (DPM)
+            issues; engineered a proof-of-concept using Selenium before transitioning to a high-throughput API headless
+            browser connection.</li>
+          <li><strong>Telemetry &amp; Usage Analytics:</strong> Designed and developed grid-wide database telemetry and
+            table-level usage analytics that eliminated weeks of manual impact analysis for migrations and maintenance
+            events. Enabled DBAs and senior analysts to rapidly identify affected databases, accelerating migration
+            planning from weeks to days and reducing time spent on manual discovery.</li>
+          <li><strong>REST API Deployment:</strong> Currently containerizing custom scrapers and data parsing systems to
+            deploy them as new hosted REST APIs on OpenShift.</li>
+          <li><strong>AI Strategy &amp; Research:</strong> Researched and evaluated agentic workflows, RAG
+            architectures, and enterprise AI design patterns. Delivered internal demonstrations and recommendations
+            focused on resource-efficient implementations under strict enterprise security and token constraints.</li>
         </ul>
       </div>
 
       <div class="experience-item">
         <div class="exp-header">
           <div>
-            <span class="exp-title">Quantitative Analytics — Model Development &amp; Engineering</span> — 
+            <span class="exp-title">Quantitative Analytics — Model Development &amp; Engineering</span> —
             <span class="exp-company">PNC Bank</span>
           </div>
           <span class="exp-meta">McLean, VA | 2023 — Nov 2025</span>
         </div>
         <ul class="exp-bullets">
-          <li><strong>REST API Containerization:</strong> Designed, containerized, and deployed three production-grade REST APIs on OpenShift via Helm deployments, complying with enterprise CI/CD and Policy as Code guidelines.</li>
-          <li><strong>Recurring Transaction Identification API:</strong> Ported core detection algorithms from Python into a containerized service, integrating directly with downstream credit risk systems.</li>
-          <li><strong>BERT Transaction Classification API:</strong> Operationalized a fine-tuned BERT language model to classify transaction records at scale, converting model outputs into a consumable, real-time API.</li>
-          <li><strong>QA Environment API:</strong> Deployed a specialized testing API navigating rigorous enterprise governance constraints, restricted access networks, and Policy as Code compliance gates.</li>
-          <li><strong>Data Visualization:</strong> Built Power BI semantic models and interactive dashboards to provide stakeholders with portfolio-wide performance reporting.</li>
+          <li><strong>REST API Containerization:</strong> Designed, containerized, and deployed three production-grade
+            REST APIs on OpenShift via Helm deployments, complying with enterprise CI/CD and Policy as Code guidelines.
+          </li>
+          <li><strong>Recurring Transaction Identification API:</strong> Ported core detection algorithms from Python
+            into a containerized service, integrating directly with downstream credit risk systems.</li>
+          <li><strong>BERT Transaction Classification API:</strong> Operationalized a fine-tuned BERT language model to
+            classify transaction records at scale, converting model outputs into a consumable, real-time API.</li>
+          <li><strong>QA Environment API:</strong> Deployed a specialized testing API navigating rigorous enterprise
+            governance constraints, restricted access networks, and Policy as Code compliance gates.</li>
+          <li><strong>Data Visualization:</strong> Built Power BI semantic models and interactive dashboards to provide
+            stakeholders with portfolio-wide performance reporting.</li>
         </ul>
       </div>
 
       <div class="experience-item">
         <div class="exp-header">
           <div>
-            <span class="exp-title">Quantitative Analytics — BSAM Residential Modeling</span> — 
+            <span class="exp-title">Quantitative Analytics — BSAM Residential Modeling</span> —
             <span class="exp-company">PNC Bank</span>
           </div>
           <span class="exp-meta">McLean, VA | 2023</span>
         </div>
         <ul class="exp-bullets">
-          <li><strong>CECL Reserve Forecasting:</strong> Executed reserve forecasting across Mortgage and Home Equity segments, analyzing a 500K+ loan portfolio with <strong>$70B+</strong> in assets across four macroeconomic scenarios.</li>
-          <li><strong>M&amp;A Integration:</strong> Led the integration of BBVA mortgage data, assessing 23,000 loans for model suitability through back-testing, performance monitoring, and reasonableness reviews.</li>
-          <li><strong>Competitor Stress Analysis:</strong> Built a Peer Bank Analysis Dashboard to monitor and visualize industry-wide stressors, improving executive-level competitive risk visibility.</li>
-          <li><strong>Regulatory Standards:</strong> Applied OCC and Federal Reserve model risk management regulations (SR 11-7) throughout model development, testing, and validation lifecycles.</li>
+          <li><strong>CECL Reserve Forecasting:</strong> Executed reserve forecasting across Mortgage and Home Equity
+            segments, analyzing a 500K+ loan portfolio with <strong>$70B+</strong> in assets across four macroeconomic
+            scenarios.</li>
+          <li><strong>M&amp;A Integration:</strong> Led the integration of BBVA mortgage data, assessing 23,000 loans
+            for model suitability through back-testing, performance monitoring, and reasonableness reviews.</li>
+          <li><strong>Competitor Stress Analysis:</strong> Built a Peer Bank Analysis Dashboard to monitor and visualize
+            industry-wide stressors, improving executive-level competitive risk visibility.</li>
+          <li><strong>Regulatory Standards:</strong> Applied OCC and Federal Reserve model risk management regulations
+            (SR 11-7) throughout model development, testing, and validation lifecycles.</li>
         </ul>
       </div>
 
       <div class="experience-item">
         <div class="exp-header">
           <div>
-            <span class="exp-title">Quantitative Analytics — Home Equity Pricing</span> — 
+            <span class="exp-title">Quantitative Analytics — Home Equity Pricing</span> —
             <span class="exp-company">PNC Bank</span>
           </div>
           <span class="exp-meta">McLean, VA | 2022 — 2023</span>
         </div>
         <ul class="exp-bullets">
-          <li><strong>Pricing Workflow Automation:</strong> Automated manual pricing workflows in Python, saving qualified analysts 30 minutes daily and new analysts 60 minutes daily; completely eliminated manual entry errors which previously resulted in 3+ hours of rework and operational/reputational risks.</li>
-          <li><strong>Performance Monitoring:</strong> Created a rate-change effectiveness tool to analyze pricing changes, establishing it as the pricing team's standard performance-monitoring tool.</li>
-          <li><strong>Elasticity Research:</strong> Led a research initiative evaluating standard deviation as a proxy for price elasticity in Home Equity product pricing.</li>
-          <li><strong>Data Architecture:</strong> Overhauled team version control practices and data storage architectures to ensure data integrity and reproducibility.</li>
+          <li><strong>Pricing Workflow Automation:</strong> Automated manual pricing workflows in Python, saving
+            qualified analysts 30 minutes daily and new analysts 60 minutes daily; completely eliminated manual entry
+            errors which previously resulted in 3+ hours of rework and operational/reputational risks.</li>
+          <li><strong>Performance Monitoring:</strong> Created a rate-change effectiveness tool to analyze pricing
+            changes, establishing it as the pricing team's standard performance-monitoring tool.</li>
+          <li><strong>Elasticity Research:</strong> Led a research initiative evaluating standard deviation as a proxy
+            for price elasticity in Home Equity product pricing.</li>
+          <li><strong>Data Architecture:</strong> Overhauled team version control practices and data storage
+            architectures to ensure data integrity and reproducibility.</li>
         </ul>
       </div>
 
       <div class="experience-item">
         <div class="exp-header">
           <div>
-            <span class="exp-title">Retail Lending Product Management — Home Equity</span> — 
+            <span class="exp-title">Retail Lending Product Management — Home Equity</span> —
             <span class="exp-company">PNC Bank</span>
           </div>
           <span class="exp-meta">McLean, VA | 2022</span>
         </div>
         <ul class="exp-bullets">
-          <li><strong>Process Redesign:</strong> Redesigned the HELOC communications and statement print workflows, enabling migration to an in-house service that reduced vendor printing costs.</li>
-          <li><strong>Benchmarking Analysis:</strong> Performed competitive benchmarking analyses on peer bank intro rates and discount models to optimize PNC's Home Equity market positioning.</li>
-          <li><strong>Expense Reduction:</strong> Analyzed HELOC origination fee structures, identifying restructuring opportunities that reduced annual operating expenses by approximately <strong>$1 million</strong>.</li>
+          <li><strong>Process Redesign:</strong> Redesigned the HELOC communications and statement print workflows,
+            enabling migration to an in-house service that reduced vendor printing costs.</li>
+          <li><strong>Benchmarking Analysis:</strong> Performed competitive benchmarking analyses on peer bank intro
+            rates and discount models to optimize PNC's Home Equity market positioning.</li>
+          <li><strong>Expense Reduction:</strong> Analyzed HELOC origination fee structures, identifying restructuring
+            opportunities that reduced annual operating expenses by approximately <strong>$1 million</strong>.</li>
         </ul>
       </div>
     </section>
@@ -552,11 +627,14 @@
         </div>
         <div class="edu-details">
           <p><strong>Bachelor of Arts in Economics</strong> | Secondary Major in Finance</p>
-          <p>Coursework: Econometrics, Advanced Financial Modeling, Computational Methods, Options &amp; Derivatives, Money &amp; Banking</p>
-          <p>Activities: Presented original causal research to the Federal Reserve; Member of Alpha Kappa Psi Business Fraternity and Zeta Beta Tau</p>
+          <p>Coursework: Econometrics, Advanced Financial Modeling, Computational Methods, Options &amp; Derivatives,
+            Money &amp; Banking</p>
+          <p>Activities: Presented original causal research to the Federal Reserve; Member of Alpha Kappa Psi Business
+            Fraternity and Zeta Beta Tau</p>
         </div>
       </div>
     </section>
   </main>
 </body>
+
 </html>
