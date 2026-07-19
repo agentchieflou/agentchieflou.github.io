@@ -90,8 +90,15 @@ def send_digest(top, stats, dry_run=False):
     msg["To"] = EMAIL_TO
     msg.attach(MIMEText("Your email client does not support HTML.", "plain"))
     msg.attach(MIMEText(body, "html"))
-    with smtplib.SMTP_SSL("smtp.gmail.com", 465, timeout=30) as server:
-        server.login(GMAIL_ADDRESS, GMAIL_APP_PASSWORD)
-        server.sendmail(GMAIL_ADDRESS, [EMAIL_TO], msg.as_string())
+    try:
+        with smtplib.SMTP_SSL("smtp.gmail.com", 465, timeout=30) as server:
+            server.login(GMAIL_ADDRESS, GMAIL_APP_PASSWORD)
+            server.sendmail(GMAIL_ADDRESS, [EMAIL_TO], msg.as_string())
+    except Exception as e:
+        # A bad SMTP secret must not kill the run — state/graph still commit,
+        # and the digest is preserved in the state dir.
+        log.warning("digest email failed (check GMAIL_APP_PASSWORD is a Google "
+                    "app password, not your account password): %s", e)
+        return False
     log.info("digest emailed to %s", EMAIL_TO)
     return True
