@@ -13,15 +13,40 @@
     rel="stylesheet" />
   <style>
     :root {
-      --bg: #05060a;
-      --card-bg: linear-gradient(160deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.01) 70%, rgba(125, 211, 252, 0.02));
-      --border: rgba(255, 255, 255, 0.08);
-      --border-hover: rgba(125, 211, 252, 0.3);
-      --ink: #eef1f6;
-      --dim: #9aa3b2;
-      --accent: #7dd3fc;
-      --accent-2: #c4b5fd;
-      --line: rgba(255, 255, 255, 0.06);
+      --bg: #121016;
+      --card-bg: linear-gradient(160deg, rgba(93, 74, 97, 0.25), rgba(75, 63, 116, 0.15) 70%, rgba(126, 155, 197, 0.1));
+      --border: rgba(200, 211, 229, 0.12);
+      --border-hover: rgba(126, 155, 197, 0.4);
+      --ink: #e7d2b8;
+      --dim: #b2a89e;
+      --accent: #7e9bc5;
+      --accent-2: #a76a5c;
+      --line: rgba(178, 168, 158, 0.12);
+      --blob-1: #4b3f74;
+      --blob-2: #a76a5c;
+    }
+
+    body.kate-mode {
+      --bg: #1a0f15;
+      --card-bg: linear-gradient(160deg, rgba(255, 182, 197, 0.1), rgba(255, 182, 197, 0.03) 70%, rgba(253, 216, 93, 0.04));
+      --border: rgba(255, 182, 197, 0.18);
+      --border-hover: rgba(255, 182, 197, 0.5);
+      --ink: #fff5f7;
+      --dim: #d9c2c7;
+      --accent: #ffb7c5;
+      --accent-2: #ffd15c;
+      --line: rgba(255, 182, 197, 0.12);
+      --blob-1: #ffb7c5;
+      --blob-2: #ffd15c;
+      --bow-red: #ff4f70;
+    }
+
+    /* Toggle content based on mode */
+    body.kate-mode .normal-only {
+      display: none !important;
+    }
+    body:not(.kate-mode) .kate-only {
+      display: none !important;
     }
 
     * {
@@ -41,6 +66,7 @@
       align-items: center;
       position: relative;
       overflow-x: hidden;
+      transition: background 0.4s ease, color 0.4s ease;
     }
 
     /* Blurry decorative background */
@@ -50,19 +76,20 @@
       height: 50vmax;
       border-radius: 50%;
       filter: blur(120px);
-      opacity: 0.08;
+      opacity: 0.12;
       z-index: 0;
       pointer-events: none;
+      transition: background 0.4s ease;
     }
 
     .b1 {
-      background: #2563eb;
+      background: var(--blob-1);
       top: -10%;
       left: -10%;
     }
 
     .b2 {
-      background: #7c3aed;
+      background: var(--blob-2);
       bottom: -10%;
       right: -10%;
     }
@@ -75,10 +102,12 @@
       max-width: 820px;
       margin-bottom: 24px;
       z-index: 10;
+      gap: 12px;
     }
 
     a.back-btn,
-    button.print-btn {
+    button.print-btn,
+    button.kate-toggle-btn {
       font-family: "Space Grotesk", sans-serif;
       font-size: 13px;
       font-weight: 500;
@@ -93,6 +122,7 @@
       display: inline-flex;
       align-items: center;
       gap: 8px;
+      outline: none;
     }
 
     a.back-btn:hover {
@@ -103,8 +133,23 @@
 
     button.print-btn:hover {
       border-color: var(--accent-2);
-      background: rgba(196, 181, 253, 0.08);
+      background: var(--border-hover);
       transform: translateY(-1px);
+    }
+
+    button.kate-toggle-btn:hover {
+      border-color: var(--accent);
+      background: var(--border-hover);
+      transform: translateY(-1px);
+    }
+
+    body.kate-mode button.kate-toggle-btn {
+      border-color: var(--accent);
+      box-shadow: 0 0 10px rgba(255, 183, 197, 0.25);
+    }
+
+    body.kate-mode button.kate-toggle-btn:hover {
+      box-shadow: 0 0 15px rgba(255, 183, 197, 0.45);
     }
 
     .resume-container {
@@ -274,6 +319,13 @@
       position: absolute;
       left: 4px;
       top: 0;
+    }
+
+    body.kate-mode ul.exp-bullets li::before {
+      content: "🎀";
+      font-size: 11px;
+      left: 0;
+      top: 1px;
     }
 
     ul.exp-bullets li strong {
@@ -461,21 +513,36 @@
 
   <nav class="actions-nav">
     <a href="index.html" class="back-btn">← Back to Home</a>
+    <button id="kateToggle" class="kate-toggle-btn">
+      <span class="normal-only">Kate Mode 🎀</span>
+      <span class="kate-only">Standard Mode 💻</span>
+    </button>
     <button onclick="window.print()" class="print-btn">⎙ Print / Save PDF</button>
   </nav>
 
   <main class="resume-container">
     <header>
-      <p class="kicker">Curriculum Vitae</p>
-      <h1>Michael Louard</h1>
+      <p class="kicker normal-only">Curriculum Vitae</p>
+      <p class="kicker kate-only">Proof he is on the computer too much 🎀</p>
+      
+      <h1 class="normal-only">Michael Louard</h1>
+      <h1 class="kate-only">Michael Louard (Screen Starer)</h1>
+      
       <div class="contact-info">
         <span>Raleigh, NC</span>
         <span>•</span>
         <a href="tel:+12169049535">216-904-9535</a>
+        
         <span>•</span>
-        <a href="mailto:mbf.louard@gmail.com">mbf.louard@gmail.com</a>
+        <!-- Normal: Email | Kate Mode: Michael's LinkedIn -->
+        <a class="normal-only" href="mailto:mbf.louard@gmail.com">mbf.louard@gmail.com</a>
+        <a class="kate-only" href="https://linkedin.com/in/michael-louard" target="_blank" rel="noopener">Michael's LinkedIn</a>
+        
         <span>•</span>
-        <a href="https://linkedin.com/in/michael-louard" target="_blank" rel="noopener">LinkedIn</a>
+        <!-- Normal: Michael's LinkedIn | Kate Mode: Kate's LinkedIn -->
+        <a class="normal-only" href="https://linkedin.com/in/michael-louard" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="kate-only" href="https://www.linkedin.com/in/kate-cole/" target="_blank" rel="noopener">Kate's LinkedIn</a>
+        
         <span>•</span>
         <a href="https://github.com/agentchieflou" target="_blank" rel="noopener">GitHub</a>
       </div>
@@ -483,7 +550,9 @@
 
     <section aria-labelledby="skills-heading">
       <h2 id="skills-heading">Technical Skills</h2>
-      <div class="skills-grid">
+      
+      <!-- Normal Skills -->
+      <div class="skills-grid normal-only">
         <div class="skill-category">
           <h3>Languages &amp; Automation</h3>
           <p>Python, R, SAS, Stata, SQL, PySpark, Go (exposure), COBOL (translation), Selenium, Headless Browsers</p>
@@ -498,127 +567,232 @@
             Mainframe Migrations, Telemetry &amp; Analytics</p>
         </div>
       </div>
+
+      <!-- Kate Mode Skills -->
+      <div class="skills-grid kate-only">
+        <div class="skill-category">
+          <h3>Languages &amp; Screen Words</h3>
+          <p>Python (not the snake, apparently), R (just a letter?), SQL (sounds like sequel, but boring), PySpark (sparkly but has no actual fire), Go (exposure to what? sunlight?), Headless Browsers (spooky name for opening Chrome really fast)</p>
+        </div>
+        <div class="skill-category">
+          <h3>Containers &amp; Grids</h3>
+          <p>Docker (not khaki pants), Kubernetes (sounds like a Greek salad), Excel (making grids of numbers green), Power BI (fancy bar charts to show bosses who also don't understand them)</p>
+        </div>
+        <div class="skill-category">
+          <h3>Real Core Competencies</h3>
+          <p>Sitting in an ergonomic chair, Sighing loudly at code, Pressing keys until something works, Explaining BERT (not from Sesame Street) to anyone who makes eye contact, Making simple problems require 500 lines of code</p>
+        </div>
+      </div>
     </section>
 
     <section aria-labelledby="experience-heading">
       <h2 id="experience-heading">Professional Experience</h2>
 
-      <div class="experience-item">
-        <div class="exp-header">
-          <div>
-            <span class="exp-title">Business Analytics Consultant</span> —
-            <span class="exp-company">PNC Bank</span>
+      <!-- Normal Experience -->
+      <div class="normal-only">
+        <div class="experience-item">
+          <div class="exp-header">
+            <div>
+              <span class="exp-title">Business Analytics Consultant</span> —
+              <span class="exp-company">PNC Bank</span>
+            </div>
+            <span class="exp-meta">Raleigh, NC | Nov 2025 — Present</span>
           </div>
-          <span class="exp-meta">Raleigh, NC | Nov 2025 — Present</span>
+          <ul class="exp-bullets">
+            <li><strong>Legacy Mainframe Migration:</strong> Designed and implemented a parameterized data validation
+              framework to compare and reconcile outputs across MongoDB, SOM DI, and OLNACS during a major asset class
+              migration. Enabled SME validation of 1,930 data fields, including 443 migration-impacted mappings and 207
+              business-critical fields, supporting on-time project delivery, avoiding a $30M contract renewal.</li>
+            <li><strong>Document Sourcing Automation:</strong> Developed a multi-scraper Python automation suite managed
+              by a master orchestrator to retrieve loan files, successfully closing out Document Process Management (DPM)
+              issues; engineered a proof-of-concept using Selenium before transitioning to a high-throughput API headless
+              browser connection.</li>
+            <li><strong>Telemetry &amp; Usage Analytics:</strong> Designed and developed grid-wide database telemetry and
+              table-level usage analytics that eliminated weeks of manual impact analysis for migrations and maintenance
+              events. Enabled DBAs and senior analysts to rapidly identify affected databases, accelerating migration
+              planning from weeks to days and reducing time spent on manual discovery.</li>
+            <li><strong>REST API Deployment:</strong> Currently containerizing custom scrapers and data parsing systems to
+              deploy them as new hosted REST APIs on OpenShift.</li>
+            <li><strong>AI Strategy &amp; Research:</strong> Researched and evaluated agentic workflows, RAG
+              architectures, and enterprise AI design patterns. Delivered internal demonstrations and recommendations
+              focused on resource-efficient implementations under strict enterprise security and token constraints.</li>
+          </ul>
         </div>
-        <ul class="exp-bullets">
-          <li><strong>Legacy Mainframe Migration:</strong> Designed and implemented a parameterized data validation
-            framework to compare and reconcile outputs across MongoDB, SOM DI, and OLNACS during a major asset class
-            migration. Enabled SME validation of 1,930 data fields, including 443 migration-impacted mappings and 207
-            business-critical fields, supporting on-time project delivery, avoiding a $30M contract renewal.</li>
-          <li><strong>Document Sourcing Automation:</strong> Developed a multi-scraper Python automation suite managed
-            by a master orchestrator to retrieve loan files, successfully closing out Document Process Management (DPM)
-            issues; engineered a proof-of-concept using Selenium before transitioning to a high-throughput API headless
-            browser connection.</li>
-          <li><strong>Telemetry &amp; Usage Analytics:</strong> Designed and developed grid-wide database telemetry and
-            table-level usage analytics that eliminated weeks of manual impact analysis for migrations and maintenance
-            events. Enabled DBAs and senior analysts to rapidly identify affected databases, accelerating migration
-            planning from weeks to days and reducing time spent on manual discovery.</li>
-          <li><strong>REST API Deployment:</strong> Currently containerizing custom scrapers and data parsing systems to
-            deploy them as new hosted REST APIs on OpenShift.</li>
-          <li><strong>AI Strategy &amp; Research:</strong> Researched and evaluated agentic workflows, RAG
-            architectures, and enterprise AI design patterns. Delivered internal demonstrations and recommendations
-            focused on resource-efficient implementations under strict enterprise security and token constraints.</li>
-        </ul>
+
+        <div class="experience-item">
+          <div class="exp-header">
+            <div>
+              <span class="exp-title">Quantitative Analytics — Model Development &amp; Engineering</span> —
+              <span class="exp-company">PNC Bank</span>
+            </div>
+            <span class="exp-meta">McLean, VA | 2023 — Nov 2025</span>
+          </div>
+          <ul class="exp-bullets">
+            <li><strong>REST API Containerization:</strong> Designed, containerized, and deployed three production-grade
+              REST APIs on OpenShift via Helm deployments, complying with enterprise CI/CD and Policy as Code guidelines.
+            </li>
+            <li><strong>Recurring Transaction Identification API:</strong> Ported core detection algorithms from Python
+              into a containerized service, integrating directly with downstream credit risk systems.</li>
+            <li><strong>BERT Transaction Classification API:</strong> Operationalized a fine-tuned BERT language model to
+              classify transaction records at scale, converting model outputs into a consumable, real-time API.</li>
+            <li><strong>QA Environment API:</strong> Deployed a specialized testing API navigating rigorous enterprise
+              governance constraints, restricted access networks, and Policy as Code compliance gates.</li>
+            <li><strong>Data Visualization:</strong> Built Power BI semantic models and interactive dashboards to provide
+              stakeholders with portfolio-wide performance reporting.</li>
+          </ul>
+        </div>
+
+        <div class="experience-item">
+          <div class="exp-header">
+            <div>
+              <span class="exp-title">Quantitative Analytics — BSAM Residential Modeling</span> —
+              <span class="exp-company">PNC Bank</span>
+            </div>
+            <span class="exp-meta">McLean, VA | 2023</span>
+          </div>
+          <ul class="exp-bullets">
+            <li><strong>CECL Reserve Forecasting:</strong> Executed reserve forecasting across Mortgage and Home Equity
+              segments, analyzing a 500K+ loan portfolio with <strong>$70B+</strong> in assets across four macroeconomic
+              scenarios.</li>
+            <li><strong>M&amp;A Integration:</strong> Led the integration of BBVA mortgage data, assessing 23,000 loans
+              for model suitability through back-testing, performance monitoring, and reasonableness reviews.</li>
+            <li><strong>Competitor Stress Analysis:</strong> Built a Peer Bank Analysis Dashboard to monitor and visualize
+              industry-wide stressors, improving executive-level competitive risk visibility.</li>
+            <li><strong>Regulatory Standards:</strong> Applied OCC and Federal Reserve model risk management regulations
+              (SR 11-7) throughout model development, testing, and validation lifecycles.</li>
+          </ul>
+        </div>
+
+        <div class="experience-item">
+          <div class="exp-header">
+            <div>
+              <span class="exp-title">Quantitative Analytics — Home Equity Pricing</span> —
+              <span class="exp-company">PNC Bank</span>
+            </div>
+            <span class="exp-meta">McLean, VA | 2022 — 2023</span>
+          </div>
+          <ul class="exp-bullets">
+            <li><strong>Pricing Workflow Automation:</strong> Automated manual pricing workflows in Python, saving
+              qualified analysts 30 minutes daily and new analysts 60 minutes daily; completely eliminated manual entry
+              errors which previously resulted in 3+ hours of rework and operational/reputational risks.</li>
+            <li><strong>Performance Monitoring:</strong> Created a rate-change effectiveness tool to analyze pricing
+              changes, establishing it as the pricing team's standard performance-monitoring tool.</li>
+            <li><strong>Elasticity Research:</strong> Led a research initiative evaluating standard deviation as a proxy
+              for price elasticity in Home Equity product pricing.</li>
+            <li><strong>Data Architecture:</strong> Overhauled team version control practices and data storage
+              architectures to ensure data integrity and reproducibility.</li>
+          </ul>
+        </div>
+
+        <div class="experience-item">
+          <div class="exp-header">
+            <div>
+              <span class="exp-title">Retail Lending Product Management — Home Equity</span> —
+              <span class="exp-company">PNC Bank</span>
+            </div>
+            <span class="exp-meta">McLean, VA | 2022</span>
+          </div>
+          <ul class="exp-bullets">
+            <li><strong>Process Redesign:</strong> Redesigned the HELOC communications and statement print workflows,
+              enabling migration to an in-house service that reduced vendor printing costs.</li>
+            <li><strong>Benchmarking Analysis:</strong> Performed competitive benchmarking analyses on peer bank intro
+              rates and discount models to optimize PNC's Home Equity market positioning.</li>
+            <li><strong>Expense Reduction:</strong> Analyzed HELOC origination fee structures, identifying restructuring
+              opportunities that reduced annual operating expenses by approximately <strong>$1 million</strong>.</li>
+          </ul>
+        </div>
       </div>
 
-      <div class="experience-item">
-        <div class="exp-header">
-          <div>
-            <span class="exp-title">Quantitative Analytics — Model Development &amp; Engineering</span> —
-            <span class="exp-company">PNC Bank</span>
+      <!-- Kate Mode Experience -->
+      <div class="kate-only">
+        <div class="experience-item">
+          <div class="exp-header">
+            <div>
+              <span class="exp-title">Professional Screen-Starer &amp; WiFi Destroyer</span> —
+              <span class="exp-company">PNC Bank</span>
+            </div>
+            <span class="exp-meta">Raleigh, NC | Nov 2025 — Present</span>
           </div>
-          <span class="exp-meta">McLean, VA | 2023 — Nov 2025</span>
+          <ul class="exp-bullets">
+            <li><strong>Legacy Mainframe Migration:</strong> Moved numbers from a very old computer system to a slightly newer computer system so the bank didn't have to pay $30 million. Did I get any of that $30M? No, I got a pat on the back and more work.</li>
+            <li><strong>Document Sourcing Automation:</strong> Wrote a script to copy and paste files automatically because doing it manually was causing joint pain. Used 'headless browsers' which sounds cool but is just a browser with social anxiety.</li>
+            <li><strong>Telemetry &amp; Usage Analytics:</strong> Built a tracker to track who is tracking what in the database. Basically inception, but with SQL tables, so other people can skip doing actual work.</li>
+            <li><strong>REST API Deployment:</strong> Putting code in digital containers (not Tupperware) so it can run on someone else's computer. It still crashes, but now it's OpenShift's problem.</li>
+            <li><strong>AI Strategy &amp; Research:</strong> Spent weeks asking ChatGPT how to do my job, then made a PowerPoint slide about it to convince management we are 'innovating' under budget.</li>
+          </ul>
         </div>
-        <ul class="exp-bullets">
-          <li><strong>REST API Containerization:</strong> Designed, containerized, and deployed three production-grade
-            REST APIs on OpenShift via Helm deployments, complying with enterprise CI/CD and Policy as Code guidelines.
-          </li>
-          <li><strong>Recurring Transaction Identification API:</strong> Ported core detection algorithms from Python
-            into a containerized service, integrating directly with downstream credit risk systems.</li>
-          <li><strong>BERT Transaction Classification API:</strong> Operationalized a fine-tuned BERT language model to
-            classify transaction records at scale, converting model outputs into a consumable, real-time API.</li>
-          <li><strong>QA Environment API:</strong> Deployed a specialized testing API navigating rigorous enterprise
-            governance constraints, restricted access networks, and Policy as Code compliance gates.</li>
-          <li><strong>Data Visualization:</strong> Built Power BI semantic models and interactive dashboards to provide
-            stakeholders with portfolio-wide performance reporting.</li>
-        </ul>
-      </div>
 
-      <div class="experience-item">
-        <div class="exp-header">
-          <div>
-            <span class="exp-title">Quantitative Analytics — BSAM Residential Modeling</span> —
-            <span class="exp-company">PNC Bank</span>
+        <div class="experience-item">
+          <div class="exp-header">
+            <div>
+              <span class="exp-title">Screen Math &amp; Chart Maker</span> —
+              <span class="exp-company">PNC Bank</span>
+            </div>
+            <span class="exp-meta">McLean, VA | 2023 — Nov 2025</span>
           </div>
-          <span class="exp-meta">McLean, VA | 2023</span>
+          <ul class="exp-bullets">
+            <li><strong>REST API Containerization:</strong> Built three APIs (which are just digital drive-thrus for computers) and used 'Helm' which makes me sound like a ship captain but I'm just typing in a basement.</li>
+            <li><strong>Recurring Transaction Identification API:</strong> Wrote code to figure out if people are paying for Netflix every month. Spoilers: they are. The bank is very impressed with this discovery.</li>
+            <li><strong>BERT Transaction Classification API:</strong> Trained an AI named after a Sesame Street character to read credit card receipts and guess if you bought coffee or a lawnmower.</li>
+            <li><strong>QA Environment API:</strong> Jumped through 50 corporate hoops to deploy a testing environment that immediately got blocked by corporate firewall anyway.</li>
+            <li><strong>Data Visualization:</strong> Made colorful charts in Power BI so executives can nod slowly during meetings and pretend they understand the math.</li>
+          </ul>
         </div>
-        <ul class="exp-bullets">
-          <li><strong>CECL Reserve Forecasting:</strong> Executed reserve forecasting across Mortgage and Home Equity
-            segments, analyzing a 500K+ loan portfolio with <strong>$70B+</strong> in assets across four macroeconomic
-            scenarios.</li>
-          <li><strong>M&amp;A Integration:</strong> Led the integration of BBVA mortgage data, assessing 23,000 loans
-            for model suitability through back-testing, performance monitoring, and reasonableness reviews.</li>
-          <li><strong>Competitor Stress Analysis:</strong> Built a Peer Bank Analysis Dashboard to monitor and visualize
-            industry-wide stressors, improving executive-level competitive risk visibility.</li>
-          <li><strong>Regulatory Standards:</strong> Applied OCC and Federal Reserve model risk management regulations
-            (SR 11-7) throughout model development, testing, and validation lifecycles.</li>
-        </ul>
-      </div>
 
-      <div class="experience-item">
-        <div class="exp-header">
-          <div>
-            <span class="exp-title">Quantitative Analytics — Home Equity Pricing</span> —
-            <span class="exp-company">PNC Bank</span>
+        <div class="experience-item">
+          <div class="exp-header">
+            <div>
+              <span class="exp-title">Guessing How Mortgages Work</span> —
+              <span class="exp-company">PNC Bank</span>
+            </div>
+            <span class="exp-meta">McLean, VA | 2023</span>
           </div>
-          <span class="exp-meta">McLean, VA | 2022 — 2023</span>
+          <ul class="exp-bullets">
+            <li><strong>CECL Reserve Forecasting:</strong> Guessed how much money people might lose on their mortgages if the economy goes down. Stared at a spreadsheet representing $70 billion while eating a cold sandwich.</li>
+            <li><strong>M&amp;A Integration:</strong> Cleaned up another bank's messy Excel files after we bought them. Spent hours checking if their mortgage data made any sense (mostly, it didn't).</li>
+            <li><strong>Competitor Stress Analysis:</strong> Built a dashboard to spy on other banks' stress levels, showing everyone else is also just winging it.</li>
+            <li><strong>Regulatory Standards:</strong> Ensured our computer math followed rules written by government bureaucrats who haven't opened a code editor since 1995.</li>
+          </ul>
         </div>
-        <ul class="exp-bullets">
-          <li><strong>Pricing Workflow Automation:</strong> Automated manual pricing workflows in Python, saving
-            qualified analysts 30 minutes daily and new analysts 60 minutes daily; completely eliminated manual entry
-            errors which previously resulted in 3+ hours of rework and operational/reputational risks.</li>
-          <li><strong>Performance Monitoring:</strong> Created a rate-change effectiveness tool to analyze pricing
-            changes, establishing it as the pricing team's standard performance-monitoring tool.</li>
-          <li><strong>Elasticity Research:</strong> Led a research initiative evaluating standard deviation as a proxy
-            for price elasticity in Home Equity product pricing.</li>
-          <li><strong>Data Architecture:</strong> Overhauled team version control practices and data storage
-            architectures to ensure data integrity and reproducibility.</li>
-        </ul>
-      </div>
 
-      <div class="experience-item">
-        <div class="exp-header">
-          <div>
-            <span class="exp-title">Retail Lending Product Management — Home Equity</span> —
-            <span class="exp-company">PNC Bank</span>
+        <div class="experience-item">
+          <div class="exp-header">
+            <div>
+              <span class="exp-title">Interest Rate Experimenter</span> —
+              <span class="exp-company">PNC Bank</span>
+            </div>
+            <span class="exp-meta">McLean, VA | 2022 — 2023</span>
           </div>
-          <span class="exp-meta">McLean, VA | 2022</span>
+          <ul class="exp-bullets">
+            <li><strong>Pricing Workflow Automation:</strong> Saved my coworkers 30 minutes a day so they can spend more time scrolling Reddit. Also stopped them from mistyping interest rates and causing bank panics.</li>
+            <li><strong>Performance Monitoring:</strong> Made a tool to check if raising interest rates made us more money. Turns out, it did, but people weren't very happy about it.</li>
+            <li><strong>Elasticity Research:</strong> Wrote a long research paper using fancy math words to explain why people stop borrowing money when it gets too expensive.</li>
+            <li><strong>Data Architecture:</strong> Forced the team to stop naming files 'final_final_v2_edit.xlsx' and actually use Git, which was met with heavy resistance.</li>
+          </ul>
         </div>
-        <ul class="exp-bullets">
-          <li><strong>Process Redesign:</strong> Redesigned the HELOC communications and statement print workflows,
-            enabling migration to an in-house service that reduced vendor printing costs.</li>
-          <li><strong>Benchmarking Analysis:</strong> Performed competitive benchmarking analyses on peer bank intro
-            rates and discount models to optimize PNC's Home Equity market positioning.</li>
-          <li><strong>Expense Reduction:</strong> Analyzed HELOC origination fee structures, identifying restructuring
-            opportunities that reduced annual operating expenses by approximately <strong>$1 million</strong>.</li>
-        </ul>
+
+        <div class="experience-item">
+          <div class="exp-header">
+            <div>
+              <span class="exp-title">Mail-Printing Optimization Intern</span> —
+              <span class="exp-company">PNC Bank</span>
+            </div>
+            <span class="exp-meta">McLean, VA | 2022</span>
+          </div>
+          <ul class="exp-bullets">
+            <li><strong>Process Redesign:</strong> Changed how the bank prints and mails paper letters to people. Saved money by not paying external printing companies to mail spam.</li>
+            <li><strong>Benchmarking Analysis:</strong> Looked at what other banks charge for loans, copied their homework, and presented it as my own strategic vision.</li>
+            <li><strong>Expense Reduction:</strong> Found out we were wasting a million dollars on fee administration. Stopped doing that, bank saved $1M, I got a nice coffee mug.</li>
+          </ul>
+        </div>
       </div>
     </section>
 
     <section aria-labelledby="education-heading">
       <h2 id="education-heading">Education</h2>
-      <div class="education-item">
+      
+      <!-- Normal Education -->
+      <div class="education-item normal-only">
         <div class="edu-header">
           <div>
             <span class="edu-school">Case Western Reserve University</span>
@@ -633,8 +807,40 @@
             Fraternity and Zeta Beta Tau</p>
         </div>
       </div>
+
+      <!-- Kate Mode Education -->
+      <div class="education-item kate-only">
+        <div class="edu-header">
+          <div>
+            <span class="edu-school">Case Western Reserve University</span>
+          </div>
+          <span class="edu-meta">Cleveland, OH | 2018 — 2022</span>
+        </div>
+        <div class="edu-details">
+          <p><strong>Bachelor of Arts in Economics</strong> (how to talk about money without having any) | Finance (how to lose it faster)</p>
+          <p>Coursework: Advanced math that I have never once used at PNC.</p>
+          <p>Activities: Told the Federal Reserve how to run the economy (they did not listen); paid dues to stand in a suit with other business majors.</p>
+        </div>
+      </div>
     </section>
   </main>
+
+  <script>
+    const toggleBtn = document.getElementById('kateToggle');
+    
+    // Set initial state from localStorage
+    const isKateMode = localStorage.getItem('kateMode') === 'true';
+    if (isKateMode) {
+      document.body.classList.add('kate-mode');
+    }
+
+    if (toggleBtn) {
+      toggleBtn.addEventListener('click', () => {
+        const active = document.body.classList.toggle('kate-mode');
+        localStorage.setItem('kateMode', active ? 'true' : 'false');
+      });
+    }
+  </script>
 </body>
 
 </html>

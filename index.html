@@ -18,6 +18,37 @@
     --line: rgba(255, 255, 255, 0.12);
     --accent: #7dd3fc;
     --accent-2: #c4b5fd;
+    --nebula-1: #2563eb;
+    --nebula-2: #7c3aed;
+    --card-bg: linear-gradient(160deg, rgba(255, 255, 255, 0.075), rgba(255, 255, 255, 0.02) 45%, rgba(125, 211, 252, 0.05));
+    --hover-border: rgba(125, 211, 252, 0.55);
+    --hover-bg: rgba(125, 211, 252, 0.07);
+    --hover-border-2: rgba(196, 181, 253, 0.6);
+    --hover-bg-2: rgba(196, 181, 253, 0.08);
+  }
+
+  body.kate-mode {
+    --bg: #1a0f15;
+    --ink: #fff5f7;
+    --dim: #d9c2c7;
+    --line: rgba(255, 182, 197, 0.18);
+    --accent: #ffb7c5;
+    --accent-2: #ffd15c;
+    --nebula-1: #ffb7c5;
+    --nebula-2: #ffd15c;
+    --card-bg: linear-gradient(160deg, rgba(255, 182, 197, 0.1), rgba(255, 182, 197, 0.03) 70%, rgba(253, 216, 93, 0.04));
+    --hover-border: rgba(255, 182, 197, 0.55);
+    --hover-bg: rgba(255, 182, 197, 0.1);
+    --hover-border-2: rgba(254, 216, 93, 0.6);
+    --hover-bg-2: rgba(254, 216, 93, 0.08);
+  }
+
+  /* Toggle content based on mode */
+  body.kate-mode .normal-only {
+    display: none !important;
+  }
+  body:not(.kate-mode) .kate-only {
+    display: none !important;
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -32,6 +63,7 @@
     display: grid;
     grid-template-rows: auto 1fr auto auto;
     height: 100dvh;
+    transition: background 0.4s ease, color 0.4s ease;
   }
 
   /* ---------- backdrop ---------- */
@@ -47,9 +79,10 @@
     z-index: 0;
     pointer-events: none;
     animation: drift 26s ease-in-out infinite alternate;
+    transition: background 0.4s ease;
   }
-  .n1 { background: #2563eb; top: -20vmax; left: -15vmax; }
-  .n2 { background: #7c3aed; bottom: -25vmax; right: -15vmax; animation-delay: -13s; }
+  .n1 { background: var(--nebula-1); top: -20vmax; left: -15vmax; }
+  .n2 { background: var(--nebula-2); bottom: -25vmax; right: -15vmax; animation-delay: -13s; }
 
   @keyframes drift {
     from { transform: translate(0, 0) scale(1); }
@@ -74,6 +107,33 @@
     color: var(--ink);
     font-weight: 700;
     letter-spacing: 0.3em;
+  }
+  .kate-toggle-btn {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--line);
+    color: var(--ink);
+    padding: 8px 16px;
+    border-radius: 999px;
+    cursor: pointer;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transition: all 0.2s ease;
+    z-index: 20;
+    outline: none;
+  }
+  .kate-toggle-btn:hover {
+    border-color: var(--accent);
+    background: var(--hover-bg);
+    transform: translateY(-1px);
+  }
+  body.kate-mode .kate-toggle-btn {
+    border-color: var(--accent);
+    box-shadow: 0 0 10px rgba(255, 183, 197, 0.25);
+  }
+  body.kate-mode .kate-toggle-btn:hover {
+    box-shadow: 0 0 15px rgba(255, 183, 197, 0.45);
   }
   .face-label { transition: opacity 0.3s ease; }
 
@@ -124,7 +184,7 @@
     justify-content: center;
     gap: 18px;
     padding: clamp(28px, 5vw, 52px);
-    background: linear-gradient(160deg, rgba(255, 255, 255, 0.075), rgba(255, 255, 255, 0.02) 45%, rgba(125, 211, 252, 0.05));
+    background: var(--card-bg);
     border: 1px solid var(--line);
     border-radius: 22px;
     box-shadow: 0 30px 80px rgba(0, 0, 0, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.08);
@@ -200,8 +260,8 @@
     transition: border-color 0.2s ease, background 0.2s ease, transform 0.2s ease;
   }
   .repos a:hover {
-    border-color: rgba(125, 211, 252, 0.55);
-    background: rgba(125, 211, 252, 0.07);
+    border-color: var(--hover-border);
+    background: var(--hover-bg);
     transform: translateX(4px);
   }
   .repo-name {
@@ -244,8 +304,8 @@
     transition: border-color 0.2s ease, background 0.2s ease, transform 0.2s ease;
   }
   .links a:hover {
-    border-color: rgba(196, 181, 253, 0.6);
-    background: rgba(196, 181, 253, 0.08);
+    border-color: var(--hover-border-2);
+    background: var(--hover-bg-2);
     transform: translateX(4px);
   }
   .links a small { display: block; font-family: "Inter", sans-serif; font-size: 11px; color: var(--dim); font-weight: 400; margin-top: 3px; }
@@ -257,12 +317,12 @@
     font-size: 12px;
     color: var(--accent);
     text-decoration: none;
-    border: 1px solid rgba(125, 211, 252, 0.35);
+    border: 1px solid var(--border);
     padding: 8px 14px;
     border-radius: 999px;
     transition: background 0.2s ease;
   }
-  .pill:hover { background: rgba(125, 211, 252, 0.1); }
+  .pill:hover { background: var(--hover-bg); }
 
   /* ---------- controls ---------- */
   .controls {
@@ -335,6 +395,10 @@
 
   <header class="hud">
     <span class="brand">ML</span>
+    <button id="kateToggle" class="kate-toggle-btn">
+      <span class="normal-only">Kate Mode 🎀</span>
+      <span class="kate-only">Standard Mode 💻</span>
+    </button>
     <span class="face-label" id="faceLabel">01 · Name</span>
   </header>
 
@@ -343,11 +407,15 @@
       <div class="prism" id="prism">
 
         <section class="face" style="--i:0" aria-label="Name">
-          <p class="kicker">Portfolio</p>
+          <p class="kicker normal-only">Portfolio</p>
+          <p class="kicker kate-only">Professional Husband-in-Training 🎀</p>
           <h1>Michael<br />Louard</h1>
-          <p class="tagline">Business Analytics Consultant · PNC</p>
-          <p class="meta">Agentic workflows · RAG · Raleigh, NC</p>
-          <blockquote>&ldquo;When in doubt, question the doubt, deny the doubt, then stop doubting.&rdquo;</blockquote>
+          <p class="tagline normal-only">Business Analytics Consultant · PNC</p>
+          <p class="tagline kate-only">Wastes wifi &amp; stares at black screens · PNC</p>
+          <p class="meta normal-only">Agentic workflows · RAG · Raleigh, NC</p>
+          <p class="meta kate-only">Spends too much time on the computer · Raleigh, NC</p>
+          <blockquote class="normal-only">&ldquo;When in doubt, question the doubt, deny the doubt, then stop doubting.&rdquo;</blockquote>
+          <blockquote class="kate-only">&ldquo;I swear I'm working, the screen is just black.&rdquo;</blockquote>
         </section>
 
         <section class="face" style="--i:1" aria-label="GitHub projects">
@@ -365,6 +433,12 @@
           <p class="kicker">Connect</p>
           <h2>Find me</h2>
           <ul class="links">
+            <li class="kate-only">
+              <a href="https://www.linkedin.com/in/kate-cole/" target="_blank" rel="noopener">
+                <span>Kate's LinkedIn<small>linkedin.com/in/kate-cole · Actual Boss</small></span>
+                <span class="arrow">↗</span>
+              </a>
+            </li>
             <li>
               <a href="https://www.linkedin.com/in/michael-louard" target="_blank" rel="noopener">
                 <span>LinkedIn<small>linkedin.com/in/michael-louard</small></span>
@@ -373,7 +447,7 @@
             </li>
             <li>
               <a href="resume.html">
-                <span>Résumé<small>Current CV — Interactive & Printable</small></span>
+                <span>Résumé<small>Current CV — Interactive &amp; Printable</small></span>
                 <span class="arrow">→</span>
               </a>
             </li>
@@ -407,6 +481,20 @@
   <p class="hint">Rotate · ← → · Swipe</p>
 
 <script>
+  // Set initial state from localStorage
+  const isKateMode = localStorage.getItem('kateMode') === 'true';
+  if (isKateMode) {
+    document.body.classList.add('kate-mode');
+  }
+
+  const toggleBtn = document.getElementById('kateToggle');
+  if (toggleBtn) {
+    toggleBtn.addEventListener('click', () => {
+      const active = document.body.classList.toggle('kate-mode');
+      localStorage.setItem('kateMode', active ? 'true' : 'false');
+    });
+  }
+
   /* ---------- prism rotation ---------- */
   const prism = document.getElementById('prism');
   const dots = [...document.querySelectorAll('#dots .dot')];
@@ -460,12 +548,15 @@
 
   function tick(t) {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
+    const isKate = document.body.classList.contains('kate-mode');
     for (const st of stars) {
       st.p += st.s;
       const a = 0.25 + 0.55 * (0.5 + 0.5 * Math.sin(st.p + t * 0.0004));
       ctx.beginPath();
       ctx.arc(st.x, st.y, st.r * devicePixelRatio, 0, Math.PI * 2);
-      ctx.fillStyle = `rgba(220, 230, 255, ${a})`;
+      ctx.fillStyle = isKate 
+        ? (st.r > 1.0 ? `rgba(254, 216, 93, ${a})` : `rgba(255, 182, 197, ${a})`)
+        : `rgba(220, 230, 255, ${a})`;
       ctx.fill();
     }
     requestAnimationFrame(tick);
