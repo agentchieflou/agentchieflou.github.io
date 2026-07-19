@@ -1,0 +1,77 @@
+name: Career Agent
+
+on:
+  schedule:
+    - cron: "30 11 * * *"   # daily ~7:30am ET
+  push:
+    branches: [main]         # re-index when the portfolio/resume changes
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: career-agent
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout site (main)
+        uses: actions/checkout@v4
+
+      - name: Checkout agent state (agent-data)
+        uses: actions/checkout@v4
+        continue-on-error: true   # branch does not exist on the first run
+        with:
+          ref: agent-data
+          path: state
+
+      - name: Ensure state dir exists
+        run: mkdir -p state
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: agent/requirements.txt
+
+      - name: Cache embedding model
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/fastembed
+          key: fastembed-bge-small-en-v1.5
+
+      - name: Install dependencies
+        run: pip install -r agent/requirements.txt
+
+      - name: Run pipeline
+        env:
+          AGENT_STATE_DIR: ${{ github.workspace }}/state
+          FASTEMBED_CACHE_DIR: ~/.cache/fastembed
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          ADZUNA_APP_ID: ${{ secrets.ADZUNA_APP_ID }}
+          ADZUNA_APP_KEY: ${{ secrets.ADZUNA_APP_KEY }}
+          USAJOBS_API_KEY: ${{ secrets.USAJOBS_API_KEY }}
+          USAJOBS_USER_AGENT: ${{ secrets.USAJOBS_USER_AGENT }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+        run: python agent/main.py
+
+      - name: Commit agent state
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          cd state
+          if [ ! -d .git ]; then
+            git init -b agent-data
+          fi
+          git config user.name "career-agent[bot]"
+          git config user.email "actions@github.com"
+          git remote set-url origin "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" 2>/dev/null \
+            || git remote add origin "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          git add -A
+          git commit -m "agent run $(date -u +%Y-%m-%dT%H:%MZ)" || { echo "no state changes"; exit 0; }
+          git push origin HEAD:agent-data

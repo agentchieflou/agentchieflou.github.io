@@ -1,0 +1,82 @@
+"""Career agent pipeline entry point.
+
+Stages run in order against the shared state directory; each is idempotent,
+so a partially-failed run is safe to retry. Future agents (resume refinement,
+cover-letter drafts, interview prep, ...) plug in as additional stages here
+or as separate consumers of the agent-data branch.
+
+Usage:
+  python agent/main.py             # full run (emails if GMAIL_APP_PASSWORD set)
+  python agent/main.py --dry-run   # no email; digest written to state dir
+"""
+import argparse
+import datetime as dt
+import logging
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+
+import config
+from util import log
+
+
+def main():
+    parser = argparse.ArgumentParser(description="Run the career agent pipeline")
+    parser.add_argument("--dry-run", action="store_true",
+                        help="fetch, rank and score, but do not send email")
+    parser.add_argument("--state-dir", help="override state directory")
+    args = parser.parse_args()
+
+    logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
+    if args.state_dir:
+        # Must happen before the stage modules are imported — they resolve
+        # their state file paths from config.STATE_DIR at import time.
+        config.STATE_DIR = Path(args.state_dir)
+
+    import digest as digest_mod
+    import fetch_jobs
+    import graph_export
+    import index_profile
+    import rank
+    import score_llm
+
+    config.STATE_DIR.mkdir(parents=True, exist_ok=True)
+
+    log.info("stage 1/5: profile indexing")
+    profile, changed, note = index_profile.build_profile()
+    log.info("profile version %s (%s skills, changed=%s)",
+             profile["version"], len(profile.get("skills", [])), changed)
+
+    log.info("stage 2/5: job discovery")
+    jobs, new_ids, expired = fetch_jobs.fetch_all(profile.get("target_titles", []))
+    log.info("%d live jobs, %d new, %d expired", len(jobs), len(new_ids), expired)
+
+    log.info("stage 3/5: embedding prefilter")
+    ranked = rank.rank_jobs(profile, jobs)
+
+    log.info("stage 4/5: LLM scoring")
+    scores, newly_scored = score_llm.score_candidates(profile, ranked)
+    log.info("%d newly scored, %d total scored", newly_scored, len(scores))
+
+    log.info("stage 5/5: digest + graph export")
+    top = digest_mod.pick_top(ranked, scores)
+    stats = {
+        "date": dt.date.today().isoformat(),
+        "evaluated": len(jobs),
+        "sources": len(fetch_jobs.SOURCES),
+        "new": len(new_ids),
+        "expired": expired,
+        "profile_note": note,
+    }
+    digest_mod.send_digest(top, stats, dry_run=args.dry_run)
+    graph_export.export_graph(profile, ranked, scores)
+
+    for i, (j, s) in enumerate(top, 1):
+        log.info("top %d: %s @ %s (score %d, conf %.2f)",
+                 i, j["title"], j["company"], s["match_score"], s["confidence"])
+    log.info("done")
+
+
+if __name__ == "__main__":
+    main()
