@@ -33,8 +33,9 @@ def _discover_model():
     flash = [n for n in names if "flash" in n
              and not any(x in n for x in ("image", "live", "tts", "audio", "8b"))]
     log.info("flash candidates: %s", flash)
-    # Prefer gemini-2.0-flash or gemini-2.0-flash-001 over the alias
-    for preferred in ("gemini-2.0-flash", "gemini-2.0-flash-001"):
+    # Prefer cheapest flash-lite variants; fall back to standard flash if absent
+    for preferred in ("gemini-2.0-flash-lite", "gemini-2.0-flash-lite-001",
+                      "gemini-2.0-flash-001", "gemini-2.0-flash"):
         if preferred in flash:
             return preferred
     # Reverse lexicographic puts newer major versions first (3 > 2.5)
