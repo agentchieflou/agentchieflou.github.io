@@ -103,9 +103,11 @@ def _extract_json(text):
     text = re.sub(r"^```(?:json)?|```$", "", text.strip(), flags=re.MULTILINE)
     start = text.find("{")
     if start == -1:
+        log.warning("Gemini raw response (no opening brace): %.500s", text)
         raise ValueError("no JSON object in response")
     end = text.rfind("}")
     if end == -1 or end < start:
+        log.warning("Gemini raw response (no closing brace): %.500s", text)
         raise ValueError("no closing brace found in response")
     return json.loads(text[start:end + 1])
 
