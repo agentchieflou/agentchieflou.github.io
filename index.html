@@ -76,15 +76,16 @@
     width: 60vmax;
     height: 60vmax;
     border-radius: 50%;
-    filter: blur(120px);
     opacity: 0.16;
     z-index: 0;
     pointer-events: none;
     animation: drift 26s ease-in-out infinite alternate;
-    transition: background 0.4s ease;
+    will-change: transform;
   }
-  .n1 { background: var(--nebula-1); top: -20vmax; left: -15vmax; }
-  .n2 { background: var(--nebula-2); bottom: -25vmax; right: -15vmax; animation-delay: -13s; }
+  /* Pre-blurred look via gradient falloff — a live filter: blur(120px) here forces
+     Safari to re-rasterize a viewport-sized layer and stalls mobile GPUs. */
+  .n1 { background: radial-gradient(circle closest-side, var(--nebula-1) 0%, var(--nebula-1) 22%, transparent 72%); top: -20vmax; left: -15vmax; }
+  .n2 { background: radial-gradient(circle closest-side, var(--nebula-2) 0%, var(--nebula-2) 22%, transparent 72%); bottom: -25vmax; right: -15vmax; animation-delay: -13s; }
 
   @keyframes drift {
     from { transform: translate(0, 0) scale(1); }
@@ -149,7 +150,7 @@
     perspective-origin: 50% 42%;
   }
 
-  .float { animation: hover 7s ease-in-out infinite; transform-style: preserve-3d; }
+  .float { animation: hover 7s ease-in-out infinite; transform-style: preserve-3d; will-change: transform; }
 
   @keyframes hover {
     0%, 100% { transform: translateY(0); }
@@ -171,7 +172,6 @@
     inset: -18%;
     background: radial-gradient(closest-side, rgba(125, 211, 252, 0.14), transparent 70%);
     transform: translateZ(-220px);
-    filter: blur(10px);
     pointer-events: none;
   }
 
@@ -456,8 +456,15 @@
     .controls { gap: 20px; }
   }
 
+  /* Touch devices: lighter backdrop blur — cost grows superlinearly with radius
+     and these recompute whenever the starfield behind them repaints. */
+  @media (pointer: coarse) {
+    .face { backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); }
+    .nav-arrow { backdrop-filter: blur(5px); -webkit-backdrop-filter: blur(5px); }
+  }
+
   @media (prefers-reduced-motion: reduce) {
-    .float, .nebula { animation: none; }
+    .float, .nebula, .skeleton { animation: none; }
     .prism { transition-duration: 0.4s; }
   }
 </style>
@@ -527,6 +534,12 @@
               </a>
             </li>
             <li>
+              <a href="skills.html">
+                <span>Skills Graph<small>Live skill-to-market alignment map</small></span>
+                <span class="arrow">→</span>
+              </a>
+            </li>
+            <li>
               <a href="https://github.com/agentchieflou" target="_blank" rel="noopener">
                 <span>GitHub<small>github.com/agentchieflou</small></span>
                 <span class="arrow">↗</span>
@@ -559,6 +572,8 @@
 <script>
   // Set initial state from localStorage
   const isKateMode = localStorage.getItem('kateMode') === 'true';
+  // Cached for the starfield loop — avoids a classList read every frame.
+  let kateStars = isKateMode;
   if (isKateMode) {
     document.body.classList.add('kate-mode');
   }
@@ -567,7 +582,9 @@
   if (toggleBtn) {
     toggleBtn.addEventListener('click', () => {
       const active = document.body.classList.toggle('kate-mode');
+      kateStars = active;
       localStorage.setItem('kateMode', active ? 'true' : 'false');
+      if (typeof redrawStarsIfStatic === 'function') redrawStarsIfStatic();
     });
   }
 
@@ -627,7 +644,7 @@
   /* ---------- puzzle assembly animation ---------- */
   function initPuzzle() {
     const heroFace = document.querySelector('.face[style*="--i:0"]');
-    if (!heroFace) {
+    if (!heroFace || matchMedia('(prefers-reduced-motion: reduce)').matches) {
       navigationEnabled = true;
       return;
     }
@@ -649,8 +666,12 @@
     svgDefs.appendChild(defs);
     puzzleContainer.appendChild(svgDefs);
 
-    // Randomize grid sizes around 12-25 pieces
-    const configs = [
+    // Randomize grid sizes around 12-25 pieces; phones get the 12-piece grids
+    // only — each piece is an animated clone, and 25 at once janks mobile GPUs
+    const configs = innerWidth <= 768 ? [
+      { cols: 3, rows: 4 }, // 12
+      { cols: 4, rows: 3 }  // 12
+    ] : [
       { cols: 3, rows: 4 }, // 12
       { cols: 4, rows: 3 }, // 12
       { cols: 3, rows: 5 }, // 15
@@ -770,12 +791,16 @@
         piece.style.clipPath = `url(#clip-piece-${c}-${r})`;
         piece.style.webkitClipPath = `url(#clip-piece-${c}-${r})`;
 
-        // Clone content
+        // Clone content; drop backdrop-filter/shadow — every clone would run its
+        // own live blur during assembly, and the shadow is clipped away anyway
         const faceClone = heroFace.cloneNode(true);
         faceClone.style.transform = 'none';
         faceClone.style.position = 'absolute';
         faceClone.style.inset = '0';
         faceClone.style.opacity = '1';
+        faceClone.style.backdropFilter = 'none';
+        faceClone.style.webkitBackdropFilter = 'none';
+        faceClone.style.boxShadow = 'none';
         piece.appendChild(faceClone);
 
         // Seam SVG
@@ -897,13 +922,24 @@
   initPuzzle();
 
   /* ---------- starfield ---------- */
+  // The canvas sits behind backdrop-filtered glass, so every canvas repaint
+  // forces Safari to recompute those blurs. Keep repaints cheap and rare:
+  // DPR capped at 2, ~30fps, paused when hidden, static under reduced motion.
   const canvas = document.getElementById('stars');
   const ctx = canvas.getContext('2d');
+  const DPR = Math.min(window.devicePixelRatio || 1, 2);
+  const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)');
+  const STAR_COLORS = ['220, 230, 255', '254, 216, 93', '255, 182, 197'];
   let stars = [];
+  let rafId = null;
+  let lastT = 0;
+  let seededW = 0, seededH = 0;
 
   function seed() {
-    canvas.width = innerWidth * devicePixelRatio;
-    canvas.height = innerHeight * devicePixelRatio;
+    seededW = innerWidth;
+    seededH = innerHeight;
+    canvas.width = innerWidth * DPR;
+    canvas.height = innerHeight * DPR;
     canvas.style.width = innerWidth + 'px';
     canvas.style.height = innerHeight + 'px';
     stars = Array.from({ length: Math.min(220, innerWidth / 6) }, () => ({
@@ -915,24 +951,110 @@
     }));
   }
 
-  function tick(t) {
+  function colorGroup(st) {
+    return kateStars ? (st.r > 1.0 ? 1 : 2) : 0;
+  }
+
+  // Alpha quantized into 8 buckets so a frame is ≤24 fills instead of one per star.
+  function drawFrame(t) {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    const isKate = document.body.classList.contains('kate-mode');
+    const BUCKETS = 8;
+    const groups = new Map();
     for (const st of stars) {
-      st.p += st.s;
       const a = 0.25 + 0.55 * (0.5 + 0.5 * Math.sin(st.p + t * 0.0004));
+      const b = Math.min(BUCKETS - 1, Math.max(0, ((a - 0.25) / 0.55 * BUCKETS) | 0));
+      const key = colorGroup(st) * BUCKETS + b;
+      let g = groups.get(key);
+      if (!g) groups.set(key, g = []);
+      g.push(st);
+    }
+    for (const [key, g] of groups) {
+      const a = 0.25 + 0.55 * ((key % BUCKETS + 0.5) / BUCKETS);
+      ctx.fillStyle = `rgba(${STAR_COLORS[(key / BUCKETS) | 0]}, ${a.toFixed(3)})`;
       ctx.beginPath();
-      ctx.arc(st.x, st.y, st.r * devicePixelRatio, 0, Math.PI * 2);
-      ctx.fillStyle = isKate 
-        ? (st.r > 1.0 ? `rgba(254, 216, 93, ${a})` : `rgba(255, 182, 197, ${a})`)
-        : `rgba(220, 230, 255, ${a})`;
+      for (const st of g) {
+        ctx.moveTo(st.x + st.r * DPR, st.y);
+        ctx.arc(st.x, st.y, st.r * DPR, 0, Math.PI * 2);
+      }
       ctx.fill();
     }
-    requestAnimationFrame(tick);
   }
+
+  function drawStatic() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    const groups = new Map();
+    for (const st of stars) {
+      const key = colorGroup(st);
+      let g = groups.get(key);
+      if (!g) groups.set(key, g = []);
+      g.push(st);
+    }
+    for (const [key, g] of groups) {
+      ctx.fillStyle = `rgba(${STAR_COLORS[key]}, 0.55)`;
+      ctx.beginPath();
+      for (const st of g) {
+        ctx.moveTo(st.x + st.r * DPR, st.y);
+        ctx.arc(st.x, st.y, st.r * DPR, 0, Math.PI * 2);
+      }
+      ctx.fill();
+    }
+  }
+
+  const FRAME_MS = 33; // ~30fps — plenty for a slow twinkle
+  function tick(t) {
+    rafId = requestAnimationFrame(tick);
+    const dt = t - lastT;
+    if (dt < FRAME_MS) return;
+    lastT = t;
+    // Time-normalized so twinkle speed matches regardless of refresh rate
+    const step = Math.min(dt, 100) / 16.67;
+    for (const st of stars) st.p += st.s * step;
+    drawFrame(t);
+  }
+
+  function startStars() {
+    if (rafId !== null) return;
+    lastT = performance.now();
+    rafId = requestAnimationFrame(tick);
+  }
+  function stopStars() {
+    if (rafId !== null) {
+      cancelAnimationFrame(rafId);
+      rafId = null;
+    }
+  }
+  function applyMotionPref() {
+    if (reduceMotion.matches) {
+      stopStars();
+      drawStatic();
+    } else {
+      startStars();
+    }
+  }
+  // Lets the Kate toggle recolor a static (reduced-motion) starfield.
+  function redrawStarsIfStatic() {
+    if (reduceMotion.matches) drawStatic();
+  }
+
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) stopStars();
+    else applyMotionPref();
+  });
+  if (reduceMotion.addEventListener) reduceMotion.addEventListener('change', applyMotionPref);
+
+  let resizeTimer;
+  addEventListener('resize', () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(() => {
+      // iOS fires resize on toolbar show/hide without a real dimension change
+      if (innerWidth === seededW && innerHeight === seededH) return;
+      seed();
+      if (reduceMotion.matches) drawStatic();
+    }, 200);
+  });
+
   seed();
-  addEventListener('resize', seed);
-  requestAnimationFrame(tick);
+  applyMotionPref();
 
   /* ---------- GitHub repos ---------- */
   const LANG_COLORS = {

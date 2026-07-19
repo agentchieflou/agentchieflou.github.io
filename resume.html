@@ -69,27 +69,26 @@
       transition: background 0.4s ease, color 0.4s ease;
     }
 
-    /* Blurry decorative background */
+    /* Blurry decorative background — pre-blurred gradient falloff; a live
+       filter: blur(120px) forces Safari to keep re-rasterizing a huge layer */
     .blur-bg {
       position: fixed;
       width: 50vmax;
       height: 50vmax;
       border-radius: 50%;
-      filter: blur(120px);
       opacity: 0.12;
       z-index: 0;
       pointer-events: none;
-      transition: background 0.4s ease;
     }
 
     .b1 {
-      background: var(--blob-1);
+      background: radial-gradient(circle closest-side, var(--blob-1) 0%, var(--blob-1) 22%, transparent 72%);
       top: -10%;
       left: -10%;
     }
 
     .b2 {
-      background: var(--blob-2);
+      background: radial-gradient(circle closest-side, var(--blob-2) 0%, var(--blob-2) 22%, transparent 72%);
       bottom: -10%;
       right: -10%;
     }
@@ -374,6 +373,15 @@
       font-weight: 500;
     }
 
+    /* Touch devices: lighter backdrop blur — blur cost grows superlinearly
+       with radius and re-samples on every scrolled frame */
+    @media (pointer: coarse) {
+      .resume-container {
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+      }
+    }
+
     /* Print and ATS Optimization rules */
     @media print {
       body {
@@ -513,6 +521,7 @@
 
   <nav class="actions-nav">
     <a href="index.html" class="back-btn">← Back to Home</a>
+    <a href="skills.html" class="back-btn">Skills Graph</a>
     <button id="kateToggle" class="kate-toggle-btn">
       <span class="normal-only">Kate Mode 🎀</span>
       <span class="kate-only">Standard Mode 💻</span>
