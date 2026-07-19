@@ -20,9 +20,12 @@ EMAIL_TO = "mbf.louard@gmail.com"
 # available flash model for the key and retries.
 GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash")
 EMBED_MODEL = "BAAI/bge-small-en-v1.5"
-
 # GOOGLE_API_KEY accepted as an alias — both names are common for Gemini keys.
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY") or os.environ.get("GOOGLE_API_KEY", "")
+
+# Add this block right below it to expose it to the llm engine:
+if GEMINI_API_KEY:
+    os.environ["LLM_GEMINI_KEY"] = GEMINI_API_KEY
 GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN", "")
 ADZUNA_APP_ID = os.environ.get("ADZUNA_APP_ID", "")
 ADZUNA_APP_KEY = os.environ.get("ADZUNA_APP_KEY", "")
