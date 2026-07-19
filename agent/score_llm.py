@@ -23,7 +23,10 @@ def _extract_json_array(text):
     start = text.find("[")
     if start == -1:
         raise ValueError("no JSON array in response")
-    return json.loads(text[start:text.rfind("]") + 1])
+    end = text.rfind("]")
+    if end == -1 or end < start:
+        raise ValueError("no closing bracket found in response")
+    return json.loads(text[start:end + 1])
 
 
 def _gemini_score(profile, candidates):
