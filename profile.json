@@ -1,82 +1,132 @@
 {
- "summary": "Résumé — Michael Louard\n← Back to Home\nSkills Graph\nKate Mode 🎀\n⎙ Print / Save PDF\nCurriculum Vitae\nMichael Louard\nRaleigh, NC\n•\n216-904-9535\n•\nmbf.louard@gmail.com\n•\nLinkedIn\n•\nGitHub\nTechnical Skills\nLanguages & Automation\nPython, R, SAS, Stata, SQL, PySpark, Go (exposure), COBOL (translation), Selenium, Headless Browsers\nPlatforms & Frameworks\nKubernetes / OpenShift, Helm, CI/CD pipelines, Dock",
+ "summary": "Business Analytics Consultant with a strong background in quantitative finance and a modern focus on AI-augmented workflow engineering. Proven track record in banking for migrating legacy mainframe systems, automating document processing, and deploying containerized REST APIs for predictive modeling. Deeply technical with a demonstrated ability to architect agentic RAG workflows and high-performance applications in C++, TypeScript, and Python.",
  "skills": [
   {
-   "name": "SQL",
-   "category": "tools",
-   "strength": 1.0,
-   "evidence": []
-  },
-  {
    "name": "Python",
-   "category": "tools",
-   "strength": 1.0,
-   "evidence": []
+   "category": "engineering",
+   "strength": 0.9,
+   "evidence": [
+    "Automation suites",
+    "Data validation frameworks",
+    "REST API deployment",
+    "Scraping engines"
+   ]
   },
   {
-   "name": "Power BI",
-   "category": "tools",
-   "strength": 1.0,
-   "evidence": []
+   "name": "SQL",
+   "category": "analytics",
+   "strength": 0.85,
+   "evidence": [
+    "Mainframe migration reconciliation",
+    "Database telemetry",
+    "ETL for asset class migration"
+   ]
   },
   {
-   "name": "Excel",
-   "category": "tools",
-   "strength": 1.0,
-   "evidence": []
-  },
-  {
-   "name": "R",
-   "category": "tools",
-   "strength": 1.0,
-   "evidence": []
-  },
-  {
-   "name": "SAS",
-   "category": "tools",
-   "strength": 1.0,
-   "evidence": []
-  },
-  {
-   "name": "RAG",
-   "category": "tools",
-   "strength": 1.0,
-   "evidence": []
-  },
-  {
-   "name": "HTML",
-   "category": "tools",
-   "strength": 0.65,
-   "evidence": []
+   "name": "Kubernetes / OpenShift",
+   "category": "engineering",
+   "strength": 0.75,
+   "evidence": [
+    "Helm deployments",
+    "Production-grade REST API containerization",
+    "Policy as Code integration"
+   ]
   },
   {
    "name": "C++",
-   "category": "tools",
-   "strength": 0.65,
-   "evidence": []
+   "category": "engineering",
+   "strength": 0.7,
+   "evidence": [
+    "Unreal Engine 5 project development",
+    "Physics-based game simulation",
+    "Custom VST plugin development"
+   ]
   },
   {
-   "name": "C",
+   "name": "Agentic AI / RAG",
+   "category": "engineering",
+   "strength": 0.7,
+   "evidence": [
+    "Gemini API integration",
+    "Agentic orchestration research",
+    "JSON-based LLM extraction pipelines"
+   ]
+  },
+  {
+   "name": "Power BI",
+   "category": "analytics",
+   "strength": 0.75,
+   "evidence": [
+    "Portfolio-wide performance dashboards",
+    "Peer Bank stress analysis tools"
+   ]
+  },
+  {
+   "name": "Quantitative Finance",
+   "category": "domain",
+   "strength": 0.8,
+   "evidence": [
+    "CECL reserve forecasting",
+    "Residential mortgage modeling",
+    "Elasticity research",
+    "M&A integration"
+   ]
+  },
+  {
+   "name": "Selenium / Scrapy",
    "category": "tools",
-   "strength": 0.65,
-   "evidence": []
+   "strength": 0.8,
+   "evidence": [
+    "Document sourcing automation",
+    "High-throughput headless browser APIs"
+   ]
   },
   {
    "name": "TypeScript",
-   "category": "tools",
+   "category": "engineering",
    "strength": 0.65,
-   "evidence": []
+   "evidence": [
+    "NoProd DAW development",
+    "Audio tool UI implementation"
+   ]
+  },
+  {
+   "name": "CI/CD / Automation",
+   "category": "tools",
+   "strength": 0.85,
+   "evidence": [
+    "Master orchestrator pipelines",
+    "Enterprise policy-as-code compliance"
+   ]
+  },
+  {
+   "name": "Mainframe Migration",
+   "category": "domain",
+   "strength": 0.75,
+   "evidence": [
+    "Asset class migration projects",
+    "Output reconciliation between MongoDB/OLNACS"
+   ]
+  },
+  {
+   "name": "Financial Regulations",
+   "category": "domain",
+   "strength": 0.7,
+   "evidence": [
+    "SR 11-7 compliance",
+    "Model risk management",
+    "OCC/Fed regulatory standards"
+   ]
   }
  ],
  "target_titles": [
-  "Business Analyst",
-  "Data Analyst",
-  "Business Intelligence Analyst",
-  "Analytics Consultant",
-  "Business Analytics Consultant"
+  "Senior Data Engineer (Remote)",
+  "Quantitative Developer (Remote)",
+  "AI/ML Operations Engineer (Remote)",
+  "Analytics Consultant - Financial Services (Remote)",
+  "Automation Engineer (Remote)"
  ],
- "heuristic": true,
- "version": "2372cbdfcddc-h",
+ "version": "4868170b4b63",
  "remote_only": true,
- "generated_at": "2026-07-20T00:01:27.655106+00:00"
+ "generated_at": "2026-07-20T00:07:09.668836+00:00"
 }

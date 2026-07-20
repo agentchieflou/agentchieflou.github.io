@@ -1,99 +1,105 @@
 {
- "generated_at": "2026-07-20T00:01:36.005168+00:00",
- "profile_version": "2372cbdfcddc-h",
+ "generated_at": "2026-07-20T00:07:21.191540+00:00",
+ "profile_version": "4868170b4b63",
  "skills": [
-  {
-   "id": "sql",
-   "name": "SQL",
-   "category": "tools",
-   "strength": 1.0
-  },
   {
    "id": "python",
    "name": "Python",
-   "category": "tools",
-   "strength": 1.0
+   "category": "engineering",
+   "strength": 0.9
   },
   {
-   "id": "power bi",
-   "name": "Power BI",
-   "category": "tools",
-   "strength": 1.0
+   "id": "sql",
+   "name": "SQL",
+   "category": "analytics",
+   "strength": 0.85
   },
   {
-   "id": "excel",
-   "name": "Excel",
-   "category": "tools",
-   "strength": 1.0
-  },
-  {
-   "id": "r",
-   "name": "R",
-   "category": "tools",
-   "strength": 1.0
-  },
-  {
-   "id": "sas",
-   "name": "SAS",
-   "category": "tools",
-   "strength": 1.0
-  },
-  {
-   "id": "rag",
-   "name": "RAG",
-   "category": "tools",
-   "strength": 1.0
-  },
-  {
-   "id": "html",
-   "name": "HTML",
-   "category": "tools",
-   "strength": 0.65
+   "id": "kubernetes openshift",
+   "name": "Kubernetes / OpenShift",
+   "category": "engineering",
+   "strength": 0.75
   },
   {
    "id": "c",
    "name": "C++",
-   "category": "tools",
-   "strength": 0.65
+   "category": "engineering",
+   "strength": 0.7
   },
   {
-   "id": "c",
-   "name": "C",
+   "id": "agentic ai rag",
+   "name": "Agentic AI / RAG",
+   "category": "engineering",
+   "strength": 0.7
+  },
+  {
+   "id": "power bi",
+   "name": "Power BI",
+   "category": "analytics",
+   "strength": 0.75
+  },
+  {
+   "id": "quantitative finance",
+   "name": "Quantitative Finance",
+   "category": "domain",
+   "strength": 0.8
+  },
+  {
+   "id": "selenium scrapy",
+   "name": "Selenium / Scrapy",
    "category": "tools",
-   "strength": 0.65
+   "strength": 0.8
   },
   {
    "id": "typescript",
    "name": "TypeScript",
-   "category": "tools",
+   "category": "engineering",
    "strength": 0.65
+  },
+  {
+   "id": "ci cd automation",
+   "name": "CI/CD / Automation",
+   "category": "tools",
+   "strength": 0.85
+  },
+  {
+   "id": "mainframe migration",
+   "name": "Mainframe Migration",
+   "category": "domain",
+   "strength": 0.75
+  },
+  {
+   "id": "financial regulations",
+   "name": "Financial Regulations",
+   "category": "domain",
+   "strength": 0.7
   }
  ],
  "ghost_skills": [],
  "jobs": [
   {
-   "id": "b6505f57f7e90454fcce370d2e94bfaa11f115e5",
-   "title": "Databricks Eng (Solutions Architect, FDE)",
-   "company": "Lunt",
+   "id": "282d46fafbf7f46e9dcb12cd637d0e81b338c640",
+   "title": "Lead AI Engineer + Agent Builders",
+   "company": "Catalyst·Wayfare AI",
    "location": "Remote",
    "salary": null,
-   "url": "https://news.ycombinator.com/item?id=48812261",
+   "url": "https://news.ycombinator.com/item?id=48833943",
    "source": "hn",
-   "score": 90,
-   "confidence": 0.3,
-   "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile."
+   "score": 98,
+   "confidence": 0.95,
+   "why": "This is an ideal match as it explicitly seeks a lead for agentic systems within regulated finance and enterprise domains. The candidate's background in banking, Python, and RAG architectures maps perfectly to their mandate."
   },
   {
-   "id": "1b563dc3aac83146a1a6bd8576de9d019090b727",
-   "title": "EM, Sr/Staff Software Engineers, PM, Data Analyst",
-   "company": "Oscilar.com",
+   "id": "000f10ba99d4f1b988b0d059e7cc28f0ebd712f9",
+   "title": "AI Engineer",
+   "company": "Portless",
    "location": "Remote",
    "salary": null,
-   "url": "https://news.ycombinator.com/item?id=48835373",
+   "url": "https://news.ycombinator.com/item?id=48915735",
    "source": "hn",
-   "score": 90,
-   "confidence": 0.3,
-   "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile."
+   "score": 92,
+   "confidence": 0.9,
+   "why": "Matches the candidate's desire for an agentic-heavy role and a founding-style impact. The scope of building underlying platforms and REST APIs aligns with your experience in deployment and automation."
   },
   {
    "id": "d3ef928c4dd2847ab084c037f86d0adb0a28a9b8",
@@ -103,9 +109,33 @@
    "salary": null,
    "url": "https://news.ycombinator.com/item?id=48811937",
    "source": "hn",
-   "score": 89,
-   "confidence": 0.3,
-   "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile."
+   "score": 90,
+   "confidence": 0.85,
+   "why": "The focus on knowledge graphs, multi-agent systems, and production LLM workflows is a strong technical fit. The requirement for AI-augmented workflows aligns with your personal tech stack."
+  },
+  {
+   "id": "1b563dc3aac83146a1a6bd8576de9d019090b727",
+   "title": "EM, Sr/Staff Software Engineers, PM, Data Analyst",
+   "company": "Oscilar.com",
+   "location": "Remote",
+   "salary": null,
+   "url": "https://news.ycombinator.com/item?id=48835373",
+   "source": "hn",
+   "score": 85,
+   "confidence": 0.8,
+   "why": "The domain of AI Risk Decisioning and fraud/compliance aligns perfectly with the candidate's quantitative finance background. Several roles listed map to your core skills in data and agent development."
+  },
+  {
+   "id": "299650f78e7b71815f82e2a06db13cfadf46273f",
+   "title": "Senior (and above) Backend Engineer",
+   "company": "Instrumentl",
+   "location": "Remote",
+   "salary": null,
+   "url": "https://news.ycombinator.com/item?id=48910969",
+   "source": "hn",
+   "score": 75,
+   "confidence": 0.75,
+   "why": "A solid backend role in Python with a focus on AI features. While it is more generalist backend work than agentic architecture, it is a high-growth environment suited to your seniority."
   },
   {
    "id": "91365a1747b2f57d59b98a729bcae8bd3b4bb682",
@@ -132,41 +162,96 @@
    "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile."
   },
   {
-   "id": "000f10ba99d4f1b988b0d059e7cc28f0ebd712f9",
-   "title": "AI Engineer",
-   "company": "Portless",
+   "id": "27477628f50ebadf59f5e3c0eae4a165abf72f1e",
+   "title": "Senior Software Engineer",
+   "company": "BW Events Tech",
    "location": "Remote",
    "salary": null,
-   "url": "https://news.ycombinator.com/item?id=48915735",
-   "source": "hn",
-   "score": 87,
-   "confidence": 0.3,
-   "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile."
-  },
-  {
-   "id": "be784d5fde0d4df2fb24f4acf5da2316c40ef981",
-   "title": "Data Labeling Specialists",
-   "company": "Workada",
-   "location": "USA",
-   "salary": "$18 - $22/hr",
-   "url": "https://remotive.com/remote-jobs/data/data-labeling-specialists-2090903",
-   "source": "remotive",
-   "score": 87,
-   "confidence": 0.3,
-   "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile."
-  },
-  {
-   "id": "299650f78e7b71815f82e2a06db13cfadf46273f",
-   "title": "Senior (and above) Backend Engineer",
-   "company": "Instrumentl",
-   "location": "Remote",
-   "salary": null,
-   "url": "https://news.ycombinator.com/item?id=48910969",
+   "url": "https://news.ycombinator.com/item?id=48892504",
    "source": "hn",
    "score": 87,
    "confidence": 0.3,
    "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile."
   }
  ],
- "edges": []
+ "edges": [
+  {
+   "skill": "python",
+   "job": "282d46fafbf7f46e9dcb12cd637d0e81b338c640",
+   "weight": 1.0,
+   "missing": false
+  },
+  {
+   "skill": "agentic ai rag",
+   "job": "282d46fafbf7f46e9dcb12cd637d0e81b338c640",
+   "weight": 0.88,
+   "missing": false
+  },
+  {
+   "skill": "financial regulations",
+   "job": "282d46fafbf7f46e9dcb12cd637d0e81b338c640",
+   "weight": 0.76,
+   "missing": false
+  },
+  {
+   "skill": "python",
+   "job": "000f10ba99d4f1b988b0d059e7cc28f0ebd712f9",
+   "weight": 1.0,
+   "missing": false
+  },
+  {
+   "skill": "agentic ai rag",
+   "job": "000f10ba99d4f1b988b0d059e7cc28f0ebd712f9",
+   "weight": 0.88,
+   "missing": false
+  },
+  {
+   "skill": "python",
+   "job": "d3ef928c4dd2847ab084c037f86d0adb0a28a9b8",
+   "weight": 1.0,
+   "missing": false
+  },
+  {
+   "skill": "agentic ai rag",
+   "job": "d3ef928c4dd2847ab084c037f86d0adb0a28a9b8",
+   "weight": 0.88,
+   "missing": false
+  },
+  {
+   "skill": "python",
+   "job": "1b563dc3aac83146a1a6bd8576de9d019090b727",
+   "weight": 1.0,
+   "missing": false
+  },
+  {
+   "skill": "sql",
+   "job": "1b563dc3aac83146a1a6bd8576de9d019090b727",
+   "weight": 0.88,
+   "missing": false
+  },
+  {
+   "skill": "agentic ai rag",
+   "job": "1b563dc3aac83146a1a6bd8576de9d019090b727",
+   "weight": 0.76,
+   "missing": false
+  },
+  {
+   "skill": "financial regulations",
+   "job": "1b563dc3aac83146a1a6bd8576de9d019090b727",
+   "weight": 0.64,
+   "missing": false
+  },
+  {
+   "skill": "python",
+   "job": "299650f78e7b71815f82e2a06db13cfadf46273f",
+   "weight": 1.0,
+   "missing": false
+  },
+  {
+   "skill": "sql",
+   "job": "299650f78e7b71815f82e2a06db13cfadf46273f",
+   "weight": 0.88,
+   "missing": false
+  }
+ ]
 }

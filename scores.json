@@ -1,39 +1,60 @@
 {
  "b6505f57f7e90454fcce370d2e94bfaa11f115e5": {
-  "profile_version": "2372cbdfcddc-h",
-  "match_score": 90,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
+  "profile_version": "4868170b4b63",
+  "match_score": 70,
+  "confidence": 0.7,
+  "why": "Strong financial-services data engineering alignment. The focus on migrating legacy customers to modern cloud platforms mirrors your mainframe migration experience.",
+  "matched_skills": [
+   "SQL",
+   "Python",
+   "Kubernetes / OpenShift"
+  ],
   "missing_skills": [],
-  "resume_suggestions": [],
-  "prefilter": 0.6467,
-  "heuristic": true,
-  "scored_at": "2026-07-20T00:01:35.292554+00:00"
+  "resume_suggestions": [
+   "Highlight large-scale data migration experience specifically.",
+   "Emphasize your ability to work as a client-facing architect."
+  ],
+  "prefilter": 0.7052,
+  "heuristic": false,
+  "scored_at": "2026-07-20T00:07:20.372219+00:00"
  },
  "1b563dc3aac83146a1a6bd8576de9d019090b727": {
-  "profile_version": "2372cbdfcddc-h",
-  "match_score": 90,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
+  "profile_version": "4868170b4b63",
+  "match_score": 85,
+  "confidence": 0.8,
+  "why": "The domain of AI Risk Decisioning and fraud/compliance aligns perfectly with the candidate's quantitative finance background. Several roles listed map to your core skills in data and agent development.",
+  "matched_skills": [
+   "Python",
+   "SQL",
+   "Agentic AI / RAG",
+   "Financial Regulations"
+  ],
   "missing_skills": [],
-  "resume_suggestions": [],
-  "prefilter": 0.6437,
-  "heuristic": true,
-  "scored_at": "2026-07-20T00:01:35.292554+00:00"
+  "resume_suggestions": [
+   "Tailor the summary to emphasize 'Fraud & AML' experience to match the firm's core product.",
+   "Highlight past predictive modeling deployments."
+  ],
+  "prefilter": 0.6969,
+  "heuristic": false,
+  "scored_at": "2026-07-20T00:07:20.372219+00:00"
  },
  "d3ef928c4dd2847ab084c037f86d0adb0a28a9b8": {
-  "profile_version": "2372cbdfcddc-h",
-  "match_score": 89,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
+  "profile_version": "4868170b4b63",
+  "match_score": 90,
+  "confidence": 0.85,
+  "why": "The focus on knowledge graphs, multi-agent systems, and production LLM workflows is a strong technical fit. The requirement for AI-augmented workflows aligns with your personal tech stack.",
+  "matched_skills": [
+   "Python",
+   "Agentic AI / RAG"
+  ],
   "missing_skills": [],
-  "resume_suggestions": [],
-  "prefilter": 0.6403,
-  "heuristic": true,
-  "scored_at": "2026-07-20T00:01:35.292554+00:00"
+  "resume_suggestions": [
+   "Mention specific AI-coding tools (e.g., Cursor, Claude Code) if you use them as force multipliers.",
+   "Emphasize your ability to own customer-facing features end-to-end."
+  ],
+  "prefilter": 0.7086,
+  "heuristic": false,
+  "scored_at": "2026-07-20T00:07:20.372219+00:00"
  },
  "91365a1747b2f57d59b98a729bcae8bd3b4bb682": {
   "profile_version": "2372cbdfcddc-h",
@@ -60,16 +81,22 @@
   "scored_at": "2026-07-20T00:01:35.292554+00:00"
  },
  "000f10ba99d4f1b988b0d059e7cc28f0ebd712f9": {
-  "profile_version": "2372cbdfcddc-h",
-  "match_score": 87,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
+  "profile_version": "4868170b4b63",
+  "match_score": 92,
+  "confidence": 0.9,
+  "why": "Matches the candidate's desire for an agentic-heavy role and a founding-style impact. The scope of building underlying platforms and REST APIs aligns with your experience in deployment and automation.",
+  "matched_skills": [
+   "Python",
+   "Agentic AI / RAG"
+  ],
   "missing_skills": [],
-  "resume_suggestions": [],
-  "prefilter": 0.6277,
-  "heuristic": true,
-  "scored_at": "2026-07-20T00:01:35.292554+00:00"
+  "resume_suggestions": [
+   "Detail the 'platform mindset' by describing infrastructure you've built for other teams.",
+   "Quantify the time-saving impact of your previous automation/migration projects."
+  ],
+  "prefilter": 0.7662,
+  "heuristic": false,
+  "scored_at": "2026-07-20T00:07:20.372219+00:00"
  },
  "be784d5fde0d4df2fb24f4acf5da2316c40ef981": {
   "profile_version": "2372cbdfcddc-h",
@@ -84,16 +111,22 @@
   "scored_at": "2026-07-20T00:01:35.292554+00:00"
  },
  "299650f78e7b71815f82e2a06db13cfadf46273f": {
-  "profile_version": "2372cbdfcddc-h",
-  "match_score": 87,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
+  "profile_version": "4868170b4b63",
+  "match_score": 75,
+  "confidence": 0.75,
+  "why": "A solid backend role in Python with a focus on AI features. While it is more generalist backend work than agentic architecture, it is a high-growth environment suited to your seniority.",
+  "matched_skills": [
+   "Python",
+   "SQL"
+  ],
   "missing_skills": [],
-  "resume_suggestions": [],
-  "prefilter": 0.6248,
-  "heuristic": true,
-  "scored_at": "2026-07-20T00:01:35.292554+00:00"
+  "resume_suggestions": [
+   "Highlight your experience shipping end-to-end production features.",
+   "Emphasize Python performance optimization."
+  ],
+  "prefilter": 0.7418,
+  "heuristic": false,
+  "scored_at": "2026-07-20T00:07:20.372219+00:00"
  },
  "27477628f50ebadf59f5e3c0eae4a165abf72f1e": {
   "profile_version": "2372cbdfcddc-h",
@@ -168,15 +201,22 @@
   "scored_at": "2026-07-20T00:01:35.292554+00:00"
  },
  "282d46fafbf7f46e9dcb12cd637d0e81b338c640": {
-  "profile_version": "2372cbdfcddc-h",
-  "match_score": 86,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
+  "profile_version": "4868170b4b63",
+  "match_score": 98,
+  "confidence": 0.95,
+  "why": "This is an ideal match as it explicitly seeks a lead for agentic systems within regulated finance and enterprise domains. The candidate's background in banking, Python, and RAG architectures maps perfectly to their mandate.",
+  "matched_skills": [
+   "Python",
+   "Agentic AI / RAG",
+   "Financial Regulations"
+  ],
   "missing_skills": [],
-  "resume_suggestions": [],
-  "prefilter": 0.6176,
-  "heuristic": true,
-  "scored_at": "2026-07-20T00:01:35.292554+00:00"
+  "resume_suggestions": [
+   "Highlight specific examples of multi-agent orchestration projects in finance.",
+   "Emphasize your experience architecting production LLM systems over mere experimentation."
+  ],
+  "prefilter": 0.7323,
+  "heuristic": false,
+  "scored_at": "2026-07-20T00:07:20.372219+00:00"
  }
 }
