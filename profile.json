@@ -1,98 +1,136 @@
 {
- "summary": "Data-driven professional with expertise in automating complex business processes, legacy system migrations, and quantitative financial modeling. Highly proficient in building containerized API services, telemetry systems, and agentic workflows to drive operational efficiency. Proven track record of delivering enterprise-grade solutions in regulated banking environments while leveraging modern software engineering practices in personal technical projects.",
+ "summary": "Data-driven Business Analytics Consultant with a strong background in financial systems, process automation, and high-performance software engineering. Expert in migrating legacy mainframe environments and architecting scalable REST API solutions using Python, Go, and C++. Highly proficient in leveraging AI agentic workflows to accelerate development lifecycles and optimize resource-intensive enterprise processes.",
  "skills": [
   {
    "name": "Python",
    "category": "engineering",
-   "strength": 0.9,
+   "strength": 0.95,
    "evidence": [
-    "Automation suites",
-    "API development",
-    "Data parsing and scraping",
-    "Quantitative modeling"
-   ]
-  },
-  {
-   "name": "SQL",
-   "category": "analytics",
-   "strength": 0.85,
-   "evidence": [
-    "Database telemetry",
-    "Data migration reconciliation",
-    "Financial modeling"
-   ]
-  },
-  {
-   "name": "Power BI",
-   "category": "analytics",
-   "strength": 0.75,
-   "evidence": [
-    "Peer bank analysis dashboard",
-    "Portfolio performance reporting"
-   ]
-  },
-  {
-   "name": "Docker",
-   "category": "engineering",
-   "strength": 0.8,
-   "evidence": [
-    "Containerization of REST APIs",
-    "CI/CD integration"
-   ]
-  },
-  {
-   "name": "Kubernetes",
-   "category": "engineering",
-   "strength": 0.75,
-   "evidence": [
-    "OpenShift deployment",
-    "Helm charts for production services"
-   ]
-  },
-  {
-   "name": "REST API Development",
-   "category": "engineering",
-   "strength": 0.85,
-   "evidence": [
-    "Operationalized classification APIs",
-    "Containerized scrapers",
-    "Deployment to OpenShift"
-   ]
-  },
-  {
-   "name": "Financial Modeling",
-   "category": "domain",
-   "strength": 0.85,
-   "evidence": [
-    "CECL reserve forecasting",
-    "Pricing elasticity research",
-    "Home Equity pricing"
-   ]
-  },
-  {
-   "name": "Agentic Workflows",
-   "category": "engineering",
-   "strength": 0.7,
-   "evidence": [
-    "AI research and implementation",
-    "Agentic architecture design in personal projects"
+    "Process automation suite",
+    "REST API development",
+    "High-throughput data parsing"
    ]
   },
   {
    "name": "C++",
    "category": "engineering",
-   "strength": 0.7,
+   "strength": 0.85,
    "evidence": [
-    "Unreal Engine game development",
-    "VST audio plugin development"
+    "Unreal Engine game scaffolding",
+    "JUCE framework development",
+    "High-performance audio VSTs"
+   ]
+  },
+  {
+   "name": "SQL",
+   "category": "analytics",
+   "strength": 0.9,
+   "evidence": [
+    "Mainframe migration reconciliation",
+    "Database telemetry design",
+    "Portfolio-wide performance reporting"
+   ]
+  },
+  {
+   "name": "API Development",
+   "category": "engineering",
+   "strength": 0.9,
+   "evidence": [
+    "OpenShift/Helm REST API deployment",
+    "Headless browser API integration",
+    "Transaction classification services"
+   ]
+  },
+  {
+   "name": "Power BI",
+   "category": "analytics",
+   "strength": 0.8,
+   "evidence": [
+    "Enterprise-wide semantic models",
+    "Executive peer bank analysis dashboards"
+   ]
+  },
+  {
+   "name": "Docker",
+   "category": "tools",
+   "strength": 0.85,
+   "evidence": [
+    "Containerized REST API deployments",
+    "OpenShift/Helm infrastructure management"
+   ]
+  },
+  {
+   "name": "Agentic Workflows",
+   "category": "engineering",
+   "strength": 0.8,
+   "evidence": [
+    "Autonomous game dev scaffolding",
+    "Agentic architecture mapping",
+    "Prompt orchestration for resource efficiency"
    ]
   },
   {
    "name": "TypeScript",
    "category": "engineering",
-   "strength": 0.65,
+   "strength": 0.7,
    "evidence": [
-    "DAW audio application development"
+    "DAW UI development",
+    "NoProd instrumentation project"
+   ]
+  },
+  {
+   "name": "Go",
+   "category": "engineering",
+   "strength": 0.6,
+   "evidence": [
+    "Enterprise exposure",
+    "System-level process handling"
+   ]
+  },
+  {
+   "name": "Kubernetes/OpenShift",
+   "category": "tools",
+   "strength": 0.8,
+   "evidence": [
+    "Policy as Code compliance",
+    "Helm deployment management"
+   ]
+  },
+  {
+   "name": "CI/CD Pipelines",
+   "category": "tools",
+   "strength": 0.85,
+   "evidence": [
+    "Enterprise-grade testing/deploy gating",
+    "Automated orchestration workflows"
+   ]
+  },
+  {
+   "name": "Quantitative Modeling",
+   "category": "domain",
+   "strength": 0.85,
+   "evidence": [
+    "CECL reserve forecasting",
+    "M&A loan integration",
+    "Stress testing"
+   ]
+  },
+  {
+   "name": "Data Architecture",
+   "category": "analytics",
+   "strength": 0.75,
+   "evidence": [
+    "Version control improvements",
+    "Grid-wide usage telemetry design"
+   ]
+  },
+  {
+   "name": "C",
+   "category": "engineering",
+   "strength": 0.7,
+   "evidence": [
+    "Low-level plugin ABI development",
+    "Audio signal processing code"
    ]
   },
   {
@@ -100,56 +138,19 @@
    "category": "tools",
    "strength": 0.75,
    "evidence": [
-    "Web automation",
-    "Document sourcing"
-   ]
-  },
-  {
-   "name": "Telemetry & Monitoring",
-   "category": "analytics",
-   "strength": 0.8,
-   "evidence": [
-    "Grid-wide database telemetry",
-    "Performance monitoring dashboards"
-   ]
-  },
-  {
-   "name": "Process Automation",
-   "category": "engineering",
-   "strength": 0.9,
-   "evidence": [
-    "Mainframe migration reconciliation",
-    "Pricing workflow automation",
-    "Document sourcing"
-   ]
-  },
-  {
-   "name": "CI/CD",
-   "category": "tools",
-   "strength": 0.75,
-   "evidence": [
-    "Policy as Code compliance",
-    "OpenShift Helm deployments"
-   ]
-  },
-  {
-   "name": "Economics",
-   "category": "domain",
-   "strength": 0.7,
-   "evidence": [
-    "Degree background",
-    "Causal research presented to Federal Reserve"
+    "Automated document sourcing",
+    "Headless browser scaling"
    ]
   }
  ],
  "target_titles": [
-  "Senior Business Intelligence Engineer",
-  "Data Engineer (Analytics Focus)",
-  "Financial Systems Developer",
-  "Analytics Automation Engineer",
-  "Quantitative Developer"
+  "Senior Business Systems Analyst",
+  "Quantitative Developer",
+  "Data Engineer (Remote)",
+  "Automation Engineer",
+  "Software Engineer (Backend)"
  ],
- "version": "8444b242a37a",
+ "version": "bbec4246b79f",
  "remote_only": true,
- "generated_at": "2026-07-20T06:16:52.520527+00:00"
+ "generated_at": "2026-07-20T14:32:36.336105+00:00"
 }

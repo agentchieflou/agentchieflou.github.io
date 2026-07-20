@@ -18,23 +18,22 @@
   "scored_at": "2026-07-20T00:13:03.792580+00:00"
  },
  "000f10ba99d4f1b988b0d059e7cc28f0ebd712f9": {
-  "profile_version": "3c8cd16212ea",
+  "profile_version": "bbec4246b79f",
   "match_score": 98,
-  "confidence": 0.98,
-  "why": "Perfect match for your specific interest in agentic workflows and system architecture with top-tier pay.",
+  "confidence": 0.95,
+  "why": "Ideal match for your specialized AI agentic workflow and API architecture experience.",
   "matched_skills": [
-   "Agentic AI/RAG",
-   "System Architecture",
    "Python",
-   "REST APIs"
+   "API Development",
+   "Agentic Workflows"
   ],
   "missing_skills": [],
   "resume_suggestions": [
-   "Highlight your capability to own both the product and the platform architecture."
+   "Highlight past production-grade agentic workflow deployments."
   ],
-  "prefilter": 0.7102,
+  "prefilter": 0.716,
   "heuristic": false,
-  "scored_at": "2026-07-20T05:48:46.232027+00:00"
+  "scored_at": "2026-07-20T14:33:02.272881+00:00"
  },
  "9736237e9bfc2f4f49d29fb2da68506e47589700": {
   "profile_version": "2372cbdfcddc-h",
@@ -128,46 +127,60 @@
   "scored_at": "2026-07-20T04:43:08.500282+00:00"
  },
  "693d8377675736db072c24b0d8d806579444e34d": {
-  "profile_version": "3c8cd16212ea",
-  "match_score": 65,
+  "profile_version": "bbec4246b79f",
+  "match_score": 55,
   "confidence": 0.9,
-  "why": "Strong stack overlap with PySpark and SQL, though the salary floor is slightly below target for lower-end offers.",
+  "why": "Mid-level role with salary floor concerns; fits your ETL experience.",
+  "matched_skills": [
+   "SQL"
+  ],
+  "missing_skills": [
+   "PySpark"
+  ],
+  "resume_suggestions": [
+   "List specific ETL orchestration tools you've used."
+  ],
+  "prefilter": 0.7179,
+  "heuristic": false,
+  "scored_at": "2026-07-20T14:33:02.272881+00:00"
+ },
+ "4145b0357a4ea52dc4381a30fecbd306b9e7f7a7": {
+  "profile_version": "bbec4246b79f",
+  "match_score": 45,
+  "confidence": 0.9,
+  "why": "The role is junior-level and falls below your $130k threshold at the lower bound.",
   "matched_skills": [
    "Python",
-   "SQL",
-   "PySpark"
+   "SQL"
+  ],
+  "missing_skills": [
+   "AWS"
+  ],
+  "resume_suggestions": [
+   "Focus on senior architectural impact to avoid overqualified rejection."
+  ],
+  "prefilter": 0.7354,
+  "heuristic": false,
+  "scored_at": "2026-07-20T14:33:02.272881+00:00"
+ },
+ "7f700cf6ebb37eb77755b0b238fde1d4224070ae": {
+  "profile_version": "bbec4246b79f",
+  "match_score": 90,
+  "confidence": 0.95,
+  "why": "High-level infra role matching your Go and high-performance engineering background; exceptional salary.",
+  "matched_skills": [
+   "Go",
+   "Python",
+   "Kubernetes/OpenShift",
+   "CI/CD Pipelines"
   ],
   "missing_skills": [],
   "resume_suggestions": [
-   "Emphasize ETL optimization and legacy migration projects."
+   "Highlight scaling infrastructure for AI workloads."
   ],
-  "prefilter": 0.7262,
+  "prefilter": 0.7162,
   "heuristic": false,
-  "scored_at": "2026-07-20T05:48:46.232027+00:00"
- },
- "4145b0357a4ea52dc4381a30fecbd306b9e7f7a7": {
-  "profile_version": "8444b242a37a",
-  "match_score": 98,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
-  "missing_skills": [],
-  "resume_suggestions": [],
-  "prefilter": 0.7063,
-  "heuristic": true,
-  "scored_at": "2026-07-20T06:17:11.111879+00:00"
- },
- "7f700cf6ebb37eb77755b0b238fde1d4224070ae": {
-  "profile_version": "8444b242a37a",
-  "match_score": 97,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
-  "missing_skills": [],
-  "resume_suggestions": [],
-  "prefilter": 0.7,
-  "heuristic": true,
-  "scored_at": "2026-07-20T06:17:11.111879+00:00"
+  "scored_at": "2026-07-20T14:33:02.272881+00:00"
  },
  "289ea176545c57bfcb2c0021e3e190761ef9c06b": {
   "profile_version": "8444b242a37a",
@@ -194,22 +207,24 @@
   "scored_at": "2026-07-20T06:17:11.111879+00:00"
  },
  "5f110b6e553ac770d6c9d39fd94d82bce09dd8ac": {
-  "profile_version": "3c8cd16212ea",
-  "match_score": 70,
+  "profile_version": "bbec4246b79f",
+  "match_score": 60,
   "confidence": 0.9,
-  "why": "Solid technical match, but the company's salary band has a high variance that may dip below your requirements.",
+  "why": "Good technical overlap, but salary floor is below your target.",
   "matched_skills": [
    "Python",
-   "PySpark",
    "SQL"
   ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Highlight Databricks or cloud-based data engineering experience."
+  "missing_skills": [
+   "AWS",
+   "Databricks"
   ],
-  "prefilter": 0.718,
+  "resume_suggestions": [
+   "Include specific PySpark implementation examples."
+  ],
+  "prefilter": 0.7221,
   "heuristic": false,
-  "scored_at": "2026-07-20T05:48:46.232027+00:00"
+  "scored_at": "2026-07-20T14:33:02.272881+00:00"
  },
  "0153453af914b210e75bf816715a3249bb1dceb0": {
   "profile_version": "8444b242a37a",
@@ -236,39 +251,43 @@
   "scored_at": "2026-07-20T06:17:11.111879+00:00"
  },
  "61228f7a9694edbd27a754725aa9eea88bfb89d8": {
-  "profile_version": "3c8cd16212ea",
-  "match_score": 78,
+  "profile_version": "bbec4246b79f",
+  "match_score": 75,
   "confidence": 0.9,
-  "why": "Matches your GenAI/Agentic workflows focus well, with a competitive salary floor for this role.",
-  "matched_skills": [
-   "Python",
-   "SQL",
-   "Agentic AI/RAG"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Focus on the impact of GenAI/Agentic implementations."
-  ],
-  "prefilter": 0.7172,
-  "heuristic": false,
-  "scored_at": "2026-07-20T05:48:46.232027+00:00"
- },
- "466537245dcf7e33612dc24d2455b972040ad520": {
-  "profile_version": "3c8cd16212ea",
-  "match_score": 68,
-  "confidence": 0.9,
-  "why": "Competent technical match, but overlaps with lower salary tiers.",
+  "why": "Excellent alignment with your AI/GenAI experience and mid-level status, though salary floor is slightly risky.",
   "matched_skills": [
    "Python",
    "SQL"
   ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Emphasize cloud-native development."
+  "missing_skills": [
+   "AWS"
   ],
-  "prefilter": 0.7171,
+  "resume_suggestions": [
+   "Highlight your AI agentic workflow successes prominently."
+  ],
+  "prefilter": 0.7301,
   "heuristic": false,
-  "scored_at": "2026-07-20T05:48:46.232027+00:00"
+  "scored_at": "2026-07-20T14:33:02.272881+00:00"
+ },
+ "466537245dcf7e33612dc24d2455b972040ad520": {
+  "profile_version": "bbec4246b79f",
+  "match_score": 65,
+  "confidence": 0.9,
+  "why": "Strong mid-level fit, though compensation range is slightly below your $130k minimum at the start.",
+  "matched_skills": [
+   "Python",
+   "SQL"
+  ],
+  "missing_skills": [
+   "AWS",
+   "Databricks"
+  ],
+  "resume_suggestions": [
+   "Add exposure to Databricks/Spark ecosystems."
+  ],
+  "prefilter": 0.7292,
+  "heuristic": false,
+  "scored_at": "2026-07-20T14:33:02.272881+00:00"
  },
  "da2bcc26af044451e674517db903ffc3353358b5": {
   "profile_version": "3c8cd16212ea",
@@ -307,22 +326,23 @@
   "scored_at": "2026-07-20T05:48:46.232027+00:00"
  },
  "468c3e72493c5f9e946f1342000e153e757fe229": {
-  "profile_version": "3c8cd16212ea",
-  "match_score": 85,
-  "confidence": 0.9,
-  "why": "High-growth company with a salary that comfortably exceeds your requirements.",
+  "profile_version": "bbec4246b79f",
+  "match_score": 95,
+  "confidence": 0.95,
+  "why": "Perfect alignment with your AI agentic workflow experience and high compensation potential.",
   "matched_skills": [
    "Python",
    "SQL",
-   "System Architecture"
+   "Docker",
+   "Kubernetes/OpenShift"
   ],
   "missing_skills": [],
   "resume_suggestions": [
-   "Emphasize platform engineering and API design."
+   "Mention specific AI inference optimization projects."
   ],
-  "prefilter": 0.7157,
+  "prefilter": 0.7252,
   "heuristic": false,
-  "scored_at": "2026-07-20T05:48:46.232027+00:00"
+  "scored_at": "2026-07-20T14:33:02.272881+00:00"
  },
  "e94b6b969ab4896dec943345f84e41b8148bac9c": {
   "profile_version": "3c8cd16212ea",
@@ -342,39 +362,44 @@
   "scored_at": "2026-07-20T05:48:46.232027+00:00"
  },
  "df306d980dc47e4a888492a1a13488f5bcfef77f": {
-  "profile_version": "3c8cd16212ea",
+  "profile_version": "bbec4246b79f",
   "match_score": 65,
   "confidence": 0.9,
-  "why": "Meets technical requirements but sits at the lower end of your preferred salary range.",
+  "why": "Solid mid-level technical alignment; compensation range is just below target minimum.",
   "matched_skills": [
    "Python",
    "SQL"
   ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Highlight cloud migration expertise."
+  "missing_skills": [
+   "AWS",
+   "Databricks"
   ],
-  "prefilter": 0.7149,
+  "resume_suggestions": [
+   "Highlight data architecture experience with large-scale cloud databases."
+  ],
+  "prefilter": 0.7291,
   "heuristic": false,
-  "scored_at": "2026-07-20T05:48:46.232027+00:00"
+  "scored_at": "2026-07-20T14:33:02.272881+00:00"
  },
  "f8a89160cb558ef410429d35d422d82b966ec909": {
-  "profile_version": "3c8cd16212ea",
-  "match_score": 72,
+  "profile_version": "bbec4246b79f",
+  "match_score": 70,
   "confidence": 0.9,
-  "why": "Solid technical match; salary is acceptable but at the lower threshold.",
+  "why": "Good mid-level fit with overlapping skills; salary floor is just slightly below your $130k limit.",
   "matched_skills": [
    "Python",
-   "SQL",
-   "PySpark"
+   "SQL"
   ],
-  "missing_skills": [],
+  "missing_skills": [
+   "AWS",
+   "Databricks"
+  ],
   "resume_suggestions": [
-   "Focus on performance tuning for data pipelines."
+   "Highlight your experience managing complex data environments."
   ],
-  "prefilter": 0.7141,
+  "prefilter": 0.7207,
   "heuristic": false,
-  "scored_at": "2026-07-20T05:48:46.232027+00:00"
+  "scored_at": "2026-07-20T14:33:02.272881+00:00"
  },
  "26a8e56c4f20cf9f56e7615f8f2a86fb4ce3929f": {
   "profile_version": "3c8cd16212ea",
@@ -413,22 +438,21 @@
   "scored_at": "2026-07-20T05:48:46.232027+00:00"
  },
  "4b25e8a1522e447dbe334afc5d4f98d10c17c14d": {
-  "profile_version": "3c8cd16212ea",
-  "match_score": 80,
+  "profile_version": "bbec4246b79f",
+  "match_score": 88,
   "confidence": 0.9,
-  "why": "Good fit for architectural experience within the target compensation range.",
+  "why": "Matches your seniority and architecture background; salary is well within your comfort zone.",
   "matched_skills": [
-   "System Architecture",
-   "SQL",
-   "Python"
+   "Data Architecture",
+   "SQL"
   ],
   "missing_skills": [],
   "resume_suggestions": [
-   "Highlight large-scale integrations."
+   "Emphasize enterprise-wide AI platform integration strategy."
   ],
-  "prefilter": 0.711,
+  "prefilter": 0.7211,
   "heuristic": false,
-  "scored_at": "2026-07-20T05:48:46.232027+00:00"
+  "scored_at": "2026-07-20T14:33:02.272881+00:00"
  },
  "687a181e23dc1ef52935912eea1d588aaddf2852": {
   "profile_version": "3c8cd16212ea",
@@ -465,21 +489,21 @@
   "scored_at": "2026-07-20T05:48:46.232027+00:00"
  },
  "939f8c22f9cf14689a18ac120110f32031c0cdd4": {
-  "profile_version": "3c8cd16212ea",
-  "match_score": 55,
+  "profile_version": "bbec4246b79f",
+  "match_score": 40,
   "confidence": 0.9,
-  "why": "Junior role that undervalues your experience, with a salary potential that may dip below requirements.",
+  "why": "Junior role with below-target salary range.",
   "matched_skills": [
    "Python",
    "SQL"
   ],
   "missing_skills": [],
   "resume_suggestions": [
-   "None - prioritize senior roles."
+   "Apply only if you are looking for a shift in pace."
   ],
-  "prefilter": 0.7104,
+  "prefilter": 0.714,
   "heuristic": false,
-  "scored_at": "2026-07-20T05:48:46.232027+00:00"
+  "scored_at": "2026-07-20T14:33:02.272881+00:00"
  },
  "c87fce7c1ae5042056aa861d481d682f7a6c1a3f": {
   "profile_version": "3c8cd16212ea",
@@ -512,16 +536,21 @@
   "scored_at": "2026-07-20T06:17:11.111879+00:00"
  },
  "311291bd58119c1104f1f12253eaa06fbb42d9b6": {
-  "profile_version": "8444b242a37a",
-  "match_score": 100,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
+  "profile_version": "bbec4246b79f",
+  "match_score": 85,
+  "confidence": 0.9,
+  "why": "Strong senior fit for AI/Data work with compensation meeting your requirements.",
+  "matched_skills": [
+   "Python",
+   "SQL"
+  ],
   "missing_skills": [],
-  "resume_suggestions": [],
-  "prefilter": 0.7158,
-  "heuristic": true,
-  "scored_at": "2026-07-20T06:17:11.111879+00:00"
+  "resume_suggestions": [
+   "Showcase blend of software engineering and data science."
+  ],
+  "prefilter": 0.7144,
+  "heuristic": false,
+  "scored_at": "2026-07-20T14:33:02.272881+00:00"
  },
  "cad14ea49c137d901696c8ae0e3dc909af28f1b2": {
   "profile_version": "8444b242a37a",
@@ -560,16 +589,21 @@
   "scored_at": "2026-07-20T06:17:11.111879+00:00"
  },
  "7cb8939b059262c887c9cf98c40a1af029759f1c": {
-  "profile_version": "8444b242a37a",
-  "match_score": 99,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
+  "profile_version": "bbec4246b79f",
+  "match_score": 75,
+  "confidence": 0.9,
+  "why": "Good alignment with your automation background, though base salary is risky.",
+  "matched_skills": [
+   "Python",
+   "CI/CD Pipelines"
+  ],
   "missing_skills": [],
-  "resume_suggestions": [],
-  "prefilter": 0.7072,
-  "heuristic": true,
-  "scored_at": "2026-07-20T06:17:11.111879+00:00"
+  "resume_suggestions": [
+   "Showcase AI-driven automation successes."
+  ],
+  "prefilter": 0.7125,
+  "heuristic": false,
+  "scored_at": "2026-07-20T14:33:02.272881+00:00"
  },
  "573c285b40525e80c4c0e856f1e676a5df618eaa": {
   "profile_version": "8444b242a37a",
@@ -655,18 +689,6 @@
   "heuristic": true,
   "scored_at": "2026-07-20T06:17:11.111879+00:00"
  },
- "af6c3183a2a79c37e2eabd45361f2f121998d928": {
-  "profile_version": "8444b242a37a",
-  "match_score": 98,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
-  "missing_skills": [],
-  "resume_suggestions": [],
-  "prefilter": 0.7005,
-  "heuristic": true,
-  "scored_at": "2026-07-20T06:17:11.111879+00:00"
- },
  "853ca181607dbf837484e63c6da3b7ff592ff0e8": {
   "profile_version": "8444b242a37a",
   "match_score": 97,
@@ -703,18 +725,6 @@
   "heuristic": true,
   "scored_at": "2026-07-20T06:17:11.111879+00:00"
  },
- "aff06a929c6254f9e8b79c500e35600868b72de9": {
-  "profile_version": "8444b242a37a",
-  "match_score": 97,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
-  "missing_skills": [],
-  "resume_suggestions": [],
-  "prefilter": 0.6989,
-  "heuristic": true,
-  "scored_at": "2026-07-20T06:17:11.111879+00:00"
- },
  "c6ad1061e25fad5dcf5a9deb25325538047fcf85": {
   "profile_version": "8444b242a37a",
   "match_score": 97,
@@ -726,5 +736,202 @@
   "prefilter": 0.6989,
   "heuristic": true,
   "scored_at": "2026-07-20T06:17:11.111879+00:00"
+ },
+ "e89d6671b4413186cca07ae5c28d7ab785f15a97": {
+  "profile_version": "bbec4246b79f",
+  "match_score": 60,
+  "confidence": 0.9,
+  "why": "Senior role with good title alignment, but the bottom end of the salary range is below your requirements.",
+  "matched_skills": [
+   "Python",
+   "SQL"
+  ],
+  "missing_skills": [
+   "AWS"
+  ],
+  "resume_suggestions": [
+   "Emphasize your Go proficiency for backend-heavy data tasks."
+  ],
+  "prefilter": 0.7299,
+  "heuristic": false,
+  "scored_at": "2026-07-20T14:33:02.272881+00:00"
+ },
+ "3d9392be6b3cf3bea8dbe6e8f3c0de0616fdaf75": {
+  "profile_version": "bbec4246b79f",
+  "match_score": 85,
+  "confidence": 0.9,
+  "why": "Strong senior-level fit with salary meeting your minimum requirements.",
+  "matched_skills": [
+   "Python",
+   "SQL",
+   "API Development"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Focus on end-to-end data pipeline delivery."
+  ],
+  "prefilter": 0.7251,
+  "heuristic": false,
+  "scored_at": "2026-07-20T14:33:02.272881+00:00"
+ },
+ "46dbd8296712bc73c8fb2a72751ee6053e64a077": {
+  "profile_version": "bbec4246b79f",
+  "match_score": 92,
+  "confidence": 0.95,
+  "why": "Excellent senior-level compensation and technical fit for a high-performance engineer.",
+  "matched_skills": [
+   "Data Architecture",
+   "SQL",
+   "Kubernetes/OpenShift"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Emphasize large-scale enterprise migration project successes."
+  ],
+  "prefilter": 0.7169,
+  "heuristic": false,
+  "scored_at": "2026-07-20T14:33:02.272881+00:00"
+ },
+ "4a0efac9e3d4864d2cb8af1df482ac549bc73e88": {
+  "profile_version": "bbec4246b79f",
+  "match_score": 85,
+  "confidence": 0.9,
+  "why": "Great fit for your enterprise data architecture experience; excellent salary range.",
+  "matched_skills": [
+   "Data Architecture",
+   "SQL"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Focus on leadership and strategic data planning."
+  ],
+  "prefilter": 0.7156,
+  "heuristic": false,
+  "scored_at": "2026-07-20T14:33:02.272881+00:00"
+ },
+ "c8f300e555fb31286c3981f4c9b558e4bca65d05": {
+  "profile_version": "bbec4246b79f",
+  "match_score": 75,
+  "confidence": 0.9,
+  "why": "Fits your AI-Native focus, but salary range is borderline regarding your $130k threshold.",
+  "matched_skills": [
+   "Python",
+   "SQL"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Highlight experience with AI-native platform engineering."
+  ],
+  "prefilter": 0.7152,
+  "heuristic": false,
+  "scored_at": "2026-07-20T14:33:02.272881+00:00"
+ },
+ "075f3863c8d663dcd7092a100e1135d8aa62965e": {
+  "profile_version": "bbec4246b79f",
+  "match_score": 70,
+  "confidence": 0.9,
+  "why": "Good fit for mid-level data engineering, but slightly below salary target.",
+  "matched_skills": [
+   "Python",
+   "SQL"
+  ],
+  "missing_skills": [
+   "Snowflake"
+  ],
+  "resume_suggestions": [
+   "Highlight data platform migrations."
+  ],
+  "prefilter": 0.7147,
+  "heuristic": false,
+  "scored_at": "2026-07-20T14:33:02.272881+00:00"
+ },
+ "7be2ded568b31ac4a1fa8a88e7ebcf20369898c0": {
+  "profile_version": "bbec4246b79f",
+  "match_score": 80,
+  "confidence": 0.9,
+  "why": "Matches your seniority and data engineering skillset with salary exceeding your minimum.",
+  "matched_skills": [
+   "Python",
+   "SQL"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Highlight CI/CD practices in data pipelines."
+  ],
+  "prefilter": 0.7145,
+  "heuristic": false,
+  "scored_at": "2026-07-20T14:33:02.272881+00:00"
+ },
+ "38fd8a1e1d0a443aefba05334c1db7dbc1ab2835": {
+  "profile_version": "bbec4246b79f",
+  "match_score": 80,
+  "confidence": 0.9,
+  "why": "Solid senior data engineering role with strong pay.",
+  "matched_skills": [
+   "Python",
+   "SQL",
+   "Data Architecture"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Detail any graph database or complex relational data modeling."
+  ],
+  "prefilter": 0.7138,
+  "heuristic": false,
+  "scored_at": "2026-07-20T14:33:02.272881+00:00"
+ },
+ "8e9823653933384571717021274cede0bb21f474": {
+  "profile_version": "bbec4246b79f",
+  "match_score": 90,
+  "confidence": 0.95,
+  "why": "Excellent alignment with your software engineering background and AI focus.",
+  "matched_skills": [
+   "Python",
+   "C++",
+   "API Development"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Focus on C++ performance tuning for AI applications."
+  ],
+  "prefilter": 0.7137,
+  "heuristic": false,
+  "scored_at": "2026-07-20T14:33:02.272881+00:00"
+ },
+ "5d55790fa0b62b2205f920672ffdc83b0486c268": {
+  "profile_version": "bbec4246b79f",
+  "match_score": 60,
+  "confidence": 0.9,
+  "why": "Senior title but compensation range is weak; does not meet $130k threshold at the entry point.",
+  "matched_skills": [
+   "Python",
+   "SQL"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Emphasize scalability and performance gains."
+  ],
+  "prefilter": 0.7133,
+  "heuristic": false,
+  "scored_at": "2026-07-20T14:33:02.272881+00:00"
+ },
+ "12dbe6f1cddc5ff8a6125eb234b5b3bdf6a2e2a8": {
+  "profile_version": "bbec4246b79f",
+  "match_score": 70,
+  "confidence": 0.9,
+  "why": "Solid mid-level fit; salary floor is just below your requirement.",
+  "matched_skills": [
+   "Python",
+   "SQL"
+  ],
+  "missing_skills": [
+   "PySpark"
+  ],
+  "resume_suggestions": [
+   "Highlight large-scale data processing experience."
+  ],
+  "prefilter": 0.7125,
+  "heuristic": false,
+  "scored_at": "2026-07-20T14:33:02.272881+00:00"
  }
 }
