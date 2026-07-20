@@ -41,6 +41,7 @@ def main():
     import graph_export
     import index_profile
     import rank
+    import rejected as rejected_mod
     import score_llm
 
     config.STATE_DIR.mkdir(parents=True, exist_ok=True)
@@ -50,8 +51,9 @@ def main():
     log.info("profile version %s (%s skills, changed=%s)",
              profile["version"], len(profile.get("skills", [])), changed)
 
-    log.info("stage 2/6: applied-email sync")
+    log.info("stage 2/6: applied + rejected email sync")
     applied = applied_mod.sync_from_inbox()
+    rejected = rejected_mod.sync_from_inbox()
 
     log.info("stage 3/6: job discovery")
     jobs, new_ids, expired, totals = fetch_jobs.fetch_all(profile.get("target_titles", []))
@@ -59,6 +61,7 @@ def main():
              len(jobs), len(new_ids), expired, totals["all_time"])
 
     log.info("stage 4/6: embedding prefilter + finalist enrichment")
+    rank.snapshot_rejected_vectors(jobs, set(rejected))
     ranked = rank.rank_jobs(profile, jobs)
     enrich.enrich_candidates(ranked[:config.MAX_LLM_CANDIDATES])
     ranked = [j for j in ranked if not j.get("dead")]
@@ -67,8 +70,16 @@ def main():
     scores, newly_scored = score_llm.score_candidates(profile, ranked)
     log.info("%d newly scored, %d total scored", newly_scored, len(scores))
 
+    # A job must clear the minimum skill-connection bar to count as a real
+    # match anywhere downstream — a 1-2 skill overlap isn't "worth applying to".
+    before_gate = len(ranked)
+    ranked = [j for j in ranked if len(scores.get(j["id"], {}).get("matched_skills", [])) >= config.MIN_SKILL_MATCHES]
+    log.info("skill-match gate: %d of %d scored jobs kept (>= %d matched skills)",
+             len(ranked), before_gate, config.MIN_SKILL_MATCHES)
+
     log.info("stage 6/6: digest + graph export")
-    top = digest_mod.pick_top(ranked, scores, exclude=set(applied))
+    exclude = set(applied) | set(rejected)
+    top = digest_mod.pick_top(ranked, scores, exclude=exclude)
     stats = {
         "date": dt.date.today().isoformat(),
         "evaluated": len(jobs),
@@ -78,11 +89,12 @@ def main():
         "profile_note": note,
         "new_ids": new_ids,
         "applied_total": len(applied),
+        "rejected_total": len(rejected),
         "discovered_total": totals["all_time"],
     }
     digest_mod.send_digest(top, stats, dry_run=args.dry_run)
-    # Applied jobs are kept out of the public graph as well
-    graph_export.export_graph(profile, [j for j in ranked if j["id"] not in applied],
+    # Applied and rejected jobs are kept out of the public graph as well
+    graph_export.export_graph(profile, [j for j in ranked if j["id"] not in exclude],
                               scores, totals)
 
     for i, (j, s) in enumerate(top, 1):

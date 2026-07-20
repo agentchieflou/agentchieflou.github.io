@@ -16,8 +16,9 @@ from config import (ADZUNA_APP_ID, ADZUNA_APP_KEY, DOOMERS_BASE,
                     DOOMERS_GROUPS, DOOMERS_MAX_PER_GROUP, JOB_EXPIRY_DAYS,
                     MIN_SALARY_USD, STATE_DIR, USAJOBS_API_KEY,
                     USAJOBS_USER_AGENT, USER_AGENT)
-from util import (find_salary_snippet, html_to_text, load_json, log, norm_key,
-                  salary_max_usd, save_json, sha1)
+from util import (find_salary_snippet, html_to_text, load_json, log,
+                  looks_genuinely_remote, norm_key, salary_max_usd, save_json,
+                  sha1)
 
 SEEN_PATH = STATE_DIR / "seen_jobs.json"
 TOTALS_PATH = STATE_DIR / "totals.json"
@@ -33,7 +34,7 @@ def _get(url, **kw):
     return requests.get(url, headers=headers, **kw)
 
 
-def _job(source, title, company, location, url, description, salary=None, posted_at=None):
+def _job(source, title, company, location, url, description, salary=None, posted_at=None, remote=True):
     title = (title or "").strip()[:200]
     company = (company or "").strip()[:120]
     description = re.sub(r"\s+", " ", description or "").strip()
@@ -43,7 +44,7 @@ def _job(source, title, company, location, url, description, salary=None, posted
         "title": title,
         "company": company,
         "location": (location or "Remote").strip()[:120],
-        "remote": True,
+        "remote": bool(remote),
         "url": url,
         "description": description[:4000],
         "salary": salary,
@@ -126,7 +127,7 @@ def fetch_hn_whoishiring():
     out = []
     for c in r.json().get("hits", []):
         text = html_to_text(c.get("comment_text") or "")
-        if not text or "remote" not in text.lower():
+        if not text or not looks_genuinely_remote(text):
             continue
         first_line = text.splitlines()[0]
         segs = [s.strip() for s in first_line.split("|")]
@@ -154,7 +155,7 @@ def fetch_adzuna(target_titles):
         for j in r.json().get("results", []):
             blob = " ".join([j.get("title", ""), (j.get("location") or {}).get("display_name", ""),
                              j.get("description", "")])
-            if "remote" not in blob.lower():
+            if not looks_genuinely_remote(blob):
                 continue
             salary = None
             if j.get("salary_min"):
@@ -309,6 +310,14 @@ def fetch_all(target_titles):
             log.warning("source %s failed: %s", name, e)
             per_source[name] = 0
     log.info("fetched per source: %s", per_source)
+
+    # Defense in depth: every job builder above is expected to set `remote`
+    # honestly, but a bad source integration must never be able to sneak a
+    # non-remote posting through just by omitting the check.
+    before_remote = len(jobs)
+    jobs = [j for j in jobs if j.get("remote")]
+    if len(jobs) != before_remote:
+        log.info("remote-only rule: dropped %d non-remote postings", before_remote - len(jobs))
 
     # Stated-salary requirement: a posting must state compensation somewhere
     # (salary field, or extractable from its text) and it must reach the

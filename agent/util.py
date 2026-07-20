@@ -116,6 +116,27 @@ def salary_max_usd(salary_text):
     return int(mx)
 
 
+_REMOTE_DISQUALIFIERS = re.compile(
+    r"\bhybrid\b|\bon-?site\b|\bin.office\b|\bin-person\b|"
+    r"\d+\s*(?:-\s*\d+\s*)?days?\s*(?:a|per)\s*week\s*(?:in|on-?site|in.office)|"
+    r"\brelocat(?:e|ion|ing)\b|\bmust (?:be|reside|live) (?:in|near|within)\b",
+    re.I)
+
+
+def looks_genuinely_remote(text):
+    """True only when text reads as fully remote with no hybrid/onsite tell.
+
+    A bare "remote" substring match is too weak — plenty of hybrid/onsite
+    postings mention "remote" once (a stipend, an occasional day) without
+    being remote roles. This additionally rejects the common disqualifying
+    phrasing (hybrid, on-site, N days a week in office, relocation required).
+    """
+    text = text or ""
+    if "remote" not in text.lower():
+        return False
+    return not _REMOTE_DISQUALIFIERS.search(text)
+
+
 _SALARY_SNIPPET = re.compile(
     r"\$\s?\d[\d,]*(?:\.\d+)?\s?[kK]?"
     r"(?:\s?(?:-|–|—|to)\s?\$?\s?\d[\d,]*(?:\.\d+)?\s?[kK]?)?"

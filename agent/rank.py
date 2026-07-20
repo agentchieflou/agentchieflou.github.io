@@ -9,11 +9,12 @@ completes.
 import math
 import os
 
-from config import EMBED_MODEL, STATE_DIR
+from config import EMBED_MODEL, NEG_FEEDBACK_WEIGHT, STATE_DIR
 from util import load_json, log, norm_key, save_json
 
 JOB_VEC_PATH = STATE_DIR / "embeddings" / "jobs.json"
 PROFILE_VEC_PATH = STATE_DIR / "embeddings" / "profile.json"
+REJECTED_VEC_PATH = STATE_DIR / "embeddings" / "rejected.json"
 
 _embedder = None
 _embedder_failed = False
@@ -80,6 +81,40 @@ def _keyword_score(profile, job):
     return hits / max(8, len(terms))
 
 
+def snapshot_rejected_vectors(jobs, rejected_ids):
+    """Captures embeddings for newly-rejected jobs before they can expire out
+    of the live-job cache prune in rank_jobs(). Call this once per run, right
+    after the rejected-email sync and before rank_jobs() — a rejected job's
+    vector must already be in JOB_VEC_PATH from an earlier run (it had to be
+    ranked/scored/digested before it could be rejected), so this just carries
+    it forward into a cache that never gets pruned to "currently live" jobs.
+    """
+    if not rejected_ids:
+        return
+    job_cache = load_json(JOB_VEC_PATH, {})
+    rej_cache = load_json(REJECTED_VEC_PATH, {})
+    added = 0
+    for j in jobs:
+        jid = j["id"]
+        if jid in rejected_ids and jid not in rej_cache:
+            v = job_cache.get(j["content_hash"])
+            if v is not None:
+                rej_cache[jid] = v
+                added += 1
+    if added:
+        save_json(REJECTED_VEC_PATH, rej_cache)
+        log.info("snapshotted %d newly-rejected job embeddings for negative feedback", added)
+
+
+def _negative_centroid():
+    """Rocchio-style negative centroid averaged from rejected job vectors."""
+    vecs = list(load_json(REJECTED_VEC_PATH, {}).values())
+    if not vecs:
+        return None
+    dim = len(vecs[0])
+    return [sum(v[i] for v in vecs) / len(vecs) for i in range(dim)]
+
+
 def rank_jobs(profile, jobs):
     """Attaches `prefilter` in [0,1] to every job and returns jobs sorted desc."""
     doc_vec, title_vecs = _profile_vectors(profile)
@@ -98,9 +133,13 @@ def rank_jobs(profile, jobs):
             live = {j["content_hash"] for j in jobs}
             cache = {h: v for h, v in cache.items() if h in live}
             save_json(JOB_VEC_PATH, cache)
+        neg_centroid = _negative_centroid()
         for j in jobs:
             v = cache[j["content_hash"]]
             best_title = max((_cos(v, t) for t in title_vecs), default=0.0)
-            j["prefilter"] = round(0.65 * _cos(v, doc_vec) + 0.35 * best_title, 4)
+            score = 0.65 * _cos(v, doc_vec) + 0.35 * best_title
+            if neg_centroid is not None:
+                score -= NEG_FEEDBACK_WEIGHT * _cos(v, neg_centroid)
+            j["prefilter"] = round(max(0.0, score), 4)
 
     return sorted(jobs, key=lambda j: -j["prefilter"])

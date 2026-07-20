@@ -45,6 +45,16 @@ JOB_EXPIRY_DAYS = 14      # drop listings not seen at any source for this long
 # flagged in the digest.
 MIN_SALARY_USD = 130_000
 
+# A job must share at least this many skills with the profile (per the LLM's
+# matched_skills) to count as a real match anywhere downstream (digest or
+# skills.html) — keeps one-skill-overlap noise out of "worth applying to".
+MIN_SKILL_MATCHES = 3
+
+# Rocchio-style negative feedback weight: how hard a rejected-job negative
+# centroid pulls down the prefilter score of structurally similar postings.
+# Kept well under 1 so rejections can suppress but never fully zero a score.
+NEG_FEEDBACK_WEIGHT = 0.25
+
 # doomersareretardedcommunists.com — community job-market dashboard hosted at
 # cost on the author's own dime. It publishes immutable daily JSON snapshots
 # (GCS behind the domain), so the polite integration is: one tiny manifest

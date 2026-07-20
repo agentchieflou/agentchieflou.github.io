@@ -14,6 +14,7 @@ from urllib.parse import quote
 from applied import SUBJECT_TAG
 from config import (EMAIL_TO, GMAIL_ADDRESS, GMAIL_APP_PASSWORD,
                     MIN_SALARY_USD, STATE_DIR, TOP_N_DIGEST)
+from rejected import SUBJECT_TAG as REJECTED_SUBJECT_TAG
 from util import log
 
 
@@ -36,6 +37,12 @@ def _mark_applied_link(j):
             f"&body={quote(body)}")
 
 
+def _mark_rejected_link(j):
+    body = f"rejected {j['id']}\n({j['title']} @ {j['company']})"
+    return (f"mailto:{EMAIL_TO}?subject={quote(REJECTED_SUBJECT_TAG)}"
+            f"&body={quote(body)}")
+
+
 def build_html(top, stats):
     e = html.escape
     rows = []
@@ -55,7 +62,8 @@ def build_html(top, stats):
           <div style="font-size:14px;margin:8px 0;">{e(s['why'])}</div>
           <div style="font-size:13px;color:#555;">Missing skills: {e(missing)}</div>
           <div style="margin-top:8px;"><a href="{e(j['url'])}">Apply / view posting →</a>
-            &nbsp;·&nbsp; <a href="{e(_mark_applied_link(j))}" style="color:#0a7d33;">✓ Mark applied</a></div>
+            &nbsp;·&nbsp; <a href="{e(_mark_applied_link(j))}" style="color:#0a7d33;">✓ Mark applied</a>
+            &nbsp;·&nbsp; <a href="{e(_mark_rejected_link(j))}" style="color:#b00020;">✗ Not a good match</a></div>
         </div>""")
 
     suggestions = sorted({t for _, s in top for t in s.get("resume_suggestions", [])})
@@ -69,7 +77,7 @@ def build_html(top, stats):
     <div style="font-family:Arial,Helvetica,sans-serif;max-width:680px;margin:auto;color:#111;">
       <h2>Career Agent — Top {len(top)} matches for {stats['date']}</h2>
       <p style="font-size:12px;color:#777;margin-top:-8px;">Filters: fully remote ·
-        stated salary required, min ${MIN_SALARY_USD:,} · already-applied jobs excluded</p>
+        stated salary required, min ${MIN_SALARY_USD:,} · already-applied and rejected jobs excluded</p>
       {''.join(rows) or '<p>No scored matches yet — the next runs will fill this in.</p>'}
       {sugg_html}
       <h3 style="margin-top:24px;">Run summary</h3>
@@ -78,12 +86,14 @@ def build_html(top, stats):
         <li>{stats['new']} newly discovered postings</li>
         <li>{stats['expired']} expired postings removed</li>
         <li>{stats.get('applied_total', 0)} jobs marked applied to date ·
+            {stats.get('rejected_total', 0)} marked not a good match ·
             {stats.get('discovered_total', 0)} qualifying jobs discovered all-time</li>
         {profile_note}
       </ul>
       <p style="font-size:11px;color:#999;margin-top:24px;">
-        "✓ Mark applied" composes an email to yourself — send it as-is and the next
-        run records the application and stops resurfacing that job.
+        "✓ Mark applied" and "✗ Not a good match" each compose an email to yourself — send
+        either as-is and the next run records it and stops resurfacing that job. Marking a
+        job as not a good match also teaches the ranker to deprioritize similar postings.
         This digest is informational only — nothing was applied to on your behalf.
         Job data includes listings from Remotive, RemoteOK (<a href="https://remoteok.com">remoteok.com</a>),
         Arbeitnow, Hacker News, Adzuna, USAJobs and doomersareretardedcommunists.com.
