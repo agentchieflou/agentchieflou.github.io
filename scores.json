@@ -1,22 +1,4 @@
 {
- "d3ef928c4dd2847ab084c037f86d0adb0a28a9b8": {
-  "profile_version": "a4620cfe0b5b",
-  "match_score": 90,
-  "confidence": 0.9,
-  "why": "Strong alignment with the usage of AI IDEs and production-grade LLM agents within a growth-oriented team.",
-  "matched_skills": [
-   "Python",
-   "LLM & Agentic Workflows"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Explicitly mention your 'AI-first' development workflow (e.g., using Cursor/Claude/Copilot).",
-   "Highlight any experience with Knowledge Graphs."
-  ],
-  "prefilter": 0.6702,
-  "heuristic": false,
-  "scored_at": "2026-07-20T00:13:03.792580+00:00"
- },
  "000f10ba99d4f1b988b0d059e7cc28f0ebd712f9": {
   "profile_version": "0a5fa78b8917",
   "match_score": 100,
@@ -152,40 +134,66 @@
   "scored_at": "2026-07-20T14:33:02.272881+00:00"
  },
  "7f700cf6ebb37eb77755b0b238fde1d4224070ae": {
-  "profile_version": "0a5fa78b8917",
-  "match_score": 100,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
+  "profile_version": "694a2e312f01",
+  "match_score": 95,
+  "confidence": 0.95,
+  "why": "The tech stack and focus on large-scale infrastructure and automation perfectly mirror the candidate's core competencies.",
+  "matched_skills": [
+   "Python",
+   "Docker",
+   "Kubernetes/OpenShift",
+   "REST APIs",
+   "CI/CD"
+  ],
   "missing_skills": [],
-  "resume_suggestions": [],
-  "prefilter": 0.7199,
-  "heuristic": true,
-  "scored_at": "2026-07-20T16:49:49.181216+00:00"
+  "resume_suggestions": [
+   "Explicitly mention building production-critical infrastructure.",
+   "Highlight experience with high-scale data systems."
+  ],
+  "sector": "AI/ML Infra",
+  "prefilter": 0.5387,
+  "heuristic": false,
+  "scored_at": "2026-07-20T17:52:14.684804+00:00"
  },
  "289ea176545c57bfcb2c0021e3e190761ef9c06b": {
-  "profile_version": "0a5fa78b8917",
-  "match_score": 99,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
+  "profile_version": "694a2e312f01",
+  "match_score": 85,
+  "confidence": 0.9,
+  "why": "Excellent alignment with candidate's Business Analytics Consultant background and BI/Data experience.",
+  "matched_skills": [
+   "Python",
+   "SQL",
+   "Power BI"
+  ],
   "missing_skills": [],
-  "resume_suggestions": [],
-  "prefilter": 0.7091,
-  "heuristic": true,
-  "scored_at": "2026-07-20T16:49:49.181216+00:00"
+  "resume_suggestions": [
+   "Highlight marketing-focused data projects.",
+   "Emphasize experience as a trusted advisor to stakeholders."
+  ],
+  "sector": "Healthcare",
+  "prefilter": 0.5543,
+  "heuristic": false,
+  "scored_at": "2026-07-20T17:52:14.684804+00:00"
  },
  "83446b7e650c54ee725c666c349735876c5d330f": {
-  "profile_version": "8444b242a37a",
-  "match_score": 98,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
+  "profile_version": "694a2e312f01",
+  "match_score": 88,
+  "confidence": 0.85,
+  "why": "Candidate's background in C++ and API engineering aligns well with the technical requirements for ML data systems.",
+  "matched_skills": [
+   "Python",
+   "SQL",
+   "Docker"
+  ],
   "missing_skills": [],
-  "resume_suggestions": [],
-  "prefilter": 0.7029,
-  "heuristic": true,
-  "scored_at": "2026-07-20T06:17:11.111879+00:00"
+  "resume_suggestions": [
+   "Highlight experience with C++ in data contexts.",
+   "Emphasize work with computer vision/ML pipelines."
+  ],
+  "sector": "AI/ML Infra",
+  "prefilter": 0.5093,
+  "heuristic": false,
+  "scored_at": "2026-07-20T17:52:14.684804+00:00"
  },
  "5f110b6e553ac770d6c9d39fd94d82bce09dd8ac": {
   "profile_version": "bbec4246b79f",
@@ -206,18 +214,6 @@
   "prefilter": 0.7221,
   "heuristic": false,
   "scored_at": "2026-07-20T14:33:02.272881+00:00"
- },
- "0153453af914b210e75bf816715a3249bb1dceb0": {
-  "profile_version": "8444b242a37a",
-  "match_score": 98,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
-  "missing_skills": [],
-  "resume_suggestions": [],
-  "prefilter": 0.7011,
-  "heuristic": true,
-  "scored_at": "2026-07-20T06:17:11.111879+00:00"
  },
  "61228f7a9694edbd27a754725aa9eea88bfb89d8": {
   "profile_version": "bbec4246b79f",
@@ -295,10 +291,10 @@
   "scored_at": "2026-07-20T05:48:46.232027+00:00"
  },
  "468c3e72493c5f9e946f1342000e153e757fe229": {
-  "profile_version": "bbec4246b79f",
-  "match_score": 95,
-  "confidence": 0.95,
-  "why": "Perfect alignment with your AI agentic workflow experience and high compensation potential.",
+  "profile_version": "694a2e312f01",
+  "match_score": 92,
+  "confidence": 0.9,
+  "why": "Directly matches the candidate's background in building data platforms and working with high-performance inference systems.",
   "matched_skills": [
    "Python",
    "SQL",
@@ -307,28 +303,13 @@
   ],
   "missing_skills": [],
   "resume_suggestions": [
-   "Mention specific AI inference optimization projects."
+   "Emphasize work on inference/model serving pipelines.",
+   "Highlight ability to scale internal data platforms."
   ],
-  "prefilter": 0.7252,
+  "sector": "AI/ML Infra",
+  "prefilter": 0.5292,
   "heuristic": false,
-  "scored_at": "2026-07-20T14:33:02.272881+00:00"
- },
- "e94b6b969ab4896dec943345f84e41b8148bac9c": {
-  "profile_version": "3c8cd16212ea",
-  "match_score": 78,
-  "confidence": 0.9,
-  "why": "Solid alignment for an analytics engineer role within the required compensation bracket.",
-  "matched_skills": [
-   "Python",
-   "SQL"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Highlight data modeling and dashboarding in complex systems."
-  ],
-  "prefilter": 0.7153,
-  "heuristic": false,
-  "scored_at": "2026-07-20T05:48:46.232027+00:00"
+  "scored_at": "2026-07-20T17:52:14.684804+00:00"
  },
  "df306d980dc47e4a888492a1a13488f5bcfef77f": {
   "profile_version": "bbec4246b79f",
@@ -407,16 +388,24 @@
   "scored_at": "2026-07-20T05:48:46.232027+00:00"
  },
  "4b25e8a1522e447dbe334afc5d4f98d10c17c14d": {
-  "profile_version": "0a5fa78b8917",
-  "match_score": 99,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
+  "profile_version": "694a2e312f01",
+  "match_score": 85,
+  "confidence": 0.85,
+  "why": "High-level architecture role matches the candidate's experience in migrations and process automation.",
+  "matched_skills": [
+   "Python",
+   "SQL",
+   "Data Architecture"
+  ],
   "missing_skills": [],
-  "resume_suggestions": [],
-  "prefilter": 0.7085,
-  "heuristic": true,
-  "scored_at": "2026-07-20T16:49:49.181216+00:00"
+  "resume_suggestions": [
+   "Focus on large-scale platform integration projects.",
+   "Emphasize cross-functional architecture design."
+  ],
+  "sector": "Healthcare",
+  "prefilter": 0.5129,
+  "heuristic": false,
+  "scored_at": "2026-07-20T17:52:14.684804+00:00"
  },
  "687a181e23dc1ef52935912eea1d588aaddf2852": {
   "profile_version": "3c8cd16212ea",
@@ -692,22 +681,23 @@
   "scored_at": "2026-07-20T14:33:02.272881+00:00"
  },
  "3d9392be6b3cf3bea8dbe6e8f3c0de0616fdaf75": {
-  "profile_version": "bbec4246b79f",
-  "match_score": 85,
-  "confidence": 0.9,
-  "why": "Strong senior-level fit with salary meeting your minimum requirements.",
+  "profile_version": "694a2e312f01",
+  "match_score": 80,
+  "confidence": 0.75,
+  "why": "Senior role with good salary alignment in the ecommerce infrastructure space.",
   "matched_skills": [
    "Python",
-   "SQL",
-   "API Development"
+   "SQL"
   ],
   "missing_skills": [],
   "resume_suggestions": [
-   "Focus on end-to-end data pipeline delivery."
+   "Emphasize building scalable data infrastructure.",
+   "Highlight expertise in process automation."
   ],
-  "prefilter": 0.7251,
+  "sector": "Consumer/E-commerce",
+  "prefilter": 0.5267,
   "heuristic": false,
-  "scored_at": "2026-07-20T14:33:02.272881+00:00"
+  "scored_at": "2026-07-20T17:52:14.684804+00:00"
  },
  "46dbd8296712bc73c8fb2a72751ee6053e64a077": {
   "profile_version": "bbec4246b79f",
@@ -1032,16 +1022,83 @@
   "heuristic": true,
   "scored_at": "2026-07-20T16:49:49.181216+00:00"
  },
- "e14969bb35938447ac6c96960628d5dae97a7f6b": {
-  "profile_version": "0a5fa78b8917",
-  "match_score": 98,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
+ "115a826daddfdcb8858131c7638e9a539c1489ed": {
+  "profile_version": "694a2e312f01",
+  "match_score": 88,
+  "confidence": 0.85,
+  "why": "Strong fit for candidate's background in audio-processing software and API engineering.",
+  "matched_skills": [
+   "Python",
+   "SQL",
+   "REST APIs"
+  ],
   "missing_skills": [],
-  "resume_suggestions": [],
-  "prefilter": 0.7042,
-  "heuristic": true,
-  "scored_at": "2026-07-20T16:49:49.181216+00:00"
+  "resume_suggestions": [
+   "Highlight audio-processing software development.",
+   "Emphasize billing/finance-related data engineering."
+  ],
+  "sector": "AI/ML Infra",
+  "prefilter": 0.5227,
+  "heuristic": false,
+  "scored_at": "2026-07-20T17:52:14.684804+00:00"
+ },
+ "6724fab12f5bc78db84cce3c594361ccf83c4219": {
+  "profile_version": "694a2e312f01",
+  "match_score": 90,
+  "confidence": 0.9,
+  "why": "Strong fit given the candidate's desire for backend engineering roles in health-tech contexts.",
+  "matched_skills": [
+   "Python",
+   "SQL",
+   "Docker"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Highlight cloud-based data engineering projects.",
+   "Emphasize backend architecture experience."
+  ],
+  "sector": "Healthcare",
+  "prefilter": 0.5204,
+  "heuristic": false,
+  "scored_at": "2026-07-20T17:52:14.684804+00:00"
+ },
+ "c9b217785a2dc14b3de1599a3673cf74267ea2da": {
+  "profile_version": "694a2e312f01",
+  "match_score": 82,
+  "confidence": 0.8,
+  "why": "Strong financial sector and data engineering alignment for a senior role.",
+  "matched_skills": [
+   "Python",
+   "SQL"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Emphasize experience with healthcare data compliance/structures.",
+   "Focus on scalability of data pipelines."
+  ],
+  "sector": "Healthcare",
+  "prefilter": 0.5132,
+  "heuristic": false,
+  "scored_at": "2026-07-20T17:52:14.684804+00:00"
+ },
+ "f3a85b8aea9b5d97acb143ca43481dab42dec677": {
+  "profile_version": "694a2e312f01",
+  "match_score": 80,
+  "confidence": 0.75,
+  "why": "Matches the candidate's Python automation focus, though scale of the role seems exceptionally large.",
+  "matched_skills": [
+   "Python",
+   "SQL",
+   "Data Architecture"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Highlight complex custom Python automation suites.",
+   "Emphasize leading data-heavy technical initiatives."
+  ],
+  "sector": "Healthcare",
+  "prefilter": 0.5167,
+  "heuristic": false,
+  "scored_at": "2026-07-20T17:52:14.684804+00:00"
  }
 }

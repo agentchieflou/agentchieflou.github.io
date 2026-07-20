@@ -1,162 +1,158 @@
 {
- "summary": "Michael is a Business Analytics Consultant with a robust track record in automating complex financial workflows and migrating legacy mainframe data systems. He demonstrates strong technical versatility, combining enterprise-grade API engineering and containerization skills with personal experience in C++ game development and audio signal processing. He is highly proficient in deploying AI-driven agentic architectures and automation suites that directly translate to operational cost savings.",
+ "summary": "Professional Business Analytics Consultant with deep expertise in process automation, mainframe-to-cloud data migrations, and API engineering within the financial sector. Proven track record of leveraging containerized architectures and custom Python-based automation suites to deliver significant operational cost savings. Passionate about building high-performance systems, ranging from enterprise-grade REST APIs to complex audio-processing software and physics-based game simulations.",
  "skills": [
   {
    "name": "Python",
    "category": "engineering",
-   "strength": 0.9,
+   "strength": 0.95,
    "evidence": [
-    "Production-grade scrapers",
+    "Process automation at PNC",
     "REST API development",
-    "Workflow automation scripts",
-    "Data parsing logic"
+    "Scraping/parsing suites",
+    "Headless browser orchestration"
    ]
   },
   {
    "name": "SQL",
    "category": "analytics",
-   "strength": 0.85,
-   "evidence": [
-    "Mainframe migration reconciliation",
-    "Database telemetry",
-    "ETL pipelines for mortgage data"
-   ]
-  },
-  {
-   "name": "API Development",
-   "category": "engineering",
-   "strength": 0.85,
-   "evidence": [
-    "REST API deployment on OpenShift",
-    "Containerized scrapers",
-    "Real-time transaction classification"
-   ]
-  },
-  {
-   "name": "Kubernetes/OpenShift",
-   "category": "engineering",
-   "strength": 0.75,
-   "evidence": [
-    "Helm deployments",
-    "Production API containerization",
-    "Policy as Code compliance"
-   ]
-  },
-  {
-   "name": "Power BI",
-   "category": "analytics",
-   "strength": 0.7,
-   "evidence": [
-    "Peer Bank Analysis Dashboard",
-    "Portfolio-wide performance reporting"
-   ]
-  },
-  {
-   "name": "C++",
-   "category": "engineering",
-   "strength": 0.8,
-   "evidence": [
-    "Unreal Engine game architecture",
-    "VST plugin development",
-    "Memory/Buffer management"
-   ]
-  },
-  {
-   "name": "Automation & Scripting",
-   "category": "engineering",
    "strength": 0.9,
    "evidence": [
-    "Selenium/Headless browser suites",
-    "Pricing workflow automation",
-    "Loan file sourcing automation"
-   ]
-  },
-  {
-   "name": "Data Architecture",
-   "category": "analytics",
-   "strength": 0.7,
-   "evidence": [
-    "Mainframe to MongoDB migration",
-    "Version control overhauls",
-    "Data integrity and reproducibility"
-   ]
-  },
-  {
-   "name": "Agentic Workflows",
-   "category": "engineering",
-   "strength": 0.75,
-   "evidence": [
-    "RAG architecture implementation",
-    "Gemini API integration",
-    "Agent-orchestrated game development"
-   ]
-  },
-  {
-   "name": "TypeScript",
-   "category": "engineering",
-   "strength": 0.6,
-   "evidence": [
-    "DAW interface development",
-    "Frontend/UI for production tools"
-   ]
-  },
-  {
-   "name": "Financial Modeling",
-   "category": "domain",
-   "strength": 0.8,
-   "evidence": [
-    "CECL reserve forecasting",
-    "Mortgage asset analysis",
-    "Pricing elasticity research"
+    "Telemetry and usage analytics",
+    "Database reconciliation",
+    "Data architecture overhauls"
    ]
   },
   {
    "name": "Docker",
    "category": "engineering",
+   "strength": 0.85,
+   "evidence": [
+    "Production-grade containerization",
+    "OpenShift deployments",
+    "CI/CD pipeline integration"
+   ]
+  },
+  {
+   "name": "Kubernetes/OpenShift",
+   "category": "engineering",
+   "strength": 0.8,
+   "evidence": [
+    "Helm deployments",
+    "Production API hosting",
+    "Policy as Code governance"
+   ]
+  },
+  {
+   "name": "Power BI",
+   "category": "analytics",
    "strength": 0.75,
    "evidence": [
-    "Production API containerization",
-    "Helm deployment integration"
+    "Semantic modeling",
+    "Portfolio-wide performance reporting",
+    "Executive dashboards"
+   ]
+  },
+  {
+   "name": "C++",
+   "category": "engineering",
+   "strength": 0.75,
+   "evidence": [
+    "Unreal Engine game development",
+    "VST plugin development",
+    "High-performance simulation state machines"
+   ]
+  },
+  {
+   "name": "REST APIs",
+   "category": "engineering",
+   "strength": 0.85,
+   "evidence": [
+    "Operationalized transaction classification",
+    "Containerized scrapers",
+    "Testing/QA API development"
    ]
   },
   {
    "name": "CI/CD",
+   "category": "tools",
+   "strength": 0.8,
+   "evidence": [
+    "Policy as Code integration",
+    "Automated deployment pipelines",
+    "GitHub project workflows"
+   ]
+  },
+  {
+   "name": "Financial Modeling",
+   "category": "domain",
+   "strength": 0.85,
+   "evidence": [
+    "CECL forecasting",
+    "Home Equity pricing",
+    "Competitor stress analysis"
+   ]
+  },
+  {
+   "name": "TypeScript",
+   "category": "engineering",
+   "strength": 0.65,
+   "evidence": [
+    "DAW project development",
+    "UI/UX component design"
+   ]
+  },
+  {
+   "name": "Selenium",
+   "category": "tools",
+   "strength": 0.7,
+   "evidence": [
+    "Document sourcing automation",
+    "Multi-scraper orchestration"
+   ]
+  },
+  {
+   "name": "Agentic Workflows",
    "category": "engineering",
    "strength": 0.7,
    "evidence": [
-    "Enterprise pipeline adherence",
-    "Policy as Code automation"
+    "Research into enterprise RAG",
+    "Automated game development workflows"
    ]
   },
   {
-   "name": "Quantitative Analytics",
+   "name": "Hadoop",
    "category": "analytics",
-   "strength": 0.8,
+   "strength": 0.6,
    "evidence": [
-    "SR 11-7 model compliance",
-    "Portfolio stress testing",
-    "Regression modeling"
+    "Large-scale data processing in banking environments"
    ]
   },
   {
-   "name": "Telemetry & Monitoring",
-   "category": "analytics",
+   "name": "Data Architecture",
+   "category": "engineering",
    "strength": 0.75,
    "evidence": [
-    "Grid-wide database telemetry",
-    "Table-level usage analytics",
-    "System impact analysis"
+    "Mainframe migration reconciliation",
+    "Version control and integrity standards"
+   ]
+  },
+  {
+   "name": "Go",
+   "category": "engineering",
+   "strength": 0.5,
+   "evidence": [
+    "Professional exposure and translation tasks"
    ]
   }
  ],
  "target_titles": [
-  "Senior Business Intelligence Engineer",
   "Data Engineer",
-  "Analytics Automation Engineer",
+  "Analytics Engineer",
   "Quantitative Developer",
-  "Operations Engineer"
+  "Backend Software Engineer",
+  "Automation Engineer"
  ],
- "version": "0a5fa78b8917",
+ "version": "694a2e312f01",
  "remote_only": true,
- "generated_at": "2026-07-20T16:49:25.144142+00:00"
+ "generated_at": "2026-07-20T17:51:54.471493+00:00"
 }
