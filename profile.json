@@ -1,156 +1,162 @@
 {
- "summary": "Data-driven Business Analytics Consultant with a strong background in financial systems, process automation, and high-performance software engineering. Expert in migrating legacy mainframe environments and architecting scalable REST API solutions using Python, Go, and C++. Highly proficient in leveraging AI agentic workflows to accelerate development lifecycles and optimize resource-intensive enterprise processes.",
+ "summary": "Michael is a Business Analytics Consultant with a robust track record in automating complex financial workflows and migrating legacy mainframe data systems. He demonstrates strong technical versatility, combining enterprise-grade API engineering and containerization skills with personal experience in C++ game development and audio signal processing. He is highly proficient in deploying AI-driven agentic architectures and automation suites that directly translate to operational cost savings.",
  "skills": [
   {
    "name": "Python",
    "category": "engineering",
-   "strength": 0.95,
+   "strength": 0.9,
    "evidence": [
-    "Process automation suite",
+    "Production-grade scrapers",
     "REST API development",
-    "High-throughput data parsing"
-   ]
-  },
-  {
-   "name": "C++",
-   "category": "engineering",
-   "strength": 0.85,
-   "evidence": [
-    "Unreal Engine game scaffolding",
-    "JUCE framework development",
-    "High-performance audio VSTs"
+    "Workflow automation scripts",
+    "Data parsing logic"
    ]
   },
   {
    "name": "SQL",
    "category": "analytics",
-   "strength": 0.9,
+   "strength": 0.85,
    "evidence": [
     "Mainframe migration reconciliation",
-    "Database telemetry design",
-    "Portfolio-wide performance reporting"
+    "Database telemetry",
+    "ETL pipelines for mortgage data"
    ]
   },
   {
    "name": "API Development",
    "category": "engineering",
-   "strength": 0.9,
+   "strength": 0.85,
    "evidence": [
-    "OpenShift/Helm REST API deployment",
-    "Headless browser API integration",
-    "Transaction classification services"
+    "REST API deployment on OpenShift",
+    "Containerized scrapers",
+    "Real-time transaction classification"
+   ]
+  },
+  {
+   "name": "Kubernetes/OpenShift",
+   "category": "engineering",
+   "strength": 0.75,
+   "evidence": [
+    "Helm deployments",
+    "Production API containerization",
+    "Policy as Code compliance"
    ]
   },
   {
    "name": "Power BI",
    "category": "analytics",
-   "strength": 0.8,
-   "evidence": [
-    "Enterprise-wide semantic models",
-    "Executive peer bank analysis dashboards"
-   ]
-  },
-  {
-   "name": "Docker",
-   "category": "tools",
-   "strength": 0.85,
-   "evidence": [
-    "Containerized REST API deployments",
-    "OpenShift/Helm infrastructure management"
-   ]
-  },
-  {
-   "name": "Agentic Workflows",
-   "category": "engineering",
-   "strength": 0.8,
-   "evidence": [
-    "Autonomous game dev scaffolding",
-    "Agentic architecture mapping",
-    "Prompt orchestration for resource efficiency"
-   ]
-  },
-  {
-   "name": "TypeScript",
-   "category": "engineering",
    "strength": 0.7,
    "evidence": [
-    "DAW UI development",
-    "NoProd instrumentation project"
+    "Peer Bank Analysis Dashboard",
+    "Portfolio-wide performance reporting"
    ]
   },
   {
-   "name": "Go",
+   "name": "C++",
    "category": "engineering",
-   "strength": 0.6,
-   "evidence": [
-    "Enterprise exposure",
-    "System-level process handling"
-   ]
-  },
-  {
-   "name": "Kubernetes/OpenShift",
-   "category": "tools",
    "strength": 0.8,
    "evidence": [
-    "Policy as Code compliance",
-    "Helm deployment management"
+    "Unreal Engine game architecture",
+    "VST plugin development",
+    "Memory/Buffer management"
    ]
   },
   {
-   "name": "CI/CD Pipelines",
-   "category": "tools",
-   "strength": 0.85,
+   "name": "Automation & Scripting",
+   "category": "engineering",
+   "strength": 0.9,
    "evidence": [
-    "Enterprise-grade testing/deploy gating",
-    "Automated orchestration workflows"
-   ]
-  },
-  {
-   "name": "Quantitative Modeling",
-   "category": "domain",
-   "strength": 0.85,
-   "evidence": [
-    "CECL reserve forecasting",
-    "M&A loan integration",
-    "Stress testing"
+    "Selenium/Headless browser suites",
+    "Pricing workflow automation",
+    "Loan file sourcing automation"
    ]
   },
   {
    "name": "Data Architecture",
    "category": "analytics",
-   "strength": 0.75,
+   "strength": 0.7,
    "evidence": [
-    "Version control improvements",
-    "Grid-wide usage telemetry design"
+    "Mainframe to MongoDB migration",
+    "Version control overhauls",
+    "Data integrity and reproducibility"
    ]
   },
   {
-   "name": "C",
+   "name": "Agentic Workflows",
+   "category": "engineering",
+   "strength": 0.75,
+   "evidence": [
+    "RAG architecture implementation",
+    "Gemini API integration",
+    "Agent-orchestrated game development"
+   ]
+  },
+  {
+   "name": "TypeScript",
+   "category": "engineering",
+   "strength": 0.6,
+   "evidence": [
+    "DAW interface development",
+    "Frontend/UI for production tools"
+   ]
+  },
+  {
+   "name": "Financial Modeling",
+   "category": "domain",
+   "strength": 0.8,
+   "evidence": [
+    "CECL reserve forecasting",
+    "Mortgage asset analysis",
+    "Pricing elasticity research"
+   ]
+  },
+  {
+   "name": "Docker",
+   "category": "engineering",
+   "strength": 0.75,
+   "evidence": [
+    "Production API containerization",
+    "Helm deployment integration"
+   ]
+  },
+  {
+   "name": "CI/CD",
    "category": "engineering",
    "strength": 0.7,
    "evidence": [
-    "Low-level plugin ABI development",
-    "Audio signal processing code"
+    "Enterprise pipeline adherence",
+    "Policy as Code automation"
    ]
   },
   {
-   "name": "Selenium",
-   "category": "tools",
+   "name": "Quantitative Analytics",
+   "category": "analytics",
+   "strength": 0.8,
+   "evidence": [
+    "SR 11-7 model compliance",
+    "Portfolio stress testing",
+    "Regression modeling"
+   ]
+  },
+  {
+   "name": "Telemetry & Monitoring",
+   "category": "analytics",
    "strength": 0.75,
    "evidence": [
-    "Automated document sourcing",
-    "Headless browser scaling"
+    "Grid-wide database telemetry",
+    "Table-level usage analytics",
+    "System impact analysis"
    ]
   }
  ],
  "target_titles": [
-  "Senior Business Systems Analyst",
+  "Senior Business Intelligence Engineer",
+  "Data Engineer",
+  "Analytics Automation Engineer",
   "Quantitative Developer",
-  "Data Engineer (Remote)",
-  "Automation Engineer",
-  "Software Engineer (Backend)"
+  "Operations Engineer"
  ],
- "version": "bbec4246b79f",
+ "version": "0a5fa78b8917",
  "remote_only": true,
- "generated_at": "2026-07-20T14:32:36.336105+00:00"
+ "generated_at": "2026-07-20T16:49:25.144142+00:00"
 }
