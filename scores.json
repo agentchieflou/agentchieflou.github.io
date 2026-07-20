@@ -1,46 +1,4 @@
 {
- "b6505f57f7e90454fcce370d2e94bfaa11f115e5": {
-  "profile_version": "514099c02caa",
-  "match_score": 80,
-  "confidence": 0.85,
-  "why": "Michael’s experience with mainframe-to-cloud migration is highly valued for Databricks large-scale data migrations. This role is a strong financial match given the high hourly rate.",
-  "matched_skills": [
-   "SQL",
-   "Data Visualization",
-   "Python",
-   "Mainframe Migration"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Highlight specific data migration volumes/complexity.",
-   "Emphasize Databricks or Spark experience if applicable."
-  ],
-  "prefilter": 0.6852,
-  "heuristic": false,
-  "scored_at": "2026-07-20T04:43:08.500282+00:00"
- },
- "1b563dc3aac83146a1a6bd8576de9d019090b727": {
-  "profile_version": "514099c02caa",
-  "match_score": 85,
-  "confidence": 0.8,
-  "why": "The platform focuses on AI risk decisioning, which is the intersection of Michael's quantitative risk background and his AI/ML skill set. Multiple relevant openings provide clear career growth paths.",
-  "matched_skills": [
-   "Quantitative Risk/Finance",
-   "Python",
-   "SQL",
-   "Agentic & RAG Strategy"
-  ],
-  "missing_skills": [
-   "Java"
-  ],
-  "resume_suggestions": [
-   "Emphasize experience in Fraud/AML or risk-related quantitative modeling.",
-   "List relevant Python-based ML production experience."
-  ],
-  "prefilter": 0.6988,
-  "heuristic": false,
-  "scored_at": "2026-07-20T04:43:08.500282+00:00"
- },
  "d3ef928c4dd2847ab084c037f86d0adb0a28a9b8": {
   "profile_version": "a4620cfe0b5b",
   "match_score": 90,
@@ -59,101 +17,24 @@
   "heuristic": false,
   "scored_at": "2026-07-20T00:13:03.792580+00:00"
  },
- "91365a1747b2f57d59b98a729bcae8bd3b4bb682": {
-  "profile_version": "2372cbdfcddc-h",
-  "match_score": 88,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
-  "missing_skills": [],
-  "resume_suggestions": [],
-  "prefilter": 0.6343,
-  "heuristic": true,
-  "scored_at": "2026-07-20T00:01:35.292554+00:00"
- },
- "cceba471c1bcf9d04fbf1b29060c34922e1429c3": {
-  "profile_version": "2372cbdfcddc-h",
-  "match_score": 88,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
-  "missing_skills": [],
-  "resume_suggestions": [],
-  "prefilter": 0.6289,
-  "heuristic": true,
-  "scored_at": "2026-07-20T00:01:35.292554+00:00"
- },
  "000f10ba99d4f1b988b0d059e7cc28f0ebd712f9": {
-  "profile_version": "514099c02caa",
-  "match_score": 95,
-  "confidence": 0.9,
-  "why": "Michael’s experience in API services and automation makes him an ideal candidate to build the foundational platform for this organization's AI initiatives. The role involves direct replacement of manual financial work, which leverages his banking automation background.",
+  "profile_version": "3c8cd16212ea",
+  "match_score": 98,
+  "confidence": 0.98,
+  "why": "Perfect match for your specific interest in agentic workflows and system architecture with top-tier pay.",
   "matched_skills": [
+   "Agentic AI/RAG",
+   "System Architecture",
    "Python",
-   "REST API Development",
-   "Agentic & RAG Strategy"
+   "REST APIs"
   ],
   "missing_skills": [],
   "resume_suggestions": [
-   "Detail a specific 'manual process to automated service' migration case study.",
-   "Mention experience with API design for scalability."
+   "Highlight your capability to own both the product and the platform architecture."
   ],
-  "prefilter": 0.718,
+  "prefilter": 0.7102,
   "heuristic": false,
-  "scored_at": "2026-07-20T04:43:08.500282+00:00"
- },
- "be784d5fde0d4df2fb24f4acf5da2316c40ef981": {
-  "profile_version": "2372cbdfcddc-h",
-  "match_score": 87,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
-  "missing_skills": [],
-  "resume_suggestions": [],
-  "prefilter": 0.6268,
-  "heuristic": true,
-  "scored_at": "2026-07-20T00:01:35.292554+00:00"
- },
- "299650f78e7b71815f82e2a06db13cfadf46273f": {
-  "profile_version": "514099c02caa",
-  "match_score": 75,
-  "confidence": 0.75,
-  "why": "This role is a solid backend fit that allows Michael to move into AI-feature development within a successful SaaS environment. It leverages his Python and API expertise.",
-  "matched_skills": [
-   "Python",
-   "REST API Development",
-   "SQL"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Mention FastAPI experience if available.",
-   "Highlight experience with LangChain or evaluation frameworks."
-  ],
-  "prefilter": 0.712,
-  "heuristic": false,
-  "scored_at": "2026-07-20T04:43:08.500282+00:00"
- },
- "27477628f50ebadf59f5e3c0eae4a165abf72f1e": {
-  "profile_version": "514099c02caa",
-  "match_score": 60,
-  "confidence": 0.6,
-  "why": "Strong generalist engineering role, but lacks the domain focus on finance or heavy AI research he currently seeks. Good for general career stability.",
-  "matched_skills": [
-   "Python",
-   "REST API Development",
-   "CI/CD"
-  ],
-  "missing_skills": [
-   "Django",
-   "React"
-  ],
-  "resume_suggestions": [
-   "Emphasize autonomy in high-stakes environment.",
-   "Mention end-to-end integration work."
-  ],
-  "prefilter": 0.7213,
-  "heuristic": false,
-  "scored_at": "2026-07-20T04:43:08.500282+00:00"
+  "scored_at": "2026-07-20T05:48:46.232027+00:00"
  },
  "9736237e9bfc2f4f49d29fb2da68506e47589700": {
   "profile_version": "2372cbdfcddc-h",
@@ -166,83 +47,6 @@
   "prefilter": 0.6235,
   "heuristic": true,
   "scored_at": "2026-07-20T00:01:35.292554+00:00"
- },
- "666b91d25b865d5ee2620d29e8c4188f748fc1a9": {
-  "profile_version": "2372cbdfcddc-h",
-  "match_score": 87,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
-  "missing_skills": [],
-  "resume_suggestions": [],
-  "prefilter": 0.6215,
-  "heuristic": true,
-  "scored_at": "2026-07-20T00:01:35.292554+00:00"
- },
- "b028f9b35de66fd4a6bd7dc848aa0230a53e276c": {
-  "profile_version": "2372cbdfcddc-h",
-  "match_score": 86,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
-  "missing_skills": [],
-  "resume_suggestions": [],
-  "prefilter": 0.6206,
-  "heuristic": true,
-  "scored_at": "2026-07-20T00:01:35.292554+00:00"
- },
- "10157dc5e118935065060f71ad082b90f8691ce5": {
-  "profile_version": "514099c02caa",
-  "match_score": 70,
-  "confidence": 0.7,
-  "why": "Focuses heavily on Kubernetes, infra-as-code, and distributed systems. While a good technical match, it is less focused on his target AI/Finance domains.",
-  "matched_skills": [
-   "Kubernetes/OpenShift",
-   "Python",
-   "CI/CD"
-  ],
-  "missing_skills": [
-   "Go",
-   "Rust"
-  ],
-  "resume_suggestions": [
-   "Quantify experience scaling distributed systems.",
-   "Emphasize experience in graph database engines if possible."
-  ],
-  "prefilter": 0.6942,
-  "heuristic": false,
-  "scored_at": "2026-07-20T04:43:08.500282+00:00"
- },
- "065031d2d06bc3599adc0702a6c9b34badb5206f": {
-  "profile_version": "2372cbdfcddc-h",
-  "match_score": 86,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
-  "missing_skills": [],
-  "resume_suggestions": [],
-  "prefilter": 0.6184,
-  "heuristic": true,
-  "scored_at": "2026-07-20T00:01:35.292554+00:00"
- },
- "282d46fafbf7f46e9dcb12cd637d0e81b338c640": {
-  "profile_version": "514099c02caa",
-  "match_score": 98,
-  "confidence": 0.95,
-  "why": "This is a direct fit for Michael's expertise in shipping production-grade agentic workflows within regulated finance environments. The focus on multi-agent systems and enterprise-grade deployment aligns perfectly with his background in banking-scale systems.",
-  "matched_skills": [
-   "Python",
-   "Agentic & RAG Strategy",
-   "Quantitative Risk/Finance"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Highlight the specific financial processes optimized using agentic workflows.",
-   "Emphasize production-grade deployment metrics."
-  ],
-  "prefilter": 0.7194,
-  "heuristic": false,
-  "scored_at": "2026-07-20T04:43:08.500282+00:00"
  },
  "cf8a0edade9a5642c249c095746690a9c8b2ed0c": {
   "profile_version": "a4620cfe0b5b",
@@ -303,22 +107,6 @@
   "heuristic": false,
   "scored_at": "2026-07-20T04:43:08.500282+00:00"
  },
- "bb1c57471b77f2558107a70af49d29dc4c509723": {
-  "profile_version": "a4620cfe0b5b",
-  "match_score": 10,
-  "confidence": 0.95,
-  "why": "This is a 100% commission sales role which does not leverage your technical engineering or analytics expertise.",
-  "matched_skills": [],
-  "missing_skills": [
-   "Sales"
-  ],
-  "resume_suggestions": [
-   "Ignore this listing; focus on technical engineering/AI roles."
-  ],
-  "prefilter": 0.6715,
-  "heuristic": false,
-  "scored_at": "2026-07-20T00:13:03.792580+00:00"
- },
  "9de959f580bf14bb0c243be6ae5c705b72b337bf": {
   "profile_version": "514099c02caa",
   "match_score": 82,
@@ -338,5 +126,431 @@
   "prefilter": 0.6855,
   "heuristic": false,
   "scored_at": "2026-07-20T04:43:08.500282+00:00"
+ },
+ "693d8377675736db072c24b0d8d806579444e34d": {
+  "profile_version": "3c8cd16212ea",
+  "match_score": 65,
+  "confidence": 0.9,
+  "why": "Strong stack overlap with PySpark and SQL, though the salary floor is slightly below target for lower-end offers.",
+  "matched_skills": [
+   "Python",
+   "SQL",
+   "PySpark"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Emphasize ETL optimization and legacy migration projects."
+  ],
+  "prefilter": 0.7262,
+  "heuristic": false,
+  "scored_at": "2026-07-20T05:48:46.232027+00:00"
+ },
+ "4145b0357a4ea52dc4381a30fecbd306b9e7f7a7": {
+  "profile_version": "3c8cd16212ea",
+  "match_score": 50,
+  "confidence": 0.9,
+  "why": "This is a junior role that undervalues your senior architecture experience and falls below your salary floor at the low end.",
+  "matched_skills": [
+   "Python",
+   "SQL"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Focus on System Architecture and leadership experience."
+  ],
+  "prefilter": 0.7254,
+  "heuristic": false,
+  "scored_at": "2026-07-20T05:48:46.232027+00:00"
+ },
+ "7f700cf6ebb37eb77755b0b238fde1d4224070ae": {
+  "profile_version": "3c8cd16212ea",
+  "match_score": 95,
+  "confidence": 0.95,
+  "why": "Perfect alignment with your high-performance systems and backend infrastructure background at a top-tier company.",
+  "matched_skills": [
+   "Python",
+   "SQL",
+   "Docker/Kubernetes",
+   "System Architecture",
+   "CI/CD"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Highlight large-scale distributed systems and performance optimization projects."
+  ],
+  "prefilter": 0.7206,
+  "heuristic": false,
+  "scored_at": "2026-07-20T05:48:46.232027+00:00"
+ },
+ "289ea176545c57bfcb2c0021e3e190761ef9c06b": {
+  "profile_version": "3c8cd16212ea",
+  "match_score": 80,
+  "confidence": 0.9,
+  "why": "Strong senior-level fit for your analytics background within the required compensation range.",
+  "matched_skills": [
+   "SQL",
+   "Python",
+   "Power BI"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Highlight financial modeling applications within healthcare contexts."
+  ],
+  "prefilter": 0.7191,
+  "heuristic": false,
+  "scored_at": "2026-07-20T05:48:46.232027+00:00"
+ },
+ "83446b7e650c54ee725c666c349735876c5d330f": {
+  "profile_version": "3c8cd16212ea",
+  "match_score": 88,
+  "confidence": 0.9,
+  "why": "Excellent alignment with your ML/Backend interests and current compensation requirements.",
+  "matched_skills": [
+   "Python",
+   "SQL",
+   "Docker/Kubernetes"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Emphasize productionized machine learning and data pipeline robustness."
+  ],
+  "prefilter": 0.7191,
+  "heuristic": false,
+  "scored_at": "2026-07-20T05:48:46.232027+00:00"
+ },
+ "5f110b6e553ac770d6c9d39fd94d82bce09dd8ac": {
+  "profile_version": "3c8cd16212ea",
+  "match_score": 70,
+  "confidence": 0.9,
+  "why": "Solid technical match, but the company's salary band has a high variance that may dip below your requirements.",
+  "matched_skills": [
+   "Python",
+   "PySpark",
+   "SQL"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Highlight Databricks or cloud-based data engineering experience."
+  ],
+  "prefilter": 0.718,
+  "heuristic": false,
+  "scored_at": "2026-07-20T05:48:46.232027+00:00"
+ },
+ "0153453af914b210e75bf816715a3249bb1dceb0": {
+  "profile_version": "3c8cd16212ea",
+  "match_score": 75,
+  "confidence": 0.9,
+  "why": "Good alignment with your core data engineering profile and satisfies your compensation floor.",
+  "matched_skills": [
+   "Python",
+   "SQL"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Mention specific data infrastructure migrations completed."
+  ],
+  "prefilter": 0.7178,
+  "heuristic": false,
+  "scored_at": "2026-07-20T05:48:46.232027+00:00"
+ },
+ "0a9f28978b26caf2ec35ab2cdc5a6063f3c7d0a7": {
+  "profile_version": "3c8cd16212ea",
+  "match_score": 82,
+  "confidence": 0.9,
+  "why": "A strong senior role that leverages your analytics and engineering expertise at a startup.",
+  "matched_skills": [
+   "Python",
+   "SQL",
+   "System Architecture"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Highlight founding/building experience in previous roles."
+  ],
+  "prefilter": 0.7178,
+  "heuristic": false,
+  "scored_at": "2026-07-20T05:48:46.232027+00:00"
+ },
+ "61228f7a9694edbd27a754725aa9eea88bfb89d8": {
+  "profile_version": "3c8cd16212ea",
+  "match_score": 78,
+  "confidence": 0.9,
+  "why": "Matches your GenAI/Agentic workflows focus well, with a competitive salary floor for this role.",
+  "matched_skills": [
+   "Python",
+   "SQL",
+   "Agentic AI/RAG"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Focus on the impact of GenAI/Agentic implementations."
+  ],
+  "prefilter": 0.7172,
+  "heuristic": false,
+  "scored_at": "2026-07-20T05:48:46.232027+00:00"
+ },
+ "466537245dcf7e33612dc24d2455b972040ad520": {
+  "profile_version": "3c8cd16212ea",
+  "match_score": 68,
+  "confidence": 0.9,
+  "why": "Competent technical match, but overlaps with lower salary tiers.",
+  "matched_skills": [
+   "Python",
+   "SQL"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Emphasize cloud-native development."
+  ],
+  "prefilter": 0.7171,
+  "heuristic": false,
+  "scored_at": "2026-07-20T05:48:46.232027+00:00"
+ },
+ "da2bcc26af044451e674517db903ffc3353358b5": {
+  "profile_version": "3c8cd16212ea",
+  "match_score": 92,
+  "confidence": 0.95,
+  "why": "Top-tier compensation and high technical match for ML-heavy data engineering.",
+  "matched_skills": [
+   "Python",
+   "SQL",
+   "Docker/Kubernetes"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Focus on high-volume data processing at scale."
+  ],
+  "prefilter": 0.7165,
+  "heuristic": false,
+  "scored_at": "2026-07-20T05:48:46.232027+00:00"
+ },
+ "cb1f702e0bdb989562243d4e6260fc11e4254b10": {
+  "profile_version": "3c8cd16212ea",
+  "match_score": 75,
+  "confidence": 0.85,
+  "why": "Good fit for your C++/embedded interests, though it falls slightly below your total compensation expectations.",
+  "matched_skills": [
+   "C++",
+   "SQL",
+   "Python"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Highlight your real-time systems and telematics work."
+  ],
+  "prefilter": 0.7101,
+  "heuristic": false,
+  "scored_at": "2026-07-20T05:48:46.232027+00:00"
+ },
+ "468c3e72493c5f9e946f1342000e153e757fe229": {
+  "profile_version": "3c8cd16212ea",
+  "match_score": 85,
+  "confidence": 0.9,
+  "why": "High-growth company with a salary that comfortably exceeds your requirements.",
+  "matched_skills": [
+   "Python",
+   "SQL",
+   "System Architecture"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Emphasize platform engineering and API design."
+  ],
+  "prefilter": 0.7157,
+  "heuristic": false,
+  "scored_at": "2026-07-20T05:48:46.232027+00:00"
+ },
+ "e94b6b969ab4896dec943345f84e41b8148bac9c": {
+  "profile_version": "3c8cd16212ea",
+  "match_score": 78,
+  "confidence": 0.9,
+  "why": "Solid alignment for an analytics engineer role within the required compensation bracket.",
+  "matched_skills": [
+   "Python",
+   "SQL"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Highlight data modeling and dashboarding in complex systems."
+  ],
+  "prefilter": 0.7153,
+  "heuristic": false,
+  "scored_at": "2026-07-20T05:48:46.232027+00:00"
+ },
+ "df306d980dc47e4a888492a1a13488f5bcfef77f": {
+  "profile_version": "3c8cd16212ea",
+  "match_score": 65,
+  "confidence": 0.9,
+  "why": "Meets technical requirements but sits at the lower end of your preferred salary range.",
+  "matched_skills": [
+   "Python",
+   "SQL"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Highlight cloud migration expertise."
+  ],
+  "prefilter": 0.7149,
+  "heuristic": false,
+  "scored_at": "2026-07-20T05:48:46.232027+00:00"
+ },
+ "f8a89160cb558ef410429d35d422d82b966ec909": {
+  "profile_version": "3c8cd16212ea",
+  "match_score": 72,
+  "confidence": 0.9,
+  "why": "Solid technical match; salary is acceptable but at the lower threshold.",
+  "matched_skills": [
+   "Python",
+   "SQL",
+   "PySpark"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Focus on performance tuning for data pipelines."
+  ],
+  "prefilter": 0.7141,
+  "heuristic": false,
+  "scored_at": "2026-07-20T05:48:46.232027+00:00"
+ },
+ "26a8e56c4f20cf9f56e7615f8f2a86fb4ce3929f": {
+  "profile_version": "3c8cd16212ea",
+  "match_score": 85,
+  "confidence": 0.9,
+  "why": "Strong overlap with your Agentic AI and automation skills.",
+  "matched_skills": [
+   "Python",
+   "Agentic AI/RAG",
+   "SQL"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Elaborate on how your agents replaced manual legacy workflows."
+  ],
+  "prefilter": 0.7139,
+  "heuristic": false,
+  "scored_at": "2026-07-20T05:48:46.232027+00:00"
+ },
+ "e59e806b8e2788dc42938f3a0ee78360515903ed": {
+  "profile_version": "3c8cd16212ea",
+  "match_score": 90,
+  "confidence": 0.95,
+  "why": "Ideal seniority and domain alignment with strong compensation.",
+  "matched_skills": [
+   "Python",
+   "Docker/Kubernetes",
+   "System Architecture"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Emphasize ML infra experience and production CI/CD."
+  ],
+  "prefilter": 0.7131,
+  "heuristic": false,
+  "scored_at": "2026-07-20T05:48:46.232027+00:00"
+ },
+ "77cdb5543e22113c19d3f930b7930c813cb912a5": {
+  "profile_version": "3c8cd16212ea",
+  "match_score": 60,
+  "confidence": 0.85,
+  "why": "Fails to hit the minimum salary requirement of $130k.",
+  "matched_skills": [
+   "Python",
+   "SQL",
+   "Power BI"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "None - likely not worth applying due to pay."
+  ],
+  "prefilter": 0.712,
+  "heuristic": false,
+  "scored_at": "2026-07-20T05:48:46.232027+00:00"
+ },
+ "4b25e8a1522e447dbe334afc5d4f98d10c17c14d": {
+  "profile_version": "3c8cd16212ea",
+  "match_score": 80,
+  "confidence": 0.9,
+  "why": "Good fit for architectural experience within the target compensation range.",
+  "matched_skills": [
+   "System Architecture",
+   "SQL",
+   "Python"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Highlight large-scale integrations."
+  ],
+  "prefilter": 0.711,
+  "heuristic": false,
+  "scored_at": "2026-07-20T05:48:46.232027+00:00"
+ },
+ "687a181e23dc1ef52935912eea1d588aaddf2852": {
+  "profile_version": "3c8cd16212ea",
+  "match_score": 90,
+  "confidence": 0.95,
+  "why": "Excellent alignment with senior analytical/engineering roles at a high-compensation firm.",
+  "matched_skills": [
+   "SQL",
+   "Python"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Highlight complex quantitative analysis and automation."
+  ],
+  "prefilter": 0.7107,
+  "heuristic": false,
+  "scored_at": "2026-07-20T05:48:46.232027+00:00"
+ },
+ "cf958de2e2832ec20bf089c1bbb43ed04d6ac1de": {
+  "profile_version": "3c8cd16212ea",
+  "match_score": 85,
+  "confidence": 0.9,
+  "why": "Strong role and company fit, with the ability to negotiate to the higher end of the band.",
+  "matched_skills": [
+   "SQL",
+   "Python"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Focus on impact of analytics on business decision-making."
+  ],
+  "prefilter": 0.7105,
+  "heuristic": false,
+  "scored_at": "2026-07-20T05:48:46.232027+00:00"
+ },
+ "939f8c22f9cf14689a18ac120110f32031c0cdd4": {
+  "profile_version": "3c8cd16212ea",
+  "match_score": 55,
+  "confidence": 0.9,
+  "why": "Junior role that undervalues your experience, with a salary potential that may dip below requirements.",
+  "matched_skills": [
+   "Python",
+   "SQL"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "None - prioritize senior roles."
+  ],
+  "prefilter": 0.7104,
+  "heuristic": false,
+  "scored_at": "2026-07-20T05:48:46.232027+00:00"
+ },
+ "c87fce7c1ae5042056aa861d481d682f7a6c1a3f": {
+  "profile_version": "3c8cd16212ea",
+  "match_score": 75,
+  "confidence": 0.85,
+  "why": "Strong technical alignment, though compensation is on the lower end of your threshold.",
+  "matched_skills": [
+   "Agentic AI/RAG",
+   "Docker/Kubernetes",
+   "CI/CD"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Highlight AI automation lifecycle management."
+  ],
+  "prefilter": 0.7159,
+  "heuristic": false,
+  "scored_at": "2026-07-20T05:48:46.232027+00:00"
  }
 }

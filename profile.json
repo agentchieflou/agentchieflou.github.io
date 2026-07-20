@@ -1,55 +1,35 @@
 {
- "summary": "Michael is a highly technical Business Analytics Consultant with extensive experience in mainframe-to-cloud migrations and automated data reconciliation at enterprise banking scale. He demonstrates deep proficiency in building production-grade API services and agentic workflows, successfully optimizing complex financial processes. Beyond his professional focus on quantitative risk and telemetry, he is an active software engineer building complex systems in C++ and TypeScript.",
+ "summary": "Data-driven professional with a strong foundation in quantitative analytics and engineering, specializing in process automation and legacy systems migration within the financial sector. Highly skilled in developing production-grade REST APIs, containerized architectures, and agentic workflows to solve complex business problems. Passionate about building high-performance systems, ranging from banking infrastructure to real-time audio and gaming engines.",
  "skills": [
   {
    "name": "Python",
    "category": "engineering",
-   "strength": 0.9,
+   "strength": 0.95,
    "evidence": [
     "Automation suites",
-    "API development",
-    "NLP/BERT pipelines",
-    "Quantitative model development"
-   ]
-  },
-  {
-   "name": "REST API Development",
-   "category": "engineering",
-   "strength": 0.85,
-   "evidence": [
-    "Containerized deployment on OpenShift",
-    "Productionizing BERT models",
-    "High-throughput headless browser APIs"
-   ]
-  },
-  {
-   "name": "Kubernetes/OpenShift",
-   "category": "engineering",
-   "strength": 0.8,
-   "evidence": [
-    "Helm deployments",
-    "Production-grade containerization",
-    "Policy-as-Code compliance"
+    "REST API development",
+    "Data parsing/scraping",
+    "Quantitative modeling"
    ]
   },
   {
    "name": "SQL",
    "category": "analytics",
-   "strength": 0.8,
+   "strength": 0.85,
    "evidence": [
+    "Database telemetry",
     "Data reconciliation",
-    "Mainframe migration schemas",
-    "Telemetry and usage analytics"
+    "Mainframe migration data validation"
    ]
   },
   {
-   "name": "Agentic & RAG Strategy",
+   "name": "Docker/Kubernetes",
    "category": "engineering",
-   "strength": 0.75,
+   "strength": 0.8,
    "evidence": [
-    "Gemini/LLM orchestration",
-    "Token-efficient AI design patterns",
-    "Agent-based development in C++/Unreal"
+    "Containerizing scrapers",
+    "OpenShift deployments",
+    "Helm chart management"
    ]
   },
   {
@@ -57,37 +37,37 @@
    "category": "engineering",
    "strength": 0.75,
    "evidence": [
-    "Unreal Engine 5 project development",
-    "VST/Audio plugin architectural work"
+    "Unreal Engine 5 game development",
+    "Headless simulation state machines"
    ]
   },
   {
-   "name": "Quantitative Risk/Finance",
-   "category": "domain",
+   "name": "REST APIs",
+   "category": "engineering",
    "strength": 0.85,
    "evidence": [
-    "CECL forecasting",
-    "Stress testing",
-    "SR 11-7 regulatory standards"
+    "Production-grade API containerization",
+    "Policy-as-Code compliance",
+    "Service integration"
    ]
   },
   {
-   "name": "Data Visualization",
-   "category": "analytics",
+   "name": "Agentic AI/RAG",
+   "category": "engineering",
    "strength": 0.7,
    "evidence": [
-    "Power BI semantic modeling",
-    "Peer Bank Analysis Dashboards"
+    "Agentic workflow design",
+    "Token cost optimization",
+    "Gemini API integration"
    ]
   },
   {
-   "name": "CI/CD",
-   "category": "tools",
+   "name": "Power BI",
+   "category": "analytics",
    "strength": 0.75,
    "evidence": [
-    "Automated pipelines",
-    "Helm deployments",
-    "Enterprise compliance gating"
+    "Portfolio performance dashboards",
+    "Peer bank stress analysis"
    ]
   },
   {
@@ -95,65 +75,82 @@
    "category": "engineering",
    "strength": 0.65,
    "evidence": [
-    "DAW audio project implementation",
-    "Frontend tooling"
+    "NoProd DAW development",
+    "Frontend/audio application logic"
    ]
   },
   {
-   "name": "SAS/Stata/R",
-   "category": "analytics",
-   "strength": 0.7,
+   "name": "CI/CD",
+   "category": "tools",
+   "strength": 0.75,
    "evidence": [
-    "Econometric coursework",
-    "Legacy banking modeling"
+    "Enterprise pipeline adherence",
+    "Policy-as-Code gates"
    ]
   },
   {
-   "name": "Mainframe Migration",
+   "name": "Financial Modeling",
    "category": "domain",
    "strength": 0.85,
    "evidence": [
-    "Asset class migration",
-    "Document sourcing automation",
-    "Data field reconciliation"
+    "CECL reserve forecasting",
+    "Pricing elasticity research",
+    "Stress analysis"
    ]
   },
   {
-   "name": "NLP (BERT)",
-   "category": "analytics",
-   "strength": 0.75,
-   "evidence": [
-    "Transaction classification at scale",
-    "Operationalized AI API services"
-   ]
-  },
-  {
-   "name": "Unreal Engine",
+   "name": "Selenium",
    "category": "tools",
    "strength": 0.7,
    "evidence": [
-    "Physics-based game scaffolding",
-    "Custom C++ integration"
+    "Document sourcing automation",
+    "Headless browser scraping"
    ]
   },
   {
-   "name": "Automation/Scraping",
+   "name": "C",
    "category": "engineering",
-   "strength": 0.85,
+   "strength": 0.6,
    "evidence": [
-    "Document Process Management (DPM) remediation",
-    "Selenium/Headless browser suites"
+    "VST audio plugin development",
+    "Memory/Buffer management in audio projects"
+   ]
+  },
+  {
+   "name": "PySpark",
+   "category": "analytics",
+   "strength": 0.6,
+   "evidence": [
+    "Large-scale data processing"
+   ]
+  },
+  {
+   "name": "System Architecture",
+   "category": "engineering",
+   "strength": 0.7,
+   "evidence": [
+    "Mainframe migration design",
+    "Data reconciliation frameworks"
+   ]
+  },
+  {
+   "name": "Quantitative Economics",
+   "category": "domain",
+   "strength": 0.8,
+   "evidence": [
+    "Econometrics coursework",
+    "Causal research for Federal Reserve"
    ]
   }
  ],
  "target_titles": [
-  "Senior Data Engineer",
+  "Quantitative Software Engineer",
+  "Data Engineer",
+  "Backend Engineer (Python)",
   "Analytics Engineer",
-  "Quantitative Developer",
-  "Automation Engineer",
-  "AI/ML Engineer (Banking & Finance)"
+  "Automation Engineer"
  ],
- "version": "514099c02caa",
+ "version": "3c8cd16212ea",
  "remote_only": true,
- "generated_at": "2026-07-20T04:42:57.093325+00:00"
+ "generated_at": "2026-07-20T05:47:45.868665+00:00"
 }
