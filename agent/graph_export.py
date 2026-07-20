@@ -8,9 +8,10 @@ Shape:
 """
 import datetime as dt
 
-from config import STATE_DIR, TOP_N_GRAPH_JOBS
-from digest import combined_score
-from util import norm_key, save_json
+from company_enrich import CACHE_PATH as COMPANY_CACHE_PATH
+from config import STATE_DIR
+from rotation import select_display_set
+from util import load_json, norm_key, save_json
 
 GRAPH_PATH = STATE_DIR / "skills_graph.json"
 
@@ -24,16 +25,19 @@ def export_graph(profile, jobs, scores, totals=None):
     } for s in profile.get("skills", [])]
     skill_ids = {s["id"] for s in skills}
 
-    scored = [(j, scores[j["id"]]) for j in jobs if j["id"] in scores]
-    scored.sort(key=lambda js: -combined_score(js[1]))
-    scored = scored[:TOP_N_GRAPH_JOBS]
+    company_cache = load_json(COMPANY_CACHE_PATH, {})
+    display = select_display_set(jobs, scores)
 
     job_nodes, edges, ghosts = [], [], {}
-    for j, s in scored:
+    for j in display:
+        s = scores[j["id"]]
+        company = company_cache.get(norm_key(j["company"])) or {}
         job_nodes.append({
             "id": j["id"],
             "title": j["title"],
             "company": j["company"],
+            "sector": s.get("sector") or company.get("sector") or "Other",
+            "company_description": (company.get("description") or "")[:300] or None,
             "location": j["location"],
             "salary": j.get("salary"),
             "url": j["url"],

@@ -146,6 +146,7 @@
     overflow: auto;
     padding-bottom: 16px;
   }
+  .views.graph-active { overflow: hidden; padding-bottom: 0; }
 
   /* ---------- Demand matrix ---------- */
   table.matrix { border-collapse: separate; border-spacing: 2px; font-size: 12.5px; }
@@ -311,6 +312,103 @@
   .rolodex-nav.prev { left: -6px; }
   .rolodex-nav.next { right: -6px; }
 
+  /* ---------- graph (living dependency graph): landing view ----------
+     Position is deterministic, never physics — every node gets a fixed
+     angle by entity type (job/skill/gap/sector); selecting a node changes
+     only its neighbors' radius (graph-hop distance) and opacity, so motion
+     always reads as "pulling relevant things closer," never as randomness.
+     One relayout transition per click (~500ms), then fully idle — no
+     simulation runs at rest, matching [[site-performance-rules]]. Only the
+     inspector panel uses backdrop-filter; the (up to ~80) node chips stay
+     flat, so blur-layer count never scales with the job pool size. */
+  /* :not([hidden]) — an unscoped `#graphView { display:flex }` would beat
+     the `hidden` attribute's UA-stylesheet `display:none` on specificity
+     alone, leaving the graph visibly rendered on top of Matrix/Ledger. */
+  #graphView:not([hidden]) { display: flex; flex-direction: column; height: 100%; min-height: 0; }
+  .g-top { display: flex; align-items: center; gap: 12px; padding: 2px 0 10px; font-size: 12px; color: var(--dim); }
+  .g-top b { color: var(--ink); font-weight: 600; }
+  .g-top .g-type-tag { font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); border: 1px solid rgba(201, 168, 106, 0.4); border-radius: 4px; padding: 2px 6px; }
+  .g-overview-btn {
+    background: none; border: 1px solid var(--line); color: var(--dim); border-radius: 999px;
+    padding: 5px 13px; font: 10.5px "Space Grotesk", sans-serif; letter-spacing: 0.06em;
+    text-transform: uppercase; cursor: pointer; margin-left: auto;
+  }
+  .g-overview-btn:hover { border-color: var(--accent); color: var(--accent); }
+
+  .graph-stage { position: relative; flex: 1; min-height: 0; display: flex; }
+  .g-canvas {
+    position: relative; flex: 1; min-width: 0; overflow: hidden; border-radius: 10px;
+    background-image: linear-gradient(var(--line) 1px, transparent 1px), linear-gradient(90deg, var(--line) 1px, transparent 1px);
+    background-size: 28px 28px; background-position: center;
+  }
+  .g-fade { position: absolute; inset: 0; pointer-events: none; background: radial-gradient(circle at 50% 50%, transparent 42%, var(--bg) 88%); }
+  .g-track { position: absolute; left: 50%; top: 50%; width: 0; height: 0; }
+  svg.g-edges { position: absolute; left: 50%; top: 50%; overflow: visible; pointer-events: none; }
+  svg.g-edges line { transition: stroke-opacity 0.45s ease, stroke-width 0.45s ease, stroke 0.3s ease; }
+
+  .gnode {
+    position: absolute; left: 50%; top: 50%; transform-origin: center; max-width: 150px;
+    transition: transform 0.5s cubic-bezier(0.22, 0.68, 0.32, 1), opacity 0.4s ease;
+    display: flex; flex-direction: column; align-items: flex-start; overflow: hidden;
+    background: var(--card-bg); border: 1px solid var(--line); border-radius: 6px;
+    padding: 6px 10px 6px 9px; cursor: pointer; white-space: nowrap; user-select: none;
+  }
+  .gnode .gtag { font-size: 7.5px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--dim); opacity: 0.75; margin-bottom: 1px; }
+  /* min-width:0 lets ellipsis actually engage on a flex-column child —
+     without it a nowrap span refuses to shrink below its own content width. */
+  .gnode .glbl { font-family: "Space Grotesk", sans-serif; font-size: 11.5px; line-height: 1.25; overflow: hidden; text-overflow: ellipsis; min-width: 0; max-width: 100%; }
+  .gnode .gsub { font-size: 9.5px; color: var(--dim); margin-top: 1px; overflow: hidden; text-overflow: ellipsis; min-width: 0; max-width: 100%; }
+  .gnode.skill { border-left: 3px solid var(--cat, var(--line)); padding-left: 8px; }
+  .gnode.gap { border-style: dashed; }
+  .gnode:hover { border-color: var(--accent); z-index: 20; }
+  .gnode.tiny { padding: 0; width: 9px; height: 9px; min-width: 0; border-radius: 50%; background: var(--dim); border: none; }
+  .gnode.tiny .glbl, .gnode.tiny .gtag, .gnode.tiny .gsub { display: none; }
+  .gnode.tiny:hover { width: auto; height: auto; padding: 6px 10px; border-radius: 6px; background: var(--card-bg); border: 1px solid var(--accent); }
+  .gnode.tiny:hover .glbl { display: block; }
+  .gnode.focus { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent), 0 0 22px rgba(201, 168, 106, 0.18); cursor: default; z-index: 30; }
+  .gnode.focus .glbl { font-size: 14px; font-weight: 600; }
+
+  aside.g-inspector {
+    width: min(280px, 32vw); flex-shrink: 0; border-left: 1px solid var(--line); padding: 16px;
+    overflow-y: auto; background: rgba(20, 22, 27, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+    display: flex; flex-direction: column; gap: 12px;
+  }
+  aside.g-inspector .g-itype { font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); }
+  aside.g-inspector h2 { font-family: "Space Grotesk", sans-serif; font-size: 17px; line-height: 1.28; }
+  aside.g-inspector .g-isub { font-size: 11.5px; color: var(--dim); }
+  aside.g-inspector .g-why { font-size: 12.5px; line-height: 1.55; border-top: 1px solid var(--line); padding-top: 10px; }
+  aside.g-inspector .g-score-row { display: flex; gap: 12px; font-size: 11px; color: var(--dim); }
+  aside.g-inspector .g-score-row b { color: var(--ink); font-size: 13.5px; }
+  .g-rel-group h3 { font-size: 9.5px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--dim); margin-bottom: 5px; }
+  .g-rel-item {
+    display: flex; align-items: center; gap: 8px; font: 12px "Inter", sans-serif; padding: 5px 0;
+    border-bottom: 1px solid rgba(232, 234, 237, 0.06); cursor: pointer; color: var(--ink);
+    background: none; border-left: none; border-right: none; border-top: none; width: 100%; text-align: left;
+  }
+  .g-rel-item:hover, .g-rel-item:focus-visible { color: var(--accent); outline: none; }
+  .g-rel-item .gw { margin-left: auto; font: 11px "Space Grotesk", sans-serif; color: var(--dim); font-variant-numeric: tabular-nums; }
+  .g-apply {
+    display: inline-block; margin-top: 2px; padding: 8px 16px; border-radius: 999px; border: 1px solid var(--accent);
+    color: var(--accent); text-decoration: none; font-family: "Space Grotesk", sans-serif; font-size: 11.5px;
+    letter-spacing: 0.07em; text-transform: uppercase; align-self: flex-start;
+  }
+  .g-apply:hover { background: var(--hover-bg); }
+  .g-empty { color: var(--dim); font-size: 12.5px; line-height: 1.6; }
+
+  @media (max-width: 760px) {
+    .graph-stage { flex-direction: column; }
+    aside.g-inspector { width: 100%; max-height: 36%; border-left: none; border-top: 1px solid var(--line); order: 2; }
+    .g-canvas { order: 1; }
+    /* Chip footprint is fixed CSS pixels but the available radius shrinks
+       with the viewport (graphMaxR) — without this, home-state labels
+       (sized for desktop) crowd each other on a narrow screen even though
+       the underlying angle/radius math is already scaling down correctly. */
+    .gnode { max-width: 108px; padding: 4px 7px 4px 6px; }
+    .gnode .glbl { font-size: 10px; }
+    .gnode .gsub { font-size: 8.5px; }
+  }
+  @media (pointer: coarse) { aside.g-inspector { backdrop-filter: blur(9px); -webkit-backdrop-filter: blur(9px); } }
+
   /* ---------- legend (interactive category filter) + footer ---------- */
   .legend {
     position: relative;
@@ -374,10 +472,11 @@
   <main class="stage">
     <div class="controls">
       <div class="seg" role="tablist" aria-label="View">
+        <button id="viewGraph" role="tab">Graph</button>
         <button id="viewMatrix" role="tab">Matrix</button>
         <button id="viewLedger" role="tab">Ledger</button>
       </div>
-      <label class="ctl">Jobs
+      <label class="ctl" id="jobSortCtl">Jobs
         <select id="jobSort" aria-label="Sort jobs">
           <option value="match">By match</option>
           <option value="title">Position A–Z</option>
@@ -393,7 +492,8 @@
     </div>
 
     <div class="views" id="views">
-      <div id="matrixView"></div>
+      <div id="graphView" hidden></div>
+      <div id="matrixView" hidden></div>
       <div id="ledgerView" hidden></div>
     </div>
   </main>
@@ -413,7 +513,7 @@
     <button class="key" data-cat="tools"><span class="swatch" style="background:var(--cat-tools)"></span>Tools</button>
     <button class="key" data-cat="domain"><span class="swatch" style="background:var(--cat-domain)"></span>Domain</button>
     <button class="key" data-cat="gap"><span class="swatch ghost"></span>Skill gap</button>
-    <span class="meta-note" id="metaNote">Cell depth = how central the skill is to the posting · tap a job for details</span>
+    <span class="meta-note" id="metaNote">Select any node to see how it connects to the rest of your profile</span>
   </footer>
 
 <script>
@@ -546,7 +646,8 @@
 
   /* ---------- view state ---------- */
   let DATA = null;
-  let view = localStorage.getItem('skillsView') === 'ledger' ? 'ledger' : 'matrix';
+  let view = localStorage.getItem('skillsView');
+  if (view !== 'matrix' && view !== 'ledger' && view !== 'graph') view = 'graph';
   let jobSort = 'match';
   let skillSort = 'demand';
   const catOff = new Set();   // deselected legend categories ('analytics', ..., 'gap')
@@ -752,19 +853,308 @@
     openRolodex(btn.dataset.job);
   });
 
+  /* ---------- Graph (landing view): living dependency graph ----------
+     Real data only: skill<->job edges from DATA.edges, plus an implicit
+     job<->sector edge per job's `sector` field (from agent/score_llm.py's
+     classification). No fabricated project/repo/employer nodes — those
+     would need their own real data source in the agent pipeline first,
+     not placeholder content shipped to the live site. */
+  const SECTOR_PREFIX = 'sector-';
+  const GTYPE_LABEL = { job: 'Open role', skill: 'Skill', gap: 'Skill gap', sector: 'Sector' };
+  const G_TYPE_ORDER = ['job', 'skill', 'gap', 'sector'];
+  const G_HOME_R = { job: 130, skill: 250, gap: 250, sector: 320 };
+  const G_TIER_R = [0, 150, 240, 330];
+  const G_GAP_DEG = 8;
+
+  let graphFocus = null;
+  let graphNodes = [];
+  let graphAngle = {};
+  let graphEdgeList = [];   // [aId, bId, weight]
+  let graphScale = 1;
+
+  function buildGraphData() {
+    const demand = {};
+    DATA.edges.forEach(e => { if (!e.missing) demand[e.skill] = (demand[e.skill] || 0) + 1; });
+    const skills = visibleSkills(demand);
+    const jobs = sortedJobs();
+
+    const nodes = [];
+    const bySector = {};
+    jobs.forEach(j => {
+      nodes.push({ id: j.id, type: 'job', label: j.title, sub: j.company, job: j });
+      if (j.sector) (bySector[j.sector] = bySector[j.sector] || []).push(j.id);
+    });
+    skills.forEach(s => {
+      nodes.push({ id: s.id, type: s.ghost ? 'gap' : 'skill', label: s.name, cat: s.category });
+    });
+    Object.keys(bySector).forEach(sec => {
+      nodes.push({ id: SECTOR_PREFIX + sec.replace(/\W+/g, '_'), type: 'sector', label: sec, jobIds: bySector[sec] });
+    });
+
+    const nodeIds = new Set(nodes.map(n => n.id));
+    const edges = [];
+    DATA.edges.forEach(e => {
+      if (nodeIds.has(e.skill) && nodeIds.has(e.job)) edges.push([e.skill, e.job, e.weight]);
+    });
+    Object.entries(bySector).forEach(([sec, ids]) => {
+      const sid = SECTOR_PREFIX + sec.replace(/\W+/g, '_');
+      ids.forEach(jid => edges.push([sid, jid, 0.6]));
+    });
+    return { nodes, edges };
+  }
+
+  function assignGraphAngles(nodes) {
+    const angleOf = {};
+    const groups = G_TYPE_ORDER.map(t => nodes.filter(n => n.type === t).sort((a, b) => a.label.localeCompare(b.label)));
+    const activeGroups = groups.filter(g => g.length);
+    const totalGap = G_GAP_DEG * activeGroups.length;
+    // sqrt-weighted, not count-weighted: with e.g. 8 jobs vs 16 skills, a
+    // straight proportional split gives jobs a sliver too narrow for their
+    // chip width once several share a tier during a focus. sqrt compresses
+    // that disparity while still giving bigger groups more room overall.
+    const weight = g => Math.sqrt(g.length);
+    const totalWeight = activeGroups.reduce((sum, g) => sum + weight(g), 0) || 1;
+    let cursor = -90;
+    groups.forEach(g => {
+      if (!g.length) return;
+      const span = (360 - totalGap) * (weight(g) / totalWeight);
+      g.forEach((n, i) => { angleOf[n.id] = cursor + (g.length === 1 ? span / 2 : (span * i) / (g.length - 1)); });
+      cursor += span + G_GAP_DEG;
+    });
+    return angleOf;
+  }
+
+  function graphHopDistances(focusId) {
+    const dist = { [focusId]: 0 };
+    const q = [focusId];
+    while (q.length) {
+      const cur = q.shift();
+      for (const [a, b] of graphEdgeList) {
+        const nb = a === cur ? b : (b === cur ? a : null);
+        if (nb && !(nb in dist)) { dist[nb] = dist[cur] + 1; q.push(nb); }
+      }
+    }
+    return dist;
+  }
+
+  function graphNeighbors(id) {
+    return graphEdgeList.filter(e => e[0] === id || e[1] === id)
+      .map(e => ({ id: e[0] === id ? e[1] : e[0], w: e[2] })).sort((a, b) => b.w - a.w);
+  }
+
+  let graphMaxR = 999;
+  function computeGraphScale() {
+    const wrap = document.getElementById('gCanvas');
+    if (!wrap) return;
+    const w = wrap.clientWidth, h = wrap.clientHeight;
+    graphScale = Math.max(0.5, Math.min(1, Math.min(w, h) / 640));
+    // Hard clamp so no node (including its stagger offset) can land past the
+    // canvas edge regardless of how many siblings pile into one bucket —
+    // .g-canvas clips overflow, so an unclamped radius just vanishes off-frame.
+    graphMaxR = Math.min(w, h) / 2 - 90;
+  }
+
+  function graphRadius(type, dist) {
+    const base = graphFocus === null
+      ? G_HOME_R[type]
+      : (dist === undefined || dist === Infinity ? G_TIER_R[3] : G_TIER_R[Math.min(dist, 3)]);
+    return Math.min(base * graphScale, graphMaxR);
+  }
+
+  function renderGraph() {
+    const jobs = sortedJobs();
+    if (!jobs.length) {
+      document.getElementById('graphView').innerHTML = '<p class="empty-note">No live matches yet — the agent’s next run fills this in.</p>';
+      return;
+    }
+    if (!document.getElementById('gCanvas')) {
+      document.getElementById('graphView').innerHTML = `
+        <div class="g-top"><span id="gBreadcrumb"></span><button class="g-overview-btn" id="gOverviewBtn">◎ Overview</button></div>
+        <div class="graph-stage">
+          <div class="g-canvas" id="gCanvas">
+            <div class="g-fade"></div>
+            <div class="g-track"><svg class="g-edges" id="gEdges"></svg></div>
+          </div>
+          <aside class="g-inspector" id="gInspector"></aside>
+        </div>`;
+      document.getElementById('gOverviewBtn').addEventListener('click', () => setGraphFocus(null));
+    }
+    const { nodes, edges } = buildGraphData();
+    graphNodes = nodes;
+    graphEdgeList = edges;
+    graphAngle = assignGraphAngles(nodes);
+    if (graphFocus && !nodes.some(n => n.id === graphFocus)) graphFocus = null;
+    layoutGraph();
+  }
+
+  // Outward-only, cycling lanes. Node box sizes vary wildly here (a 9px job
+  // dot vs. a ~150x50px skill chip), so an inward stagger step — even a
+  // "small" one — can drop a chunky chip's radius close enough to an inner
+  // ring that its bounding box swallows a node sitting on that ring; a
+  // symmetric +/- fan can't guarantee otherwise without knowing every box's
+  // footprint. Only ever pushing siblings further out is simpler and safe:
+  // it can never encroach on a smaller inner ring, only spread into the
+  // open field beyond its own ring. Same-lane siblings (every 4th in
+  // angle-sorted order) are already angularly far apart.
+  const STAGGER_LANES = [0, 1, 2, 3];
+  function staggerStep(i) {
+    return STAGGER_LANES[i % STAGGER_LANES.length];
+  }
+
+  function layoutGraph() {
+    computeGraphScale();
+    const byId = {};
+    graphNodes.forEach(n => { byId[n.id] = n; });
+    const dist = graphFocus ? graphHopDistances(graphFocus) : {};
+
+    // First pass: base geometry + which bucket (same type, same radius) each
+    // labeled node falls into, so siblings that would otherwise land right
+    // on top of each other (e.g. several jobs sharing a skill's tier-1 ring)
+    // get staggered onto slightly different radii instead of colliding.
+    const info = graphNodes.map(n => {
+      const isFocus = n.id === graphFocus;
+      const d = dist[n.id];
+      const tiny = !isFocus && n.type === 'job' && (graphFocus === null || d === undefined || d > 1);
+      return { n, isFocus, d, tiny, baseR: isFocus ? 0 : graphRadius(n.type, d) };
+    });
+    const buckets = {};
+    info.forEach(it => {
+      if (it.isFocus || it.tiny) return;
+      const key = it.n.type + '|' + it.baseR.toFixed(1);
+      (buckets[key] = buckets[key] || []).push(it);
+    });
+    Object.values(buckets).forEach(group => {
+      if (group.length < 2) return;
+      group.sort((a, b) => graphAngle[a.n.id] - graphAngle[b.n.id]);
+      const step = 54 * graphScale;
+      group.forEach((it, i) => { it.staggerR = it.baseR + staggerStep(i) * step; });
+    });
+
+    const finalR = {};
+    info.forEach(it => {
+      const r = it.staggerR !== undefined ? it.staggerR : it.baseR;
+      finalR[it.n.id] = it.isFocus ? 0 : Math.max(0, Math.min(r, graphMaxR));
+    });
+
+    let html = '';
+    info.forEach(({ n, isFocus, d, tiny }) => {
+      const r = finalR[n.id];
+      const ang = (graphAngle[n.id] * Math.PI) / 180;
+      const x = Math.cos(ang) * r, y = Math.sin(ang) * r;
+      const op = isFocus ? 1 : (graphFocus === null ? (n.type === 'job' ? 0.55 : 0.92)
+        : (d === undefined ? 0.12 : Math.max(0.4, 1 - (d - 1) * 0.24)));
+      const catStyle = n.type === 'skill' && n.cat ? `--cat:${CAT_COLORS[n.cat]};` : '';
+      html += `<div class="gnode ${n.type}${isFocus ? ' focus' : ''}${tiny ? ' tiny' : ''}" data-id="${esc(n.id)}"
+        style="transform:translate(-50%,-50%) translate(${x}px,${y}px);opacity:${op};${catStyle}">
+        <span class="gtag">${GTYPE_LABEL[n.type]}</span>
+        <span class="glbl">${esc(n.label)}</span>
+        ${n.sub && !tiny ? `<span class="gsub">${esc(n.sub)}</span>` : ''}
+      </div>`;
+    });
+    const track = document.querySelector('#graphView .g-track');
+    track.querySelectorAll('.gnode').forEach(el => el.remove());
+    track.insertAdjacentHTML('beforeend', html);
+    track.querySelectorAll('.gnode').forEach(el =>
+      el.addEventListener('click', () => setGraphFocus(el.dataset.id === graphFocus ? null : el.dataset.id)));
+
+    let edgeHtml = '';
+    graphEdgeList.forEach(([a, b, w]) => {
+      const na = byId[a], nb = byId[b];
+      if (!na || !nb) return;
+      const da = dist[a], db = dist[b];
+      const ra = finalR[a], rb = finalR[b];
+      const aa = (graphAngle[a] * Math.PI) / 180, ab = (graphAngle[b] * Math.PI) / 180;
+      const x1 = Math.cos(aa) * ra, y1 = Math.sin(aa) * ra, x2 = Math.cos(ab) * rb, y2 = Math.sin(ab) * rb;
+      let opacity, width, stroke;
+      if (graphFocus === null) { opacity = 0.07; width = 1; stroke = 'var(--line)'; }
+      else {
+        const touchesFocus = a === graphFocus || b === graphFocus;
+        const bothClose = da !== undefined && da <= 2 && db !== undefined && db <= 2;
+        if (touchesFocus) { opacity = 0.32 + w * 0.55; width = 1 + w * 2; stroke = 'var(--accent)'; }
+        else if (bothClose) { opacity = 0.16 + w * 0.28; width = 1; stroke = 'var(--dim)'; }
+        else { opacity = 0.03; width = 1; stroke = 'var(--line)'; }
+      }
+      edgeHtml += `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="${stroke}" stroke-width="${width}" stroke-opacity="${opacity}" />`;
+    });
+    document.getElementById('gEdges').innerHTML = edgeHtml;
+
+    renderGraphInspector(byId);
+    renderGraphBreadcrumb(byId);
+  }
+
+  function renderGraphBreadcrumb(byId) {
+    const bc = document.getElementById('gBreadcrumb');
+    if (!bc) return;
+    if (!graphFocus) { bc.textContent = 'Nothing focused — select any node to orient the graph around it'; return; }
+    const n = byId[graphFocus];
+    bc.innerHTML = `<span class="g-type-tag">${GTYPE_LABEL[n.type]}</span> Focused on <b>${esc(n.label)}</b>`;
+  }
+
+  function renderGraphInspector(byId) {
+    const panel = document.getElementById('gInspector');
+    if (!graphFocus) {
+      panel.innerHTML = '<div class="g-empty">Select a job, skill, or sector to see how it connects through the rest of your profile.</div>';
+      return;
+    }
+    const n = byId[graphFocus];
+    const rels = graphNeighbors(graphFocus);
+    const groups = {};
+    rels.forEach(r => { const t = byId[r.id] && byId[r.id].type; if (t) (groups[t] = groups[t] || []).push(r); });
+
+    let html = `<div class="g-itype">${GTYPE_LABEL[n.type]}</div><h2>${esc(n.label)}</h2>`;
+    if (n.type === 'job') {
+      const j = n.job;
+      html += `<div class="g-isub">${esc(j.company)} · ${esc(j.location)}${j.salary ? ' · ' + esc(j.salary) : ''}</div>
+        <div class="g-score-row"><span>Match <b>${esc(j.score)}</b>/100</span><span>Confidence <b>${Math.round((j.confidence || 0) * 100)}%</b></span></div>
+        ${j.why ? `<div class="g-why">${esc(j.why)}</div>` : ''}
+        ${j.url && j.url !== '#' ? `<a class="g-apply" href="${esc(j.url)}" target="_blank" rel="noopener">View &amp; apply ↗</a>` : ''}
+        <p style="font-size:11px;color:var(--dim);">Found via ${esc(j.source)} — applying is always your call.</p>`;
+    } else if (n.type === 'sector') {
+      const count = (n.jobIds || []).length;
+      html += `<div class="g-isub">${count} open role${count === 1 ? '' : 's'} currently in this sector</div>`;
+    } else {
+      html += `<div class="g-isub">${n.type === 'gap' ? 'Wanted by the market — not yet in your profile' : 'In your profile'}</div>`;
+    }
+
+    G_TYPE_ORDER.filter(t => groups[t]).forEach(t => {
+      html += `<div class="g-rel-group"><h3>${GTYPE_LABEL[t]}${groups[t].length > 1 ? 's' : ''}</h3>` +
+        groups[t].map(r => `<button class="g-rel-item" data-id="${esc(r.id)}">${esc((byId[r.id] || {}).label || '')}<span class="gw">${Math.round(r.w * 100)}%</span></button>`).join('') +
+        '</div>';
+    });
+    panel.innerHTML = html;
+    panel.querySelectorAll('.g-rel-item').forEach(el => el.addEventListener('click', () => setGraphFocus(el.dataset.id)));
+  }
+
+  function setGraphFocus(id) {
+    graphFocus = id;
+    layoutGraph();
+  }
+
+  addEventListener('resize', () => {
+    if (view === 'graph' && DATA && DATA.jobs && DATA.jobs.length) layoutGraph();
+  });
+
   /* ---------- controls wiring ---------- */
-  const viewBtns = { matrix: document.getElementById('viewMatrix'), ledger: document.getElementById('viewLedger') };
+  const viewBtns = {
+    graph: document.getElementById('viewGraph'),
+    matrix: document.getElementById('viewMatrix'),
+    ledger: document.getElementById('viewLedger'),
+  };
 
   function render() {
     if (!DATA) return;
-    viewBtns.matrix.classList.toggle('active', view === 'matrix');
-    viewBtns.ledger.classList.toggle('active', view === 'ledger');
-    viewBtns.matrix.setAttribute('aria-selected', view === 'matrix');
-    viewBtns.ledger.setAttribute('aria-selected', view === 'ledger');
+    for (const [name, btn] of Object.entries(viewBtns)) {
+      btn.classList.toggle('active', view === name);
+      btn.setAttribute('aria-selected', view === name);
+    }
+    document.getElementById('graphView').hidden = view !== 'graph';
     document.getElementById('matrixView').hidden = view !== 'matrix';
     document.getElementById('ledgerView').hidden = view !== 'ledger';
+    document.getElementById('views').classList.toggle('graph-active', view === 'graph');
+    document.getElementById('jobSortCtl').style.display = view === 'graph' ? 'none' : '';
     document.getElementById('skillSortCtl').style.display = view === 'matrix' ? '' : 'none';
-    if (view === 'matrix') renderMatrix();
+    if (view === 'graph') renderGraph();
+    else if (view === 'matrix') renderMatrix();
     else renderLedger();
 
     const note = document.getElementById('metaNote');
@@ -774,10 +1164,10 @@
       const t = DATA.totals || {};
       const counter = t.discovered_all_time
         ? t.discovered_all_time.toLocaleString() + ' qualifying jobs found to date · ' : '';
-      note.textContent = (view === 'matrix'
-        ? 'Cell depth = skill centrality to the posting · '
-        : 'Ranked by confidence-weighted match · ') + counter +
-        'updated ' + new Date(DATA.generated_at).toLocaleDateString();
+      const prefix = view === 'matrix' ? 'Cell depth = skill centrality to the posting · '
+        : view === 'ledger' ? 'Ranked by confidence-weighted match · '
+        : 'Select any node to see why it connects · ';
+      note.textContent = prefix + counter + 'updated ' + new Date(DATA.generated_at).toLocaleDateString();
     }
   }
 

@@ -12,8 +12,9 @@ import re
 
 import llm
 from config import (DESC_TRUNCATE, GEMINI_API_KEY,
-                    MAX_LLM_CANDIDATES, STATE_DIR)
-from util import load_json, log, save_json
+                    MAX_LLM_CANDIDATES, SECTORS, STATE_DIR)
+from company_enrich import CACHE_PATH as COMPANY_CACHE_PATH
+from util import load_json, log, norm_key, save_json
 
 SCORES_PATH = STATE_DIR / "scores.json"
 
@@ -31,10 +32,12 @@ def _extract_json_array(text):
 
 def _gemini_score(profile, candidates):
     skill_names = [s["name"] for s in profile.get("skills", [])]
+    company_cache = load_json(COMPANY_CACHE_PATH, {})
     jobs_payload = [{
         "id": j["id"],
         "title": j["title"],
         "company": j["company"],
+        "company_about": (company_cache.get(norm_key(j["company"])) or {}).get("description") or None,
         "location": j["location"],
         "salary": j.get("salary"),
         "description": j["description"][:DESC_TRUNCATE],
@@ -53,9 +56,11 @@ def _gemini_score(profile, candidates):
         '{"id": str, "match_score": int 0-100, "confidence": float 0-1,\n'
         ' "why": "<=2 sentences on why it fits", "matched_skills": [names drawn ONLY '
         "from CANDIDATE SKILLS], \"missing_skills\": [skills the posting wants that the "
-        'candidate lacks], "resume_suggestions": [0-2 short concrete resume tweaks]}'
+        'candidate lacks], "resume_suggestions": [0-2 short concrete resume tweaks], '
+        f'"sector": one of {json.dumps(SECTORS)} — the employer\'s industry sector, best '
+        "guess from the company name/description/posting content if company_about is null}"
     )
-    return _extract_json_array(llm.generate(prompt, max_tokens=3000))
+    return _extract_json_array(llm.generate(prompt, max_tokens=3500))
 
 
 def _heuristic_score(candidates):
@@ -66,6 +71,7 @@ def _heuristic_score(candidates):
         "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding "
                "similarity to your profile.",
         "matched_skills": [], "missing_skills": [], "resume_suggestions": [],
+        "sector": "Other",
         "heuristic": True,
     } for j in candidates]
 
@@ -100,11 +106,15 @@ def score_candidates(profile, ranked_jobs):
 
     now = dt.datetime.now(dt.timezone.utc).isoformat()
     by_id = {j["id"]: j for j in candidates}
+    company_cache = load_json(COMPANY_CACHE_PATH, {})
     n = 0
     for r in results:
         jid = r.get("id")
         if jid not in by_id:
             continue
+        sector = str(r.get("sector") or "Other")
+        if sector not in SECTORS:
+            sector = "Other"
         scores[jid] = {
             "profile_version": version,
             "match_score": max(0, min(100, int(r.get("match_score", 0)))),
@@ -113,11 +123,21 @@ def score_candidates(profile, ranked_jobs):
             "matched_skills": [str(s)[:60] for s in r.get("matched_skills", [])][:10],
             "missing_skills": [str(s)[:60] for s in r.get("missing_skills", [])][:8],
             "resume_suggestions": [str(s)[:200] for s in r.get("resume_suggestions", [])][:2],
+            "sector": sector,
             "prefilter": by_id[jid].get("prefilter", 0),
             "heuristic": bool(r.get("heuristic")),
             "scored_at": now,
         }
         n += 1
+        # Roll the per-job sector guess up onto the company record so
+        # graph_export.py (and future runs' prompts) can reuse it without
+        # re-deriving it every time this company's jobs get rescored.
+        ckey = norm_key(by_id[jid]["company"])
+        if ckey:
+            company_cache.setdefault(ckey, {"company": by_id[jid]["company"]})
+            company_cache[ckey]["sector"] = sector
+    if n:
+        save_json(COMPANY_CACHE_PATH, company_cache)
 
     # Drop scores for jobs that no longer exist anywhere
     live = {j["id"] for j in ranked_jobs}

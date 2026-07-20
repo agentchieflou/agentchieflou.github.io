@@ -34,10 +34,11 @@ USAJOBS_USER_AGENT = os.environ.get("USAJOBS_USER_AGENT", EMAIL_TO)
 GMAIL_ADDRESS = os.environ.get("GMAIL_ADDRESS", EMAIL_TO)
 GMAIL_APP_PASSWORD = os.environ.get("GMAIL_APP_PASSWORD", "")
 
-MAX_LLM_CANDIDATES = 25   # jobs sent to Gemini per run, after embedding prefilter
+MAX_LLM_CANDIDATES = 60  # jobs sent to Gemini per run, after embedding prefilter
 DESC_TRUNCATE = 800       # chars of description per job in the LLM prompt
 TOP_N_DIGEST = 10
-TOP_N_GRAPH_JOBS = 8
+TOP_N_GRAPH_JOBS = 50     # size of the displayed pool (skills.html graph/matrix/ledger)
+MIN_NEW_PER_RUN = 20      # of TOP_N_GRAPH_JOBS, at least this many must be new vs. last run
 JOB_EXPIRY_DAYS = 14      # drop listings not seen at any source for this long
 
 # Jobs whose stated salary tops out below this are dropped before ranking.
@@ -68,5 +69,22 @@ DOOMERS_MAX_PER_GROUP = 500  # newest-first cap after filtering
 # the extracted profile so they never reach ranking, scoring, or the graph.
 # Matched case-insensitively as whole words against skill names.
 SKILL_BLOCKLIST_PATTERNS = [r"\bSAS\b", r"\bStata\b", r"\bBERT\b", r"\bNLP\b"]
+
+# Company accessibility gate (agent/company_enrich.py): "we want to work for
+# companies that make themselves accessible" — a company must have a
+# resolvable domain AND a real, fetchable self-description (homepage, or an
+# "about us" blurb already present in one of its own postings). Companies
+# that fail this are excluded entirely, not just deprioritized. Purely
+# mechanical (no LLM) — sector labeling is a separate, LLM-driven step that
+# rides along in the existing scoring call rather than adding a second one.
+COMPANY_ENRICH_MAX_PER_RUN = 20   # new companies resolved per run (politeness cap)
+COMPANY_DESC_MIN_USEFUL = 200     # extracted chars below this = "no real description"
+COMPANY_RECHECK_DAYS = 90         # re-attempt previously-inaccessible companies after this long
+
+SECTORS = [
+    "Fintech", "Healthcare", "Enterprise SaaS/DevTools", "AI/ML Infra",
+    "Consumer/E-commerce", "Government/Public Sector", "Media/Gaming",
+    "Consulting", "Other",
+]
 
 USER_AGENT = "career-agent/1.0 (+https://github.com/agentchieflou/agentchieflou.github.io)"

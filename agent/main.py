@@ -35,6 +35,7 @@ def main():
         config.STATE_DIR = Path(args.state_dir)
 
     import applied as applied_mod
+    import company_enrich
     import digest as digest_mod
     import enrich
     import fetch_jobs
@@ -46,27 +47,32 @@ def main():
 
     config.STATE_DIR.mkdir(parents=True, exist_ok=True)
 
-    log.info("stage 1/6: profile indexing")
+    log.info("stage 1/7: profile indexing")
     profile, changed, note = index_profile.build_profile()
     log.info("profile version %s (%s skills, changed=%s)",
              profile["version"], len(profile.get("skills", [])), changed)
 
-    log.info("stage 2/6: applied + rejected email sync")
+    log.info("stage 2/7: applied + rejected email sync")
     applied = applied_mod.sync_from_inbox()
     rejected = rejected_mod.sync_from_inbox()
 
-    log.info("stage 3/6: job discovery")
+    log.info("stage 3/7: job discovery")
     jobs, new_ids, expired, totals = fetch_jobs.fetch_all(profile.get("target_titles", []))
     log.info("%d live jobs, %d new, %d expired, %d discovered all-time",
              len(jobs), len(new_ids), expired, totals["all_time"])
 
-    log.info("stage 4/6: embedding prefilter + finalist enrichment")
+    log.info("stage 4/7: company accessibility gate")
+    before_company_gate = len(jobs)
+    jobs = company_enrich.gate_jobs(jobs)
+    log.info("company gate: %d of %d jobs kept", len(jobs), before_company_gate)
+
+    log.info("stage 5/7: embedding prefilter + finalist enrichment")
     rank.snapshot_rejected_vectors(jobs, set(rejected))
     ranked = rank.rank_jobs(profile, jobs)
     enrich.enrich_candidates(ranked[:config.MAX_LLM_CANDIDATES])
     ranked = [j for j in ranked if not j.get("dead")]
 
-    log.info("stage 5/6: LLM scoring")
+    log.info("stage 6/7: LLM scoring")
     scores, newly_scored = score_llm.score_candidates(profile, ranked)
     log.info("%d newly scored, %d total scored", newly_scored, len(scores))
 
@@ -77,7 +83,7 @@ def main():
     log.info("skill-match gate: %d of %d scored jobs kept (>= %d matched skills)",
              len(ranked), before_gate, config.MIN_SKILL_MATCHES)
 
-    log.info("stage 6/6: digest + graph export")
+    log.info("stage 7/7: digest + graph export")
     exclude = set(applied) | set(rejected)
     top = digest_mod.pick_top(ranked, scores, exclude=exclude)
     stats = {
