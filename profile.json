@@ -1,84 +1,111 @@
 {
- "summary": "Business Analytics Consultant with a strong background in quantitative finance and a modern focus on AI-augmented workflow engineering. Proven track record in banking for migrating legacy mainframe systems, automating document processing, and deploying containerized REST APIs for predictive modeling. Deeply technical with a demonstrated ability to architect agentic RAG workflows and high-performance applications in C++, TypeScript, and Python.",
+ "summary": "Professional Business Analytics Consultant with a strong technical foundation in banking systems, legacy mainframe migrations, and automated data pipelines. Expert in integrating AI/LLM agentic workflows to accelerate software development and process optimization. Proven track record in delivering high-impact financial modeling, API development, and telemetry systems in regulated enterprise environments.",
  "skills": [
   {
    "name": "Python",
    "category": "engineering",
    "strength": 0.9,
    "evidence": [
-    "Automation suites",
-    "Data validation frameworks",
-    "REST API deployment",
-    "Scraping engines"
+    "Production-grade automation scripts",
+    "Custom scrapers",
+    "REST API development",
+    "Statistical modeling"
    ]
   },
   {
    "name": "SQL",
    "category": "analytics",
-   "strength": 0.85,
+   "strength": 0.8,
    "evidence": [
-    "Mainframe migration reconciliation",
     "Database telemetry",
-    "ETL for asset class migration"
+    "Data reconciliation across MongoDB/Mainframe",
+    "Complex query design"
    ]
   },
   {
    "name": "Kubernetes / OpenShift",
    "category": "engineering",
-   "strength": 0.75,
+   "strength": 0.8,
    "evidence": [
-    "Helm deployments",
-    "Production-grade REST API containerization",
-    "Policy as Code integration"
+    "Deployment of production REST APIs",
+    "Helm charts management",
+    "Policy as Code compliance"
+   ]
+  },
+  {
+   "name": "REST API Development",
+   "category": "engineering",
+   "strength": 0.85,
+   "evidence": [
+    "Containerized deployment of BERT-based models",
+    "Recurring transaction detection services"
+   ]
+  },
+  {
+   "name": "Quantitative Analytics",
+   "category": "analytics",
+   "strength": 0.85,
+   "evidence": [
+    "CECL reserve forecasting",
+    "Stress testing",
+    "Financial model validation under SR 11-7"
+   ]
+  },
+  {
+   "name": "LLM & Agentic Workflows",
+   "category": "engineering",
+   "strength": 0.8,
+   "evidence": [
+    "RAG architecture implementation",
+    "Gemini API integration",
+    "Agent-driven coding workflows in GitHub"
    ]
   },
   {
    "name": "C++",
    "category": "engineering",
-   "strength": 0.7,
-   "evidence": [
-    "Unreal Engine 5 project development",
-    "Physics-based game simulation",
-    "Custom VST plugin development"
-   ]
-  },
-  {
-   "name": "Agentic AI / RAG",
-   "category": "engineering",
-   "strength": 0.7,
-   "evidence": [
-    "Gemini API integration",
-    "Agentic orchestration research",
-    "JSON-based LLM extraction pipelines"
-   ]
-  },
-  {
-   "name": "Power BI",
-   "category": "analytics",
    "strength": 0.75,
    "evidence": [
-    "Portfolio-wide performance dashboards",
-    "Peer Bank stress analysis tools"
+    "Unreal Engine 5 development",
+    "Audio VST plugin development",
+    "Custom memory/buffer management"
    ]
   },
   {
-   "name": "Quantitative Finance",
-   "category": "domain",
-   "strength": 0.8,
+   "name": "Data Visualization",
+   "category": "analytics",
+   "strength": 0.7,
    "evidence": [
-    "CECL reserve forecasting",
-    "Residential mortgage modeling",
-    "Elasticity research",
-    "M&A integration"
+    "Power BI semantic modeling",
+    "Executive stress analysis dashboards"
    ]
   },
   {
-   "name": "Selenium / Scrapy",
+   "name": "Selenium / Headless Browsers",
    "category": "tools",
-   "strength": 0.8,
+   "strength": 0.75,
    "evidence": [
-    "Document sourcing automation",
-    "High-throughput headless browser APIs"
+    "Loan document sourcing automation",
+    "High-throughput scraper orchestration"
+   ]
+  },
+  {
+   "name": "Financial Modeling",
+   "category": "domain",
+   "strength": 0.85,
+   "evidence": [
+    "Mortgage/Home Equity pricing",
+    "Elasticity research",
+    "M&A integration back-testing"
+   ]
+  },
+  {
+   "name": "CI/CD Pipelines",
+   "category": "tools",
+   "strength": 0.75,
+   "evidence": [
+    "Enterprise-grade automated deployments",
+    "OpenShift integration"
    ]
   },
   {
@@ -86,47 +113,46 @@
    "category": "engineering",
    "strength": 0.65,
    "evidence": [
-    "NoProd DAW development",
-    "Audio tool UI implementation"
-   ]
-  },
-  {
-   "name": "CI/CD / Automation",
-   "category": "tools",
-   "strength": 0.85,
-   "evidence": [
-    "Master orchestrator pipelines",
-    "Enterprise policy-as-code compliance"
+    "DAW development",
+    "Frontend dashboard logic"
    ]
   },
   {
    "name": "Mainframe Migration",
    "category": "domain",
-   "strength": 0.75,
+   "strength": 0.8,
    "evidence": [
-    "Asset class migration projects",
-    "Output reconciliation between MongoDB/OLNACS"
+    "Asset class migration",
+    "Data field reconciliation",
+    "Legacy system translation"
    ]
   },
   {
-   "name": "Financial Regulations",
-   "category": "domain",
+   "name": "NLP / BERT",
+   "category": "analytics",
    "strength": 0.7,
    "evidence": [
-    "SR 11-7 compliance",
-    "Model risk management",
-    "OCC/Fed regulatory standards"
+    "Transaction classification at scale",
+    "Productionized model endpoints"
+   ]
+  },
+  {
+   "name": "SAS / Stata",
+   "category": "analytics",
+   "strength": 0.6,
+   "evidence": [
+    "Academic and professional financial research"
    ]
   }
  ],
  "target_titles": [
-  "Senior Data Engineer (Remote)",
-  "Quantitative Developer (Remote)",
-  "AI/ML Operations Engineer (Remote)",
-  "Analytics Consultant - Financial Services (Remote)",
-  "Automation Engineer (Remote)"
+  "Quantitative Developer",
+  "Analytics Engineer",
+  "AI/ML Engineer",
+  "Senior Data Consultant",
+  "Software Engineer (FinTech)"
  ],
- "version": "4868170b4b63",
+ "version": "a4620cfe0b5b",
  "remote_only": true,
- "generated_at": "2026-07-20T00:07:09.668836+00:00"
+ "generated_at": "2026-07-20T00:12:52.904470+00:00"
 }

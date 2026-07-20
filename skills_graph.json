@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-07-20T00:07:21.191540+00:00",
- "profile_version": "4868170b4b63",
+ "generated_at": "2026-07-20T00:13:05.325689+00:00",
+ "profile_version": "a4620cfe0b5b",
  "skills": [
   {
    "id": "python",
@@ -12,43 +12,61 @@
    "id": "sql",
    "name": "SQL",
    "category": "analytics",
-   "strength": 0.85
+   "strength": 0.8
   },
   {
    "id": "kubernetes openshift",
    "name": "Kubernetes / OpenShift",
    "category": "engineering",
-   "strength": 0.75
+   "strength": 0.8
+  },
+  {
+   "id": "rest api development",
+   "name": "REST API Development",
+   "category": "engineering",
+   "strength": 0.85
+  },
+  {
+   "id": "quantitative analytics",
+   "name": "Quantitative Analytics",
+   "category": "analytics",
+   "strength": 0.85
+  },
+  {
+   "id": "llm agentic workflows",
+   "name": "LLM & Agentic Workflows",
+   "category": "engineering",
+   "strength": 0.8
   },
   {
    "id": "c",
    "name": "C++",
    "category": "engineering",
-   "strength": 0.7
-  },
-  {
-   "id": "agentic ai rag",
-   "name": "Agentic AI / RAG",
-   "category": "engineering",
-   "strength": 0.7
-  },
-  {
-   "id": "power bi",
-   "name": "Power BI",
-   "category": "analytics",
    "strength": 0.75
   },
   {
-   "id": "quantitative finance",
-   "name": "Quantitative Finance",
-   "category": "domain",
-   "strength": 0.8
+   "id": "data visualization",
+   "name": "Data Visualization",
+   "category": "analytics",
+   "strength": 0.7
   },
   {
-   "id": "selenium scrapy",
-   "name": "Selenium / Scrapy",
+   "id": "selenium headless browsers",
+   "name": "Selenium / Headless Browsers",
    "category": "tools",
-   "strength": 0.8
+   "strength": 0.75
+  },
+  {
+   "id": "financial modeling",
+   "name": "Financial Modeling",
+   "category": "domain",
+   "strength": 0.85
+  },
+  {
+   "id": "ci cd pipelines",
+   "name": "CI/CD Pipelines",
+   "category": "tools",
+   "strength": 0.75
   },
   {
    "id": "typescript",
@@ -57,25 +75,46 @@
    "strength": 0.65
   },
   {
-   "id": "ci cd automation",
-   "name": "CI/CD / Automation",
-   "category": "tools",
-   "strength": 0.85
-  },
-  {
    "id": "mainframe migration",
    "name": "Mainframe Migration",
    "category": "domain",
-   "strength": 0.75
+   "strength": 0.8
   },
   {
-   "id": "financial regulations",
-   "name": "Financial Regulations",
-   "category": "domain",
+   "id": "nlp bert",
+   "name": "NLP / BERT",
+   "category": "analytics",
    "strength": 0.7
+  },
+  {
+   "id": "sas stata",
+   "name": "SAS / Stata",
+   "category": "analytics",
+   "strength": 0.6
   }
  ],
- "ghost_skills": [],
+ "ghost_skills": [
+  {
+   "id": "ghost-langchain",
+   "name": "Langchain",
+   "ghost": true
+  },
+  {
+   "id": "ghost-sre",
+   "name": "SRE",
+   "ghost": true
+  },
+  {
+   "id": "ghost-java",
+   "name": "Java",
+   "ghost": true
+  },
+  {
+   "id": "ghost-logistics domain expertise",
+   "name": "Logistics domain expertise",
+   "ghost": true
+  }
+ ],
  "jobs": [
   {
    "id": "282d46fafbf7f46e9dcb12cd637d0e81b338c640",
@@ -87,19 +126,31 @@
    "source": "hn",
    "score": 98,
    "confidence": 0.95,
-   "why": "This is an ideal match as it explicitly seeks a lead for agentic systems within regulated finance and enterprise domains. The candidate's background in banking, Python, and RAG architectures maps perfectly to their mandate."
+   "why": "The focus on multi-agent systems in regulated financial domains is a perfect match for your expertise in LLM workflows and financial systems."
   },
   {
-   "id": "000f10ba99d4f1b988b0d059e7cc28f0ebd712f9",
-   "title": "AI Engineer",
+   "id": "cf8a0edade9a5642c249c095746690a9c8b2ed0c",
+   "title": "AI Engineer (Founding seat)",
    "company": "Portless",
    "location": "Remote",
    "salary": null,
-   "url": "https://news.ycombinator.com/item?id=48915735",
+   "url": "https://news.ycombinator.com/item?id=48889875",
    "source": "hn",
+   "score": 95,
+   "confidence": 0.95,
+   "why": "This role explicitly looks for a candidate with a platform mindset and experience building end-to-end agentic workflows, aligning with your career history."
+  },
+  {
+   "id": "502e8a4a82f8c989ecf06ff0e85193b7ddfba1c7",
+   "title": "Senior Independent AI Engineer / Architect",
+   "company": "A.Team",
+   "location": "Americas, Europe, Israel",
+   "salary": "$120 - $170 /hour",
+   "url": "https://remotive.com/remote-jobs/software-development/senior-independent-ai-engineer-architect-1919266",
+   "source": "remotive",
    "score": 92,
    "confidence": 0.9,
-   "why": "Matches the candidate's desire for an agentic-heavy role and a founding-style impact. The scope of building underlying platforms and REST APIs aligns with your experience in deployment and automation."
+   "why": "This network matches your seniority and focus on high-impact AI/agent architectures for enterprise clients."
   },
   {
    "id": "d3ef928c4dd2847ab084c037f86d0adb0a28a9b8",
@@ -110,20 +161,8 @@
    "url": "https://news.ycombinator.com/item?id=48811937",
    "source": "hn",
    "score": 90,
-   "confidence": 0.85,
-   "why": "The focus on knowledge graphs, multi-agent systems, and production LLM workflows is a strong technical fit. The requirement for AI-augmented workflows aligns with your personal tech stack."
-  },
-  {
-   "id": "1b563dc3aac83146a1a6bd8576de9d019090b727",
-   "title": "EM, Sr/Staff Software Engineers, PM, Data Analyst",
-   "company": "Oscilar.com",
-   "location": "Remote",
-   "salary": null,
-   "url": "https://news.ycombinator.com/item?id=48835373",
-   "source": "hn",
-   "score": 85,
-   "confidence": 0.8,
-   "why": "The domain of AI Risk Decisioning and fraud/compliance aligns perfectly with the candidate's quantitative finance background. Several roles listed map to your core skills in data and agent development."
+   "confidence": 0.9,
+   "why": "Strong alignment with the usage of AI IDEs and production-grade LLM agents within a growth-oriented team."
   },
   {
    "id": "299650f78e7b71815f82e2a06db13cfadf46273f",
@@ -133,45 +172,45 @@
    "salary": null,
    "url": "https://news.ycombinator.com/item?id=48910969",
    "source": "hn",
+   "score": 85,
+   "confidence": 0.85,
+   "why": "The tech stack (Python, FastAPI, Langchain) is highly compatible with your skills, and the role offers ownership of AI feature development."
+  },
+  {
+   "id": "fab16b278984be1e1f1a1409c888f8044a19b58f",
+   "title": "Platform Engineer",
+   "company": "Chronograph (chronograph.pe)",
+   "location": "Remote",
+   "salary": null,
+   "url": "https://news.ycombinator.com/item?id=48913532",
+   "source": "hn",
+   "score": 82,
+   "confidence": 0.8,
+   "why": "Matches your background in banking/private capital analytics and platform engineering/DevSecOps experience."
+  },
+  {
+   "id": "1b563dc3aac83146a1a6bd8576de9d019090b727",
+   "title": "EM, Sr/Staff Software Engineers, PM, Data Analyst",
+   "company": "Oscilar.com",
+   "location": "Remote",
+   "salary": null,
+   "url": "https://news.ycombinator.com/item?id=48835373",
+   "source": "hn",
+   "score": 80,
+   "confidence": 0.8,
+   "why": "A strong fit for your financial risk and data engineering background, with multiple tracks relevant to your skill set."
+  },
+  {
+   "id": "000f10ba99d4f1b988b0d059e7cc28f0ebd712f9",
+   "title": "AI Engineer",
+   "company": "Portless",
+   "location": "Remote",
+   "salary": null,
+   "url": "https://news.ycombinator.com/item?id=48915735",
+   "source": "hn",
    "score": 75,
-   "confidence": 0.75,
-   "why": "A solid backend role in Python with a focus on AI features. While it is more generalist backend work than agentic architecture, it is a high-growth environment suited to your seniority."
-  },
-  {
-   "id": "91365a1747b2f57d59b98a729bcae8bd3b4bb682",
-   "title": "See posting",
-   "company": "Opportunity looking for AI Engineer role Globaly Location : India",
-   "location": "Remote",
-   "salary": null,
-   "url": "https://news.ycombinator.com/item?id=48784686",
-   "source": "hn",
-   "score": 88,
-   "confidence": 0.3,
-   "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile."
-  },
-  {
-   "id": "cceba471c1bcf9d04fbf1b29060c34922e1429c3",
-   "title": "Azure Data DevOps Engineer",
-   "company": "Assura Protect",
-   "location": "Remote",
-   "salary": null,
-   "url": "https://news.ycombinator.com/item?id=48818190",
-   "source": "hn",
-   "score": 88,
-   "confidence": 0.3,
-   "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile."
-  },
-  {
-   "id": "27477628f50ebadf59f5e3c0eae4a165abf72f1e",
-   "title": "Senior Software Engineer",
-   "company": "BW Events Tech",
-   "location": "Remote",
-   "salary": null,
-   "url": "https://news.ycombinator.com/item?id=48892504",
-   "source": "hn",
-   "score": 87,
-   "confidence": 0.3,
-   "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile."
+   "confidence": 0.8,
+   "why": "Aligns with your AI engineering goals, though it is a solo role requiring broader operational infrastructure work."
   }
  ],
  "edges": [
@@ -182,67 +221,61 @@
    "missing": false
   },
   {
-   "skill": "agentic ai rag",
+   "skill": "llm agentic workflows",
    "job": "282d46fafbf7f46e9dcb12cd637d0e81b338c640",
    "weight": 0.88,
    "missing": false
   },
   {
-   "skill": "financial regulations",
-   "job": "282d46fafbf7f46e9dcb12cd637d0e81b338c640",
+   "skill": "python",
+   "job": "cf8a0edade9a5642c249c095746690a9c8b2ed0c",
+   "weight": 1.0,
+   "missing": false
+  },
+  {
+   "skill": "rest api development",
+   "job": "cf8a0edade9a5642c249c095746690a9c8b2ed0c",
+   "weight": 0.88,
+   "missing": false
+  },
+  {
+   "skill": "llm agentic workflows",
+   "job": "cf8a0edade9a5642c249c095746690a9c8b2ed0c",
    "weight": 0.76,
    "missing": false
   },
   {
-   "skill": "python",
-   "job": "000f10ba99d4f1b988b0d059e7cc28f0ebd712f9",
-   "weight": 1.0,
-   "missing": false
-  },
-  {
-   "skill": "agentic ai rag",
-   "job": "000f10ba99d4f1b988b0d059e7cc28f0ebd712f9",
-   "weight": 0.88,
-   "missing": false
-  },
-  {
-   "skill": "python",
-   "job": "d3ef928c4dd2847ab084c037f86d0adb0a28a9b8",
-   "weight": 1.0,
-   "missing": false
-  },
-  {
-   "skill": "agentic ai rag",
-   "job": "d3ef928c4dd2847ab084c037f86d0adb0a28a9b8",
-   "weight": 0.88,
-   "missing": false
-  },
-  {
-   "skill": "python",
-   "job": "1b563dc3aac83146a1a6bd8576de9d019090b727",
-   "weight": 1.0,
-   "missing": false
-  },
-  {
-   "skill": "sql",
-   "job": "1b563dc3aac83146a1a6bd8576de9d019090b727",
-   "weight": 0.88,
-   "missing": false
-  },
-  {
-   "skill": "agentic ai rag",
-   "job": "1b563dc3aac83146a1a6bd8576de9d019090b727",
-   "weight": 0.76,
-   "missing": false
-  },
-  {
-   "skill": "financial regulations",
-   "job": "1b563dc3aac83146a1a6bd8576de9d019090b727",
+   "skill": "typescript",
+   "job": "cf8a0edade9a5642c249c095746690a9c8b2ed0c",
    "weight": 0.64,
    "missing": false
   },
   {
    "skill": "python",
+   "job": "502e8a4a82f8c989ecf06ff0e85193b7ddfba1c7",
+   "weight": 1.0,
+   "missing": false
+  },
+  {
+   "skill": "llm agentic workflows",
+   "job": "502e8a4a82f8c989ecf06ff0e85193b7ddfba1c7",
+   "weight": 0.88,
+   "missing": false
+  },
+  {
+   "skill": "python",
+   "job": "d3ef928c4dd2847ab084c037f86d0adb0a28a9b8",
+   "weight": 1.0,
+   "missing": false
+  },
+  {
+   "skill": "llm agentic workflows",
+   "job": "d3ef928c4dd2847ab084c037f86d0adb0a28a9b8",
+   "weight": 0.88,
+   "missing": false
+  },
+  {
+   "skill": "python",
    "job": "299650f78e7b71815f82e2a06db13cfadf46273f",
    "weight": 1.0,
    "missing": false
@@ -252,6 +285,84 @@
    "job": "299650f78e7b71815f82e2a06db13cfadf46273f",
    "weight": 0.88,
    "missing": false
+  },
+  {
+   "skill": "ghost-langchain",
+   "job": "299650f78e7b71815f82e2a06db13cfadf46273f",
+   "weight": 0.5,
+   "missing": true
+  },
+  {
+   "skill": "sql",
+   "job": "fab16b278984be1e1f1a1409c888f8044a19b58f",
+   "weight": 1.0,
+   "missing": false
+  },
+  {
+   "skill": "kubernetes openshift",
+   "job": "fab16b278984be1e1f1a1409c888f8044a19b58f",
+   "weight": 0.88,
+   "missing": false
+  },
+  {
+   "skill": "ci cd pipelines",
+   "job": "fab16b278984be1e1f1a1409c888f8044a19b58f",
+   "weight": 0.76,
+   "missing": false
+  },
+  {
+   "skill": "ghost-sre",
+   "job": "fab16b278984be1e1f1a1409c888f8044a19b58f",
+   "weight": 0.5,
+   "missing": true
+  },
+  {
+   "skill": "python",
+   "job": "1b563dc3aac83146a1a6bd8576de9d019090b727",
+   "weight": 1.0,
+   "missing": false
+  },
+  {
+   "skill": "sql",
+   "job": "1b563dc3aac83146a1a6bd8576de9d019090b727",
+   "weight": 0.88,
+   "missing": false
+  },
+  {
+   "skill": "data visualization",
+   "job": "1b563dc3aac83146a1a6bd8576de9d019090b727",
+   "weight": 0.76,
+   "missing": false
+  },
+  {
+   "skill": "ghost-java",
+   "job": "1b563dc3aac83146a1a6bd8576de9d019090b727",
+   "weight": 0.5,
+   "missing": true
+  },
+  {
+   "skill": "python",
+   "job": "000f10ba99d4f1b988b0d059e7cc28f0ebd712f9",
+   "weight": 1.0,
+   "missing": false
+  },
+  {
+   "skill": "rest api development",
+   "job": "000f10ba99d4f1b988b0d059e7cc28f0ebd712f9",
+   "weight": 0.88,
+   "missing": false
+  },
+  {
+   "skill": "llm agentic workflows",
+   "job": "000f10ba99d4f1b988b0d059e7cc28f0ebd712f9",
+   "weight": 0.76,
+   "missing": false
+  },
+  {
+   "skill": "ghost-logistics domain expertise",
+   "job": "000f10ba99d4f1b988b0d059e7cc28f0ebd712f9",
+   "weight": 0.5,
+   "missing": true
   }
  ]
 }
