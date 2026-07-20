@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Michael Louard — Skills Graph</title>
-<meta name="description" content="Live skill-to-market alignment graph: my skills, current top job matches, and the gaps between them." />
+<title>Michael Louard — Skills</title>
+<meta name="description" content="Live skill-to-market alignment: my skills, current top job matches, and the gaps between them." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -48,10 +48,10 @@
     background: var(--bg);
     color: var(--ink);
     font-family: "Inter", system-ui, -apple-system, sans-serif;
-    overflow: hidden;
     display: grid;
     grid-template-rows: auto 1fr auto;
     height: 100dvh;
+    overflow: hidden;
     transition: background 0.4s ease, color 0.4s ease;
   }
 
@@ -75,7 +75,6 @@
   .brand { color: var(--ink); font-weight: 700; letter-spacing: 0.3em; text-decoration: none; }
   .hud-title { flex: 1; text-align: center; }
 
-  /* Kate mode: small pink footer pill — a fun aside, not part of the main story */
   .kate-toggle-btn {
     position: fixed;
     right: 18px;
@@ -96,17 +95,141 @@
   }
   .kate-toggle-btn:hover { border-color: var(--kate-pink); background: rgba(242, 165, 184, 0.1); }
 
-  .stage { position: relative; z-index: 4; min-height: 0; }
-  #graph { position: absolute; inset: 0; width: 100%; height: 100%; touch-action: manipulation; }
+  /* ---------- stage: controls + scrollable views ---------- */
+  .stage {
+    position: relative;
+    z-index: 4;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0 clamp(14px, 4vw, 48px);
+  }
 
-  /* Detail panel */
+  .controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px 18px;
+    padding: 2px 0 14px;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--dim);
+  }
+  .seg { display: inline-flex; border: 1px solid var(--line); border-radius: 999px; overflow: hidden; }
+  .seg button {
+    background: none;
+    border: none;
+    color: var(--dim);
+    font: inherit;
+    letter-spacing: inherit;
+    text-transform: inherit;
+    padding: 7px 16px;
+    cursor: pointer;
+  }
+  .seg button.active { background: var(--hover-bg); color: var(--accent); }
+  .seg button:focus-visible { outline: 1px solid var(--accent); outline-offset: -1px; }
+  .ctl { display: inline-flex; align-items: center; gap: 7px; }
+  .ctl select {
+    background: var(--card-bg);
+    color: var(--ink);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    font: 11px "Inter", sans-serif;
+    padding: 6px 8px;
+    cursor: pointer;
+  }
+
+  .views {
+    flex: 1;
+    min-height: 0;
+    overflow: auto;
+    padding-bottom: 16px;
+  }
+
+  /* ---------- Demand matrix ---------- */
+  table.matrix { border-collapse: separate; border-spacing: 2px; font-size: 12.5px; }
+  .matrix th { font-weight: 400; color: var(--dim); text-align: left; white-space: nowrap; }
+  .matrix thead th.skill-h { height: 128px; vertical-align: bottom; width: 27px; }
+  .matrix thead th.skill-h > span {
+    display: block;
+    transform: rotate(-58deg);
+    transform-origin: bottom left;
+    width: 23px;
+    white-space: nowrap;
+    font-size: 11.5px;
+  }
+  .matrix thead .cdot { display: inline-block; width: 7px; height: 7px; border-radius: 50%; margin-right: 5px; }
+  .matrix td.cell { width: 27px; height: 25px; border-radius: 4px; background: rgba(232, 234, 237, 0.04); }
+  .matrix td.cell.gap { background: none; border: 1.5px dashed var(--dim); }
+  .matrix td.cell:hover { outline: 1px solid var(--accent); }
+  .matrix th.job { padding-right: 12px; max-width: min(300px, 38vw); overflow: hidden; text-overflow: ellipsis; }
+  .matrix th.job button {
+    background: none;
+    border: none;
+    color: var(--ink);
+    font: 12.5px/1.35 "Inter", sans-serif;
+    text-align: left;
+    cursor: pointer;
+    padding: 0;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+  }
+  .matrix th.job button:hover, .matrix th.job button:focus-visible { color: var(--accent); outline: none; }
+  .matrix th.job small { color: var(--dim); display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .matrix td.score { font: 600 12px "Space Grotesk", sans-serif; color: var(--accent); padding-left: 10px; font-variant-numeric: tabular-nums; }
+  .matrix tfoot td { color: var(--dim); font: 10.5px "Space Grotesk", sans-serif; text-align: center; padding-top: 6px; }
+  .matrix tfoot th { font-size: 10.5px; letter-spacing: 0.08em; text-transform: uppercase; text-align: right; padding-right: 12px; }
+
+  /* ---------- Match ledger ---------- */
+  .ledger { display: flex; flex-direction: column; gap: 10px; max-width: 860px; }
+  .lrow {
+    display: grid;
+    grid-template-columns: 96px 1fr;
+    gap: 4px 16px;
+    background: var(--card-bg);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 14px 16px;
+    transition: border-color 0.15s ease;
+  }
+  .lrow:hover { border-color: var(--accent); }
+  .lscore { font: 600 21px/1.1 "Space Grotesk", sans-serif; color: var(--accent); font-variant-numeric: tabular-nums; }
+  .lscore small { display: block; font: 400 9.5px "Space Grotesk", sans-serif; letter-spacing: 0.14em; color: var(--dim); margin-top: 2px; text-transform: uppercase; }
+  .lmeter { grid-column: 1; height: 4px; border-radius: 2px; background: rgba(232, 234, 237, 0.08); overflow: hidden; align-self: start; }
+  .lmeter i { display: block; height: 100%; background: var(--accent); border-radius: 2px; }
+  .ltitle { font-weight: 600; font-size: 14.5px; }
+  .ltitle a { color: var(--ink); text-decoration: none; }
+  .ltitle a:hover, .ltitle a:focus-visible { color: var(--accent); outline: none; }
+  .lmeta { color: var(--dim); font-size: 12.5px; margin-top: 2px; }
+  .lwhy { grid-column: 2; color: var(--dim); font-size: 12.5px; line-height: 1.5; margin-top: 4px; }
+  .lchips { grid-column: 2; display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; }
+  .chip {
+    font-size: 11px;
+    padding: 4px 10px;
+    border-radius: 999px;
+    border: 1px solid var(--line);
+    color: var(--ink);
+    white-space: nowrap;
+  }
+  .chip.missing { border-style: dashed; color: var(--dim); }
+  .chip .dot { display: inline-block; width: 7px; height: 7px; border-radius: 50%; margin-right: 5px; }
+
+  .empty-note { color: var(--dim); font-size: 13px; padding: 18px 0; }
+
+  /* ---------- job detail panel (opened from matrix rows) ---------- */
   .panel {
-    position: absolute;
-    z-index: 6;
+    position: fixed;
+    z-index: 20;
     right: clamp(12px, 3vw, 40px);
-    top: 12px;
+    top: 70px;
     width: min(340px, calc(100vw - 24px));
-    max-height: calc(100% - 24px);
+    max-height: calc(100dvh - 140px);
     overflow-y: auto;
     padding: 20px;
     border: 1px solid var(--line);
@@ -121,16 +244,7 @@
   .panel .why { font-size: 13.5px; line-height: 1.55; margin: 10px 0; }
   .panel .score-row { display: flex; gap: 14px; font-size: 12px; color: var(--dim); margin-bottom: 6px; }
   .panel .score-row b { color: var(--ink); font-size: 15px; }
-  .chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; }
-  .chip {
-    font-size: 11px;
-    padding: 4px 10px;
-    border-radius: 999px;
-    border: 1px solid var(--line);
-    color: var(--ink);
-  }
-  .chip.missing { border-style: dashed; color: var(--dim); }
-  .chip .dot { display: inline-block; width: 7px; height: 7px; border-radius: 50%; margin-right: 5px; }
+  .panel h3 { font-size: 12px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--dim); margin-top: 14px; }
   .panel .apply {
     display: inline-block;
     margin-top: 10px;
@@ -155,19 +269,14 @@
     font-size: 18px;
     cursor: pointer;
   }
-  .strength-bar { height: 6px; border-radius: 3px; background: rgba(255,255,255,0.08); margin: 8px 0 4px; overflow: hidden; }
-  .strength-bar span { display: block; height: 100%; border-radius: 3px; }
-  .panel h3 { font-size: 12px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--dim); margin-top: 14px; }
-  .panel ul.job-list { list-style: none; margin-top: 6px; }
-  .panel ul.job-list li { font-size: 13px; padding: 4px 0; }
 
-  /* Legend + footer */
+  /* ---------- legend (interactive category filter) + footer ---------- */
   .legend {
     position: relative;
     z-index: 5;
     display: flex;
     flex-wrap: wrap;
-    gap: 8px 14px;
+    gap: 8px 10px;
     justify-content: center;
     align-items: center;
     padding: 10px clamp(12px, 3vw, 40px) 16px;
@@ -175,40 +284,31 @@
     color: var(--dim);
     letter-spacing: 0.06em;
   }
-  .legend .key { display: inline-flex; align-items: center; gap: 6px; }
+  .legend .key {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: none;
+    border: 1px solid transparent;
+    border-radius: 999px;
+    padding: 4px 10px;
+    color: var(--dim);
+    font: inherit;
+    letter-spacing: inherit;
+    cursor: pointer;
+  }
+  .legend .key:hover { border-color: var(--line); }
+  .legend .key:focus-visible { outline: 1px solid var(--accent); outline-offset: -1px; }
+  .legend .key.off { opacity: 0.35; }
+  .legend .key.off .swatch { background: none !important; border: 1.5px solid var(--dim); }
   .legend .swatch { width: 10px; height: 10px; border-radius: 50%; }
   .legend .swatch.ghost { background: none; border: 1.5px dashed var(--dim); }
-  .legend .swatch.job { background: none; border: 2px solid var(--accent); }
   .legend .meta-note { flex-basis: 100%; text-align: center; opacity: 0.75; }
-  .legend a { color: var(--dim); }
-
-  details.data-table {
-    position: absolute;
-    left: clamp(12px, 3vw, 40px);
-    bottom: 12px;
-    z-index: 6;
-    font-size: 12px;
-    color: var(--dim);
-    max-width: min(360px, calc(100vw - 24px));
-  }
-  details.data-table summary { cursor: pointer; letter-spacing: 0.08em; text-transform: uppercase; font-size: 11px; }
-  details.data-table[open] {
-    background: var(--card-bg);
-    border: 1px solid var(--line);
-    border-radius: 12px;
-    padding: 12px;
-    max-height: 40vh;
-    overflow-y: auto;
-  }
-  details.data-table table { border-collapse: collapse; margin-top: 8px; width: 100%; }
-  details.data-table th, details.data-table td { text-align: left; padding: 3px 8px 3px 0; font-weight: 400; vertical-align: top; }
-  details.data-table th { color: var(--ink); font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; }
-  details.data-table a { color: var(--accent); }
 
   @media (max-width: 700px) {
-    .panel { left: 12px; right: 12px; top: auto; bottom: 12px; width: auto; max-height: 55%; }
-    details.data-table { display: none; }
     .hud-title { display: none; }
+    .lrow { grid-template-columns: 74px 1fr; }
+    .lscore { font-size: 18px; }
   }
 
   @media (prefers-reduced-motion: reduce) {
@@ -231,27 +331,44 @@
   </button>
 
   <main class="stage">
-    <canvas id="graph" aria-label="Interactive graph of skills and matching job postings"></canvas>
+    <div class="controls">
+      <div class="seg" role="tablist" aria-label="View">
+        <button id="viewMatrix" role="tab">Matrix</button>
+        <button id="viewLedger" role="tab">Ledger</button>
+      </div>
+      <label class="ctl">Jobs
+        <select id="jobSort" aria-label="Sort jobs">
+          <option value="match">By match</option>
+          <option value="title">Position A–Z</option>
+          <option value="company">Company A–Z</option>
+        </select>
+      </label>
+      <label class="ctl" id="skillSortCtl">Skills
+        <select id="skillSort" aria-label="Sort skill columns">
+          <option value="demand">By demand</option>
+          <option value="alpha">A–Z</option>
+        </select>
+      </label>
+    </div>
 
-    <aside class="panel" id="panel" aria-live="polite">
-      <button class="close-btn" id="panelClose" aria-label="Close details">✕</button>
-      <div id="panelBody"></div>
-    </aside>
-
-    <details class="data-table" id="dataTable">
-      <summary>View as list</summary>
-      <div id="tableBody"></div>
-    </details>
+    <div class="views" id="views">
+      <div id="matrixView"></div>
+      <div id="ledgerView" hidden></div>
+    </div>
   </main>
 
+  <aside class="panel" id="panel" aria-live="polite">
+    <button class="close-btn" id="panelClose" aria-label="Close details">✕</button>
+    <div id="panelBody"></div>
+  </aside>
+
   <footer class="legend" id="legend">
-    <span class="key"><span class="swatch" style="background:var(--cat-analytics)"></span>Analytics</span>
-    <span class="key"><span class="swatch" style="background:var(--cat-engineering)"></span>Engineering</span>
-    <span class="key"><span class="swatch" style="background:var(--cat-tools)"></span>Tools</span>
-    <span class="key"><span class="swatch" style="background:var(--cat-domain)"></span>Domain</span>
-    <span class="key"><span class="swatch job"></span>Job match</span>
-    <span class="key"><span class="swatch ghost"></span>Skill gap</span>
-    <span class="meta-note" id="metaNote">Node size = skill strength / match score · tap anything for details</span>
+    <button class="key" data-cat="analytics"><span class="swatch" style="background:var(--cat-analytics)"></span>Analytics</button>
+    <button class="key" data-cat="engineering"><span class="swatch" style="background:var(--cat-engineering)"></span>Engineering</button>
+    <button class="key" data-cat="tools"><span class="swatch" style="background:var(--cat-tools)"></span>Tools</button>
+    <button class="key" data-cat="domain"><span class="swatch" style="background:var(--cat-domain)"></span>Domain</button>
+    <button class="key" data-cat="gap"><span class="swatch ghost"></span>Skill gap</button>
+    <span class="meta-note" id="metaNote">Cell depth = how central the skill is to the posting · tap a job for details</span>
   </footer>
 
 <script>
@@ -262,7 +379,6 @@
     const active = document.body.classList.toggle('kate-mode');
     localStorage.setItem('kateMode', active ? 'true' : 'false');
     drawField();
-    drawGraph();
   });
 
   /* ---------- backdrop: hyperbolic geodesic grid (same as index.html) ----------
@@ -270,7 +386,6 @@
   const fCanvas = document.getElementById('field');
   const fCtx = fCanvas.getContext('2d');
   const DPR = Math.min(window.devicePixelRatio || 1, 2);
-  const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)');
 
   function drawField() {
     const w = fCanvas.width = innerWidth * DPR;
@@ -316,6 +431,11 @@
     fCtx.stroke();
   }
   drawField();
+  let resizeTimer;
+  addEventListener('resize', () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(drawField, 200);
+  });
 
   /* ---------- data: live from the agent-data branch, sample fallback ---------- */
   const DATA_URL = 'https://raw.githubusercontent.com/agentchieflou/agentchieflou.github.io/agent-data/skills_graph.json';
@@ -324,20 +444,13 @@
     skills: [
       { id: 'data analysis', name: 'Data Analysis', category: 'analytics', strength: 0.9 },
       { id: 'business intelligence', name: 'Business Intelligence', category: 'analytics', strength: 0.85 },
-      { id: 'forecasting', name: 'Forecasting', category: 'analytics', strength: 0.7 },
       { id: 'sql', name: 'SQL', category: 'engineering', strength: 0.9 },
       { id: 'python', name: 'Python', category: 'engineering', strength: 0.8 },
-      { id: 'rag', name: 'RAG', category: 'engineering', strength: 0.65 },
-      { id: 'agentic workflows', name: 'Agentic Workflows', category: 'engineering', strength: 0.7 },
       { id: 'tableau', name: 'Tableau', category: 'tools', strength: 0.8 },
-      { id: 'power bi', name: 'Power BI', category: 'tools', strength: 0.75 },
-      { id: 'excel', name: 'Excel', category: 'tools', strength: 0.85 },
-      { id: 'banking', name: 'Banking', category: 'domain', strength: 0.8 },
-      { id: 'risk analytics', name: 'Risk Analytics', category: 'domain', strength: 0.7 }
+      { id: 'banking', name: 'Banking', category: 'domain', strength: 0.8 }
     ],
     ghost_skills: [
-      { id: 'ghost-dbt', name: 'dbt', ghost: true },
-      { id: 'ghost-snowflake', name: 'Snowflake', ghost: true }
+      { id: 'ghost-dbt', name: 'dbt', ghost: true }
     ],
     jobs: [
       { id: 'j1', title: 'Senior Business Analyst', company: 'Sample Co', location: 'Remote (US)',
@@ -345,55 +458,26 @@
         why: 'Sample match — strong overlap with BI tooling and banking analytics experience.' },
       { id: 'j2', title: 'Analytics Consultant', company: 'Example Corp', location: 'Remote',
         url: '#', source: 'sample', score: 78, confidence: 0.7,
-        why: 'Sample match — consulting background plus dashboarding skills fit the role.' },
-      { id: 'j3', title: 'Data Analyst, AI Products', company: 'Demo Labs', location: 'Remote (US)',
-        url: '#', source: 'sample', score: 72, confidence: 0.6,
-        why: 'Sample match — Python and RAG experience align with the AI product focus.' }
+        why: 'Sample match — consulting background plus dashboarding skills fit the role.' }
     ],
     edges: [
       { skill: 'business intelligence', job: 'j1', weight: 1, missing: false },
       { skill: 'sql', job: 'j1', weight: 0.9, missing: false },
       { skill: 'tableau', job: 'j1', weight: 0.8, missing: false },
       { skill: 'banking', job: 'j1', weight: 0.7, missing: false },
-      { skill: 'ghost-snowflake', job: 'j1', weight: 0.5, missing: true },
+      { skill: 'ghost-dbt', job: 'j1', weight: 0.5, missing: true },
       { skill: 'data analysis', job: 'j2', weight: 1, missing: false },
-      { skill: 'power bi', job: 'j2', weight: 0.85, missing: false },
-      { skill: 'excel', job: 'j2', weight: 0.7, missing: false },
-      { skill: 'forecasting', job: 'j2', weight: 0.6, missing: false },
-      { skill: 'ghost-dbt', job: 'j2', weight: 0.5, missing: true },
-      { skill: 'python', job: 'j3', weight: 1, missing: false },
-      { skill: 'rag', job: 'j3', weight: 0.9, missing: false },
-      { skill: 'agentic workflows', job: 'j3', weight: 0.85, missing: false },
-      { skill: 'sql', job: 'j3', weight: 0.6, missing: false }
+      { skill: 'python', job: 'j2', weight: 0.85, missing: false },
+      { skill: 'sql', job: 'j2', weight: 0.6, missing: false }
     ]
   };
 
-  /* ---------- graph ---------- */
-  const canvas = document.getElementById('graph');
-  const ctx = canvas.getContext('2d');
   const CAT_COLORS = {
-    analytics: '#3987e5',
-    engineering: '#d55181',
-    tools: '#c98500',
-    domain: '#008300'
+    analytics: 'var(--cat-analytics)',
+    engineering: 'var(--cat-engineering)',
+    tools: 'var(--cat-tools)',
+    domain: 'var(--cat-domain)'
   };
-  let DATA = null;
-  let nodes = [], edges = [];
-  let hoverNode = null, selectedNode = null;
-  let simRaf = null;
-
-  function chrome() {
-    const kate = document.body.classList.contains('kate-mode');
-    return kate
-      ? { ink: '#f7eef1', dim: '#c9b3ba', line: 'rgba(242,165,184,0.25)', accent: '#f2a5b8', ghost: '#c9b3ba', well: 'rgba(23,14,19,0.9)' }
-      : { ink: '#e8eaed', dim: '#9aa0a6', line: 'rgba(232,234,237,0.22)', accent: '#c9a86a', ghost: '#9aa0a6', well: 'rgba(14,15,18,0.9)' };
-  }
-
-  function sizeGraphCanvas() {
-    const rect = canvas.parentElement.getBoundingClientRect();
-    canvas.width = rect.width * DPR;
-    canvas.height = rect.height * DPR;
-  }
 
   // Legacy skills removed from the pipeline (agent/config.py blocklist) —
   // filtered here too so stale agent-data snapshots never show them.
@@ -410,359 +494,200 @@
     });
   }
 
-  function buildGraph(data) {
-    data = stripBlocked(data);
-    DATA = data;
-    const W = canvas.width, H = canvas.height;
-    const cx = W / 2, cy = H / 2;
-    // Keep the ring inside the viewport with room for job labels at the edge
-    const ringR = Math.min(Math.min(W, H) * 0.38, Math.min(W, H) / 2 - 62 * DPR);
-    // Shrink nodes on small viewports so the cluster fits inside the ring
-    const nodeScale = Math.max(0.65, Math.min(1, Math.min(W, H) / (900 * DPR)));
-    nodes = [];
-    const byId = {};
-
-    data.skills.forEach((s, i) => {
-      const a = (i / data.skills.length) * Math.PI * 2;
-      const r0 = ringR * 0.35 * Math.sqrt(Math.random());
-      const n = {
-        kind: 'skill', id: s.id, name: s.name, category: s.category,
-        strength: s.strength,
-        x: cx + Math.cos(a) * r0, y: cy + Math.sin(a) * r0, vx: 0, vy: 0,
-        r: (5 + 16 * s.strength) * DPR * nodeScale
-      };
-      nodes.push(n); byId[s.id] = n;
-    });
-    (data.ghost_skills || []).forEach(g => {
-      const a = Math.random() * Math.PI * 2;
-      const n = {
-        kind: 'ghost', id: g.id, name: g.name,
-        x: cx + Math.cos(a) * ringR * 1.15, y: cy + Math.sin(a) * ringR * 1.15, vx: 0, vy: 0,
-        r: 7 * DPR * nodeScale
-      };
-      nodes.push(n); byId[g.id] = n;
-    });
-    // Start each ghost near the first job that wants it so its tether reads clearly
-    (data.edges || []).forEach(e => {
-      const g = byId[e.skill], j = byId[e.job];
-      if (g && j && g.kind === 'ghost' && j.kind === 'job' && !g.placed) {
-        g.placed = true;
-        const jx = j.x - cx, jy = j.y - cy;
-        const d = Math.max(1, Math.sqrt(jx * jx + jy * jy));
-        g.x = cx + jx / d * ringR * 1.15;
-        g.y = cy + jy / d * ringR * 1.15;
-      }
-    });
-    data.jobs.forEach((j, i) => {
-      const a = (i / data.jobs.length) * Math.PI * 2 - Math.PI / 2;
-      const n = {
-        kind: 'job', id: j.id, job: j, angle: a,
-        x: cx + Math.cos(a) * ringR, y: cy + Math.sin(a) * ringR, vx: 0, vy: 0,
-        r: (10 + 10 * (j.score / 100)) * DPR * nodeScale
-      };
-      nodes.push(n); byId[j.id] = n;
-    });
-    edges = (data.edges || [])
-      .filter(e => byId[e.skill] && byId[e.job])
-      .map(e => ({ a: byId[e.skill], b: byId[e.job], weight: e.weight, missing: e.missing }));
-
-    runSim(cx, cy, ringR);
-    buildTable(data);
-    const note = document.getElementById('metaNote');
-    if (data.sample) {
-      note.textContent = 'Sample data — live matches appear after the career agent’s first run.';
-    } else if (data.generated_at) {
-      const t = data.totals || {};
-      const counter = t.discovered_all_time
-        ? t.discovered_all_time.toLocaleString() + ' qualifying jobs found to date · ' : '';
-      note.textContent = 'Node size = skill strength / match score · ' + counter +
-        'updated ' + new Date(data.generated_at).toLocaleDateString();
-    }
-  }
-
-  function simStep(cx, cy, ringR) {
-    // Pairwise repulsion (n is small — at most a few dozen nodes)
-    for (let i = 0; i < nodes.length; i++) {
-      for (let j = i + 1; j < nodes.length; j++) {
-        const a = nodes[i], b = nodes[j];
-        let dx = b.x - a.x, dy = b.y - a.y;
-        let d2 = dx * dx + dy * dy;
-        if (d2 < 1) { dx = Math.random() - 0.5; dy = Math.random() - 0.5; d2 = 1; }
-        const d = Math.sqrt(d2);
-        const minD = (a.r + b.r) * 1.9 + 18 * DPR;
-        const f = d < minD ? (minD - d) * 0.06 : Math.min(900 * DPR * DPR / d2, 2);
-        const fx = dx / d * f, fy = dy / d * f;
-        a.vx -= fx; a.vy -= fy;
-        b.vx += fx; b.vy += fy;
-      }
-    }
-    // Edge springs
-    for (const e of edges) {
-      const rest = e.missing ? ringR * 0.22 : ringR * 0.62 / Math.max(0.4, e.weight);
-      const dx = e.b.x - e.a.x, dy = e.b.y - e.a.y;
-      const d = Math.max(1, Math.sqrt(dx * dx + dy * dy));
-      const f = (d - rest) * 0.004 * e.weight;
-      e.a.vx += dx / d * f; e.a.vy += dy / d * f;
-      e.b.vx -= dx / d * f; e.b.vy -= dy / d * f;
-    }
-    // Role constraints
-    for (const n of nodes) {
-      if (n.kind === 'skill') {
-        // weak pull toward the center cluster
-        n.vx += (cx - n.x) * 0.0028;
-        n.vy += (cy - n.y) * 0.0028;
-      } else if (n.kind === 'ghost') {
-        // ghosts live just outside the ring
-        const dx = n.x - cx, dy = n.y - cy;
-        const d = Math.max(1, Math.sqrt(dx * dx + dy * dy));
-        const target = ringR * 1.18;
-        n.vx += dx / d * (target - d) * 0.01;
-        n.vy += dy / d * (target - d) * 0.01;
-      }
-      n.vx *= 0.86; n.vy *= 0.86;
-      n.x += n.vx; n.y += n.vy;
-    }
-    // Jobs are pinned to the ring; skills are clamped inside it
-    let energy = 0;
-    for (const n of nodes) {
-      const dx = n.x - cx, dy = n.y - cy;
-      const d = Math.max(1, Math.sqrt(dx * dx + dy * dy));
-      if (n.kind === 'job') {
-        n.x = cx + dx / d * ringR;
-        n.y = cy + dy / d * ringR;
-      } else if (n.kind === 'skill') {
-        const maxR = ringR * 0.72;
-        if (d > maxR) {
-          n.x = cx + dx / d * maxR;
-          n.y = cy + dy / d * maxR;
-        }
-      }
-      energy += n.vx * n.vx + n.vy * n.vy;
-    }
-    return energy;
-  }
-
-  function runSim(cx, cy, ringR) {
-    if (simRaf !== null) { cancelAnimationFrame(simRaf); simRaf = null; }
-    let ticks = 0;
-    if (reduceMotion.matches) {
-      // settle instantly, draw once — no animation
-      while (ticks++ < 300 && simStep(cx, cy, ringR) > 0.5 * DPR) {}
-      drawGraph();
-      return;
-    }
-    const animate = () => {
-      const energy = simStep(cx, cy, ringR);
-      drawGraph();
-      // The simulation STOPS once settled — no perpetual rAF loop
-      if (++ticks < 400 && energy > 0.5 * DPR) simRaf = requestAnimationFrame(animate);
-      else simRaf = null;
-    };
-    simRaf = requestAnimationFrame(animate);
-  }
-
-  function neighborSet(node) {
-    const set = new Set([node]);
-    for (const e of edges) {
-      if (e.a === node) set.add(e.b);
-      if (e.b === node) set.add(e.a);
-    }
-    return set;
-  }
-
-  function drawGraph() {
-    if (!DATA) return;
-    const c = chrome();
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    const focus = hoverNode || selectedNode;
-    const lit = focus ? neighborSet(focus) : null;
-
-    // edges
-    for (const e of edges) {
-      const active = !lit || (lit.has(e.a) && lit.has(e.b) && (e.a === focus || e.b === focus));
-      ctx.globalAlpha = active ? (0.25 + 0.55 * e.weight) : 0.05;
-      ctx.strokeStyle = e.missing ? c.ghost : (CAT_COLORS[e.a.category] || c.accent);
-      ctx.lineWidth = (0.8 + 2.2 * e.weight) * DPR;
-      ctx.setLineDash(e.missing ? [4 * DPR, 4 * DPR] : []);
-      ctx.beginPath();
-      ctx.moveTo(e.a.x, e.a.y);
-      ctx.lineTo(e.b.x, e.b.y);
-      ctx.stroke();
-    }
-    ctx.setLineDash([]);
-    ctx.globalAlpha = 1;
-
-    // nodes
-    for (const n of nodes) {
-      const dimmed = lit && !lit.has(n);
-      ctx.globalAlpha = dimmed ? 0.16 : 1;
-      ctx.beginPath();
-      ctx.arc(n.x, n.y, n.r, 0, Math.PI * 2);
-      if (n.kind === 'skill') {
-        ctx.fillStyle = CAT_COLORS[n.category] || c.accent;
-        ctx.fill();
-      } else if (n.kind === 'ghost') {
-        ctx.strokeStyle = c.ghost;
-        ctx.lineWidth = 1.5 * DPR;
-        ctx.setLineDash([3 * DPR, 3 * DPR]);
-        ctx.stroke();
-        ctx.setLineDash([]);
-      } else {
-        ctx.fillStyle = c.well;
-        ctx.fill();
-        ctx.strokeStyle = c.accent;
-        ctx.lineWidth = 2 * DPR;
-        ctx.stroke();
-        // score inside the job node
-        ctx.fillStyle = c.ink;
-        ctx.font = `600 ${9 * DPR}px Inter, sans-serif`;
-        ctx.textAlign = 'center';
-        ctx.textBaseline = 'middle';
-        ctx.fillText(String(n.job.score), n.x, n.y);
-      }
-      if (n === focus) {
-        ctx.beginPath();
-        ctx.arc(n.x, n.y, n.r + 4 * DPR, 0, Math.PI * 2);
-        ctx.strokeStyle = c.ink;
-        ctx.lineWidth = 1 * DPR;
-        ctx.stroke();
-      }
-    }
-
-    // labels — skills always (they carry the identity), jobs by company
-    ctx.textAlign = 'center';
-    for (const n of nodes) {
-      const dimmed = lit && !lit.has(n);
-      ctx.globalAlpha = dimmed ? 0.14 : 1;
-      if (n.kind === 'skill') {
-        ctx.font = `500 ${10 * DPR}px Inter, sans-serif`;
-        ctx.fillStyle = c.ink;
-        ctx.textBaseline = 'top';
-        ctx.fillText(n.name, n.x, n.y + n.r + 3 * DPR);
-      } else if (n.kind === 'ghost') {
-        ctx.font = `400 ${9 * DPR}px Inter, sans-serif`;
-        ctx.fillStyle = c.dim;
-        ctx.textBaseline = 'top';
-        ctx.fillText(n.name, n.x, n.y + n.r + 3 * DPR);
-      } else {
-        ctx.font = `500 ${10 * DPR}px "Space Grotesk", sans-serif`;
-        ctx.fillStyle = c.dim;
-        ctx.textBaseline = 'bottom';
-        ctx.fillText(n.job.company || n.job.title, n.x, n.y - n.r - 4 * DPR);
-      }
-    }
-    ctx.globalAlpha = 1;
-  }
-
-  /* ---------- interaction ---------- */
-  function hitTest(px, py) {
-    const x = px * DPR, y = py * DPR;
-    let best = null, bestD = Infinity;
-    for (const n of nodes) {
-      const dx = n.x - x, dy = n.y - y;
-      const d = Math.sqrt(dx * dx + dy * dy);
-      const hitR = Math.max(n.r, 14 * DPR) + 6 * DPR; // touch-friendly target
-      if (d < hitR && d < bestD) { best = n; bestD = d; }
-    }
-    return best;
-  }
-
-  const panel = document.getElementById('panel');
-  const panelBody = document.getElementById('panelBody');
-  document.getElementById('panelClose').addEventListener('click', () => {
-    selectedNode = null;
-    panel.classList.remove('open');
-    drawGraph();
-  });
-
   function esc(s) {
     return String(s ?? '').replace(/[&<>"']/g, m =>
       ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[m]));
   }
 
-  function openPanel(node) {
-    if (node.kind === 'job') {
-      const j = node.job;
-      const matched = edges.filter(e => e.b === node && !e.missing).map(e => e.a);
-      const missing = edges.filter(e => e.b === node && e.missing).map(e => e.a);
-      panelBody.innerHTML = `
-        <h2>${esc(j.title)}</h2>
-        <div class="sub">${esc(j.company)} · ${esc(j.location)}${j.salary ? ' · ' + esc(j.salary) : ''}</div>
-        <div class="score-row"><span>Match <b>${esc(j.score)}</b>/100</span>
-          <span>Confidence <b>${Math.round((j.confidence || 0) * 100)}%</b></span></div>
-        <div class="why">${esc(j.why)}</div>
-        ${matched.length ? `<h3>Matching skills</h3><div class="chips">${matched.map(s =>
-          `<span class="chip"><span class="dot" style="background:${CAT_COLORS[s.category] || '#888'}"></span>${esc(s.name)}</span>`).join('')}</div>` : ''}
-        ${missing.length ? `<h3>Skill gaps</h3><div class="chips">${missing.map(s =>
-          `<span class="chip missing">${esc(s.name)}</span>`).join('')}</div>` : ''}
-        ${j.url && j.url !== '#' ? `<a class="apply" href="${esc(j.url)}" target="_blank" rel="noopener">View &amp; apply ↗</a>` : ''}
-        <p style="font-size:11px;color:var(--dim);margin-top:12px;">Found via ${esc(j.source)} — applying is always your call; nothing is submitted automatically.</p>`;
-    } else {
-      const jobs = edges.filter(e => e.a === node).map(e => ({ j: e.b.job, missing: e.missing }));
-      const color = node.kind === 'ghost' ? 'var(--dim)' : (CAT_COLORS[node.category] || 'var(--accent)');
-      panelBody.innerHTML = `
-        <h2>${esc(node.name)}</h2>
-        <div class="sub">${node.kind === 'ghost'
-          ? 'Skill gap — the market wants this, your profile doesn’t show it yet'
-          : esc(node.category) + ' · strength ' + Math.round(node.strength * 100) + '%'}</div>
-        ${node.kind === 'skill' ? `<div class="strength-bar"><span style="width:${node.strength * 100}%;background:${color}"></span></div>` : ''}
-        ${jobs.length
-          ? `<h3>${node.kind === 'ghost' ? 'Wanted by' : 'In demand at'}</h3>
-             <ul class="job-list">${jobs.map(({ j }) => `<li>${esc(j.title)} — ${esc(j.company)} (${esc(j.score)}/100)</li>`).join('')}</ul>`
-          : '<p class="why">No current top match lists this skill — it may still be a differentiator.</p>'}`;
+  /* ---------- view state ---------- */
+  let DATA = null;
+  let view = localStorage.getItem('skillsView') === 'ledger' ? 'ledger' : 'matrix';
+  let jobSort = 'match';
+  let skillSort = 'demand';
+  const catOff = new Set();   // deselected legend categories ('analytics', ..., 'gap')
+
+  function sortedJobs() {
+    const jobs = [...DATA.jobs];
+    if (jobSort === 'title') jobs.sort((a, b) => a.title.localeCompare(b.title));
+    else if (jobSort === 'company') jobs.sort((a, b) => a.company.localeCompare(b.company));
+    else jobs.sort((a, b) => b.score - a.score);
+    return jobs;
+  }
+
+  function visibleSkills(demand) {
+    let skills = DATA.skills.filter(s => !catOff.has(s.category));
+    if (skillSort === 'alpha') skills.sort((a, b) => a.name.localeCompare(b.name));
+    else skills.sort((a, b) => (demand[b.id] || 0) - (demand[a.id] || 0) || b.strength - a.strength);
+    if (!catOff.has('gap')) skills = skills.concat(DATA.ghost_skills || []);
+    return skills;
+  }
+
+  function jobEdges(jobId) {
+    return DATA.edges.filter(e => e.job === jobId).sort((a, b) => b.weight - a.weight);
+  }
+
+  /* ---------- Demand matrix (landing view) ---------- */
+  function renderMatrix() {
+    const demand = {};
+    DATA.edges.forEach(e => { if (!e.missing) demand[e.skill] = (demand[e.skill] || 0) + 1; });
+    const skills = visibleSkills(demand);
+    const jobs = sortedJobs();
+    if (!jobs.length) {
+      document.getElementById('matrixView').innerHTML = '<p class="empty-note">No live matches yet — the agent’s next run fills this in.</p>';
+      return;
     }
+
+    const head = skills.map(s => `<th class="skill-h"><span>${s.ghost
+      ? esc(s.name) + ' · gap'
+      : `<span class="cdot" style="background:${CAT_COLORS[s.category]}"></span>` + esc(s.name)}</span></th>`).join('');
+
+    const rows = jobs.map(j => {
+      const w = {};
+      jobEdges(j.id).forEach(e => { w[e.skill] = e; });
+      const cells = skills.map(s => {
+        const e = w[s.id];
+        if (!e) return '<td class="cell"></td>';
+        if (e.missing) return `<td class="cell gap" title="${esc(s.name)} — required, not in profile"></td>`;
+        return `<td class="cell" title="${esc(s.name)} · centrality ${Math.round(e.weight * 100)}%"
+          style="background:color-mix(in srgb, ${CAT_COLORS[s.category]} ${Math.round(15 + 75 * e.weight)}%, transparent)"></td>`;
+      }).join('');
+      return `<tr><th class="job"><button data-job="${esc(j.id)}">${esc(j.title)}</button>
+        <small>${esc(j.company)}</small></th>${cells}<td class="score">${esc(j.score)}</td></tr>`;
+    }).join('');
+
+    const foot = skills.map(s => `<td>${demand[s.id] || ''}</td>`).join('');
+    document.getElementById('matrixView').innerHTML = `<table class="matrix">
+      <thead><tr><th></th>${head}<th class="skill-h"><span>Match</span></th></tr></thead>
+      <tbody>${rows}</tbody>
+      <tfoot><tr><th>demand →</th>${foot}<td></td></tr></tfoot>
+    </table>`;
+  }
+
+  /* ---------- Match ledger (secondary view) ---------- */
+  function renderLedger() {
+    const jobs = sortedJobs();
+    if (!jobs.length) {
+      document.getElementById('ledgerView').innerHTML = '<p class="empty-note">No live matches yet — the agent’s next run fills this in.</p>';
+      return;
+    }
+    const skillById = {};
+    DATA.skills.forEach(s => { skillById[s.id] = s; });
+    (DATA.ghost_skills || []).forEach(g => { skillById[g.id] = g; });
+
+    document.getElementById('ledgerView').innerHTML = '<div class="ledger">' + jobs.map(j => {
+      const chips = jobEdges(j.id).map(e => {
+        const s = skillById[e.skill];
+        if (!s) return '';
+        if (e.missing || s.ghost) {
+          return catOff.has('gap') ? '' : `<span class="chip missing">${esc(s.name)} · gap</span>`;
+        }
+        if (catOff.has(s.category)) return '';
+        return `<span class="chip"><span class="dot" style="background:${CAT_COLORS[s.category]}"></span>${esc(s.name)}</span>`;
+      }).join('');
+      const meta = [j.company, j.location, j.salary, 'via ' + j.source].filter(Boolean).map(esc).join(' · ');
+      const title = j.url && j.url !== '#'
+        ? `<a href="${esc(j.url)}" target="_blank" rel="noopener">${esc(j.title)} ↗</a>` : esc(j.title);
+      return `<div class="lrow">
+        <div class="lscore">${esc(j.score)}<small>match</small></div>
+        <div><div class="ltitle">${title}</div><div class="lmeta">${meta}</div></div>
+        <div class="lmeter"><i style="width:${Math.max(0, Math.min(100, j.score))}%"></i></div>
+        ${j.why ? `<div class="lwhy">${esc(j.why)}</div>` : ''}
+        ${chips ? `<div class="lchips">${chips}</div>` : ''}
+      </div>`;
+    }).join('') + '</div>';
+  }
+
+  /* ---------- job detail panel (from matrix row clicks) ---------- */
+  const panel = document.getElementById('panel');
+  const panelBody = document.getElementById('panelBody');
+  document.getElementById('panelClose').addEventListener('click', () => panel.classList.remove('open'));
+
+  function openPanel(job) {
+    const skillById = {};
+    DATA.skills.forEach(s => { skillById[s.id] = s; });
+    (DATA.ghost_skills || []).forEach(g => { skillById[g.id] = g; });
+    const matched = [], missing = [];
+    jobEdges(job.id).forEach(e => {
+      const s = skillById[e.skill];
+      if (s) (e.missing || s.ghost ? missing : matched).push(s);
+    });
+    panelBody.innerHTML = `
+      <h2>${esc(job.title)}</h2>
+      <div class="sub">${esc(job.company)} · ${esc(job.location)}${job.salary ? ' · ' + esc(job.salary) : ''}</div>
+      <div class="score-row"><span>Match <b>${esc(job.score)}</b>/100</span>
+        <span>Confidence <b>${Math.round((job.confidence || 0) * 100)}%</b></span></div>
+      <div class="why">${esc(job.why || '')}</div>
+      ${matched.length ? `<h3>Matching skills</h3><div class="chips">${matched.map(s =>
+        `<span class="chip"><span class="dot" style="background:${CAT_COLORS[s.category] || 'var(--accent)'}"></span>${esc(s.name)}</span>`).join('')}</div>` : ''}
+      ${missing.length ? `<h3>Skill gaps</h3><div class="chips">${missing.map(s =>
+        `<span class="chip missing">${esc(s.name)}</span>`).join('')}</div>` : ''}
+      ${job.url && job.url !== '#' ? `<a class="apply" href="${esc(job.url)}" target="_blank" rel="noopener">View &amp; apply ↗</a>` : ''}
+      <p style="font-size:11px;color:var(--dim);margin-top:12px;">Found via ${esc(job.source)} — applying is always your call; nothing is submitted automatically.</p>`;
     panel.classList.add('open');
   }
 
-  canvas.addEventListener('pointermove', e => {
-    if (e.pointerType === 'touch') return;
-    const rect = canvas.getBoundingClientRect();
-    const n = hitTest(e.clientX - rect.left, e.clientY - rect.top);
-    if (n !== hoverNode) {
-      hoverNode = n;
-      canvas.style.cursor = n ? 'pointer' : 'default';
-      drawGraph();
-    }
-  });
-  canvas.addEventListener('pointerleave', () => {
-    if (hoverNode) { hoverNode = null; drawGraph(); }
-  });
-  canvas.addEventListener('click', e => {
-    const rect = canvas.getBoundingClientRect();
-    const n = hitTest(e.clientX - rect.left, e.clientY - rect.top);
-    selectedNode = n;
-    if (n) openPanel(n);
-    else panel.classList.remove('open');
-    drawGraph();
+  document.getElementById('matrixView').addEventListener('click', e => {
+    const btn = e.target.closest('button[data-job]');
+    if (!btn || !DATA) return;
+    const job = DATA.jobs.find(j => j.id === btn.dataset.job);
+    if (job) openPanel(job);
   });
 
-  /* ---------- accessible list view ---------- */
-  function buildTable(data) {
-    const rows = data.jobs.map(j =>
-      `<tr><td>${esc(j.title)}</td><td>${esc(j.company)}</td><td>${esc(j.score)}/100</td>
-       <td>${j.url && j.url !== '#' ? `<a href="${esc(j.url)}" target="_blank" rel="noopener">link</a>` : '—'}</td></tr>`).join('');
-    const skills = data.skills.map(s => `${esc(s.name)} (${Math.round(s.strength * 100)}%)`).join(', ');
-    document.getElementById('tableBody').innerHTML = `
-      <table><tr><th>Role</th><th>Company</th><th>Match</th><th></th></tr>${rows}</table>
-      <p style="margin-top:8px;">Skills: ${skills}</p>`;
+  /* ---------- controls wiring ---------- */
+  const viewBtns = { matrix: document.getElementById('viewMatrix'), ledger: document.getElementById('viewLedger') };
+
+  function render() {
+    if (!DATA) return;
+    viewBtns.matrix.classList.toggle('active', view === 'matrix');
+    viewBtns.ledger.classList.toggle('active', view === 'ledger');
+    viewBtns.matrix.setAttribute('aria-selected', view === 'matrix');
+    viewBtns.ledger.setAttribute('aria-selected', view === 'ledger');
+    document.getElementById('matrixView').hidden = view !== 'matrix';
+    document.getElementById('ledgerView').hidden = view !== 'ledger';
+    document.getElementById('skillSortCtl').style.display = view === 'matrix' ? '' : 'none';
+    if (view === 'matrix') renderMatrix();
+    else renderLedger();
+
+    const note = document.getElementById('metaNote');
+    if (DATA.sample) {
+      note.textContent = 'Sample data — live matches appear after the career agent’s first run.';
+    } else if (DATA.generated_at) {
+      const t = DATA.totals || {};
+      const counter = t.discovered_all_time
+        ? t.discovered_all_time.toLocaleString() + ' qualifying jobs found to date · ' : '';
+      note.textContent = (view === 'matrix'
+        ? 'Cell depth = skill centrality to the posting · '
+        : 'Ranked by confidence-weighted match · ') + counter +
+        'updated ' + new Date(DATA.generated_at).toLocaleDateString();
+    }
   }
 
-  /* ---------- boot ---------- */
-  let resizeTimer;
-  addEventListener('resize', () => {
-    clearTimeout(resizeTimer);
-    resizeTimer = setTimeout(() => {
-      drawField();
-      sizeGraphCanvas();
-      if (DATA) buildGraph(DATA);
-    }, 200);
+  for (const [name, btn] of Object.entries(viewBtns)) {
+    btn.addEventListener('click', () => {
+      view = name;
+      localStorage.setItem('skillsView', name);
+      panel.classList.remove('open');
+      render();
+    });
+  }
+  document.getElementById('jobSort').addEventListener('change', e => { jobSort = e.target.value; render(); });
+  document.getElementById('skillSort').addEventListener('change', e => { skillSort = e.target.value; render(); });
+
+  document.getElementById('legend').addEventListener('click', e => {
+    const key = e.target.closest('.key[data-cat]');
+    if (!key) return;
+    const cat = key.dataset.cat;
+    if (catOff.has(cat)) catOff.delete(cat);
+    else catOff.add(cat);
+    key.classList.toggle('off', catOff.has(cat));
+    render();
   });
 
-  sizeGraphCanvas();
+  /* ---------- boot ---------- */
   fetch(DATA_URL)
     .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
-    .then(data => buildGraph((data.jobs || []).length ? data : SAMPLE))
-    .catch(() => buildGraph(SAMPLE));
+    .then(data => { DATA = stripBlocked((data.jobs || []).length ? data : SAMPLE); render(); })
+    .catch(() => { DATA = stripBlocked(SAMPLE); render(); });
 </script>
 </body>
 </html>

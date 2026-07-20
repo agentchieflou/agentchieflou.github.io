@@ -87,6 +87,18 @@
     font-weight: 700;
     letter-spacing: 0.3em;
   }
+  .brand-group { display: inline-flex; align-items: baseline; gap: 14px; min-width: 0; }
+  .hud-mail {
+    color: var(--dim);
+    text-decoration: none;
+    text-transform: none;
+    letter-spacing: 0.04em;
+    font-size: 11px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .hud-mail:hover, .hud-mail:focus-visible { color: var(--ink); outline: none; }
   /* Kate mode: a small pink footer pill — a fun aside, not part of the main story */
   .kate-toggle-btn {
     position: fixed;
@@ -178,6 +190,8 @@
 
   .tagline { font-size: clamp(14px, 1.6vw, 17px); color: var(--ink); font-weight: 500; }
   .meta { font-size: 13px; color: var(--dim); }
+  .meta a { color: var(--accent, var(--ink)); text-decoration: none; }
+  .meta a:hover, .meta a:focus-visible { text-decoration: underline; outline: none; }
 
   blockquote {
     margin-top: 6px;
@@ -412,7 +426,10 @@
   <canvas id="field"></canvas>
 
   <header class="hud">
-    <span class="brand">ML</span>
+    <span class="brand-group">
+      <span class="brand">ML</span>
+      <a class="hud-mail" href="mailto:mbf.louard@gmail.com">mbf.louard@gmail.com</a>
+    </span>
     <span class="face-label" id="faceLabel">01 · Home</span>
   </header>
 
@@ -427,7 +444,7 @@
           <h1>Michael<br />Louard</h1>
           <p class="tagline normal-only">Business Analytics Consultant · PNC</p>
           <p class="tagline kate-only">Wastes wifi &amp; stares at black screens · PNC</p>
-          <p class="meta normal-only">Agentic workflows · RAG · Raleigh, NC</p>
+          <p class="meta normal-only"><a href="resume.html">Résumé →</a><span id="lastCommit"></span> · Raleigh, NC</p>
           <p class="meta kate-only">Spends too much time on the computer · Raleigh, NC</p>
           <blockquote class="normal-only">&ldquo;When in doubt, question the doubt, deny the doubt, then stop doubting.&rdquo;</blockquote>
           <blockquote class="kate-only">&ldquo;I swear I'm working, the screen is just black.&rdquo;</blockquote>
@@ -468,19 +485,13 @@
             </li>
             <li>
               <a href="skills.html">
-                <span>Skills Graph<small>Live skill-to-market alignment map</small></span>
+                <span>Skills<small>Live skill-to-market alignment map</small></span>
                 <span class="arrow">→</span>
               </a>
             </li>
             <li>
               <a href="https://github.com/agentchieflou" target="_blank" rel="noopener">
                 <span>GitHub<small>github.com/agentchieflou</small></span>
-                <span class="arrow">↗</span>
-              </a>
-            </li>
-            <li>
-              <a href="mailto:mbf.louard@gmail.com">
-                <span>Email<small>mbf.louard@gmail.com</small></span>
                 <span class="arrow">↗</span>
               </a>
             </li>
@@ -983,9 +994,21 @@
       </li>`).join('');
   }
 
+  // Latest GitHub activity for the home face — derived from the same repos
+  // response the Projects face already fetches, so it costs no extra request.
+  function showLastCommit(repos) {
+    const latest = repos.map(r => r.pushed_at).filter(Boolean).sort().pop();
+    if (!latest) return;
+    const d = new Date(latest);
+    const stamp = d.toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' }) +
+      ', ' + d.toLocaleTimeString(undefined, { hour: 'numeric', minute: '2-digit' });
+    document.getElementById('lastCommit').textContent = ' · Last commit ' + stamp;
+  }
+
   fetch('https://api.github.com/users/agentchieflou/repos?per_page=100&sort=updated')
     .then(res => { if (!res.ok) throw new Error(res.status); return res.json(); })
     .then(data => {
+      showLastCommit(data);
       const repos = data.filter(r => !r.fork && r.name !== 'agentchieflou');
       renderRepos(repos.length ? repos : FALLBACK);
     })
