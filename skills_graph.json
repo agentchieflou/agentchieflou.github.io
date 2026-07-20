@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-07-20T05:48:47.472530+00:00",
- "profile_version": "3c8cd16212ea",
+ "generated_at": "2026-07-20T06:17:12.803007+00:00",
+ "profile_version": "8444b242a37a",
  "totals": {
   "discovered_all_time": 1034,
   "live": 939
@@ -10,7 +10,7 @@
    "id": "python",
    "name": "Python",
    "category": "engineering",
-   "strength": 0.95
+   "strength": 0.9
   },
   {
    "id": "sql",
@@ -19,46 +19,28 @@
    "strength": 0.85
   },
   {
-   "id": "docker kubernetes",
-   "name": "Docker/Kubernetes",
-   "category": "engineering",
-   "strength": 0.8
-  },
-  {
-   "id": "c",
-   "name": "C++",
-   "category": "engineering",
-   "strength": 0.75
-  },
-  {
-   "id": "rest apis",
-   "name": "REST APIs",
-   "category": "engineering",
-   "strength": 0.85
-  },
-  {
-   "id": "agentic ai rag",
-   "name": "Agentic AI/RAG",
-   "category": "engineering",
-   "strength": 0.7
-  },
-  {
    "id": "power bi",
    "name": "Power BI",
    "category": "analytics",
    "strength": 0.75
   },
   {
-   "id": "typescript",
-   "name": "TypeScript",
+   "id": "docker",
+   "name": "Docker",
    "category": "engineering",
-   "strength": 0.65
+   "strength": 0.8
   },
   {
-   "id": "ci cd",
-   "name": "CI/CD",
-   "category": "tools",
+   "id": "kubernetes",
+   "name": "Kubernetes",
+   "category": "engineering",
    "strength": 0.75
+  },
+  {
+   "id": "rest api development",
+   "name": "REST API Development",
+   "category": "engineering",
+   "strength": 0.85
   },
   {
    "id": "financial modeling",
@@ -67,34 +49,52 @@
    "strength": 0.85
   },
   {
-   "id": "selenium",
-   "name": "Selenium",
-   "category": "tools",
+   "id": "agentic workflows",
+   "name": "Agentic Workflows",
+   "category": "engineering",
    "strength": 0.7
   },
   {
    "id": "c",
-   "name": "C",
-   "category": "engineering",
-   "strength": 0.6
-  },
-  {
-   "id": "pyspark",
-   "name": "PySpark",
-   "category": "analytics",
-   "strength": 0.6
-  },
-  {
-   "id": "system architecture",
-   "name": "System Architecture",
+   "name": "C++",
    "category": "engineering",
    "strength": 0.7
   },
   {
-   "id": "quantitative economics",
-   "name": "Quantitative Economics",
-   "category": "domain",
+   "id": "typescript",
+   "name": "TypeScript",
+   "category": "engineering",
+   "strength": 0.65
+  },
+  {
+   "id": "selenium",
+   "name": "Selenium",
+   "category": "tools",
+   "strength": 0.75
+  },
+  {
+   "id": "telemetry monitoring",
+   "name": "Telemetry & Monitoring",
+   "category": "analytics",
    "strength": 0.8
+  },
+  {
+   "id": "process automation",
+   "name": "Process Automation",
+   "category": "engineering",
+   "strength": 0.9
+  },
+  {
+   "id": "ci cd",
+   "name": "CI/CD",
+   "category": "tools",
+   "strength": 0.75
+  },
+  {
+   "id": "economics",
+   "name": "Economics",
+   "category": "domain",
+   "strength": 0.7
   }
  ],
  "ghost_skills": [],
@@ -110,18 +110,6 @@
    "score": 98,
    "confidence": 0.98,
    "why": "Perfect match for your specific interest in agentic workflows and system architecture with top-tier pay."
-  },
-  {
-   "id": "7f700cf6ebb37eb77755b0b238fde1d4224070ae",
-   "title": "Software Engineer, Infrastructure - Analytics Platform",
-   "company": "OpenAI",
-   "location": "Remote (US)",
-   "salary": "$230,000-$385,000",
-   "url": "https://jobs.ashbyhq.com/openai/e44bfa94-0b82-4d0c-b224-02155b76eea9",
-   "source": "doomers",
-   "score": 95,
-   "confidence": 0.95,
-   "why": "Perfect alignment with your high-performance systems and backend infrastructure background at a top-tier company."
   },
   {
    "id": "cf8a0edade9a5642c249c095746690a9c8b2ed0c",
@@ -194,67 +182,37 @@
    "score": 90,
    "confidence": 0.9,
    "why": "Strong alignment with the usage of AI IDEs and production-grade LLM agents within a growth-oriented team."
+  },
+  {
+   "id": "502e8a4a82f8c989ecf06ff0e85193b7ddfba1c7",
+   "title": "Senior Independent AI Engineer / Architect",
+   "company": "A.Team",
+   "location": "Americas, Europe, Israel",
+   "salary": "$120 - $170 /hour",
+   "url": "https://remotive.com/remote-jobs/software-development/senior-independent-ai-engineer-architect-1919266",
+   "source": "remotive",
+   "score": 88,
+   "confidence": 0.85,
+   "why": "This invite-only network matches Michael's seniority and experience in high-impact AI/ML projects for enterprises. The high hourly rate reflects his niche expertise in agentic architectures."
   }
  ],
  "edges": [
   {
-   "skill": "agentic ai rag",
-   "job": "000f10ba99d4f1b988b0d059e7cc28f0ebd712f9",
-   "weight": 1.0,
-   "missing": false
-  },
-  {
-   "skill": "system architecture",
-   "job": "000f10ba99d4f1b988b0d059e7cc28f0ebd712f9",
-   "weight": 0.88,
-   "missing": false
-  },
-  {
    "skill": "python",
    "job": "000f10ba99d4f1b988b0d059e7cc28f0ebd712f9",
    "weight": 0.76,
-   "missing": false
-  },
-  {
-   "skill": "rest apis",
-   "job": "000f10ba99d4f1b988b0d059e7cc28f0ebd712f9",
-   "weight": 0.64,
-   "missing": false
-  },
-  {
-   "skill": "python",
-   "job": "7f700cf6ebb37eb77755b0b238fde1d4224070ae",
-   "weight": 1.0,
-   "missing": false
-  },
-  {
-   "skill": "sql",
-   "job": "7f700cf6ebb37eb77755b0b238fde1d4224070ae",
-   "weight": 0.88,
-   "missing": false
-  },
-  {
-   "skill": "docker kubernetes",
-   "job": "7f700cf6ebb37eb77755b0b238fde1d4224070ae",
-   "weight": 0.76,
-   "missing": false
-  },
-  {
-   "skill": "system architecture",
-   "job": "7f700cf6ebb37eb77755b0b238fde1d4224070ae",
-   "weight": 0.64,
-   "missing": false
-  },
-  {
-   "skill": "ci cd",
-   "job": "7f700cf6ebb37eb77755b0b238fde1d4224070ae",
-   "weight": 0.52,
    "missing": false
   },
   {
    "skill": "python",
    "job": "cf8a0edade9a5642c249c095746690a9c8b2ed0c",
    "weight": 1.0,
+   "missing": false
+  },
+  {
+   "skill": "rest api development",
+   "job": "cf8a0edade9a5642c249c095746690a9c8b2ed0c",
+   "weight": 0.88,
    "missing": false
   },
   {
@@ -276,27 +234,9 @@
    "missing": false
   },
   {
-   "skill": "docker kubernetes",
-   "job": "da2bcc26af044451e674517db903ffc3353358b5",
-   "weight": 0.76,
-   "missing": false
-  },
-  {
    "skill": "python",
    "job": "e59e806b8e2788dc42938f3a0ee78360515903ed",
    "weight": 1.0,
-   "missing": false
-  },
-  {
-   "skill": "docker kubernetes",
-   "job": "e59e806b8e2788dc42938f3a0ee78360515903ed",
-   "weight": 0.88,
-   "missing": false
-  },
-  {
-   "skill": "system architecture",
-   "job": "e59e806b8e2788dc42938f3a0ee78360515903ed",
-   "weight": 0.76,
    "missing": false
   },
   {
@@ -327,6 +267,18 @@
    "skill": "python",
    "job": "d3ef928c4dd2847ab084c037f86d0adb0a28a9b8",
    "weight": 1.0,
+   "missing": false
+  },
+  {
+   "skill": "python",
+   "job": "502e8a4a82f8c989ecf06ff0e85193b7ddfba1c7",
+   "weight": 1.0,
+   "missing": false
+  },
+  {
+   "skill": "rest api development",
+   "job": "502e8a4a82f8c989ecf06ff0e85193b7ddfba1c7",
+   "weight": 0.76,
    "missing": false
   }
  ]

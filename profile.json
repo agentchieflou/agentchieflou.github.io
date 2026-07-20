@@ -1,14 +1,14 @@
 {
- "summary": "Data-driven professional with a strong foundation in quantitative analytics and engineering, specializing in process automation and legacy systems migration within the financial sector. Highly skilled in developing production-grade REST APIs, containerized architectures, and agentic workflows to solve complex business problems. Passionate about building high-performance systems, ranging from banking infrastructure to real-time audio and gaming engines.",
+ "summary": "Data-driven professional with expertise in automating complex business processes, legacy system migrations, and quantitative financial modeling. Highly proficient in building containerized API services, telemetry systems, and agentic workflows to drive operational efficiency. Proven track record of delivering enterprise-grade solutions in regulated banking environments while leveraging modern software engineering practices in personal technical projects.",
  "skills": [
   {
    "name": "Python",
    "category": "engineering",
-   "strength": 0.95,
+   "strength": 0.9,
    "evidence": [
     "Automation suites",
-    "REST API development",
-    "Data parsing/scraping",
+    "API development",
+    "Data parsing and scraping",
     "Quantitative modeling"
    ]
   },
@@ -18,47 +18,8 @@
    "strength": 0.85,
    "evidence": [
     "Database telemetry",
-    "Data reconciliation",
-    "Mainframe migration data validation"
-   ]
-  },
-  {
-   "name": "Docker/Kubernetes",
-   "category": "engineering",
-   "strength": 0.8,
-   "evidence": [
-    "Containerizing scrapers",
-    "OpenShift deployments",
-    "Helm chart management"
-   ]
-  },
-  {
-   "name": "C++",
-   "category": "engineering",
-   "strength": 0.75,
-   "evidence": [
-    "Unreal Engine 5 game development",
-    "Headless simulation state machines"
-   ]
-  },
-  {
-   "name": "REST APIs",
-   "category": "engineering",
-   "strength": 0.85,
-   "evidence": [
-    "Production-grade API containerization",
-    "Policy-as-Code compliance",
-    "Service integration"
-   ]
-  },
-  {
-   "name": "Agentic AI/RAG",
-   "category": "engineering",
-   "strength": 0.7,
-   "evidence": [
-    "Agentic workflow design",
-    "Token cost optimization",
-    "Gemini API integration"
+    "Data migration reconciliation",
+    "Financial modeling"
    ]
   },
   {
@@ -66,26 +27,36 @@
    "category": "analytics",
    "strength": 0.75,
    "evidence": [
-    "Portfolio performance dashboards",
-    "Peer bank stress analysis"
+    "Peer bank analysis dashboard",
+    "Portfolio performance reporting"
    ]
   },
   {
-   "name": "TypeScript",
+   "name": "Docker",
    "category": "engineering",
-   "strength": 0.65,
+   "strength": 0.8,
    "evidence": [
-    "NoProd DAW development",
-    "Frontend/audio application logic"
+    "Containerization of REST APIs",
+    "CI/CD integration"
    ]
   },
   {
-   "name": "CI/CD",
-   "category": "tools",
+   "name": "Kubernetes",
+   "category": "engineering",
    "strength": 0.75,
    "evidence": [
-    "Enterprise pipeline adherence",
-    "Policy-as-Code gates"
+    "OpenShift deployment",
+    "Helm charts for production services"
+   ]
+  },
+  {
+   "name": "REST API Development",
+   "category": "engineering",
+   "strength": 0.85,
+   "evidence": [
+    "Operationalized classification APIs",
+    "Containerized scrapers",
+    "Deployment to OpenShift"
    ]
   },
   {
@@ -95,62 +66,90 @@
    "evidence": [
     "CECL reserve forecasting",
     "Pricing elasticity research",
-    "Stress analysis"
+    "Home Equity pricing"
+   ]
+  },
+  {
+   "name": "Agentic Workflows",
+   "category": "engineering",
+   "strength": 0.7,
+   "evidence": [
+    "AI research and implementation",
+    "Agentic architecture design in personal projects"
+   ]
+  },
+  {
+   "name": "C++",
+   "category": "engineering",
+   "strength": 0.7,
+   "evidence": [
+    "Unreal Engine game development",
+    "VST audio plugin development"
+   ]
+  },
+  {
+   "name": "TypeScript",
+   "category": "engineering",
+   "strength": 0.65,
+   "evidence": [
+    "DAW audio application development"
    ]
   },
   {
    "name": "Selenium",
    "category": "tools",
-   "strength": 0.7,
+   "strength": 0.75,
    "evidence": [
-    "Document sourcing automation",
-    "Headless browser scraping"
+    "Web automation",
+    "Document sourcing"
    ]
   },
   {
-   "name": "C",
-   "category": "engineering",
-   "strength": 0.6,
-   "evidence": [
-    "VST audio plugin development",
-    "Memory/Buffer management in audio projects"
-   ]
-  },
-  {
-   "name": "PySpark",
+   "name": "Telemetry & Monitoring",
    "category": "analytics",
-   "strength": 0.6,
-   "evidence": [
-    "Large-scale data processing"
-   ]
-  },
-  {
-   "name": "System Architecture",
-   "category": "engineering",
-   "strength": 0.7,
-   "evidence": [
-    "Mainframe migration design",
-    "Data reconciliation frameworks"
-   ]
-  },
-  {
-   "name": "Quantitative Economics",
-   "category": "domain",
    "strength": 0.8,
    "evidence": [
-    "Econometrics coursework",
-    "Causal research for Federal Reserve"
+    "Grid-wide database telemetry",
+    "Performance monitoring dashboards"
+   ]
+  },
+  {
+   "name": "Process Automation",
+   "category": "engineering",
+   "strength": 0.9,
+   "evidence": [
+    "Mainframe migration reconciliation",
+    "Pricing workflow automation",
+    "Document sourcing"
+   ]
+  },
+  {
+   "name": "CI/CD",
+   "category": "tools",
+   "strength": 0.75,
+   "evidence": [
+    "Policy as Code compliance",
+    "OpenShift Helm deployments"
+   ]
+  },
+  {
+   "name": "Economics",
+   "category": "domain",
+   "strength": 0.7,
+   "evidence": [
+    "Degree background",
+    "Causal research presented to Federal Reserve"
    ]
   }
  ],
  "target_titles": [
-  "Quantitative Software Engineer",
-  "Data Engineer",
-  "Backend Engineer (Python)",
-  "Analytics Engineer",
-  "Automation Engineer"
+  "Senior Business Intelligence Engineer",
+  "Data Engineer (Analytics Focus)",
+  "Financial Systems Developer",
+  "Analytics Automation Engineer",
+  "Quantitative Developer"
  ],
- "version": "3c8cd16212ea",
+ "version": "8444b242a37a",
  "remote_only": true,
- "generated_at": "2026-07-20T05:47:45.868665+00:00"
+ "generated_at": "2026-07-20T06:16:52.520527+00:00"
 }
