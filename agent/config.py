@@ -18,7 +18,7 @@ EMAIL_TO = "mbf.louard@gmail.com"
 # Flash-Lite: cheapest available flash-tier model; one small call per run.
 # If this name 404s (model retired/renamed), llm.py auto-discovers the best
 # available flash model for the key and retries.
-GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-2.0-flash-lite")
+GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-3.1-flash-lite-preview")
 EMBED_MODEL = "BAAI/bge-small-en-v1.5"
 # GOOGLE_API_KEY accepted as an alias — both names are common for Gemini keys.
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY") or os.environ.get("GOOGLE_API_KEY", "")

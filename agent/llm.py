@@ -1,10 +1,8 @@
 """Minimal Gemini REST client — no SDK dependency, just `requests`.
 
-Uses generateContent with responseMimeType=application/json so structured
-calls return raw JSON. If the configured model 404s (Google periodically
-retires/renames models), the client lists the models available to this key,
-picks the best flash-tier one, and retries once — so the unattended daily
-pipeline survives model deprecations without a code change.
+Uses Interactions API with response_format so structured calls return raw JSON.
+If the configured model 404s, the client lists the models available to this key,
+picks the best flash-tier one, and retries once.
 """
 import json
 
@@ -19,11 +17,14 @@ _resolved_model = None  # set after a successful 404 fallback
 
 
 def _headers():
-    return {"x-goog-api-key": GEMINI_API_KEY}
+    return {
+        "x-goog-api-key": GEMINI_API_KEY,
+        "Api-Revision": "2026-05-20"
+    }
 
 
 def _discover_model():
-    """Best generateContent-capable flash model available to this key."""
+    """Best Interactions-capable flash model available to this key."""
     r = requests.get(f"{BASE}/models", headers=_headers(),
                      params={"pageSize": 200}, timeout=30)
     r.raise_for_status()
@@ -34,11 +35,12 @@ def _discover_model():
              and not any(x in n for x in ("image", "live", "tts", "audio", "8b"))]
     log.info("flash candidates: %s", flash)
     # Prefer cheapest flash-lite variants; fall back to standard flash if absent
-    for preferred in ("gemini-2.0-flash-lite", "gemini-2.0-flash-lite-001",
-                      "gemini-2.0-flash-001", "gemini-2.0-flash"):
+    for preferred in ("gemini-3.1-flash-lite", "gemini-3.1-flash-lite-preview",
+                      "gemini-3.5-flash", "gemini-3-flash-preview",
+                      "gemini-2.5-flash-lite", "gemini-2.5-flash"):
         if preferred in flash:
             return preferred
-    # Reverse lexicographic puts newer major versions first (3 > 2.5)
+    # Reverse lexicographic puts newer major versions first
     pool = sorted(flash, reverse=True) or sorted(names, reverse=True)
     if not pool:
         raise RuntimeError("no generateContent-capable models available to this key")
@@ -47,52 +49,62 @@ def _discover_model():
 
 def _call(model, prompt, max_tokens, json_response):
     body = {
-        "contents": [{"role": "user", "parts": [{"text": prompt}]}],
-        "generationConfig": {"maxOutputTokens": max_tokens},
+        "model": model,
+        "input": prompt,
+        "generation_config": {
+            "max_output_tokens": max_tokens
+        }
     }
-    if model.startswith("gemini-2.5"):
-        # Extraction tasks don't need thinking and it spends output tokens;
-        # only 2.5-series models accept an explicit budget of 0.
-        body["generationConfig"]["thinkingConfig"] = {"thinkingBudget": 0}
+    if model.startswith("gemini-3.5") or model.startswith("gemini-3.1-pro"):
+        # Disable/minimize thinking budgets for extraction/scoring tasks
+        body["generation_config"]["thinking_level"] = "minimal"
+    elif model.startswith("gemini-2.5"):
+        # Legacy thinking config
+        body["generation_config"]["thinkingConfig"] = {"thinkingBudget": 0}
+
     if json_response:
-        body["generationConfig"]["responseMimeType"] = "application/json"
-    return requests.post(f"{BASE}/models/{model}:generateContent",
+        body["response_format"] = {
+            "type": "text",
+            "mime_type": "application/json"
+        }
+    return requests.post(f"{BASE}/interactions",
                          headers=_headers(), json=body, timeout=120)
 
 
 def _extract_text(data):
-    """Extract text from a generateContent response, with diagnostics."""
-    # Check for prompt-level block (safety filters, etc.)
-    block_reason = data.get("promptFeedback", {}).get("blockReason")
-    if block_reason:
-        raise RuntimeError(f"Gemini blocked the prompt: {block_reason}")
+    """Extract text from an Interactions API response, with diagnostics."""
+    status = data.get("status")
+    if status == "failed":
+        error = data.get("error", {})
+        raise RuntimeError(f"Interaction failed: {json.dumps(error)}")
 
-    candidates = data.get("candidates", [])
-    if not candidates:
+    steps = data.get("steps", [])
+    if not steps:
         raise RuntimeError(
-            f"Gemini returned no candidates. Full response: "
+            f"Gemini returned no steps. Full response: "
             f"{json.dumps(data)[:500]}")
 
-    candidate = candidates[0]
-    finish_reason = candidate.get("finishReason", "UNKNOWN")
-    # STOP is normal; MAX_TOKENS means truncated; SAFETY means blocked
-    if finish_reason not in ("STOP", "MAX_TOKENS"):
-        safety_ratings = candidate.get("safetyRatings", [])
+    # Find the last model_output step
+    model_outputs = [s for s in steps if s.get("type") == "model_output"]
+    if not model_outputs:
         raise RuntimeError(
-            f"Gemini finishReason={finish_reason}, "
-            f"safetyRatings={json.dumps(safety_ratings)[:300]}")
+            f"No model_output step found. Full response: "
+            f"{json.dumps(data)[:500]}")
 
-    try:
-        text = candidate["content"]["parts"][0]["text"]
-    except (KeyError, IndexError, TypeError) as e:
+    last_output = model_outputs[-1]
+    contents = last_output.get("content", [])
+    if not contents:
         raise RuntimeError(
-            f"unexpected Gemini response shape: "
-            f"{json.dumps(candidate)[:500]}") from e
+            f"model_output step has no content. Step details: "
+            f"{json.dumps(last_output)[:500]}")
 
-    if finish_reason == "MAX_TOKENS":
-        log.warning("Gemini output was truncated (MAX_TOKENS); response "
-                     "length=%d chars", len(text))
+    text_parts = [c["text"] for c in contents if c.get("type") == "text" and "text" in c]
+    if not text_parts:
+        raise RuntimeError(
+            f"No text parts found in model_output. Step details: "
+            f"{json.dumps(last_output)[:500]}")
 
+    text = "".join(text_parts)
     if not text.strip():
         raise RuntimeError("Gemini returned empty text content")
 
