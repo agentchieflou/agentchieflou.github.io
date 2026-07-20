@@ -13,32 +13,28 @@
     rel="stylesheet" />
   <style>
     :root {
-      --bg: #121016;
-      --card-bg: linear-gradient(160deg, rgba(93, 74, 97, 0.25), rgba(75, 63, 116, 0.15) 70%, rgba(126, 155, 197, 0.1));
-      --border: rgba(200, 211, 229, 0.12);
-      --border-hover: rgba(126, 155, 197, 0.4);
-      --ink: #e7d2b8;
-      --dim: #b2a89e;
-      --accent: #7e9bc5;
-      --accent-2: #a76a5c;
-      --line: rgba(178, 168, 158, 0.12);
-      --blob-1: #4b3f74;
-      --blob-2: #a76a5c;
+      --bg: #0e0f12;
+      --card-bg: #14161b;
+      --border: rgba(232, 234, 237, 0.14);
+      --border-hover: rgba(201, 168, 106, 0.4);
+      --ink: #e8eaed;
+      --dim: #9aa0a6;
+      --accent: #c9a86a;
+      --accent-2: #9ba8b8;
+      --line: rgba(232, 234, 237, 0.12);
+      --kate-pink: #f2a5b8;
     }
 
     body.kate-mode {
-      --bg: #1a0f15;
-      --card-bg: linear-gradient(160deg, rgba(255, 182, 197, 0.1), rgba(255, 182, 197, 0.03) 70%, rgba(253, 216, 93, 0.04));
-      --border: rgba(255, 182, 197, 0.18);
-      --border-hover: rgba(255, 182, 197, 0.5);
-      --ink: #fff5f7;
-      --dim: #d9c2c7;
-      --accent: #ffb7c5;
-      --accent-2: #ffd15c;
-      --line: rgba(255, 182, 197, 0.12);
-      --blob-1: #ffb7c5;
-      --blob-2: #ffd15c;
-      --bow-red: #ff4f70;
+      --bg: #170e13;
+      --card-bg: #1e1318;
+      --border: rgba(242, 165, 184, 0.18);
+      --border-hover: rgba(242, 165, 184, 0.5);
+      --ink: #f7eef1;
+      --dim: #c9b3ba;
+      --accent: #f2a5b8;
+      --accent-2: #d9a441;
+      --line: rgba(242, 165, 184, 0.12);
     }
 
     /* Toggle content based on mode */
@@ -69,30 +65,6 @@
       transition: background 0.4s ease, color 0.4s ease;
     }
 
-    /* Blurry decorative background — pre-blurred gradient falloff; a live
-       filter: blur(120px) forces Safari to keep re-rasterizing a huge layer */
-    .blur-bg {
-      position: fixed;
-      width: 50vmax;
-      height: 50vmax;
-      border-radius: 50%;
-      opacity: 0.12;
-      z-index: 0;
-      pointer-events: none;
-    }
-
-    .b1 {
-      background: radial-gradient(circle closest-side, var(--blob-1) 0%, var(--blob-1) 22%, transparent 72%);
-      top: -10%;
-      left: -10%;
-    }
-
-    .b2 {
-      background: radial-gradient(circle closest-side, var(--blob-2) 0%, var(--blob-2) 22%, transparent 72%);
-      bottom: -10%;
-      right: -10%;
-    }
-
     .actions-nav {
       display: flex;
       justify-content: space-between;
@@ -105,19 +77,18 @@
     }
 
     a.back-btn,
-    button.print-btn,
-    button.kate-toggle-btn {
+    button.print-btn {
       font-family: "Space Grotesk", sans-serif;
       font-size: 13px;
       font-weight: 500;
       color: var(--ink);
       text-decoration: none;
-      background: rgba(255, 255, 255, 0.03);
+      background: var(--card-bg);
       border: 1px solid var(--border);
       padding: 10px 18px;
-      border-radius: 999px;
+      border-radius: 10px;
       cursor: pointer;
-      transition: all 0.2s ease;
+      transition: border-color 0.2s ease, background 0.2s ease, transform 0.2s ease;
       display: inline-flex;
       align-items: center;
       gap: 8px;
@@ -126,29 +97,38 @@
 
     a.back-btn:hover {
       border-color: var(--accent);
-      background: rgba(125, 211, 252, 0.08);
+      background: rgba(201, 168, 106, 0.08);
       transform: translateX(-2px);
     }
 
     button.print-btn:hover {
       border-color: var(--accent-2);
-      background: var(--border-hover);
       transform: translateY(-1px);
+    }
+
+    /* Kate mode: small pink footer pill — a fun aside, not part of the main story */
+    button.kate-toggle-btn {
+      position: fixed;
+      right: 18px;
+      bottom: 14px;
+      z-index: 30;
+      background: transparent;
+      border: 1px solid rgba(242, 165, 184, 0.45);
+      color: var(--kate-pink);
+      padding: 6px 14px;
+      border-radius: 999px;
+      cursor: pointer;
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      transition: border-color 0.2s ease, background 0.2s ease;
+      outline: none;
     }
 
     button.kate-toggle-btn:hover {
-      border-color: var(--accent);
-      background: var(--border-hover);
-      transform: translateY(-1px);
-    }
-
-    body.kate-mode button.kate-toggle-btn {
-      border-color: var(--accent);
-      box-shadow: 0 0 10px rgba(255, 183, 197, 0.25);
-    }
-
-    body.kate-mode button.kate-toggle-btn:hover {
-      box-shadow: 0 0 15px rgba(255, 183, 197, 0.45);
+      border-color: var(--kate-pink);
+      background: rgba(242, 165, 184, 0.1);
     }
 
     .resume-container {
@@ -156,11 +136,9 @@
       max-width: 820px;
       padding: clamp(24px, 5vw, 48px);
       border: 1px solid var(--border);
-      border-radius: 24px;
+      border-radius: 14px;
       background: var(--card-bg);
-      box-shadow: 0 40px 100px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.05);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
+      box-shadow: 0 30px 80px rgba(0, 0, 0, 0.45);
       z-index: 5;
     }
 
@@ -186,10 +164,7 @@
       font-size: clamp(32px, 6vw, 48px);
       font-weight: 700;
       margin-bottom: 12px;
-      background: linear-gradient(120deg, #fff 30%, var(--accent) 75%, var(--accent-2));
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
+      color: var(--ink);
     }
 
     .contact-info {
@@ -321,10 +296,7 @@
     }
 
     body.kate-mode ul.exp-bullets li::before {
-      content: "🎀";
-      font-size: 11px;
-      left: 0;
-      top: 1px;
+      color: var(--kate-pink);
     }
 
     ul.exp-bullets li strong {
@@ -373,15 +345,6 @@
       font-weight: 500;
     }
 
-    /* Touch devices: lighter backdrop blur — blur cost grows superlinearly
-       with radius and re-samples on every scrolled frame */
-    @media (pointer: coarse) {
-      .resume-container {
-        backdrop-filter: blur(8px);
-        -webkit-backdrop-filter: blur(8px);
-      }
-    }
-
     /* Print and ATS Optimization rules */
     @media print {
       body {
@@ -393,8 +356,8 @@
         min-height: auto;
       }
 
-      .blur-bg,
-      .actions-nav {
+      .actions-nav,
+      .kate-toggle-btn {
         display: none !important;
       }
 
@@ -516,23 +479,21 @@
 </head>
 
 <body>
-  <div class="blur-bg b1"></div>
-  <div class="blur-bg b2"></div>
-
   <nav class="actions-nav">
     <a href="index.html" class="back-btn">← Back to Home</a>
     <a href="skills.html" class="back-btn">Skills Graph</a>
-    <button id="kateToggle" class="kate-toggle-btn">
-      <span class="normal-only">Kate Mode 🎀</span>
-      <span class="kate-only">Standard Mode 💻</span>
-    </button>
-    <button onclick="window.print()" class="print-btn">⎙ Print / Save PDF</button>
+    <button onclick="window.print()" class="print-btn">Print / Save PDF</button>
   </nav>
+
+  <button id="kateToggle" class="kate-toggle-btn" aria-label="Toggle Kate mode">
+    <span class="normal-only">Kate mode</span>
+    <span class="kate-only">Standard mode</span>
+  </button>
 
   <main class="resume-container">
     <header>
       <p class="kicker normal-only">Curriculum Vitae</p>
-      <p class="kicker kate-only">Proof he is on the computer too much 🎀</p>
+      <p class="kicker kate-only">Proof he is on the computer too much</p>
       
       <h1 class="normal-only">Michael Louard</h1>
       <h1 class="kate-only">Michael Louard (Screen Starer)</h1>

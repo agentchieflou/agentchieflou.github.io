@@ -12,37 +12,34 @@
   :root {
     --w: min(82vw, 540px);
     --h: min(64vh, 600px);
-    --bg: #05060a;
-    --ink: #eef1f6;
-    --dim: #9aa3b2;
-    --line: rgba(255, 255, 255, 0.12);
-    --accent: #7dd3fc;
-    --accent-2: #c4b5fd;
-    --nebula-1: #2563eb;
-    --nebula-2: #7c3aed;
-    --card-bg: linear-gradient(160deg, rgba(255, 255, 255, 0.075), rgba(255, 255, 255, 0.02) 45%, rgba(125, 211, 252, 0.05));
-    --hover-border: rgba(125, 211, 252, 0.55);
-    --hover-bg: rgba(125, 211, 252, 0.07);
-    --hover-border-2: rgba(196, 181, 253, 0.6);
-    --hover-bg-2: rgba(196, 181, 253, 0.08);
-    --seam-color: rgba(255, 255, 255, 0.15);
+    --bg: #0e0f12;
+    --ink: #e8eaed;
+    --dim: #9aa0a6;
+    --line: rgba(232, 234, 237, 0.14);
+    --accent: #c9a86a;
+    --accent-2: #9ba8b8;
+    --card-bg: #14161b;
+    --hover-border: rgba(201, 168, 106, 0.55);
+    --hover-bg: rgba(201, 168, 106, 0.08);
+    --hover-border-2: rgba(155, 168, 184, 0.55);
+    --hover-bg-2: rgba(155, 168, 184, 0.08);
+    --seam-color: rgba(232, 234, 237, 0.15);
+    --kate-pink: #f2a5b8;
   }
 
   body.kate-mode {
-    --bg: #1a0f15;
-    --ink: #fff5f7;
-    --dim: #d9c2c7;
-    --line: rgba(255, 182, 197, 0.18);
-    --accent: #ffb7c5;
-    --accent-2: #ffd15c;
-    --nebula-1: #ffb7c5;
-    --nebula-2: #ffd15c;
-    --card-bg: linear-gradient(160deg, rgba(255, 182, 197, 0.1), rgba(255, 182, 197, 0.03) 70%, rgba(253, 216, 93, 0.04));
-    --hover-border: rgba(255, 182, 197, 0.55);
-    --hover-bg: rgba(255, 182, 197, 0.1);
-    --hover-border-2: rgba(254, 216, 93, 0.6);
-    --hover-bg-2: rgba(254, 216, 93, 0.08);
-    --seam-color: rgba(255, 182, 197, 0.35);
+    --bg: #170e13;
+    --ink: #f7eef1;
+    --dim: #c9b3ba;
+    --line: rgba(242, 165, 184, 0.18);
+    --accent: #f2a5b8;
+    --accent-2: #d9a441;
+    --card-bg: #1e1318;
+    --hover-border: rgba(242, 165, 184, 0.55);
+    --hover-bg: rgba(242, 165, 184, 0.1);
+    --hover-border-2: rgba(217, 164, 65, 0.5);
+    --hover-bg-2: rgba(217, 164, 65, 0.08);
+    --seam-color: rgba(242, 165, 184, 0.35);
   }
 
   /* Toggle content based on mode */
@@ -68,29 +65,8 @@
     transition: background 0.4s ease, color 0.4s ease;
   }
 
-  /* ---------- backdrop ---------- */
-  #stars { position: fixed; inset: 0; z-index: 0; }
-
-  .nebula {
-    position: fixed;
-    width: 60vmax;
-    height: 60vmax;
-    border-radius: 50%;
-    opacity: 0.16;
-    z-index: 0;
-    pointer-events: none;
-    animation: drift 26s ease-in-out infinite alternate;
-    will-change: transform;
-  }
-  /* Pre-blurred look via gradient falloff — a live filter: blur(120px) here forces
-     Safari to re-rasterize a viewport-sized layer and stalls mobile GPUs.*/
-  .n1 { background: radial-gradient(circle closest-side, var(--nebula-1) 0%, var(--nebula-1) 22%, transparent 72%); top: -20vmax; left: -15vmax; }
-  .n2 { background: radial-gradient(circle closest-side, var(--nebula-2) 0%, var(--nebula-2) 22%, transparent 72%); bottom: -25vmax; right: -15vmax; animation-delay: -13s; }
-
-  @keyframes drift {
-    from { transform: translate(0, 0) scale(1); }
-    to   { transform: translate(6vmax, 4vmax) scale(1.15); }
-  }
+  /* ---------- backdrop: static hyperbolic geodesic grid, drawn once ---------- */
+  #field { position: fixed; inset: 0; z-index: 0; }
 
   /* ---------- HUD ---------- */
   .hud {
@@ -111,32 +87,28 @@
     font-weight: 700;
     letter-spacing: 0.3em;
   }
+  /* Kate mode: a small pink footer pill — a fun aside, not part of the main story */
   .kate-toggle-btn {
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid var(--line);
-    color: var(--ink);
-    padding: 8px 16px;
+    position: fixed;
+    right: 18px;
+    bottom: 14px;
+    z-index: 30;
+    background: transparent;
+    border: 1px solid rgba(242, 165, 184, 0.45);
+    color: var(--kate-pink);
+    padding: 6px 14px;
     border-radius: 999px;
     cursor: pointer;
     font-family: 'Space Grotesk', sans-serif;
-    font-size: 11px;
+    font-size: 10px;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    transition: all 0.2s ease;
-    z-index: 20;
+    transition: border-color 0.2s ease, background 0.2s ease;
     outline: none;
   }
   .kate-toggle-btn:hover {
-    border-color: var(--accent);
-    background: var(--hover-bg);
-    transform: translateY(-1px);
-  }
-  body.kate-mode .kate-toggle-btn {
-    border-color: var(--accent);
-    box-shadow: 0 0 10px rgba(255, 183, 197, 0.25);
-  }
-  body.kate-mode .kate-toggle-btn:hover {
-    box-shadow: 0 0 15px rgba(255, 183, 197, 0.45);
+    border-color: var(--kate-pink);
+    background: rgba(242, 165, 184, 0.1);
   }
   .face-label { transition: opacity 0.3s ease; }
 
@@ -163,16 +135,7 @@
     height: var(--h);
     transform-style: preserve-3d;
     transform: rotateX(-7deg) rotateY(calc(var(--ry, 0) * 1deg));
-    transition: transform 1.05s cubic-bezier(0.22, 0.9, 0.24, 1.12);
-  }
-
-  .float::after {
-    content: "";
-    position: absolute;
-    inset: -18%;
-    background: radial-gradient(closest-side, rgba(125, 211, 252, 0.14), transparent 70%);
-    transform: translateZ(-220px);
-    pointer-events: none;
+    /* No CSS transition — rotation is driven by a Web Animations geodesic path */
   }
 
   .face {
@@ -188,19 +151,9 @@
     padding: clamp(28px, 5vw, 52px);
     background: var(--card-bg);
     border: 1px solid var(--line);
-    border-radius: 22px;
-    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.08);
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
+    border-radius: 14px;
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.4);
     overflow: hidden;
-  }
-
-  .face::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(120deg, transparent 30%, rgba(255, 255, 255, 0.05) 50%, transparent 70%);
-    pointer-events: none;
   }
 
   /* ---------- face content ---------- */
@@ -218,10 +171,7 @@
     font-size: clamp(44px, 8vw, 76px);
     font-weight: 700;
     letter-spacing: -0.02em;
-    background: linear-gradient(120deg, #fff 30%, var(--accent) 75%, var(--accent-2));
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    color: var(--ink);
   }
 
   h2 { font-size: clamp(30px, 4.5vw, 44px); font-weight: 700; letter-spacing: -0.01em; }
@@ -319,9 +269,9 @@
     font-size: 12px;
     color: var(--accent);
     text-decoration: none;
-    border: 1px solid var(--border);
+    border: 1px solid var(--line);
     padding: 8px 14px;
-    border-radius: 999px;
+    border-radius: 8px;
     transition: background 0.2s ease;
   }
   .pill:hover { background: var(--hover-bg); }
@@ -367,24 +317,21 @@
     transform: translateY(-50%);
     width: 52px;
     height: 52px;
-    border-radius: 50%;
+    border-radius: 12px;
     border: 1px solid var(--line);
-    background: rgba(255, 255, 255, 0.04);
+    background: var(--card-bg);
     color: var(--ink);
     font-size: 22px;
     cursor: pointer;
     display: grid;
     place-items: center;
-    transition: border-color 0.2s ease, background 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease, opacity 0.3s ease;
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
+    transition: border-color 0.2s ease, background 0.2s ease, transform 0.15s ease, opacity 0.3s ease;
     z-index: 10;
     outline: none;
   }
   .nav-arrow:hover {
     border-color: var(--accent);
     background: var(--hover-bg);
-    box-shadow: 0 0 16px rgba(125, 211, 252, 0.2);
     transform: translateY(-50%) scale(1.06);
   }
   .nav-arrow:active {
@@ -426,7 +373,6 @@
   .dot:hover:not(:disabled) {
     background: var(--accent);
     transform: scale(1.2);
-    box-shadow: 0 0 8px var(--accent);
   }
   .dot.active:hover:not(:disabled) {
     transform: scale(1.35);
@@ -456,31 +402,18 @@
     .controls { gap: 20px; }
   }
 
-  /* Touch devices: lighter backdrop blur — cost grows superlinearly with radius
-     and these recompute whenever the starfield behind them repaints. */
-  @media (pointer: coarse) {
-    .face { backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); }
-    .nav-arrow { backdrop-filter: blur(5px); -webkit-backdrop-filter: blur(5px); }
-  }
-
   @media (prefers-reduced-motion: reduce) {
-    .float, .nebula, .skeleton { animation: none; }
-    .prism { transition-duration: 0.4s; }
+    .float, .skeleton { animation: none; }
+    .prism { transition: transform 0.4s ease; }
   }
 </style>
 </head>
 <body>
-  <canvas id="stars"></canvas>
-  <div class="nebula n1"></div>
-  <div class="nebula n2"></div>
+  <canvas id="field"></canvas>
 
   <header class="hud">
     <span class="brand">ML</span>
-    <button id="kateToggle" class="kate-toggle-btn">
-      <span class="normal-only">Kate Mode 🎀</span>
-      <span class="kate-only">Standard Mode 💻</span>
-    </button>
-    <span class="face-label" id="faceLabel">01 · Name</span>
+    <span class="face-label" id="faceLabel">01 · Home</span>
   </header>
 
   <main class="stage">
@@ -488,9 +421,9 @@
       <button class="nav-arrow prev" id="ccw" aria-label="Previous Page">←</button>
       <div class="prism" id="prism">
 
-        <section class="face" style="--i:0" aria-label="Name">
+        <section class="face" style="--i:0" aria-label="Home">
           <p class="kicker normal-only">Portfolio</p>
-          <p class="kicker kate-only">Professional Husband-in-Training 🎀</p>
+          <p class="kicker kate-only">Professional Husband-in-Training</p>
           <h1>Michael<br />Louard</h1>
           <p class="tagline normal-only">Business Analytics Consultant · PNC</p>
           <p class="tagline kate-only">Wastes wifi &amp; stares at black screens · PNC</p>
@@ -569,11 +502,14 @@
 
   <p class="hint">Rotate · ← → · Swipe</p>
 
+  <button id="kateToggle" class="kate-toggle-btn" aria-label="Toggle Kate mode">
+    <span class="normal-only">Kate mode</span>
+    <span class="kate-only">Standard mode</span>
+  </button>
+
 <script>
   // Set initial state from localStorage
   const isKateMode = localStorage.getItem('kateMode') === 'true';
-  // Cached for the starfield loop — avoids a classList read every frame.
-  let kateStars = isKateMode;
   if (isKateMode) {
     document.body.classList.add('kate-mode');
   }
@@ -582,24 +518,29 @@
   if (toggleBtn) {
     toggleBtn.addEventListener('click', () => {
       const active = document.body.classList.toggle('kate-mode');
-      kateStars = active;
       localStorage.setItem('kateMode', active ? 'true' : 'false');
-      if (typeof redrawStarsIfStatic === 'function') redrawStarsIfStatic();
+      if (typeof drawField === 'function') drawField();
     });
   }
 
   /* ---------- navigation state & lock ---------- */
   let navigationEnabled = false;
 
-  /* ---------- prism rotation ---------- */
+  /* ---------- prism rotation along a hyperbolic geodesic ----------
+     In the Poincaré-disk backdrop, straight lines are arcs that bow toward the
+     disk's center and distances compress near the horizon. The page transition
+     mirrors that: instead of a flat Euclidean spin, the prism dives toward the
+     "center" mid-turn (translateZ + scale compression), tilts along the arc
+     (rotateX/rotateZ), then re-expands as it surfaces at the destination. */
   const prism = document.getElementById('prism');
   const dots = [...document.querySelectorAll('#dots .dot')];
   const faceLabel = document.getElementById('faceLabel');
-  const labels = ['01 · Name', '02 · Projects', '03 · Connect'];
+  const labels = ['01 · Home', '02 · Projects', '03 · Connect'];
+  const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
   let idx = 0;
+  let turning = false;
 
-  function render() {
-    prism.style.setProperty('--ry', idx * -120);
+  function updateHud() {
     const active = ((idx % 3) + 3) % 3;
     dots.forEach((d, i) => d.classList.toggle('active', i === active));
     faceLabel.style.opacity = 0;
@@ -607,9 +548,28 @@
   }
 
   const rotate = dir => {
-    if (!navigationEnabled) return;
+    if (!navigationEnabled || turning) return;
+    const from = idx * -120;
     idx += dir;
-    render();
+    const to = idx * -120;
+    prism.style.setProperty('--ry', to);
+    updateHud();
+    if (reducedMotion.matches) return;
+
+    const mid = (from + to) / 2;
+    turning = true;
+    const anim = prism.animate([
+      { transform: `rotateX(-7deg) rotateY(${from}deg)` },
+      // Geodesic apex: deepest point of the arc — space "curves away"
+      { transform: `translateZ(-170px) rotateX(-15deg) rotateZ(${3 * dir}deg) rotateY(${mid}deg) scale(0.88)`,
+        offset: 0.5, easing: 'cubic-bezier(0.45, 0, 0.2, 1)' },
+      { transform: `rotateX(-7deg) rotateY(${to}deg)` }
+    ], {
+      duration: 1150,
+      easing: 'cubic-bezier(0.3, 0, 0.15, 1)'
+    });
+    const done = () => { turning = false; };
+    anim.finished.then(done).catch(done);
   };
   document.getElementById('cw').addEventListener('click', () => rotate(1));
   document.getElementById('ccw').addEventListener('click', () => rotate(-1));
@@ -921,126 +881,67 @@
   // Initialize puzzle assembly
   initPuzzle();
 
-  /* ---------- starfield ---------- */
-  // The canvas sits behind backdrop-filtered glass, so every canvas repaint
-  // forces Safari to recompute those blurs. Keep repaints cheap and rare:
-  // DPR capped at 2, ~30fps, paused when hidden, static under reduced motion.
-  const canvas = document.getElementById('stars');
+  /* ---------- backdrop: hyperbolic geodesic grid ----------
+     A Poincaré-disk projection: circles hyperbolically compressed toward the
+     horizon, crossed by geodesic arcs orthogonal to the boundary. Drawn ONCE
+     (static — no rAF loop), redrawn only on resize or theme toggle, so the
+     backdrop never forces continuous repaints. */
+  const canvas = document.getElementById('field');
   const ctx = canvas.getContext('2d');
   const DPR = Math.min(window.devicePixelRatio || 1, 2);
-  const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)');
-  const STAR_COLORS = ['220, 230, 255', '254, 216, 93', '255, 182, 197'];
-  let stars = [];
-  let rafId = null;
-  let lastT = 0;
   let seededW = 0, seededH = 0;
 
-  function seed() {
+  function drawField() {
     seededW = innerWidth;
     seededH = innerHeight;
-    canvas.width = innerWidth * DPR;
-    canvas.height = innerHeight * DPR;
+    const w = canvas.width = innerWidth * DPR;
+    const h = canvas.height = innerHeight * DPR;
     canvas.style.width = innerWidth + 'px';
     canvas.style.height = innerHeight + 'px';
-    stars = Array.from({ length: Math.min(220, innerWidth / 6) }, () => ({
-      x: Math.random() * canvas.width,
-      y: Math.random() * canvas.height,
-      r: Math.random() * 1.3 + 0.2,
-      p: Math.random() * Math.PI * 2,
-      s: Math.random() * 0.015 + 0.004
-    }));
-  }
+    ctx.clearRect(0, 0, w, h);
 
-  function colorGroup(st) {
-    return kateStars ? (st.r > 1.0 ? 1 : 2) : 0;
-  }
+    const kate = document.body.classList.contains('kate-mode');
+    const rgb = kate ? '242, 165, 184' : '201, 168, 106';
+    const cx = w / 2, cy = h * 0.55;
+    const R = Math.hypot(w, h) * 0.42;
+    ctx.lineWidth = 1 * DPR;
 
-  // Alpha quantized into 8 buckets so a frame is ≤24 fills instead of one per star.
-  function drawFrame(t) {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    const BUCKETS = 8;
-    const groups = new Map();
-    for (const st of stars) {
-      const a = 0.25 + 0.55 * (0.5 + 0.5 * Math.sin(st.p + t * 0.0004));
-      const b = Math.min(BUCKETS - 1, Math.max(0, ((a - 0.25) / 0.55 * BUCKETS) | 0));
-      const key = colorGroup(st) * BUCKETS + b;
-      let g = groups.get(key);
-      if (!g) groups.set(key, g = []);
-      g.push(st);
-    }
-    for (const [key, g] of groups) {
-      const a = 0.25 + 0.55 * ((key % BUCKETS + 0.5) / BUCKETS);
-      ctx.fillStyle = `rgba(${STAR_COLORS[(key / BUCKETS) | 0]}, ${a.toFixed(3)})`;
+    ctx.save();
+    ctx.beginPath();
+    ctx.arc(cx, cy, R, 0, Math.PI * 2);
+    ctx.clip();
+
+    // Equidistant circles — spacing compresses toward the horizon (tanh metric)
+    const RINGS = 9;
+    for (let i = 1; i <= RINGS; i++) {
+      const r = R * Math.tanh(i * 0.30) / Math.tanh(RINGS * 0.30);
+      ctx.strokeStyle = `rgba(${rgb}, ${(0.04 + 0.03 * i / RINGS).toFixed(3)})`;
       ctx.beginPath();
-      for (const st of g) {
-        ctx.moveTo(st.x + st.r * DPR, st.y);
-        ctx.arc(st.x, st.y, st.r * DPR, 0, Math.PI * 2);
+      ctx.arc(cx, cy, r, 0, Math.PI * 2);
+      ctx.stroke();
+    }
+
+    // Geodesics: arcs of circles orthogonal to the boundary (d² = R² + r²)
+    ctx.strokeStyle = `rgba(${rgb}, 0.05)`;
+    const SPOKES = 11;
+    for (let k = 0; k < SPOKES; k++) {
+      const th = (k / SPOKES) * Math.PI * 2;
+      for (const m of [1.06, 1.35, 1.9]) {
+        const d = R * m;
+        const r = Math.sqrt(d * d - R * R);
+        ctx.beginPath();
+        ctx.arc(cx + Math.cos(th) * d, cy + Math.sin(th) * d, r, 0, Math.PI * 2);
+        ctx.stroke();
       }
-      ctx.fill();
     }
-  }
+    ctx.restore();
 
-  function drawStatic() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    const groups = new Map();
-    for (const st of stars) {
-      const key = colorGroup(st);
-      let g = groups.get(key);
-      if (!g) groups.set(key, g = []);
-      g.push(st);
-    }
-    for (const [key, g] of groups) {
-      ctx.fillStyle = `rgba(${STAR_COLORS[key]}, 0.55)`;
-      ctx.beginPath();
-      for (const st of g) {
-        ctx.moveTo(st.x + st.r * DPR, st.y);
-        ctx.arc(st.x, st.y, st.r * DPR, 0, Math.PI * 2);
-      }
-      ctx.fill();
-    }
+    // Horizon
+    ctx.strokeStyle = `rgba(${rgb}, 0.1)`;
+    ctx.beginPath();
+    ctx.arc(cx, cy, R, 0, Math.PI * 2);
+    ctx.stroke();
   }
-
-  const FRAME_MS = 33; // ~30fps — plenty for a slow twinkle
-  function tick(t) {
-    rafId = requestAnimationFrame(tick);
-    const dt = t - lastT;
-    if (dt < FRAME_MS) return;
-    lastT = t;
-    // Time-normalized so twinkle speed matches regardless of refresh rate
-    const step = Math.min(dt, 100) / 16.67;
-    for (const st of stars) st.p += st.s * step;
-    drawFrame(t);
-  }
-
-  function startStars() {
-    if (rafId !== null) return;
-    lastT = performance.now();
-    rafId = requestAnimationFrame(tick);
-  }
-  function stopStars() {
-    if (rafId !== null) {
-      cancelAnimationFrame(rafId);
-      rafId = null;
-    }
-  }
-  function applyMotionPref() {
-    if (reduceMotion.matches) {
-      stopStars();
-      drawStatic();
-    } else {
-      startStars();
-    }
-  }
-  // Lets the Kate toggle recolor a static (reduced-motion) starfield.
-  function redrawStarsIfStatic() {
-    if (reduceMotion.matches) drawStatic();
-  }
-
-  document.addEventListener('visibilitychange', () => {
-    if (document.hidden) stopStars();
-    else applyMotionPref();
-  });
-  if (reduceMotion.addEventListener) reduceMotion.addEventListener('change', applyMotionPref);
 
   let resizeTimer;
   addEventListener('resize', () => {
@@ -1048,13 +949,11 @@
     resizeTimer = setTimeout(() => {
       // iOS fires resize on toolbar show/hide without a real dimension change
       if (innerWidth === seededW && innerHeight === seededH) return;
-      seed();
-      if (reduceMotion.matches) drawStatic();
+      drawField();
     }, 200);
   });
 
-  seed();
-  applyMotionPref();
+  drawField();
 
   /* ---------- GitHub repos ---------- */
   const LANG_COLORS = {

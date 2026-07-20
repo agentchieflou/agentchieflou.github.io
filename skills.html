@@ -10,16 +10,15 @@
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
 <style>
   :root {
-    --bg: #05060a;
-    --ink: #eef1f6;
-    --dim: #9aa3b2;
-    --line: rgba(255, 255, 255, 0.12);
-    --accent: #7dd3fc;
-    --accent-2: #c4b5fd;
-    --nebula-1: #2563eb;
-    --nebula-2: #7c3aed;
-    --card-bg: linear-gradient(160deg, rgba(255, 255, 255, 0.075), rgba(255, 255, 255, 0.02) 45%, rgba(125, 211, 252, 0.05));
-    --hover-bg: rgba(125, 211, 252, 0.07);
+    --bg: #0e0f12;
+    --ink: #e8eaed;
+    --dim: #9aa0a6;
+    --line: rgba(232, 234, 237, 0.14);
+    --accent: #c9a86a;
+    --accent-2: #9ba8b8;
+    --card-bg: #14161b;
+    --hover-bg: rgba(201, 168, 106, 0.08);
+    --kate-pink: #f2a5b8;
     /* Validated categorical palette (passes CVD/contrast checks on both surfaces).
        Same hues in both themes — identity colors follow the entity, not the theme. */
     --cat-analytics: #3987e5;
@@ -29,16 +28,14 @@
   }
 
   body.kate-mode {
-    --bg: #1a0f15;
-    --ink: #fff5f7;
-    --dim: #d9c2c7;
-    --line: rgba(255, 182, 197, 0.18);
-    --accent: #ffb7c5;
-    --accent-2: #ffd15c;
-    --nebula-1: #ffb7c5;
-    --nebula-2: #ffd15c;
-    --card-bg: linear-gradient(160deg, rgba(255, 182, 197, 0.1), rgba(255, 182, 197, 0.03) 70%, rgba(253, 216, 93, 0.04));
-    --hover-bg: rgba(255, 182, 197, 0.1);
+    --bg: #170e13;
+    --ink: #f7eef1;
+    --dim: #c9b3ba;
+    --line: rgba(242, 165, 184, 0.18);
+    --accent: #f2a5b8;
+    --accent-2: #d9a441;
+    --card-bg: #1e1318;
+    --hover-bg: rgba(242, 165, 184, 0.1);
   }
 
   body.kate-mode .normal-only { display: none !important; }
@@ -58,19 +55,8 @@
     transition: background 0.4s ease, color 0.4s ease;
   }
 
-  #stars { position: fixed; inset: 0; z-index: 0; }
-
-  .nebula {
-    position: fixed;
-    width: 60vmax;
-    height: 60vmax;
-    border-radius: 50%;
-    opacity: 0.16;
-    z-index: 0;
-    pointer-events: none;
-  }
-  .n1 { background: radial-gradient(circle closest-side, var(--nebula-1) 0%, var(--nebula-1) 22%, transparent 72%); top: -20vmax; left: -15vmax; }
-  .n2 { background: radial-gradient(circle closest-side, var(--nebula-2) 0%, var(--nebula-2) 22%, transparent 72%); bottom: -25vmax; right: -15vmax; }
+  /* Static hyperbolic geodesic grid — drawn once, no animation loop */
+  #field { position: fixed; inset: 0; z-index: 0; }
 
   .hud {
     position: relative;
@@ -89,21 +75,26 @@
   .brand { color: var(--ink); font-weight: 700; letter-spacing: 0.3em; text-decoration: none; }
   .hud-title { flex: 1; text-align: center; }
 
+  /* Kate mode: small pink footer pill — a fun aside, not part of the main story */
   .kate-toggle-btn {
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid var(--line);
-    color: var(--ink);
-    padding: 8px 16px;
+    position: fixed;
+    right: 18px;
+    bottom: 14px;
+    z-index: 30;
+    background: transparent;
+    border: 1px solid rgba(242, 165, 184, 0.45);
+    color: var(--kate-pink);
+    padding: 6px 14px;
     border-radius: 999px;
     cursor: pointer;
     font-family: "Space Grotesk", sans-serif;
-    font-size: 11px;
+    font-size: 10px;
     text-transform: uppercase;
     letter-spacing: 0.1em;
     transition: border-color 0.2s ease, background 0.2s ease;
     outline: none;
   }
-  .kate-toggle-btn:hover { border-color: var(--accent); background: var(--hover-bg); }
+  .kate-toggle-btn:hover { border-color: var(--kate-pink); background: rgba(242, 165, 184, 0.1); }
 
   .stage { position: relative; z-index: 4; min-height: 0; }
   #graph { position: absolute; inset: 0; width: 100%; height: 100%; touch-action: manipulation; }
@@ -119,11 +110,9 @@
     overflow-y: auto;
     padding: 20px;
     border: 1px solid var(--line);
-    border-radius: 18px;
+    border-radius: 14px;
     background: var(--card-bg);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
     display: none;
   }
   .panel.open { display: block; }
@@ -206,12 +195,10 @@
   details.data-table[open] {
     background: var(--card-bg);
     border: 1px solid var(--line);
-    border-radius: 14px;
+    border-radius: 12px;
     padding: 12px;
     max-height: 40vh;
     overflow-y: auto;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
   }
   details.data-table table { border-collapse: collapse; margin-top: 8px; width: 100%; }
   details.data-table th, details.data-table td { text-align: left; padding: 3px 8px 3px 0; font-weight: 400; vertical-align: top; }
@@ -224,29 +211,24 @@
     .hud-title { display: none; }
   }
 
-  @media (pointer: coarse) {
-    .panel { backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); }
-  }
-
   @media (prefers-reduced-motion: reduce) {
     * { transition-duration: 0.01s !important; }
   }
 </style>
 </head>
 <body>
-  <canvas id="stars"></canvas>
-  <div class="nebula n1"></div>
-  <div class="nebula n2"></div>
+  <canvas id="field"></canvas>
 
   <header class="hud">
     <a class="brand" href="index.html" aria-label="Back to home">ML</a>
     <span class="hud-title normal-only">Skills · Market Alignment</span>
-    <span class="hud-title kate-only">Things Michael Pretends To Know 🎀</span>
-    <button id="kateToggle" class="kate-toggle-btn">
-      <span class="normal-only">Kate Mode 🎀</span>
-      <span class="kate-only">Standard Mode 💻</span>
-    </button>
+    <span class="hud-title kate-only">Things Michael Pretends To Know</span>
   </header>
+
+  <button id="kateToggle" class="kate-toggle-btn" aria-label="Toggle Kate mode">
+    <span class="normal-only">Kate mode</span>
+    <span class="kate-only">Standard mode</span>
+  </button>
 
   <main class="stage">
     <canvas id="graph" aria-label="Interactive graph of skills and matching job postings"></canvas>
@@ -275,83 +257,65 @@
 <script>
   /* ---------- Kate mode (shared localStorage key with the other pages) ---------- */
   const isKateMode = localStorage.getItem('kateMode') === 'true';
-  let kateStars = isKateMode;
   if (isKateMode) document.body.classList.add('kate-mode');
   document.getElementById('kateToggle').addEventListener('click', () => {
     const active = document.body.classList.toggle('kate-mode');
-    kateStars = active;
     localStorage.setItem('kateMode', active ? 'true' : 'false');
-    redrawStarsIfStatic();
+    drawField();
     drawGraph();
   });
 
-  /* ---------- starfield (same optimized pattern as index.html) ---------- */
-  const sCanvas = document.getElementById('stars');
-  const sCtx = sCanvas.getContext('2d');
+  /* ---------- backdrop: hyperbolic geodesic grid (same as index.html) ----------
+     Static — drawn once, redrawn only on resize or theme toggle. */
+  const fCanvas = document.getElementById('field');
+  const fCtx = fCanvas.getContext('2d');
   const DPR = Math.min(window.devicePixelRatio || 1, 2);
   const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)');
-  const STAR_COLORS = ['220, 230, 255', '254, 216, 93', '255, 182, 197'];
-  let stars = [], sRaf = null, sLast = 0;
 
-  function seedStars() {
-    sCanvas.width = innerWidth * DPR;
-    sCanvas.height = innerHeight * DPR;
-    sCanvas.style.width = innerWidth + 'px';
-    sCanvas.style.height = innerHeight + 'px';
-    stars = Array.from({ length: Math.min(180, innerWidth / 7) }, () => ({
-      x: Math.random() * sCanvas.width,
-      y: Math.random() * sCanvas.height,
-      r: Math.random() * 1.3 + 0.2,
-      p: Math.random() * Math.PI * 2,
-      s: Math.random() * 0.015 + 0.004
-    }));
-  }
-  function starGroup(st) { return kateStars ? (st.r > 1.0 ? 1 : 2) : 0; }
-  function drawStars(t, staticAlpha) {
-    sCtx.clearRect(0, 0, sCanvas.width, sCanvas.height);
-    const BUCKETS = 8, groups = new Map();
-    for (const st of stars) {
-      const a = staticAlpha != null ? staticAlpha
-        : 0.25 + 0.55 * (0.5 + 0.5 * Math.sin(st.p + t * 0.0004));
-      const b = staticAlpha != null ? 0
-        : Math.min(BUCKETS - 1, Math.max(0, ((a - 0.25) / 0.55 * BUCKETS) | 0));
-      const key = starGroup(st) * BUCKETS + b;
-      let g = groups.get(key);
-      if (!g) groups.set(key, g = []);
-      g.push(st);
+  function drawField() {
+    const w = fCanvas.width = innerWidth * DPR;
+    const h = fCanvas.height = innerHeight * DPR;
+    fCanvas.style.width = innerWidth + 'px';
+    fCanvas.style.height = innerHeight + 'px';
+    fCtx.clearRect(0, 0, w, h);
+
+    const kate = document.body.classList.contains('kate-mode');
+    const rgb = kate ? '242, 165, 184' : '201, 168, 106';
+    const cx = w / 2, cy = h * 0.55;
+    const R = Math.hypot(w, h) * 0.42;
+    fCtx.lineWidth = 1 * DPR;
+
+    fCtx.save();
+    fCtx.beginPath();
+    fCtx.arc(cx, cy, R, 0, Math.PI * 2);
+    fCtx.clip();
+    const RINGS = 9;
+    for (let i = 1; i <= RINGS; i++) {
+      const r = R * Math.tanh(i * 0.30) / Math.tanh(RINGS * 0.30);
+      fCtx.strokeStyle = `rgba(${rgb}, ${(0.04 + 0.03 * i / RINGS).toFixed(3)})`;
+      fCtx.beginPath();
+      fCtx.arc(cx, cy, r, 0, Math.PI * 2);
+      fCtx.stroke();
     }
-    for (const [key, g] of groups) {
-      const a = staticAlpha != null ? staticAlpha : 0.25 + 0.55 * ((key % BUCKETS + 0.5) / BUCKETS);
-      sCtx.fillStyle = `rgba(${STAR_COLORS[(key / BUCKETS) | 0]}, ${a.toFixed(3)})`;
-      sCtx.beginPath();
-      for (const st of g) {
-        sCtx.moveTo(st.x + st.r * DPR, st.y);
-        sCtx.arc(st.x, st.y, st.r * DPR, 0, Math.PI * 2);
+    fCtx.strokeStyle = `rgba(${rgb}, 0.05)`;
+    const SPOKES = 11;
+    for (let k = 0; k < SPOKES; k++) {
+      const th = (k / SPOKES) * Math.PI * 2;
+      for (const m of [1.06, 1.35, 1.9]) {
+        const d = R * m;
+        const r = Math.sqrt(d * d - R * R);
+        fCtx.beginPath();
+        fCtx.arc(cx + Math.cos(th) * d, cy + Math.sin(th) * d, r, 0, Math.PI * 2);
+        fCtx.stroke();
       }
-      sCtx.fill();
     }
+    fCtx.restore();
+    fCtx.strokeStyle = `rgba(${rgb}, 0.1)`;
+    fCtx.beginPath();
+    fCtx.arc(cx, cy, R, 0, Math.PI * 2);
+    fCtx.stroke();
   }
-  function starTick(t) {
-    sRaf = requestAnimationFrame(starTick);
-    const dt = t - sLast;
-    if (dt < 33) return;
-    sLast = t;
-    const step = Math.min(dt, 100) / 16.67;
-    for (const st of stars) st.p += st.s * step;
-    drawStars(t, null);
-  }
-  function startStarLoop() { if (sRaf === null) { sLast = performance.now(); sRaf = requestAnimationFrame(starTick); } }
-  function stopStarLoop() { if (sRaf !== null) { cancelAnimationFrame(sRaf); sRaf = null; } }
-  function applyStarMotionPref() {
-    if (reduceMotion.matches) { stopStarLoop(); drawStars(0, 0.55); } else startStarLoop();
-  }
-  function redrawStarsIfStatic() { if (reduceMotion.matches) drawStars(0, 0.55); }
-  document.addEventListener('visibilitychange', () => {
-    if (document.hidden) stopStarLoop(); else applyStarMotionPref();
-  });
-  if (reduceMotion.addEventListener) reduceMotion.addEventListener('change', applyStarMotionPref);
-  seedStars();
-  applyStarMotionPref();
+  drawField();
 
   /* ---------- data: live from the agent-data branch, sample fallback ---------- */
   const DATA_URL = 'https://raw.githubusercontent.com/agentchieflou/agentchieflou.github.io/agent-data/skills_graph.json';
@@ -421,8 +385,8 @@
   function chrome() {
     const kate = document.body.classList.contains('kate-mode');
     return kate
-      ? { ink: '#fff5f7', dim: '#d9c2c7', line: 'rgba(255,182,197,0.25)', accent: '#ffb7c5', ghost: '#d9c2c7' }
-      : { ink: '#eef1f6', dim: '#9aa3b2', line: 'rgba(255,255,255,0.22)', accent: '#7dd3fc', ghost: '#9aa3b2' };
+      ? { ink: '#f7eef1', dim: '#c9b3ba', line: 'rgba(242,165,184,0.25)', accent: '#f2a5b8', ghost: '#c9b3ba', well: 'rgba(23,14,19,0.9)' }
+      : { ink: '#e8eaed', dim: '#9aa0a6', line: 'rgba(232,234,237,0.22)', accent: '#c9a86a', ghost: '#9aa0a6', well: 'rgba(14,15,18,0.9)' };
   }
 
   function sizeGraphCanvas() {
@@ -625,7 +589,7 @@
         ctx.stroke();
         ctx.setLineDash([]);
       } else {
-        ctx.fillStyle = kateStars ? 'rgba(26,15,21,0.9)' : 'rgba(5,6,10,0.9)';
+        ctx.fillStyle = c.well;
         ctx.fill();
         ctx.strokeStyle = c.accent;
         ctx.lineWidth = 2 * DPR;
@@ -769,8 +733,7 @@
   addEventListener('resize', () => {
     clearTimeout(resizeTimer);
     resizeTimer = setTimeout(() => {
-      seedStars();
-      redrawStarsIfStatic();
+      drawField();
       sizeGraphCanvas();
       if (DATA) buildGraph(DATA);
     }, 200);
