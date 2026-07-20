@@ -395,7 +395,23 @@
     canvas.height = rect.height * DPR;
   }
 
+  // Legacy skills removed from the pipeline (agent/config.py blocklist) —
+  // filtered here too so stale agent-data snapshots never show them.
+  const SKILL_BLOCKLIST = /\b(SAS|Stata|BERT|NLP)\b/i;
+  function stripBlocked(data) {
+    const drop = new Set(
+      [...(data.skills || []), ...(data.ghost_skills || [])]
+        .filter(s => SKILL_BLOCKLIST.test(s.name || '')).map(s => s.id));
+    if (!drop.size) return data;
+    return Object.assign({}, data, {
+      skills: (data.skills || []).filter(s => !drop.has(s.id)),
+      ghost_skills: (data.ghost_skills || []).filter(s => !drop.has(s.id)),
+      edges: (data.edges || []).filter(e => !drop.has(e.skill))
+    });
+  }
+
   function buildGraph(data) {
+    data = stripBlocked(data);
     DATA = data;
     const W = canvas.width, H = canvas.height;
     const cx = W / 2, cy = H / 2;
@@ -456,8 +472,11 @@
     if (data.sample) {
       note.textContent = 'Sample data — live matches appear after the career agent’s first run.';
     } else if (data.generated_at) {
-      note.textContent = 'Node size = skill strength / match score · updated ' +
-        new Date(data.generated_at).toLocaleDateString();
+      const t = data.totals || {};
+      const counter = t.discovered_all_time
+        ? t.discovered_all_time.toLocaleString() + ' qualifying jobs found to date · ' : '';
+      note.textContent = 'Node size = skill strength / match score · ' + counter +
+        'updated ' + new Date(data.generated_at).toLocaleDateString();
     }
   }
 

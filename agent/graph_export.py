@@ -15,7 +15,7 @@ from util import norm_key, save_json
 GRAPH_PATH = STATE_DIR / "skills_graph.json"
 
 
-def export_graph(profile, jobs, scores):
+def export_graph(profile, jobs, scores, totals=None):
     skills = [{
         "id": norm_key(s["name"]),
         "name": s["name"],
@@ -57,6 +57,11 @@ def export_graph(profile, jobs, scores):
     graph = {
         "generated_at": dt.datetime.now(dt.timezone.utc).isoformat(),
         "profile_version": profile["version"],
+        # Cumulative discovery counter for the site — displayed jobs are
+        # capped, but every qualifying job ever found counts here. Applied
+        # status is deliberately never exported.
+        "totals": {"discovered_all_time": (totals or {}).get("all_time", 0),
+                   "live": (totals or {}).get("live", len(jobs))},
         "skills": skills,
         "ghost_skills": list(ghosts.values()),
         "jobs": job_nodes,

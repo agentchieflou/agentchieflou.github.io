@@ -9,8 +9,11 @@ import html
 import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
+from urllib.parse import quote
 
-from config import EMAIL_TO, GMAIL_ADDRESS, GMAIL_APP_PASSWORD, STATE_DIR, TOP_N_DIGEST
+from applied import SUBJECT_TAG
+from config import (EMAIL_TO, GMAIL_ADDRESS, GMAIL_APP_PASSWORD,
+                    MIN_SALARY_USD, STATE_DIR, TOP_N_DIGEST)
 from util import log
 
 
@@ -19,27 +22,40 @@ def combined_score(s):
     return s["match_score"] * (0.6 + 0.4 * s["confidence"])
 
 
-def pick_top(jobs, scores, n=TOP_N_DIGEST):
-    scored = [(j, scores[j["id"]]) for j in jobs if j["id"] in scores]
+def pick_top(jobs, scores, n=TOP_N_DIGEST, exclude=()):
+    """Top-n scored jobs, skipping ids in `exclude` (already applied)."""
+    scored = [(j, scores[j["id"]]) for j in jobs
+              if j["id"] in scores and j["id"] not in exclude]
     scored.sort(key=lambda js: -combined_score(js[1]))
     return scored[:n]
+
+
+def _mark_applied_link(j):
+    body = f"applied {j['id']}\n({j['title']} @ {j['company']})"
+    return (f"mailto:{EMAIL_TO}?subject={quote(SUBJECT_TAG)}"
+            f"&body={quote(body)}")
 
 
 def build_html(top, stats):
     e = html.escape
     rows = []
+    new_ids = set(stats.get("new_ids") or [])
     for i, (j, s) in enumerate(top, 1):
         missing = ", ".join(s["missing_skills"]) or "none identified"
         salary = f" · {e(j['salary'])}" if j.get("salary") else ""
+        new_badge = ("""<span style="background:#0a7d33;color:#fff;border-radius:4px;
+          font-size:11px;padding:1px 6px;margin-left:6px;">NEW</span>"""
+                     if j["id"] in new_ids else "")
         rows.append(f"""
         <div style="border:1px solid #ddd;border-radius:10px;padding:16px;margin:12px 0;">
-          <div style="font-size:16px;font-weight:bold;">{i}. {e(j['title'])} — {e(j['company'])}</div>
+          <div style="font-size:16px;font-weight:bold;">{i}. {e(j['title'])} — {e(j['company'])}{new_badge}</div>
           <div style="color:#555;font-size:13px;margin:4px 0;">{e(j['location'])}{salary}
             · Match <b>{s['match_score']}/100</b> · Confidence {round(s['confidence'] * 100)}%
             · via {e(j['source'])}</div>
           <div style="font-size:14px;margin:8px 0;">{e(s['why'])}</div>
           <div style="font-size:13px;color:#555;">Missing skills: {e(missing)}</div>
-          <div style="margin-top:8px;"><a href="{e(j['url'])}">Apply / view posting →</a></div>
+          <div style="margin-top:8px;"><a href="{e(j['url'])}">Apply / view posting →</a>
+            &nbsp;·&nbsp; <a href="{e(_mark_applied_link(j))}" style="color:#0a7d33;">✓ Mark applied</a></div>
         </div>""")
 
     suggestions = sorted({t for _, s in top for t in s.get("resume_suggestions", [])})
@@ -52,6 +68,8 @@ def build_html(top, stats):
     return f"""
     <div style="font-family:Arial,Helvetica,sans-serif;max-width:680px;margin:auto;color:#111;">
       <h2>Career Agent — Top {len(top)} matches for {stats['date']}</h2>
+      <p style="font-size:12px;color:#777;margin-top:-8px;">Filters: fully remote ·
+        stated salary required, min ${MIN_SALARY_USD:,} · already-applied jobs excluded</p>
       {''.join(rows) or '<p>No scored matches yet — the next runs will fill this in.</p>'}
       {sugg_html}
       <h3 style="margin-top:24px;">Run summary</h3>
@@ -59,12 +77,16 @@ def build_html(top, stats):
         <li>{stats['evaluated']} jobs evaluated across {stats['sources']} sources</li>
         <li>{stats['new']} newly discovered postings</li>
         <li>{stats['expired']} expired postings removed</li>
+        <li>{stats.get('applied_total', 0)} jobs marked applied to date ·
+            {stats.get('discovered_total', 0)} qualifying jobs discovered all-time</li>
         {profile_note}
       </ul>
       <p style="font-size:11px;color:#999;margin-top:24px;">
+        "✓ Mark applied" composes an email to yourself — send it as-is and the next
+        run records the application and stops resurfacing that job.
         This digest is informational only — nothing was applied to on your behalf.
         Job data includes listings from Remotive, RemoteOK (<a href="https://remoteok.com">remoteok.com</a>),
-        Arbeitnow, Hacker News, Adzuna and USAJobs.
+        Arbeitnow, Hacker News, Adzuna, USAJobs and doomersareretardedcommunists.com.
       </p>
     </div>"""
 

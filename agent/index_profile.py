@@ -16,7 +16,7 @@ import requests
 
 import llm
 from config import (GEMINI_API_KEY, GITHUB_TOKEN, GITHUB_USER,
-                    REPO_ROOT, STATE_DIR, USER_AGENT)
+                    REPO_ROOT, SKILL_BLOCKLIST_PATTERNS, STATE_DIR, USER_AGENT)
 from util import html_to_text, load_json, log, save_json, sha256
 
 PROFILE_PATH = STATE_DIR / "profile.json"
@@ -123,7 +123,9 @@ def _gemini_profile(resume_text, repo_summaries):
         "Rules: 12-25 skills; strength must reflect actual evidence (years, projects, "
         "repo activity), not resume keywords alone; target_titles = 4-6 job titles this "
         "person is genuinely competitive for today, ordered by fit. The person only "
-        "wants fully-remote roles. Respond with JSON only.\n\n"
+        "wants fully-remote roles. Exclude legacy skills the person no longer uses: "
+        "SAS, Stata, NLP/BERT (do not emit them even though the resume mentions them). "
+        "Respond with JSON only.\n\n"
         f"RESUME:\n{resume_text[:6000]}\n\nGITHUB PORTFOLIO:\n"
         f"{json.dumps(repo_summaries, ensure_ascii=False)[:8000]}"
     )
@@ -139,7 +141,7 @@ def _heuristic_profile(resume_text, repo_summaries):
         for t in r["topics"]:
             counts[t] = counts.get(t, 0) + 1
     for kw in ["SQL", "Python", "Tableau", "Power BI", "Excel", "R", "Snowflake",
-               "Alteryx", "SAS", "ETL", "Agile", "RAG", "machine learning"]:
+               "Alteryx", "ETL", "Agile", "RAG", "machine learning"]:
         if re.search(re.escape(kw), resume_text, re.IGNORECASE):
             counts[kw] = counts.get(kw, 0) + 2
     top = sorted(counts.items(), key=lambda kv: -kv[1])[:20]
@@ -152,11 +154,31 @@ def _heuristic_profile(resume_text, repo_summaries):
     }
 
 
+def _apply_blocklist(profile):
+    """Drops blocklisted legacy skills regardless of how they were extracted —
+    the prompt asks Gemini to exclude them, but this is the guarantee."""
+    pats = [re.compile(p, re.I) for p in SKILL_BLOCKLIST_PATTERNS]
+    kept, dropped = [], []
+    for s in profile.get("skills", []):
+        (dropped if any(p.search(s.get("name", "")) for p in pats) else kept).append(s)
+    if dropped:
+        log.info("blocklist removed skills: %s", ", ".join(s["name"] for s in dropped))
+    profile["skills"] = kept
+    return profile
+
+
 def build_profile():
     """Returns (profile_dict, changed: bool, change_note: str)."""
     source_text, resume_text, repo_summaries = gather_sources()
     version = sha256(source_text)[:12]
     existing = load_json(PROFILE_PATH, None)
+    if existing:
+        # Clean cached profiles too, so a blocklist change takes effect
+        # without waiting for the source material to change.
+        n_before = len(existing.get("skills", []))
+        existing = _apply_blocklist(existing)
+        if len(existing["skills"]) != n_before:
+            save_json(PROFILE_PATH, existing)
     if existing and existing.get("version") == version:
         return existing, False, ""
     # A heuristic profile carries a "-h" version suffix so that once a working
@@ -176,6 +198,7 @@ def build_profile():
         profile["heuristic"] = True
         version += "-h"
 
+    profile = _apply_blocklist(profile)
     profile["version"] = version
     profile["remote_only"] = True
     profile["generated_at"] = dt.datetime.now(dt.timezone.utc).isoformat()

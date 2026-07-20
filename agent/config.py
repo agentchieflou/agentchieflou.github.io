@@ -34,10 +34,29 @@ USAJOBS_USER_AGENT = os.environ.get("USAJOBS_USER_AGENT", EMAIL_TO)
 GMAIL_ADDRESS = os.environ.get("GMAIL_ADDRESS", EMAIL_TO)
 GMAIL_APP_PASSWORD = os.environ.get("GMAIL_APP_PASSWORD", "")
 
-MAX_LLM_CANDIDATES = 15   # jobs sent to Gemini per run, after embedding prefilter
+MAX_LLM_CANDIDATES = 25   # jobs sent to Gemini per run, after embedding prefilter
 DESC_TRUNCATE = 800       # chars of description per job in the LLM prompt
-TOP_N_DIGEST = 5
+TOP_N_DIGEST = 10
 TOP_N_GRAPH_JOBS = 8
 JOB_EXPIRY_DAYS = 14      # drop listings not seen at any source for this long
+
+# Jobs whose stated salary tops out below this are dropped before ranking.
+# Listings with no stated salary are kept (most free sources omit it) and
+# flagged in the digest.
+MIN_SALARY_USD = 130_000
+
+# doomersareretardedcommunists.com — community job-market dashboard hosted at
+# cost on the author's own dime. It publishes immutable daily JSON snapshots
+# (GCS behind the domain), so the polite integration is: one tiny manifest
+# check per run, and each ~26MB group file downloaded AT MOST once per
+# snapshot day (cached parse in state). Never crawl its pages.
+DOOMERS_BASE = "https://doomersareretardedcommunists.com"
+DOOMERS_GROUPS = ["data-and-analytics", "ai-ml-engineer"]  # title_group slugs to pull
+DOOMERS_MAX_PER_GROUP = 500  # newest-first cap after filtering
+
+# Legacy skills the owner no longer wants surfaced anywhere — filtered out of
+# the extracted profile so they never reach ranking, scoring, or the graph.
+# Matched case-insensitively as whole words against skill names.
+SKILL_BLOCKLIST_PATTERNS = [r"\bSAS\b", r"\bStata\b", r"\bBERT\b", r"\bNLP\b"]
 
 USER_AGENT = "career-agent/1.0 (+https://github.com/agentchieflou/agentchieflou.github.io)"

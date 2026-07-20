@@ -34,7 +34,9 @@ def main():
         # their state file paths from config.STATE_DIR at import time.
         config.STATE_DIR = Path(args.state_dir)
 
+    import applied as applied_mod
     import digest as digest_mod
+    import enrich
     import fetch_jobs
     import graph_export
     import index_profile
@@ -43,24 +45,30 @@ def main():
 
     config.STATE_DIR.mkdir(parents=True, exist_ok=True)
 
-    log.info("stage 1/5: profile indexing")
+    log.info("stage 1/6: profile indexing")
     profile, changed, note = index_profile.build_profile()
     log.info("profile version %s (%s skills, changed=%s)",
              profile["version"], len(profile.get("skills", [])), changed)
 
-    log.info("stage 2/5: job discovery")
-    jobs, new_ids, expired = fetch_jobs.fetch_all(profile.get("target_titles", []))
-    log.info("%d live jobs, %d new, %d expired", len(jobs), len(new_ids), expired)
+    log.info("stage 2/6: applied-email sync")
+    applied = applied_mod.sync_from_inbox()
 
-    log.info("stage 3/5: embedding prefilter")
+    log.info("stage 3/6: job discovery")
+    jobs, new_ids, expired, totals = fetch_jobs.fetch_all(profile.get("target_titles", []))
+    log.info("%d live jobs, %d new, %d expired, %d discovered all-time",
+             len(jobs), len(new_ids), expired, totals["all_time"])
+
+    log.info("stage 4/6: embedding prefilter + finalist enrichment")
     ranked = rank.rank_jobs(profile, jobs)
+    enrich.enrich_candidates(ranked[:config.MAX_LLM_CANDIDATES])
+    ranked = [j for j in ranked if not j.get("dead")]
 
-    log.info("stage 4/5: LLM scoring")
+    log.info("stage 5/6: LLM scoring")
     scores, newly_scored = score_llm.score_candidates(profile, ranked)
     log.info("%d newly scored, %d total scored", newly_scored, len(scores))
 
-    log.info("stage 5/5: digest + graph export")
-    top = digest_mod.pick_top(ranked, scores)
+    log.info("stage 6/6: digest + graph export")
+    top = digest_mod.pick_top(ranked, scores, exclude=set(applied))
     stats = {
         "date": dt.date.today().isoformat(),
         "evaluated": len(jobs),
@@ -68,9 +76,14 @@ def main():
         "new": len(new_ids),
         "expired": expired,
         "profile_note": note,
+        "new_ids": new_ids,
+        "applied_total": len(applied),
+        "discovered_total": totals["all_time"],
     }
     digest_mod.send_digest(top, stats, dry_run=args.dry_run)
-    graph_export.export_graph(profile, ranked, scores)
+    # Applied jobs are kept out of the public graph as well
+    graph_export.export_graph(profile, [j for j in ranked if j["id"] not in applied],
+                              scores, totals)
 
     for i, (j, s) in enumerate(top, 1):
         log.info("top %d: %s @ %s (score %d, conf %.2f)",
