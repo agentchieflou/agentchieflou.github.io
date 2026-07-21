@@ -272,24 +272,6 @@
   "heuristic": false,
   "scored_at": "2026-07-20T05:48:46.232027+00:00"
  },
- "cb1f702e0bdb989562243d4e6260fc11e4254b10": {
-  "profile_version": "3c8cd16212ea",
-  "match_score": 75,
-  "confidence": 0.85,
-  "why": "Good fit for your C++/embedded interests, though it falls slightly below your total compensation expectations.",
-  "matched_skills": [
-   "C++",
-   "SQL",
-   "Python"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Highlight your real-time systems and telematics work."
-  ],
-  "prefilter": 0.7101,
-  "heuristic": false,
-  "scored_at": "2026-07-20T05:48:46.232027+00:00"
- },
  "468c3e72493c5f9e946f1342000e153e757fe229": {
   "profile_version": "694a2e312f01",
   "match_score": 92,
@@ -638,16 +620,24 @@
   "scored_at": "2026-07-20T06:17:11.111879+00:00"
  },
  "c39f105270dd0694e375390c59fd309fea35f0cd": {
-  "profile_version": "8444b242a37a",
-  "match_score": 97,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
+  "profile_version": "694a2e312f01",
+  "match_score": 72,
+  "confidence": 0.8,
+  "why": "Good technical overlap, but the compensation is at the very floor of the candidate's expectations.",
+  "matched_skills": [
+   "Python",
+   "SQL",
+   "Hadoop"
+  ],
   "missing_skills": [],
-  "resume_suggestions": [],
-  "prefilter": 0.6991,
-  "heuristic": true,
-  "scored_at": "2026-07-20T06:17:11.111879+00:00"
+  "resume_suggestions": [
+   "Emphasize your Big Data processing experience.",
+   "Highlight your C++ experience if applicable to the backend systems."
+  ],
+  "sector": "Enterprise SaaS/DevTools",
+  "prefilter": 0.5274,
+  "heuristic": false,
+  "scored_at": "2026-07-21T16:51:16.729816+00:00"
  },
  "c6ad1061e25fad5dcf5a9deb25325538047fcf85": {
   "profile_version": "0a5fa78b8917",
@@ -700,22 +690,26 @@
   "scored_at": "2026-07-20T17:52:14.684804+00:00"
  },
  "46dbd8296712bc73c8fb2a72751ee6053e64a077": {
-  "profile_version": "bbec4246b79f",
-  "match_score": 92,
-  "confidence": 0.95,
-  "why": "Excellent senior-level compensation and technical fit for a high-performance engineer.",
+  "profile_version": "694a2e312f01",
+  "match_score": 95,
+  "confidence": 0.9,
+  "why": "Matches the candidate's seniority level and expertise in large-scale data architecture and infrastructure.",
   "matched_skills": [
-   "Data Architecture",
+   "Python",
    "SQL",
-   "Kubernetes/OpenShift"
+   "Docker",
+   "Kubernetes/OpenShift",
+   "CI/CD"
   ],
   "missing_skills": [],
   "resume_suggestions": [
-   "Emphasize large-scale enterprise migration project successes."
+   "Explicitly list your experience managing petabyte-scale data migrations.",
+   "Highlight your history of delivering significant operational cost savings via containerized automation."
   ],
-  "prefilter": 0.7169,
+  "sector": "Fintech",
+  "prefilter": 0.5263,
   "heuristic": false,
-  "scored_at": "2026-07-20T14:33:02.272881+00:00"
+  "scored_at": "2026-07-21T16:51:16.729816+00:00"
  },
  "4a0efac9e3d4864d2cb8af1df482ac549bc73e88": {
   "profile_version": "bbec4246b79f",
@@ -771,22 +765,25 @@
   "scored_at": "2026-07-20T14:33:02.272881+00:00"
  },
  "38fd8a1e1d0a443aefba05334c1db7dbc1ab2835": {
-  "profile_version": "bbec4246b79f",
+  "profile_version": "694a2e312f01",
   "match_score": 80,
-  "confidence": 0.9,
-  "why": "Solid senior data engineering role with strong pay.",
+  "confidence": 0.8,
+  "why": "Strong technical fit, though requires specialized domain knowledge in Graph data structures.",
   "matched_skills": [
    "Python",
-   "SQL",
-   "Data Architecture"
+   "SQL"
   ],
-  "missing_skills": [],
+  "missing_skills": [
+   "Graph Databases"
+  ],
   "resume_suggestions": [
-   "Detail any graph database or complex relational data modeling."
+   "Mention any past work involving complex data modeling or network analysis.",
+   "Highlight your data architecture skills."
   ],
-  "prefilter": 0.7138,
+  "sector": "Other",
+  "prefilter": 0.508,
   "heuristic": false,
-  "scored_at": "2026-07-20T14:33:02.272881+00:00"
+  "scored_at": "2026-07-21T16:51:16.729816+00:00"
  },
  "8e9823653933384571717021274cede0bb21f474": {
   "profile_version": "bbec4246b79f",
@@ -807,21 +804,23 @@
   "scored_at": "2026-07-20T14:33:02.272881+00:00"
  },
  "5d55790fa0b62b2205f920672ffdc83b0486c268": {
-  "profile_version": "bbec4246b79f",
-  "match_score": 60,
-  "confidence": 0.9,
-  "why": "Senior title but compensation range is weak; does not meet $130k threshold at the entry point.",
+  "profile_version": "694a2e312f01",
+  "match_score": 40,
+  "confidence": 0.8,
+  "why": "The top-end salary of $148k meets the requirement, but the lower bound $118k is below the candidate's $130k threshold.",
   "matched_skills": [
    "Python",
    "SQL"
   ],
   "missing_skills": [],
   "resume_suggestions": [
-   "Emphasize scalability and performance gains."
+   "Showcase your experience in high-volume transactional environments.",
+   "Emphasize pipeline reliability."
   ],
-  "prefilter": 0.7133,
+  "sector": "Consumer/E-commerce",
+  "prefilter": 0.523,
   "heuristic": false,
-  "scored_at": "2026-07-20T14:33:02.272881+00:00"
+  "scored_at": "2026-07-21T16:51:16.729816+00:00"
  },
  "12dbe6f1cddc5ff8a6125eb234b5b3bdf6a2e2a8": {
   "profile_version": "bbec4246b79f",
@@ -963,16 +962,25 @@
   "scored_at": "2026-07-20T16:49:49.181216+00:00"
  },
  "8a2495d4a92b3b7b6cd6f620ced24f2dca248cef": {
-  "profile_version": "0a5fa78b8917",
-  "match_score": 98,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
+  "profile_version": "694a2e312f01",
+  "match_score": 92,
+  "confidence": 0.9,
+  "why": "Excellent fit for a Principal-level engineer with a focus on enterprise-grade data platforms.",
+  "matched_skills": [
+   "Python",
+   "SQL",
+   "Docker",
+   "Kubernetes/OpenShift"
+  ],
   "missing_skills": [],
-  "resume_suggestions": [],
-  "prefilter": 0.706,
-  "heuristic": true,
-  "scored_at": "2026-07-20T16:49:49.181216+00:00"
+  "resume_suggestions": [
+   "Highlight your cross-functional work in process automation.",
+   "Showcase your experience designing and maintaining REST APIs in enterprise environments."
+  ],
+  "sector": "Enterprise SaaS/DevTools",
+  "prefilter": 0.5281,
+  "heuristic": false,
+  "scored_at": "2026-07-21T16:51:16.729816+00:00"
  },
  "9238ec4daacda3f1e35d785635dee1ff7e52bb0d": {
   "profile_version": "0a5fa78b8917",
@@ -1062,25 +1070,6 @@
   "heuristic": false,
   "scored_at": "2026-07-20T17:52:14.684804+00:00"
  },
- "c9b217785a2dc14b3de1599a3673cf74267ea2da": {
-  "profile_version": "694a2e312f01",
-  "match_score": 82,
-  "confidence": 0.8,
-  "why": "Strong financial sector and data engineering alignment for a senior role.",
-  "matched_skills": [
-   "Python",
-   "SQL"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Emphasize experience with healthcare data compliance/structures.",
-   "Focus on scalability of data pipelines."
-  ],
-  "sector": "Healthcare",
-  "prefilter": 0.5132,
-  "heuristic": false,
-  "scored_at": "2026-07-20T17:52:14.684804+00:00"
- },
  "f3a85b8aea9b5d97acb143ca43481dab42dec677": {
   "profile_version": "694a2e312f01",
   "match_score": 80,
@@ -1100,5 +1089,105 @@
   "prefilter": 0.5167,
   "heuristic": false,
   "scored_at": "2026-07-20T17:52:14.684804+00:00"
+ },
+ "94949244807215c39162f10a700499c9c65aa2c9": {
+  "profile_version": "694a2e312f01",
+  "match_score": 98,
+  "confidence": 0.95,
+  "why": "Perfect alignment with candidate's financial sector experience and expertise in high-performance analytics infrastructure.",
+  "matched_skills": [
+   "Python",
+   "SQL"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Highlight your mainframe-to-cloud migration experience as it relates to reducing latency in trading systems.",
+   "Emphasize your background in physics-based simulations when describing model research support."
+  ],
+  "sector": "Fintech",
+  "prefilter": 0.5224,
+  "heuristic": false,
+  "scored_at": "2026-07-21T16:51:16.729816+00:00"
+ },
+ "f49811e042516ba833318cca036208ceba3bbc68": {
+  "profile_version": "694a2e312f01",
+  "match_score": 88,
+  "confidence": 0.85,
+  "why": "Matches the role requirements well, though it is slightly below the candidate's likely seniority level.",
+  "matched_skills": [
+   "Python",
+   "SQL",
+   "Power BI"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Frame your consulting experience to demonstrate how you act as an 'interface to the business'.",
+   "Highlight data storytelling projects."
+  ],
+  "sector": "Media/Gaming",
+  "prefilter": 0.5246,
+  "heuristic": false,
+  "scored_at": "2026-07-21T16:51:16.729816+00:00"
+ },
+ "ee4a672d877e5b1460b8dc3271a2cfbcd6026005": {
+  "profile_version": "694a2e312f01",
+  "match_score": 85,
+  "confidence": 0.85,
+  "why": "Strong alignment with the senior requirements for data pipeline construction and infrastructure ownership.",
+  "matched_skills": [
+   "Python",
+   "SQL"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Emphasize your background in API engineering for data accessibility.",
+   "Showcase experience with building high-performance automation suites."
+  ],
+  "sector": "Enterprise SaaS/DevTools",
+  "prefilter": 0.5091,
+  "heuristic": false,
+  "scored_at": "2026-07-21T16:51:16.729816+00:00"
+ },
+ "94289a10b36957991602485fced71bf97b01979b": {
+  "profile_version": "694a2e312f01",
+  "match_score": 75,
+  "confidence": 0.75,
+  "why": "Fits the integration specialist aspect of the role, though leans more toward Sales Engineering than pure development.",
+  "matched_skills": [
+   "REST APIs",
+   "Data Architecture"
+  ],
+  "missing_skills": [
+   "Salesforce CRM"
+  ],
+  "resume_suggestions": [
+   "Highlight your experience explaining complex technical migrations to non-technical stakeholders.",
+   "Focus on your background in API design and consulting."
+  ],
+  "sector": "Government/Public Sector",
+  "prefilter": 0.5286,
+  "heuristic": false,
+  "scored_at": "2026-07-21T16:51:16.729816+00:00"
+ },
+ "6b2f4055c34e327837d21414b6fdabb4dcf35040": {
+  "profile_version": "694a2e312f01",
+  "match_score": 65,
+  "confidence": 0.7,
+  "why": "Role is Backend-focused but matches the candidate's C++ and API expertise; compensation is at the minimum threshold.",
+  "matched_skills": [
+   "SQL",
+   "REST APIs"
+  ],
+  "missing_skills": [
+   "C#"
+  ],
+  "resume_suggestions": [
+   "Highlight your experience with Microsoft ecosystem technologies.",
+   "Detail your background in backend system maintenance."
+  ],
+  "sector": "Enterprise SaaS/DevTools",
+  "prefilter": 0.519,
+  "heuristic": false,
+  "scored_at": "2026-07-21T16:51:16.729816+00:00"
  }
 }
