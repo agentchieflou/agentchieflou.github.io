@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-07-21T16:51:18.286938+00:00",
+ "generated_at": "2026-07-22T16:11:08.929183+00:00",
  "profile_version": "694a2e312f01",
  "totals": {
-  "discovered_all_time": 1034,
-  "live": 936
+  "discovered_all_time": 1035,
+  "live": 935
  },
  "skills": [
   {
@@ -198,6 +198,20 @@
    "why": "Chronograph operates in the private capital markets, aligning perfectly with Michael's background in quantitative finance and banking-scale data systems. The platform engineering focus leverages his expertise in Kubernetes and CI/CD."
   },
   {
+   "id": "f49811e042516ba833318cca036208ceba3bbc68",
+   "title": "Analytics Engineer",
+   "company": "axios",
+   "sector": "Media/Gaming",
+   "company_description": null,
+   "location": "Remote (US)",
+   "salary": "$130,000-$155,000",
+   "url": "https://job-boards.greenhouse.io/axios/jobs/7799102",
+   "source": "doomers",
+   "score": 88,
+   "confidence": 0.85,
+   "why": "Matches the role requirements well, though it is slightly below the candidate's likely seniority level."
+  },
+  {
    "id": "115a826daddfdcb8858131c7638e9a539c1489ed",
    "title": "Billing & Analytics Software Engineer",
    "company": "Deepgram",
@@ -224,20 +238,6 @@
    "score": 88,
    "confidence": 0.85,
    "why": "Candidate's background in C++ and API engineering aligns well with the technical requirements for ML data systems."
-  },
-  {
-   "id": "f49811e042516ba833318cca036208ceba3bbc68",
-   "title": "Analytics Engineer",
-   "company": "axios",
-   "sector": "Media/Gaming",
-   "company_description": null,
-   "location": "Remote (US)",
-   "salary": "$130,000-$155,000",
-   "url": "https://job-boards.greenhouse.io/axios/jobs/7799102",
-   "source": "doomers",
-   "score": 88,
-   "confidence": 0.85,
-   "why": "Matches the role requirements well, though it is slightly below the candidate's likely seniority level."
   },
   {
    "id": "289ea176545c57bfcb2c0021e3e190761ef9c06b",
@@ -280,20 +280,6 @@
    "score": 82,
    "confidence": 0.8,
    "why": "As a founding engineer role, it leverages Michael's ability to handle high-volume sensitive data and build robust retrieval systems. Fits his interest in AI-driven automation for professional services."
-  },
-  {
-   "id": "f3a85b8aea9b5d97acb143ca43481dab42dec677",
-   "title": "Lead Python Developer, Data Analytics",
-   "company": "cvshealth",
-   "sector": "Healthcare",
-   "company_description": null,
-   "location": "Remote (US)",
-   "salary": "$141,232,000-$414,219,520",
-   "url": "https://cvshealth.wd1.myworkdayjobs.com/cvs_health_careers/job/PA---Work-from-home/Lead-Python-Developer--Data-Analytics_R0871632",
-   "source": "doomers",
-   "score": 80,
-   "confidence": 0.75,
-   "why": "Matches the candidate's Python automation focus, though scale of the role seems exceptionally large."
   },
   {
    "id": "c39f105270dd0694e375390c59fd309fea35f0cd",
@@ -469,6 +455,24 @@
   },
   {
    "skill": "python",
+   "job": "f49811e042516ba833318cca036208ceba3bbc68",
+   "weight": 1.0,
+   "missing": false
+  },
+  {
+   "skill": "sql",
+   "job": "f49811e042516ba833318cca036208ceba3bbc68",
+   "weight": 0.88,
+   "missing": false
+  },
+  {
+   "skill": "power bi",
+   "job": "f49811e042516ba833318cca036208ceba3bbc68",
+   "weight": 0.76,
+   "missing": false
+  },
+  {
+   "skill": "python",
    "job": "115a826daddfdcb8858131c7638e9a539c1489ed",
    "weight": 1.0,
    "missing": false
@@ -500,24 +504,6 @@
   {
    "skill": "docker",
    "job": "83446b7e650c54ee725c666c349735876c5d330f",
-   "weight": 0.76,
-   "missing": false
-  },
-  {
-   "skill": "python",
-   "job": "f49811e042516ba833318cca036208ceba3bbc68",
-   "weight": 1.0,
-   "missing": false
-  },
-  {
-   "skill": "sql",
-   "job": "f49811e042516ba833318cca036208ceba3bbc68",
-   "weight": 0.88,
-   "missing": false
-  },
-  {
-   "skill": "power bi",
-   "job": "f49811e042516ba833318cca036208ceba3bbc68",
    "weight": 0.76,
    "missing": false
   },
@@ -567,24 +553,6 @@
    "skill": "sql",
    "job": "9de959f580bf14bb0c243be6ae5c705b72b337bf",
    "weight": 0.64,
-   "missing": false
-  },
-  {
-   "skill": "python",
-   "job": "f3a85b8aea9b5d97acb143ca43481dab42dec677",
-   "weight": 1.0,
-   "missing": false
-  },
-  {
-   "skill": "sql",
-   "job": "f3a85b8aea9b5d97acb143ca43481dab42dec677",
-   "weight": 0.88,
-   "missing": false
-  },
-  {
-   "skill": "data architecture",
-   "job": "f3a85b8aea9b5d97acb143ca43481dab42dec677",
-   "weight": 0.76,
    "missing": false
   },
   {
