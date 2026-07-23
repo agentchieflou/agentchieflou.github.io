@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-07-22T16:11:08.929183+00:00",
+ "generated_at": "2026-07-23T16:58:53.015205+00:00",
  "profile_version": "694a2e312f01",
  "totals": {
   "discovered_all_time": 1035,
-  "live": 935
+  "live": 934
  },
  "skills": [
   {
@@ -100,20 +100,6 @@
  "ghost_skills": [],
  "jobs": [
   {
-   "id": "7f700cf6ebb37eb77755b0b238fde1d4224070ae",
-   "title": "Software Engineer, Infrastructure - Analytics Platform",
-   "company": "OpenAI",
-   "sector": "AI/ML Infra",
-   "company_description": null,
-   "location": "Remote (US)",
-   "salary": "$230,000-$385,000",
-   "url": "https://jobs.ashbyhq.com/openai/e44bfa94-0b82-4d0c-b224-02155b76eea9",
-   "source": "doomers",
-   "score": 95,
-   "confidence": 0.95,
-   "why": "The tech stack and focus on large-scale infrastructure and automation perfectly mirror the candidate's core competencies."
-  },
-  {
    "id": "46dbd8296712bc73c8fb2a72751ee6053e64a077",
    "title": "Sr. Distinguished, Data Engineer - Enterprise Data Storage and Consumption Platforms Data Engineer - Remote-Eligible",
    "company": "capitalone",
@@ -126,20 +112,6 @@
    "score": 95,
    "confidence": 0.9,
    "why": "Matches the candidate's seniority level and expertise in large-scale data architecture and infrastructure."
-  },
-  {
-   "id": "468c3e72493c5f9e946f1342000e153e757fe229",
-   "title": "Data Engineer",
-   "company": "Baseten",
-   "sector": "AI/ML Infra",
-   "company_description": null,
-   "location": "Remote (US)",
-   "salary": "$180,000-$250,000",
-   "url": "https://jobs.ashbyhq.com/Baseten/c2ba6c50-d282-4478-98e9-668f94facde8",
-   "source": "doomers",
-   "score": 92,
-   "confidence": 0.9,
-   "why": "Directly matches the candidate's background in building data platforms and working with high-performance inference systems."
   },
   {
    "id": "8a2495d4a92b3b7b6cd6f620ced24f2dca248cef",
@@ -156,38 +128,10 @@
    "why": "Excellent fit for a Principal-level engineer with a focus on enterprise-grade data platforms."
   },
   {
-   "id": "8e9823653933384571717021274cede0bb21f474",
-   "title": "Software Engineer - AI Enablement",
-   "company": "Baseten",
-   "sector": "AI/ML Infra",
-   "company_description": null,
-   "location": "Remote (US)",
-   "salary": "$165,000-$330,000",
-   "url": "https://jobs.ashbyhq.com/Baseten/b88a68b7-d2bc-4a30-a79a-3ef292ad7c26",
-   "source": "doomers",
-   "score": 90,
-   "confidence": 0.95,
-   "why": "Excellent alignment with your software engineering background and AI focus."
-  },
-  {
-   "id": "6724fab12f5bc78db84cce3c594361ccf83c4219",
-   "title": "Data Engineer",
-   "company": "Abridge",
-   "sector": "Healthcare",
-   "company_description": null,
-   "location": "Remote (US)",
-   "salary": "$185,000-$217,000",
-   "url": "https://jobs.ashbyhq.com/Abridge/480c4c99-2ca8-4dc7-ba6b-29a9ee28ed95",
-   "source": "doomers",
-   "score": 90,
-   "confidence": 0.9,
-   "why": "Strong fit given the candidate's desire for backend engineering roles in health-tech contexts."
-  },
-  {
    "id": "fab16b278984be1e1f1a1409c888f8044a19b58f",
    "title": "Platform Engineer",
    "company": "Chronograph (chronograph.pe)",
-   "sector": "Other",
+   "sector": "Fintech",
    "company_description": "We are looking for a candidate with a generalist background in software development, including 5+ years of experience on Platform Engineering, DevSecOps, Site Reliability Engineering (SRE), or MLOps teams.",
    "location": "Remote",
    "salary": "$140 (from posting text)",
@@ -195,7 +139,21 @@
    "source": "hn",
    "score": 90,
    "confidence": 0.9,
-   "why": "Chronograph operates in the private capital markets, aligning perfectly with Michael's background in quantitative finance and banking-scale data systems. The platform engineering focus leverages his expertise in Kubernetes and CI/CD."
+   "why": "This position matches your seniority and technical background in platform engineering and container orchestration. The financial domain focus aligns perfectly with your existing industry experience."
+  },
+  {
+   "id": "6724fab12f5bc78db84cce3c594361ccf83c4219",
+   "title": "Data Engineer",
+   "company": "Abridge",
+   "sector": "Healthcare",
+   "company_description": "Generative AI for Clinical Conversations | Abridge\nSkip to main content\nPlatform\nAI\nResources\nAbout\nPlatform\nOne platform, three tailored experiences\nClinicians\nAI-powered clinical documentation, built for accuracy\nRevenue Cycle\nBillable documentation, automated from the start\nNursing\nNatural conver",
+   "location": "Remote (US)",
+   "salary": "$185,000-$217,000",
+   "url": "https://jobs.ashbyhq.com/Abridge/480c4c99-2ca8-4dc7-ba6b-29a9ee28ed95",
+   "source": "doomers",
+   "score": 90,
+   "confidence": 0.9,
+   "why": "Strong fit given the candidate's desire for backend engineering roles in health-tech contexts."
   },
   {
    "id": "f49811e042516ba833318cca036208ceba3bbc68",
@@ -268,18 +226,46 @@
    "why": "High-level architecture role matches the candidate's experience in migrations and process automation."
   },
   {
-   "id": "9de959f580bf14bb0c243be6ae5c705b72b337bf",
-   "title": "See posting",
-   "company": "PostSilo is a privacy-first company building an AI automation platform for profe",
-   "sector": "Other",
-   "company_description": "PostSilo is a privacy-first company building an AI automation platform for professional services firms that handle sensitive, high-volume client work.",
-   "location": "Remote",
-   "salary": "$175k (from posting text)",
-   "url": "https://news.ycombinator.com/item?id=48782067",
-   "source": "hn",
-   "score": 82,
+   "id": "d1979d3c68015f530cd462eea44f30514bd8560e",
+   "title": "Staff Data Scientist - Product Analytics",
+   "company": "Ironclad",
+   "sector": "Enterprise SaaS/DevTools",
+   "company_description": null,
+   "location": "Remote (US)",
+   "salary": "$180,000-$200,000",
+   "url": "https://jobs.ashbyhq.com/ironcladhq/787067e0-87b3-4bfa-9e4d-d0ace4ccee1f",
+   "source": "doomers",
+   "score": 85,
+   "confidence": 0.85,
+   "why": "Excellent alignment with your background in high-level data strategy and financial modeling within a software-driven environment. Compensation meets your requirements and the senior/staff level matches your progression."
+  },
+  {
+   "id": "178834242b915a659fcb329125c626fe1a709e2a",
+   "title": "Principal Machine Learning Engineer, Distributed vLLM Inference",
+   "company": "Red Hat, LLC",
+   "sector": "AI/ML Infra",
+   "company_description": null,
+   "location": "Remote (US)",
+   "salary": "$189,600-$312,730",
+   "url": "https://redhat.wd5.myworkdayjobs.com/jobs/job/Boston/Principal-Machine-Learning-Engineer--Distributed-vLLM-Inference_R-050962-1",
+   "source": "doomers",
+   "score": 80,
    "confidence": 0.8,
-   "why": "As a founding engineer role, it leverages Michael's ability to handle high-volume sensitive data and build robust retrieval systems. Fits his interest in AI-driven automation for professional services."
+   "why": "Strong alignment with your C++ and high-performance system building background. The role offers significant technical growth in AI infrastructure at a highly relevant company."
+  },
+  {
+   "id": "b0e6dd5c85a7a90e8dc3f1eb7489c1cc91d3ae81",
+   "title": "Data Science Engineer, Contracts",
+   "company": "Turquoise",
+   "sector": "Fintech",
+   "company_description": null,
+   "location": "Remote (US)",
+   "salary": "$145,000-$160,000",
+   "url": "https://jobs.ashbyhq.com/turquoise-health/4d536c53-ccf8-4ba2-8ba8-2130da6b1410",
+   "source": "doomers",
+   "score": 75,
+   "confidence": 0.85,
+   "why": "The technical requirements align well with your experience in automation and engineering. It meets your salary floor and provides a clear transition into data-centric software engineering."
   },
   {
    "id": "c39f105270dd0694e375390c59fd309fea35f0cd",
@@ -294,41 +280,53 @@
    "score": 72,
    "confidence": 0.8,
    "why": "Good technical overlap, but the compensation is at the very floor of the candidate's expectations."
+  },
+  {
+   "id": "7beb8b4b8b3a2e3b2586c522193c15c9ad344fdb",
+   "title": "Senior Consumer Analytics Engineer I",
+   "company": "Upside",
+   "sector": "Consumer/E-commerce",
+   "company_description": "GetUpside: Free app for cash back on gas, groceries & restaurants | GetUpside\nFor app users\nEarn cash back\nHelp\nFor businesses\nMerchants: List your business\nPartners: Power your tech\nOur technology\nMerchant dashboard login\nAbout us\nAbout us\nTeam\nImpact\nCareers\nNews\nNewsroom\nBlog\nTestimonials\nGet the",
+   "location": "Remote (US)",
+   "salary": "$130,000-$180,000",
+   "url": "https://jobs.ashbyhq.com/upside/57db1cbc-087d-4cdc-bdf4-bd23af12e861",
+   "source": "doomers",
+   "score": 70,
+   "confidence": 0.8,
+   "why": "The job scope matches your current role and title, meeting your minimum salary requirements. It is a solid, direct match for your existing core competencies."
+  },
+  {
+   "id": "3d41af2658adf29eda7f97012e113522d40ffd01",
+   "title": "Data Analytics IT Architect",
+   "company": "Medline Industries, LP",
+   "sector": "Enterprise SaaS/DevTools",
+   "company_description": null,
+   "location": "Remote (US)",
+   "salary": "$134,000-$201,000",
+   "url": "https://medline.wd5.myworkdayjobs.com/medline/job/Northbrook-Illinois/Data-Analytics-IT-Architect_R2607086",
+   "source": "doomers",
+   "score": 65,
+   "confidence": 0.75,
+   "why": "Strong fit for your architectural experience, though the role is more IT-infrastructure focused. Meets your salary expectations and career seniority level."
+  },
+  {
+   "id": "63702ea7239d5398f0b4c5a57b0315d355ceca21",
+   "title": "Data Operations Engineer",
+   "company": "veritone",
+   "sector": "AI/ML Infra",
+   "company_description": null,
+   "location": "Remote (US)",
+   "salary": "$120,000-$130,000",
+   "url": "https://veritone.wd1.myworkdayjobs.com/veritone_career_site/job/United-States-of-America---Remote/Data-Operations-Engineer_R0155",
+   "source": "doomers",
+   "score": 20,
+   "confidence": 0.9,
+   "why": "Compensation is right at your minimum threshold and does not offer significant career progression for your level of expertise."
   }
  ],
  "edges": [
   {
    "skill": "python",
-   "job": "7f700cf6ebb37eb77755b0b238fde1d4224070ae",
-   "weight": 1.0,
-   "missing": false
-  },
-  {
-   "skill": "docker",
-   "job": "7f700cf6ebb37eb77755b0b238fde1d4224070ae",
-   "weight": 0.88,
-   "missing": false
-  },
-  {
-   "skill": "kubernetes openshift",
-   "job": "7f700cf6ebb37eb77755b0b238fde1d4224070ae",
-   "weight": 0.76,
-   "missing": false
-  },
-  {
-   "skill": "rest apis",
-   "job": "7f700cf6ebb37eb77755b0b238fde1d4224070ae",
-   "weight": 0.64,
-   "missing": false
-  },
-  {
-   "skill": "ci cd",
-   "job": "7f700cf6ebb37eb77755b0b238fde1d4224070ae",
-   "weight": 0.52,
-   "missing": false
-  },
-  {
-   "skill": "python",
    "job": "46dbd8296712bc73c8fb2a72751ee6053e64a077",
    "weight": 1.0,
    "missing": false
@@ -359,30 +357,6 @@
   },
   {
    "skill": "python",
-   "job": "468c3e72493c5f9e946f1342000e153e757fe229",
-   "weight": 1.0,
-   "missing": false
-  },
-  {
-   "skill": "sql",
-   "job": "468c3e72493c5f9e946f1342000e153e757fe229",
-   "weight": 0.88,
-   "missing": false
-  },
-  {
-   "skill": "docker",
-   "job": "468c3e72493c5f9e946f1342000e153e757fe229",
-   "weight": 0.76,
-   "missing": false
-  },
-  {
-   "skill": "kubernetes openshift",
-   "job": "468c3e72493c5f9e946f1342000e153e757fe229",
-   "weight": 0.64,
-   "missing": false
-  },
-  {
-   "skill": "python",
    "job": "8a2495d4a92b3b7b6cd6f620ced24f2dca248cef",
    "weight": 1.0,
    "missing": false
@@ -406,15 +380,21 @@
    "missing": false
   },
   {
-   "skill": "python",
-   "job": "8e9823653933384571717021274cede0bb21f474",
+   "skill": "docker",
+   "job": "fab16b278984be1e1f1a1409c888f8044a19b58f",
    "weight": 1.0,
    "missing": false
   },
   {
-   "skill": "c",
-   "job": "8e9823653933384571717021274cede0bb21f474",
+   "skill": "kubernetes openshift",
+   "job": "fab16b278984be1e1f1a1409c888f8044a19b58f",
    "weight": 0.88,
+   "missing": false
+  },
+  {
+   "skill": "sql",
+   "job": "fab16b278984be1e1f1a1409c888f8044a19b58f",
+   "weight": 0.76,
    "missing": false
   },
   {
@@ -433,24 +413,6 @@
    "skill": "docker",
    "job": "6724fab12f5bc78db84cce3c594361ccf83c4219",
    "weight": 0.76,
-   "missing": false
-  },
-  {
-   "skill": "kubernetes openshift",
-   "job": "fab16b278984be1e1f1a1409c888f8044a19b58f",
-   "weight": 1.0,
-   "missing": false
-  },
-  {
-   "skill": "ci cd",
-   "job": "fab16b278984be1e1f1a1409c888f8044a19b58f",
-   "weight": 0.88,
-   "missing": false
-  },
-  {
-   "skill": "sql",
-   "job": "fab16b278984be1e1f1a1409c888f8044a19b58f",
-   "weight": 0.64,
    "missing": false
   },
   {
@@ -545,14 +507,62 @@
   },
   {
    "skill": "python",
-   "job": "9de959f580bf14bb0c243be6ae5c705b72b337bf",
-   "weight": 0.88,
+   "job": "d1979d3c68015f530cd462eea44f30514bd8560e",
+   "weight": 1.0,
    "missing": false
   },
   {
    "skill": "sql",
-   "job": "9de959f580bf14bb0c243be6ae5c705b72b337bf",
+   "job": "d1979d3c68015f530cd462eea44f30514bd8560e",
+   "weight": 0.88,
+   "missing": false
+  },
+  {
+   "skill": "data architecture",
+   "job": "d1979d3c68015f530cd462eea44f30514bd8560e",
+   "weight": 0.76,
+   "missing": false
+  },
+  {
+   "skill": "python",
+   "job": "178834242b915a659fcb329125c626fe1a709e2a",
+   "weight": 1.0,
+   "missing": false
+  },
+  {
+   "skill": "c",
+   "job": "178834242b915a659fcb329125c626fe1a709e2a",
+   "weight": 0.88,
+   "missing": false
+  },
+  {
+   "skill": "docker",
+   "job": "178834242b915a659fcb329125c626fe1a709e2a",
+   "weight": 0.76,
+   "missing": false
+  },
+  {
+   "skill": "kubernetes openshift",
+   "job": "178834242b915a659fcb329125c626fe1a709e2a",
    "weight": 0.64,
+   "missing": false
+  },
+  {
+   "skill": "python",
+   "job": "b0e6dd5c85a7a90e8dc3f1eb7489c1cc91d3ae81",
+   "weight": 1.0,
+   "missing": false
+  },
+  {
+   "skill": "sql",
+   "job": "b0e6dd5c85a7a90e8dc3f1eb7489c1cc91d3ae81",
+   "weight": 0.88,
+   "missing": false
+  },
+  {
+   "skill": "rest apis",
+   "job": "b0e6dd5c85a7a90e8dc3f1eb7489c1cc91d3ae81",
+   "weight": 0.76,
    "missing": false
   },
   {
@@ -570,6 +580,60 @@
   {
    "skill": "hadoop",
    "job": "c39f105270dd0694e375390c59fd309fea35f0cd",
+   "weight": 0.76,
+   "missing": false
+  },
+  {
+   "skill": "python",
+   "job": "7beb8b4b8b3a2e3b2586c522193c15c9ad344fdb",
+   "weight": 1.0,
+   "missing": false
+  },
+  {
+   "skill": "sql",
+   "job": "7beb8b4b8b3a2e3b2586c522193c15c9ad344fdb",
+   "weight": 0.88,
+   "missing": false
+  },
+  {
+   "skill": "data architecture",
+   "job": "7beb8b4b8b3a2e3b2586c522193c15c9ad344fdb",
+   "weight": 0.76,
+   "missing": false
+  },
+  {
+   "skill": "sql",
+   "job": "3d41af2658adf29eda7f97012e113522d40ffd01",
+   "weight": 1.0,
+   "missing": false
+  },
+  {
+   "skill": "data architecture",
+   "job": "3d41af2658adf29eda7f97012e113522d40ffd01",
+   "weight": 0.88,
+   "missing": false
+  },
+  {
+   "skill": "python",
+   "job": "3d41af2658adf29eda7f97012e113522d40ffd01",
+   "weight": 0.76,
+   "missing": false
+  },
+  {
+   "skill": "python",
+   "job": "63702ea7239d5398f0b4c5a57b0315d355ceca21",
+   "weight": 1.0,
+   "missing": false
+  },
+  {
+   "skill": "sql",
+   "job": "63702ea7239d5398f0b4c5a57b0315d355ceca21",
+   "weight": 0.88,
+   "missing": false
+  },
+  {
+   "skill": "rest apis",
+   "job": "63702ea7239d5398f0b4c5a57b0315d355ceca21",
    "weight": 0.76,
    "missing": false
   }
