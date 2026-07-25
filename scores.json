@@ -72,46 +72,30 @@
   "scored_at": "2026-07-20T04:43:08.500282+00:00"
  },
  "fab16b278984be1e1f1a1409c888f8044a19b58f": {
-  "profile_version": "694a2e312f01",
-  "match_score": 90,
-  "confidence": 0.9,
-  "why": "This position matches your seniority and technical background in platform engineering and container orchestration. The financial domain focus aligns perfectly with your existing industry experience.",
-  "matched_skills": [
-   "Docker",
-   "Kubernetes/OpenShift",
-   "SQL"
-  ],
+  "profile_version": "4a4a9551fc34",
+  "match_score": 67,
+  "confidence": 0.3,
+  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
+  "matched_skills": [],
   "missing_skills": [],
-  "resume_suggestions": [
-   "Front-load your experience with Kubernetes/OpenShift and cloud migration projects.",
-   "Explicitly mention your work on reliability and automation in financial data pipelines."
-  ],
-  "sector": "Fintech",
-  "prefilter": 0.4912,
-  "heuristic": false,
-  "scored_at": "2026-07-23T16:58:51.935571+00:00"
+  "resume_suggestions": [],
+  "sector": "Other",
+  "prefilter": 0.485,
+  "heuristic": true,
+  "scored_at": "2026-07-25T15:44:49.855553+00:00"
  },
  "7f700cf6ebb37eb77755b0b238fde1d4224070ae": {
-  "profile_version": "694a2e312f01",
-  "match_score": 95,
-  "confidence": 0.95,
-  "why": "The tech stack and focus on large-scale infrastructure and automation perfectly mirror the candidate's core competencies.",
-  "matched_skills": [
-   "Python",
-   "Docker",
-   "Kubernetes/OpenShift",
-   "REST APIs",
-   "CI/CD"
-  ],
+  "profile_version": "4a4a9551fc34",
+  "match_score": 68,
+  "confidence": 0.3,
+  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
+  "matched_skills": [],
   "missing_skills": [],
-  "resume_suggestions": [
-   "Explicitly mention building production-critical infrastructure.",
-   "Highlight experience with high-scale data systems."
-  ],
-  "sector": "AI/ML Infra",
-  "prefilter": 0.5387,
-  "heuristic": false,
-  "scored_at": "2026-07-20T17:52:14.684804+00:00"
+  "resume_suggestions": [],
+  "sector": "Other",
+  "prefilter": 0.4905,
+  "heuristic": true,
+  "scored_at": "2026-07-25T15:44:49.855553+00:00"
  },
  "289ea176545c57bfcb2c0021e3e190761ef9c06b": {
   "profile_version": "4a4a9551fc34",
@@ -153,19 +137,6 @@
   "heuristic": false,
   "scored_at": "2026-07-25T15:35:28.840717+00:00"
  },
- "da2bcc26af044451e674517db903ffc3353358b5": {
-  "profile_version": "4a4a9551fc34",
-  "match_score": 74,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
-  "missing_skills": [],
-  "resume_suggestions": [],
-  "sector": "Other",
-  "prefilter": 0.5308,
-  "heuristic": true,
-  "scored_at": "2026-07-25T15:33:43.680150+00:00"
- },
  "468c3e72493c5f9e946f1342000e153e757fe229": {
   "profile_version": "4a4a9551fc34",
   "match_score": 95,
@@ -186,79 +157,18 @@
   "heuristic": false,
   "scored_at": "2026-07-25T15:35:28.840717+00:00"
  },
- "e59e806b8e2788dc42938f3a0ee78360515903ed": {
-  "profile_version": "3c8cd16212ea",
-  "match_score": 90,
-  "confidence": 0.95,
-  "why": "Ideal seniority and domain alignment with strong compensation.",
-  "matched_skills": [
-   "Python",
-   "Docker/Kubernetes",
-   "System Architecture"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Emphasize ML infra experience and production CI/CD."
-  ],
-  "prefilter": 0.7131,
-  "heuristic": false,
-  "scored_at": "2026-07-20T05:48:46.232027+00:00"
- },
- "687a181e23dc1ef52935912eea1d588aaddf2852": {
-  "profile_version": "4a4a9551fc34",
-  "match_score": 75,
-  "confidence": 0.7,
-  "why": "High compensation and seniority level match, but requires strong alignment with Netflix's specific data stack and engineering culture.",
-  "matched_skills": [
-   "Python",
-   "SQL",
-   "Data Architecture"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Standardize your resume to highlight data platform-level scalability.",
-   "Focus on your ability to work independently in a highly technical environment."
-  ],
-  "sector": "Media/Gaming",
-  "prefilter": 0.5257,
-  "heuristic": false,
-  "scored_at": "2026-07-25T15:35:28.840717+00:00"
- },
- "cf958de2e2832ec20bf089c1bbb43ed04d6ac1de": {
-  "profile_version": "4a4a9551fc34",
-  "match_score": 75,
-  "confidence": 0.7,
-  "why": "Very similar to other Netflix roles, though the salary range includes lower tiers that may be less competitive.",
-  "matched_skills": [
-   "SQL",
-   "Power BI",
-   "Data Architecture"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Emphasize your role as a 'builder' rather than a pure analyst."
-  ],
-  "sector": "Media/Gaming",
-  "prefilter": 0.5263,
-  "heuristic": false,
-  "scored_at": "2026-07-25T15:35:28.840717+00:00"
- },
  "939f8c22f9cf14689a18ac120110f32031c0cdd4": {
-  "profile_version": "bbec4246b79f",
-  "match_score": 40,
-  "confidence": 0.9,
-  "why": "Junior role with below-target salary range.",
-  "matched_skills": [
-   "Python",
-   "SQL"
-  ],
+  "profile_version": "4a4a9551fc34",
+  "match_score": 68,
+  "confidence": 0.3,
+  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
+  "matched_skills": [],
   "missing_skills": [],
-  "resume_suggestions": [
-   "Apply only if you are looking for a shift in pace."
-  ],
-  "prefilter": 0.714,
-  "heuristic": false,
-  "scored_at": "2026-07-20T14:33:02.272881+00:00"
+  "resume_suggestions": [],
+  "sector": "Other",
+  "prefilter": 0.4866,
+  "heuristic": true,
+  "scored_at": "2026-07-25T15:44:49.855553+00:00"
  },
  "c87fce7c1ae5042056aa861d481d682f7a6c1a3f": {
   "profile_version": "3c8cd16212ea",
@@ -319,30 +229,6 @@
   "missing_skills": [],
   "resume_suggestions": [],
   "prefilter": 0.7115,
-  "heuristic": true,
-  "scored_at": "2026-07-20T06:17:11.111879+00:00"
- },
- "27e92e1e5ed5fce815330182f1f55ad40e74334f": {
-  "profile_version": "0a5fa78b8917",
-  "match_score": 99,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
-  "missing_skills": [],
-  "resume_suggestions": [],
-  "prefilter": 0.7104,
-  "heuristic": true,
-  "scored_at": "2026-07-20T16:49:49.181216+00:00"
- },
- "38fe3735f539f658313c9c3afcd76aaa79092074": {
-  "profile_version": "8444b242a37a",
-  "match_score": 99,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
-  "missing_skills": [],
-  "resume_suggestions": [],
-  "prefilter": 0.7094,
   "heuristic": true,
   "scored_at": "2026-07-20T06:17:11.111879+00:00"
  },
@@ -450,7 +336,7 @@
   "sector": "Other",
   "prefilter": 0.4987,
   "heuristic": true,
-  "scored_at": "2026-07-25T15:33:43.680150+00:00"
+  "scored_at": "2026-07-25T15:44:49.855553+00:00"
  },
  "c6ad1061e25fad5dcf5a9deb25325538047fcf85": {
   "profile_version": "0a5fa78b8917",
@@ -475,7 +361,7 @@
   "sector": "Other",
   "prefilter": 0.5051,
   "heuristic": true,
-  "scored_at": "2026-07-25T15:33:43.680150+00:00"
+  "scored_at": "2026-07-25T15:44:49.855553+00:00"
  },
  "46dbd8296712bc73c8fb2a72751ee6053e64a077": {
   "profile_version": "4a4a9551fc34",
@@ -488,7 +374,7 @@
   "sector": "Other",
   "prefilter": 0.5053,
   "heuristic": true,
-  "scored_at": "2026-07-25T15:33:43.680150+00:00"
+  "scored_at": "2026-07-25T15:44:49.855553+00:00"
  },
  "4a0efac9e3d4864d2cb8af1df482ac549bc73e88": {
   "profile_version": "4a4a9551fc34",
@@ -501,7 +387,7 @@
   "sector": "Other",
   "prefilter": 0.4978,
   "heuristic": true,
-  "scored_at": "2026-07-25T15:33:43.680150+00:00"
+  "scored_at": "2026-07-25T15:44:49.855553+00:00"
  },
  "7be2ded568b31ac4a1fa8a88e7ebcf20369898c0": {
   "profile_version": "bbec4246b79f",
@@ -531,7 +417,7 @@
   "sector": "Other",
   "prefilter": 0.5018,
   "heuristic": true,
-  "scored_at": "2026-07-25T15:33:43.680150+00:00"
+  "scored_at": "2026-07-25T15:44:49.855553+00:00"
  },
  "8e9823653933384571717021274cede0bb21f474": {
   "profile_version": "bbec4246b79f",
@@ -562,44 +448,33 @@
   "sector": "Other",
   "prefilter": 0.4987,
   "heuristic": true,
-  "scored_at": "2026-07-25T15:33:43.680150+00:00"
+  "scored_at": "2026-07-25T15:44:49.855553+00:00"
  },
  "322b668378645bb466a034a2d925bb1735071ddb": {
-  "profile_version": "0a5fa78b8917",
-  "match_score": 100,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
-  "missing_skills": [],
-  "resume_suggestions": [],
-  "prefilter": 0.7202,
-  "heuristic": true,
-  "scored_at": "2026-07-20T16:49:49.181216+00:00"
- },
- "9f67b9d675889375d4a2ce5a2d3b1aab68ea0fd4": {
-  "profile_version": "0a5fa78b8917",
-  "match_score": 100,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
-  "missing_skills": [],
-  "resume_suggestions": [],
-  "prefilter": 0.7195,
-  "heuristic": true,
-  "scored_at": "2026-07-20T16:49:49.181216+00:00"
- },
- "ed0e0d66f5bbb6810b068243f4d0beb502d3651d": {
-  "profile_version": "694a2e312f01",
-  "match_score": 70,
+  "profile_version": "4a4a9551fc34",
+  "match_score": 67,
   "confidence": 0.3,
   "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
   "matched_skills": [],
   "missing_skills": [],
   "resume_suggestions": [],
   "sector": "Other",
-  "prefilter": 0.5017,
+  "prefilter": 0.4819,
   "heuristic": true,
-  "scored_at": "2026-07-24T17:10:46.658451+00:00"
+  "scored_at": "2026-07-25T15:44:49.855553+00:00"
+ },
+ "ed0e0d66f5bbb6810b068243f4d0beb502d3651d": {
+  "profile_version": "4a4a9551fc34",
+  "match_score": 68,
+  "confidence": 0.3,
+  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
+  "matched_skills": [],
+  "missing_skills": [],
+  "resume_suggestions": [],
+  "sector": "Other",
+  "prefilter": 0.4913,
+  "heuristic": true,
+  "scored_at": "2026-07-25T15:44:49.855553+00:00"
  },
  "106ac1f6c56dc9890d8b5691bdd65cf5f96c3f67": {
   "profile_version": "0a5fa78b8917",
@@ -696,7 +571,7 @@
   "sector": "Other",
   "prefilter": 0.5076,
   "heuristic": true,
-  "scored_at": "2026-07-25T15:33:43.680150+00:00"
+  "scored_at": "2026-07-25T15:44:49.855553+00:00"
  },
  "9238ec4daacda3f1e35d785635dee1ff7e52bb0d": {
   "profile_version": "0a5fa78b8917",
@@ -723,49 +598,18 @@
   "heuristic": true,
   "scored_at": "2026-07-24T17:10:46.658451+00:00"
  },
- "8d2e5787e169b385e1bf7be27363a4b5369feabf": {
-  "profile_version": "0a5fa78b8917",
-  "match_score": 98,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
-  "missing_skills": [],
-  "resume_suggestions": [],
-  "prefilter": 0.7051,
-  "heuristic": true,
-  "scored_at": "2026-07-20T16:49:49.181216+00:00"
- },
- "84e590c35e23bd0e3d1547d58060392f2099f582": {
-  "profile_version": "0a5fa78b8917",
-  "match_score": 98,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
-  "missing_skills": [],
-  "resume_suggestions": [],
-  "prefilter": 0.7046,
-  "heuristic": true,
-  "scored_at": "2026-07-20T16:49:49.181216+00:00"
- },
  "115a826daddfdcb8858131c7638e9a539c1489ed": {
-  "profile_version": "694a2e312f01",
-  "match_score": 88,
-  "confidence": 0.85,
-  "why": "Strong fit for candidate's background in audio-processing software and API engineering.",
-  "matched_skills": [
-   "Python",
-   "SQL",
-   "REST APIs"
-  ],
+  "profile_version": "4a4a9551fc34",
+  "match_score": 67,
+  "confidence": 0.3,
+  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
+  "matched_skills": [],
   "missing_skills": [],
-  "resume_suggestions": [
-   "Highlight audio-processing software development.",
-   "Emphasize billing/finance-related data engineering."
-  ],
-  "sector": "AI/ML Infra",
-  "prefilter": 0.5227,
-  "heuristic": false,
-  "scored_at": "2026-07-20T17:52:14.684804+00:00"
+  "resume_suggestions": [],
+  "sector": "Other",
+  "prefilter": 0.4827,
+  "heuristic": true,
+  "scored_at": "2026-07-25T15:44:49.855553+00:00"
  },
  "6724fab12f5bc78db84cce3c594361ccf83c4219": {
   "profile_version": "4a4a9551fc34",
@@ -838,7 +682,7 @@
   "sector": "Other",
   "prefilter": 0.4946,
   "heuristic": true,
-  "scored_at": "2026-07-25T15:33:43.680150+00:00"
+  "scored_at": "2026-07-25T15:44:49.855553+00:00"
  },
  "94289a10b36957991602485fced71bf97b01979b": {
   "profile_version": "4a4a9551fc34",
@@ -851,7 +695,7 @@
   "sector": "Other",
   "prefilter": 0.5115,
   "heuristic": true,
-  "scored_at": "2026-07-25T15:33:43.680150+00:00"
+  "scored_at": "2026-07-25T15:44:49.855553+00:00"
  },
  "6b2f4055c34e327837d21414b6fdabb4dcf35040": {
   "profile_version": "694a2e312f01",
@@ -874,103 +718,6 @@
   "heuristic": false,
   "scored_at": "2026-07-21T16:51:16.729816+00:00"
  },
- "d049f10716715355dcd806d3ec10e84b724b96c7": {
-  "profile_version": "4a4a9551fc34",
-  "match_score": 72,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
-  "missing_skills": [],
-  "resume_suggestions": [],
-  "sector": "Other",
-  "prefilter": 0.5208,
-  "heuristic": true,
-  "scored_at": "2026-07-25T15:33:43.680150+00:00"
- },
- "5f32fdc4159802db8aa6e287a2d072a3c7bbbb14": {
-  "profile_version": "4a4a9551fc34",
-  "match_score": 72,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
-  "missing_skills": [],
-  "resume_suggestions": [],
-  "sector": "Other",
-  "prefilter": 0.5212,
-  "heuristic": true,
-  "scored_at": "2026-07-25T15:33:43.680150+00:00"
- },
- "6b7124d129c33239906bd2dbafc6e709ea6a08cf": {
-  "profile_version": "4a4a9551fc34",
-  "match_score": 70,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
-  "missing_skills": [],
-  "resume_suggestions": [],
-  "sector": "Other",
-  "prefilter": 0.5011,
-  "heuristic": true,
-  "scored_at": "2026-07-25T15:33:43.680150+00:00"
- },
- "4b556d9e914ef3e4980b8c69ac53b7ecf0e21a2c": {
-  "profile_version": "4a4a9551fc34",
-  "match_score": 71,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
-  "missing_skills": [],
-  "resume_suggestions": [],
-  "sector": "Other",
-  "prefilter": 0.5127,
-  "heuristic": true,
-  "scored_at": "2026-07-25T15:33:43.680150+00:00"
- },
- "7d279da5bd81e953b808424d7ef5518c214035df": {
-  "profile_version": "4a4a9551fc34",
-  "match_score": 70,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
-  "missing_skills": [],
-  "resume_suggestions": [],
-  "sector": "Other",
-  "prefilter": 0.5008,
-  "heuristic": true,
-  "scored_at": "2026-07-25T15:33:43.680150+00:00"
- },
- "2a405cb8c97911707584f0fd18aac54ce7f360f1": {
-  "profile_version": "4a4a9551fc34",
-  "match_score": 72,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
-  "missing_skills": [],
-  "resume_suggestions": [],
-  "sector": "Other",
-  "prefilter": 0.5162,
-  "heuristic": true,
-  "scored_at": "2026-07-25T15:33:43.680150+00:00"
- },
- "bcf9a39b0a549eb030b719182c9c456a0a47e525": {
-  "profile_version": "4a4a9551fc34",
-  "match_score": 75,
-  "confidence": 0.7,
-  "why": "Strong role for an Analytics Engineer, well within your experience level and technical domain.",
-  "matched_skills": [
-   "SQL",
-   "Data Architecture",
-   "Python"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Highlight your experience with metric standard definition and data governance."
-  ],
-  "sector": "Media/Gaming",
-  "prefilter": 0.4985,
-  "heuristic": false,
-  "scored_at": "2026-07-25T15:35:28.840717+00:00"
- },
  "d17ec55a7c5638b808b219b94cb8ae773eef9361": {
   "profile_version": "4a4a9551fc34",
   "match_score": 69,
@@ -982,33 +729,20 @@
   "sector": "Other",
   "prefilter": 0.4991,
   "heuristic": true,
-  "scored_at": "2026-07-25T15:33:43.680150+00:00"
- },
- "802c3e996a04985a47d77acf535c7cc28a36e2a2": {
-  "profile_version": "4a4a9551fc34",
-  "match_score": 71,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
-  "missing_skills": [],
-  "resume_suggestions": [],
-  "sector": "Other",
-  "prefilter": 0.508,
-  "heuristic": true,
-  "scored_at": "2026-07-25T15:33:43.680150+00:00"
+  "scored_at": "2026-07-25T15:44:49.855553+00:00"
  },
  "c97db307a8c8560d8821d526e2071c21c78c2829": {
-  "profile_version": "694a2e312f01",
-  "match_score": 68,
+  "profile_version": "4a4a9551fc34",
+  "match_score": 67,
   "confidence": 0.3,
   "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
   "matched_skills": [],
   "missing_skills": [],
   "resume_suggestions": [],
   "sector": "Other",
-  "prefilter": 0.4872,
+  "prefilter": 0.4828,
   "heuristic": true,
-  "scored_at": "2026-07-24T17:10:46.658451+00:00"
+  "scored_at": "2026-07-25T15:44:49.855553+00:00"
  },
  "63702ea7239d5398f0b4c5a57b0315d355ceca21": {
   "profile_version": "4a4a9551fc34",
@@ -1021,10 +755,10 @@
   "sector": "Other",
   "prefilter": 0.5005,
   "heuristic": true,
-  "scored_at": "2026-07-25T15:33:43.680150+00:00"
+  "scored_at": "2026-07-25T15:44:49.855553+00:00"
  },
- "7ae8077e4d7f14510e7ac316b95444ba7c00563d": {
-  "profile_version": "694a2e312f01",
+ "d1979d3c68015f530cd462eea44f30514bd8560e": {
+  "profile_version": "4a4a9551fc34",
   "match_score": 68,
   "confidence": 0.3,
   "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
@@ -1032,29 +766,9 @@
   "missing_skills": [],
   "resume_suggestions": [],
   "sector": "Other",
-  "prefilter": 0.4904,
-  "heuristic": true,
-  "scored_at": "2026-07-24T17:10:46.658451+00:00"
- },
- "d1979d3c68015f530cd462eea44f30514bd8560e": {
-  "profile_version": "694a2e312f01",
-  "match_score": 85,
-  "confidence": 0.85,
-  "why": "Excellent alignment with your background in high-level data strategy and financial modeling within a software-driven environment. Compensation meets your requirements and the senior/staff level matches your progression.",
-  "matched_skills": [
-   "Python",
-   "SQL",
-   "Data Architecture"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Highlight your experience with product-centric data analytics and impact on business KPIs.",
-   "Emphasize your ability to act as a technical bridge between engineering and product strategy."
-  ],
-  "sector": "Enterprise SaaS/DevTools",
   "prefilter": 0.4903,
-  "heuristic": false,
-  "scored_at": "2026-07-23T16:58:51.935571+00:00"
+  "heuristic": true,
+  "scored_at": "2026-07-25T15:44:49.855553+00:00"
  },
  "8a70b41447294658034dd9d78bd8ff6f4d518071": {
   "profile_version": "694a2e312f01",
@@ -1069,72 +783,31 @@
   "heuristic": true,
   "scored_at": "2026-07-24T17:10:46.658451+00:00"
  },
- "7e54883ed7f5f6639f04da73d265831eb2abd77a": {
-  "profile_version": "694a2e312f01",
-  "match_score": 68,
+ "178834242b915a659fcb329125c626fe1a709e2a": {
+  "profile_version": "4a4a9551fc34",
+  "match_score": 67,
   "confidence": 0.3,
   "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
   "matched_skills": [],
   "missing_skills": [],
   "resume_suggestions": [],
   "sector": "Other",
-  "prefilter": 0.4865,
+  "prefilter": 0.4807,
   "heuristic": true,
-  "scored_at": "2026-07-24T17:10:46.658451+00:00"
- },
- "178834242b915a659fcb329125c626fe1a709e2a": {
-  "profile_version": "694a2e312f01",
-  "match_score": 80,
-  "confidence": 0.8,
-  "why": "Strong alignment with your C++ and high-performance system building background. The role offers significant technical growth in AI infrastructure at a highly relevant company.",
-  "matched_skills": [
-   "Python",
-   "C++",
-   "Docker",
-   "Kubernetes/OpenShift"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Elaborate on any low-level performance tuning or concurrency work in your C++ projects.",
-   "Highlight experience with distributed systems or high-throughput data processing."
-  ],
-  "sector": "AI/ML Infra",
-  "prefilter": 0.4871,
-  "heuristic": false,
-  "scored_at": "2026-07-23T16:58:51.935571+00:00"
+  "scored_at": "2026-07-25T15:44:49.855553+00:00"
  },
  "7beb8b4b8b3a2e3b2586c522193c15c9ad344fdb": {
-  "profile_version": "694a2e312f01",
-  "match_score": 70,
-  "confidence": 0.8,
-  "why": "The job scope matches your current role and title, meeting your minimum salary requirements. It is a solid, direct match for your existing core competencies.",
-  "matched_skills": [
-   "Python",
-   "SQL",
-   "Data Architecture"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Emphasize your 'Analytics Engineer' title and the scale of data systems you have managed.",
-   "List specific cost-saving outcomes achieved through your process automation."
-  ],
-  "sector": "Consumer/E-commerce",
-  "prefilter": 0.487,
-  "heuristic": false,
-  "scored_at": "2026-07-23T16:58:51.935571+00:00"
- },
- "cb624767eda6d022dc8c378e5a00e77454317b45": {
   "profile_version": "4a4a9551fc34",
-  "match_score": 70,
+  "match_score": 67,
   "confidence": 0.3,
   "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
   "matched_skills": [],
   "missing_skills": [],
   "resume_suggestions": [],
   "sector": "Other",
-  "prefilter": 0.5066,
+  "prefilter": 0.4847,
   "heuristic": true,
-  "scored_at": "2026-07-25T15:33:43.680150+00:00"
+  "scored_at": "2026-07-25T15:44:49.855553+00:00"
  },
  "f35d0ecaa30fde558f8a98792a8e8482caaf66dc": {
   "profile_version": "4a4a9551fc34",
@@ -1147,7 +820,7 @@
   "sector": "Other",
   "prefilter": 0.5013,
   "heuristic": true,
-  "scored_at": "2026-07-25T15:33:43.680150+00:00"
+  "scored_at": "2026-07-25T15:44:49.855553+00:00"
  },
  "3ff45d4fff6b1af9dad1b05eb73a6b469265887d": {
   "profile_version": "4a4a9551fc34",
@@ -1160,20 +833,7 @@
   "sector": "Other",
   "prefilter": 0.4996,
   "heuristic": true,
-  "scored_at": "2026-07-25T15:33:43.680150+00:00"
- },
- "d7fb28d9f25c55c703e8fa65f03344636a2de6fd": {
-  "profile_version": "4a4a9551fc34",
-  "match_score": 69,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
-  "missing_skills": [],
-  "resume_suggestions": [],
-  "sector": "Other",
-  "prefilter": 0.4948,
-  "heuristic": true,
-  "scored_at": "2026-07-25T15:33:43.680150+00:00"
+  "scored_at": "2026-07-25T15:44:49.855553+00:00"
  },
  "b8553b9d0605d4f30b9fb039d74cdd29a4c2c08b": {
   "profile_version": "4a4a9551fc34",
@@ -1186,7 +846,7 @@
   "sector": "Other",
   "prefilter": 0.4939,
   "heuristic": true,
-  "scored_at": "2026-07-25T15:33:43.680150+00:00"
+  "scored_at": "2026-07-25T15:44:49.855553+00:00"
  },
  "4f1bebcb7db74e857409312c26267ad925290dfc": {
   "profile_version": "4a4a9551fc34",
@@ -1227,5 +887,343 @@
   "prefilter": 0.4893,
   "heuristic": false,
   "scored_at": "2026-07-25T15:35:28.840717+00:00"
+ },
+ "e907a23b24bd73b4ae90eb8c6c91d67ac09a2a37": {
+  "profile_version": "4a4a9551fc34",
+  "match_score": 68,
+  "confidence": 0.3,
+  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
+  "matched_skills": [],
+  "missing_skills": [],
+  "resume_suggestions": [],
+  "sector": "Other",
+  "prefilter": 0.4887,
+  "heuristic": true,
+  "scored_at": "2026-07-25T15:44:49.855553+00:00"
+ },
+ "91fcb633ccb096390b15c0834b6ccd598d0b0d39": {
+  "profile_version": "4a4a9551fc34",
+  "match_score": 68,
+  "confidence": 0.3,
+  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
+  "matched_skills": [],
+  "missing_skills": [],
+  "resume_suggestions": [],
+  "sector": "Other",
+  "prefilter": 0.4883,
+  "heuristic": true,
+  "scored_at": "2026-07-25T15:44:49.855553+00:00"
+ },
+ "2cb6a2dcea145c26ceb169b3764f8888854bac20": {
+  "profile_version": "4a4a9551fc34",
+  "match_score": 68,
+  "confidence": 0.3,
+  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
+  "matched_skills": [],
+  "missing_skills": [],
+  "resume_suggestions": [],
+  "sector": "Other",
+  "prefilter": 0.4881,
+  "heuristic": true,
+  "scored_at": "2026-07-25T15:44:49.855553+00:00"
+ },
+ "d3635b64cd48f59088f193b89aa9b6ce747eb2cf": {
+  "profile_version": "4a4a9551fc34",
+  "match_score": 68,
+  "confidence": 0.3,
+  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
+  "matched_skills": [],
+  "missing_skills": [],
+  "resume_suggestions": [],
+  "sector": "Other",
+  "prefilter": 0.4881,
+  "heuristic": true,
+  "scored_at": "2026-07-25T15:44:49.855553+00:00"
+ },
+ "dfb247e47abbffb1061ca24fc56cd7a64f3ab41b": {
+  "profile_version": "4a4a9551fc34",
+  "match_score": 68,
+  "confidence": 0.3,
+  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
+  "matched_skills": [],
+  "missing_skills": [],
+  "resume_suggestions": [],
+  "sector": "Other",
+  "prefilter": 0.4872,
+  "heuristic": true,
+  "scored_at": "2026-07-25T15:44:49.855553+00:00"
+ },
+ "8f0a8a179444b84b5485d723232c5b33a49576a5": {
+  "profile_version": "4a4a9551fc34",
+  "match_score": 68,
+  "confidence": 0.3,
+  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
+  "matched_skills": [],
+  "missing_skills": [],
+  "resume_suggestions": [],
+  "sector": "Other",
+  "prefilter": 0.4861,
+  "heuristic": true,
+  "scored_at": "2026-07-25T15:44:49.855553+00:00"
+ },
+ "5388d068ce83c6b80b6dd10d122d5c5f3d70a237": {
+  "profile_version": "4a4a9551fc34",
+  "match_score": 67,
+  "confidence": 0.3,
+  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
+  "matched_skills": [],
+  "missing_skills": [],
+  "resume_suggestions": [],
+  "sector": "Other",
+  "prefilter": 0.4856,
+  "heuristic": true,
+  "scored_at": "2026-07-25T15:44:49.855553+00:00"
+ },
+ "a33af8f9933837a79a2f73d780cb9a6f39cc1e7d": {
+  "profile_version": "4a4a9551fc34",
+  "match_score": 67,
+  "confidence": 0.3,
+  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
+  "matched_skills": [],
+  "missing_skills": [],
+  "resume_suggestions": [],
+  "sector": "Other",
+  "prefilter": 0.4856,
+  "heuristic": true,
+  "scored_at": "2026-07-25T15:44:49.855553+00:00"
+ },
+ "44760ce372d15bf521a0ef88f22b0db98a069083": {
+  "profile_version": "4a4a9551fc34",
+  "match_score": 67,
+  "confidence": 0.3,
+  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
+  "matched_skills": [],
+  "missing_skills": [],
+  "resume_suggestions": [],
+  "sector": "Other",
+  "prefilter": 0.4855,
+  "heuristic": true,
+  "scored_at": "2026-07-25T15:44:49.855553+00:00"
+ },
+ "317d0a0f513c5adc045b4432f561622c70719669": {
+  "profile_version": "4a4a9551fc34",
+  "match_score": 67,
+  "confidence": 0.3,
+  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
+  "matched_skills": [],
+  "missing_skills": [],
+  "resume_suggestions": [],
+  "sector": "Other",
+  "prefilter": 0.4852,
+  "heuristic": true,
+  "scored_at": "2026-07-25T15:44:49.855553+00:00"
+ },
+ "8e0c6c6be915ec80c95ea066a11a0ca21037be87": {
+  "profile_version": "4a4a9551fc34",
+  "match_score": 67,
+  "confidence": 0.3,
+  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
+  "matched_skills": [],
+  "missing_skills": [],
+  "resume_suggestions": [],
+  "sector": "Other",
+  "prefilter": 0.4847,
+  "heuristic": true,
+  "scored_at": "2026-07-25T15:44:49.855553+00:00"
+ },
+ "5e5287f98924afc8425cc42af0ec414c6e22ce38": {
+  "profile_version": "4a4a9551fc34",
+  "match_score": 67,
+  "confidence": 0.3,
+  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
+  "matched_skills": [],
+  "missing_skills": [],
+  "resume_suggestions": [],
+  "sector": "Other",
+  "prefilter": 0.4843,
+  "heuristic": true,
+  "scored_at": "2026-07-25T15:44:49.855553+00:00"
+ },
+ "d19916565f4dc1e495be8856c533093d735f7925": {
+  "profile_version": "4a4a9551fc34",
+  "match_score": 67,
+  "confidence": 0.3,
+  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
+  "matched_skills": [],
+  "missing_skills": [],
+  "resume_suggestions": [],
+  "sector": "Other",
+  "prefilter": 0.4843,
+  "heuristic": true,
+  "scored_at": "2026-07-25T15:44:49.855553+00:00"
+ },
+ "0357f174c8f1f39dfc6d52d70f3a12387eb317ef": {
+  "profile_version": "4a4a9551fc34",
+  "match_score": 67,
+  "confidence": 0.3,
+  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
+  "matched_skills": [],
+  "missing_skills": [],
+  "resume_suggestions": [],
+  "sector": "Other",
+  "prefilter": 0.484,
+  "heuristic": true,
+  "scored_at": "2026-07-25T15:44:49.855553+00:00"
+ },
+ "cc2bd86e108a3b04d3ca8a24f9650ad88671d851": {
+  "profile_version": "4a4a9551fc34",
+  "match_score": 67,
+  "confidence": 0.3,
+  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
+  "matched_skills": [],
+  "missing_skills": [],
+  "resume_suggestions": [],
+  "sector": "Other",
+  "prefilter": 0.4832,
+  "heuristic": true,
+  "scored_at": "2026-07-25T15:44:49.855553+00:00"
+ },
+ "322ddf19f3d8d3fc3e71bc55b673737ec554caff": {
+  "profile_version": "4a4a9551fc34",
+  "match_score": 67,
+  "confidence": 0.3,
+  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
+  "matched_skills": [],
+  "missing_skills": [],
+  "resume_suggestions": [],
+  "sector": "Other",
+  "prefilter": 0.4828,
+  "heuristic": true,
+  "scored_at": "2026-07-25T15:44:49.855553+00:00"
+ },
+ "ce5070d788886e28f6f49b5b6e8951ead1bbd4cc": {
+  "profile_version": "4a4a9551fc34",
+  "match_score": 67,
+  "confidence": 0.3,
+  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
+  "matched_skills": [],
+  "missing_skills": [],
+  "resume_suggestions": [],
+  "sector": "Other",
+  "prefilter": 0.4823,
+  "heuristic": true,
+  "scored_at": "2026-07-25T15:44:49.855553+00:00"
+ },
+ "00c54ed5102f1ba49645db2f51f05c7f111e6613": {
+  "profile_version": "4a4a9551fc34",
+  "match_score": 67,
+  "confidence": 0.3,
+  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
+  "matched_skills": [],
+  "missing_skills": [],
+  "resume_suggestions": [],
+  "sector": "Other",
+  "prefilter": 0.4821,
+  "heuristic": true,
+  "scored_at": "2026-07-25T15:44:49.855553+00:00"
+ },
+ "9fdf18b51e6529ed8bcd8927f41f8be1a8d32f45": {
+  "profile_version": "4a4a9551fc34",
+  "match_score": 67,
+  "confidence": 0.3,
+  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
+  "matched_skills": [],
+  "missing_skills": [],
+  "resume_suggestions": [],
+  "sector": "Other",
+  "prefilter": 0.4818,
+  "heuristic": true,
+  "scored_at": "2026-07-25T15:44:49.855553+00:00"
+ },
+ "06b76027b4fb332d8c0695eb9e9289971cce861f": {
+  "profile_version": "4a4a9551fc34",
+  "match_score": 67,
+  "confidence": 0.3,
+  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
+  "matched_skills": [],
+  "missing_skills": [],
+  "resume_suggestions": [],
+  "sector": "Other",
+  "prefilter": 0.4814,
+  "heuristic": true,
+  "scored_at": "2026-07-25T15:44:49.855553+00:00"
+ },
+ "916d604ff4dc79f64406264312d735c3736ae4d6": {
+  "profile_version": "4a4a9551fc34",
+  "match_score": 67,
+  "confidence": 0.3,
+  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
+  "matched_skills": [],
+  "missing_skills": [],
+  "resume_suggestions": [],
+  "sector": "Other",
+  "prefilter": 0.4812,
+  "heuristic": true,
+  "scored_at": "2026-07-25T15:44:49.855553+00:00"
+ },
+ "8195a5ce012c39274e7f6613e9fa6659ee966667": {
+  "profile_version": "4a4a9551fc34",
+  "match_score": 67,
+  "confidence": 0.3,
+  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
+  "matched_skills": [],
+  "missing_skills": [],
+  "resume_suggestions": [],
+  "sector": "Other",
+  "prefilter": 0.4811,
+  "heuristic": true,
+  "scored_at": "2026-07-25T15:44:49.855553+00:00"
+ },
+ "5ba87358da745ea113ae2c24aee3a2886f710c07": {
+  "profile_version": "4a4a9551fc34",
+  "match_score": 67,
+  "confidence": 0.3,
+  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
+  "matched_skills": [],
+  "missing_skills": [],
+  "resume_suggestions": [],
+  "sector": "Other",
+  "prefilter": 0.4807,
+  "heuristic": true,
+  "scored_at": "2026-07-25T15:44:49.855553+00:00"
+ },
+ "fb4d6c78c6fccd58bf27eb8dbe94ceee54f8c2be": {
+  "profile_version": "4a4a9551fc34",
+  "match_score": 67,
+  "confidence": 0.3,
+  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
+  "matched_skills": [],
+  "missing_skills": [],
+  "resume_suggestions": [],
+  "sector": "Other",
+  "prefilter": 0.4806,
+  "heuristic": true,
+  "scored_at": "2026-07-25T15:44:49.855553+00:00"
+ },
+ "51cdcf5ac08ccf062c7f5536bbd2cb2b6b5e155f": {
+  "profile_version": "4a4a9551fc34",
+  "match_score": 67,
+  "confidence": 0.3,
+  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
+  "matched_skills": [],
+  "missing_skills": [],
+  "resume_suggestions": [],
+  "sector": "Other",
+  "prefilter": 0.4803,
+  "heuristic": true,
+  "scored_at": "2026-07-25T15:44:49.855553+00:00"
+ },
+ "ab1673fee3f00772ca18ef39d2ff3b7ff53307a9": {
+  "profile_version": "4a4a9551fc34",
+  "match_score": 67,
+  "confidence": 0.3,
+  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
+  "matched_skills": [],
+  "missing_skills": [],
+  "resume_suggestions": [],
+  "sector": "Other",
+  "prefilter": 0.4803,
+  "heuristic": true,
+  "scored_at": "2026-07-25T15:44:49.855553+00:00"
  }
 }
