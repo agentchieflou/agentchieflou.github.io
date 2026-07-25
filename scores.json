@@ -1,23 +1,24 @@
 {
  "000f10ba99d4f1b988b0d059e7cc28f0ebd712f9": {
-  "profile_version": "694a2e312f01",
-  "match_score": 95,
+  "profile_version": "4a4a9551fc34",
+  "match_score": 98,
   "confidence": 0.95,
-  "why": "The role directly aligns with your expertise in agentic workflows and API engineering to drive operational automation. It offers high compensation and the opportunity to lead greenfield automation projects.",
+  "why": "Perfect match for your background in building agentic workflows and automation, specifically in a greenfield role where you will build underlying APIs and platforms.",
   "matched_skills": [
    "Python",
-   "REST APIs",
+   "API Development",
+   "Automation Engineering",
    "Agentic Workflows"
   ],
   "missing_skills": [],
   "resume_suggestions": [
-   "Highlight specific examples of how your agentic workflows replaced manual operational tasks.",
-   "Emphasize your role in architecting APIs from scratch to support cross-team integration."
+   "Highlight your experience building custom internal tools and LLM agent architectures.",
+   "Emphasize past experience as a 'first engineer' on a project or product."
   ],
   "sector": "Consumer/E-commerce",
-  "prefilter": 0.4883,
+  "prefilter": 0.4905,
   "heuristic": false,
-  "scored_at": "2026-07-23T16:58:51.935571+00:00"
+  "scored_at": "2026-07-25T15:35:28.840717+00:00"
  },
  "9736237e9bfc2f4f49d29fb2da68506e47589700": {
   "profile_version": "2372cbdfcddc-h",
@@ -90,32 +91,6 @@
   "heuristic": false,
   "scored_at": "2026-07-23T16:58:51.935571+00:00"
  },
- "693d8377675736db072c24b0d8d806579444e34d": {
-  "profile_version": "4a4a9551fc34",
-  "match_score": 72,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
-  "missing_skills": [],
-  "resume_suggestions": [],
-  "sector": "Other",
-  "prefilter": 0.5187,
-  "heuristic": true,
-  "scored_at": "2026-07-25T15:33:43.680150+00:00"
- },
- "4145b0357a4ea52dc4381a30fecbd306b9e7f7a7": {
-  "profile_version": "4a4a9551fc34",
-  "match_score": 74,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
-  "missing_skills": [],
-  "resume_suggestions": [],
-  "sector": "Other",
-  "prefilter": 0.5346,
-  "heuristic": true,
-  "scored_at": "2026-07-25T15:33:43.680150+00:00"
- },
  "7f700cf6ebb37eb77755b0b238fde1d4224070ae": {
   "profile_version": "694a2e312f01",
   "match_score": 95,
@@ -140,68 +115,43 @@
  },
  "289ea176545c57bfcb2c0021e3e190761ef9c06b": {
   "profile_version": "4a4a9551fc34",
-  "match_score": 72,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
+  "match_score": 80,
+  "confidence": 0.85,
+  "why": "Good fit for a senior analytics role, though perhaps less 'builder-heavy' than you desire, it rewards your business analytics background.",
+  "matched_skills": [
+   "SQL",
+   "Python",
+   "Power BI"
+  ],
   "missing_skills": [],
-  "resume_suggestions": [],
-  "sector": "Other",
+  "resume_suggestions": [
+   "Focus on the 'strategic business impact' of your automated modeling solutions.",
+   "Highlight your experience as a cross-functional lead/trusted advisor."
+  ],
+  "sector": "Healthcare",
   "prefilter": 0.5201,
-  "heuristic": true,
-  "scored_at": "2026-07-25T15:33:43.680150+00:00"
+  "heuristic": false,
+  "scored_at": "2026-07-25T15:35:28.840717+00:00"
  },
  "83446b7e650c54ee725c666c349735876c5d330f": {
   "profile_version": "4a4a9551fc34",
-  "match_score": 70,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
+  "match_score": 90,
+  "confidence": 0.85,
+  "why": "Your ML operationalization and computer vision-adjacent skills align well with Voxel's mission to optimize industrial operations.",
+  "matched_skills": [
+   "Python",
+   "SQL",
+   "Docker/Kubernetes"
+  ],
   "missing_skills": [],
-  "resume_suggestions": [],
+  "resume_suggestions": [
+   "Showcase your experience working with unstructured data (images/video/audio).",
+   "Emphasize your role in bridging the gap between raw data and actionable ML model insights."
+  ],
   "sector": "Other",
   "prefilter": 0.5031,
-  "heuristic": true,
-  "scored_at": "2026-07-25T15:33:43.680150+00:00"
- },
- "5f110b6e553ac770d6c9d39fd94d82bce09dd8ac": {
-  "profile_version": "4a4a9551fc34",
-  "match_score": 72,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
-  "missing_skills": [],
-  "resume_suggestions": [],
-  "sector": "Other",
-  "prefilter": 0.5197,
-  "heuristic": true,
-  "scored_at": "2026-07-25T15:33:43.680150+00:00"
- },
- "61228f7a9694edbd27a754725aa9eea88bfb89d8": {
-  "profile_version": "4a4a9551fc34",
-  "match_score": 73,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
-  "missing_skills": [],
-  "resume_suggestions": [],
-  "sector": "Other",
-  "prefilter": 0.5253,
-  "heuristic": true,
-  "scored_at": "2026-07-25T15:33:43.680150+00:00"
- },
- "466537245dcf7e33612dc24d2455b972040ad520": {
-  "profile_version": "4a4a9551fc34",
-  "match_score": 74,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
-  "missing_skills": [],
-  "resume_suggestions": [],
-  "sector": "Other",
-  "prefilter": 0.529,
-  "heuristic": true,
-  "scored_at": "2026-07-25T15:33:43.680150+00:00"
+  "heuristic": false,
+  "scored_at": "2026-07-25T15:35:28.840717+00:00"
  },
  "da2bcc26af044451e674517db903ffc3353358b5": {
   "profile_version": "4a4a9551fc34",
@@ -218,55 +168,23 @@
  },
  "468c3e72493c5f9e946f1342000e153e757fe229": {
   "profile_version": "4a4a9551fc34",
-  "match_score": 70,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
+  "match_score": 95,
+  "confidence": 0.9,
+  "why": "Your background in data architecture and operationalizing ML models fits this high-performance inference platform role perfectly.",
+  "matched_skills": [
+   "Python",
+   "Docker/Kubernetes",
+   "Data Architecture"
+  ],
   "missing_skills": [],
-  "resume_suggestions": [],
-  "sector": "Other",
+  "resume_suggestions": [
+   "Highlight your ability to optimize heavy-compute data pipelines.",
+   "Mention your experience working with infrastructure and deployment pipelines."
+  ],
+  "sector": "AI/ML Infra",
   "prefilter": 0.5061,
-  "heuristic": true,
-  "scored_at": "2026-07-25T15:33:43.680150+00:00"
- },
- "df306d980dc47e4a888492a1a13488f5bcfef77f": {
-  "profile_version": "4a4a9551fc34",
-  "match_score": 73,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
-  "missing_skills": [],
-  "resume_suggestions": [],
-  "sector": "Other",
-  "prefilter": 0.5279,
-  "heuristic": true,
-  "scored_at": "2026-07-25T15:33:43.680150+00:00"
- },
- "f8a89160cb558ef410429d35d422d82b966ec909": {
-  "profile_version": "4a4a9551fc34",
-  "match_score": 74,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
-  "missing_skills": [],
-  "resume_suggestions": [],
-  "sector": "Other",
-  "prefilter": 0.5353,
-  "heuristic": true,
-  "scored_at": "2026-07-25T15:33:43.680150+00:00"
- },
- "26a8e56c4f20cf9f56e7615f8f2a86fb4ce3929f": {
-  "profile_version": "4a4a9551fc34",
-  "match_score": 69,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
-  "missing_skills": [],
-  "resume_suggestions": [],
-  "sector": "Other",
-  "prefilter": 0.499,
-  "heuristic": true,
-  "scored_at": "2026-07-25T15:33:43.680150+00:00"
+  "heuristic": false,
+  "scored_at": "2026-07-25T15:35:28.840717+00:00"
  },
  "e59e806b8e2788dc42938f3a0ee78360515903ed": {
   "profile_version": "3c8cd16212ea",
@@ -288,29 +206,42 @@
  },
  "687a181e23dc1ef52935912eea1d588aaddf2852": {
   "profile_version": "4a4a9551fc34",
-  "match_score": 73,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
+  "match_score": 75,
+  "confidence": 0.7,
+  "why": "High compensation and seniority level match, but requires strong alignment with Netflix's specific data stack and engineering culture.",
+  "matched_skills": [
+   "Python",
+   "SQL",
+   "Data Architecture"
+  ],
   "missing_skills": [],
-  "resume_suggestions": [],
-  "sector": "Other",
+  "resume_suggestions": [
+   "Standardize your resume to highlight data platform-level scalability.",
+   "Focus on your ability to work independently in a highly technical environment."
+  ],
+  "sector": "Media/Gaming",
   "prefilter": 0.5257,
-  "heuristic": true,
-  "scored_at": "2026-07-25T15:33:43.680150+00:00"
+  "heuristic": false,
+  "scored_at": "2026-07-25T15:35:28.840717+00:00"
  },
  "cf958de2e2832ec20bf089c1bbb43ed04d6ac1de": {
   "profile_version": "4a4a9551fc34",
-  "match_score": 73,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
+  "match_score": 75,
+  "confidence": 0.7,
+  "why": "Very similar to other Netflix roles, though the salary range includes lower tiers that may be less competitive.",
+  "matched_skills": [
+   "SQL",
+   "Power BI",
+   "Data Architecture"
+  ],
   "missing_skills": [],
-  "resume_suggestions": [],
-  "sector": "Other",
+  "resume_suggestions": [
+   "Emphasize your role as a 'builder' rather than a pure analyst."
+  ],
+  "sector": "Media/Gaming",
   "prefilter": 0.5263,
-  "heuristic": true,
-  "scored_at": "2026-07-25T15:33:43.680150+00:00"
+  "heuristic": false,
+  "scored_at": "2026-07-25T15:35:28.840717+00:00"
  },
  "939f8c22f9cf14689a18ac120110f32031c0cdd4": {
   "profile_version": "bbec4246b79f",
@@ -360,21 +291,24 @@
   "scored_at": "2026-07-20T06:17:11.111879+00:00"
  },
  "311291bd58119c1104f1f12253eaa06fbb42d9b6": {
-  "profile_version": "bbec4246b79f",
-  "match_score": 85,
-  "confidence": 0.9,
-  "why": "Strong senior fit for AI/Data work with compensation meeting your requirements.",
+  "profile_version": "4a4a9551fc34",
+  "match_score": 78,
+  "confidence": 0.7,
+  "why": "Well-suited to your skills in Python and data engineering for a growing company in the marketing AI space.",
   "matched_skills": [
    "Python",
-   "SQL"
+   "SQL",
+   "API Development"
   ],
   "missing_skills": [],
   "resume_suggestions": [
-   "Showcase blend of software engineering and data science."
+   "Mention your work in tying data pipelines to revenue metrics.",
+   "Emphasize any experience integrating with CRM/third-party marketing platforms."
   ],
-  "prefilter": 0.7144,
+  "sector": "Enterprise SaaS/DevTools",
+  "prefilter": 0.4883,
   "heuristic": false,
-  "scored_at": "2026-07-20T14:33:02.272881+00:00"
+  "scored_at": "2026-07-25T15:35:28.840717+00:00"
  },
  "cad14ea49c137d901696c8ae0e3dc909af28f1b2": {
   "profile_version": "8444b242a37a",
@@ -487,29 +421,23 @@
  },
  "3d41af2658adf29eda7f97012e113522d40ffd01": {
   "profile_version": "4a4a9551fc34",
-  "match_score": 72,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
+  "match_score": 85,
+  "confidence": 0.8,
+  "why": "A strong architectural role that rewards your expertise in complex systems migration and data architecture.",
+  "matched_skills": [
+   "SQL",
+   "Data Architecture",
+   "Python"
+  ],
   "missing_skills": [],
-  "resume_suggestions": [],
-  "sector": "Other",
+  "resume_suggestions": [
+   "Emphasize your 'migration of legacy systems' experience as a primary competency.",
+   "Detail your cloud-agnostic architectural decision-making processes."
+  ],
+  "sector": "Enterprise SaaS/DevTools",
   "prefilter": 0.518,
-  "heuristic": true,
-  "scored_at": "2026-07-25T15:33:43.680150+00:00"
- },
- "853ca181607dbf837484e63c6da3b7ff592ff0e8": {
-  "profile_version": "694a2e312f01",
-  "match_score": 68,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
-  "missing_skills": [],
-  "resume_suggestions": [],
-  "sector": "Other",
-  "prefilter": 0.4867,
-  "heuristic": true,
-  "scored_at": "2026-07-24T17:10:46.658451+00:00"
+  "heuristic": false,
+  "scored_at": "2026-07-25T15:35:28.840717+00:00"
  },
  "c39f105270dd0694e375390c59fd309fea35f0cd": {
   "profile_version": "4a4a9551fc34",
@@ -575,19 +503,6 @@
   "heuristic": true,
   "scored_at": "2026-07-25T15:33:43.680150+00:00"
  },
- "075f3863c8d663dcd7092a100e1135d8aa62965e": {
-  "profile_version": "4a4a9551fc34",
-  "match_score": 73,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
-  "missing_skills": [],
-  "resume_suggestions": [],
-  "sector": "Other",
-  "prefilter": 0.5237,
-  "heuristic": true,
-  "scored_at": "2026-07-25T15:33:43.680150+00:00"
- },
  "7be2ded568b31ac4a1fa8a88e7ebcf20369898c0": {
   "profile_version": "bbec4246b79f",
   "match_score": 80,
@@ -646,19 +561,6 @@
   "resume_suggestions": [],
   "sector": "Other",
   "prefilter": 0.4987,
-  "heuristic": true,
-  "scored_at": "2026-07-25T15:33:43.680150+00:00"
- },
- "12dbe6f1cddc5ff8a6125eb234b5b3bdf6a2e2a8": {
-  "profile_version": "4a4a9551fc34",
-  "match_score": 72,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
-  "missing_skills": [],
-  "resume_suggestions": [],
-  "sector": "Other",
-  "prefilter": 0.5183,
   "heuristic": true,
   "scored_at": "2026-07-25T15:33:43.680150+00:00"
  },
@@ -867,29 +769,43 @@
  },
  "6724fab12f5bc78db84cce3c594361ccf83c4219": {
   "profile_version": "4a4a9551fc34",
-  "match_score": 72,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
+  "match_score": 92,
+  "confidence": 0.9,
+  "why": "A strong fit given your data engineering expertise and experience in healthcare/audio-related software, matching their core product mission.",
+  "matched_skills": [
+   "Python",
+   "SQL",
+   "API Development"
+  ],
   "missing_skills": [],
-  "resume_suggestions": [],
-  "sector": "Other",
+  "resume_suggestions": [
+   "Explicitly list 'Real-time data processing' as a core skill.",
+   "Highlight any experience integrating with EMR or similar complex third-party systems."
+  ],
+  "sector": "Healthcare",
   "prefilter": 0.5143,
-  "heuristic": true,
-  "scored_at": "2026-07-25T15:33:43.680150+00:00"
+  "heuristic": false,
+  "scored_at": "2026-07-25T15:35:28.840717+00:00"
  },
  "94949244807215c39162f10a700499c9c65aa2c9": {
   "profile_version": "4a4a9551fc34",
-  "match_score": 69,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
+  "match_score": 82,
+  "confidence": 0.75,
+  "why": "Your financial modeling and data engineering background matches this quantitative-heavy role well.",
+  "matched_skills": [
+   "Python",
+   "SQL",
+   "Financial Modeling"
+  ],
   "missing_skills": [],
-  "resume_suggestions": [],
-  "sector": "Other",
+  "resume_suggestions": [
+   "Quantify the performance gains of your previous automated financial pipelines.",
+   "Highlight any high-frequency data handling experience."
+  ],
+  "sector": "Fintech",
   "prefilter": 0.4997,
-  "heuristic": true,
-  "scored_at": "2026-07-25T15:33:43.680150+00:00"
+  "heuristic": false,
+  "scored_at": "2026-07-25T15:35:28.840717+00:00"
  },
  "f49811e042516ba833318cca036208ceba3bbc68": {
   "profile_version": "694a2e312f01",
@@ -1010,19 +926,6 @@
   "heuristic": true,
   "scored_at": "2026-07-25T15:33:43.680150+00:00"
  },
- "d736e6fe2744639e9c42c1a1ff4d7cff30da56cb": {
-  "profile_version": "4a4a9551fc34",
-  "match_score": 72,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
-  "missing_skills": [],
-  "resume_suggestions": [],
-  "sector": "Other",
-  "prefilter": 0.518,
-  "heuristic": true,
-  "scored_at": "2026-07-25T15:33:43.680150+00:00"
- },
  "7d279da5bd81e953b808424d7ef5518c214035df": {
   "profile_version": "4a4a9551fc34",
   "match_score": 70,
@@ -1033,19 +936,6 @@
   "resume_suggestions": [],
   "sector": "Other",
   "prefilter": 0.5008,
-  "heuristic": true,
-  "scored_at": "2026-07-25T15:33:43.680150+00:00"
- },
- "64f244f135ab1678c57eb8635b77d1fc8ca6f40e": {
-  "profile_version": "4a4a9551fc34",
-  "match_score": 72,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
-  "missing_skills": [],
-  "resume_suggestions": [],
-  "sector": "Other",
-  "prefilter": 0.5186,
   "heuristic": true,
   "scored_at": "2026-07-25T15:33:43.680150+00:00"
  },
@@ -1064,16 +954,22 @@
  },
  "bcf9a39b0a549eb030b719182c9c456a0a47e525": {
   "profile_version": "4a4a9551fc34",
-  "match_score": 69,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
+  "match_score": 75,
+  "confidence": 0.7,
+  "why": "Strong role for an Analytics Engineer, well within your experience level and technical domain.",
+  "matched_skills": [
+   "SQL",
+   "Data Architecture",
+   "Python"
+  ],
   "missing_skills": [],
-  "resume_suggestions": [],
-  "sector": "Other",
+  "resume_suggestions": [
+   "Highlight your experience with metric standard definition and data governance."
+  ],
+  "sector": "Media/Gaming",
   "prefilter": 0.4985,
-  "heuristic": true,
-  "scored_at": "2026-07-25T15:33:43.680150+00:00"
+  "heuristic": false,
+  "scored_at": "2026-07-25T15:35:28.840717+00:00"
  },
  "d17ec55a7c5638b808b219b94cb8ae773eef9361": {
   "profile_version": "4a4a9551fc34",
@@ -1140,19 +1036,6 @@
   "heuristic": true,
   "scored_at": "2026-07-24T17:10:46.658451+00:00"
  },
- "98fea1469f11181190f89e349460db8ef811e0e2": {
-  "profile_version": "4a4a9551fc34",
-  "match_score": 73,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
-  "missing_skills": [],
-  "resume_suggestions": [],
-  "sector": "Other",
-  "prefilter": 0.5277,
-  "heuristic": true,
-  "scored_at": "2026-07-25T15:33:43.680150+00:00"
- },
  "d1979d3c68015f530cd462eea44f30514bd8560e": {
   "profile_version": "694a2e312f01",
   "match_score": 85,
@@ -1199,19 +1082,6 @@
   "heuristic": true,
   "scored_at": "2026-07-24T17:10:46.658451+00:00"
  },
- "30c7c620befdbe100ba5aa990dd5922dad244985": {
-  "profile_version": "4a4a9551fc34",
-  "match_score": 72,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
-  "missing_skills": [],
-  "resume_suggestions": [],
-  "sector": "Other",
-  "prefilter": 0.5154,
-  "heuristic": true,
-  "scored_at": "2026-07-25T15:33:43.680150+00:00"
- },
  "178834242b915a659fcb329125c626fe1a709e2a": {
   "profile_version": "694a2e312f01",
   "match_score": 80,
@@ -1253,45 +1123,6 @@
   "heuristic": false,
   "scored_at": "2026-07-23T16:58:51.935571+00:00"
  },
- "b2122139fcd85c9e9c66f5b26f0aa30e5715c4a7": {
-  "profile_version": "694a2e312f01",
-  "match_score": 68,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
-  "missing_skills": [],
-  "resume_suggestions": [],
-  "sector": "Other",
-  "prefilter": 0.4883,
-  "heuristic": true,
-  "scored_at": "2026-07-24T17:10:46.658451+00:00"
- },
- "1794b72095b37228d1821d75922d2ed3ba56f1a9": {
-  "profile_version": "4a4a9551fc34",
-  "match_score": 71,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
-  "missing_skills": [],
-  "resume_suggestions": [],
-  "sector": "Other",
-  "prefilter": 0.5095,
-  "heuristic": true,
-  "scored_at": "2026-07-25T15:33:43.680150+00:00"
- },
- "6f49eb15b317d8f8ccac216fef8ba2d95e268004": {
-  "profile_version": "4a4a9551fc34",
-  "match_score": 71,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
-  "missing_skills": [],
-  "resume_suggestions": [],
-  "sector": "Other",
-  "prefilter": 0.5119,
-  "heuristic": true,
-  "scored_at": "2026-07-25T15:33:43.680150+00:00"
- },
  "cb624767eda6d022dc8c378e5a00e77454317b45": {
   "profile_version": "4a4a9551fc34",
   "match_score": 70,
@@ -1302,19 +1133,6 @@
   "resume_suggestions": [],
   "sector": "Other",
   "prefilter": 0.5066,
-  "heuristic": true,
-  "scored_at": "2026-07-25T15:33:43.680150+00:00"
- },
- "a87aa37f19895cec320ca73edc6ea8cc11369ad5": {
-  "profile_version": "4a4a9551fc34",
-  "match_score": 70,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
-  "missing_skills": [],
-  "resume_suggestions": [],
-  "sector": "Other",
-  "prefilter": 0.5037,
   "heuristic": true,
   "scored_at": "2026-07-25T15:33:43.680150+00:00"
  },
@@ -1331,19 +1149,6 @@
   "heuristic": true,
   "scored_at": "2026-07-25T15:33:43.680150+00:00"
  },
- "7aeb458377b0d139b377b6a4bc852b4423a54592": {
-  "profile_version": "4a4a9551fc34",
-  "match_score": 70,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
-  "missing_skills": [],
-  "resume_suggestions": [],
-  "sector": "Other",
-  "prefilter": 0.501,
-  "heuristic": true,
-  "scored_at": "2026-07-25T15:33:43.680150+00:00"
- },
  "3ff45d4fff6b1af9dad1b05eb73a6b469265887d": {
   "profile_version": "4a4a9551fc34",
   "match_score": 69,
@@ -1354,110 +1159,6 @@
   "resume_suggestions": [],
   "sector": "Other",
   "prefilter": 0.4996,
-  "heuristic": true,
-  "scored_at": "2026-07-25T15:33:43.680150+00:00"
- },
- "09eccd0f0704faa4b3c43ff687b09295ed0e85e0": {
-  "profile_version": "4a4a9551fc34",
-  "match_score": 69,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
-  "missing_skills": [],
-  "resume_suggestions": [],
-  "sector": "Other",
-  "prefilter": 0.4988,
-  "heuristic": true,
-  "scored_at": "2026-07-25T15:33:43.680150+00:00"
- },
- "8d5f1c9215e7e538f9166426448f2f95d83190e3": {
-  "profile_version": "4a4a9551fc34",
-  "match_score": 69,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
-  "missing_skills": [],
-  "resume_suggestions": [],
-  "sector": "Other",
-  "prefilter": 0.4978,
-  "heuristic": true,
-  "scored_at": "2026-07-25T15:33:43.680150+00:00"
- },
- "aff06a929c6254f9e8b79c500e35600868b72de9": {
-  "profile_version": "4a4a9551fc34",
-  "match_score": 69,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
-  "missing_skills": [],
-  "resume_suggestions": [],
-  "sector": "Other",
-  "prefilter": 0.4976,
-  "heuristic": true,
-  "scored_at": "2026-07-25T15:33:43.680150+00:00"
- },
- "f09c07b73f12baa905eb8c3362ddb556c2886b82": {
-  "profile_version": "4a4a9551fc34",
-  "match_score": 69,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
-  "missing_skills": [],
-  "resume_suggestions": [],
-  "sector": "Other",
-  "prefilter": 0.4976,
-  "heuristic": true,
-  "scored_at": "2026-07-25T15:33:43.680150+00:00"
- },
- "c034b6c89ddb849f5d987993cc801f8d28645b1c": {
-  "profile_version": "4a4a9551fc34",
-  "match_score": 69,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
-  "missing_skills": [],
-  "resume_suggestions": [],
-  "sector": "Other",
-  "prefilter": 0.497,
-  "heuristic": true,
-  "scored_at": "2026-07-25T15:33:43.680150+00:00"
- },
- "b2866fd80a7d6d36edca6090844cd5edc382caf8": {
-  "profile_version": "4a4a9551fc34",
-  "match_score": 69,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
-  "missing_skills": [],
-  "resume_suggestions": [],
-  "sector": "Other",
-  "prefilter": 0.4968,
-  "heuristic": true,
-  "scored_at": "2026-07-25T15:33:43.680150+00:00"
- },
- "6e58bc626ae97634f2656d29f8b2a031341ef41e": {
-  "profile_version": "4a4a9551fc34",
-  "match_score": 69,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
-  "missing_skills": [],
-  "resume_suggestions": [],
-  "sector": "Other",
-  "prefilter": 0.4967,
-  "heuristic": true,
-  "scored_at": "2026-07-25T15:33:43.680150+00:00"
- },
- "630f4c816e573968f6d488e5d9e979d69418b1fe": {
-  "profile_version": "4a4a9551fc34",
-  "match_score": 69,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
-  "missing_skills": [],
-  "resume_suggestions": [],
-  "sector": "Other",
-  "prefilter": 0.4951,
   "heuristic": true,
   "scored_at": "2026-07-25T15:33:43.680150+00:00"
  },
@@ -1487,17 +1188,44 @@
   "heuristic": true,
   "scored_at": "2026-07-25T15:33:43.680150+00:00"
  },
- "9bfa8f62cb4e4d61943833a042f737e448aca65c": {
+ "4f1bebcb7db74e857409312c26267ad925290dfc": {
   "profile_version": "4a4a9551fc34",
-  "match_score": 68,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
+  "match_score": 88,
+  "confidence": 0.85,
+  "why": "Your experience with game engine integration and custom audio software is a unique and valuable asset for this role's specific domain.",
+  "matched_skills": [
+   "Python",
+   "API Development",
+   "Data Architecture"
+  ],
   "missing_skills": [],
-  "resume_suggestions": [],
-  "sector": "Other",
-  "prefilter": 0.4925,
-  "heuristic": true,
-  "scored_at": "2026-07-25T15:33:43.680150+00:00"
+  "resume_suggestions": [
+   "Lead with your audio software and real-time engine integration project experience.",
+   "Highlight your ability to work with low-latency APIs."
+  ],
+  "sector": "AI/ML Infra",
+  "prefilter": 0.4856,
+  "heuristic": false,
+  "scored_at": "2026-07-25T15:35:28.840717+00:00"
+ },
+ "ac8078be8f6519be3a08081b96936bc19fb5620c": {
+  "profile_version": "4a4a9551fc34",
+  "match_score": 85,
+  "confidence": 0.8,
+  "why": "Leverages your demonstrated ability to architect complex AI-agent workflows in a high-impact, staff-level engineering capacity.",
+  "matched_skills": [
+   "Python",
+   "API Development",
+   "Agentic Workflows"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Focus on 'Multi-Agent Frameworks' scaling challenges.",
+   "Highlight any work involving complex SaaS workflow automation."
+  ],
+  "sector": "Enterprise SaaS/DevTools",
+  "prefilter": 0.4893,
+  "heuristic": false,
+  "scored_at": "2026-07-25T15:35:28.840717+00:00"
  }
 }
