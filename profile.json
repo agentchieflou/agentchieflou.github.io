@@ -1,25 +1,15 @@
 {
- "summary": "Results-oriented Business Analytics Consultant with a strong track record in legacy system migrations, process automation, and production-grade API development. Expert at bridging the gap between quantitative financial modeling and modern software engineering using Python, containerization, and orchestration tools. Deeply experienced in designing agentic workflows and telemetry-driven analytics to improve operational efficiency in high-stakes financial environments.",
+ "summary": "Michael is a versatile Business Analytics Consultant with a strong background in financial quantitative modeling and process automation. He specializes in bridging the gap between legacy infrastructure and modern cloud-native architectures through REST API development, containerization, and agentic workflows. He demonstrates significant technical depth in Python-based automation and C++ system design, consistently delivering high-impact solutions for complex data migration and risk management projects.",
  "skills": [
   {
    "name": "Python",
    "category": "engineering",
-   "strength": 0.95,
-   "evidence": [
-    "Automation suites",
-    "REST API development",
-    "Data parsing",
-    "Agentic orchestration"
-   ]
-  },
-  {
-   "name": "REST API Development",
-   "category": "engineering",
    "strength": 0.9,
    "evidence": [
-    "Containerized production-grade APIs",
-    "OpenShift deployments",
-    "API-based transaction classification"
+    "Automation scripts for loan processing",
+    "REST API development",
+    "Scrapers for document sourcing",
+    "Data parsing systems"
    ]
   },
   {
@@ -27,39 +17,39 @@
    "category": "analytics",
    "strength": 0.85,
    "evidence": [
-    "Database telemetry",
-    "Mainframe migration data reconciliation",
-    "Complex data querying"
+    "Database telemetry analytics",
+    "Grid-wide usage tracking",
+    "MongoDB and relational data migrations"
    ]
   },
   {
-   "name": "Docker/Kubernetes/OpenShift",
+   "name": "REST APIs",
    "category": "engineering",
-   "strength": 0.85,
-   "evidence": [
-    "Helm deployments",
-    "Policy as Code guidelines",
-    "Containerized service orchestration"
-   ]
-  },
-  {
-   "name": "Data Automation",
-   "category": "engineering",
-   "strength": 0.9,
-   "evidence": [
-    "Multi-scraper suites",
-    "Headless browser integration",
-    "Document process management"
-   ]
-  },
-  {
-   "name": "Financial Modeling",
-   "category": "domain",
    "strength": 0.8,
    "evidence": [
-    "CECL reserve forecasting",
-    "Mortgage/Home Equity pricing",
-    "Competitor stress analysis"
+    "Containerized three production-grade services on OpenShift",
+    "Operationalized BERT classification for real-time inference",
+    "API deployment for testing environments"
+   ]
+  },
+  {
+   "name": "Docker / Kubernetes",
+   "category": "engineering",
+   "strength": 0.75,
+   "evidence": [
+    "Containerization of custom scrapers",
+    "OpenShift Helm deployments",
+    "Enterprise CI/CD integration"
+   ]
+  },
+  {
+   "name": "Power BI",
+   "category": "analytics",
+   "strength": 0.7,
+   "evidence": [
+    "Peer Bank Analysis Dashboard",
+    "Portfolio-wide performance reporting",
+    "Semantic model development"
    ]
   },
   {
@@ -67,97 +57,97 @@
    "category": "engineering",
    "strength": 0.75,
    "evidence": [
-    "Unreal Engine 5 development",
-    "Physics-based game simulation",
-    "Custom plugin development"
+    "Unreal Engine game development",
+    "Audio VST development",
+    "Memory/Buffer management in custom plugins"
    ]
   },
   {
-   "name": "Power BI",
-   "category": "analytics",
+   "name": "Automated Testing / CI/CD",
+   "category": "engineering",
+   "strength": 0.7,
+   "evidence": [
+    "Policy as Code compliance gates",
+    "Parameterized data validation framework",
+    "Headless browser testing"
+   ]
+  },
+  {
+   "name": "Quantitative Modeling",
+   "category": "domain",
    "strength": 0.8,
    "evidence": [
-    "Semantic modeling",
-    "Portfolio-wide performance reporting",
-    "Industry stressor dashboards"
-   ]
-  },
-  {
-   "name": "CI/CD",
-   "category": "engineering",
-   "strength": 0.75,
-   "evidence": [
-    "Enterprise CI/CD pipeline management",
-    "Policy as Code integration"
-   ]
-  },
-  {
-   "name": "Telemetry & Analytics",
-   "category": "analytics",
-   "strength": 0.85,
-   "evidence": [
-    "Grid-wide usage analytics",
-    "Table-level usage monitoring",
-    "Migration impact analysis"
-   ]
-  },
-  {
-   "name": "TypeScript",
-   "category": "engineering",
-   "strength": 0.65,
-   "evidence": [
-    "DAW development projects",
-    "Frontend utility development"
-   ]
-  },
-  {
-   "name": "Quantitative Analysis",
-   "category": "domain",
-   "strength": 0.85,
-   "evidence": [
-    "Econometrics coursework",
-    "Elasticity research",
-    "Causal research for Federal Reserve"
+    "CECL reserve forecasting",
+    "Stress testing loan portfolios",
+    "Elasticity research"
    ]
   },
   {
    "name": "Agentic Workflows",
    "category": "engineering",
-   "strength": 0.75,
+   "strength": 0.65,
    "evidence": [
     "RAG architecture research",
-    "AI-driven game simulation",
-    "Agent orchestration systems"
+    "Agent orchestration for game development",
+    "Personal career-agent automation tools"
    ]
   },
   {
-   "name": "Mainframe Migration",
+   "name": "Data Architecture",
+   "category": "engineering",
+   "strength": 0.65,
+   "evidence": [
+    "Mainframe migration reconciliation",
+    "Version control overhauls",
+    "Data integrity and reproducibility protocols"
+   ]
+  },
+  {
+   "name": "Financial Analysis",
    "category": "domain",
    "strength": 0.8,
    "evidence": [
-    "Asset class migration",
-    "Legacy system data reconciliation",
-    "Mapping validation"
+    "M&A mortgage data integration",
+    "HELOC expense reduction",
+    "Regulatory standards (SR 11-7)"
    ]
   },
   {
-   "name": "R",
-   "category": "analytics",
+   "name": "TypeScript",
+   "category": "engineering",
    "strength": 0.6,
    "evidence": [
-    "Academic background",
-    "Prior financial modeling experience"
+    "DAW interface development",
+    "Web-based automation utilities"
+   ]
+  },
+  {
+   "name": "Excel",
+   "category": "tools",
+   "strength": 0.8,
+   "evidence": [
+    "Advanced financial modeling",
+    "Pricing workflow automation"
+   ]
+  },
+  {
+   "name": "Selenium",
+   "category": "tools",
+   "strength": 0.7,
+   "evidence": [
+    "Proof-of-concept web scraping",
+    "Automated document retrieval"
    ]
   }
  ],
  "target_titles": [
   "Quantitative Developer",
+  "Data Engineer (Finance)",
+  "Backend Engineer (Python)",
   "Analytics Engineer",
-  "Software Engineer (Data/Backend)",
-  "Automation Engineer",
-  "Financial Systems Engineer"
+  "Solutions Architect"
  ],
- "version": "5c7413d71a96",
+ "version": "1f6d972e9903",
  "remote_only": true,
- "generated_at": "2026-07-25T21:52:56.480146+00:00"
+ "generated_at": "2026-07-25T22:02:30.123284+00:00"
 }

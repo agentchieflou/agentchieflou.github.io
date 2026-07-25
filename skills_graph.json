@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-07-25T21:56:00.064103+00:00",
- "profile_version": "5c7413d71a96",
+ "generated_at": "2026-07-25T22:03:00.461397+00:00",
+ "profile_version": "1f6d972e9903",
  "totals": {
   "discovered_all_time": 1036,
   "live": 934
@@ -9,12 +9,6 @@
   {
    "id": "python",
    "name": "Python",
-   "category": "engineering",
-   "strength": 0.95
-  },
-  {
-   "id": "rest api development",
-   "name": "REST API Development",
    "category": "engineering",
    "strength": 0.9
   },
@@ -25,22 +19,22 @@
    "strength": 0.85
   },
   {
-   "id": "docker kubernetes openshift",
-   "name": "Docker/Kubernetes/OpenShift",
+   "id": "rest apis",
+   "name": "REST APIs",
    "category": "engineering",
-   "strength": 0.85
-  },
-  {
-   "id": "data automation",
-   "name": "Data Automation",
-   "category": "engineering",
-   "strength": 0.9
-  },
-  {
-   "id": "financial modeling",
-   "name": "Financial Modeling",
-   "category": "domain",
    "strength": 0.8
+  },
+  {
+   "id": "docker kubernetes",
+   "name": "Docker / Kubernetes",
+   "category": "engineering",
+   "strength": 0.75
+  },
+  {
+   "id": "power bi",
+   "name": "Power BI",
+   "category": "analytics",
+   "strength": 0.7
   },
   {
    "id": "c",
@@ -49,70 +43,56 @@
    "strength": 0.75
   },
   {
-   "id": "power bi",
-   "name": "Power BI",
-   "category": "analytics",
-   "strength": 0.8
-  },
-  {
-   "id": "ci cd",
-   "name": "CI/CD",
+   "id": "automated testing ci cd",
+   "name": "Automated Testing / CI/CD",
    "category": "engineering",
-   "strength": 0.75
+   "strength": 0.7
   },
   {
-   "id": "telemetry analytics",
-   "name": "Telemetry & Analytics",
-   "category": "analytics",
-   "strength": 0.85
-  },
-  {
-   "id": "typescript",
-   "name": "TypeScript",
-   "category": "engineering",
-   "strength": 0.65
-  },
-  {
-   "id": "quantitative analysis",
-   "name": "Quantitative Analysis",
+   "id": "quantitative modeling",
+   "name": "Quantitative Modeling",
    "category": "domain",
-   "strength": 0.85
+   "strength": 0.8
   },
   {
    "id": "agentic workflows",
    "name": "Agentic Workflows",
    "category": "engineering",
-   "strength": 0.75
+   "strength": 0.65
   },
   {
-   "id": "mainframe migration",
-   "name": "Mainframe Migration",
+   "id": "data architecture",
+   "name": "Data Architecture",
+   "category": "engineering",
+   "strength": 0.65
+  },
+  {
+   "id": "financial analysis",
+   "name": "Financial Analysis",
    "category": "domain",
    "strength": 0.8
   },
   {
-   "id": "r",
-   "name": "R",
-   "category": "analytics",
+   "id": "typescript",
+   "name": "TypeScript",
+   "category": "engineering",
    "strength": 0.6
+  },
+  {
+   "id": "excel",
+   "name": "Excel",
+   "category": "tools",
+   "strength": 0.8
+  },
+  {
+   "id": "selenium",
+   "name": "Selenium",
+   "category": "tools",
+   "strength": 0.7
   }
  ],
  "ghost_skills": [],
  "jobs": [
-  {
-   "id": "573c285b40525e80c4c0e856f1e676a5df618eaa",
-   "title": "Senior AI Engineer - Multi-Agent Frameworks",
-   "company": "ClickUp",
-   "sector": "Enterprise SaaS/DevTools",
-   "company_description": "ClickUpâ¢ | Maximize productivity â¢ Software, AI, and humans converge\nBrain AI\nProduct\nSolutions\nLearn\nPricing\nEnterprise\nGet a Demo\nLogin\nSign Up\nThe Best AI is\nSoftware to replace all software\nSave money.\nAll Apps, AI, Projects, Chat + 20 more.\nSave time.\nAll humans working together with perfec",
-   "location": "Remote (US)",
-   "salary": "$200,000-$250,000",
-   "url": "https://jobs.ashbyhq.com/ClickUp/b8ff5d05-8158-42bb-8d87-296848a0e99f",
-   "source": "doomers",
-   "score": 94,
-   "confidence": 0.95,
-   "why": "Aligns with your expertise in agentic frameworks and high-performance backend engineering."
-  },
   {
    "id": "ac8078be8f6519be3a08081b96936bc19fb5620c",
    "title": "Staff AI Engineer - Multi-Agent Frameworks",
@@ -129,18 +109,6 @@
   }
  ],
  "edges": [
-  {
-   "skill": "python",
-   "job": "573c285b40525e80c4c0e856f1e676a5df618eaa",
-   "weight": 1.0,
-   "missing": false
-  },
-  {
-   "skill": "rest api development",
-   "job": "573c285b40525e80c4c0e856f1e676a5df618eaa",
-   "weight": 0.88,
-   "missing": false
-  },
   {
    "skill": "python",
    "job": "ac8078be8f6519be3a08081b96936bc19fb5620c",
