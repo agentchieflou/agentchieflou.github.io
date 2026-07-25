@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-07-25T22:03:00.461397+00:00",
- "profile_version": "1f6d972e9903",
+ "generated_at": "2026-07-25T22:20:06.752354+00:00",
+ "profile_version": "1e5f66deb740",
  "totals": {
   "discovered_all_time": 1036,
   "live": 934
@@ -10,7 +10,7 @@
    "id": "python",
    "name": "Python",
    "category": "engineering",
-   "strength": 0.9
+   "strength": 0.95
   },
   {
    "id": "sql",
@@ -19,76 +19,82 @@
    "strength": 0.85
   },
   {
-   "id": "rest apis",
-   "name": "REST APIs",
+   "id": "kubernetes openshift",
+   "name": "Kubernetes/OpenShift",
    "category": "engineering",
    "strength": 0.8
-  },
-  {
-   "id": "docker kubernetes",
-   "name": "Docker / Kubernetes",
-   "category": "engineering",
-   "strength": 0.75
   },
   {
    "id": "power bi",
    "name": "Power BI",
    "category": "analytics",
-   "strength": 0.7
+   "strength": 0.75
+  },
+  {
+   "id": "rest api development",
+   "name": "REST API Development",
+   "category": "engineering",
+   "strength": 0.85
+  },
+  {
+   "id": "quantitative analysis",
+   "name": "Quantitative Analysis",
+   "category": "domain",
+   "strength": 0.8
+  },
+  {
+   "id": "process automation",
+   "name": "Process Automation",
+   "category": "engineering",
+   "strength": 0.9
   },
   {
    "id": "c",
    "name": "C++",
    "category": "engineering",
-   "strength": 0.75
-  },
-  {
-   "id": "automated testing ci cd",
-   "name": "Automated Testing / CI/CD",
-   "category": "engineering",
    "strength": 0.7
   },
   {
-   "id": "quantitative modeling",
-   "name": "Quantitative Modeling",
-   "category": "domain",
-   "strength": 0.8
-  },
-  {
-   "id": "agentic workflows",
-   "name": "Agentic Workflows",
-   "category": "engineering",
-   "strength": 0.65
+   "id": "ci cd",
+   "name": "CI/CD",
+   "category": "tools",
+   "strength": 0.75
   },
   {
    "id": "data architecture",
    "name": "Data Architecture",
    "category": "engineering",
-   "strength": 0.65
-  },
-  {
-   "id": "financial analysis",
-   "name": "Financial Analysis",
-   "category": "domain",
-   "strength": 0.8
-  },
-  {
-   "id": "typescript",
-   "name": "TypeScript",
-   "category": "engineering",
-   "strength": 0.6
-  },
-  {
-   "id": "excel",
-   "name": "Excel",
-   "category": "tools",
-   "strength": 0.8
-  },
-  {
-   "id": "selenium",
-   "name": "Selenium",
-   "category": "tools",
    "strength": 0.7
+  },
+  {
+   "id": "agentic workflows",
+   "name": "Agentic Workflows",
+   "category": "engineering",
+   "strength": 0.75
+  },
+  {
+   "id": "telemetry analytics",
+   "name": "Telemetry & Analytics",
+   "category": "analytics",
+   "strength": 0.8
+  },
+  {
+   "id": "financial modeling",
+   "name": "Financial Modeling",
+   "category": "domain",
+   "strength": 0.85
+  },
+  {
+   "id": "docker",
+   "name": "Docker",
+   "category": "tools",
+   "strength": 0.8
+  },
+  {
+   "id": "git",
+   "name": "Git",
+   "category": "tools",
+   "strength": 0.85
   }
  ],
  "ghost_skills": [],
