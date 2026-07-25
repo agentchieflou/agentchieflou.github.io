@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-07-25T17:29:32.311888+00:00",
- "profile_version": "d432ba51ed14",
+ "generated_at": "2026-07-25T21:29:35.219796+00:00",
+ "profile_version": "ba178febd385",
  "totals": {
   "discovered_all_time": 1036,
   "live": 934
@@ -19,100 +19,74 @@
    "strength": 0.9
   },
   {
-   "id": "kubernetes openshift",
-   "name": "Kubernetes/OpenShift",
-   "category": "engineering",
-   "strength": 0.85
-  },
-  {
-   "id": "rest api development",
-   "name": "REST API Development",
-   "category": "engineering",
-   "strength": 0.9
-  },
-  {
-   "id": "power bi",
-   "name": "Power BI",
-   "category": "analytics",
-   "strength": 0.8
-  },
-  {
-   "id": "c",
-   "name": "C++",
-   "category": "engineering",
-   "strength": 0.85
-  },
-  {
    "id": "docker",
    "name": "Docker",
    "category": "engineering",
    "strength": 0.85
   },
   {
-   "id": "data architecture",
-   "name": "Data Architecture",
+   "id": "kubernetes openshift",
+   "name": "Kubernetes/OpenShift",
    "category": "engineering",
+   "strength": 0.8
+  },
+  {
+   "id": "power bi",
+   "name": "Power BI",
+   "category": "analytics",
    "strength": 0.75
   },
   {
-   "id": "agentic rag strategy",
-   "name": "Agentic & RAG Strategy",
+   "id": "c",
+   "name": "C++",
    "category": "engineering",
    "strength": 0.7
   },
   {
-   "id": "quantitative analytics",
-   "name": "Quantitative Analytics",
-   "category": "analytics",
+   "id": "api design",
+   "name": "API Design",
+   "category": "engineering",
    "strength": 0.85
   },
   {
    "id": "ci cd",
    "name": "CI/CD",
-   "category": "tools",
+   "category": "engineering",
    "strength": 0.8
   },
   {
-   "id": "selenium automation",
-   "name": "Selenium/Automation",
-   "category": "tools",
+   "id": "quantitative finance",
+   "name": "Quantitative Finance",
+   "category": "domain",
    "strength": 0.85
   },
   {
-   "id": "typescript",
-   "name": "Typescript",
+   "id": "agentic workflows",
+   "name": "Agentic Workflows",
    "category": "engineering",
+   "strength": 0.75
+  },
+  {
+   "id": "r",
+   "name": "R",
+   "category": "analytics",
    "strength": 0.65
   },
   {
-   "id": "c",
-   "name": "C",
-   "category": "engineering",
+   "id": "selenium",
+   "name": "Selenium",
+   "category": "tools",
    "strength": 0.7
   },
   {
-   "id": "regulatory compliance",
-   "name": "Regulatory Compliance",
+   "id": "mainframe migration",
+   "name": "Mainframe Migration",
    "category": "domain",
    "strength": 0.8
   }
  ],
  "ghost_skills": [],
  "jobs": [
-  {
-   "id": "e69617123fa323808fc52969ac9ace1e429e760f",
-   "title": "Senior Data Scientist - Big Data R&D, Identity Graph & KYC",
-   "company": "Socure",
-   "sector": "Fintech",
-   "company_description": "Identity Verification Platform for AI Risk Decisioning | Socure\nIndustries\nFintechs\nSponsor Banks\nCrypto\nBanking\neCommerce\nSocial & Dating\nMarketplace & Gig Economy\nGaming\nWorkforce\nTelco\nIndustries\nFintechs\nSponsor Banks\nCrypto\nBanking\neCommerce\nSocial & Dating\nMarketplace & Gig Economy\nGaming\nWork",
-   "location": "Remote (US)",
-   "salary": "$170,000-$200,000",
-   "url": "https://jobs.ashbyhq.com/socure/0c2e2016-216a-4773-8503-c3e7b3178631",
-   "source": "doomers",
-   "score": 95,
-   "confidence": 0.95,
-   "why": "Perfectly matches your background in finance-adjacent identity/fraud data and agentic/graph strategies."
-  },
   {
    "id": "573c285b40525e80c4c0e856f1e676a5df618eaa",
    "title": "Senior AI Engineer - Multi-Agent Frameworks",
@@ -126,62 +100,6 @@
    "score": 94,
    "confidence": 0.95,
    "why": "Aligns with your expertise in agentic frameworks and high-performance backend engineering."
-  },
-  {
-   "id": "83446b7e650c54ee725c666c349735876c5d330f",
-   "title": "Senior Software Engineer, ML Data",
-   "company": "Voxel",
-   "sector": "AI/ML Infra",
-   "company_description": null,
-   "location": "Remote (US)",
-   "salary": "$200,000-$240,000",
-   "url": "https://jobs.ashbyhq.com/voxel/d625aa10-6a0e-4359-b465-e23408216d3b",
-   "source": "doomers",
-   "score": 92,
-   "confidence": 0.95,
-   "why": "Excellent fit for your backend, ML-data, and containerization skills. The role directly addresses high-performance system engineering."
-  },
-  {
-   "id": "fda6e98e03289d56711a9843e8ea2a9513858090",
-   "title": "Senior/Staff Software Engineer, Data Infrastructure Group",
-   "company": "The Voleon Group",
-   "sector": "Fintech",
-   "company_description": "Voleon - Voleon Capital Management\nWe have recently updated our\nTerms of Use\nand\nPrivacy Policy\n.\nOK\nHome\nCareers\nContact\nThe Voleon Group is committed to the development and deployment of cutting-edge technologies in investment management. Our innovations in machine learning serve as the cornerston",
-   "location": "Remote (US)",
-   "salary": "$225,000-$310,000",
-   "url": "https://jobs.ashbyhq.com/voleon/06b71069-99ef-44d4-a890-b47584f35c0d",
-   "source": "doomers",
-   "score": 93,
-   "confidence": 0.9,
-   "why": "Highly relevant to your quantitative modeling background and interest in high-performance finance data infrastructure."
-  },
-  {
-   "id": "6724fab12f5bc78db84cce3c594361ccf83c4219",
-   "title": "Data Engineer",
-   "company": "Abridge",
-   "sector": "Healthcare",
-   "company_description": "Generative AI for Clinical Conversations | Abridge\nSkip to main content\nPlatform\nAI\nResources\nAbout\nPlatform\nOne platform, three tailored experiences\nClinicians\nAI-powered clinical documentation, built for accuracy\nRevenue Cycle\nBillable documentation, automated from the start\nNursing\nNatural conver",
-   "location": "Remote (US)",
-   "salary": "$185,000-$217,000",
-   "url": "https://jobs.ashbyhq.com/Abridge/480c4c99-2ca8-4dc7-ba6b-29a9ee28ed95",
-   "source": "doomers",
-   "score": 92,
-   "confidence": 0.9,
-   "why": "A strong fit given your data engineering expertise and experience in healthcare/audio-related software, matching their core product mission."
-  },
-  {
-   "id": "c5db5c02a4f30ad9585e7e4ae4b7baf85c58b000",
-   "title": "Senior Software Engineer, Data Platform",
-   "company": "SentiLink",
-   "sector": "Fintech",
-   "company_description": "SentiLink: The fraud experts\nProduct overview\nUse cases\nCompany\nResources\nAlliances\nGET STARTED\nYour partner in solving\nidentity theft.\nLeading financial institutions use SentiLink’s forward-thinking solutions to stop identity fraud at the point of application.\nGet a demo\nSee how it works\nTrusted by",
-   "location": "Remote (US)",
-   "salary": "$170,000-$170,000",
-   "url": "https://jobs.ashbyhq.com/sentilink/a2463ea0-6585-429c-95f2-10dc4a8cdae8",
-   "source": "doomers",
-   "score": 91,
-   "confidence": 0.9,
-   "why": "Strong fit for a finance-focused data platform role requiring real-time APIs and fraud/identity expertise."
   },
   {
    "id": "f49811e042516ba833318cca036208ceba3bbc68",
@@ -210,189 +128,13 @@
    "score": 85,
    "confidence": 0.8,
    "why": "Leverages your demonstrated ability to architect complex AI-agent workflows in a high-impact, staff-level engineering capacity."
-  },
-  {
-   "id": "289ea176545c57bfcb2c0021e3e190761ef9c06b",
-   "title": "Senior Analytics Engineer",
-   "company": "Talkiatry",
-   "sector": "Healthcare",
-   "company_description": "Talkiatry: The Online Psychiatrist Covered by Insurance\nOne of our vendors was impacted by a security incident, which affected some of our patients’ or their primary insured’s protected health information.\nClick here\nto learn more.\nSkip to main content\nHelp center\n|\nPatient log in\nInsurance\nOur Doct",
-   "location": "Remote (US)",
-   "salary": "$150,000-$175,000",
-   "url": "https://jobs.ashbyhq.com/Talkiatry/a0ce1010-919c-4dfe-8ba2-6c74d6e81e04",
-   "source": "doomers",
-   "score": 80,
-   "confidence": 0.85,
-   "why": "Good fit for a senior analytics role, though perhaps less 'builder-heavy' than you desire, it rewards your business analytics background."
-  },
-  {
-   "id": "94949244807215c39162f10a700499c9c65aa2c9",
-   "title": "Senior Software Engineer, Strategy Research Analytics",
-   "company": "The Voleon Group",
-   "sector": "Fintech",
-   "company_description": "Voleon - Voleon Capital Management\nWe have recently updated our\nTerms of Use\nand\nPrivacy Policy\n.\nOK\nHome\nCareers\nContact\nThe Voleon Group is committed to the development and deployment of cutting-edge technologies in investment management. Our innovations in machine learning serve as the cornerston",
-   "location": "Remote (US)",
-   "salary": "$200,000-$255,000",
-   "url": "https://jobs.ashbyhq.com/voleon/ea4af8e0-d7d9-44db-9f57-9f26e783fd11",
-   "source": "doomers",
-   "score": 82,
-   "confidence": 0.75,
-   "why": "Your financial modeling and data engineering background matches this quantitative-heavy role well."
-  },
-  {
-   "id": "311291bd58119c1104f1f12253eaa06fbb42d9b6",
-   "title": "Senior Software Engineer Data & AI",
-   "company": "Vendelux",
-   "sector": "Enterprise SaaS/DevTools",
-   "company_description": "Vendelux | AI-Native Event Marketing Platform\nFree Report:\nRead what 120+ marketing leaders shared about the state of events in 2026.\nSee the state of events in 2026.\nGet the Data\nProduct\nProduct Overview\nAI Overview\nMeetings\nEvent Discovery\nSegments\nCRM Integration\nSolutions\nSolutions Overview\nMark",
-   "location": "Remote (US)",
-   "salary": "$175,000-$225,000",
-   "url": "https://jobs.ashbyhq.com/vendelux/f9f4f0ed-1dd6-4706-9f36-89324ce9411a",
-   "source": "doomers",
-   "score": 78,
-   "confidence": 0.7,
-   "why": "Well-suited to your skills in Python and data engineering for a growing company in the marketing AI space."
-  },
-  {
-   "id": "1f0d7ef571cb9b612a52caa5a5996e6b448de668",
-   "title": "Senior Data Engineer",
-   "company": "abbott",
-   "sector": "Healthcare",
-   "company_description": null,
-   "location": "Remote (US)",
-   "salary": "$75,300-$150,700",
-   "url": "https://abbott.wd5.myworkdayjobs.com/abbottcareers2/job/United-States---Illinois---Abbott-Park/Senior-Data-Engineer_31117631",
-   "source": "doomers",
-   "score": 40,
-   "confidence": 0.8,
-   "why": "Salary range is well below your $130,000 minimum threshold, despite some alignment in skills."
   }
  ],
  "edges": [
   {
-   "skill": "sql",
-   "job": "e69617123fa323808fc52969ac9ace1e429e760f",
-   "weight": 1.0,
-   "missing": false
-  },
-  {
-   "skill": "python",
-   "job": "e69617123fa323808fc52969ac9ace1e429e760f",
-   "weight": 0.88,
-   "missing": false
-  },
-  {
-   "skill": "data architecture",
-   "job": "e69617123fa323808fc52969ac9ace1e429e760f",
-   "weight": 0.76,
-   "missing": false
-  },
-  {
-   "skill": "agentic rag strategy",
-   "job": "e69617123fa323808fc52969ac9ace1e429e760f",
-   "weight": 0.64,
-   "missing": false
-  },
-  {
-   "skill": "regulatory compliance",
-   "job": "e69617123fa323808fc52969ac9ace1e429e760f",
-   "weight": 0.52,
-   "missing": false
-  },
-  {
    "skill": "python",
    "job": "573c285b40525e80c4c0e856f1e676a5df618eaa",
    "weight": 1.0,
-   "missing": false
-  },
-  {
-   "skill": "rest api development",
-   "job": "573c285b40525e80c4c0e856f1e676a5df618eaa",
-   "weight": 0.88,
-   "missing": false
-  },
-  {
-   "skill": "agentic rag strategy",
-   "job": "573c285b40525e80c4c0e856f1e676a5df618eaa",
-   "weight": 0.76,
-   "missing": false
-  },
-  {
-   "skill": "python",
-   "job": "83446b7e650c54ee725c666c349735876c5d330f",
-   "weight": 1.0,
-   "missing": false
-  },
-  {
-   "skill": "docker",
-   "job": "83446b7e650c54ee725c666c349735876c5d330f",
-   "weight": 0.88,
-   "missing": false
-  },
-  {
-   "skill": "data architecture",
-   "job": "83446b7e650c54ee725c666c349735876c5d330f",
-   "weight": 0.76,
-   "missing": false
-  },
-  {
-   "skill": "sql",
-   "job": "83446b7e650c54ee725c666c349735876c5d330f",
-   "weight": 0.64,
-   "missing": false
-  },
-  {
-   "skill": "python",
-   "job": "fda6e98e03289d56711a9843e8ea2a9513858090",
-   "weight": 1.0,
-   "missing": false
-  },
-  {
-   "skill": "sql",
-   "job": "fda6e98e03289d56711a9843e8ea2a9513858090",
-   "weight": 0.88,
-   "missing": false
-  },
-  {
-   "skill": "quantitative analytics",
-   "job": "fda6e98e03289d56711a9843e8ea2a9513858090",
-   "weight": 0.76,
-   "missing": false
-  },
-  {
-   "skill": "c",
-   "job": "fda6e98e03289d56711a9843e8ea2a9513858090",
-   "weight": 0.64,
-   "missing": false
-  },
-  {
-   "skill": "python",
-   "job": "6724fab12f5bc78db84cce3c594361ccf83c4219",
-   "weight": 1.0,
-   "missing": false
-  },
-  {
-   "skill": "sql",
-   "job": "6724fab12f5bc78db84cce3c594361ccf83c4219",
-   "weight": 0.88,
-   "missing": false
-  },
-  {
-   "skill": "rest api development",
-   "job": "c5db5c02a4f30ad9585e7e4ae4b7baf85c58b000",
-   "weight": 1.0,
-   "missing": false
-  },
-  {
-   "skill": "sql",
-   "job": "c5db5c02a4f30ad9585e7e4ae4b7baf85c58b000",
-   "weight": 0.88,
-   "missing": false
-  },
-  {
-   "skill": "data architecture",
-   "job": "c5db5c02a4f30ad9585e7e4ae4b7baf85c58b000",
-   "weight": 0.76,
    "missing": false
   },
   {
@@ -420,62 +162,8 @@
    "missing": false
   },
   {
-   "skill": "sql",
-   "job": "289ea176545c57bfcb2c0021e3e190761ef9c06b",
-   "weight": 1.0,
-   "missing": false
-  },
-  {
-   "skill": "python",
-   "job": "289ea176545c57bfcb2c0021e3e190761ef9c06b",
-   "weight": 0.88,
-   "missing": false
-  },
-  {
-   "skill": "power bi",
-   "job": "289ea176545c57bfcb2c0021e3e190761ef9c06b",
-   "weight": 0.76,
-   "missing": false
-  },
-  {
-   "skill": "python",
-   "job": "94949244807215c39162f10a700499c9c65aa2c9",
-   "weight": 1.0,
-   "missing": false
-  },
-  {
-   "skill": "sql",
-   "job": "94949244807215c39162f10a700499c9c65aa2c9",
-   "weight": 0.88,
-   "missing": false
-  },
-  {
-   "skill": "python",
-   "job": "311291bd58119c1104f1f12253eaa06fbb42d9b6",
-   "weight": 1.0,
-   "missing": false
-  },
-  {
-   "skill": "sql",
-   "job": "311291bd58119c1104f1f12253eaa06fbb42d9b6",
-   "weight": 0.88,
-   "missing": false
-  },
-  {
-   "skill": "sql",
-   "job": "1f0d7ef571cb9b612a52caa5a5996e6b448de668",
-   "weight": 1.0,
-   "missing": false
-  },
-  {
-   "skill": "python",
-   "job": "1f0d7ef571cb9b612a52caa5a5996e6b448de668",
-   "weight": 0.88,
-   "missing": false
-  },
-  {
-   "skill": "ci cd",
-   "job": "1f0d7ef571cb9b612a52caa5a5996e6b448de668",
+   "skill": "agentic workflows",
+   "job": "ac8078be8f6519be3a08081b96936bc19fb5620c",
    "weight": 0.76,
    "missing": false
   }
