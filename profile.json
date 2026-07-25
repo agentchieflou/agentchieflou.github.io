@@ -1,45 +1,34 @@
 {
- "summary": "Professional Business Analytics Consultant with deep expertise in process automation, mainframe-to-cloud data migrations, and API engineering within the financial sector. Proven track record of leveraging containerized architectures and custom Python-based automation suites to deliver significant operational cost savings. Passionate about building high-performance systems, ranging from enterprise-grade REST APIs to complex audio-processing software and physics-based game simulations.",
+ "summary": "Data-driven Business Analytics Consultant with strong engineering capabilities in Python, automation, and API development. Proven expertise in migrating legacy systems, optimizing financial modeling workflows, and operationalizing machine learning models. Highly technical builder with a demonstrated ability to architect complex systems, including AI-agent workflows, game engine integration, and custom audio software.",
  "skills": [
   {
    "name": "Python",
    "category": "engineering",
    "strength": 0.95,
    "evidence": [
-    "Process automation at PNC",
-    "REST API development",
-    "Scraping/parsing suites",
-    "Headless browser orchestration"
+    "Production scrapers",
+    "REST API containerization",
+    "Workflow automation",
+    "Data validation frameworks"
    ]
   },
   {
    "name": "SQL",
    "category": "analytics",
-   "strength": 0.9,
-   "evidence": [
-    "Telemetry and usage analytics",
-    "Database reconciliation",
-    "Data architecture overhauls"
-   ]
-  },
-  {
-   "name": "Docker",
-   "category": "engineering",
    "strength": 0.85,
    "evidence": [
-    "Production-grade containerization",
-    "OpenShift deployments",
-    "CI/CD pipeline integration"
+    "MongoDB and legacy mainframe migrations",
+    "Telemetry and usage analytics design"
    ]
   },
   {
-   "name": "Kubernetes/OpenShift",
+   "name": "Docker/Kubernetes",
    "category": "engineering",
    "strength": 0.8,
    "evidence": [
-    "Helm deployments",
-    "Production API hosting",
-    "Policy as Code governance"
+    "OpenShift deployment",
+    "Helm charts",
+    "Policy as Code integration"
    ]
   },
   {
@@ -47,9 +36,27 @@
    "category": "analytics",
    "strength": 0.75,
    "evidence": [
-    "Semantic modeling",
-    "Portfolio-wide performance reporting",
-    "Executive dashboards"
+    "Portfolio-wide performance dashboards",
+    "Peer Bank Analysis reporting"
+   ]
+  },
+  {
+   "name": "API Development",
+   "category": "engineering",
+   "strength": 0.85,
+   "evidence": [
+    "REST API deployment on OpenShift",
+    "BERT model operationalization",
+    "Agentic orchestration"
+   ]
+  },
+  {
+   "name": "R",
+   "category": "analytics",
+   "strength": 0.7,
+   "evidence": [
+    "Financial modeling",
+    "Quantitative forecasting models"
    ]
   },
   {
@@ -57,48 +64,49 @@
    "category": "engineering",
    "strength": 0.75,
    "evidence": [
-    "Unreal Engine game development",
-    "VST plugin development",
-    "High-performance simulation state machines"
+    "Unreal Engine 5 project development",
+    "Physics-based game simulation",
+    "Custom plugin development"
    ]
   },
   {
-   "name": "REST APIs",
+   "name": "Automation Engineering",
    "category": "engineering",
    "strength": 0.85,
    "evidence": [
-    "Operationalized transaction classification",
-    "Containerized scrapers",
-    "Testing/QA API development"
-   ]
-  },
-  {
-   "name": "CI/CD",
-   "category": "tools",
-   "strength": 0.8,
-   "evidence": [
-    "Policy as Code integration",
-    "Automated deployment pipelines",
-    "GitHub project workflows"
+    "Multi-scraper orchestration",
+    "Pricing workflow automation",
+    "Process redesign for retail lending"
    ]
   },
   {
    "name": "Financial Modeling",
    "category": "domain",
-   "strength": 0.85,
+   "strength": 0.8,
    "evidence": [
-    "CECL forecasting",
-    "Home Equity pricing",
-    "Competitor stress analysis"
+    "CECL reserve forecasting",
+    "Stress testing",
+    "Elasticity research"
    ]
   },
   {
-   "name": "TypeScript",
-   "category": "engineering",
-   "strength": 0.65,
+   "name": "CI/CD",
+   "category": "tools",
+   "strength": 0.75,
    "evidence": [
-    "DAW project development",
-    "UI/UX component design"
+    "Enterprise Pipeline management",
+    "Helm deployments",
+    "Git version control practices"
+   ]
+  },
+  {
+   "name": "Agentic Workflows",
+   "category": "engineering",
+   "strength": 0.7,
+   "evidence": [
+    "RAG architecture implementation",
+    "Gemini API integration",
+    "Agentic orchestration in game projects"
    ]
   },
   {
@@ -107,41 +115,26 @@
    "strength": 0.7,
    "evidence": [
     "Document sourcing automation",
-    "Multi-scraper orchestration"
+    "Headless browser scraping"
    ]
   },
   {
-   "name": "Agentic Workflows",
+   "name": "TypeScript",
    "category": "engineering",
-   "strength": 0.7,
+   "strength": 0.65,
    "evidence": [
-    "Research into enterprise RAG",
-    "Automated game development workflows"
-   ]
-  },
-  {
-   "name": "Hadoop",
-   "category": "analytics",
-   "strength": 0.6,
-   "evidence": [
-    "Large-scale data processing in banking environments"
+    "DAW development project",
+    "Full-stack personal tool development"
    ]
   },
   {
    "name": "Data Architecture",
-   "category": "engineering",
+   "category": "analytics",
    "strength": 0.75,
    "evidence": [
     "Mainframe migration reconciliation",
-    "Version control and integrity standards"
-   ]
-  },
-  {
-   "name": "Go",
-   "category": "engineering",
-   "strength": 0.5,
-   "evidence": [
-    "Professional exposure and translation tasks"
+    "Semantic model design",
+    "Data integrity frameworks"
    ]
   }
  ],
@@ -149,10 +142,10 @@
   "Data Engineer",
   "Analytics Engineer",
   "Quantitative Developer",
-  "Backend Software Engineer",
-  "Automation Engineer"
+  "Automation Engineer",
+  "Full Stack Developer"
  ],
- "version": "694a2e312f01",
+ "version": "4a4a9551fc34",
  "remote_only": true,
- "generated_at": "2026-07-20T17:51:54.471493+00:00"
+ "generated_at": "2026-07-25T15:32:33.701908+00:00"
 }
