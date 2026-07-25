@@ -1,45 +1,55 @@
 {
- "summary": "Michael is a highly technical Business Analytics Consultant with extensive experience in financial modeling, process automation, and full-stack API development. He specializes in bridging legacy infrastructure with modern cloud-native architectures, demonstrating deep expertise in Python-based automation, REST API lifecycle management, and containerization. His background includes significant work in quantitative finance, regulatory risk management, and the implementation of agentic workflows for system optimization.",
+ "summary": "Data-driven professional specializing in process automation, quantitative analytics, and enterprise system migration. Expert at bridging legacy mainframe environments with modern cloud-native infrastructures using Python, SQL, and containerization. Passionate about engineering agentic workflows and high-performance software, with a strong focus on technical efficiency and operational expense reduction.",
  "skills": [
   {
    "name": "Python",
    "category": "engineering",
    "strength": 0.95,
    "evidence": [
-    "Production-grade scrapers",
-    "REST API development",
-    "Home Equity pricing automation",
-    "Quantitative modeling"
+    "Production-grade REST API development",
+    "Scraping automation suites",
+    "Data ingestion for Unreal Engine game project",
+    "Reserve forecasting models"
    ]
   },
   {
    "name": "SQL",
    "category": "analytics",
-   "strength": 0.85,
-   "evidence": [
-    "Mainframe migration data validation",
-    "MongoDB reconciliations",
-    "Grid-wide database telemetry"
-   ]
-  },
-  {
-   "name": "REST APIs",
-   "category": "engineering",
    "strength": 0.9,
    "evidence": [
-    "Containerized deployment on OpenShift",
-    "High-throughput API scrapers",
-    "Transaction classification API integration"
+    "Mainframe migration data reconciliation",
+    "Grid-wide database telemetry",
+    "Mortgage portfolio analysis"
    ]
   },
   {
    "name": "Kubernetes/OpenShift",
    "category": "engineering",
+   "strength": 0.85,
+   "evidence": [
+    "Production-grade containerization of REST APIs",
+    "Helm deployment management",
+    "Policy as Code enterprise compliance"
+   ]
+  },
+  {
+   "name": "Automation Engineering",
+   "category": "engineering",
+   "strength": 0.85,
+   "evidence": [
+    "Document sourcing scrapers",
+    "Pricing workflow automation",
+    "Mainframe data validation frameworks"
+   ]
+  },
+  {
+   "name": "Quantitative Analytics",
+   "category": "analytics",
    "strength": 0.8,
    "evidence": [
-    "Production deployment of microservices",
-    "Helm chart management",
-    "Policy as Code integration"
+    "CECL reserve forecasting",
+    "Stress testing and M&A integration",
+    "Pricing elasticity research"
    ]
   },
   {
@@ -47,29 +57,66 @@
    "category": "analytics",
    "strength": 0.75,
    "evidence": [
-    "Portfolio performance reporting",
-    "Peer bank analysis dashboards",
-    "Semantic modeling"
+    "Peer Bank Analysis Dashboard",
+    "Portfolio-wide performance reporting"
    ]
   },
   {
-   "name": "Quantitative Finance",
-   "category": "domain",
-   "strength": 0.85,
-   "evidence": [
-    "CECL forecasting ($70B+ portfolio)",
-    "Pricing elasticity research",
-    "OCC/SR 11-7 compliance"
-   ]
-  },
-  {
-   "name": "C++",
+   "name": "C++/Unreal Engine",
    "category": "engineering",
    "strength": 0.7,
    "evidence": [
-    "Unreal Engine game development",
-    "Audio VST development",
-    "Low-level plugin architecture"
+    "Physics-based game architecture",
+    "Custom plugin development",
+    "Headless simulation state machines"
+   ]
+  },
+  {
+   "name": "CI/CD Pipelines",
+   "category": "engineering",
+   "strength": 0.75,
+   "evidence": [
+    "Enterprise-grade deployment workflows",
+    "Policy as Code integration"
+   ]
+  },
+  {
+   "name": "API Development",
+   "category": "engineering",
+   "strength": 0.85,
+   "evidence": [
+    "REST API containerization",
+    "Headless browser scraping APIs",
+    "Transaction classification API deployment"
+   ]
+  },
+  {
+   "name": "Data Architecture",
+   "category": "engineering",
+   "strength": 0.7,
+   "evidence": [
+    "Migration mapping and reconciliation",
+    "Version control overhauls",
+    "Data integrity and reproducibility"
+   ]
+  },
+  {
+   "name": "Agentic Workflows",
+   "category": "engineering",
+   "strength": 0.65,
+   "evidence": [
+    "RAG architecture research",
+    "AI-driven game project scaffolding",
+    "LLM-assisted development cycles"
+   ]
+  },
+  {
+   "name": "C",
+   "category": "engineering",
+   "strength": 0.6,
+   "evidence": [
+    "Virtual Studio Technology (VST) audio plugin development",
+    "Plugin ABI design"
    ]
   },
   {
@@ -77,82 +124,27 @@
    "category": "tools",
    "strength": 0.8,
    "evidence": [
-    "Containerization of scrapers and detection algorithms",
-    "CI/CD pipeline integration"
+    "Containerized service deployment",
+    "Helm chart management"
    ]
   },
   {
-   "name": "Process Automation",
-   "category": "engineering",
-   "strength": 0.9,
-   "evidence": [
-    "Mainframe to cloud migration",
-    "Document sourcing suite",
-    "Automated pricing workflows"
-   ]
-  },
-  {
-   "name": "PySpark",
+   "name": "Hadoop",
    "category": "analytics",
    "strength": 0.6,
    "evidence": [
-    "Large-scale data processing in financial risk context"
-   ]
-  },
-  {
-   "name": "Agentic Workflows",
-   "category": "engineering",
-   "strength": 0.75,
-   "evidence": [
-    "RAG architecture research",
-    "Agent-driven play simulation in C++",
-    "Workflow orchestration"
-   ]
-  },
-  {
-   "name": "CI/CD",
-   "category": "tools",
-   "strength": 0.75,
-   "evidence": [
-    "Enterprise Policy as Code implementation",
-    "Helm-based deployment cycles"
-   ]
-  },
-  {
-   "name": "R",
-   "category": "analytics",
-   "strength": 0.65,
-   "evidence": [
-    "Financial modeling coursework",
-    "Econometric analysis"
-   ]
-  },
-  {
-   "name": "Telemetry & Analytics",
-   "category": "analytics",
-   "strength": 0.8,
-   "evidence": [
-    "Grid-wide database usage monitoring",
-    "Migration impact analysis tools"
-   ]
-  },
-  {
-   "name": "Typescript",
-   "category": "engineering",
-   "strength": 0.6,
-   "evidence": [
-    "Frontend and tool development for DAW project"
+    "Experience in high-volume banking data environments"
    ]
   }
  ],
  "target_titles": [
-  "Senior Data Engineer",
-  "Quantitative Developer",
-  "Analytics Engineer",
-  "Systems Integration Engineer",
-  "Financial Technology Consultant"
+  "Senior Data Engineer (Remote)",
+  "Quantitative Developer (Remote)",
+  "Automation Engineer (Remote)",
+  "Solutions Architect - Data (Remote)",
+  "Senior Business Intelligence Developer (Remote)"
  ],
- "version": "6279062e2fdb",
+ "version": "999ad995994f",
  "remote_only": true,
- "generated_at": "2026-07-25T22:32:29.184011+00:00"
+ "generated_at": "2026-07-25T22:45:03.986110+00:00"
 }
