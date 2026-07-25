@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-07-25T22:20:06.752354+00:00",
- "profile_version": "1e5f66deb740",
+ "generated_at": "2026-07-25T22:32:50.443110+00:00",
+ "profile_version": "6279062e2fdb",
  "totals": {
   "discovered_all_time": 1036,
   "live": 934
@@ -19,6 +19,12 @@
    "strength": 0.85
   },
   {
+   "id": "rest apis",
+   "name": "REST APIs",
+   "category": "engineering",
+   "strength": 0.9
+  },
+  {
    "id": "kubernetes openshift",
    "name": "Kubernetes/OpenShift",
    "category": "engineering",
@@ -31,15 +37,21 @@
    "strength": 0.75
   },
   {
-   "id": "rest api development",
-   "name": "REST API Development",
-   "category": "engineering",
+   "id": "quantitative finance",
+   "name": "Quantitative Finance",
+   "category": "domain",
    "strength": 0.85
   },
   {
-   "id": "quantitative analysis",
-   "name": "Quantitative Analysis",
-   "category": "domain",
+   "id": "c",
+   "name": "C++",
+   "category": "engineering",
+   "strength": 0.7
+  },
+  {
+   "id": "docker",
+   "name": "Docker",
+   "category": "tools",
    "strength": 0.8
   },
   {
@@ -49,22 +61,10 @@
    "strength": 0.9
   },
   {
-   "id": "c",
-   "name": "C++",
-   "category": "engineering",
-   "strength": 0.7
-  },
-  {
-   "id": "ci cd",
-   "name": "CI/CD",
-   "category": "tools",
-   "strength": 0.75
-  },
-  {
-   "id": "data architecture",
-   "name": "Data Architecture",
-   "category": "engineering",
-   "strength": 0.7
+   "id": "pyspark",
+   "name": "PySpark",
+   "category": "analytics",
+   "strength": 0.6
   },
   {
    "id": "agentic workflows",
@@ -73,32 +73,88 @@
    "strength": 0.75
   },
   {
+   "id": "ci cd",
+   "name": "CI/CD",
+   "category": "tools",
+   "strength": 0.75
+  },
+  {
+   "id": "r",
+   "name": "R",
+   "category": "analytics",
+   "strength": 0.65
+  },
+  {
    "id": "telemetry analytics",
    "name": "Telemetry & Analytics",
    "category": "analytics",
    "strength": 0.8
   },
   {
-   "id": "financial modeling",
-   "name": "Financial Modeling",
-   "category": "domain",
-   "strength": 0.85
-  },
-  {
-   "id": "docker",
-   "name": "Docker",
-   "category": "tools",
-   "strength": 0.8
-  },
-  {
-   "id": "git",
-   "name": "Git",
-   "category": "tools",
-   "strength": 0.85
+   "id": "typescript",
+   "name": "Typescript",
+   "category": "engineering",
+   "strength": 0.6
   }
  ],
  "ghost_skills": [],
  "jobs": [
+  {
+   "id": "cad14ea49c137d901696c8ae0e3dc909af28f1b2",
+   "title": "AI Agents Solutions Architect - Finance",
+   "company": "Kraken",
+   "sector": "Fintech",
+   "company_description": "Kraken | Own the Power of Your Money — Crypto, Stocks & more\nIndividuals\nBusinesses\nVIP\nAffiliates\nMarkets\nAbout\nSearch\n/\nSearch\n/\nIndividuals\nBusinesses\nVIP\nAffiliates\nMarkets\nAbout\nKraken Pro\nKraken Pro\nUnleash your trading potential\nUnleash your trading potential\nTrade crypto\nTrade crypto\nTrade f",
+   "location": "Remote (US)",
+   "salary": "$127,200-$254,400",
+   "url": "https://jobs.ashbyhq.com/kraken.com/3544516a-ad0b-4aaf-8ee4-5744883985c1",
+   "source": "doomers",
+   "score": 95,
+   "confidence": 1.0,
+   "why": "Perfect alignment with his quantitative finance background, agentic workflow expertise, and target title of Systems Integration/Financial Technology Consultant."
+  },
+  {
+   "id": "fda6e98e03289d56711a9843e8ea2a9513858090",
+   "title": "Senior/Staff Software Engineer, Data Infrastructure Group",
+   "company": "The Voleon Group",
+   "sector": "Fintech",
+   "company_description": "Voleon - Voleon Capital Management\nWe have recently updated our\nTerms of Use\nand\nPrivacy Policy\n.\nOK\nHome\nCareers\nContact\nThe Voleon Group is committed to the development and deployment of cutting-edge technologies in investment management. Our innovations in machine learning serve as the cornerston",
+   "location": "Remote (US)",
+   "salary": "$225,000-$310,000",
+   "url": "https://jobs.ashbyhq.com/voleon/06b71069-99ef-44d4-a890-b47584f35c0d",
+   "source": "doomers",
+   "score": 92,
+   "confidence": 1.0,
+   "why": "Highly compatible with his cloud-native and data infrastructure background in a financial context. Salary is well above the threshold."
+  },
+  {
+   "id": "94949244807215c39162f10a700499c9c65aa2c9",
+   "title": "Senior Software Engineer, Strategy Research Analytics",
+   "company": "The Voleon Group",
+   "sector": "Fintech",
+   "company_description": "Voleon - Voleon Capital Management\nWe have recently updated our\nTerms of Use\nand\nPrivacy Policy\n.\nOK\nHome\nCareers\nContact\nThe Voleon Group is committed to the development and deployment of cutting-edge technologies in investment management. Our innovations in machine learning serve as the cornerston",
+   "location": "Remote (US)",
+   "salary": "$200,000-$255,000",
+   "url": "https://jobs.ashbyhq.com/voleon/ea4af8e0-d7d9-44db-9f57-9f26e783fd11",
+   "source": "doomers",
+   "score": 90,
+   "confidence": 1.0,
+   "why": "Matches his quantitative finance domain expertise and focus on analytics infrastructure. High compensation and senior scope fit his trajectory."
+  },
+  {
+   "id": "e69617123fa323808fc52969ac9ace1e429e760f",
+   "title": "Senior Data Scientist - Big Data R&D, Identity Graph & KYC",
+   "company": "Socure",
+   "sector": "Fintech",
+   "company_description": "Identity Verification Platform for AI Risk Decisioning | Socure\nIndustries\nFintechs\nSponsor Banks\nCrypto\nBanking\neCommerce\nSocial & Dating\nMarketplace & Gig Economy\nGaming\nWorkforce\nTelco\nIndustries\nFintechs\nSponsor Banks\nCrypto\nBanking\neCommerce\nSocial & Dating\nMarketplace & Gig Economy\nGaming\nWork",
+   "location": "Remote (US)",
+   "salary": "$170,000-$200,000",
+   "url": "https://jobs.ashbyhq.com/socure/0c2e2016-216a-4773-8503-c3e7b3178631",
+   "source": "doomers",
+   "score": 85,
+   "confidence": 0.95,
+   "why": "Strong fit for identity-based financial risk modeling and large-scale data processing."
+  },
   {
    "id": "ac8078be8f6519be3a08081b96936bc19fb5620c",
    "title": "Staff AI Engineer - Multi-Agent Frameworks",
@@ -112,9 +168,133 @@
    "score": 85,
    "confidence": 0.8,
    "why": "Leverages your demonstrated ability to architect complex AI-agent workflows in a high-impact, staff-level engineering capacity."
+  },
+  {
+   "id": "accf6a5f0b8162d3688e326dfc6bc18c8af42296",
+   "title": "Senior Machine Learning Engineer",
+   "company": "calendly",
+   "sector": "Enterprise SaaS/DevTools",
+   "company_description": null,
+   "location": "Remote (US)",
+   "salary": "$237,630-$287,952",
+   "url": "https://job-boards.greenhouse.io/calendly/jobs/8494187002",
+   "source": "doomers",
+   "score": 80,
+   "confidence": 0.9,
+   "why": "Strong technical fit for backend and data systems, though less finance-specific than other roles."
+  },
+  {
+   "id": "289ea176545c57bfcb2c0021e3e190761ef9c06b",
+   "title": "Senior Analytics Engineer",
+   "company": "Talkiatry",
+   "sector": "Healthcare",
+   "company_description": "Talkiatry: The Online Psychiatrist Covered by Insurance\nOne of our vendors was impacted by a security incident, which affected some of our patients’ or their primary insured’s protected health information.\nClick here\nto learn more.\nSkip to main content\nHelp center\n|\nPatient log in\nInsurance\nOur Doct",
+   "location": "Remote (US)",
+   "salary": "$150,000-$175,000",
+   "url": "https://jobs.ashbyhq.com/Talkiatry/a0ce1010-919c-4dfe-8ba2-6c74d6e81e04",
+   "source": "doomers",
+   "score": 75,
+   "confidence": 0.9,
+   "why": "Fits the Analytics Engineer title perfectly with a focus on marketing data products. Highly aligned with Michael's background in business analytics and Python/SQL."
   }
  ],
  "edges": [
+  {
+   "skill": "python",
+   "job": "cad14ea49c137d901696c8ae0e3dc909af28f1b2",
+   "weight": 1.0,
+   "missing": false
+  },
+  {
+   "skill": "rest apis",
+   "job": "cad14ea49c137d901696c8ae0e3dc909af28f1b2",
+   "weight": 0.88,
+   "missing": false
+  },
+  {
+   "skill": "agentic workflows",
+   "job": "cad14ea49c137d901696c8ae0e3dc909af28f1b2",
+   "weight": 0.76,
+   "missing": false
+  },
+  {
+   "skill": "quantitative finance",
+   "job": "cad14ea49c137d901696c8ae0e3dc909af28f1b2",
+   "weight": 0.64,
+   "missing": false
+  },
+  {
+   "skill": "python",
+   "job": "fda6e98e03289d56711a9843e8ea2a9513858090",
+   "weight": 1.0,
+   "missing": false
+  },
+  {
+   "skill": "sql",
+   "job": "fda6e98e03289d56711a9843e8ea2a9513858090",
+   "weight": 0.88,
+   "missing": false
+  },
+  {
+   "skill": "kubernetes openshift",
+   "job": "fda6e98e03289d56711a9843e8ea2a9513858090",
+   "weight": 0.76,
+   "missing": false
+  },
+  {
+   "skill": "docker",
+   "job": "fda6e98e03289d56711a9843e8ea2a9513858090",
+   "weight": 0.64,
+   "missing": false
+  },
+  {
+   "skill": "python",
+   "job": "94949244807215c39162f10a700499c9c65aa2c9",
+   "weight": 1.0,
+   "missing": false
+  },
+  {
+   "skill": "sql",
+   "job": "94949244807215c39162f10a700499c9c65aa2c9",
+   "weight": 0.88,
+   "missing": false
+  },
+  {
+   "skill": "quantitative finance",
+   "job": "94949244807215c39162f10a700499c9c65aa2c9",
+   "weight": 0.76,
+   "missing": false
+  },
+  {
+   "skill": "ci cd",
+   "job": "94949244807215c39162f10a700499c9c65aa2c9",
+   "weight": 0.64,
+   "missing": false
+  },
+  {
+   "skill": "python",
+   "job": "e69617123fa323808fc52969ac9ace1e429e760f",
+   "weight": 1.0,
+   "missing": false
+  },
+  {
+   "skill": "sql",
+   "job": "e69617123fa323808fc52969ac9ace1e429e760f",
+   "weight": 0.88,
+   "missing": false
+  },
+  {
+   "skill": "pyspark",
+   "job": "e69617123fa323808fc52969ac9ace1e429e760f",
+   "weight": 0.76,
+   "missing": false
+  },
+  {
+   "skill": "quantitative finance",
+   "job": "e69617123fa323808fc52969ac9ace1e429e760f",
+   "weight": 0.64,
+   "missing": false
+  },
   {
    "skill": "python",
    "job": "ac8078be8f6519be3a08081b96936bc19fb5620c",
@@ -124,6 +304,48 @@
   {
    "skill": "agentic workflows",
    "job": "ac8078be8f6519be3a08081b96936bc19fb5620c",
+   "weight": 0.76,
+   "missing": false
+  },
+  {
+   "skill": "python",
+   "job": "accf6a5f0b8162d3688e326dfc6bc18c8af42296",
+   "weight": 1.0,
+   "missing": false
+  },
+  {
+   "skill": "sql",
+   "job": "accf6a5f0b8162d3688e326dfc6bc18c8af42296",
+   "weight": 0.88,
+   "missing": false
+  },
+  {
+   "skill": "docker",
+   "job": "accf6a5f0b8162d3688e326dfc6bc18c8af42296",
+   "weight": 0.76,
+   "missing": false
+  },
+  {
+   "skill": "ci cd",
+   "job": "accf6a5f0b8162d3688e326dfc6bc18c8af42296",
+   "weight": 0.64,
+   "missing": false
+  },
+  {
+   "skill": "python",
+   "job": "289ea176545c57bfcb2c0021e3e190761ef9c06b",
+   "weight": 1.0,
+   "missing": false
+  },
+  {
+   "skill": "sql",
+   "job": "289ea176545c57bfcb2c0021e3e190761ef9c06b",
+   "weight": 0.88,
+   "missing": false
+  },
+  {
+   "skill": "power bi",
+   "job": "289ea176545c57bfcb2c0021e3e190761ef9c06b",
    "weight": 0.76,
    "missing": false
   }

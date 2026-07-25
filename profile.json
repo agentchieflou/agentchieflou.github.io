@@ -1,15 +1,15 @@
 {
- "summary": "Data-driven Business Analytics Consultant with a strong background in financial modeling and process automation within the banking sector. Highly skilled in architecting Python-based data pipelines, REST API deployment via OpenShift, and engineering agentic workflows to streamline complex migrations. Demonstrates exceptional technical versatility through personal projects in C++ game engine development and audio engineering software.",
+ "summary": "Michael is a highly technical Business Analytics Consultant with extensive experience in financial modeling, process automation, and full-stack API development. He specializes in bridging legacy infrastructure with modern cloud-native architectures, demonstrating deep expertise in Python-based automation, REST API lifecycle management, and containerization. His background includes significant work in quantitative finance, regulatory risk management, and the implementation of agentic workflows for system optimization.",
  "skills": [
   {
    "name": "Python",
    "category": "engineering",
    "strength": 0.95,
    "evidence": [
-    "Process automation suite",
+    "Production-grade scrapers",
     "REST API development",
-    "Data validation frameworks",
-    "Scraping automation"
+    "Home Equity pricing automation",
+    "Quantitative modeling"
    ]
   },
   {
@@ -17,9 +17,19 @@
    "category": "analytics",
    "strength": 0.85,
    "evidence": [
-    "Mainframe migration reconciliation",
-    "Database telemetry",
-    "Portfolio performance reporting"
+    "Mainframe migration data validation",
+    "MongoDB reconciliations",
+    "Grid-wide database telemetry"
+   ]
+  },
+  {
+   "name": "REST APIs",
+   "category": "engineering",
+   "strength": 0.9,
+   "evidence": [
+    "Containerized deployment on OpenShift",
+    "High-throughput API scrapers",
+    "Transaction classification API integration"
    ]
   },
   {
@@ -27,9 +37,9 @@
    "category": "engineering",
    "strength": 0.8,
    "evidence": [
-    "Production-grade REST API deployments",
+    "Production deployment of microservices",
     "Helm chart management",
-    "Containerization of custom services"
+    "Policy as Code integration"
    ]
   },
   {
@@ -37,38 +47,19 @@
    "category": "analytics",
    "strength": 0.75,
    "evidence": [
-    "Enterprise-wide dashboard reporting",
-    "Semantic model development",
-    "Peer bank stress analysis"
+    "Portfolio performance reporting",
+    "Peer bank analysis dashboards",
+    "Semantic modeling"
    ]
   },
   {
-   "name": "REST API Development",
-   "category": "engineering",
+   "name": "Quantitative Finance",
+   "category": "domain",
    "strength": 0.85,
    "evidence": [
-    "Deployment of production APIs on OpenShift",
-    "Containerization of scrapers and classification models"
-   ]
-  },
-  {
-   "name": "Quantitative Analysis",
-   "category": "domain",
-   "strength": 0.8,
-   "evidence": [
-    "CECL reserve forecasting",
-    "Mortgage portfolio back-testing",
-    "Elasticity research"
-   ]
-  },
-  {
-   "name": "Process Automation",
-   "category": "engineering",
-   "strength": 0.9,
-   "evidence": [
-    "Legacy mainframe migration framework",
-    "Document sourcing automation",
-    "Pricing workflow optimization"
+    "CECL forecasting ($70B+ portfolio)",
+    "Pricing elasticity research",
+    "OCC/SR 11-7 compliance"
    ]
   },
   {
@@ -77,28 +68,35 @@
    "strength": 0.7,
    "evidence": [
     "Unreal Engine game development",
-    "VST plugin development",
-    "Memory and buffer management in audio projects"
+    "Audio VST development",
+    "Low-level plugin architecture"
    ]
   },
   {
-   "name": "CI/CD",
+   "name": "Docker",
    "category": "tools",
-   "strength": 0.75,
+   "strength": 0.8,
    "evidence": [
-    "Enterprise Policy as Code compliance",
-    "Helm deployments",
-    "Automated testing integration"
+    "Containerization of scrapers and detection algorithms",
+    "CI/CD pipeline integration"
    ]
   },
   {
-   "name": "Data Architecture",
+   "name": "Process Automation",
    "category": "engineering",
-   "strength": 0.7,
+   "strength": 0.9,
    "evidence": [
-    "Data integrity workflows",
-    "Mainframe to MongoDB reconciliation",
-    "Schema design for simulation engines"
+    "Mainframe to cloud migration",
+    "Document sourcing suite",
+    "Automated pricing workflows"
+   ]
+  },
+  {
+   "name": "PySpark",
+   "category": "analytics",
+   "strength": 0.6,
+   "evidence": [
+    "Large-scale data processing in financial risk context"
    ]
   },
   {
@@ -107,8 +105,26 @@
    "strength": 0.75,
    "evidence": [
     "RAG architecture research",
-    "Agent orchestration proof-of-concepts",
-    "AI-driven play simulation"
+    "Agent-driven play simulation in C++",
+    "Workflow orchestration"
+   ]
+  },
+  {
+   "name": "CI/CD",
+   "category": "tools",
+   "strength": 0.75,
+   "evidence": [
+    "Enterprise Policy as Code implementation",
+    "Helm-based deployment cycles"
+   ]
+  },
+  {
+   "name": "R",
+   "category": "analytics",
+   "strength": 0.65,
+   "evidence": [
+    "Financial modeling coursework",
+    "Econometric analysis"
    ]
   },
   {
@@ -116,47 +132,27 @@
    "category": "analytics",
    "strength": 0.8,
    "evidence": [
-    "Grid-wide table-level usage analysis",
-    "Migration impact identification"
+    "Grid-wide database usage monitoring",
+    "Migration impact analysis tools"
    ]
   },
   {
-   "name": "Financial Modeling",
-   "category": "domain",
-   "strength": 0.85,
+   "name": "Typescript",
+   "category": "engineering",
+   "strength": 0.6,
    "evidence": [
-    "Asset class migration",
-    "Home Equity pricing elasticity",
-    "Stress analysis reporting"
-   ]
-  },
-  {
-   "name": "Docker",
-   "category": "tools",
-   "strength": 0.8,
-   "evidence": [
-    "Containerized REST APIs",
-    "Helm-managed deployment environments"
-   ]
-  },
-  {
-   "name": "Git",
-   "category": "tools",
-   "strength": 0.85,
-   "evidence": [
-    "Advanced version control in large scale repo projects",
-    "Branch management for feature-based development"
+    "Frontend and tool development for DAW project"
    ]
   }
  ],
  "target_titles": [
-  "Senior Analytics Consultant",
-  "Data Engineer (Banking/Finance)",
+  "Senior Data Engineer",
   "Quantitative Developer",
-  "Automation Engineer",
-  "Financial Systems Developer"
+  "Analytics Engineer",
+  "Systems Integration Engineer",
+  "Financial Technology Consultant"
  ],
- "version": "1e5f66deb740",
+ "version": "6279062e2fdb",
  "remote_only": true,
- "generated_at": "2026-07-25T22:19:02.097824+00:00"
+ "generated_at": "2026-07-25T22:32:29.184011+00:00"
 }
