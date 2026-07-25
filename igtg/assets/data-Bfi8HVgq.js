@@ -1,0 +1,1 @@
+const a="/igtg/",o=new Map;async function e(t){return o.has(t)||o.set(t,fetch(`${a}data/${t}`).then(s=>{if(!s.ok)throw new Error(`Failed to load ${t}: ${s.status} ${s.statusText}`);return s.json()})),o.get(t)}export{e as l};
