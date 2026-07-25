@@ -1,151 +1,164 @@
 {
- "summary": "Data-driven Business Analytics Consultant with strong engineering capabilities in Python, automation, and API development. Proven expertise in migrating legacy systems, optimizing financial modeling workflows, and operationalizing machine learning models. Highly technical builder with a demonstrated ability to architect complex systems, including AI-agent workflows, game engine integration, and custom audio software.",
+ "summary": "Data-driven professional with deep expertise in process automation, quantitative modeling, and enterprise system migrations. Highly proficient in building scalable, containerized REST APIs and orchestrating agentic workflows to streamline complex banking operations. Passionate about engineering high-performance systems, ranging from data infrastructure in finance to real-time audio and game development engines.",
  "skills": [
   {
    "name": "Python",
    "category": "engineering",
    "strength": 0.95,
    "evidence": [
-    "Production scrapers",
-    "REST API containerization",
-    "Workflow automation",
-    "Data validation frameworks"
+    "Data automation suites",
+    "REST API development",
+    "Scraper/orchestrator engineering",
+    "Large-scale data ingestion"
    ]
   },
   {
    "name": "SQL",
    "category": "analytics",
-   "strength": 0.85,
+   "strength": 0.9,
    "evidence": [
-    "MongoDB and legacy mainframe migrations",
-    "Telemetry and usage analytics design"
+    "Grid-wide usage analytics",
+    "Database telemetry",
+    "Mainframe migration data reconciliation"
    ]
   },
   {
-   "name": "Docker/Kubernetes",
+   "name": "Kubernetes/OpenShift",
    "category": "engineering",
-   "strength": 0.8,
+   "strength": 0.85,
    "evidence": [
-    "OpenShift deployment",
-    "Helm charts",
-    "Policy as Code integration"
+    "Production-grade API deployments",
+    "Helm chart management",
+    "Containerization of scraping services"
+   ]
+  },
+  {
+   "name": "REST API Development",
+   "category": "engineering",
+   "strength": 0.9,
+   "evidence": [
+    "Productionizing BERT transaction classification",
+    "Recurring transaction detection services",
+    "OpenShift hosted deployments"
    ]
   },
   {
    "name": "Power BI",
    "category": "analytics",
-   "strength": 0.75,
+   "strength": 0.8,
    "evidence": [
-    "Portfolio-wide performance dashboards",
-    "Peer Bank Analysis reporting"
-   ]
-  },
-  {
-   "name": "API Development",
-   "category": "engineering",
-   "strength": 0.85,
-   "evidence": [
-    "REST API deployment on OpenShift",
-    "BERT model operationalization",
-    "Agentic orchestration"
-   ]
-  },
-  {
-   "name": "R",
-   "category": "analytics",
-   "strength": 0.7,
-   "evidence": [
-    "Financial modeling",
-    "Quantitative forecasting models"
+    "Peer Bank Analysis Dashboard",
+    "Portfolio-wide performance reporting",
+    "Semantic model design"
    ]
   },
   {
    "name": "C++",
    "category": "engineering",
-   "strength": 0.75,
+   "strength": 0.85,
    "evidence": [
-    "Unreal Engine 5 project development",
-    "Physics-based game simulation",
-    "Custom plugin development"
+    "Unreal Engine 5 development",
+    "Physics-based game systems",
+    "Headless simulation state machines"
    ]
   },
   {
-   "name": "Automation Engineering",
+   "name": "Docker",
    "category": "engineering",
    "strength": 0.85,
    "evidence": [
-    "Multi-scraper orchestration",
-    "Pricing workflow automation",
-    "Process redesign for retail lending"
+    "CI/CD pipeline integration",
+    "Containerizing custom scrapers and legacy services"
    ]
   },
   {
-   "name": "Financial Modeling",
-   "category": "domain",
-   "strength": 0.8,
+   "name": "Data Architecture",
+   "category": "engineering",
+   "strength": 0.75,
+   "evidence": [
+    "Data integrity overhauls",
+    "Version control strategy",
+    "Large-scale portfolio migration design"
+   ]
+  },
+  {
+   "name": "Agentic & RAG Strategy",
+   "category": "engineering",
+   "strength": 0.7,
+   "evidence": [
+    "Enterprise agent workflow research",
+    "Token optimization patterns",
+    "Agent-based game architecture"
+   ]
+  },
+  {
+   "name": "Quantitative Analytics",
+   "category": "analytics",
+   "strength": 0.85,
    "evidence": [
     "CECL reserve forecasting",
-    "Stress testing",
-    "Elasticity research"
+    "Mortgage modeling",
+    "Elasticity research",
+    "Stress testing"
    ]
   },
   {
    "name": "CI/CD",
    "category": "tools",
-   "strength": 0.75,
+   "strength": 0.8,
    "evidence": [
-    "Enterprise Pipeline management",
-    "Helm deployments",
-    "Git version control practices"
+    "Policy as Code integration",
+    "Enterprise pipeline adherence",
+    "Helm deployments"
    ]
   },
   {
-   "name": "Agentic Workflows",
-   "category": "engineering",
-   "strength": 0.7,
-   "evidence": [
-    "RAG architecture implementation",
-    "Gemini API integration",
-    "Agentic orchestration in game projects"
-   ]
-  },
-  {
-   "name": "Selenium",
+   "name": "Selenium/Automation",
    "category": "tools",
-   "strength": 0.7,
+   "strength": 0.85,
    "evidence": [
     "Document sourcing automation",
-    "Headless browser scraping"
+    "Headless browser orchestration",
+    "Price workflow automation"
    ]
   },
   {
-   "name": "TypeScript",
+   "name": "Typescript",
    "category": "engineering",
    "strength": 0.65,
    "evidence": [
-    "DAW development project",
-    "Full-stack personal tool development"
+    "DAW project development",
+    "Frontend/API interface work"
    ]
   },
   {
-   "name": "Data Architecture",
-   "category": "analytics",
-   "strength": 0.75,
+   "name": "C",
+   "category": "engineering",
+   "strength": 0.7,
    "evidence": [
-    "Mainframe migration reconciliation",
-    "Semantic model design",
-    "Data integrity frameworks"
+    "Virtual Studio Technology (VST) development",
+    "Low-level DAW audio processing"
+   ]
+  },
+  {
+   "name": "Regulatory Compliance",
+   "category": "domain",
+   "strength": 0.8,
+   "evidence": [
+    "SR 11-7 model risk management",
+    "Policy as Code gates",
+    "OCC/Federal Reserve audit support"
    ]
   }
  ],
  "target_titles": [
-  "Data Engineer",
-  "Analytics Engineer",
+  "Senior Data Engineer",
   "Quantitative Developer",
+  "Solutions Architect",
   "Automation Engineer",
-  "Full Stack Developer"
+  "Backend Software Engineer"
  ],
- "version": "4a4a9551fc34",
+ "version": "d432ba51ed14",
  "remote_only": true,
- "generated_at": "2026-07-25T15:32:33.701908+00:00"
+ "generated_at": "2026-07-25T17:28:39.418808+00:00"
 }

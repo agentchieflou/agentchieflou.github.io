@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-07-25T15:44:50.954527+00:00",
- "profile_version": "4a4a9551fc34",
+ "generated_at": "2026-07-25T17:29:32.311888+00:00",
+ "profile_version": "d432ba51ed14",
  "totals": {
   "discovered_all_time": 1036,
   "live": 934
@@ -16,83 +16,145 @@
    "id": "sql",
    "name": "SQL",
    "category": "analytics",
+   "strength": 0.9
+  },
+  {
+   "id": "kubernetes openshift",
+   "name": "Kubernetes/OpenShift",
+   "category": "engineering",
    "strength": 0.85
   },
   {
-   "id": "docker kubernetes",
-   "name": "Docker/Kubernetes",
+   "id": "rest api development",
+   "name": "REST API Development",
    "category": "engineering",
-   "strength": 0.8
+   "strength": 0.9
   },
   {
    "id": "power bi",
    "name": "Power BI",
    "category": "analytics",
-   "strength": 0.75
-  },
-  {
-   "id": "api development",
-   "name": "API Development",
-   "category": "engineering",
-   "strength": 0.85
-  },
-  {
-   "id": "r",
-   "name": "R",
-   "category": "analytics",
-   "strength": 0.7
+   "strength": 0.8
   },
   {
    "id": "c",
    "name": "C++",
    "category": "engineering",
-   "strength": 0.75
+   "strength": 0.85
   },
   {
-   "id": "automation engineering",
-   "name": "Automation Engineering",
+   "id": "docker",
+   "name": "Docker",
    "category": "engineering",
    "strength": 0.85
   },
   {
-   "id": "financial modeling",
-   "name": "Financial Modeling",
-   "category": "domain",
-   "strength": 0.8
+   "id": "data architecture",
+   "name": "Data Architecture",
+   "category": "engineering",
+   "strength": 0.75
+  },
+  {
+   "id": "agentic rag strategy",
+   "name": "Agentic & RAG Strategy",
+   "category": "engineering",
+   "strength": 0.7
+  },
+  {
+   "id": "quantitative analytics",
+   "name": "Quantitative Analytics",
+   "category": "analytics",
+   "strength": 0.85
   },
   {
    "id": "ci cd",
    "name": "CI/CD",
    "category": "tools",
-   "strength": 0.75
+   "strength": 0.8
   },
   {
-   "id": "agentic workflows",
-   "name": "Agentic Workflows",
-   "category": "engineering",
-   "strength": 0.7
-  },
-  {
-   "id": "selenium",
-   "name": "Selenium",
+   "id": "selenium automation",
+   "name": "Selenium/Automation",
    "category": "tools",
-   "strength": 0.7
+   "strength": 0.85
   },
   {
    "id": "typescript",
-   "name": "TypeScript",
+   "name": "Typescript",
    "category": "engineering",
    "strength": 0.65
   },
   {
-   "id": "data architecture",
-   "name": "Data Architecture",
-   "category": "analytics",
-   "strength": 0.75
+   "id": "c",
+   "name": "C",
+   "category": "engineering",
+   "strength": 0.7
+  },
+  {
+   "id": "regulatory compliance",
+   "name": "Regulatory Compliance",
+   "category": "domain",
+   "strength": 0.8
   }
  ],
  "ghost_skills": [],
  "jobs": [
+  {
+   "id": "e69617123fa323808fc52969ac9ace1e429e760f",
+   "title": "Senior Data Scientist - Big Data R&D, Identity Graph & KYC",
+   "company": "Socure",
+   "sector": "Fintech",
+   "company_description": "Identity Verification Platform for AI Risk Decisioning | Socure\nIndustries\nFintechs\nSponsor Banks\nCrypto\nBanking\neCommerce\nSocial & Dating\nMarketplace & Gig Economy\nGaming\nWorkforce\nTelco\nIndustries\nFintechs\nSponsor Banks\nCrypto\nBanking\neCommerce\nSocial & Dating\nMarketplace & Gig Economy\nGaming\nWork",
+   "location": "Remote (US)",
+   "salary": "$170,000-$200,000",
+   "url": "https://jobs.ashbyhq.com/socure/0c2e2016-216a-4773-8503-c3e7b3178631",
+   "source": "doomers",
+   "score": 95,
+   "confidence": 0.95,
+   "why": "Perfectly matches your background in finance-adjacent identity/fraud data and agentic/graph strategies."
+  },
+  {
+   "id": "573c285b40525e80c4c0e856f1e676a5df618eaa",
+   "title": "Senior AI Engineer - Multi-Agent Frameworks",
+   "company": "ClickUp",
+   "sector": "Enterprise SaaS/DevTools",
+   "company_description": "ClickUpâ¢ | Maximize productivity â¢ Software, AI, and humans converge\nBrain AI\nProduct\nSolutions\nLearn\nPricing\nEnterprise\nGet a Demo\nLogin\nSign Up\nThe Best AI is\nSoftware to replace all software\nSave money.\nAll Apps, AI, Projects, Chat + 20 more.\nSave time.\nAll humans working together with perfec",
+   "location": "Remote (US)",
+   "salary": "$200,000-$250,000",
+   "url": "https://jobs.ashbyhq.com/ClickUp/b8ff5d05-8158-42bb-8d87-296848a0e99f",
+   "source": "doomers",
+   "score": 94,
+   "confidence": 0.95,
+   "why": "Aligns with your expertise in agentic frameworks and high-performance backend engineering."
+  },
+  {
+   "id": "83446b7e650c54ee725c666c349735876c5d330f",
+   "title": "Senior Software Engineer, ML Data",
+   "company": "Voxel",
+   "sector": "AI/ML Infra",
+   "company_description": null,
+   "location": "Remote (US)",
+   "salary": "$200,000-$240,000",
+   "url": "https://jobs.ashbyhq.com/voxel/d625aa10-6a0e-4359-b465-e23408216d3b",
+   "source": "doomers",
+   "score": 92,
+   "confidence": 0.95,
+   "why": "Excellent fit for your backend, ML-data, and containerization skills. The role directly addresses high-performance system engineering."
+  },
+  {
+   "id": "fda6e98e03289d56711a9843e8ea2a9513858090",
+   "title": "Senior/Staff Software Engineer, Data Infrastructure Group",
+   "company": "The Voleon Group",
+   "sector": "Fintech",
+   "company_description": "Voleon - Voleon Capital Management\nWe have recently updated our\nTerms of Use\nand\nPrivacy Policy\n.\nOK\nHome\nCareers\nContact\nThe Voleon Group is committed to the development and deployment of cutting-edge technologies in investment management. Our innovations in machine learning serve as the cornerston",
+   "location": "Remote (US)",
+   "salary": "$225,000-$310,000",
+   "url": "https://jobs.ashbyhq.com/voleon/06b71069-99ef-44d4-a890-b47584f35c0d",
+   "source": "doomers",
+   "score": 93,
+   "confidence": 0.9,
+   "why": "Highly relevant to your quantitative modeling background and interest in high-performance finance data infrastructure."
+  },
   {
    "id": "6724fab12f5bc78db84cce3c594361ccf83c4219",
    "title": "Data Engineer",
@@ -108,32 +170,18 @@
    "why": "A strong fit given your data engineering expertise and experience in healthcare/audio-related software, matching their core product mission."
   },
   {
-   "id": "83446b7e650c54ee725c666c349735876c5d330f",
-   "title": "Senior Software Engineer, ML Data",
-   "company": "Voxel",
-   "sector": "Other",
-   "company_description": null,
+   "id": "c5db5c02a4f30ad9585e7e4ae4b7baf85c58b000",
+   "title": "Senior Software Engineer, Data Platform",
+   "company": "SentiLink",
+   "sector": "Fintech",
+   "company_description": "SentiLink: The fraud experts\nProduct overview\nUse cases\nCompany\nResources\nAlliances\nGET STARTED\nYour partner in solving\nidentity theft.\nLeading financial institutions use SentiLink’s forward-thinking solutions to stop identity fraud at the point of application.\nGet a demo\nSee how it works\nTrusted by",
    "location": "Remote (US)",
-   "salary": "$200,000-$240,000",
-   "url": "https://jobs.ashbyhq.com/voxel/d625aa10-6a0e-4359-b465-e23408216d3b",
+   "salary": "$170,000-$170,000",
+   "url": "https://jobs.ashbyhq.com/sentilink/a2463ea0-6585-429c-95f2-10dc4a8cdae8",
    "source": "doomers",
-   "score": 90,
-   "confidence": 0.85,
-   "why": "Your ML operationalization and computer vision-adjacent skills align well with Voxel's mission to optimize industrial operations."
-  },
-  {
-   "id": "4f1bebcb7db74e857409312c26267ad925290dfc",
-   "title": "Senior Data Engineer",
-   "company": "LiveKit",
-   "sector": "AI/ML Infra",
-   "company_description": "Build voice, video, and physical AI | LiveKit\nSkip to main content\nPlaceholder text for banner height reservation on mobile\nProducts\nChevron Icon\nResources\nChevron Icon\nCompany\nChevron Icon\nPricing\nGitHub\nlivekit\n/\nagents\n11.5\nK\nagents\n11.5\nK\nlivekit\n19.9\nK\nContact sales\nStart building\nBuild\nvoice,\n",
-   "location": "Remote (US)",
-   "salary": "$200,000-$250,000",
-   "url": "https://jobs.ashbyhq.com/LiveKit/10c672df-37aa-412e-8011-3408f517f672",
-   "source": "doomers",
-   "score": 88,
-   "confidence": 0.85,
-   "why": "Your experience with game engine integration and custom audio software is a unique and valuable asset for this role's specific domain."
+   "score": 91,
+   "confidence": 0.9,
+   "why": "Strong fit for a finance-focused data platform role requiring real-time APIs and fraud/identity expertise."
   },
   {
    "id": "f49811e042516ba833318cca036208ceba3bbc68",
@@ -148,20 +196,6 @@
    "score": 88,
    "confidence": 0.85,
    "why": "Matches the role requirements well, though it is slightly below the candidate's likely seniority level."
-  },
-  {
-   "id": "3d41af2658adf29eda7f97012e113522d40ffd01",
-   "title": "Data Analytics IT Architect",
-   "company": "Medline Industries, LP",
-   "sector": "Enterprise SaaS/DevTools",
-   "company_description": null,
-   "location": "Remote (US)",
-   "salary": "$134,000-$201,000",
-   "url": "https://medline.wd5.myworkdayjobs.com/medline/job/Northbrook-Illinois/Data-Analytics-IT-Architect_R2607086",
-   "source": "doomers",
-   "score": 85,
-   "confidence": 0.8,
-   "why": "A strong architectural role that rewards your expertise in complex systems migration and data architecture."
   },
   {
    "id": "ac8078be8f6519be3a08081b96936bc19fb5620c",
@@ -218,60 +252,146 @@
    "score": 78,
    "confidence": 0.7,
    "why": "Well-suited to your skills in Python and data engineering for a growing company in the marketing AI space."
+  },
+  {
+   "id": "1f0d7ef571cb9b612a52caa5a5996e6b448de668",
+   "title": "Senior Data Engineer",
+   "company": "abbott",
+   "sector": "Healthcare",
+   "company_description": null,
+   "location": "Remote (US)",
+   "salary": "$75,300-$150,700",
+   "url": "https://abbott.wd5.myworkdayjobs.com/abbottcareers2/job/United-States---Illinois---Abbott-Park/Senior-Data-Engineer_31117631",
+   "source": "doomers",
+   "score": 40,
+   "confidence": 0.8,
+   "why": "Salary range is well below your $130,000 minimum threshold, despite some alignment in skills."
   }
  ],
  "edges": [
   {
-   "skill": "python",
-   "job": "6724fab12f5bc78db84cce3c594361ccf83c4219",
-   "weight": 1.0,
-   "missing": false
-  },
-  {
    "skill": "sql",
-   "job": "6724fab12f5bc78db84cce3c594361ccf83c4219",
-   "weight": 0.88,
-   "missing": false
-  },
-  {
-   "skill": "api development",
-   "job": "6724fab12f5bc78db84cce3c594361ccf83c4219",
-   "weight": 0.76,
-   "missing": false
-  },
-  {
-   "skill": "python",
-   "job": "83446b7e650c54ee725c666c349735876c5d330f",
+   "job": "e69617123fa323808fc52969ac9ace1e429e760f",
    "weight": 1.0,
    "missing": false
   },
   {
-   "skill": "sql",
-   "job": "83446b7e650c54ee725c666c349735876c5d330f",
-   "weight": 0.88,
-   "missing": false
-  },
-  {
-   "skill": "docker kubernetes",
-   "job": "83446b7e650c54ee725c666c349735876c5d330f",
-   "weight": 0.76,
-   "missing": false
-  },
-  {
    "skill": "python",
-   "job": "4f1bebcb7db74e857409312c26267ad925290dfc",
-   "weight": 1.0,
-   "missing": false
-  },
-  {
-   "skill": "api development",
-   "job": "4f1bebcb7db74e857409312c26267ad925290dfc",
+   "job": "e69617123fa323808fc52969ac9ace1e429e760f",
    "weight": 0.88,
    "missing": false
   },
   {
    "skill": "data architecture",
-   "job": "4f1bebcb7db74e857409312c26267ad925290dfc",
+   "job": "e69617123fa323808fc52969ac9ace1e429e760f",
+   "weight": 0.76,
+   "missing": false
+  },
+  {
+   "skill": "agentic rag strategy",
+   "job": "e69617123fa323808fc52969ac9ace1e429e760f",
+   "weight": 0.64,
+   "missing": false
+  },
+  {
+   "skill": "regulatory compliance",
+   "job": "e69617123fa323808fc52969ac9ace1e429e760f",
+   "weight": 0.52,
+   "missing": false
+  },
+  {
+   "skill": "python",
+   "job": "573c285b40525e80c4c0e856f1e676a5df618eaa",
+   "weight": 1.0,
+   "missing": false
+  },
+  {
+   "skill": "rest api development",
+   "job": "573c285b40525e80c4c0e856f1e676a5df618eaa",
+   "weight": 0.88,
+   "missing": false
+  },
+  {
+   "skill": "agentic rag strategy",
+   "job": "573c285b40525e80c4c0e856f1e676a5df618eaa",
+   "weight": 0.76,
+   "missing": false
+  },
+  {
+   "skill": "python",
+   "job": "83446b7e650c54ee725c666c349735876c5d330f",
+   "weight": 1.0,
+   "missing": false
+  },
+  {
+   "skill": "docker",
+   "job": "83446b7e650c54ee725c666c349735876c5d330f",
+   "weight": 0.88,
+   "missing": false
+  },
+  {
+   "skill": "data architecture",
+   "job": "83446b7e650c54ee725c666c349735876c5d330f",
+   "weight": 0.76,
+   "missing": false
+  },
+  {
+   "skill": "sql",
+   "job": "83446b7e650c54ee725c666c349735876c5d330f",
+   "weight": 0.64,
+   "missing": false
+  },
+  {
+   "skill": "python",
+   "job": "fda6e98e03289d56711a9843e8ea2a9513858090",
+   "weight": 1.0,
+   "missing": false
+  },
+  {
+   "skill": "sql",
+   "job": "fda6e98e03289d56711a9843e8ea2a9513858090",
+   "weight": 0.88,
+   "missing": false
+  },
+  {
+   "skill": "quantitative analytics",
+   "job": "fda6e98e03289d56711a9843e8ea2a9513858090",
+   "weight": 0.76,
+   "missing": false
+  },
+  {
+   "skill": "c",
+   "job": "fda6e98e03289d56711a9843e8ea2a9513858090",
+   "weight": 0.64,
+   "missing": false
+  },
+  {
+   "skill": "python",
+   "job": "6724fab12f5bc78db84cce3c594361ccf83c4219",
+   "weight": 1.0,
+   "missing": false
+  },
+  {
+   "skill": "sql",
+   "job": "6724fab12f5bc78db84cce3c594361ccf83c4219",
+   "weight": 0.88,
+   "missing": false
+  },
+  {
+   "skill": "rest api development",
+   "job": "c5db5c02a4f30ad9585e7e4ae4b7baf85c58b000",
+   "weight": 1.0,
+   "missing": false
+  },
+  {
+   "skill": "sql",
+   "job": "c5db5c02a4f30ad9585e7e4ae4b7baf85c58b000",
+   "weight": 0.88,
+   "missing": false
+  },
+  {
+   "skill": "data architecture",
+   "job": "c5db5c02a4f30ad9585e7e4ae4b7baf85c58b000",
    "weight": 0.76,
    "missing": false
   },
@@ -294,39 +414,9 @@
    "missing": false
   },
   {
-   "skill": "sql",
-   "job": "3d41af2658adf29eda7f97012e113522d40ffd01",
-   "weight": 1.0,
-   "missing": false
-  },
-  {
-   "skill": "data architecture",
-   "job": "3d41af2658adf29eda7f97012e113522d40ffd01",
-   "weight": 0.88,
-   "missing": false
-  },
-  {
-   "skill": "python",
-   "job": "3d41af2658adf29eda7f97012e113522d40ffd01",
-   "weight": 0.76,
-   "missing": false
-  },
-  {
    "skill": "python",
    "job": "ac8078be8f6519be3a08081b96936bc19fb5620c",
    "weight": 1.0,
-   "missing": false
-  },
-  {
-   "skill": "api development",
-   "job": "ac8078be8f6519be3a08081b96936bc19fb5620c",
-   "weight": 0.88,
-   "missing": false
-  },
-  {
-   "skill": "agentic workflows",
-   "job": "ac8078be8f6519be3a08081b96936bc19fb5620c",
-   "weight": 0.76,
    "missing": false
   },
   {
@@ -360,12 +450,6 @@
    "missing": false
   },
   {
-   "skill": "financial modeling",
-   "job": "94949244807215c39162f10a700499c9c65aa2c9",
-   "weight": 0.76,
-   "missing": false
-  },
-  {
    "skill": "python",
    "job": "311291bd58119c1104f1f12253eaa06fbb42d9b6",
    "weight": 1.0,
@@ -378,8 +462,20 @@
    "missing": false
   },
   {
-   "skill": "api development",
-   "job": "311291bd58119c1104f1f12253eaa06fbb42d9b6",
+   "skill": "sql",
+   "job": "1f0d7ef571cb9b612a52caa5a5996e6b448de668",
+   "weight": 1.0,
+   "missing": false
+  },
+  {
+   "skill": "python",
+   "job": "1f0d7ef571cb9b612a52caa5a5996e6b448de668",
+   "weight": 0.88,
+   "missing": false
+  },
+  {
+   "skill": "ci cd",
+   "job": "1f0d7ef571cb9b612a52caa5a5996e6b448de668",
    "weight": 0.76,
    "missing": false
   }
