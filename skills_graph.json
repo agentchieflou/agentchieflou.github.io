@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-07-25T21:29:35.219796+00:00",
- "profile_version": "ba178febd385",
+ "generated_at": "2026-07-25T21:56:00.064103+00:00",
+ "profile_version": "5c7413d71a96",
  "totals": {
   "discovered_all_time": 1036,
   "live": 934
@@ -13,50 +13,68 @@
    "strength": 0.95
   },
   {
-   "id": "sql",
-   "name": "SQL",
-   "category": "analytics",
+   "id": "rest api development",
+   "name": "REST API Development",
+   "category": "engineering",
    "strength": 0.9
   },
   {
-   "id": "docker",
-   "name": "Docker",
+   "id": "sql",
+   "name": "SQL",
+   "category": "analytics",
+   "strength": 0.85
+  },
+  {
+   "id": "docker kubernetes openshift",
+   "name": "Docker/Kubernetes/OpenShift",
    "category": "engineering",
    "strength": 0.85
   },
   {
-   "id": "kubernetes openshift",
-   "name": "Kubernetes/OpenShift",
+   "id": "data automation",
+   "name": "Data Automation",
    "category": "engineering",
-   "strength": 0.8
+   "strength": 0.9
   },
   {
-   "id": "power bi",
-   "name": "Power BI",
-   "category": "analytics",
-   "strength": 0.75
+   "id": "financial modeling",
+   "name": "Financial Modeling",
+   "category": "domain",
+   "strength": 0.8
   },
   {
    "id": "c",
    "name": "C++",
    "category": "engineering",
-   "strength": 0.7
+   "strength": 0.75
   },
   {
-   "id": "api design",
-   "name": "API Design",
-   "category": "engineering",
-   "strength": 0.85
+   "id": "power bi",
+   "name": "Power BI",
+   "category": "analytics",
+   "strength": 0.8
   },
   {
    "id": "ci cd",
    "name": "CI/CD",
    "category": "engineering",
-   "strength": 0.8
+   "strength": 0.75
   },
   {
-   "id": "quantitative finance",
-   "name": "Quantitative Finance",
+   "id": "telemetry analytics",
+   "name": "Telemetry & Analytics",
+   "category": "analytics",
+   "strength": 0.85
+  },
+  {
+   "id": "typescript",
+   "name": "TypeScript",
+   "category": "engineering",
+   "strength": 0.65
+  },
+  {
+   "id": "quantitative analysis",
+   "name": "Quantitative Analysis",
    "category": "domain",
    "strength": 0.85
   },
@@ -67,22 +85,16 @@
    "strength": 0.75
   },
   {
-   "id": "r",
-   "name": "R",
-   "category": "analytics",
-   "strength": 0.65
-  },
-  {
-   "id": "selenium",
-   "name": "Selenium",
-   "category": "tools",
-   "strength": 0.7
-  },
-  {
    "id": "mainframe migration",
    "name": "Mainframe Migration",
    "category": "domain",
    "strength": 0.8
+  },
+  {
+   "id": "r",
+   "name": "R",
+   "category": "analytics",
+   "strength": 0.6
   }
  ],
  "ghost_skills": [],
@@ -100,20 +112,6 @@
    "score": 94,
    "confidence": 0.95,
    "why": "Aligns with your expertise in agentic frameworks and high-performance backend engineering."
-  },
-  {
-   "id": "f49811e042516ba833318cca036208ceba3bbc68",
-   "title": "Analytics Engineer",
-   "company": "axios",
-   "sector": "Media/Gaming",
-   "company_description": null,
-   "location": "Remote (US)",
-   "salary": "$130,000-$155,000",
-   "url": "https://job-boards.greenhouse.io/axios/jobs/7799102",
-   "source": "doomers",
-   "score": 88,
-   "confidence": 0.85,
-   "why": "Matches the role requirements well, though it is slightly below the candidate's likely seniority level."
   },
   {
    "id": "ac8078be8f6519be3a08081b96936bc19fb5620c",
@@ -138,21 +136,9 @@
    "missing": false
   },
   {
-   "skill": "python",
-   "job": "f49811e042516ba833318cca036208ceba3bbc68",
-   "weight": 1.0,
-   "missing": false
-  },
-  {
-   "skill": "sql",
-   "job": "f49811e042516ba833318cca036208ceba3bbc68",
+   "skill": "rest api development",
+   "job": "573c285b40525e80c4c0e856f1e676a5df618eaa",
    "weight": 0.88,
-   "missing": false
-  },
-  {
-   "skill": "power bi",
-   "job": "f49811e042516ba833318cca036208ceba3bbc68",
-   "weight": 0.76,
    "missing": false
   },
   {

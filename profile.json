@@ -1,94 +1,123 @@
 {
- "summary": "Data-driven professional with a strong foundation in quantitative finance and automated systems engineering. Expert in migrating legacy infrastructure to modern, containerized REST architectures with a deep focus on process optimization and agentic workflows. Proven ability to bridge the gap between complex financial modeling and scalable software deployment in enterprise environments.",
+ "summary": "Results-oriented Business Analytics Consultant with a strong track record in legacy system migrations, process automation, and production-grade API development. Expert at bridging the gap between quantitative financial modeling and modern software engineering using Python, containerization, and orchestration tools. Deeply experienced in designing agentic workflows and telemetry-driven analytics to improve operational efficiency in high-stakes financial environments.",
  "skills": [
   {
    "name": "Python",
    "category": "engineering",
    "strength": 0.95,
    "evidence": [
-    "Data parsing and scraper orchestration",
+    "Automation suites",
     "REST API development",
-    "Automation of pricing workflows",
-    "Agentic architecture experimentation"
+    "Data parsing",
+    "Agentic orchestration"
+   ]
+  },
+  {
+   "name": "REST API Development",
+   "category": "engineering",
+   "strength": 0.9,
+   "evidence": [
+    "Containerized production-grade APIs",
+    "OpenShift deployments",
+    "API-based transaction classification"
    ]
   },
   {
    "name": "SQL",
    "category": "analytics",
-   "strength": 0.9,
+   "strength": 0.85,
    "evidence": [
-    "MongoDB and legacy mainframe reconciliation",
-    "Grid-wide database telemetry",
-    "Data architecture overhauls"
+    "Database telemetry",
+    "Mainframe migration data reconciliation",
+    "Complex data querying"
    ]
   },
   {
-   "name": "Docker",
+   "name": "Docker/Kubernetes/OpenShift",
    "category": "engineering",
    "strength": 0.85,
    "evidence": [
-    "Containerization of custom scrapers",
-    "REST API deployment on OpenShift"
+    "Helm deployments",
+    "Policy as Code guidelines",
+    "Containerized service orchestration"
    ]
   },
   {
-   "name": "Kubernetes/OpenShift",
+   "name": "Data Automation",
    "category": "engineering",
+   "strength": 0.9,
+   "evidence": [
+    "Multi-scraper suites",
+    "Headless browser integration",
+    "Document process management"
+   ]
+  },
+  {
+   "name": "Financial Modeling",
+   "category": "domain",
    "strength": 0.8,
    "evidence": [
-    "Helm deployment management",
-    "Policy as Code compliance",
-    "Production-grade API hosting"
-   ]
-  },
-  {
-   "name": "Power BI",
-   "category": "analytics",
-   "strength": 0.75,
-   "evidence": [
-    "Semantic modeling",
-    "Portfolio-wide performance reporting",
-    "Peer Bank Analysis Dashboards"
+    "CECL reserve forecasting",
+    "Mortgage/Home Equity pricing",
+    "Competitor stress analysis"
    ]
   },
   {
    "name": "C++",
    "category": "engineering",
-   "strength": 0.7,
+   "strength": 0.75,
    "evidence": [
-    "Unreal Engine game development",
-    "Physics-based system design",
-    "Professional-grade VST audio plugin architecture"
+    "Unreal Engine 5 development",
+    "Physics-based game simulation",
+    "Custom plugin development"
    ]
   },
   {
-   "name": "API Design",
-   "category": "engineering",
-   "strength": 0.85,
+   "name": "Power BI",
+   "category": "analytics",
+   "strength": 0.8,
    "evidence": [
-    "REST API deployment",
-    "Headless browser integration",
-    "Transaction identification services"
+    "Semantic modeling",
+    "Portfolio-wide performance reporting",
+    "Industry stressor dashboards"
    ]
   },
   {
    "name": "CI/CD",
    "category": "engineering",
-   "strength": 0.8,
+   "strength": 0.75,
    "evidence": [
-    "Enterprise-grade pipeline implementation",
-    "Automated environment testing",
+    "Enterprise CI/CD pipeline management",
     "Policy as Code integration"
    ]
   },
   {
-   "name": "Quantitative Finance",
+   "name": "Telemetry & Analytics",
+   "category": "analytics",
+   "strength": 0.85,
+   "evidence": [
+    "Grid-wide usage analytics",
+    "Table-level usage monitoring",
+    "Migration impact analysis"
+   ]
+  },
+  {
+   "name": "TypeScript",
+   "category": "engineering",
+   "strength": 0.65,
+   "evidence": [
+    "DAW development projects",
+    "Frontend utility development"
+   ]
+  },
+  {
+   "name": "Quantitative Analysis",
    "category": "domain",
    "strength": 0.85,
    "evidence": [
-    "CECL reserve forecasting",
-    "Residential mortgage modeling",
-    "Competitor stress analysis"
+    "Econometrics coursework",
+    "Elasticity research",
+    "Causal research for Federal Reserve"
    ]
   },
   {
@@ -96,27 +125,9 @@
    "category": "engineering",
    "strength": 0.75,
    "evidence": [
-    "Orchestrator development",
-    "RAG strategy research",
-    "Agentic game simulation project"
-   ]
-  },
-  {
-   "name": "R",
-   "category": "analytics",
-   "strength": 0.65,
-   "evidence": [
-    "Financial modeling coursework",
-    "Advanced econometric analysis"
-   ]
-  },
-  {
-   "name": "Selenium",
-   "category": "tools",
-   "strength": 0.7,
-   "evidence": [
-    "Multi-scraper suite development",
-    "Proof-of-concept document sourcing"
+    "RAG architecture research",
+    "AI-driven game simulation",
+    "Agent orchestration systems"
    ]
   },
   {
@@ -124,20 +135,29 @@
    "category": "domain",
    "strength": 0.8,
    "evidence": [
-    "Legacy asset class migration",
-    "Data field reconciliation framework",
-    "Database impact analysis"
+    "Asset class migration",
+    "Legacy system data reconciliation",
+    "Mapping validation"
+   ]
+  },
+  {
+   "name": "R",
+   "category": "analytics",
+   "strength": 0.6,
+   "evidence": [
+    "Academic background",
+    "Prior financial modeling experience"
    ]
   }
  ],
  "target_titles": [
-  "Software Engineer (Backend)",
   "Quantitative Developer",
-  "Data Engineer",
   "Analytics Engineer",
-  "Platform Engineer"
+  "Software Engineer (Data/Backend)",
+  "Automation Engineer",
+  "Financial Systems Engineer"
  ],
- "version": "ba178febd385",
+ "version": "5c7413d71a96",
  "remote_only": true,
- "generated_at": "2026-07-25T21:29:04.091162+00:00"
+ "generated_at": "2026-07-25T21:52:56.480146+00:00"
 }
