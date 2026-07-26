@@ -1,35 +1,25 @@
 {
- "summary": "Michael is a highly analytical Business Analytics Consultant with extensive experience in banking infrastructure, legacy mainframe migration, and process automation. He leverages a robust toolkit of Python, containerization technologies (OpenShift/Docker), and API development to deliver high-impact engineering solutions. His portfolio demonstrates a sophisticated ability to blend quantitative financial domain expertise with modern software engineering practices and agentic workflow integration.",
+ "summary": "Michael is a versatile Business Analytics Consultant with deep expertise in process automation, quantitative modeling, and enterprise system migrations. He bridges the gap between complex financial engineering and modern software engineering by leveraging Python, C++, and containerized microservices to streamline operations. He is highly focused on implementing agentic workflows and automated orchestration to solve high-impact enterprise challenges in fully remote environments.",
  "skills": [
   {
    "name": "Python",
    "category": "engineering",
-   "strength": 0.95,
+   "strength": 0.9,
    "evidence": [
-    "Production-grade REST API deployment",
-    "Multi-scraper orchestration",
-    "Headless browser automation",
-    "Financial modeling scripts"
+    "Automation suites",
+    "API development",
+    "Data validation frameworks",
+    "Scripting for financial modeling"
    ]
   },
   {
    "name": "SQL",
    "category": "analytics",
-   "strength": 0.9,
-   "evidence": [
-    "Large-scale data reconciliation",
-    "Grid-wide database telemetry",
-    "Mainframe migration data mapping"
-   ]
-  },
-  {
-   "name": "Docker",
-   "category": "engineering",
    "strength": 0.85,
    "evidence": [
-    "Containerizing custom scrapers",
-    "Deploying REST APIs on OpenShift",
-    "Production CI/CD compliance"
+    "Mainframe migration reconciliation",
+    "Telemetry database management",
+    "CECL forecasting"
    ]
   },
   {
@@ -37,9 +27,9 @@
    "category": "engineering",
    "strength": 0.8,
    "evidence": [
-    "Helm deployments",
-    "Policy as Code compliance",
-    "Enterprise container orchestration"
+    "Production API containerization",
+    "Helm deployment management",
+    "Policy as Code compliance"
    ]
   },
   {
@@ -47,9 +37,27 @@
    "category": "engineering",
    "strength": 0.75,
    "evidence": [
-    "Unreal Engine 5 project development",
-    "Physics-based game simulation",
-    "Memory-efficient systems programming"
+    "Unreal Engine game development",
+    "Virtual Studio Technology (VST) audio plugin architecture"
+   ]
+  },
+  {
+   "name": "Power BI",
+   "category": "analytics",
+   "strength": 0.7,
+   "evidence": [
+    "Portfolio-wide performance reporting",
+    "Peer Bank Analysis Dashboards"
+   ]
+  },
+  {
+   "name": "Docker",
+   "category": "engineering",
+   "strength": 0.8,
+   "evidence": [
+    "Containerizing scrapers",
+    "REST API deployment",
+    "CI/CD pipeline integration"
    ]
   },
   {
@@ -57,100 +65,94 @@
    "category": "engineering",
    "strength": 0.85,
    "evidence": [
-    "REST API design",
-    "Containerized service integration",
-    "Automated data retrieval endpoints"
-   ]
-  },
-  {
-   "name": "Quantitative Analytics",
-   "category": "analytics",
-   "strength": 0.9,
-   "evidence": [
-    "CECL reserve forecasting",
-    "Stress testing and peer bank analysis",
-    "Econometric model validation (SR 11-7)"
-   ]
-  },
-  {
-   "name": "Power BI",
-   "category": "tools",
-   "strength": 0.8,
-   "evidence": [
-    "Semantic modeling",
-    "Portfolio-wide performance reporting",
-    "Executive dashboards"
-   ]
-  },
-  {
-   "name": "CI/CD",
-   "category": "engineering",
-   "strength": 0.75,
-   "evidence": [
-    "Enterprise pipeline management",
-    "Automated deployments",
-    "Policy-as-Code integration"
-   ]
-  },
-  {
-   "name": "Data Architecture",
-   "category": "engineering",
-   "strength": 0.7,
-   "evidence": [
-    "Mainframe migration reconciliation",
-    "Version control overhauls",
-    "Database telemetry design"
-   ]
-  },
-  {
-   "name": "Automated Testing",
-   "category": "engineering",
-   "strength": 0.7,
-   "evidence": [
-    "Functional gym for AI simulation",
-    "Data validation frameworks",
-    "Model back-testing"
+    "REST API deployment on OpenShift",
+    "Headless browser scrapers",
+    "Transaction classification services"
    ]
   },
   {
    "name": "Financial Modeling",
    "category": "domain",
-   "strength": 0.85,
+   "strength": 0.8,
    "evidence": [
-    "CECL compliance",
-    "Home equity pricing elasticity",
-    "M&A data integration"
+    "CECL reserve forecasting",
+    "Residential mortgage modeling",
+    "Elasticity research"
+   ]
+  },
+  {
+   "name": "CI/CD Pipelines",
+   "category": "tools",
+   "strength": 0.75,
+   "evidence": [
+    "Enterprise Policy as Code implementation",
+    "Helm deployments",
+    "Automation workflow triggers"
+   ]
+  },
+  {
+   "name": "Selenium",
+   "category": "tools",
+   "strength": 0.7,
+   "evidence": [
+    "Proof-of-concept document sourcing",
+    "High-throughput headless browser connections"
+   ]
+  },
+  {
+   "name": "Quantitative Analytics",
+   "category": "analytics",
+   "strength": 0.8,
+   "evidence": [
+    "Stress testing",
+    "SR 11-7 regulatory compliance",
+    "Asset class migration reconciliation"
    ]
   },
   {
    "name": "Agentic Workflows",
    "category": "engineering",
-   "strength": 0.7,
+   "strength": 0.65,
    "evidence": [
+    "AgenticLink plugin development",
     "RAG architecture research",
-    "AI-driven game orchestration",
-    "Process automation strategies"
+    "Resource-efficient AI implementation"
    ]
   },
   {
-   "name": "C",
-   "category": "engineering",
-   "strength": 0.65,
+   "name": "Hadoop",
+   "category": "analytics",
+   "strength": 0.6,
    "evidence": [
-    "DAW development (V-Loudio-T)",
-    "Plugin ABI design",
-    "Memory and GL management"
+    "Large-scale data handling in banking environments"
+   ]
+  },
+  {
+   "name": "TypeScript",
+   "category": "engineering",
+   "strength": 0.6,
+   "evidence": [
+    "NoProd DAW development project"
+   ]
+  },
+  {
+   "name": "Mainframe Migration",
+   "category": "domain",
+   "strength": 0.85,
+   "evidence": [
+    "Asset class migration projects",
+    "Data field mapping for legacy systems"
    ]
   }
  ],
  "target_titles": [
   "Quantitative Developer",
-  "Data Engineer",
-  "Financial Systems Engineer",
-  "Backend Software Engineer",
-  "Analytics Engineer"
+  "Analytics Engineer",
+  "Automation Engineer",
+  "Financial Systems Consultant",
+  "Software Engineer (Backend/Infrastructure)"
  ],
- "version": "dbba95ceb408",
+ "version": "5aed0f714dc2",
  "remote_only": true,
- "generated_at": "2026-07-26T03:18:47.014168+00:00"
+ "generated_at": "2026-07-26T11:36:58.140397+00:00"
 }

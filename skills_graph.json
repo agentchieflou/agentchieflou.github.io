@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-07-26T03:19:41.973602+00:00",
- "profile_version": "dbba95ceb408",
+ "generated_at": "2026-07-26T11:37:29.102280+00:00",
+ "profile_version": "5aed0f714dc2",
  "totals": {
   "discovered_all_time": 1036,
   "live": 934
@@ -10,18 +10,12 @@
    "id": "python",
    "name": "Python",
    "category": "engineering",
-   "strength": 0.95
+   "strength": 0.9
   },
   {
    "id": "sql",
    "name": "SQL",
    "category": "analytics",
-   "strength": 0.9
-  },
-  {
-   "id": "docker",
-   "name": "Docker",
-   "category": "engineering",
    "strength": 0.85
   },
   {
@@ -37,76 +31,74 @@
    "strength": 0.75
   },
   {
+   "id": "power bi",
+   "name": "Power BI",
+   "category": "analytics",
+   "strength": 0.7
+  },
+  {
+   "id": "docker",
+   "name": "Docker",
+   "category": "engineering",
+   "strength": 0.8
+  },
+  {
    "id": "api development",
    "name": "API Development",
    "category": "engineering",
    "strength": 0.85
   },
   {
-   "id": "quantitative analytics",
-   "name": "Quantitative Analytics",
-   "category": "analytics",
-   "strength": 0.9
-  },
-  {
-   "id": "power bi",
-   "name": "Power BI",
-   "category": "tools",
-   "strength": 0.8
-  },
-  {
-   "id": "ci cd",
-   "name": "CI/CD",
-   "category": "engineering",
-   "strength": 0.75
-  },
-  {
-   "id": "data architecture",
-   "name": "Data Architecture",
-   "category": "engineering",
-   "strength": 0.7
-  },
-  {
-   "id": "automated testing",
-   "name": "Automated Testing",
-   "category": "engineering",
-   "strength": 0.7
-  },
-  {
    "id": "financial modeling",
    "name": "Financial Modeling",
    "category": "domain",
-   "strength": 0.85
+   "strength": 0.8
+  },
+  {
+   "id": "ci cd pipelines",
+   "name": "CI/CD Pipelines",
+   "category": "tools",
+   "strength": 0.75
+  },
+  {
+   "id": "selenium",
+   "name": "Selenium",
+   "category": "tools",
+   "strength": 0.7
+  },
+  {
+   "id": "quantitative analytics",
+   "name": "Quantitative Analytics",
+   "category": "analytics",
+   "strength": 0.8
   },
   {
    "id": "agentic workflows",
    "name": "Agentic Workflows",
    "category": "engineering",
-   "strength": 0.7
+   "strength": 0.65
   },
   {
-   "id": "c",
-   "name": "C",
+   "id": "hadoop",
+   "name": "Hadoop",
+   "category": "analytics",
+   "strength": 0.6
+  },
+  {
+   "id": "typescript",
+   "name": "TypeScript",
    "category": "engineering",
-   "strength": 0.65
+   "strength": 0.6
+  },
+  {
+   "id": "mainframe migration",
+   "name": "Mainframe Migration",
+   "category": "domain",
+   "strength": 0.85
   }
  ],
  "ghost_skills": [],
  "jobs": [
-  {
-   "id": "ac8078be8f6519be3a08081b96936bc19fb5620c",
-   "title": "Staff AI Engineer - Multi-Agent Frameworks",
-   "company": "ClickUp",
-   "sector": "Enterprise SaaS/DevTools",
-   "company_description": "ClickUpâ¢ | Maximize productivity â¢ Software, AI, and humans converge\nBrain AI\nProduct\nSolutions\nLearn\nPricing\nEnterprise\nGet a Demo\nLogin\nSign Up\nThe Best AI is\nSoftware to replace all software\nSave money.\nAll Apps, AI, Projects, Chat + 20 more.\nSave time.\nAll humans working together with perfec",
-   "location": "Remote (US)",
-   "salary": "$250,000-$300,000",
-   "url": "https://jobs.ashbyhq.com/ClickUp/1203026f-5c19-45e5-a0c2-b5cc0338a1e8",
-   "source": "doomers",
-   "score": 90,
-   "confidence": 0.85,
-   "why": "Excellent alignment with your expertise in agentic frameworks and platform-level AI work. High salary and remote-friendly nature match your requirements."
-  },
   {
    "id": "accf6a5f0b8162d3688e326dfc6bc18c8af42296",
    "title": "Senior Machine Learning Engineer",
@@ -120,34 +112,6 @@
    "score": 80,
    "confidence": 0.9,
    "why": "Strong technical fit for backend and data systems, though less finance-specific than other roles."
-  },
-  {
-   "id": "f09c07b73f12baa905eb8c3362ddb556c2886b82",
-   "title": "Software Engineer, AI Automations (Senior)",
-   "company": "Kustomer",
-   "sector": "Enterprise SaaS/DevTools",
-   "company_description": "AI Customer Service Platform & CRM | Kustomer\nProduct\nWhy Kustomer\nCustomers\nResources\nPricing\nLogin\nSchedule Demo\nYour intelligent CX\nTurn customer interactions into lasting relationships and real business outcomes, with AI that understands context, learns continuously, and optimizes for what matte",
-   "location": "Remote (US)",
-   "salary": "$130,000-$215,000",
-   "url": "https://jobs.ashbyhq.com/Kustomer/a3cf1a70-bc78-4efc-9467-70aa3bf27e07",
-   "source": "doomers",
-   "score": 82,
-   "confidence": 0.8,
-   "why": "Strong fit for 'AI Automations' given your background in process automation and backend deployment."
-  },
-  {
-   "id": "b5603ba6e81a7dd8716d270e74f82ffd512fa814",
-   "title": "Software Engineer, AI (Senior, Back End)",
-   "company": "Kustomer",
-   "sector": "Enterprise SaaS/DevTools",
-   "company_description": "AI Customer Service Platform & CRM | Kustomer\nProduct\nWhy Kustomer\nCustomers\nResources\nPricing\nLogin\nSchedule Demo\nYour intelligent CX\nTurn customer interactions into lasting relationships and real business outcomes, with AI that understands context, learns continuously, and optimizes for what matte",
-   "location": "Remote (US)",
-   "salary": "$130,000-$215,000",
-   "url": "https://jobs.ashbyhq.com/Kustomer/5f7702a8-ae96-422d-9b4c-c69c5d6f476b",
-   "source": "doomers",
-   "score": 80,
-   "confidence": 0.8,
-   "why": "Strong fit for backend and AI engineering. Kustomer is a CRM platform, which aligns with your experience in data-intensive systems."
   },
   {
    "id": "c5db5c02a4f30ad9585e7e4ae4b7baf85c58b000",
@@ -181,24 +145,6 @@
  "edges": [
   {
    "skill": "python",
-   "job": "ac8078be8f6519be3a08081b96936bc19fb5620c",
-   "weight": 1.0,
-   "missing": false
-  },
-  {
-   "skill": "agentic workflows",
-   "job": "ac8078be8f6519be3a08081b96936bc19fb5620c",
-   "weight": 0.88,
-   "missing": false
-  },
-  {
-   "skill": "api development",
-   "job": "ac8078be8f6519be3a08081b96936bc19fb5620c",
-   "weight": 0.76,
-   "missing": false
-  },
-  {
-   "skill": "python",
    "job": "accf6a5f0b8162d3688e326dfc6bc18c8af42296",
    "weight": 1.0,
    "missing": false
@@ -216,48 +162,6 @@
    "missing": false
   },
   {
-   "skill": "ci cd",
-   "job": "accf6a5f0b8162d3688e326dfc6bc18c8af42296",
-   "weight": 0.64,
-   "missing": false
-  },
-  {
-   "skill": "python",
-   "job": "f09c07b73f12baa905eb8c3362ddb556c2886b82",
-   "weight": 0.88,
-   "missing": false
-  },
-  {
-   "skill": "api development",
-   "job": "f09c07b73f12baa905eb8c3362ddb556c2886b82",
-   "weight": 0.76,
-   "missing": false
-  },
-  {
-   "skill": "ci cd",
-   "job": "f09c07b73f12baa905eb8c3362ddb556c2886b82",
-   "weight": 0.64,
-   "missing": false
-  },
-  {
-   "skill": "python",
-   "job": "b5603ba6e81a7dd8716d270e74f82ffd512fa814",
-   "weight": 1.0,
-   "missing": false
-  },
-  {
-   "skill": "api development",
-   "job": "b5603ba6e81a7dd8716d270e74f82ffd512fa814",
-   "weight": 0.88,
-   "missing": false
-  },
-  {
-   "skill": "sql",
-   "job": "b5603ba6e81a7dd8716d270e74f82ffd512fa814",
-   "weight": 0.64,
-   "missing": false
-  },
-  {
    "skill": "sql",
    "job": "c5db5c02a4f30ad9585e7e4ae4b7baf85c58b000",
    "weight": 1.0,
@@ -273,12 +177,6 @@
    "skill": "api development",
    "job": "c5db5c02a4f30ad9585e7e4ae4b7baf85c58b000",
    "weight": 0.64,
-   "missing": false
-  },
-  {
-   "skill": "ci cd",
-   "job": "2c700da66878fbc1550846307771f33d37b0ef43",
-   "weight": 0.88,
    "missing": false
   },
   {
