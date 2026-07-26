@@ -1,16 +1,24 @@
 {
  "000f10ba99d4f1b988b0d059e7cc28f0ebd712f9": {
-  "profile_version": "999ad995994f",
-  "match_score": 72,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
+  "profile_version": "91e8042aa7fa",
+  "match_score": 95,
+  "confidence": 0.9,
+  "why": "Direct match for your agentic RAG strategy and API development experience. The role focuses on building production-grade agentic platforms, perfectly aligning with your banking automation background.",
+  "matched_skills": [
+   "Python",
+   "API Development",
+   "Agentic Workflows",
+   "Automation"
+  ],
   "missing_skills": [],
-  "resume_suggestions": [],
-  "sector": "Other",
-  "prefilter": 0.5159,
-  "heuristic": true,
-  "scored_at": "2026-07-25T22:45:40.222726+00:00"
+  "resume_suggestions": [
+   "Lead with your experience in agentic RAG and API deployment.",
+   "Detail your ability to build underlying infrastructure/platforms."
+  ],
+  "sector": "Consumer/E-commerce",
+  "prefilter": 0.4984,
+  "heuristic": false,
+  "scored_at": "2026-07-26T02:32:35.720202+00:00"
  },
  "9736237e9bfc2f4f49d29fb2da68506e47589700": {
   "profile_version": "1e5f66deb740",
@@ -65,43 +73,70 @@
   "scored_at": "2026-07-20T04:43:08.500282+00:00"
  },
  "fab16b278984be1e1f1a1409c888f8044a19b58f": {
-  "profile_version": "1e5f66deb740",
-  "match_score": 68,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
+  "profile_version": "91e8042aa7fa",
+  "match_score": 85,
+  "confidence": 0.8,
+  "why": "Strong Platform Engineering and SRE alignment. Domain expertise in private capital markets matches your financial services background.",
+  "matched_skills": [
+   "Docker/Kubernetes",
+   "CI/CD",
+   "Python",
+   "Financial Services",
+   "SQL"
+  ],
   "missing_skills": [],
-  "resume_suggestions": [],
-  "sector": "Other",
-  "prefilter": 0.4869,
-  "heuristic": true,
-  "scored_at": "2026-07-25T22:20:05.511521+00:00"
+  "resume_suggestions": [
+   "Focus on platform reliability and scalability improvements.",
+   "Emphasize devops/MLOps lifecycle experience."
+  ],
+  "sector": "Fintech",
+  "prefilter": 0.4724,
+  "heuristic": false,
+  "scored_at": "2026-07-26T02:32:35.720202+00:00"
  },
  "7f700cf6ebb37eb77755b0b238fde1d4224070ae": {
-  "profile_version": "999ad995994f",
-  "match_score": 68,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
+  "profile_version": "91e8042aa7fa",
+  "match_score": 90,
+  "confidence": 0.85,
+  "why": "The platform/infra focus perfectly aligns with your experience in containerized workflows and OpenShift. Highly technical and high-stakes environment matches your banking background.",
+  "matched_skills": [
+   "Docker/Kubernetes",
+   "API Development",
+   "CI/CD",
+   "SQL",
+   "Python"
+  ],
   "missing_skills": [],
-  "resume_suggestions": [],
-  "sector": "Other",
-  "prefilter": 0.4896,
-  "heuristic": true,
-  "scored_at": "2026-07-25T22:45:40.222726+00:00"
+  "resume_suggestions": [
+   "Focus on large-scale infrastructure projects.",
+   "Quantify your impact on legacy-to-modern infrastructure migrations."
+  ],
+  "sector": "AI/ML Infra",
+  "prefilter": 0.4953,
+  "heuristic": false,
+  "scored_at": "2026-07-26T02:32:35.720202+00:00"
  },
  "289ea176545c57bfcb2c0021e3e190761ef9c06b": {
-  "profile_version": "999ad995994f",
-  "match_score": 70,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
-  "missing_skills": [],
-  "resume_suggestions": [],
-  "sector": "Other",
-  "prefilter": 0.507,
-  "heuristic": true,
-  "scored_at": "2026-07-25T22:45:40.222726+00:00"
+  "profile_version": "91e8042aa7fa",
+  "match_score": 75,
+  "confidence": 0.8,
+  "why": "Strong fit for analytics and BI work in a healthcare context. The focus on marketing analytics is slightly outside your core focus but leverages your data engineering and BI skillset.",
+  "matched_skills": [
+   "SQL",
+   "Power BI",
+   "Data Migration"
+  ],
+  "missing_skills": [
+   "Marketing Strategy"
+  ],
+  "resume_suggestions": [
+   "Highlight data products created for business stakeholders.",
+   "Emphasize cross-functional collaboration and dashboard development."
+  ],
+  "sector": "Healthcare",
+  "prefilter": 0.5096,
+  "heuristic": false,
+  "scored_at": "2026-07-26T02:32:35.720202+00:00"
  },
  "468c3e72493c5f9e946f1342000e153e757fe229": {
   "profile_version": "999ad995994f",
@@ -142,19 +177,6 @@
   "heuristic": true,
   "scored_at": "2026-07-25T22:45:40.222726+00:00"
  },
- "185c9d7a64fa85921f572689a893d1e8447bbb6f": {
-  "profile_version": "1e5f66deb740",
-  "match_score": 67,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
-  "missing_skills": [],
-  "resume_suggestions": [],
-  "sector": "Other",
-  "prefilter": 0.4836,
-  "heuristic": true,
-  "scored_at": "2026-07-25T22:20:05.511521+00:00"
- },
  "311291bd58119c1104f1f12253eaa06fbb42d9b6": {
   "profile_version": "999ad995994f",
   "match_score": 72,
@@ -190,17 +212,25 @@
   "scored_at": "2026-07-25T22:32:48.858023+00:00"
  },
  "573c285b40525e80c4c0e856f1e676a5df618eaa": {
-  "profile_version": "1f6d972e9903",
-  "match_score": 64,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
+  "profile_version": "91e8042aa7fa",
+  "match_score": 88,
+  "confidence": 0.85,
+  "why": "Strong alignment with ClickUp's focus on agentic workflows and platform infrastructure.",
+  "matched_skills": [
+   "Python",
+   "Agentic Workflows",
+   "API Development",
+   "Docker/Kubernetes"
+  ],
   "missing_skills": [],
-  "resume_suggestions": [],
-  "sector": "Other",
-  "prefilter": 0.4635,
-  "heuristic": true,
-  "scored_at": "2026-07-25T22:02:58.830693+00:00"
+  "resume_suggestions": [
+   "Showcase your developer-mindset within AI platform projects.",
+   "Detail experience with multi-agent orchestration."
+  ],
+  "sector": "Enterprise SaaS/DevTools",
+  "prefilter": 0.4772,
+  "heuristic": false,
+  "scored_at": "2026-07-26T02:32:35.720202+00:00"
  },
  "ca09971601bd1ffe2128b0ad8ea0e50fa4b6caff": {
   "profile_version": "8444b242a37a",
@@ -293,17 +323,25 @@
   "scored_at": "2026-07-25T22:45:40.222726+00:00"
  },
  "322b668378645bb466a034a2d925bb1735071ddb": {
-  "profile_version": "999ad995994f",
-  "match_score": 68,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
+  "profile_version": "91e8042aa7fa",
+  "match_score": 92,
+  "confidence": 0.9,
+  "why": "Alignment with 'Agentic AI' and 'multimodal' work fits your current focus. Principal-level seniority is a step up, but your background in high-stakes banking and deployment makes you a strong candidate.",
+  "matched_skills": [
+   "Agentic Workflows",
+   "Python",
+   "API Development",
+   "Docker/Kubernetes"
+  ],
   "missing_skills": [],
-  "resume_suggestions": [],
-  "sector": "Other",
-  "prefilter": 0.4922,
-  "heuristic": true,
-  "scored_at": "2026-07-25T22:45:40.222726+00:00"
+  "resume_suggestions": [
+   "Emphasize architectural influence in your past projects.",
+   "Highlight experience leading complex AI initiatives."
+  ],
+  "sector": "Consumer/E-commerce",
+  "prefilter": 0.4926,
+  "heuristic": false,
+  "scored_at": "2026-07-26T02:32:35.720202+00:00"
  },
  "5ccc87e2b4634a0f1f81f76935b4c7e22a8fd6c8": {
   "profile_version": "999ad995994f",
@@ -382,17 +420,26 @@
   "scored_at": "2026-07-25T22:45:40.222726+00:00"
  },
  "94949244807215c39162f10a700499c9c65aa2c9": {
-  "profile_version": "999ad995994f",
-  "match_score": 68,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
+  "profile_version": "91e8042aa7fa",
+  "match_score": 95,
+  "confidence": 0.9,
+  "why": "Fits perfectly with your quantitative background and data engineering skills. The firm's focus on machine learning in finance aligns exactly with your domain expertise.",
+  "matched_skills": [
+   "Python",
+   "SQL",
+   "Quantitative Modeling",
+   "Financial Services",
+   "Data Migration"
+  ],
   "missing_skills": [],
-  "resume_suggestions": [],
-  "sector": "Other",
-  "prefilter": 0.4898,
-  "heuristic": true,
-  "scored_at": "2026-07-25T22:45:40.222726+00:00"
+  "resume_suggestions": [
+   "Highlight your quantitative modeling and financial data engineering experience.",
+   "Explicitly mention your experience with sophisticated pipelines."
+  ],
+  "sector": "Fintech",
+  "prefilter": 0.4929,
+  "heuristic": false,
+  "scored_at": "2026-07-26T02:32:35.720202+00:00"
  },
  "ee4a672d877e5b1460b8dc3271a2cfbcd6026005": {
   "profile_version": "999ad995994f",
@@ -486,24 +533,25 @@
   "scored_at": "2026-07-25T22:20:05.511521+00:00"
  },
  "ac8078be8f6519be3a08081b96936bc19fb5620c": {
-  "profile_version": "4a4a9551fc34",
-  "match_score": 85,
-  "confidence": 0.8,
-  "why": "Leverages your demonstrated ability to architect complex AI-agent workflows in a high-impact, staff-level engineering capacity.",
+  "profile_version": "91e8042aa7fa",
+  "match_score": 90,
+  "confidence": 0.85,
+  "why": "Excellent alignment with your expertise in agentic frameworks and platform-level AI work. High salary and remote-friendly nature match your requirements.",
   "matched_skills": [
    "Python",
+   "Agentic Workflows",
    "API Development",
-   "Agentic Workflows"
+   "Docker/Kubernetes"
   ],
   "missing_skills": [],
   "resume_suggestions": [
-   "Focus on 'Multi-Agent Frameworks' scaling challenges.",
-   "Highlight any work involving complex SaaS workflow automation."
+   "Mention specific agentic frameworks used.",
+   "Emphasize your role in platform engineering."
   ],
   "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.4893,
+  "prefilter": 0.4814,
   "heuristic": false,
-  "scored_at": "2026-07-25T15:35:28.840717+00:00"
+  "scored_at": "2026-07-26T02:32:35.720202+00:00"
  },
  "e907a23b24bd73b4ae90eb8c6c91d67ac09a2a37": {
   "profile_version": "999ad995994f",
@@ -648,19 +696,6 @@
   "heuristic": true,
   "scored_at": "2026-07-25T21:55:58.108147+00:00"
  },
- "5ba87358da745ea113ae2c24aee3a2886f710c07": {
-  "profile_version": "999ad995994f",
-  "match_score": 68,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
-  "missing_skills": [],
-  "resume_suggestions": [],
-  "sector": "Other",
-  "prefilter": 0.4905,
-  "heuristic": true,
-  "scored_at": "2026-07-25T22:45:40.222726+00:00"
- },
  "51cdcf5ac08ccf062c7f5536bbd2cb2b6b5e155f": {
   "profile_version": "999ad995994f",
   "match_score": 69,
@@ -701,17 +736,25 @@
   "scored_at": "2026-07-25T22:45:40.222726+00:00"
  },
  "c5db5c02a4f30ad9585e7e4ae4b7baf85c58b000": {
-  "profile_version": "999ad995994f",
-  "match_score": 72,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
+  "profile_version": "91e8042aa7fa",
+  "match_score": 80,
+  "confidence": 0.8,
+  "why": "Data platform and backend focus is solid. Compensation is at the floor, but industry and role are highly relevant.",
+  "matched_skills": [
+   "SQL",
+   "Data Migration",
+   "Python",
+   "API Development"
+  ],
   "missing_skills": [],
-  "resume_suggestions": [],
-  "sector": "Other",
-  "prefilter": 0.5169,
-  "heuristic": true,
-  "scored_at": "2026-07-25T22:45:40.222726+00:00"
+  "resume_suggestions": [
+   "Highlight experience with data platform architecture.",
+   "Mention specific fraud detection or high-stakes application experience."
+  ],
+  "sector": "Fintech",
+  "prefilter": 0.4647,
+  "heuristic": false,
+  "scored_at": "2026-07-26T02:32:35.720202+00:00"
  },
  "1f0d7ef571cb9b612a52caa5a5996e6b448de668": {
   "profile_version": "999ad995994f",
@@ -764,19 +807,6 @@
   "prefilter": 0.5006,
   "heuristic": true,
   "scored_at": "2026-07-25T22:45:40.222726+00:00"
- },
- "23088cf062d8982ab430168ab838d6c3c7a50e45": {
-  "profile_version": "1f6d972e9903",
-  "match_score": 65,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
-  "missing_skills": [],
-  "resume_suggestions": [],
-  "sector": "Other",
-  "prefilter": 0.4666,
-  "heuristic": true,
-  "scored_at": "2026-07-25T22:02:58.830693+00:00"
  },
  "553a99d714406a643b45674e70bedb1ac5a41ebf": {
   "profile_version": "999ad995994f",
@@ -883,17 +913,26 @@
   "scored_at": "2026-07-25T22:45:40.222726+00:00"
  },
  "7865a8cff073d86976d76018748aa6fedc72c2f1": {
-  "profile_version": "1e5f66deb740",
-  "match_score": 68,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
+  "profile_version": "91e8042aa7fa",
+  "match_score": 85,
+  "confidence": 0.8,
+  "why": "Great alignment with your financial services background and data engineering skills. The Director-level scope is a strong career progression step.",
+  "matched_skills": [
+   "Data Migration",
+   "SQL",
+   "Quantitative Modeling",
+   "Financial Services",
+   "Python"
+  ],
   "missing_skills": [],
-  "resume_suggestions": [],
-  "sector": "Other",
-  "prefilter": 0.489,
-  "heuristic": true,
-  "scored_at": "2026-07-25T22:20:05.511521+00:00"
+  "resume_suggestions": [
+   "Highlight management of large-scale analytics initiatives.",
+   "Emphasize technical leadership in your resume."
+  ],
+  "sector": "Fintech",
+  "prefilter": 0.4758,
+  "heuristic": false,
+  "scored_at": "2026-07-26T02:32:35.720202+00:00"
  },
  "173d9e2db94d654d0f155105409654070d12ca9d": {
   "profile_version": "1e5f66deb740",
@@ -922,17 +961,25 @@
   "scored_at": "2026-07-25T21:55:58.108147+00:00"
  },
  "f127407e702885bf6859c4b650a3279232d022f9": {
-  "profile_version": "1f6d972e9903",
-  "match_score": 64,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
+  "profile_version": "91e8042aa7fa",
+  "match_score": 85,
+  "confidence": 0.8,
+  "why": "Excellent alignment with platform engineering, Kafka/Streaming, and real-time analytics, which fits your data engineering background.",
+  "matched_skills": [
+   "Python",
+   "SQL",
+   "Data Migration",
+   "API Development"
+  ],
   "missing_skills": [],
-  "resume_suggestions": [],
-  "sector": "Other",
-  "prefilter": 0.4639,
-  "heuristic": true,
-  "scored_at": "2026-07-25T22:02:58.830693+00:00"
+  "resume_suggestions": [
+   "Highlight experience with stream processing frameworks.",
+   "Focus on product leadership and technical strategy."
+  ],
+  "sector": "Enterprise SaaS/DevTools",
+  "prefilter": 0.4649,
+  "heuristic": false,
+  "scored_at": "2026-07-26T02:32:35.720202+00:00"
  },
  "656005ad1882ebf1953dd25c52db33dde7697eb9": {
   "profile_version": "1e5f66deb740",
@@ -987,17 +1034,26 @@
   "scored_at": "2026-07-25T22:20:05.511521+00:00"
  },
  "45be723734ce5cbf1898a937f4b9fc9135beec10": {
-  "profile_version": "999ad995994f",
-  "match_score": 68,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
+  "profile_version": "91e8042aa7fa",
+  "match_score": 85,
+  "confidence": 0.8,
+  "why": "Excellent fit for data architecture and financial systems modernization. Salary is near your floor, but the role's scope is highly relevant.",
+  "matched_skills": [
+   "SQL",
+   "Data Migration",
+   "Financial Services",
+   "Python",
+   "Docker/Kubernetes"
+  ],
   "missing_skills": [],
-  "resume_suggestions": [],
-  "sector": "Other",
-  "prefilter": 0.4916,
-  "heuristic": true,
-  "scored_at": "2026-07-25T22:45:40.222726+00:00"
+  "resume_suggestions": [
+   "Quantify your impact on data governance and architecture design.",
+   "Highlight end-to-end data pipeline ownership."
+  ],
+  "sector": "Fintech",
+  "prefilter": 0.4739,
+  "heuristic": false,
+  "scored_at": "2026-07-26T02:32:35.720202+00:00"
  },
  "fb8b4c6b2408bfd1e493db56c0684bcbc6107a50": {
   "profile_version": "1f6d972e9903",
@@ -1052,17 +1108,26 @@
   "scored_at": "2026-07-25T22:02:58.830693+00:00"
  },
  "433a604cfe5b4cc7ecb19472f780d0b4e8d4cd20": {
-  "profile_version": "1f6d972e9903",
-  "match_score": 65,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
-  "missing_skills": [],
-  "resume_suggestions": [],
-  "sector": "Other",
-  "prefilter": 0.466,
-  "heuristic": true,
-  "scored_at": "2026-07-25T22:02:58.830693+00:00"
+  "profile_version": "91e8042aa7fa",
+  "match_score": 80,
+  "confidence": 0.75,
+  "why": "Leverages your deep-tech C++ background. Research roles at this level are rare and highly technical, fitting your developer mindset.",
+  "matched_skills": [
+   "C++",
+   "Python",
+   "Quantitative Modeling"
+  ],
+  "missing_skills": [
+   "Computer Vision/Geometry"
+  ],
+  "resume_suggestions": [
+   "Highlight C++ performance optimization experience.",
+   "Showcase complex geometry or math-intensive software projects."
+  ],
+  "sector": "AI/ML Infra",
+  "prefilter": 0.4653,
+  "heuristic": false,
+  "scored_at": "2026-07-26T02:32:35.720202+00:00"
  },
  "bc7cd1aec270fe638da94a9e848f88275bbe872c": {
   "profile_version": "1e5f66deb740",
@@ -1319,19 +1384,6 @@
   "heuristic": true,
   "scored_at": "2026-07-25T22:45:40.222726+00:00"
  },
- "b0e6dd5c85a7a90e8dc3f1eb7489c1cc91d3ae81": {
-  "profile_version": "999ad995994f",
-  "match_score": 70,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
-  "missing_skills": [],
-  "resume_suggestions": [],
-  "sector": "Other",
-  "prefilter": 0.5001,
-  "heuristic": true,
-  "scored_at": "2026-07-25T22:45:40.222726+00:00"
- },
  "efd0433bac674be4569c13a2a361b300c6178671": {
   "profile_version": "999ad995994f",
   "match_score": 69,
@@ -1410,19 +1462,6 @@
   "heuristic": true,
   "scored_at": "2026-07-25T22:45:40.222726+00:00"
  },
- "ad35e8f52dff125212031ea44c325b24e1cd423f": {
-  "profile_version": "999ad995994f",
-  "match_score": 69,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
-  "missing_skills": [],
-  "resume_suggestions": [],
-  "sector": "Other",
-  "prefilter": 0.4945,
-  "heuristic": true,
-  "scored_at": "2026-07-25T22:45:40.222726+00:00"
- },
  "3d465726c463185f6d8ecd47b3efee1db7c28558": {
   "profile_version": "999ad995994f",
   "match_score": 69,
@@ -1436,31 +1475,25 @@
   "heuristic": true,
   "scored_at": "2026-07-25T22:45:40.222726+00:00"
  },
- "8d2e5787e169b385e1bf7be27363a4b5369feabf": {
-  "profile_version": "999ad995994f",
-  "match_score": 69,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
-  "missing_skills": [],
-  "resume_suggestions": [],
-  "sector": "Other",
-  "prefilter": 0.4933,
-  "heuristic": true,
-  "scored_at": "2026-07-25T22:45:40.222726+00:00"
- },
  "98ff7202e9921b3ca27ee659c803ea8b50910730": {
-  "profile_version": "999ad995994f",
-  "match_score": 68,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
+  "profile_version": "91e8042aa7fa",
+  "match_score": 85,
+  "confidence": 0.85,
+  "why": "Excellent alignment with OpenAI's high-stakes environment. Focus on data/integrity fits your analytical consulting background.",
+  "matched_skills": [
+   "Python",
+   "SQL",
+   "Quantitative Modeling"
+  ],
   "missing_skills": [],
-  "resume_suggestions": [],
-  "sector": "Other",
-  "prefilter": 0.492,
-  "heuristic": true,
-  "scored_at": "2026-07-25T22:45:40.222726+00:00"
+  "resume_suggestions": [
+   "Highlight experience managing large-scale data integrity.",
+   "Showcase your ability to work with large datasets and complex logic."
+  ],
+  "sector": "AI/ML Infra",
+  "prefilter": 0.4645,
+  "heuristic": false,
+  "scored_at": "2026-07-26T02:32:35.720202+00:00"
  },
  "e375f5fd1687bb334b54ac2c389bd622ae3eb0f3": {
   "profile_version": "999ad995994f",
@@ -1472,19 +1505,6 @@
   "resume_suggestions": [],
   "sector": "Other",
   "prefilter": 0.4917,
-  "heuristic": true,
-  "scored_at": "2026-07-25T22:45:40.222726+00:00"
- },
- "b240d8434a3d99749e5990a96401d501204d9481": {
-  "profile_version": "999ad995994f",
-  "match_score": 68,
-  "confidence": 0.3,
-  "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding similarity to your profile.",
-  "matched_skills": [],
-  "missing_skills": [],
-  "resume_suggestions": [],
-  "sector": "Other",
-  "prefilter": 0.4914,
   "heuristic": true,
   "scored_at": "2026-07-25T22:45:40.222726+00:00"
  },
@@ -1578,5 +1598,88 @@
   "prefilter": 0.4894,
   "heuristic": true,
   "scored_at": "2026-07-25T22:45:40.222726+00:00"
+ },
+ "b5603ba6e81a7dd8716d270e74f82ffd512fa814": {
+  "profile_version": "91e8042aa7fa",
+  "match_score": 80,
+  "confidence": 0.8,
+  "why": "Strong fit for backend and AI engineering. Kustomer is a CRM platform, which aligns with your experience in data-intensive systems.",
+  "matched_skills": [
+   "Python",
+   "API Development",
+   "Docker/Kubernetes",
+   "SQL"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Emphasize experience building AI-native application features.",
+   "Highlight production deployment of ML models."
+  ],
+  "sector": "Enterprise SaaS/DevTools",
+  "prefilter": 0.4652,
+  "heuristic": false,
+  "scored_at": "2026-07-26T02:32:35.720202+00:00"
+ },
+ "f09c07b73f12baa905eb8c3362ddb556c2886b82": {
+  "profile_version": "91e8042aa7fa",
+  "match_score": 82,
+  "confidence": 0.8,
+  "why": "Strong fit for 'AI Automations' given your background in process automation and backend deployment.",
+  "matched_skills": [
+   "Automation",
+   "Python",
+   "API Development",
+   "CI/CD"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Clearly define the impact of your automation initiatives.",
+   "Highlight integration of AI models into workflows."
+  ],
+  "sector": "Enterprise SaaS/DevTools",
+  "prefilter": 0.4648,
+  "heuristic": false,
+  "scored_at": "2026-07-26T02:32:35.720202+00:00"
+ },
+ "3a62729a9a423e4bc4d6a9d373957675339c2751": {
+  "profile_version": "91e8042aa7fa",
+  "match_score": 80,
+  "confidence": 0.8,
+  "why": "Relevance and personalization work matches your data engineering and quantitative modeling background well.",
+  "matched_skills": [
+   "Python",
+   "SQL",
+   "Quantitative Modeling"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Focus on how your models impact user experience.",
+   "Detail your ability to scale ML models in production."
+  ],
+  "sector": "Media/Gaming",
+  "prefilter": 0.4644,
+  "heuristic": false,
+  "scored_at": "2026-07-26T02:32:35.720202+00:00"
+ },
+ "2c700da66878fbc1550846307771f33d37b0ef43": {
+  "profile_version": "91e8042aa7fa",
+  "match_score": 80,
+  "confidence": 0.8,
+  "why": "Good platform and ML/GenAI alignment. Strava's data-rich environment fits your profile.",
+  "matched_skills": [
+   "Docker/Kubernetes",
+   "CI/CD",
+   "Python",
+   "API Development"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Emphasize MLOps and infrastructure for GenAI.",
+   "Highlight experience with platform reliability."
+  ],
+  "sector": "Consumer/E-commerce",
+  "prefilter": 0.463,
+  "heuristic": false,
+  "scored_at": "2026-07-26T02:32:35.720202+00:00"
  }
 }
