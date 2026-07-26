@@ -30,12 +30,12 @@ import requests
 import ats
 import role_filter
 from config import (ADZUNA_APP_ID, ADZUNA_APP_KEY, JOB_EXPIRY_DAYS,
-                    JOOBLE_API_KEY, MIN_SALARY_USD, RAPIDAPI_KEY,
-                    SEARCH_QUERIES, STATE_DIR, USAJOBS_API_KEY,
-                    USAJOBS_USER_AGENT, USER_AGENT)
+                    JOOBLE_API_KEY, MIN_SALARY_USD, NO_SALARY_MAX_AGE_DAYS,
+                    NO_SALARY_SOURCES, RAPIDAPI_KEY, SEARCH_QUERIES, STATE_DIR,
+                    USAJOBS_API_KEY, USAJOBS_USER_AGENT, USER_AGENT)
 from util import (find_salary_snippet, html_to_text, load_json, log,
-                  looks_genuinely_remote, norm_key, role_key, salary_max_usd,
-                  save_json, sha1, us_friendly)
+                  looks_genuinely_remote, norm_key, posted_within_days,
+                  role_key, salary_max_usd, save_json, sha1, us_friendly)
 
 SEEN_PATH = STATE_DIR / "seen_jobs.json"
 TOTALS_PATH = STATE_DIR / "totals.json"
@@ -385,9 +385,11 @@ def fetch_all(target_titles, exclude_role_keys=()):
 
     # Stated-salary requirement: a posting must state compensation somewhere
     # (structured field, or extractable from its text) and it must reach the
-    # floor. Employers that won't say what they pay don't make the list.
+    # floor. The one exception is employer-direct postings that are recent
+    # enough to still be real — those carry `no_salary` and face a much
+    # higher bar again at digest time (see config.NO_SALARY_*).
     before = len(jobs)
-    kept, no_salary = [], 0
+    kept, provisional, dropped_no_salary, below = [], 0, 0, 0
     for j in jobs:
         if not j.get("salary"):
             snippet = find_salary_snippet(j.get("description"))
@@ -395,13 +397,23 @@ def fetch_all(target_titles, exclude_role_keys=()):
                 j["salary"] = snippet + " (from posting text)"
         mx = salary_max_usd(j.get("salary"))
         if mx is None:
-            no_salary += 1
+            if (j["source"] in NO_SALARY_SOURCES
+                    and posted_within_days(j.get("posted_at"), NO_SALARY_MAX_AGE_DAYS)):
+                j["no_salary"] = True
+                kept.append(j)
+                provisional += 1
+            else:
+                dropped_no_salary += 1
         elif mx >= MIN_SALARY_USD:
             kept.append(j)
+        else:
+            below += 1
     jobs = kept
-    log.info("stated-salary rule: %d of %d kept (%d no stated salary, %d below $%s)",
-             len(jobs), before, no_salary, before - no_salary - len(jobs),
-             f"{MIN_SALARY_USD:,}")
+    log.info("stated-salary rule: %d of %d kept (%d stated, %d employer-direct "
+             "and posted within %dd with pay undisclosed, %d dropped for no salary, "
+             "%d below $%s)",
+             len(jobs), before, len(jobs) - provisional, provisional,
+             NO_SALARY_MAX_AGE_DAYS, dropped_no_salary, below, f"{MIN_SALARY_USD:,}")
 
     # Dedupe across sources by URL id, then by normalized company+title.
     # Sorted so the employer's own ATS posting wins over an aggregator's copy

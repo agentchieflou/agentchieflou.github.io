@@ -59,7 +59,7 @@ GMAIL_APP_PASSWORD = _env("GMAIL_APP_PASSWORD")
 
 MAX_LLM_CANDIDATES = 60  # jobs sent to Gemini per run, after embedding prefilter
 DESC_TRUNCATE = 800       # chars of description per job in the LLM prompt
-TOP_N_DIGEST = 10
+TOP_N_DIGEST = 15
 TOP_N_GRAPH_JOBS = 50     # size of the displayed pool (skills.html graph/matrix/ledger)
 MIN_NEW_PER_RUN = 20      # of TOP_N_GRAPH_JOBS, at least this many must be new vs. last run
 JOB_EXPIRY_DAYS = 14      # drop listings not seen at any source for this long
@@ -70,6 +70,29 @@ JOB_EXPIRY_DAYS = 14      # drop listings not seen at any source for this long
 # the list — the ATS sources below expose real comp fields, so this costs far
 # less coverage than it did when everything came from aggregators.
 MIN_SALARY_USD = 130_000
+
+# Narrow exception to the stated-salary rule. Employers who post through
+# their own ATS are reliable about the ROLE even when they withhold pay, and
+# dropping all of them was the single largest loss in the funnel. So a capped
+# number may through — but salary is then the only thing unknown about the
+# posting, so nothing else is allowed to be:
+#
+#   employer-direct   an aggregator's copy does not count; it has to come
+#                     from the company's own ATS
+#   freshly posted    an old listing with no pay data is exactly where
+#                     "employer-direct" stops being reassuring
+#   clearly reachable the LLM has to place it in band, and score it well
+#                     above the bar a salaried posting has to clear
+#
+# Anything failing one of these is still dropped outright.
+NO_SALARY_SOURCES = {"greenhouse", "lever", "ashby", "smartrecruiters"}
+NO_SALARY_MAX_AGE_DAYS = 14
+NO_SALARY_MAX_IN_DIGEST = 5
+NO_SALARY_MIN_SCORE = 80
+NO_SALARY_MIN_CONFIDENCE = 0.7
+# Seniority verdicts that count as a genuine step up rather than a lateral
+# move or a long shot.
+NO_SALARY_SENIORITY_FITS = ("target", "stretch")
 
 # A job must share at least this many skills with the profile (per the LLM's
 # matched_skills) to count as a real match anywhere downstream (digest or

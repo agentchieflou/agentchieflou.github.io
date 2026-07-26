@@ -21,7 +21,10 @@ from urllib.parse import quote
 
 from applied import SUBJECT_TAG
 from config import (EMAIL_TO, GMAIL_ADDRESS, GMAIL_APP_PASSWORD,
-                    MIN_SALARY_USD, STATE_DIR, TOP_N_DIGEST)
+                    MIN_SALARY_USD, NO_SALARY_MAX_AGE_DAYS,
+                    NO_SALARY_MAX_IN_DIGEST, NO_SALARY_MIN_CONFIDENCE,
+                    NO_SALARY_MIN_SCORE, NO_SALARY_SENIORITY_FITS, STATE_DIR,
+                    TOP_N_DIGEST)
 from rejected import SUBJECT_TAG as REJECTED_SUBJECT_TAG
 from util import log
 
@@ -38,12 +41,44 @@ def combined_score(s):
     return s["match_score"] * (0.6 + 0.4 * s["confidence"])
 
 
+def no_salary_qualifies(s):
+    """The extra bar a posting with undisclosed pay has to clear.
+
+    Compensation is the one unknown about these, so nothing else may be. The
+    role has to be one the owner could realistically get and a genuine step
+    up — not a long shot, and not a lateral move that merely ranks well.
+    Heuristic scores carry no seniority verdict, so they never qualify: with
+    no LLM judgment available this fails closed.
+    """
+    return (s.get("seniority_fit") in NO_SALARY_SENIORITY_FITS
+            and s.get("match_score", 0) >= NO_SALARY_MIN_SCORE
+            and s.get("confidence", 0) >= NO_SALARY_MIN_CONFIDENCE)
+
+
 def pick_top(jobs, scores, n=TOP_N_DIGEST, exclude=()):
-    """Top-n scored jobs, skipping ids in `exclude` (already applied)."""
+    """Top-n scored jobs, skipping ids in `exclude` (already applied).
+
+    Postings with undisclosed pay are capped at NO_SALARY_MAX_IN_DIGEST and
+    must clear no_salary_qualifies(); they never crowd out a role that
+    states what it pays.
+    """
     scored = [(j, scores[j["id"]]) for j in jobs
               if j["id"] in scores and j["id"] not in exclude]
     scored.sort(key=lambda js: -combined_score(js[1]))
-    return scored[:n]
+
+    picked, undisclosed = [], 0
+    for j, s in scored:
+        if len(picked) >= n:
+            break
+        if j.get("no_salary"):
+            if undisclosed >= NO_SALARY_MAX_IN_DIGEST or not no_salary_qualifies(s):
+                continue
+            undisclosed += 1
+        picked.append((j, s))
+    if undisclosed:
+        log.info("digest: %d of %d entries are employer-direct roles with "
+                 "undisclosed pay", undisclosed, len(picked))
+    return picked
 
 
 def _mailto(j, tag, verb):
@@ -77,7 +112,8 @@ def _card(i, j, s, is_new):
     bg, fg = _band(s["match_score"])
     meta = " &middot; ".join(filter(None, [
         e(j["company"]), e(j["location"]),
-        e(j["salary"]) if j.get("salary") else "",
+        e(j["salary"]) if j.get("salary")
+        else '<span style="color:#8a5300;">pay undisclosed</span>',
     ]))
     new_badge = ("""<span style="background:#146c2e;color:#fff;border-radius:4px;
         font:600 10px/1 %s;padding:4px 6px;margin-left:8px;vertical-align:middle;
@@ -90,6 +126,8 @@ def _card(i, j, s, is_new):
         tags.append("stretch")
     if j.get("years_required"):
         tags.append(f"{j['years_required']}+ yrs asked")
+    if j.get("no_salary"):
+        tags.append(f"posted &lt;{NO_SALARY_MAX_AGE_DAYS}d &middot; verify pay")
     tag_html = ""
     if tags:
         chips = "".join(
@@ -196,7 +234,10 @@ def build_html(top, stats):
       Top {len(top)} matches &middot; {e(stats['date'])}</div>
     <div style="font:400 12px/1.6 {FONT};color:#80868b;margin:0 0 18px;" class="dim">
       Fully remote &middot; full-time &middot; stated salary from ${MIN_SALARY_USD:,}
-      &middot; applied and rejected roles suppressed</div>
+      &middot; applied and rejected roles suppressed<br>
+      Up to {NO_SALARY_MAX_IN_DIGEST} slots may go to employer-direct roles posted within
+      {NO_SALARY_MAX_AGE_DAYS} days that don't disclose pay, and only at
+      {NO_SALARY_MIN_SCORE}+ match with a clear step up in scope</div>
     {cards}
     {sugg_html}
     <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"
@@ -237,8 +278,8 @@ def build_text(top, stats):
              f"Fully remote · full-time · stated salary from ${MIN_SALARY_USD:,}", ""]
     for i, (j, s) in enumerate(top, 1):
         bits = [j["company"], j["location"]]
-        if j.get("salary"):
-            bits.append(j["salary"])
+        bits.append(j["salary"] if j.get("salary")
+                    else "pay undisclosed - verify before applying")
         lines += [
             f"{i}. {j['title']}",
             f"   {' · '.join(bits)}",

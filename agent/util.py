@@ -1,4 +1,5 @@
 """Small shared helpers: JSON state files, hashing, HTML-to-text."""
+import datetime as dt
 import hashlib
 import json
 import logging
@@ -108,6 +109,55 @@ def role_key(company: str, title: str) -> str:
     if not c or not t:
         return ""
     return sha1(f"{c}|{t}")
+
+
+def parse_timestamp(value):
+    """Best-effort UTC datetime from the assorted shapes sources emit, or None.
+
+    Handles ISO 8601 with a Z, with an offset, or naive, plus epoch seconds
+    and epoch milliseconds — Lever returns createdAt in milliseconds, which
+    plain ISO parsing would silently reject.
+    """
+    if value is None or value == "":
+        return None
+    if isinstance(value, (int, float)) or (isinstance(value, str) and value.strip().isdigit()):
+        n = float(value)
+        if n > 1e11:  # milliseconds, not seconds
+            n /= 1000.0
+        try:
+            return dt.datetime.fromtimestamp(n, dt.timezone.utc)
+        except (OverflowError, OSError, ValueError):
+            return None
+    text = str(value).strip().replace("Z", "+00:00")
+    try:
+        parsed = dt.datetime.fromisoformat(text)
+    except ValueError:
+        m = re.match(r"\d{4}-\d{2}-\d{2}", text)
+        if not m:
+            return None
+        try:
+            parsed = dt.datetime.fromisoformat(m.group(0))
+        except ValueError:
+            return None
+    if parsed.tzinfo is None:
+        parsed = parsed.replace(tzinfo=dt.timezone.utc)
+    return parsed.astimezone(dt.timezone.utc)
+
+
+def posted_within_days(value, days):
+    """True only when the timestamp parses AND is that recent.
+
+    Fails closed: an unparseable or absent date is treated as too old. This
+    gates postings that have no stated salary, so "we could not tell how old
+    this is" has to mean no.
+    """
+    parsed = parse_timestamp(value)
+    if parsed is None:
+        return False
+    age = dt.datetime.now(dt.timezone.utc) - parsed
+    # A small negative age is clock skew between us and the source, not a
+    # posting from the future.
+    return dt.timedelta(days=-2) <= age <= dt.timedelta(days=days)
 
 
 _SALARY_NUM = re.compile(r"(\d{1,3}(?:[,.]\d{3})+|\d+(?:\.\d+)?)\s*([kK])?")
