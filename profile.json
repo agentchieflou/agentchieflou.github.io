@@ -1,14 +1,15 @@
 {
- "summary": "Michael is a technical Business Analytics Consultant with 4 years of experience specializing in internal developer tooling and process optimization within the financial sector. He excels at building Python-based infrastructure, such as distributed data packages and REST API deployment, to reduce operational friction and automate complex workflows. He bridges the gap between quantitative analysis and software engineering by creating bespoke tools that solve institutional scale problems.",
+ "summary": "Michael is a results-oriented business analytics consultant with four years of experience driving large-scale process automation and migration projects at a major financial institution. He excels at building internal developer tools and data pipelines that bridge the gap between complex quantitative modeling and actionable business insights. His technical focus centers on Python-based orchestration, REST API deployment via OpenShift, and emerging agentic workflows designed to optimize team productivity.",
  "skills": [
   {
    "name": "Python",
    "category": "engineering",
    "strength": 0.95,
    "evidence": [
-    "Maintained internal 'data-czars' package",
-    "Built REST API scrapers",
-    "Orchestrated complex automation suites"
+    "Built bank-wide toolkits",
+    "CLI orchestrators",
+    "REST API development",
+    "High-frequency scraping and automation suites"
    ]
   },
   {
@@ -16,46 +17,47 @@
    "category": "analytics",
    "strength": 0.9,
    "evidence": [
-    "Grid-wide telemetry analytics",
-    "Data reconciliation across MongoDB/Oracle",
-    "Extensive querying for forecasting"
-   ]
-  },
-  {
-   "name": "REST API Development",
-   "category": "engineering",
-   "strength": 0.85,
-   "evidence": [
-    "Containerized scraping services",
-    "Deployed recurring transaction identification APIs on OpenShift"
-   ]
-  },
-  {
-   "name": "Process Automation",
-   "category": "analytics",
-   "strength": 0.85,
-   "evidence": [
-    "Built pricing workflow tools saving 30+ mins daily",
-    "Document sourcing automation suite"
-   ]
-  },
-  {
-   "name": "Docker & Kubernetes",
-   "category": "tools",
-   "strength": 0.8,
-   "evidence": [
-    "OpenShift deployment",
-    "Helm charting",
-    "Containerization of legacy scrapers"
+    "Oracle/Teradata experience",
+    "Table usage telemetry",
+    "Data modeling for migration projects"
    ]
   },
   {
    "name": "Power BI",
    "category": "analytics",
+   "strength": 0.85,
+   "evidence": [
+    "Built enterprise-wide semantic models",
+    "Executive peer bank analysis dashboards"
+   ]
+  },
+  {
+   "name": "Process Automation",
+   "category": "domain",
+   "strength": 0.9,
+   "evidence": [
+    "Automated manual pricing workflows",
+    "Built document sourcing scrapers",
+    "Optimized print workflows"
+   ]
+  },
+  {
+   "name": "REST API Development",
+   "category": "engineering",
    "strength": 0.8,
    "evidence": [
-    "Built semantic models and interactive portfolio dashboards",
-    "Peer Bank Analysis Dashboard"
+    "Deployed three production APIs on OpenShift",
+    "Containerized scrapers as callable services"
+   ]
+  },
+  {
+   "name": "Docker / Kubernetes",
+   "category": "engineering",
+   "strength": 0.8,
+   "evidence": [
+    "OpenShift deployments",
+    "Helm charts",
+    "Containerizing legacy scraper systems"
    ]
   },
   {
@@ -63,74 +65,92 @@
    "category": "analytics",
    "strength": 0.75,
    "evidence": [
-    "Validated 1,930 data fields in migration",
-    "Designed schema for loan portfolio reconciliation"
-   ]
-  },
-  {
-   "name": "Agentic Workflows",
-   "category": "engineering",
-   "strength": 0.7,
-   "evidence": [
-    "Researching RAG/Agentic patterns for enterprise",
-    "POC AI-driven automation in side projects"
+    "Field reconciliation for mainframe migrations",
+    "Semantic model architecture in Power BI"
    ]
   },
   {
    "name": "CI/CD",
-   "category": "tools",
-   "strength": 0.75,
+   "category": "engineering",
+   "strength": 0.7,
    "evidence": [
-    "Compliance with enterprise Policy as Code gates",
+    "Clearing enterprise governance gates",
     "Automated deployment pipelines"
    ]
   },
   {
    "name": "Quantitative Analytics",
-   "category": "domain",
-   "strength": 0.75,
+   "category": "analytics",
+   "strength": 0.8,
    "evidence": [
-    "CECL Reserve Forecasting",
-    "Price elasticity research",
+    "CECL Reserve forecasting",
+    "Loan portfolio elasticity research",
     "Stress analysis"
    ]
   },
   {
-   "name": "Unreal Engine/C++",
+   "name": "Agentic Architecture",
    "category": "engineering",
-   "strength": 0.7,
+   "strength": 0.65,
    "evidence": [
-    "Developed game scaffold with Python scripting integration",
-    "Physics-based simulation systems"
+    "Evaluating RAG for token-budget efficiency",
+    "Autonomous career-matching agent project"
    ]
   },
   {
-   "name": "Version Control (Git)",
+   "name": "Git / Version Control",
    "category": "tools",
    "strength": 0.85,
    "evidence": [
-    "Overhauled team version control practices at PNC",
-    "Active GitHub repository management"
+    "Consistent contribution history",
+    "Advanced team repo management",
+    "Overhauling team versioning practices"
    ]
   },
   {
-   "name": "Requirement Gathering",
-   "category": "domain",
+   "name": "Excel",
+   "category": "tools",
    "strength": 0.8,
    "evidence": [
-    "Stakeholder enablement for migration tools",
-    "Business-critical field identification"
+    "Core analytical workload",
+    "Operationalizing quantitative research"
+   ]
+  },
+  {
+   "name": "PySpark",
+   "category": "analytics",
+   "strength": 0.6,
+   "evidence": [
+    "Used for large-scale data processing in banking"
+   ]
+  },
+  {
+   "name": "Stakeholder Enablement",
+   "category": "domain",
+   "strength": 0.85,
+   "evidence": [
+    "Reduced migration impact discovery time by 6 weeks",
+    "Presented cost-model architecture for AI"
+   ]
+  },
+  {
+   "name": "C++",
+   "category": "engineering",
+   "strength": 0.7,
+   "evidence": [
+    "Unreal Engine game development",
+    "Physics-based system design"
    ]
   }
  ],
  "target_titles": [
-  "Technical Product Manager",
+  "Senior Business Intelligence Developer",
   "Analytics Engineer",
+  "Technical Product Manager (Internal Tools)",
   "Automation Engineer",
-  "Senior Data Analyst",
-  "Operations Engineer"
+  "Data Solutions Architect"
  ],
- "version": "3b7a62d9b509",
+ "version": "9741a9d03e5e",
  "remote_only": true,
- "generated_at": "2026-07-26T16:26:44.355843+00:00"
+ "generated_at": "2026-07-26T22:55:30.352834+00:00"
 }
