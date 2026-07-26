@@ -25,6 +25,7 @@ from config import (EMAIL_TO, GMAIL_ADDRESS, GMAIL_APP_PASSWORD,
                     NO_SALARY_MAX_IN_DIGEST, NO_SALARY_MIN_CONFIDENCE,
                     NO_SALARY_MIN_SCORE, NO_SALARY_SENIORITY_FITS, STATE_DIR,
                     TOP_N_DIGEST)
+import standing_answers
 from rejected import SUBJECT_TAG as REJECTED_SUBJECT_TAG
 from util import log
 
@@ -142,7 +143,8 @@ def _card(i, j, s, is_new):
         missing_html = (f'<div style="font:400 12px/1.5 {FONT};color:#80868b;'
                         f'margin:8px 0 0;" class="dim">Gaps: {e(missing)}</div>')
 
-    # Application pre-flight: what the form will actually ask.
+    # Application pre-flight: what the form asks that your standing answers
+    # do not already cover.
     pf = j.get("preflight") or {}
     pf_html = ""
     if pf:
@@ -155,16 +157,21 @@ def _card(i, j, s, is_new):
                 f'Likely blocker{"s" if len(pf["blockers"]) > 1 else ""} in the application'
                 f'</div><ul style="margin:0 0 6px;padding:0 0 0 16px;font:400 12px/1.5 {FONT};'
                 f'color:#b3261e;">{items}</ul>')
-        summary = (f"{pf['total']} questions &middot; {len(pf.get('answered', []))} "
-                   f"pre-filled from your profile")
-        if pf.get("to_draft"):
-            summary += f" &middot; {len(pf['to_draft'])} to write"
-        parts.append(f'<div style="font:400 12px/1.5 {FONT};color:#80868b;" '
-                     f'class="dim">{summary}</div>')
-        if pf.get("to_draft"):
-            qs = "".join(f"<li style='margin:0 0 3px;'>{e(q)}</li>" for q in pf["to_draft"])
-            parts.append(f'<ul style="margin:4px 0 0;padding:0 0 0 16px;font:400 12px/1.5 '
-                         f'{FONT};color:#80868b;" class="dim">{qs}</ul>')
+        specific = pf.get("specific") or []
+        head = (f"{pf['total']} questions &middot; {pf.get('standing', 0)} covered by your "
+                f"standing answers")
+        head += (f" &middot; <b>{len(specific)} need you</b>" if specific
+                 else " &middot; nothing left but the uploads")
+        parts.append(f'<div style="font:400 12px/1.5 {FONT};color:#5f6368;margin:0 0 6px;" '
+                     f'class="dim">{head}</div>')
+        for item in specific:
+            opts = ""
+            if item.get("options"):
+                opts = (f'<div style="font:400 11px/1.5 {FONT};color:#9aa0a6;'
+                        f'margin:1px 0 0 12px;">{e(" / ".join(item["options"]))}</div>')
+            parts.append(
+                f'<div style="font:400 12px/1.5 {FONT};color:#3c4043;margin:0 0 5px;" '
+                f'class="body">&bull; {e(item["q"])}{opts}</div>')
         pf_html = (f'<div style="margin:12px 0 0;padding:10px 12px;background:#f8f9fa;'
                    f'border-radius:8px;" class="chip">{"".join(parts)}</div>')
 
@@ -244,6 +251,28 @@ def build_html(top, stats):
     <ul style="margin:0;padding:0 0 0 18px;font:400 13px/1.6 {FONT};color:#3c4043;" class="body">{items}</ul>
   </td></tr></table>"""
 
+    # Printed once rather than repeated on every card: these are identical on
+    # every form, which is the whole point of separating them out.
+    standing_html = ""
+    if any(j.get("preflight") for j, _ in top):
+        rows = "".join(
+            f'<tr><td style="padding:2px 12px 2px 0;font:400 12px/1.6 {FONT};color:#80868b;'
+            f'vertical-align:top;white-space:nowrap;" class="dim">{e(k)}</td>'
+            f'<td style="padding:2px 0;font:400 12px/1.6 {FONT};color:#3c4043;" '
+            f'class="body">{e(v)}</td></tr>'
+            for k, v in standing_answers.summary())
+        standing_html = f"""
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"
+  style="background:#ffffff;border:1px solid #e4e6e9;border-radius:12px;margin:0 0 12px;" class="card">
+  <tr><td style="padding:18px 20px;">
+    <div style="font:600 13px/1.4 {FONT};color:#17181a;margin:0 0 4px;
+      text-transform:uppercase;letter-spacing:.06em;" class="title">Your standing answers</div>
+    <div style="font:400 12px/1.6 {FONT};color:#9aa0a6;margin:0 0 10px;" class="dim">
+      The same on every form &mdash; copy from here. Consent, arbitration and
+      self-identification questions are deliberately left to you.</div>
+    <table role="presentation" cellpadding="0" cellspacing="0" border="0">{rows}</table>
+  </td></tr></table>"""
+
     profile_note = (f'<li style="margin:0 0 4px;">Skill profile: {e(stats["profile_note"])}</li>'
                     if stats.get("profile_note") else "")
     boards = stats.get("boards")
@@ -266,6 +295,7 @@ def build_html(top, stats):
       {NO_SALARY_MAX_AGE_DAYS} days that don't disclose pay, and only at
       {NO_SALARY_MIN_SCORE}+ match with a clear step up in scope</div>
     {cards}
+    {standing_html}
     {sugg_html}
     <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"
       style="background:#ffffff;border:1px solid #e4e6e9;border-radius:12px;margin:0 0 12px;" class="card">

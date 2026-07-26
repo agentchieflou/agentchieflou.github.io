@@ -25,6 +25,7 @@ APPLICANT = {
     "email": EMAIL_TO,
     "phone": "216-904-9535",
     "location": "Raleigh, NC (open to remote, US)",
+    "state": "North Carolina",   # spelled out, to match state dropdowns
     "linkedin": "https://linkedin.com/in/michael-louard",
     "github": "https://github.com/agentchieflou",
     "website": "https://agentchieflou.github.io",
