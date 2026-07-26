@@ -1,15 +1,15 @@
 {
- "summary": "Professional Business Analytics Consultant with 4 years of experience specializing in internal developer tooling, process automation, and data engineering within the banking sector. Expert at building high-impact Python-based infrastructure, including REST APIs, containerized deployment pipelines, and grid-wide analytics frameworks that significantly reduce operational costs. Committed to leveraging agentic workflows and AI-driven systems to optimize enterprise processes and enable data-driven strategy.",
+ "summary": "Data professional with 4 years of experience specializing in internal developer tooling, process automation, and analytical engineering within the financial sector. Proven track record of reducing operational overhead through Python-based framework development and large-scale mainframe migrations. Adept at leveraging agentic workflows and REST architecture to bridge the gap between business strategy and technical implementation.",
  "skills": [
   {
    "name": "Python",
    "category": "engineering",
    "strength": 0.95,
    "evidence": [
-    "Enterprise-distributed package 'data-czars'",
-    "Production REST API development",
-    "High-throughput web scraping",
-    "Agentic orchestration"
+    "data-czars package maintainer",
+    "multi-scraper orchestration",
+    "production API development",
+    "Unreal Engine C++/Python automation"
    ]
   },
   {
@@ -17,29 +17,19 @@
    "category": "analytics",
    "strength": 0.9,
    "evidence": [
-    "Complex data modeling",
-    "Grid-wide telemetry analytics",
-    "Database migration validation (Oracle, MongoDB, Teradata)"
+    "Oracle/Teradata/MongoDB interaction",
+    "data modeling",
+    "table usage analytics"
    ]
   },
   {
    "name": "Process Automation",
    "category": "engineering",
-   "strength": 0.9,
-   "evidence": [
-    "Pricing workflow automation",
-    "Document sourcing suite",
-    "Mainframe migration validation framework"
-   ]
-  },
-  {
-   "name": "Power BI",
-   "category": "analytics",
    "strength": 0.85,
    "evidence": [
-    "Semantic model development",
-    "Peer Bank Analysis Dashboard",
-    "Portfolio-wide performance reporting"
+    "internal developer tooling",
+    "automated pricing workflows",
+    "migration framework design"
    ]
   },
   {
@@ -47,104 +37,127 @@
    "category": "engineering",
    "strength": 0.8,
    "evidence": [
-    "Containerized microservices on OpenShift",
-    "Deployment of testing and transaction detection APIs"
+    "OpenShift containerization",
+    "Helm deployments",
+    "scraping services",
+    "transaction identification service"
+   ]
+  },
+  {
+   "name": "Power BI",
+   "category": "analytics",
+   "strength": 0.8,
+   "evidence": [
+    "semantic modeling",
+    "executive-level risk dashboards",
+    "peer bank analysis reporting"
+   ]
+  },
+  {
+   "name": "Data Architecture",
+   "category": "engineering",
+   "strength": 0.75,
+   "evidence": [
+    "mainframe-to-cloud migration",
+    "version control overhaul",
+    "data validation framework design"
    ]
   },
   {
    "name": "Kubernetes/OpenShift",
    "category": "tools",
-   "strength": 0.8,
-   "evidence": [
-    "Deployment via Helm",
-    "Policy as Code compliance",
-    "Containerizing scrapers and parsing systems"
-   ]
-  },
-  {
-   "name": "Git & CI/CD",
-   "category": "tools",
-   "strength": 0.8,
-   "evidence": [
-    "Enterprise version control workflows",
-    "Policy as Code gates",
-    "Automated deployment pipelines"
-   ]
-  },
-  {
-   "name": "Agentic & RAG Architecture",
-   "category": "engineering",
    "strength": 0.75,
    "evidence": [
-    "Researching/implementing enterprise AI patterns",
-    "Agentic plugin stubs in C++",
-    "Workflow orchestration experiments"
-   ]
-  },
-  {
-   "name": "Data Modeling",
-   "category": "analytics",
-   "strength": 0.75,
-   "evidence": [
-    "Semantic models for Power BI",
-    "Migration mapping for 1,930 data fields"
-   ]
-  },
-  {
-   "name": "Docker",
-   "category": "tools",
-   "strength": 0.8,
-   "evidence": [
-    "Production-grade containerization",
-    "Helm chart configuration"
+    "API containerization",
+    "Helm deployment management",
+    "Policy as Code compliance"
    ]
   },
   {
    "name": "Quantitative Analytics",
    "category": "analytics",
-   "strength": 0.85,
+   "strength": 0.75,
    "evidence": [
     "CECL reserve forecasting",
-    "Pricing elasticity research",
-    "Model risk management (SR 11-7)"
+    "mortgage loan portfolio analysis",
+    "stress analysis"
    ]
   },
   {
-   "name": "C++/C",
+   "name": "Agentic Workflows",
    "category": "engineering",
    "strength": 0.7,
    "evidence": [
-    "Unreal Engine systems development",
-    "Virtual Studio Technologies (VST) plugin architecture"
+    "RAG implementation research",
+    "AI agent play orchestration",
+    "agentic bridge plugins"
    ]
   },
   {
-   "name": "PySpark",
+   "name": "CI/CD",
+   "category": "tools",
+   "strength": 0.7,
+   "evidence": [
+    "enterprise pipeline compliance",
+    "Git version control workflows",
+    "automated deployments"
+   ]
+  },
+  {
+   "name": "Data Modeling",
    "category": "analytics",
+   "strength": 0.7,
+   "evidence": [
+    "portfolio performance modeling",
+    "asset migration mapping",
+    "schema design"
+   ]
+  },
+  {
+   "name": "Selenium",
+   "category": "tools",
    "strength": 0.65,
    "evidence": [
-    "Distributed data processing within banking infrastructure"
+    "document sourcing automation",
+    "headless browser implementation"
+   ]
+  },
+  {
+   "name": "C++",
+   "category": "engineering",
+   "strength": 0.6,
+   "evidence": [
+    "Unreal Engine game scaffolding",
+    "physics-based simulation logic"
+   ]
+  },
+  {
+   "name": "Docker",
+   "category": "tools",
+   "strength": 0.6,
+   "evidence": [
+    "production-grade API containerization"
    ]
   },
   {
    "name": "Requirements Gathering",
    "category": "domain",
-   "strength": 0.8,
+   "strength": 0.6,
    "evidence": [
-    "Stakeholder enablement",
-    "Migration impact discovery",
-    "Business-critical field identification"
+    "stakeholder enablement",
+    "business-critical field reconciliation",
+    "process redesign"
    ]
   }
  ],
  "target_titles": [
   "Senior Business Intelligence Engineer",
-  "Analytics Engineer",
-  "Technical Product Manager (Data & AI)",
-  "Automation Engineer",
-  "Data Operations Lead"
+  "Analytics Engineering Manager",
+  "Technical Product Manager (Internal Platforms)",
+  "Senior Data Process Architect",
+  "Automation Lead"
  ],
- "version": "db9bf83da9b0",
+ "version": "8349525831ec",
  "remote_only": true,
- "generated_at": "2026-07-26T13:56:03.693376+00:00"
+ "generated_at": "2026-07-26T14:39:05.336784+00:00"
 }
