@@ -2040,5 +2040,68 @@
   "prefilter": 0.4735,
   "heuristic": false,
   "scored_at": "2026-07-26T16:27:35.829260+00:00"
+ },
+ "7d62ac3cf71ebd8b38808d2eadd5378dc367f523": {
+  "profile_version": "3b7a62d9b509",
+  "match_score": 65,
+  "confidence": 0.8,
+  "why": "The role matches your years of experience and core interest in data/process engineering, but the salary range starts below your $130k threshold.",
+  "seniority_fit": "target",
+  "role_family": "Analytics & Data Engineering",
+  "matched_skills": [
+   "SQL",
+   "Process Automation"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Emphasize your background in institutional operational efficiency.",
+   "Highlight your SQL and Python automation capabilities."
+  ],
+  "sector": "Other",
+  "prefilter": 0.5209,
+  "heuristic": false,
+  "scored_at": "2026-07-26T16:28:29.683765+00:00"
+ },
+ "636e3b5e3bf9bbd40f8ac0a46f442871a878b540": {
+  "profile_version": "3b7a62d9b509",
+  "match_score": 85,
+  "confidence": 0.9,
+  "why": "This is a strong seniority match (5 years) that aligns well with your experience in financial sector operational optimization and data delivery.",
+  "seniority_fit": "stretch",
+  "role_family": "Business & Data Analytics",
+  "matched_skills": [
+   "SQL",
+   "Data Modeling"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Highlight experience with data stewardship and technical asset production.",
+   "Quantify how your past data projects reduced operational friction."
+  ],
+  "sector": "Healthcare",
+  "prefilter": 0.4924,
+  "heuristic": false,
+  "scored_at": "2026-07-26T16:28:29.683765+00:00"
+ },
+ "90f61ac7973639dc0895229111f2e63320cd6f03": {
+  "profile_version": "3b7a62d9b509",
+  "match_score": 40,
+  "confidence": 0.7,
+  "why": "While the compensation is high, the role is heavily focused on statistical litigation analysis rather than the Python-based engineering and infrastructure work you excel at.",
+  "seniority_fit": "target",
+  "role_family": "Business & Data Analytics",
+  "matched_skills": [
+   "Data Modeling"
+  ],
+  "missing_skills": [
+   "Statistics"
+  ],
+  "resume_suggestions": [
+   "None; this role is a poor technical alignment for an infrastructure-focused developer."
+  ],
+  "sector": "Other",
+  "prefilter": 0.4844,
+  "heuristic": false,
+  "scored_at": "2026-07-26T16:28:29.683765+00:00"
  }
 }
