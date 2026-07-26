@@ -1,152 +1,133 @@
 {
- "summary": "Michael is a high-impact Business Analytics Consultant with 4 years of experience specializing in internal developer tooling, process automation, and data-heavy operational optimization. He bridges the gap between complex banking legacy systems and modern, containerized architectures, leveraging Python-based agentic workflows to accelerate team productivity. He is a technical practitioner with a proven track record of building production-grade internal platforms, REST APIs, and automated validation frameworks that drive significant cost savings.",
+ "summary": "Michael is a Business Analytics Consultant with 4 years of experience specializing in internal developer tooling, workflow automation, and quantitative modeling within the banking sector. He has a proven track record of reducing operational overhead through Python-based orchestration, REST API development, and data pipeline optimization. He actively explores agentic AI and RAG architectures to bridge the gap between technical infrastructure and enterprise business processes.",
  "skills": [
   {
    "name": "Python",
    "category": "engineering",
-   "strength": 0.95,
+   "strength": 0.9,
    "evidence": [
-    "Built internal data-czars library",
-    "Multi-scraper orchestration",
-    "Containerized API development",
-    "Extensive GitHub project activity"
+    "Maintained enterprise 'data-czars' package",
+    "Built multi-scraper orchestration suite",
+    "Ported core detection algorithms to containers"
    ]
   },
   {
    "name": "SQL",
    "category": "analytics",
-   "strength": 0.9,
+   "strength": 0.85,
    "evidence": [
-    "Database migration reconciliation",
-    "Oracle/Teradata/MongoDB interface development",
-    "Table usage analytics"
+    "Query optimization for Oracle/Teradata",
+    "Table usage analytics for migration discovery"
    ]
   },
   {
-   "name": "API Development",
+   "name": "REST API Development",
    "category": "engineering",
-   "strength": 0.85,
+   "strength": 0.8,
    "evidence": [
-    "REST API containerization on OpenShift",
-    "Production ML serving",
-    "Headless browser scraping APIs"
+    "Containerized scrapers on OpenShift",
+    "Deployed recurring transaction identification services"
    ]
   },
   {
    "name": "Process Automation",
-   "category": "engineering",
+   "category": "analytics",
    "strength": 0.9,
    "evidence": [
-    "Legacy mainframe migration",
-    "Pricing workflow automation",
-    "Document sourcing framework"
-   ]
-  },
-  {
-   "name": "Docker & Kubernetes",
-   "category": "engineering",
-   "strength": 0.8,
-   "evidence": [
-    "OpenShift deployments",
-    "Helm chart management",
-    "Containerizing scrapers and ML services"
+    "Built parameterized data validation frameworks",
+    "Automated pricing workflows reducing manual rework by 3+ hours daily"
    ]
   },
   {
    "name": "Power BI",
    "category": "analytics",
-   "strength": 0.8,
-   "evidence": [
-    "Enterprise-wide dashboards",
-    "Semantic modeling",
-    "Peer bank risk reporting"
-   ]
-  },
-  {
-   "name": "Data Engineering",
-   "category": "engineering",
    "strength": 0.75,
    "evidence": [
-    "Data validation frameworks",
-    "Grid-wide telemetry",
-    "ETL for migration reconciliation"
+    "Built peer bank analysis dashboards",
+    "Managed complex semantic models for portfolio reporting"
    ]
   },
   {
-   "name": "Agentic Workflows",
+   "name": "Kubernetes/OpenShift",
+   "category": "engineering",
+   "strength": 0.7,
+   "evidence": [
+    "Deployed production-grade APIs via Helm",
+    "Policy-as-code compliance gates"
+   ]
+  },
+  {
+   "name": "Data Modeling",
+   "category": "analytics",
+   "strength": 0.75,
+   "evidence": [
+    "Validated 1,930 data fields during asset migration",
+    "Led model integration for $70B+ asset portfolio"
+   ]
+  },
+  {
+   "name": "Docker",
+   "category": "engineering",
+   "strength": 0.8,
+   "evidence": [
+    "Containerization of production data pipelines",
+    "CI/CD integration for banking APIs"
+   ]
+  },
+  {
+   "name": "Agentic Architecture",
+   "category": "engineering",
+   "strength": 0.65,
+   "evidence": [
+    "Developed game AI orchestration via LLM-based agents",
+    "Researching RAG for enterprise security/token optimization"
+   ]
+  },
+  {
+   "name": "Quantitative Analytics",
+   "category": "analytics",
+   "strength": 0.8,
+   "evidence": [
+    "CECL reserve forecasting",
+    "Elasticity research and peer bank stress analysis"
+   ]
+  },
+  {
+   "name": "Git/Version Control",
+   "category": "tools",
+   "strength": 0.85,
+   "evidence": [
+    "Managed complex internal packaging workflows",
+    "GitHub portfolio management"
+   ]
+  },
+  {
+   "name": "Technical Strategy",
    "category": "domain",
    "strength": 0.7,
    "evidence": [
-    "RAG architecture research",
-    "Agentic orchestration in game dev project",
-    "Internal banking AI demonstrations"
-   ]
-  },
-  {
-   "name": "Financial Modeling",
-   "category": "domain",
-   "strength": 0.75,
-   "evidence": [
-    "CECL reserve forecasting",
-    "Pricing elasticity research",
-    "Stress testing and back-testing"
+    "Advocacy for resource-efficient AI implementation",
+    "Stakeholder enablement on automation tooling"
    ]
   },
   {
    "name": "C++",
    "category": "engineering",
-   "strength": 0.65,
+   "strength": 0.6,
    "evidence": [
-    "Unreal Engine game development",
-    "Physics-based simulation systems"
-   ]
-  },
-  {
-   "name": "CI/CD & DevOps",
-   "category": "tools",
-   "strength": 0.75,
-   "evidence": [
-    "Policy as Code compliance",
-    "Enterprise release pipelines",
-    "Helm-based deployment automation"
-   ]
-  },
-  {
-   "name": "Version Control (Git)",
-   "category": "tools",
-   "strength": 0.85,
-   "evidence": [
-    "Managed complex team repos",
-    "Maintained internal Python distributions"
-   ]
-  },
-  {
-   "name": "Excel",
-   "category": "tools",
-   "strength": 0.7,
-   "evidence": [
-    "Operational reporting",
-    "Stakeholder data validation"
-   ]
-  },
-  {
-   "name": "Requirements Gathering",
-   "category": "domain",
-   "strength": 0.8,
-   "evidence": [
-    "SME coordination for migration",
-    "Stakeholder enablement for tool deployment"
+    "Unreal Engine game scaffolding",
+    "Audio VST plugin development"
    ]
   }
  ],
  "target_titles": [
-  "Senior Business Systems Analyst",
+  "Senior Business Intelligence Engineer",
   "Analytics Engineer",
-  "Technical Product Manager (Developer Tools)",
+  "Technical Product Manager (Data & AI)",
   "Automation Engineer",
-  "Business Operations Lead"
+  "Data Platform Engineer"
  ],
- "version": "bb2bad4ac5ae",
+ "version": "d41b19636fb9",
  "remote_only": true,
- "generated_at": "2026-07-26T13:06:25.623629+00:00"
+ "generated_at": "2026-07-26T13:27:13.321704+00:00"
 }
