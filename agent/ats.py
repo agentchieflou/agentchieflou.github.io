@@ -202,6 +202,9 @@ def _greenhouse(slug):
         desc = html_to_text(html_mod.unescape(detail.get("content") or ""))
         out.append({
             "source": "greenhouse",
+            # Kept so preflight.py can read the application form even when
+            # absolute_url points at the employer's own careers page.
+            "board": slug,
             "title": title,
             "company": j.get("company_name") or _pretty(slug),
             "location": loc or "Remote",

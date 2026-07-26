@@ -98,9 +98,12 @@ def _job(source, title, company, location, url, description, salary=None,
 
 
 def _from_ats(raw):
-    return _job(raw["source"], raw["title"], raw["company"], raw["location"],
-                raw["url"], raw["description"], raw.get("salary"),
-                raw.get("posted_at"), True, raw.get("employment_type"))
+    job = _job(raw["source"], raw["title"], raw["company"], raw["location"],
+               raw["url"], raw["description"], raw.get("salary"),
+               raw.get("posted_at"), True, raw.get("employment_type"))
+    if raw.get("board"):
+        job["board"] = raw["board"]  # lets preflight.py find the application form
+    return job
 
 
 # ---------------- keyless sources ----------------

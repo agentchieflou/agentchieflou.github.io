@@ -556,6 +556,8 @@
       <div class="contact-info">
         <span>Raleigh, NC</span>
         <span>•</span>
+        <span class="normal-only">Open to Remote (US)</span>
+        <span class="normal-only">•</span>
         <a href="tel:+12169049535">216-904-9535</a>
         
         <span>•</span>
@@ -635,14 +637,12 @@
               <span class="subrole-meta">Raleigh, NC | Nov 2025 — Present</span>
             </div>
             <ul class="exp-bullets">
-              <li><strong>Enterprise Python Tooling (data-czars):</strong> One of three maintainers of data-czars, an
-                internally distributed Python package that removes friction from data work bank-wide: connection modules
-                for Oracle, Hadoop, Teradata and MongoDB, and automated keytab and keyring provisioning. Built and
-                refactored core components, including grid-wide table usage analytics that <strong>cut migration impact
-                discovery from six weeks to 24 hours</strong>, surfaced service-account ownership across an entire
-                mnemonic in a single view, and retargeted table-impact alerts to the users who actually query a table
-                rather than everyone holding entitlements — ending the alert fatigue that had trained recipients to
-                ignore migration notices.</li>
+              <li><strong>Enterprise Python Tooling (data-czars):</strong> One of three maintainers of a Python package
+                distributed bank-wide; built and refactored core components, including grid-wide table usage analytics
+                that <strong>cut migration impact discovery from six weeks to 24 hours</strong>, surfaced
+                service-account ownership across an entire mnemonic in a single view, and retargeted table-impact
+                alerts to the users who actually query a table rather than everyone holding entitlements — ending the
+                alert fatigue that had trained recipients to ignore migration notices.</li>
               <li><strong>Legacy Mainframe Migration:</strong> Designed and implemented a parameterized data validation
                 framework to compare and reconcile outputs across MongoDB, SOM DI, and OLNACS during a major asset class
                 migration. Enabled SME validation of 1,930 data fields, including 443 migration-impacted mappings and 207
@@ -651,11 +651,13 @@
                 by a master orchestrator to retrieve loan files, successfully closing out Document Process Management (DPM)
                 issues; engineered a proof-of-concept using Selenium before transitioning to a high-throughput API headless
                 browser connection.</li>
-              <li><strong>REST API Deployment:</strong> Currently containerizing custom scrapers and data parsing systems to
-                deploy them as new hosted REST APIs on OpenShift.</li>
-              <li><strong>AI Strategy &amp; Research:</strong> Researched and evaluated agentic workflows, RAG
-                architectures, and enterprise AI design patterns. Delivered internal demonstrations and recommendations
-                focused on resource-efficient implementations under strict enterprise security and token constraints.</li>
+              <li><strong>Service Deployment:</strong> Containerizing the scraper and parsing systems above for
+                deployment as hosted REST APIs on OpenShift, turning one-off automations into services other teams
+                can call directly.</li>
+              <li><strong>Resource-Efficient AI Architecture:</strong> Evaluated agentic workflows and RAG
+                architectures against strict enterprise security and token-budget constraints, establishing the
+                retrieval scoping, caching and model-selection patterns required to keep such designs financially
+                viable at enterprise scale. Presented the approach and its cost model in internal demonstrations.</li>
             </ul>
           </div>
 
@@ -665,16 +667,13 @@
               <span class="subrole-meta">McLean, VA | 2023 — Nov 2025</span>
             </div>
             <ul class="exp-bullets">
-              <li><strong>REST API Containerization:</strong> Designed, containerized, and deployed three production-grade
-                REST APIs on OpenShift via Helm deployments, complying with enterprise CI/CD and Policy as Code guidelines.
-              </li>
-              <li><strong>Recurring Transaction Identification API:</strong> Ported core detection algorithms from Python
-                into a containerized service, integrating directly with downstream credit risk systems.</li>
+              <li><strong>Production API Platform:</strong> Designed, containerized and deployed three production REST
+                APIs on OpenShift via Helm, clearing enterprise CI/CD, Policy as Code and restricted-network governance
+                gates — including a recurring-transaction detection service wired directly into downstream credit risk
+                systems, and a governed QA environment for pre-production validation.</li>
               <li><strong>Production ML Serving:</strong> Operationalized a fine-tuned language model that classifies
                 transaction records at scale, converting batch model outputs into a consumable, real-time API for
                 downstream consumers.</li>
-              <li><strong>QA Environment API:</strong> Deployed a specialized testing API navigating rigorous enterprise
-                governance constraints, restricted access networks, and Policy as Code compliance gates.</li>
               <li><strong>Data Visualization:</strong> Built Power BI semantic models and interactive dashboards to provide
                 stakeholders with portfolio-wide performance reporting.</li>
             </ul>
@@ -818,6 +817,51 @@
       </div>
     </section>
 
+    <section aria-labelledby="projects-heading" class="normal-only">
+      <h2 id="projects-heading">Selected Projects</h2>
+
+      <div class="experience-item">
+        <div class="exp-header">
+          <div>
+            <span class="exp-title">Autonomous Career Agent</span> —
+            <span class="exp-company">Open Source</span>
+          </div>
+          <span class="exp-meta">github.com/agentchieflou | 2026</span>
+        </div>
+        <ul class="exp-bullets">
+          <li>Built a daily job-matching pipeline that ingests structured postings from 260+ employer ATS boards
+            (Greenhouse, Lever, Ashby, SmartRecruiters) alongside keyed aggregator APIs, and grows its own board
+            registry by harvesting ATS links out of aggregator results.</li>
+          <li>Ranks candidates with locally-run ONNX sentence embeddings at zero API cost, then scores finalists in a
+            single batched LLM call carrying explicit seniority calibration; an email-driven rejection loop feeds a
+            negative-feedback centroid so structurally similar postings rank lower over time.</li>
+          <li>Engineered to a cost target: local embeddings, scores cached by job and profile version, per-source
+            request caps and snapshot-aware fetching hold the whole system to roughly <strong>$0/month</strong> on
+            free tiers.</li>
+          <li><strong>Stack:</strong> Python, ONNX / fastembed, Gemini, GitHub Actions, REST/JSON APIs, IMAP &amp; SMTP</li>
+        </ul>
+      </div>
+
+      <div class="experience-item">
+        <div class="exp-header">
+          <div>
+            <span class="exp-title">data-czars — Enterprise Data Access Toolkit</span> —
+            <span class="exp-company">PNC Bank</span>
+          </div>
+          <span class="exp-meta">Internal | 2025 — Present</span>
+        </div>
+        <ul class="exp-bullets">
+          <li>Built and refactored core modules of a Python package distributed bank-wide, abstracting connection
+            handling across Oracle, Teradata, Hadoop and MongoDB behind a single interface and automating the Kerberos
+            keytab and keyring provisioning engineers previously configured by hand.</li>
+          <li>Authored the grid-wide table usage telemetry the package exposes, which underpins migration impact
+            analysis, service-account ownership resolution, and precisely targeted change notifications.</li>
+          <li><strong>Stack:</strong> Python, Oracle, Teradata, Hadoop, MongoDB, Kerberos, internal package
+            distribution</li>
+        </ul>
+      </div>
+    </section>
+
     <section aria-labelledby="education-heading">
       <h2 id="education-heading">Education</h2>
       
@@ -833,8 +877,7 @@
           <p><strong>Bachelor of Arts in Economics</strong> | Secondary Major in Finance</p>
           <p>Coursework: Econometrics, Advanced Financial Modeling, Computational Methods, Options &amp; Derivatives,
             Money &amp; Banking</p>
-          <p>Activities: Presented original causal research to the Federal Reserve; Member of Alpha Kappa Psi Business
-            Fraternity and Zeta Beta Tau</p>
+          <p>Presented original causal research to the Federal Reserve</p>
         </div>
       </div>
 

@@ -15,6 +15,27 @@ STATE_DIR = Path(os.environ.get("AGENT_STATE_DIR", str(REPO_ROOT / "agent-state"
 GITHUB_USER = "agentchieflou"
 EMAIL_TO = "mbf.louard@gmail.com"
 
+# Answers to the deterministic half of an application form, so the digest can
+# pre-fill them instead of the owner retyping the same fields per posting.
+# Everything here is already published on resume.html — nothing private, and
+# agent-data is a public branch.
+APPLICANT = {
+    "first_name": "Michael",
+    "last_name": "Louard",
+    "email": EMAIL_TO,
+    "phone": "216-904-9535",
+    "location": "Raleigh, NC (open to remote, US)",
+    "linkedin": "https://linkedin.com/in/michael-louard",
+    "github": "https://github.com/agentchieflou",
+    "website": "https://agentchieflou.github.io",
+}
+# "How did you hear about us?" — answered the same way every time on purpose.
+# It is the one free field on a standard form where the honest answer also
+# demonstrates the skill being sold.
+REFERRAL_ANSWER = ("Through an autonomous job-matching agent I built and run myself — "
+                   "it reads employer ATS boards directly and surfaced this role. "
+                   "Source: github.com/agentchieflou")
+
 # Flash-Lite: cheapest available flash-tier model; one small call per run.
 # If this name 404s (model retired/renamed), llm.py auto-discovers the best
 # available flash model for the key and retries.

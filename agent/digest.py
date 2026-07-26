@@ -142,6 +142,32 @@ def _card(i, j, s, is_new):
         missing_html = (f'<div style="font:400 12px/1.5 {FONT};color:#80868b;'
                         f'margin:8px 0 0;" class="dim">Gaps: {e(missing)}</div>')
 
+    # Application pre-flight: what the form will actually ask.
+    pf = j.get("preflight") or {}
+    pf_html = ""
+    if pf:
+        parts = []
+        if pf.get("blockers"):
+            items = "".join(f"<li style='margin:0 0 3px;'>{e(b)}</li>"
+                            for b in pf["blockers"])
+            parts.append(
+                f'<div style="font:600 12px/1.5 {FONT};color:#b3261e;margin:0 0 4px;">'
+                f'Likely blocker{"s" if len(pf["blockers"]) > 1 else ""} in the application'
+                f'</div><ul style="margin:0 0 6px;padding:0 0 0 16px;font:400 12px/1.5 {FONT};'
+                f'color:#b3261e;">{items}</ul>')
+        summary = (f"{pf['total']} questions &middot; {len(pf.get('answered', []))} "
+                   f"pre-filled from your profile")
+        if pf.get("to_draft"):
+            summary += f" &middot; {len(pf['to_draft'])} to write"
+        parts.append(f'<div style="font:400 12px/1.5 {FONT};color:#80868b;" '
+                     f'class="dim">{summary}</div>')
+        if pf.get("to_draft"):
+            qs = "".join(f"<li style='margin:0 0 3px;'>{e(q)}</li>" for q in pf["to_draft"])
+            parts.append(f'<ul style="margin:4px 0 0;padding:0 0 0 16px;font:400 12px/1.5 '
+                         f'{FONT};color:#80868b;" class="dim">{qs}</ul>')
+        pf_html = (f'<div style="margin:12px 0 0;padding:10px 12px;background:#f8f9fa;'
+                   f'border-radius:8px;" class="chip">{"".join(parts)}</div>')
+
     return f"""
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"
   style="background:#ffffff;border:1px solid #e4e6e9;border-radius:12px;margin:0 0 12px;"
@@ -164,6 +190,7 @@ def _card(i, j, s, is_new):
     {tag_html}
     <div style="font:400 14px/1.6 {FONT};color:#3c4043;margin:0 0 2px;" class="body">{e(s['why'])}</div>
     {missing_html}
+    {pf_html}
     <div style="margin:16px 0 0;">
       {_button(j['url'], 'View posting', primary=True)}
       {_button(_mailto(j, SUBJECT_TAG, 'applied'), 'Mark applied')}

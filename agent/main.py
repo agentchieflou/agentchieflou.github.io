@@ -42,6 +42,7 @@ def main():
     import fetch_jobs
     import graph_export
     import index_profile
+    import preflight
     import rank
     import rejected as rejected_mod
     import score_llm
@@ -104,6 +105,10 @@ def main():
     log.info("stage 7/7: digest + graph export")
     exclude = set(applied) | set(rejected)
     top = digest_mod.pick_top(ranked, scores, exclude=exclude)
+    # Read each finalist's application form before it costs an evening:
+    # required screeners are where a role that passed every filter turns out
+    # to want someone who lives near a specific office.
+    preflight.annotate(top)
     stats = {
         "date": dt.date.today().isoformat(),
         "evaluated": len(jobs),
