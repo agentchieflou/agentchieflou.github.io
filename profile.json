@@ -1,76 +1,152 @@
 {
- "summary": "Résumé — Michael Louard\n← Back to Home\nSkills\nPrint / Save PDF\nKate mode\nCurriculum Vitae\nMichael Louard\nRaleigh, NC\n•\n216-904-9535\n•\nmbf.louard@gmail.com\n•\nLinkedIn\n•\nGitHub\nTechnical Skills\nLanguages & Analytics\nPython, SQL, R, PySpark, Power BI (semantic models, dashboards), Excel, Quantitative Analytics,\n Forecasting\nData Platforms\nOracle, Teradata, MongoDB, Hadoop, Data Modeling, Grid-Wide Te",
+ "summary": "Michael is a high-impact Business Analytics Consultant with 4 years of experience specializing in internal developer tooling, process automation, and data-heavy operational optimization. He bridges the gap between complex banking legacy systems and modern, containerized architectures, leveraging Python-based agentic workflows to accelerate team productivity. He is a technical practitioner with a proven track record of building production-grade internal platforms, REST APIs, and automated validation frameworks that drive significant cost savings.",
  "skills": [
   {
    "name": "Python",
-   "category": "tools",
-   "strength": 1.0,
-   "evidence": []
+   "category": "engineering",
+   "strength": 0.95,
+   "evidence": [
+    "Built internal data-czars library",
+    "Multi-scraper orchestration",
+    "Containerized API development",
+    "Extensive GitHub project activity"
+   ]
   },
   {
    "name": "SQL",
-   "category": "tools",
-   "strength": 0.77,
-   "evidence": []
+   "category": "analytics",
+   "strength": 0.9,
+   "evidence": [
+    "Database migration reconciliation",
+    "Oracle/Teradata/MongoDB interface development",
+    "Table usage analytics"
+   ]
+  },
+  {
+   "name": "API Development",
+   "category": "engineering",
+   "strength": 0.85,
+   "evidence": [
+    "REST API containerization on OpenShift",
+    "Production ML serving",
+    "Headless browser scraping APIs"
+   ]
+  },
+  {
+   "name": "Process Automation",
+   "category": "engineering",
+   "strength": 0.9,
+   "evidence": [
+    "Legacy mainframe migration",
+    "Pricing workflow automation",
+    "Document sourcing framework"
+   ]
+  },
+  {
+   "name": "Docker & Kubernetes",
+   "category": "engineering",
+   "strength": 0.8,
+   "evidence": [
+    "OpenShift deployments",
+    "Helm chart management",
+    "Containerizing scrapers and ML services"
+   ]
   },
   {
    "name": "Power BI",
+   "category": "analytics",
+   "strength": 0.8,
+   "evidence": [
+    "Enterprise-wide dashboards",
+    "Semantic modeling",
+    "Peer bank risk reporting"
+   ]
+  },
+  {
+   "name": "Data Engineering",
+   "category": "engineering",
+   "strength": 0.75,
+   "evidence": [
+    "Data validation frameworks",
+    "Grid-wide telemetry",
+    "ETL for migration reconciliation"
+   ]
+  },
+  {
+   "name": "Agentic Workflows",
+   "category": "domain",
+   "strength": 0.7,
+   "evidence": [
+    "RAG architecture research",
+    "Agentic orchestration in game dev project",
+    "Internal banking AI demonstrations"
+   ]
+  },
+  {
+   "name": "Financial Modeling",
+   "category": "domain",
+   "strength": 0.75,
+   "evidence": [
+    "CECL reserve forecasting",
+    "Pricing elasticity research",
+    "Stress testing and back-testing"
+   ]
+  },
+  {
+   "name": "C++",
+   "category": "engineering",
+   "strength": 0.65,
+   "evidence": [
+    "Unreal Engine game development",
+    "Physics-based simulation systems"
+   ]
+  },
+  {
+   "name": "CI/CD & DevOps",
    "category": "tools",
-   "strength": 0.77,
-   "evidence": []
+   "strength": 0.75,
+   "evidence": [
+    "Policy as Code compliance",
+    "Enterprise release pipelines",
+    "Helm-based deployment automation"
+   ]
+  },
+  {
+   "name": "Version Control (Git)",
+   "category": "tools",
+   "strength": 0.85,
+   "evidence": [
+    "Managed complex team repos",
+    "Maintained internal Python distributions"
+   ]
   },
   {
    "name": "Excel",
    "category": "tools",
-   "strength": 0.77,
-   "evidence": []
+   "strength": 0.7,
+   "evidence": [
+    "Operational reporting",
+    "Stakeholder data validation"
+   ]
   },
   {
-   "name": "R",
-   "category": "tools",
-   "strength": 0.77,
-   "evidence": []
-  },
-  {
-   "name": "RAG",
-   "category": "tools",
-   "strength": 0.77,
-   "evidence": []
-  },
-  {
-   "name": "HTML",
-   "category": "tools",
-   "strength": 0.53,
-   "evidence": []
-  },
-  {
-   "name": "C++",
-   "category": "tools",
-   "strength": 0.53,
-   "evidence": []
-  },
-  {
-   "name": "C",
-   "category": "tools",
-   "strength": 0.53,
-   "evidence": []
-  },
-  {
-   "name": "TypeScript",
-   "category": "tools",
-   "strength": 0.53,
-   "evidence": []
+   "name": "Requirements Gathering",
+   "category": "domain",
+   "strength": 0.8,
+   "evidence": [
+    "SME coordination for migration",
+    "Stakeholder enablement for tool deployment"
+   ]
   }
  ],
  "target_titles": [
-  "Business Analyst",
-  "Data Analyst",
-  "Business Intelligence Analyst",
-  "Analytics Consultant",
-  "Business Analytics Consultant"
+  "Senior Business Systems Analyst",
+  "Analytics Engineer",
+  "Technical Product Manager (Developer Tools)",
+  "Automation Engineer",
+  "Business Operations Lead"
  ],
- "heuristic": true,
- "version": "72aaaf7b6035-h",
+ "version": "bb2bad4ac5ae",
  "remote_only": true,
- "generated_at": "2026-07-26T13:03:25.063704+00:00"
+ "generated_at": "2026-07-26T13:06:25.623629+00:00"
 }
