@@ -1,15 +1,14 @@
 {
- "summary": "A highly technical Business Analytics Consultant with 4 years of experience specializing in process automation and internal developer tooling within highly regulated banking environments. Expert at bridging the gap between quantitative risk modeling and software engineering by building robust, containerized data pipelines and agentic workflows. Proven track record in orchestrating large-scale migrations, telemetry development, and production-grade API deployment using Python, SQL, and cloud-native infrastructure.",
+ "summary": "Michael is a technically-driven Business Analytics Consultant with four years of experience specializing in process automation, enterprise-grade tooling, and quantitative modeling within the banking sector. He excels at bridging the gap between complex data infrastructure and team productivity by architecting internal developer tools, automated validation frameworks, and RESTful APIs. Passionate about agentic workflows, he leverages modern engineering practices to solve high-stakes operational challenges and deliver scalable analytical solutions.",
  "skills": [
   {
    "name": "Python",
    "category": "engineering",
    "strength": 0.95,
    "evidence": [
-    "Internal data-czars package maintenance",
-    "Production API development",
-    "Complex web scraping architectures",
-    "Custom VST plugin C/C++/Python bridge development"
+    "Maintains enterprise-wide data-czars package",
+    "Built multi-scraper orchestration systems",
+    "Automated complex pricing workflows"
    ]
   },
   {
@@ -17,59 +16,65 @@
    "category": "analytics",
    "strength": 0.9,
    "evidence": [
-    "Advanced Oracle/Teradata/MongoDB query optimization",
-    "Grid-wide telemetry analysis",
-    "Migrated 1,930+ data fields across database architectures"
+    "Oracle/Teradata connection modules",
+    "Grid-wide table usage analytics",
+    "Data reconciliation across heterogeneous environments"
+   ]
+  },
+  {
+   "name": "REST API Development",
+   "category": "engineering",
+   "strength": 0.85,
+   "evidence": [
+    "Containerized scrapers and ML models on OpenShift",
+    "Deployed recurring transaction identification APIs",
+    "Enterprise-grade API security and policy compliance"
    ]
   },
   {
    "name": "Process Automation",
    "category": "engineering",
-   "strength": 0.9,
-   "evidence": [
-    "Pricing workflow automation saving 3+ hours daily",
-    "Custom scraper orchestration for DPM remediation",
-    "Mainframe migration data validation framework"
-   ]
-  },
-  {
-   "name": "API Development",
-   "category": "engineering",
    "strength": 0.85,
    "evidence": [
-    "Production-grade REST API deployment on OpenShift",
-    "Containerizing transaction classification models",
-    "Headless browser API development"
+    "Automated pricing workflows",
+    "Created rate-change effectiveness tools",
+    "Document sourcing automation via headless browsers"
    ]
   },
   {
-   "name": "Power BI",
-   "category": "analytics",
-   "strength": 0.8,
-   "evidence": [
-    "Enterprise semantic model design",
-    "Portfolio-wide performance reporting",
-    "Peer Bank Analysis Dashboard"
-   ]
-  },
-  {
-   "name": "CI/CD & DevOps",
+   "name": "Kubernetes / OpenShift",
    "category": "engineering",
    "strength": 0.8,
    "evidence": [
-    "OpenShift/Kubernetes deployments",
-    "Helm chart management",
-    "Policy as Code compliance implementation"
+    "Deployed production-grade APIs using Helm charts",
+    "Operationalized model serving in enterprise environments"
    ]
   },
   {
-   "name": "Data Modeling",
+   "name": "Data Visualization",
+   "category": "analytics",
+   "strength": 0.75,
+   "evidence": [
+    "Built Power BI semantic models",
+    "Developed executive-level Peer Bank Analysis Dashboards"
+   ]
+  },
+  {
+   "name": "Quantitative Analytics",
    "category": "analytics",
    "strength": 0.8,
    "evidence": [
-    "CECL reserve forecasting",
-    "Mortgage asset integration",
-    "Quantitative risk data architecture"
+    "CECL reserve forecasting for $70B+ portfolio",
+    "Performed elasticity research and M&A integration back-testing"
+   ]
+  },
+  {
+   "name": "CI/CD Pipelines",
+   "category": "engineering",
+   "strength": 0.7,
+   "evidence": [
+    "Managed enterprise CI/CD compliance",
+    "Policy as Code implementation for regulated API deployments"
    ]
   },
   {
@@ -77,85 +82,73 @@
    "category": "engineering",
    "strength": 0.75,
    "evidence": [
-    "RAG architecture research",
-    "Agent-based simulation in Unreal Engine projects",
-    "POC agentic tool development"
+    "Architected agent-driven football simulation",
+    "Implemented RAG concepts and research demonstrations for enterprise"
    ]
   },
   {
-   "name": "Docker/Kubernetes",
-   "category": "engineering",
-   "strength": 0.75,
-   "evidence": [
-    "Containerizing custom scrapers",
-    "OpenShift production deployments",
-    "Policy-compliant cloud service hosting"
-   ]
-  },
-  {
-   "name": "Quantitative Analysis",
+   "name": "Data Modeling",
    "category": "analytics",
-   "strength": 0.75,
+   "strength": 0.7,
    "evidence": [
-    "SR 11-7 model risk management",
-    "Elasticity research",
-    "Peer bank stress analysis"
-   ]
-  },
-  {
-   "name": "R",
-   "category": "analytics",
-   "strength": 0.6,
-   "evidence": [
-    "Model development and statistical validation"
+    "Managed migration of 1,930 data fields",
+    "Designed table usage tracking for legacy migration efforts"
    ]
   },
   {
    "name": "C++",
    "category": "engineering",
-   "strength": 0.6,
+   "strength": 0.65,
    "evidence": [
-    "Unreal Engine physics-based simulation development",
-    "Custom audio plugin infrastructure"
+    "Unreal Engine physics-based simulation",
+    "Developed audio VST plugins"
    ]
   },
   {
-   "name": "Git & Version Control",
-   "category": "engineering",
-   "strength": 0.7,
+   "name": "Git",
+   "category": "tools",
+   "strength": 0.8,
    "evidence": [
-    "Overhauled team version control practices",
-    "Multi-repo management for AI/ML projects"
+    "Standardized team version control practices",
+    "Maintains complex open-source project structures"
    ]
   },
   {
-   "name": "Requirements Gathering",
+   "name": "Power BI",
+   "category": "tools",
+   "strength": 0.75,
+   "evidence": [
+    "Portfolio-wide reporting dashboards",
+    "Performance monitoring tools for pricing teams"
+   ]
+  },
+  {
+   "name": "Model Risk Management",
    "category": "domain",
-   "strength": 0.7,
+   "strength": 0.75,
    "evidence": [
-    "SME validation across large-scale migrations",
-    "Stakeholder enablement for developer tooling"
+    "Applied OCC/Fed SR 11-7 standards",
+    "QA testing under governance constraints"
    ]
   },
   {
-   "name": "Banking Domain",
+   "name": "Retail & Commercial Banking",
    "category": "domain",
    "strength": 0.85,
    "evidence": [
-    "Commercial banking modeling",
-    "CECL reserve forecasting",
-    "Legacy mainframe migration experience"
+    "4 years experience in home equity/mortgage segments",
+    "Managed mainframe migration projects"
    ]
   }
  ],
  "target_titles": [
-  "Senior Business Analytics Engineer",
-  "Analytics Engineering Manager",
-  "Process Automation Lead",
+  "Senior Business Intelligence Engineer",
+  "Analytics Engineer",
   "Technical Product Manager (Data & AI)",
-  "Senior Data Strategist"
+  "Automation Engineer (Business Systems)",
+  "Quantitative Developer"
  ],
- "version": "ab84bc8f5216",
+ "version": "44c15113972e",
  "remote_only": true,
- "generated_at": "2026-07-26T12:55:27.674652+00:00"
+ "generated_at": "2026-07-26T13:00:12.511023+00:00"
 }
