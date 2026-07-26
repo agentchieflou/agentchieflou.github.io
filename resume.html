@@ -244,6 +244,40 @@
       margin-bottom: 0;
     }
 
+    /* Sub-roles: one employer header, dated progression beneath it, so four
+       years at one bank reads as a promotion track rather than five jobs. */
+    .exp-subrole {
+      margin: 0 0 20px;
+      padding-left: 16px;
+      border-left: 2px solid var(--line);
+    }
+
+    .exp-subrole:last-child {
+      margin-bottom: 0;
+    }
+
+    .subrole-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 2px 12px;
+      margin-bottom: 7px;
+    }
+
+    .subrole-title {
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 14.5px;
+      font-weight: 600;
+      color: #fff;
+    }
+
+    .subrole-meta {
+      font-size: 12px;
+      color: var(--dim);
+      font-family: "Space Grotesk", sans-serif;
+    }
+
     .exp-header {
       display: flex;
       justify-content: space-between;
@@ -433,6 +467,27 @@
         page-break-inside: avoid;
       }
 
+      .exp-subrole {
+        margin-bottom: 10px !important;
+        padding-left: 10px !important;
+        border-left: 1px solid #ccc !important;
+        page-break-inside: avoid;
+      }
+
+      .subrole-header {
+        margin-bottom: 3px !important;
+      }
+
+      .subrole-title {
+        font-size: 11.5px !important;
+        color: #000 !important;
+      }
+
+      .subrole-meta {
+        font-size: 10.5px !important;
+        color: #444 !important;
+      }
+
       .exp-title,
       .exp-company,
       .edu-degree,
@@ -524,17 +579,28 @@
       <!-- Normal Skills -->
       <div class="skills-grid normal-only">
         <div class="skill-category">
-          <h3>Languages &amp; Automation</h3>
-          <p>Python, R, SAS, Stata, SQL, PySpark, Go (exposure), COBOL (translation), Selenium, Headless Browsers</p>
+          <h3>Languages &amp; Analytics</h3>
+          <p>Python, SQL, R, PySpark, Power BI (semantic models, dashboards), Excel, Quantitative Analytics,
+            Forecasting</p>
         </div>
         <div class="skill-category">
-          <h3>Platforms &amp; Frameworks</h3>
-          <p>Kubernetes / OpenShift, Helm, CI/CD pipelines, Docker, Hadoop, Power BI, Excel</p>
+          <h3>Data Platforms</h3>
+          <p>Oracle, Teradata, MongoDB, Hadoop, Data Modeling, Grid-Wide Telemetry &amp; Table Usage Analytics</p>
         </div>
         <div class="skill-category">
-          <h3>Core Competencies</h3>
-          <p>API Development, NLP / BERT, Agentic &amp; RAG Strategy, Quantitative Analytics, CECL Forecasting,
-            Mainframe Migrations, Telemetry &amp; Analytics</p>
+          <h3>Process Optimization &amp; Automation</h3>
+          <p>Workflow Automation, Internal Developer Tooling, Data Validation Frameworks, Selenium,
+            Headless Browsers, Requirements Gathering, Stakeholder Enablement</p>
+        </div>
+        <div class="skill-category">
+          <h3>Platforms &amp; Engineering</h3>
+          <p>REST API Development, Kubernetes / OpenShift, Helm, Docker, CI/CD Pipelines, Git &amp; Version
+            Control, Python Packaging &amp; Distribution</p>
+        </div>
+        <div class="skill-category">
+          <h3>Domain</h3>
+          <p>Retail &amp; Commercial Banking, CECL Reserve Forecasting, Model Risk Management (SR 11-7),
+            Mainframe Migration, Pricing Strategy, Agentic &amp; RAG Architecture</p>
         </div>
       </div>
 
@@ -563,113 +629,113 @@
         <div class="experience-item">
           <div class="exp-header">
             <div>
-              <span class="exp-title">Business Analytics Consultant</span> —
               <span class="exp-company">PNC Bank</span>
             </div>
-            <span class="exp-meta">Raleigh, NC | Nov 2025 — Present</span>
+            <span class="exp-meta">Raleigh, NC &amp; McLean, VA | 2022 — Present</span>
           </div>
-          <ul class="exp-bullets">
-            <li><strong>Legacy Mainframe Migration:</strong> Designed and implemented a parameterized data validation
-              framework to compare and reconcile outputs across MongoDB, SOM DI, and OLNACS during a major asset class
-              migration. Enabled SME validation of 1,930 data fields, including 443 migration-impacted mappings and 207
-              business-critical fields, supporting on-time project delivery, avoiding a $30M contract renewal.</li>
-            <li><strong>Document Sourcing Automation:</strong> Developed a multi-scraper Python automation suite managed
-              by a master orchestrator to retrieve loan files, successfully closing out Document Process Management (DPM)
-              issues; engineered a proof-of-concept using Selenium before transitioning to a high-throughput API headless
-              browser connection.</li>
-            <li><strong>Telemetry &amp; Usage Analytics:</strong> Designed and developed grid-wide database telemetry and
-              table-level usage analytics that eliminated weeks of manual impact analysis for migrations and maintenance
-              events. Enabled DBAs and senior analysts to rapidly identify affected databases, accelerating migration
-              planning from weeks to days and reducing time spent on manual discovery.</li>
-            <li><strong>REST API Deployment:</strong> Currently containerizing custom scrapers and data parsing systems to
-              deploy them as new hosted REST APIs on OpenShift.</li>
-            <li><strong>AI Strategy &amp; Research:</strong> Researched and evaluated agentic workflows, RAG
-              architectures, and enterprise AI design patterns. Delivered internal demonstrations and recommendations
-              focused on resource-efficient implementations under strict enterprise security and token constraints.</li>
-          </ul>
-        </div>
 
-        <div class="experience-item">
-          <div class="exp-header">
-            <div>
-              <span class="exp-title">Quantitative Analytics — Model Development &amp; Engineering</span> —
-              <span class="exp-company">PNC Bank</span>
+          <div class="exp-subrole">
+            <div class="subrole-header">
+              <span class="subrole-title">Business Analytics Consultant</span>
+              <span class="subrole-meta">Raleigh, NC | Nov 2025 — Present</span>
             </div>
-            <span class="exp-meta">McLean, VA | 2023 — Nov 2025</span>
+            <ul class="exp-bullets">
+              <li><strong>Enterprise Python Tooling (data-czars):</strong> One of three maintainers of data-czars, an
+                internally distributed Python package that removes friction from data work across the bank — connection
+                modules for Oracle, Hadoop, Teradata and MongoDB, automated keytab and keyring provisioning, and
+                grid-wide table usage statistics. Built and refactored core components of the codebase and keep the
+                package running for consuming teams.</li>
+              <li><strong>Legacy Mainframe Migration:</strong> Designed and implemented a parameterized data validation
+                framework to compare and reconcile outputs across MongoDB, SOM DI, and OLNACS during a major asset class
+                migration. Enabled SME validation of 1,930 data fields, including 443 migration-impacted mappings and 207
+                business-critical fields, supporting on-time project delivery, avoiding a $30M contract renewal.</li>
+              <li><strong>Telemetry &amp; Usage Analytics:</strong> Designed and developed grid-wide database telemetry and
+                table-level usage analytics that eliminated weeks of manual impact analysis for migrations and maintenance
+                events. Enabled DBAs and senior analysts to rapidly identify affected databases, accelerating migration
+                planning from weeks to days and reducing time spent on manual discovery.</li>
+              <li><strong>Document Sourcing Automation:</strong> Developed a multi-scraper Python automation suite managed
+                by a master orchestrator to retrieve loan files, successfully closing out Document Process Management (DPM)
+                issues; engineered a proof-of-concept using Selenium before transitioning to a high-throughput API headless
+                browser connection.</li>
+              <li><strong>REST API Deployment:</strong> Currently containerizing custom scrapers and data parsing systems to
+                deploy them as new hosted REST APIs on OpenShift.</li>
+              <li><strong>AI Strategy &amp; Research:</strong> Researched and evaluated agentic workflows, RAG
+                architectures, and enterprise AI design patterns. Delivered internal demonstrations and recommendations
+                focused on resource-efficient implementations under strict enterprise security and token constraints.</li>
+            </ul>
           </div>
-          <ul class="exp-bullets">
-            <li><strong>REST API Containerization:</strong> Designed, containerized, and deployed three production-grade
-              REST APIs on OpenShift via Helm deployments, complying with enterprise CI/CD and Policy as Code guidelines.
-            </li>
-            <li><strong>Recurring Transaction Identification API:</strong> Ported core detection algorithms from Python
-              into a containerized service, integrating directly with downstream credit risk systems.</li>
-            <li><strong>BERT Transaction Classification API:</strong> Operationalized a fine-tuned BERT language model to
-              classify transaction records at scale, converting model outputs into a consumable, real-time API.</li>
-            <li><strong>QA Environment API:</strong> Deployed a specialized testing API navigating rigorous enterprise
-              governance constraints, restricted access networks, and Policy as Code compliance gates.</li>
-            <li><strong>Data Visualization:</strong> Built Power BI semantic models and interactive dashboards to provide
-              stakeholders with portfolio-wide performance reporting.</li>
-          </ul>
-        </div>
 
-        <div class="experience-item">
-          <div class="exp-header">
-            <div>
-              <span class="exp-title">Quantitative Analytics — BSAM Residential Modeling</span> —
-              <span class="exp-company">PNC Bank</span>
+          <div class="exp-subrole">
+            <div class="subrole-header">
+              <span class="subrole-title">Quantitative Analytics — Model Development &amp; Engineering</span>
+              <span class="subrole-meta">McLean, VA | 2023 — Nov 2025</span>
             </div>
-            <span class="exp-meta">McLean, VA | 2023</span>
+            <ul class="exp-bullets">
+              <li><strong>REST API Containerization:</strong> Designed, containerized, and deployed three production-grade
+                REST APIs on OpenShift via Helm deployments, complying with enterprise CI/CD and Policy as Code guidelines.
+              </li>
+              <li><strong>Recurring Transaction Identification API:</strong> Ported core detection algorithms from Python
+                into a containerized service, integrating directly with downstream credit risk systems.</li>
+              <li><strong>Production ML Serving:</strong> Operationalized a fine-tuned language model that classifies
+                transaction records at scale, converting batch model outputs into a consumable, real-time API for
+                downstream consumers.</li>
+              <li><strong>QA Environment API:</strong> Deployed a specialized testing API navigating rigorous enterprise
+                governance constraints, restricted access networks, and Policy as Code compliance gates.</li>
+              <li><strong>Data Visualization:</strong> Built Power BI semantic models and interactive dashboards to provide
+                stakeholders with portfolio-wide performance reporting.</li>
+            </ul>
           </div>
-          <ul class="exp-bullets">
-            <li><strong>CECL Reserve Forecasting:</strong> Executed reserve forecasting across Mortgage and Home Equity
-              segments, analyzing a 500K+ loan portfolio with <strong>$70B+</strong> in assets across four macroeconomic
-              scenarios.</li>
-            <li><strong>M&amp;A Integration:</strong> Led the integration of BBVA mortgage data, assessing 23,000 loans
-              for model suitability through back-testing, performance monitoring, and reasonableness reviews.</li>
-            <li><strong>Competitor Stress Analysis:</strong> Built a Peer Bank Analysis Dashboard to monitor and visualize
-              industry-wide stressors, improving executive-level competitive risk visibility.</li>
-            <li><strong>Regulatory Standards:</strong> Applied OCC and Federal Reserve model risk management regulations
-              (SR 11-7) throughout model development, testing, and validation lifecycles.</li>
-          </ul>
-        </div>
 
-        <div class="experience-item">
-          <div class="exp-header">
-            <div>
-              <span class="exp-title">Quantitative Analytics — Home Equity Pricing</span> —
-              <span class="exp-company">PNC Bank</span>
+          <div class="exp-subrole">
+            <div class="subrole-header">
+              <span class="subrole-title">Quantitative Analytics — BSAM Residential Modeling</span>
+              <span class="subrole-meta">McLean, VA | 2023</span>
             </div>
-            <span class="exp-meta">McLean, VA | 2022 — 2023</span>
+            <ul class="exp-bullets">
+              <li><strong>CECL Reserve Forecasting:</strong> Executed reserve forecasting across Mortgage and Home Equity
+                segments, analyzing a 500K+ loan portfolio with <strong>$70B+</strong> in assets across four macroeconomic
+                scenarios.</li>
+              <li><strong>M&amp;A Integration:</strong> Led the integration of BBVA mortgage data, assessing 23,000 loans
+                for model suitability through back-testing, performance monitoring, and reasonableness reviews.</li>
+              <li><strong>Competitor Stress Analysis:</strong> Built a Peer Bank Analysis Dashboard to monitor and visualize
+                industry-wide stressors, improving executive-level competitive risk visibility.</li>
+              <li><strong>Regulatory Standards:</strong> Applied OCC and Federal Reserve model risk management regulations
+                (SR 11-7) throughout model development, testing, and validation lifecycles.</li>
+            </ul>
           </div>
-          <ul class="exp-bullets">
-            <li><strong>Pricing Workflow Automation:</strong> Automated manual pricing workflows in Python, saving
-              qualified analysts 30 minutes daily and new analysts 60 minutes daily; completely eliminated manual entry
-              errors which previously resulted in 3+ hours of rework and operational/reputational risks.</li>
-            <li><strong>Performance Monitoring:</strong> Created a rate-change effectiveness tool to analyze pricing
-              changes, establishing it as the pricing team's standard performance-monitoring tool.</li>
-            <li><strong>Elasticity Research:</strong> Led a research initiative evaluating standard deviation as a proxy
-              for price elasticity in Home Equity product pricing.</li>
-            <li><strong>Data Architecture:</strong> Overhauled team version control practices and data storage
-              architectures to ensure data integrity and reproducibility.</li>
-          </ul>
-        </div>
 
-        <div class="experience-item">
-          <div class="exp-header">
-            <div>
-              <span class="exp-title">Retail Lending Product Management — Home Equity</span> —
-              <span class="exp-company">PNC Bank</span>
+          <div class="exp-subrole">
+            <div class="subrole-header">
+              <span class="subrole-title">Quantitative Analytics — Home Equity Pricing</span>
+              <span class="subrole-meta">McLean, VA | 2022 — 2023</span>
             </div>
-            <span class="exp-meta">McLean, VA | 2022</span>
+            <ul class="exp-bullets">
+              <li><strong>Pricing Workflow Automation:</strong> Automated manual pricing workflows in Python, saving
+                qualified analysts 30 minutes daily and new analysts 60 minutes daily; completely eliminated manual entry
+                errors which previously resulted in 3+ hours of rework and operational/reputational risks.</li>
+              <li><strong>Performance Monitoring:</strong> Created a rate-change effectiveness tool to analyze pricing
+                changes, establishing it as the pricing team's standard performance-monitoring tool.</li>
+              <li><strong>Elasticity Research:</strong> Led a research initiative evaluating standard deviation as a proxy
+                for price elasticity in Home Equity product pricing.</li>
+              <li><strong>Data Architecture:</strong> Overhauled team version control practices and data storage
+                architectures to ensure data integrity and reproducibility.</li>
+            </ul>
           </div>
-          <ul class="exp-bullets">
-            <li><strong>Process Redesign:</strong> Redesigned the HELOC communications and statement print workflows,
-              enabling migration to an in-house service that reduced vendor printing costs.</li>
-            <li><strong>Benchmarking Analysis:</strong> Performed competitive benchmarking analyses on peer bank intro
-              rates and discount models to optimize PNC's Home Equity market positioning.</li>
-            <li><strong>Expense Reduction:</strong> Analyzed HELOC origination fee structures, identifying restructuring
-              opportunities that reduced annual operating expenses by approximately <strong>$1 million</strong>.</li>
-          </ul>
+
+          <div class="exp-subrole">
+            <div class="subrole-header">
+              <span class="subrole-title">Retail Lending Product Management — Home Equity</span>
+              <span class="subrole-meta">McLean, VA | 2022</span>
+            </div>
+            <ul class="exp-bullets">
+              <li><strong>Process Redesign:</strong> Redesigned the HELOC communications and statement print workflows,
+                enabling migration to an in-house service that reduced vendor printing costs.</li>
+              <li><strong>Benchmarking Analysis:</strong> Performed competitive benchmarking analyses on peer bank intro
+                rates and discount models to optimize PNC's Home Equity market positioning.</li>
+              <li><strong>Expense Reduction:</strong> Analyzed HELOC origination fee structures, identifying restructuring
+                opportunities that reduced annual operating expenses by approximately <strong>$1 million</strong>.</li>
+            </ul>
+          </div>
         </div>
       </div>
 

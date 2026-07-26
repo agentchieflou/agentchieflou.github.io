@@ -84,6 +84,32 @@ def norm_key(text: str) -> str:
     return re.sub(r"[^a-z0-9]+", " ", (text or "").lower()).strip()
 
 
+# Seniority/level decorations that a re-post routinely gains or loses
+# ("Data Analyst" -> "Data Analyst II"), stripped so they don't defeat a
+# role_key match.
+_ROLE_NOISE = re.compile(
+    r"\b(?:i{1,3}|iv|v|vi{0,3}|[1-5]|senior|sr|junior|jr|lead|staff|principal|"
+    r"associate|remote|us|usa|united states|full[ -]?time|contract|hybrid)\b", re.I)
+
+
+def role_key(company: str, title: str) -> str:
+    """Opaque, stable fingerprint for "this role at this company".
+
+    Rejections are recorded against this rather than against the job id,
+    because the id is a hash of the URL: the same role re-posted at a new URL,
+    or surfaced by a second source, is a different id and would otherwise come
+    straight back. Deliberately company+title, never company alone — the point
+    is to stop one role reappearing, not to blacklist an employer.
+
+    Hashed because it is written to a public branch.
+    """
+    c = norm_key(company)
+    t = re.sub(r"\s+", " ", _ROLE_NOISE.sub(" ", norm_key(title))).strip()
+    if not c or not t:
+        return ""
+    return sha1(f"{c}|{t}")
+
+
 _SALARY_NUM = re.compile(r"(\d{1,3}(?:[,.]\d{3})+|\d+(?:\.\d+)?)\s*([kK])?")
 
 
@@ -114,6 +140,19 @@ def salary_max_usd(salary_text):
     elif mx < 10_000:  # bare "130"-style shorthand, assume thousands
         mx *= 1000
     return int(mx)
+
+
+US_REMOTE_HINTS = re.compile(
+    r"\b(usa|u\.s\.|us|united states|americas|north america|worldwide|anywhere|global)\b", re.I)
+
+
+def us_friendly(location_text):
+    """True when a location string is blank or reads as US-inclusive.
+
+    Blank counts as friendly: several sources omit location on remote roles,
+    and a later gate (or the LLM) will catch a genuinely foreign posting.
+    """
+    return not location_text or bool(US_REMOTE_HINTS.search(location_text))
 
 
 _REMOTE_DISQUALIFIERS = re.compile(

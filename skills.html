@@ -626,7 +626,7 @@
 
   // Legacy skills removed from the pipeline (agent/config.py blocklist) —
   // filtered here too so stale agent-data snapshots never show them.
-  const SKILL_BLOCKLIST = /\b(SAS|Stata|BERT|NLP)\b/i;
+  const SKILL_BLOCKLIST = /\b(SAS|Stata|BERT|NLP|COBOL|Go)\b/i;
   function stripBlocked(data) {
     const drop = new Set(
       [...(data.skills || []), ...(data.ghost_skills || [])]

@@ -11,8 +11,9 @@ import json
 import re
 
 import llm
-from config import (DESC_TRUNCATE, GEMINI_API_KEY,
-                    MAX_LLM_CANDIDATES, SECTORS, STATE_DIR)
+import role_filter
+from config import (DESC_TRUNCATE, GEMINI_API_KEY, MAX_LLM_CANDIDATES,
+                    MIN_SALARY_USD, SECTORS, STATE_DIR)
 from company_enrich import CACHE_PATH as COMPANY_CACHE_PATH
 from util import load_json, log, norm_key, save_json
 
@@ -40,21 +41,40 @@ def _gemini_score(profile, candidates):
         "company_about": (company_cache.get(norm_key(j["company"])) or {}).get("description") or None,
         "location": j["location"],
         "salary": j.get("salary"),
+        "role_family": j.get("role_family"),
+        "years_required": j.get("years_required"),
         "description": j["description"][:DESC_TRUNCATE],
     } for j in candidates]
+    years = role_filter.candidate_years()
     prompt = (
         "You are a career-matching analyst. Score how well each job posting fits this "
         "candidate. Consider technology-stack similarity, demonstrated project experience, "
-        "seniority/career progression, growth opportunity, and compensation when stated. "
-        "The candidate only wants fully-remote roles paying at least $130,000/year — "
-        "penalize the score when stated compensation falls short of that.\n\n"
+        "seniority/career progression, growth opportunity, and compensation when stated.\n\n"
+        "HARD CONSTRAINTS — the candidate wants fully-remote, full-time roles paying at "
+        f"least ${MIN_SALARY_USD:,}/year. Penalize heavily when stated compensation falls "
+        "short.\n\n"
+        "SENIORITY CALIBRATION — this matters as much as skill overlap and is the most "
+        f"common way this scoring goes wrong. The candidate has about {years} years of "
+        "professional experience. Score for whether they would realistically be "
+        "interviewed, not for whether the subject matter is interesting:\n"
+        f"  - a role asking for roughly {years - 1}-{years + 2} years is the target band; "
+        "score it on its merits\n"
+        "  - a role that is a clear step up (Senior/Lead/Manager, or a broader scope than "
+        "they hold today) is the ideal outcome — reward it\n"
+        "  - a role aimed at a materially more experienced person (Principal, Staff, "
+        f"Architect, Director, or asking for more than {years + 2} years) must score below "
+        "50 no matter how well the technologies line up, and confidence must reflect the "
+        "stretch\n"
+        "  - a role below the candidate's current level is not a step up; score it low\n\n"
         f"CANDIDATE SUMMARY:\n{profile.get('summary', '')}\n\n"
         f"CANDIDATE SKILLS: {json.dumps(skill_names)}\n\n"
         f"TARGET TITLES: {json.dumps(profile.get('target_titles', []))}\n\n"
         f"JOBS:\n{json.dumps(jobs_payload, ensure_ascii=False)}\n\n"
         "Respond with ONLY a JSON array, one object per job, keys:\n"
         '{"id": str, "match_score": int 0-100, "confidence": float 0-1,\n'
-        ' "why": "<=2 sentences on why it fits", "matched_skills": [names drawn ONLY '
+        ' "why": "<=2 sentences on why it fits, naming the specific overlap", '
+        '"seniority_fit": "below"|"target"|"stretch"|"out-of-band", '
+        '"matched_skills": [names drawn ONLY '
         "from CANDIDATE SKILLS], \"missing_skills\": [skills the posting wants that the "
         'candidate lacks], "resume_suggestions": [0-2 short concrete resume tweaks], '
         f'"sector": one of {json.dumps(SECTORS)} — the employer\'s industry sector, best '
@@ -70,6 +90,7 @@ def _heuristic_score(candidates):
         "confidence": 0.3,
         "why": "Heuristic score (no GEMINI_API_KEY set): ranked by embedding "
                "similarity to your profile.",
+        "seniority_fit": "",
         "matched_skills": [], "missing_skills": [], "resume_suggestions": [],
         "sector": "Other",
         "heuristic": True,
@@ -115,11 +136,16 @@ def score_candidates(profile, ranked_jobs):
         sector = str(r.get("sector") or "Other")
         if sector not in SECTORS:
             sector = "Other"
+        fit = str(r.get("seniority_fit") or "").lower()
+        if fit not in ("below", "target", "stretch", "out-of-band"):
+            fit = ""
         scores[jid] = {
             "profile_version": version,
             "match_score": max(0, min(100, int(r.get("match_score", 0)))),
             "confidence": max(0.0, min(1.0, float(r.get("confidence", 0)))),
             "why": str(r.get("why", ""))[:500],
+            "seniority_fit": fit,
+            "role_family": by_id[jid].get("role_family", ""),
             "matched_skills": [str(s)[:60] for s in r.get("matched_skills", [])][:10],
             "missing_skills": [str(s)[:60] for s in r.get("missing_skills", [])][:8],
             "resume_suggestions": [str(s)[:200] for s in r.get("resume_suggestions", [])][:2],

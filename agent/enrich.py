@@ -1,10 +1,11 @@
 """Fetches real posting text for finalist jobs that arrived without any.
 
-Doomers snapshot records carry structured fields (salary, remote, seniority)
-but no description, so the LLM would otherwise score them on title alone.
-For only the top prefiltered candidates each run, this stage pulls the
-description straight from the employer's ATS — via the ATS's public JSON API
-where one exists (cleanest and lightest), falling back to the posting page.
+Aggregator records sometimes carry a title and little else, so the LLM would
+otherwise score them on the title alone. For only the top prefiltered
+candidates each run, this stage pulls the description straight from the
+employer's ATS — via the ATS's public JSON API where one exists (cleanest
+and lightest), falling back to the posting page. Postings sourced from
+ats.py already arrive with full description text and skip this entirely.
 
 The same lookup doubles as a liveness check: when the ATS itself says the
 posting no longer exists (404 / null), the job is marked dead and dropped —

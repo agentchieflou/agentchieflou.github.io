@@ -35,6 +35,7 @@ def main():
         config.STATE_DIR = Path(args.state_dir)
 
     import applied as applied_mod
+    import ats
     import company_enrich
     import digest as digest_mod
     import enrich
@@ -57,7 +58,13 @@ def main():
     rejected = rejected_mod.sync_from_inbox()
 
     log.info("stage 3/7: job discovery")
-    jobs, new_ids, expired, totals = fetch_jobs.fetch_all(profile.get("target_titles", []))
+    # Roles already applied to or rejected are suppressed from discovery
+    # onward, by opaque company+title key as well as by job id, so a re-post
+    # at a new URL never costs an embedding, an enrichment or a digest slot.
+    suppressed_keys = (applied_mod.applied_role_keys(applied)
+                       | rejected_mod.rejected_role_keys(rejected))
+    jobs, new_ids, expired, totals = fetch_jobs.fetch_all(
+        profile.get("target_titles", []), exclude_role_keys=suppressed_keys)
     log.info("%d live jobs, %d new, %d expired, %d discovered all-time",
              len(jobs), len(new_ids), expired, totals["all_time"])
 
@@ -78,8 +85,19 @@ def main():
 
     # A job must clear the minimum skill-connection bar to count as a real
     # match anywhere downstream — a 1-2 skill overlap isn't "worth applying to".
+    # Heuristic scores are exempt: they carry no matched_skills at all, so
+    # applying the gate to them would empty every digest run without a key.
     before_gate = len(ranked)
-    ranked = [j for j in ranked if len(scores.get(j["id"], {}).get("matched_skills", [])) >= config.MIN_SKILL_MATCHES]
+
+    def clears_skill_gate(j):
+        s = scores.get(j["id"], {})
+        if not s:
+            return False
+        if s.get("heuristic"):
+            return True
+        return len(s.get("matched_skills", [])) >= config.MIN_SKILL_MATCHES
+
+    ranked = [j for j in ranked if clears_skill_gate(j)]
     log.info("skill-match gate: %d of %d scored jobs kept (>= %d matched skills)",
              len(ranked), before_gate, config.MIN_SKILL_MATCHES)
 
@@ -97,6 +115,7 @@ def main():
         "applied_total": len(applied),
         "rejected_total": len(rejected),
         "discovered_total": totals["all_time"],
+        "boards": sum(len(v) for v in ats.load_registry().values()),
     }
     digest_mod.send_digest(top, stats, dry_run=args.dry_run)
     # Applied and rejected jobs are kept out of the public graph as well
