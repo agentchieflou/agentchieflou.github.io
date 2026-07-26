@@ -243,6 +243,34 @@ def _jsearch_get(params):
     return last
 
 
+_jsearch_shape_logged = False
+
+
+def _jsearch_jobs(payload):
+    """Pulls the job list out of either JSearch response shape.
+
+    /search returned `data` as a bare array. /search-v2 returns it as an
+    object holding `jobs` plus a pagination `cursor`, so iterating `data`
+    yielded the dict's string keys and every posting failed with
+    "'str' object has no attribute 'get'".
+    """
+    global _jsearch_shape_logged
+    data = payload.get("data")
+    if isinstance(data, dict):
+        jobs = data.get("jobs") or []
+    elif isinstance(data, list):
+        jobs = data
+    else:
+        jobs = payload.get("jobs") or []
+    jobs = [j for j in jobs if isinstance(j, dict)]
+    if jobs and not _jsearch_shape_logged:
+        # One-shot, so a future field rename surfaces in the log instead of
+        # silently yielding zero postings.
+        _jsearch_shape_logged = True
+        log.info("JSearch result fields: %s", sorted(jobs[0].keys())[:20])
+    return jobs
+
+
 def fetch_jsearch(target_titles):
     """JSearch on RapidAPI — wraps Google Jobs and many boards behind one API.
 
@@ -277,7 +305,7 @@ def fetch_jsearch(target_titles):
                 f"{' '.join(r.text.split())[:300] or '(empty body)'} | quota: {quota}")
         r.raise_for_status()
         found = []
-        for j in r.json().get("data", []):
+        for j in _jsearch_jobs(r.json()):
             if not j.get("job_is_remote"):
                 continue
             salary = None
