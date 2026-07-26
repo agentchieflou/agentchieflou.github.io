@@ -2076,5 +2076,72 @@
   "prefilter": 0.4867,
   "heuristic": false,
   "scored_at": "2026-07-26T23:51:05.100980+00:00"
+ },
+ "7d62ac3cf71ebd8b38808d2eadd5378dc367f523": {
+  "profile_version": "2d8f68683856",
+  "match_score": 65,
+  "confidence": 0.8,
+  "why": "This aligns perfectly with your experience in data engineering and analytics within a corporate structure. However, the salary floor is exactly at your constraint boundary, making it a high-risk, lower-upside match.",
+  "seniority_fit": "target",
+  "role_family": "Analytics & Data Engineering",
+  "matched_skills": [
+   "Python",
+   "SQL",
+   "Data Modeling"
+  ],
+  "missing_skills": [
+   "None identified"
+  ],
+  "resume_suggestions": [
+   "Emphasize your experience with Integrated Facilities Management or similar large-scale operational workflows.",
+   "Highlight your ability to deliver high-throughput data pipelines."
+  ],
+  "sector": "Other",
+  "prefilter": 0.518,
+  "heuristic": false,
+  "scored_at": "2026-07-26T23:52:01.563252+00:00"
+ },
+ "c83e48c665dc5494294cc08d60ca3c8763e6219a": {
+  "profile_version": "2d8f68683856",
+  "match_score": 0,
+  "confidence": 1.0,
+  "why": "This is a pro-bono volunteer position that violates your hard constraint for a minimum salary of $130,000.",
+  "seniority_fit": "below",
+  "role_family": "Analytics & Data Engineering",
+  "matched_skills": [
+   "SQL"
+  ],
+  "missing_skills": [
+   "Looker"
+  ],
+  "resume_suggestions": [],
+  "sector": "Other",
+  "prefilter": 0.4857,
+  "heuristic": false,
+  "scored_at": "2026-07-26T23:52:01.563252+00:00"
+ },
+ "90f61ac7973639dc0895229111f2e63320cd6f03": {
+  "profile_version": "2d8f68683856",
+  "match_score": 75,
+  "confidence": 0.7,
+  "why": "This role aligns with your quantitative analytics and data modeling expertise. The salary range accommodates your $130k floor, and the specialized nature of the litigation data mirrors complex banking workflow modernization.",
+  "seniority_fit": "target",
+  "role_family": "Business & Data Analytics",
+  "matched_skills": [
+   "Data Modeling",
+   "Quantitative Analytics",
+   "SQL"
+  ],
+  "missing_skills": [
+   "Statistics (specialized legal focus)"
+  ],
+  "resume_suggestions": [
+   "Highlight your experience with 'damages modeling' or similar quantitative impact analyses.",
+   "Showcase your ability to communicate complex technical findings to non-technical stakeholders."
+  ],
+  "sector": "Consulting",
+  "prefilter": 0.4808,
+  "heuristic": false,
+  "scored_at": "2026-07-26T23:52:01.563252+00:00"
  }
 }
