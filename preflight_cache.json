@@ -46,48 +46,55 @@
  },
  "a8c5ecea0d5283405d791c3185b22d7e61192819": {
   "total": 19,
-  "answered": [
+  "standing": 12,
+  "specific": [
    {
-    "question": "First Name",
-    "answer": "Michael"
+    "q": "How did you hear about this job?",
+    "options": [
+     "Career Page",
+     "LinkedIn",
+     "Indeed",
+     "BuiltIn",
+     "Job Board",
+     "PompCryptoJobs"
+    ]
    },
    {
-    "question": "Last Name",
-    "answer": "Louard"
+    "q": "Please confirm receipt of the above linked Global Data Privacy Notice and US Arbitration Agreement.",
+    "options": [
+     "Confirmed"
+    ]
    },
    {
-    "question": "Email",
-    "answer": "mbf.louard@gmail.com"
+    "q": "I understand that Coinbase may use AI tools to assist in the application and interview process.",
+    "options": [
+     "Yes"
+    ]
    },
    {
-    "question": "Phone",
-    "answer": "216-904-9535"
+    "q": "Which of the following best describes how you use AI tools today?",
+    "options": [
+     "I am opposed to using AI tools in my workflow and prefer tra",
+     "I do not use AI tools for my work but I am not against it.",
+     "I have experimented with AI tools (professionally and/or per",
+     "I regularly use AI tools to speed up existing tasks (e.g., d",
+     "I design or automate workflows with AI tools (e.g., building"
+    ]
    },
    {
-    "question": "Linkedin Profile URL",
-    "answer": "https://linkedin.com/in/michael-louard"
-   },
-   {
-    "question": "How did you hear about this job?",
-    "answer": "Through an autonomous job-matching agent I built and run myself — it reads employer ATS boards directly and surfaced this role. Source: github.com/agentchieflou"
+    "q": "To your knowledge, do you or a close relative currently hold a role, have a significant financial interest in, or maintain a close personal relationship with a senior leader at a company connected to Coinbase that could create an actual or perceived conflict of interest?",
+    "options": [
+     "Yes",
+     "No"
+    ]
    }
-  ],
-  "to_draft": [
-   "Are you at least 18 years of age?",
-   "Have you previously been employed by Coinbase in any capacity?",
-   "Please confirm receipt of the above linked Global Data Privacy Notice and US Arbitration Agreement.",
-   "I understand that Coinbase may use AI tools to assist in the application and interview process.",
-   "Which of the following best describes how you use AI tools today?",
-   "Are you legally authorized to work in the country where this position is located?",
-   "Will you require sponsorship for employment visa status now or in the future?",
-   "Are you a current government official or were you a government official in the last five years (e.g., employee of a government agency or a government owned/controlled company, holder of public office or a civil service position)?"
   ],
   "uploads": [
    "Resume/CV",
    "Cover Letter"
   ],
   "blockers": [],
-  "v": 2
+  "v": 4
  },
  "71149850cb984b8eee502be96fd06167e5500156": {
   "total": 19,
@@ -367,5 +374,93 @@
   ],
   "blockers": [],
   "v": 2
+ },
+ "d7ac67e79ce9b2e00ff2cda8658689a02732357f": {
+  "total": 14,
+  "standing": 9,
+  "specific": [
+   {
+    "q": "What is your highest level of completed education?",
+    "options": [
+     "Associate's Degree",
+     "Bachelor’s Degree",
+     "Master’s Degree",
+     "Doctoral Degree",
+     "In Progress - degree not yet completed",
+     "High school diploma or equivalent"
+    ]
+   },
+   {
+    "q": "Have you been employed by Gemini in the past?",
+    "options": [
+     "Yes",
+     "No"
+    ]
+   },
+   {
+    "q": "Applicant Privacy Statement",
+    "options": [
+     "By clicking this box and submitting your application, you co",
+     "By clicking this box and submitting your application, you co"
+    ]
+   }
+  ],
+  "uploads": [
+   "Resume/CV",
+   "Cover Letter"
+  ],
+  "blockers": [],
+  "v": 4
+ },
+ "e5a9eac4dd7915a304e1a3aa4c693324654e10a5": {
+  "total": 21,
+  "standing": 9,
+  "specific": [
+   {
+    "q": "Address Line 1",
+    "options": []
+   },
+   {
+    "q": "City",
+    "options": []
+   },
+   {
+    "q": "Province/State",
+    "options": []
+   },
+   {
+    "q": "Postal/Zip Code",
+    "options": []
+   },
+   {
+    "q": "Country",
+    "options": []
+   },
+   {
+    "q": "Are you currently or have you ever provided services to Fivetran (or any of its global subsidiaries or affiliated entities) as a consultant or independent contractor, or through an employment agency or placement firm of any kind?",
+    "options": [
+     "Yes",
+     "No"
+    ]
+   },
+   {
+    "q": "Do you have the right to work in the country for which you are applying?",
+    "options": [
+     "Yes",
+     "No"
+    ]
+   },
+   {
+    "q": "By submitting this application, I acknowledge that I have read and understand Fivetran's Applicant Privacy Notice regarding the collection, use, and sharing of my personal information for recruitment and hiring purposes.",
+    "options": [
+     "Acknowledge/Confirm"
+    ]
+   }
+  ],
+  "uploads": [
+   "Resume/CV"
+  ],
+  "blockers": [],
+  "v": 4
  }
 }
