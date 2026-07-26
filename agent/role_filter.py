@@ -80,14 +80,22 @@ def employment_ok(title, description="", employment_type=None):
     """Full-time only.
 
     `employment_type` is the ATS's own structured value where one exists
-    (Ashby, SmartRecruiters) and is trusted over text matching when present.
+    (Ashby, Lever, SmartRecruiters). It is authoritative about what the
+    employer selected, but it does NOT get to override the title: sources
+    that filter server-side stamp "Full-time" on everything they return, and
+    one such posting titled "Business Intelligence Analyst / Full-Time /
+    Part-Time" walked straight through the gate. Both signals have to agree.
     """
-    if employment_type:
-        return bool(re.match(r"full[\s_-]?time", str(employment_type).strip(), re.I))
+    if employment_type and not re.match(r"full[\s_-]?time",
+                                        str(employment_type).strip(), re.I):
+        return False
     if _EMPLOYMENT_EXCLUDE.search(title or ""):
         return False
-    # Only the opening of the description — benefits sections mention
-    # "part-time employees" in ways that say nothing about this role.
+    if employment_type:
+        return True  # structured value says full-time and the title agrees
+    # No structured value: fall back to the opening of the description.
+    # Only the opening — benefits sections mention "part-time employees" in
+    # ways that say nothing about this role.
     return not _EMPLOYMENT_EXCLUDE.search((description or "")[:600])
 
 
