@@ -22,6 +22,7 @@ The agent is strictly read-only against these services: it fetches public
 listings and nothing else. No applications, no accounts, no outreach.
 """
 import datetime as dt
+import os
 import re
 
 import requests
@@ -222,6 +223,13 @@ def fetch_jsearch(target_titles):
     if not RAPIDAPI_KEY:
         log.info("RapidAPI secret not set - skipping JSearch source")
         return []
+    # The workflow also fires on every push to main, and this repo takes
+    # commits that have nothing to do with the job search. At 3 queries a run
+    # that would exhaust the 200/month free budget within days, so JSearch is
+    # limited to the runs whose purpose is finding jobs.
+    if os.environ.get("GITHUB_EVENT_NAME") == "push":
+        log.info("JSearch skipped on push-triggered run - preserving free-tier budget")
+        return []
     def one(title):
         r = _get("https://jsearch.p.rapidapi.com/search",
                  params={"query": f"{title} in United States", "page": "1",
@@ -229,17 +237,18 @@ def fetch_jsearch(target_titles):
                          "employment_types": "FULLTIME", "date_posted": "month"},
                  headers={"X-RapidAPI-Key": RAPIDAPI_KEY,
                           "X-RapidAPI-Host": "jsearch.p.rapidapi.com"})
-        if r.status_code in (401, 403, 429):
-            # Report exactly what RapidAPI said rather than guessing: 403 is
-            # "not subscribed" OR a stale/rotated key, and 429 is a per-plan
-            # quota OR the account-wide free-plan hard limit. The response
-            # body distinguishes them; the status code alone does not. The
-            # quota headers say how much budget is actually left.
+        if 400 <= r.status_code < 500:
+            # Any 4xx is a client-side problem that repeating the call cannot
+            # fix, so it ends the source for this run rather than spending
+            # more of a 200/month budget on identical errors. Report what
+            # RapidAPI actually said: the status alone is ambiguous (403 is
+            # "not subscribed" OR a stale key; 404 is a wrong endpoint path),
+            # and the quota headers show how much budget is really left.
             quota = {k: v for k, v in r.headers.items()
                      if k.lower().startswith("x-ratelimit")}
             raise SourceUnavailable(
-                f"HTTP {r.status_code} from RapidAPI: "
-                f"{' '.join(r.text.split())[:300] or '(empty body)'} | quota headers: {quota}")
+                f"HTTP {r.status_code} from RapidAPI {r.url.split('?')[0]}: "
+                f"{' '.join(r.text.split())[:300] or '(empty body)'} | quota: {quota}")
         r.raise_for_status()
         found = []
         for j in r.json().get("data", []):
