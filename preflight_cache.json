@@ -86,9 +86,8 @@
    "Resume/CV",
    "Cover Letter"
   ],
-  "blockers": [
-   "Are you at least 18 years of age? — asks for 18+ years"
-  ]
+  "blockers": [],
+  "v": 2
  },
  "71149850cb984b8eee502be96fd06167e5500156": {
   "total": 19,
@@ -132,9 +131,8 @@
    "Resume/CV",
    "Cover Letter"
   ],
-  "blockers": [
-   "Are you at least 18 years of age? — asks for 18+ years"
-  ]
+  "blockers": [],
+  "v": 2
  },
  "9d5911e269be629dc928f26d9055abac5f3d23f7": {
   "total": 15,
@@ -219,6 +217,61 @@
    "Cover Letter",
    "Upload anything"
   ],
-  "blockers": []
+  "blockers": [],
+  "v": 2
+ },
+ "45f1f0c8e76eaf286561686ae5a1ded9d055757b": {
+  "total": 20,
+  "answered": [
+   {
+    "question": "First Name",
+    "answer": "Michael"
+   },
+   {
+    "question": "Last Name",
+    "answer": "Louard"
+   },
+   {
+    "question": "Email",
+    "answer": "mbf.louard@gmail.com"
+   },
+   {
+    "question": "Phone",
+    "answer": "216-904-9535"
+   },
+   {
+    "question": "LinkedIn Profile",
+    "answer": "https://linkedin.com/in/michael-louard"
+   },
+   {
+    "question": "Preferred Name",
+    "answer": "Michael"
+   },
+   {
+    "question": "How did you first learn about Affirm as an employer?",
+    "answer": "Through an autonomous job-matching agent I built and run myself — it reads employer ATS boards directly and surfaced this role. Source: github.com/agentchieflou"
+   },
+   {
+    "question": "GitHub",
+    "answer": "https://github.com/agentchieflou"
+   },
+   {
+    "question": "Portfolio",
+    "answer": "https://agentchieflou.github.io"
+   }
+  ],
+  "to_draft": [
+   "Pronouns",
+   "Do you require immigration sponsorship to work for Affirm in the United States?",
+   "Will you require immigration sponsorship at any point in the future to maintain authorization to work in the United States?",
+   "Which U.S. State or Canadian Province do you reside in?",
+   "Have you previously been employed at Affirm for any length of time?"
+  ],
+  "uploads": [
+   "Resume/CV",
+   "Cover Letter"
+  ],
+  "blockers": [],
+  "v": 2
  }
 }
