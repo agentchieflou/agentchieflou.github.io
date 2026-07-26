@@ -47,6 +47,22 @@ def _get(url, **kw):
     return requests.get(url, headers=headers, **kw)
 
 
+def _per_query(source, queries, fn):
+    """Runs `fn` per query, isolating failures.
+
+    The keyword sources issue several queries per run, and a single transient
+    error used to abort the whole source: Adzuna returned one 503 and all six
+    queries were lost. One bad query should cost one query.
+    """
+    out = []
+    for q in queries:
+        try:
+            out.extend(fn(q))
+        except Exception as e:
+            log.info("%s query %r failed: %s", source, q, e)
+    return out
+
+
 def _job(source, title, company, location, url, description, salary=None,
          posted_at=None, remote=True, employment_type=None):
     title = (title or "").strip()[:200]
@@ -101,8 +117,7 @@ def fetch_adzuna(target_titles):
     if not (ADZUNA_APP_ID and ADZUNA_APP_KEY):
         log.info("Adzuna secrets not set - skipping source")
         return []
-    out = []
-    for title in SEARCH_QUERIES[:6]:
+    def one(title):
         # salary_min and full_time are applied server-side, so the response is
         # already inside the owner's constraints instead of being filtered
         # down to nothing on this end.
@@ -112,6 +127,7 @@ def fetch_adzuna(target_titles):
                          "salary_min": MIN_SALARY_USD, "full_time": 1,
                          "max_days_old": 30, "content-type": "application/json"})
         r.raise_for_status()
+        found = []
         for j in r.json().get("results", []):
             blob = " ".join([j.get("title", ""), (j.get("location") or {}).get("display_name", ""),
                              j.get("description", "")])
@@ -120,59 +136,69 @@ def fetch_adzuna(target_titles):
             salary = None
             if j.get("salary_min"):
                 salary = f"${int(j['salary_min']):,}-${int(j.get('salary_max') or j['salary_min']):,}"
-            out.append(_job("adzuna", j.get("title"), (j.get("company") or {}).get("display_name"),
-                            "Remote (US)", j.get("redirect_url"), j.get("description", ""),
-                            salary, j.get("created"), employment_type="Full-time"))
-    return out
+            found.append(_job("adzuna", j.get("title"), (j.get("company") or {}).get("display_name"),
+                              "Remote (US)", j.get("redirect_url"), j.get("description", ""),
+                              salary, j.get("created"), employment_type="Full-time"))
+        return found
+
+    return _per_query("adzuna", SEARCH_QUERIES[:6], one)
 
 
 def fetch_usajobs(target_titles):
     if not USAJOBS_API_KEY:
         log.info("USAJobs secret not set - skipping source")
         return []
-    r = _get("https://data.usajobs.gov/api/search",
-             params={"Keyword": " OR ".join(SEARCH_QUERIES[:4]), "RemoteIndicator": "True",
-                     "ResultsPerPage": 50, "PositionScheduleTypeCode": "1"},
-             headers={"Authorization-Key": USAJOBS_API_KEY, "User-Agent": USAJOBS_USER_AGENT,
-                      "Host": "data.usajobs.gov"})
-    r.raise_for_status()
-    out = []
-    for item in r.json().get("SearchResult", {}).get("SearchResultItems", []):
-        d = item.get("MatchedObjectDescriptor", {})
-        remun = (d.get("PositionRemuneration") or [{}])[0]
-        salary = None
-        if remun.get("MinimumRange"):
-            salary = f"${float(remun['MinimumRange']):,.0f}-${float(remun.get('MaximumRange', 0)):,.0f}"
-        desc = " ".join(filter(None, [
-            (d.get("UserArea", {}).get("Details", {}) or {}).get("JobSummary", ""),
-            d.get("QualificationSummary", "")]))
-        out.append(_job("usajobs", d.get("PositionTitle"), d.get("OrganizationName"),
-                        "Remote (US Federal)", d.get("PositionURI"), desc, salary,
-                        d.get("PublicationStartDate"), employment_type="Full-time"))
-    return out
+    def one(title):
+        # One keyword per request. An " OR "-joined string is matched
+        # literally here rather than as a boolean, which is why the combined
+        # query returned nothing at all.
+        r = _get("https://data.usajobs.gov/api/search",
+                 params={"Keyword": title, "RemoteIndicator": "True",
+                         "ResultsPerPage": 50, "PositionScheduleTypeCode": "1"},
+                 headers={"Authorization-Key": USAJOBS_API_KEY,
+                          "User-Agent": USAJOBS_USER_AGENT, "Host": "data.usajobs.gov"})
+        r.raise_for_status()
+        found = []
+        for item in r.json().get("SearchResult", {}).get("SearchResultItems", []):
+            d = item.get("MatchedObjectDescriptor", {})
+            remun = (d.get("PositionRemuneration") or [{}])[0]
+            salary = None
+            if remun.get("MinimumRange"):
+                salary = f"${float(remun['MinimumRange']):,.0f}-${float(remun.get('MaximumRange', 0)):,.0f}"
+            desc = " ".join(filter(None, [
+                (d.get("UserArea", {}).get("Details", {}) or {}).get("JobSummary", ""),
+                d.get("QualificationSummary", "")]))
+            found.append(_job("usajobs", d.get("PositionTitle"), d.get("OrganizationName"),
+                              "Remote (US Federal)", d.get("PositionURI"), desc, salary,
+                              d.get("PublicationStartDate"), employment_type="Full-time"))
+        return found
+
+    return _per_query("usajobs", SEARCH_QUERIES[:4], one)
 
 
 def fetch_jooble(target_titles):
     if not JOOBLE_API_KEY:
         log.info("Jooble secret not set - skipping source")
         return []
-    out = []
-    for title in SEARCH_QUERIES[:4]:
+    def one(title):
         r = requests.post(f"https://jooble.org/api/{JOOBLE_API_KEY}",
                           json={"keywords": title, "location": "Remote",
                                 "salary": str(MIN_SALARY_USD), "page": "1"},
                           headers={"User-Agent": USER_AGENT,
                                    "Content-Type": "application/json"}, timeout=30)
         r.raise_for_status()
+        found = []
         for j in r.json().get("jobs", []):
             blob = " ".join([j.get("title", ""), j.get("location", ""), j.get("snippet", "")])
             if not looks_genuinely_remote(blob):
                 continue
-            out.append(_job("jooble", j.get("title"), j.get("company"),
-                            j.get("location") or "Remote", j.get("link"),
-                            html_to_text(j.get("snippet", "")), j.get("salary") or None,
-                            j.get("updated"), employment_type=j.get("type")))
-    return out
+            found.append(_job("jooble", j.get("title"), j.get("company"),
+                              j.get("location") or "Remote", j.get("link"),
+                              html_to_text(j.get("snippet", "")), j.get("salary") or None,
+                              j.get("updated"), employment_type=j.get("type")))
+        return found
+
+    return _per_query("jooble", SEARCH_QUERIES[:4], one)
 
 
 def fetch_jsearch(target_titles):
@@ -184,15 +210,20 @@ def fetch_jsearch(target_titles):
     if not RAPIDAPI_KEY:
         log.info("RapidAPI secret not set - skipping JSearch source")
         return []
-    out = []
-    for title in SEARCH_QUERIES[:3]:
+    def one(title):
         r = _get("https://jsearch.p.rapidapi.com/search",
                  params={"query": f"{title} in United States", "page": "1",
                          "num_pages": "1", "work_from_home": "true",
                          "employment_types": "FULLTIME", "date_posted": "month"},
                  headers={"X-RapidAPI-Key": RAPIDAPI_KEY,
                           "X-RapidAPI-Host": "jsearch.p.rapidapi.com"})
+        if r.status_code == 403:
+            raise RuntimeError(
+                "403 - the RapidAPI key is valid but not subscribed to JSearch. "
+                "Subscribe to the JSearch API (free Basic plan) at "
+                "rapidapi.com/letscrape-6bRBa3QguO5/api/jsearch")
         r.raise_for_status()
+        found = []
         for j in r.json().get("data", []):
             if not j.get("job_is_remote"):
                 continue
@@ -203,12 +234,14 @@ def fetch_jsearch(target_titles):
                 lo = int((j.get("job_min_salary") or 0) * mult)
                 hi = int(j["job_max_salary"] * mult)
                 salary = f"${lo:,}-${hi:,}" if lo else f"up to ${hi:,}"
-            out.append(_job("jsearch", j.get("job_title"), j.get("employer_name"),
-                            "Remote (US)", j.get("job_apply_link"),
-                            j.get("job_description", ""), salary,
-                            j.get("job_posted_at_datetime_utc"),
-                            employment_type=j.get("job_employment_type")))
-    return out
+            found.append(_job("jsearch", j.get("job_title"), j.get("employer_name"),
+                              "Remote (US)", j.get("job_apply_link"),
+                              j.get("job_description", ""), salary,
+                              j.get("job_posted_at_datetime_utc"),
+                              employment_type=j.get("job_employment_type")))
+        return found
+
+    return _per_query("jsearch", SEARCH_QUERIES[:3], one)
 
 
 # ---------------- orchestration ----------------
