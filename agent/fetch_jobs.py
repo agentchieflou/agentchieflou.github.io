@@ -47,17 +47,29 @@ def _get(url, **kw):
     return requests.get(url, headers=headers, **kw)
 
 
+class SourceUnavailable(Exception):
+    """Raised when the whole source is unusable this run (auth, quota).
+
+    Distinct from a per-query failure: retrying the remaining queries can
+    only burn more of a metered quota and produce identical errors.
+    """
+
+
 def _per_query(source, queries, fn):
     """Runs `fn` per query, isolating failures.
 
     The keyword sources issue several queries per run, and a single transient
     error used to abort the whole source: Adzuna returned one 503 and all six
-    queries were lost. One bad query should cost one query.
+    queries were lost. One bad query should cost one query — unless the
+    source itself is telling us it is unavailable, in which case stop.
     """
     out = []
     for q in queries:
         try:
             out.extend(fn(q))
+        except SourceUnavailable as e:
+            log.warning("%s unavailable, skipping remaining queries: %s", source, e)
+            break
         except Exception as e:
             log.info("%s query %r failed: %s", source, q, e)
     return out
@@ -217,11 +229,17 @@ def fetch_jsearch(target_titles):
                          "employment_types": "FULLTIME", "date_posted": "month"},
                  headers={"X-RapidAPI-Key": RAPIDAPI_KEY,
                           "X-RapidAPI-Host": "jsearch.p.rapidapi.com"})
-        if r.status_code == 403:
-            raise RuntimeError(
-                "403 - the RapidAPI key is valid but not subscribed to JSearch. "
-                "Subscribe to the JSearch API (free Basic plan) at "
-                "rapidapi.com/letscrape-6bRBa3QguO5/api/jsearch")
+        if r.status_code in (401, 403, 429):
+            # Report exactly what RapidAPI said rather than guessing: 403 is
+            # "not subscribed" OR a stale/rotated key, and 429 is a per-plan
+            # quota OR the account-wide free-plan hard limit. The response
+            # body distinguishes them; the status code alone does not. The
+            # quota headers say how much budget is actually left.
+            quota = {k: v for k, v in r.headers.items()
+                     if k.lower().startswith("x-ratelimit")}
+            raise SourceUnavailable(
+                f"HTTP {r.status_code} from RapidAPI: "
+                f"{' '.join(r.text.split())[:300] or '(empty body)'} | quota headers: {quota}")
         r.raise_for_status()
         found = []
         for j in r.json().get("data", []):
