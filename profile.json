@@ -1,15 +1,15 @@
 {
- "summary": "Data-driven process engineer with 4 years of experience specializing in internal developer tooling, automated migration frameworks, and enterprise Python architecture. Proven track record of reducing operational overhead and migration timelines through grid-wide telemetry, REST API development, and agentic workflow orchestration. Highly technical, business-focused professional adept at navigating complex enterprise governance while deploying scalable, reliable automation solutions.",
+ "summary": "Professional Business Analytics Consultant with 4 years of experience specializing in internal developer tooling, process automation, and data engineering within the banking sector. Expert at building high-impact Python-based infrastructure, including REST APIs, containerized deployment pipelines, and grid-wide analytics frameworks that significantly reduce operational costs. Committed to leveraging agentic workflows and AI-driven systems to optimize enterprise processes and enable data-driven strategy.",
  "skills": [
   {
    "name": "Python",
    "category": "engineering",
    "strength": 0.95,
    "evidence": [
-    "Maintained internal 'data-czars' library",
-    "REST API containerization",
-    "Multi-scraper orchestration",
-    "Agentic architecture research"
+    "Enterprise-distributed package 'data-czars'",
+    "Production REST API development",
+    "High-throughput web scraping",
+    "Agentic orchestration"
    ]
   },
   {
@@ -17,19 +17,9 @@
    "category": "analytics",
    "strength": 0.9,
    "evidence": [
-    "Grid-wide table usage analytics",
-    "Oracle/Teradata/MongoDB data modeling",
-    "Complex asset class migration reconciliation"
-   ]
-  },
-  {
-   "name": "REST API Development",
-   "category": "engineering",
-   "strength": 0.85,
-   "evidence": [
-    "Containerized three production-grade APIs",
-    "Managed OpenShift deployments via Helm",
-    "Integrated with credit risk systems"
+    "Complex data modeling",
+    "Grid-wide telemetry analytics",
+    "Database migration validation (Oracle, MongoDB, Teradata)"
    ]
   },
   {
@@ -37,126 +27,124 @@
    "category": "engineering",
    "strength": 0.9,
    "evidence": [
-    "Automated pricing workflows",
-    "Built multi-scraper suites for DPM",
-    "Engineered data validation frameworks"
+    "Pricing workflow automation",
+    "Document sourcing suite",
+    "Mainframe migration validation framework"
    ]
   },
   {
    "name": "Power BI",
    "category": "analytics",
-   "strength": 0.8,
+   "strength": 0.85,
    "evidence": [
-    "Developed enterprise-wide semantic models",
-    "Built Peer Bank Analysis Dashboard",
-    "Portfolio performance reporting"
+    "Semantic model development",
+    "Peer Bank Analysis Dashboard",
+    "Portfolio-wide performance reporting"
    ]
   },
   {
-   "name": "OpenShift/Kubernetes",
+   "name": "REST API Development",
    "category": "engineering",
-   "strength": 0.75,
+   "strength": 0.8,
    "evidence": [
-    "Helm deployments",
-    "Policy as Code compliance",
-    "Containerized microservice architecture"
+    "Containerized microservices on OpenShift",
+    "Deployment of testing and transaction detection APIs"
    ]
   },
   {
-   "name": "Data Modeling",
-   "category": "analytics",
+   "name": "Kubernetes/OpenShift",
+   "category": "tools",
    "strength": 0.8,
    "evidence": [
-    "CECL reserve forecasting",
-    "M&A data integration",
-    "Field reconciliation for 1,930 data points"
+    "Deployment via Helm",
+    "Policy as Code compliance",
+    "Containerizing scrapers and parsing systems"
    ]
   },
   {
    "name": "Git & CI/CD",
    "category": "tools",
-   "strength": 0.85,
-   "evidence": [
-    "Enterprise CI/CD pipeline integration",
-    "Refactored team version control practices",
-    "Internal package distribution management"
-   ]
-  },
-  {
-   "name": "Agentic Workflows",
-   "category": "engineering",
-   "strength": 0.7,
-   "evidence": [
-    "Researching RAG/Agentic design patterns",
-    "Agentic play simulation in C++/Unreal",
-    "Workflow orchestration for data scraping"
-   ]
-  },
-  {
-   "name": "C++",
-   "category": "engineering",
-   "strength": 0.7,
-   "evidence": [
-    "Unreal Engine game development",
-    "Virtual Studio Technology (VST) audio plugin architecture"
-   ]
-  },
-  {
-   "name": "Data Validation",
-   "category": "analytics",
-   "strength": 0.85,
-   "evidence": [
-    "Built parameter-driven validation framework for $30M migration",
-    "Model risk management validation (SR 11-7)"
-   ]
-  },
-  {
-   "name": "Stakeholder Enablement",
-   "category": "domain",
    "strength": 0.8,
    "evidence": [
-    "Requirements gathering",
-    "Reducing alert fatigue for migration teams",
-    "Executive risk visibility dashboards"
+    "Enterprise version control workflows",
+    "Policy as Code gates",
+    "Automated deployment pipelines"
    ]
   },
   {
-   "name": "Financial Domain Knowledge",
-   "category": "domain",
-   "strength": 0.85,
+   "name": "Agentic & RAG Architecture",
+   "category": "engineering",
+   "strength": 0.75,
    "evidence": [
-    "CECL forecasting",
-    "Retail lending product management",
-    "Home Equity pricing elasticity"
+    "Researching/implementing enterprise AI patterns",
+    "Agentic plugin stubs in C++",
+    "Workflow orchestration experiments"
    ]
   },
   {
-   "name": "Hadoop",
-   "category": "tools",
-   "strength": 0.7,
+   "name": "Data Modeling",
+   "category": "analytics",
+   "strength": 0.75,
    "evidence": [
-    "Maintained Hadoop connection modules in 'data-czars'",
-    "Grid-wide telemetry"
+    "Semantic models for Power BI",
+    "Migration mapping for 1,930 data fields"
    ]
   },
   {
    "name": "Docker",
-   "category": "engineering",
+   "category": "tools",
    "strength": 0.8,
    "evidence": [
-    "Containerizing scrapers",
-    "Operationalizing ML serving"
+    "Production-grade containerization",
+    "Helm chart configuration"
+   ]
+  },
+  {
+   "name": "Quantitative Analytics",
+   "category": "analytics",
+   "strength": 0.85,
+   "evidence": [
+    "CECL reserve forecasting",
+    "Pricing elasticity research",
+    "Model risk management (SR 11-7)"
+   ]
+  },
+  {
+   "name": "C++/C",
+   "category": "engineering",
+   "strength": 0.7,
+   "evidence": [
+    "Unreal Engine systems development",
+    "Virtual Studio Technologies (VST) plugin architecture"
+   ]
+  },
+  {
+   "name": "PySpark",
+   "category": "analytics",
+   "strength": 0.65,
+   "evidence": [
+    "Distributed data processing within banking infrastructure"
+   ]
+  },
+  {
+   "name": "Requirements Gathering",
+   "category": "domain",
+   "strength": 0.8,
+   "evidence": [
+    "Stakeholder enablement",
+    "Migration impact discovery",
+    "Business-critical field identification"
    ]
   }
  ],
  "target_titles": [
   "Senior Business Intelligence Engineer",
   "Analytics Engineer",
-  "Automation Lead",
-  "Operations Engineer (Internal Tooling)",
-  "Technical Product Manager (Data/AI)"
+  "Technical Product Manager (Data & AI)",
+  "Automation Engineer",
+  "Data Operations Lead"
  ],
- "version": "46fae8d62f25",
+ "version": "db9bf83da9b0",
  "remote_only": true,
- "generated_at": "2026-07-26T13:53:04.459562+00:00"
+ "generated_at": "2026-07-26T13:56:03.693376+00:00"
 }
