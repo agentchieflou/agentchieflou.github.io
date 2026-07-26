@@ -26,9 +26,52 @@ def _extract_json_array(text):
     if start == -1:
         raise ValueError("no JSON array in response")
     end = text.rfind("]")
-    if end == -1 or end < start:
-        raise ValueError("no closing bracket found in response")
-    return json.loads(text[start:end + 1])
+    if end != -1 and end > start:
+        try:
+            return json.loads(text[start:end + 1])
+        except json.JSONDecodeError:
+            pass
+    salvaged = _salvage_objects(text[start:])
+    log.warning("scoring response was not valid JSON as a whole - salvaged %d "
+                "complete result objects", len(salvaged))
+    return salvaged
+
+
+def _salvage_objects(text):
+    """Recovers whole objects from a truncated or malformed array.
+
+    A response cut off by the output-token cap otherwise costs the entire
+    batch: one bad character at the end and all N scores are lost to the
+    heuristic fallback. Scanning for balanced top-level objects keeps every
+    result that did arrive intact, which degrades far more gracefully.
+    """
+    out, depth, start, in_str, esc = [], 0, None, False, False
+    for i, ch in enumerate(text):
+        if in_str:
+            if esc:
+                esc = False
+            elif ch == "\\":
+                esc = True
+            elif ch == '"':
+                in_str = False
+            continue
+        if ch == '"':
+            in_str = True
+        elif ch == "{":
+            if depth == 0:
+                start = i
+            depth += 1
+        elif ch == "}" and depth > 0:
+            depth -= 1
+            if depth == 0 and start is not None:
+                try:
+                    out.append(json.loads(text[start:i + 1]))
+                except json.JSONDecodeError:
+                    pass
+                start = None
+    if not out:
+        raise ValueError("no complete JSON objects in response")
+    return out
 
 
 def _gemini_score(profile, candidates):
@@ -80,7 +123,11 @@ def _gemini_score(profile, candidates):
         f'"sector": one of {json.dumps(SECTORS)} — the employer\'s industry sector, best '
         "guess from the company name/description/posting content if company_about is null}"
     )
-    return _extract_json_array(llm.generate(prompt, max_tokens=3500))
+    # One result object runs ~200 tokens across all those fields, so the cap
+    # has to scale with the batch. A flat cap silently truncated the array
+    # mid-object and cost every score in the run.
+    max_tokens = min(32000, 1000 + 260 * len(candidates))
+    return _extract_json_array(llm.generate(prompt, max_tokens=max_tokens))
 
 
 def _heuristic_score(candidates):

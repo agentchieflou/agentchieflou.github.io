@@ -206,6 +206,27 @@ EMPLOYMENT_EXCLUDE_PATTERNS = [
     r"\b1099\b", r"\bC2C\b", r"\bcorp[- ]to[- ]corp\b",
 ]
 
+# Queries sent to the keyword-search sources (Adzuna, USAJobs, Jooble,
+# JSearch). Deliberately NOT the profile's target_titles: the LLM produces
+# aspirational positioning like "Senior Business Analytics Engineer" or
+# "Process Automation Lead", which describe the owner well but match almost
+# nothing in a job index — searching them returned zero results from every
+# keyed source. These are the canonical, high-volume titles the same roles
+# are actually posted under. target_titles still drives embedding similarity,
+# where the aspirational phrasing is an asset.
+SEARCH_QUERIES = [
+    "Business Analyst",
+    "Data Analyst",
+    "Analytics Engineer",
+    "Business Intelligence Analyst",
+    "Business Operations Analyst",
+    "Process Improvement Analyst",
+    "Data Scientist",
+    "AI Engineer",
+    "Technical Program Manager",
+    "Solutions Consultant",
+]
+
 # First professional year on the resume; candidate_years() derives experience
 # from it so the seniority maths never goes stale.
 CAREER_START_YEAR = 2022

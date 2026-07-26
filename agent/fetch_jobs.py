@@ -29,8 +29,9 @@ import requests
 import ats
 import role_filter
 from config import (ADZUNA_APP_ID, ADZUNA_APP_KEY, JOB_EXPIRY_DAYS,
-                    JOOBLE_API_KEY, MIN_SALARY_USD, RAPIDAPI_KEY, STATE_DIR,
-                    USAJOBS_API_KEY, USAJOBS_USER_AGENT, USER_AGENT)
+                    JOOBLE_API_KEY, MIN_SALARY_USD, RAPIDAPI_KEY,
+                    SEARCH_QUERIES, STATE_DIR, USAJOBS_API_KEY,
+                    USAJOBS_USER_AGENT, USER_AGENT)
 from util import (find_salary_snippet, html_to_text, load_json, log,
                   looks_genuinely_remote, norm_key, role_key, salary_max_usd,
                   save_json, sha1, us_friendly)
@@ -101,7 +102,7 @@ def fetch_adzuna(target_titles):
         log.info("Adzuna secrets not set - skipping source")
         return []
     out = []
-    for title in target_titles[:3]:
+    for title in SEARCH_QUERIES[:6]:
         # salary_min and full_time are applied server-side, so the response is
         # already inside the owner's constraints instead of being filtered
         # down to nothing on this end.
@@ -130,7 +131,7 @@ def fetch_usajobs(target_titles):
         log.info("USAJobs secret not set - skipping source")
         return []
     r = _get("https://data.usajobs.gov/api/search",
-             params={"Keyword": " OR ".join(target_titles[:3]), "RemoteIndicator": "True",
+             params={"Keyword": " OR ".join(SEARCH_QUERIES[:4]), "RemoteIndicator": "True",
                      "ResultsPerPage": 50, "PositionScheduleTypeCode": "1"},
              headers={"Authorization-Key": USAJOBS_API_KEY, "User-Agent": USAJOBS_USER_AGENT,
                       "Host": "data.usajobs.gov"})
@@ -156,7 +157,7 @@ def fetch_jooble(target_titles):
         log.info("Jooble secret not set - skipping source")
         return []
     out = []
-    for title in target_titles[:2]:
+    for title in SEARCH_QUERIES[:4]:
         r = requests.post(f"https://jooble.org/api/{JOOBLE_API_KEY}",
                           json={"keywords": title, "location": "Remote",
                                 "salary": str(MIN_SALARY_USD), "page": "1"},
@@ -184,7 +185,7 @@ def fetch_jsearch(target_titles):
         log.info("RapidAPI secret not set - skipping JSearch source")
         return []
     out = []
-    for title in target_titles[:2]:
+    for title in SEARCH_QUERIES[:3]:
         r = _get("https://jsearch.p.rapidapi.com/search",
                  params={"query": f"{title} in United States", "page": "1",
                          "num_pages": "1", "work_from_home": "true",

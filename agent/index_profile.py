@@ -135,7 +135,9 @@ def _gemini_profile(resume_text, repo_summaries):
         f"RESUME:\n{resume_text[:6000]}\n\nGITHUB PORTFOLIO:\n"
         f"{json.dumps(repo_summaries, ensure_ascii=False)[:8000]}"
     )
-    return _extract_json(llm.generate(prompt, max_tokens=2500))
+    # Up to 25 skills each carrying an evidence array; 2500 was close enough
+    # to the ceiling to risk a truncated object and a lost extraction.
+    return _extract_json(llm.generate(prompt, max_tokens=6000))
 
 
 def _heuristic_profile(resume_text, repo_summaries):
