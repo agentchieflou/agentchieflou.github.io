@@ -1716,5 +1716,49 @@
   "prefilter": 0.4586,
   "heuristic": false,
   "scored_at": "2026-07-26T13:53:43.707763+00:00"
+ },
+ "7d62ac3cf71ebd8b38808d2eadd5378dc367f523": {
+  "profile_version": "db9bf83da9b0",
+  "match_score": 45,
+  "confidence": 0.8,
+  "why": "The role aligns with your background in analytics engineering, but the lower end of the compensation range fails your $130k hard constraint. The posting is also vague and exhibits signs of a generic job-board aggregator listing.",
+  "seniority_fit": "target",
+  "role_family": "Analytics & Data Engineering",
+  "matched_skills": [
+   "Python",
+   "SQL",
+   "Data Modeling"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Highlight your process automation work to differentiate from generic analytics roles.",
+   "Emphasize the cost-reduction impact of your banking sector projects to justify a salary above the $115k base."
+  ],
+  "sector": "Other",
+  "prefilter": 0.5146,
+  "heuristic": false,
+  "scored_at": "2026-07-26T13:58:02.412373+00:00"
+ },
+ "90f61ac7973639dc0895229111f2e63320cd6f03": {
+  "profile_version": "db9bf83da9b0",
+  "match_score": 35,
+  "confidence": 0.7,
+  "why": "While the salary range meets your requirement, the role is heavily focused on litigation/legal data analysis which underutilizes your technical infrastructure and developer tooling expertise. It is a step down in complexity from your current role in banking systems.",
+  "seniority_fit": "below",
+  "role_family": "Business & Data Analytics",
+  "matched_skills": [
+   "SQL",
+   "Data Modeling",
+   "Quantitative Analytics"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Focus your resume on data storytelling and statistical communication rather than system architecture if pursuing this type of role.",
+   "Highlight experience with complex data modeling to match the requirement for 'damages modeling'."
+  ],
+  "sector": "Other",
+  "prefilter": 0.4931,
+  "heuristic": false,
+  "scored_at": "2026-07-26T13:58:02.412373+00:00"
  }
 }
