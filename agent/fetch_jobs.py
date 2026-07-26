@@ -214,6 +214,35 @@ def fetch_jooble(target_titles):
     return _per_query("jooble", SEARCH_QUERIES[:4], one)
 
 
+# JSearch retired /search on RapidAPI (it now 404s with "Endpoint '/search'
+# does not exist") in favour of the cursor-paginated /search-v2. Both are
+# tried, newest first, and the one that answers is reused for the rest of the
+# run so the probe costs at most one extra request. Neither is sent page or
+# num_pages: /search-v2 paginates by cursor, and only the first page is
+# wanted either way.
+_JSEARCH_PATHS = ("/search-v2", "/search")
+_jsearch_path = None
+
+
+def _jsearch_get(params):
+    global _jsearch_path
+    headers = {"X-RapidAPI-Key": RAPIDAPI_KEY,
+               "X-RapidAPI-Host": "jsearch.p.rapidapi.com"}
+    paths = [_jsearch_path] if _jsearch_path else list(_JSEARCH_PATHS)
+    last = None
+    for path in paths:
+        last = _get(f"https://jsearch.p.rapidapi.com{path}", params=params, headers=headers)
+        if last.status_code == 404 and _jsearch_path is None:
+            log.info("JSearch %s not available, trying next path", path)
+            continue
+        if last.status_code == 200:
+            if _jsearch_path != path:
+                log.info("JSearch endpoint resolved to %s", path)
+            _jsearch_path = path
+        return last
+    return last
+
+
 def fetch_jsearch(target_titles):
     """JSearch on RapidAPI — wraps Google Jobs and many boards behind one API.
 
@@ -231,12 +260,9 @@ def fetch_jsearch(target_titles):
         log.info("JSearch skipped on push-triggered run - preserving free-tier budget")
         return []
     def one(title):
-        r = _get("https://jsearch.p.rapidapi.com/search",
-                 params={"query": f"{title} in United States", "page": "1",
-                         "num_pages": "1", "work_from_home": "true",
-                         "employment_types": "FULLTIME", "date_posted": "month"},
-                 headers={"X-RapidAPI-Key": RAPIDAPI_KEY,
-                          "X-RapidAPI-Host": "jsearch.p.rapidapi.com"})
+        r = _jsearch_get({"query": f"{title} in United States",
+                          "work_from_home": "true",
+                          "employment_types": "FULLTIME", "date_posted": "month"})
         if 400 <= r.status_code < 500:
             # Any 4xx is a client-side problem that repeating the call cannot
             # fix, so it ends the source for this run rather than spending
