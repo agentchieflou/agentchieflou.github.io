@@ -1,14 +1,15 @@
 {
- "summary": "Data-driven process engineer with four years of experience specializing in internal developer tooling, workflow automation, and quantitative modeling within the banking sector. Expert at building high-impact Python-based infrastructure, including migration frameworks and RESTful APIs, to reduce operational overhead and improve data accessibility. Committed to optimizing team efficiency through agentic AI architectures and robust, containerized analytical tools.",
+ "summary": "Data-driven process engineer with 4 years of experience specializing in internal developer tooling, automated migration frameworks, and enterprise Python architecture. Proven track record of reducing operational overhead and migration timelines through grid-wide telemetry, REST API development, and agentic workflow orchestration. Highly technical, business-focused professional adept at navigating complex enterprise governance while deploying scalable, reliable automation solutions.",
  "skills": [
   {
    "name": "Python",
    "category": "engineering",
    "strength": 0.95,
    "evidence": [
-    "Maintained internal 'data-czars' package",
-    "Developed REST APIs for production",
-    "Built multi-scraper automation suites"
+    "Maintained internal 'data-czars' library",
+    "REST API containerization",
+    "Multi-scraper orchestration",
+    "Agentic architecture research"
    ]
   },
   {
@@ -16,9 +17,19 @@
    "category": "analytics",
    "strength": 0.9,
    "evidence": [
-    "Grid-wide telemetry usage analytics",
-    "Oracle/Teradata/MongoDB interface development",
-    "Complex migration validation"
+    "Grid-wide table usage analytics",
+    "Oracle/Teradata/MongoDB data modeling",
+    "Complex asset class migration reconciliation"
+   ]
+  },
+  {
+   "name": "REST API Development",
+   "category": "engineering",
+   "strength": 0.85,
+   "evidence": [
+    "Containerized three production-grade APIs",
+    "Managed OpenShift deployments via Helm",
+    "Integrated with credit risk systems"
    ]
   },
   {
@@ -26,19 +37,9 @@
    "category": "engineering",
    "strength": 0.9,
    "evidence": [
-    "Built document sourcing scrapers",
     "Automated pricing workflows",
-    "Reduced migration impact discovery from weeks to hours"
-   ]
-  },
-  {
-   "name": "Docker / Kubernetes",
-   "category": "engineering",
-   "strength": 0.85,
-   "evidence": [
-    "Deployed production REST APIs on OpenShift",
-    "Managed Helm deployments for enterprise CI/CD",
-    "Containerized legacy scrapers"
+    "Built multi-scraper suites for DPM",
+    "Engineered data validation frameworks"
    ]
   },
   {
@@ -47,86 +48,115 @@
    "strength": 0.8,
    "evidence": [
     "Developed enterprise-wide semantic models",
-    "Built portfolio-wide performance and stress-analysis dashboards"
+    "Built Peer Bank Analysis Dashboard",
+    "Portfolio performance reporting"
    ]
   },
   {
-   "name": "API Development",
+   "name": "OpenShift/Kubernetes",
    "category": "engineering",
-   "strength": 0.8,
+   "strength": 0.75,
    "evidence": [
-    "Production REST API deployments on OpenShift",
-    "Headless browser integration",
-    "RapidAPI consumption"
+    "Helm deployments",
+    "Policy as Code compliance",
+    "Containerized microservice architecture"
    ]
   },
   {
    "name": "Data Modeling",
    "category": "analytics",
-   "strength": 0.75,
-   "evidence": [
-    "CECL reserve forecasting",
-    "Back-testing and model suitability reviews",
-    "Asset class migration mapping"
-   ]
-  },
-  {
-   "name": "Git / CI/CD",
-   "category": "engineering",
-   "strength": 0.75,
-   "evidence": [
-    "Version control overhauls",
-    "Policy as Code compliance integration",
-    "Production-grade deployment pipelines"
-   ]
-  },
-  {
-   "name": "Agentic AI/RAG",
-   "category": "domain",
-   "strength": 0.7,
-   "evidence": [
-    "Researched enterprise AI design patterns",
-    "Implemented agentic workflows in side projects",
-    "Operationalized ML for transaction classification"
-   ]
-  },
-  {
-   "name": "Quantitative Analysis",
-   "category": "analytics",
-   "strength": 0.75,
-   "evidence": [
-    "Mortgage/HELOC pricing elasticity research",
-    "Stress testing and reserve forecasting"
-   ]
-  },
-  {
-   "name": "Banking Domain",
-   "category": "domain",
    "strength": 0.8,
    "evidence": [
-    "SR 11-7 model risk management",
-    "Mainframe migration experience",
-    "Commercial and retail lending expertise"
+    "CECL reserve forecasting",
+    "M&A data integration",
+    "Field reconciliation for 1,930 data points"
+   ]
+  },
+  {
+   "name": "Git & CI/CD",
+   "category": "tools",
+   "strength": 0.85,
+   "evidence": [
+    "Enterprise CI/CD pipeline integration",
+    "Refactored team version control practices",
+    "Internal package distribution management"
+   ]
+  },
+  {
+   "name": "Agentic Workflows",
+   "category": "engineering",
+   "strength": 0.7,
+   "evidence": [
+    "Researching RAG/Agentic design patterns",
+    "Agentic play simulation in C++/Unreal",
+    "Workflow orchestration for data scraping"
    ]
   },
   {
    "name": "C++",
    "category": "engineering",
-   "strength": 0.65,
+   "strength": 0.7,
    "evidence": [
-    "Unreal Engine 5 project development",
-    "Performance-based game architecture"
+    "Unreal Engine game development",
+    "Virtual Studio Technology (VST) audio plugin architecture"
+   ]
+  },
+  {
+   "name": "Data Validation",
+   "category": "analytics",
+   "strength": 0.85,
+   "evidence": [
+    "Built parameter-driven validation framework for $30M migration",
+    "Model risk management validation (SR 11-7)"
+   ]
+  },
+  {
+   "name": "Stakeholder Enablement",
+   "category": "domain",
+   "strength": 0.8,
+   "evidence": [
+    "Requirements gathering",
+    "Reducing alert fatigue for migration teams",
+    "Executive risk visibility dashboards"
+   ]
+  },
+  {
+   "name": "Financial Domain Knowledge",
+   "category": "domain",
+   "strength": 0.85,
+   "evidence": [
+    "CECL forecasting",
+    "Retail lending product management",
+    "Home Equity pricing elasticity"
+   ]
+  },
+  {
+   "name": "Hadoop",
+   "category": "tools",
+   "strength": 0.7,
+   "evidence": [
+    "Maintained Hadoop connection modules in 'data-czars'",
+    "Grid-wide telemetry"
+   ]
+  },
+  {
+   "name": "Docker",
+   "category": "engineering",
+   "strength": 0.8,
+   "evidence": [
+    "Containerizing scrapers",
+    "Operationalizing ML serving"
    ]
   }
  ],
  "target_titles": [
-  "Technical Product Manager, Internal Tools",
+  "Senior Business Intelligence Engineer",
   "Analytics Engineer",
-  "Automation Engineer",
-  "Senior Data Analyst",
-  "Solutions Engineer, AI & Data"
+  "Automation Lead",
+  "Operations Engineer (Internal Tooling)",
+  "Technical Product Manager (Data/AI)"
  ],
- "version": "1f2bf642e796",
+ "version": "46fae8d62f25",
  "remote_only": true,
- "generated_at": "2026-07-26T13:48:59.311363+00:00"
+ "generated_at": "2026-07-26T13:53:04.459562+00:00"
 }
