@@ -40,6 +40,10 @@ from util import load_json, log, save_json
 
 CACHE_PATH = STATE_DIR / "preflight_cache.json"
 MAX_PER_RUN = 20
+# Bump whenever the blocker rules change: a cached verdict was produced by the
+# rules of its day, and leaving stale ones in place means a fixed
+# false positive keeps being reported.
+ANALYSIS_VERSION = 2
 
 _GREENHOUSE_URL = re.compile(
     r"https?://(?:boards|job-boards)\.greenhouse\.io/([^/]+)/jobs/(\d+)", re.I)
@@ -78,18 +82,27 @@ _BLOCKERS = [
         r"\b(?:master'?s|mba|ph\.?d|doctorate)\b.{0,40}\b(?:required|do you have)\b", re.I)),
 ]
 _YEARS = re.compile(r"(\d{1,2})\+?\s*(?:or more\s*)?years", re.I)
-
-# "Which U.S. State do you reside in?" is a records question with a fifty-item
-# dropdown, not a requirement. The screeners that actually disqualify name one
-# place and want a yes or no.
-_LOCATION_INFORMATIONAL = re.compile(
-    r"\bwhich\b.{0,24}\b(?:state|province|country|region|city)\b|"
-    r"\bwhat\b.{0,16}\b(?:state|province|country|city)\b", re.I)
+# A years figure is only an experience bar when the question says so.
+# "Are you at least 18 years of age?" is on nearly every form and was being
+# read as an 18-year experience requirement.
+_EXPERIENCE_CONTEXT = re.compile(r"\bexperience\b|\bworking\b|\bprofessional\b", re.I)
+_AGE_CONTEXT = re.compile(r"\bage\b|\bolder\b|\blegally\b", re.I)
 
 
-def _option_count(question):
-    return max((len(f.get("values") or []) for f in (question.get("fields") or [])),
-               default=0)
+def _is_binary_select(question):
+    """True for a yes/no style screener.
+
+    This is what separates a real disqualifier from a records question.
+    "Are you based in, or very close to, Las Vegas?" is a two-option select.
+    "Which U.S. State do you reside in?" is a fifty-item dropdown and "What
+    location are you based in?" is a free-text box — both merely record where
+    you live, and both were flagged as blockers before this check existed.
+    """
+    for field in question.get("fields") or []:
+        if field.get("type") in ("multi_value_single_select", "multi_value_multi_select"):
+            if 0 < len(field.get("values") or []) <= 5:
+                return True
+    return False
 
 
 def _greenhouse_ref(job):
@@ -145,18 +158,17 @@ def _blockers_for(question, job):
         if not pat.search(label):
             continue
         if name == "on-site location requirement":
-            # Only matters because the posting claimed to be remote.
-            if not job.get("remote", True):
-                continue
-            # Skip the "where do you live" records questions.
-            if _LOCATION_INFORMATIONAL.search(label) or _option_count(question) > 5:
+            # Only matters because the posting claimed to be remote, and only
+            # when it is actually a screener rather than a records question.
+            if not job.get("remote", True) or not _is_binary_select(question):
                 continue
         found.append(name)
-    for raw in _YEARS.findall(label):
-        years = int(raw)
-        if years > role_filter.candidate_years() + MAX_YEARS_REQUIRED_OVER_CANDIDATE:
-            found.append(f"asks for {years}+ years")
-            break
+    if _EXPERIENCE_CONTEXT.search(label) and not _AGE_CONTEXT.search(label):
+        for raw in _YEARS.findall(label):
+            years = int(raw)
+            if years > role_filter.candidate_years() + MAX_YEARS_REQUIRED_OVER_CANDIDATE:
+                found.append(f"asks for {years}+ years")
+                break
     return found
 
 
@@ -209,16 +221,18 @@ def annotate(top):
     fetched = 0
     for job, _score in top:
         jid = job["id"]
-        if jid in cache:
-            if cache[jid]:
-                job["preflight"] = cache[jid]
+        cached = cache.get(jid)
+        if isinstance(cached, dict) and cached.get("v") == ANALYSIS_VERSION:
+            if cached.get("total"):
+                job["preflight"] = cached
             continue
         if not _greenhouse_ref(job) or fetched >= MAX_PER_RUN:
             continue
         fetched += 1
-        result = analyze(job)
-        cache[jid] = result or {}
-        if result:
+        result = analyze(job) or {}
+        result["v"] = ANALYSIS_VERSION
+        cache[jid] = result
+        if result.get("total"):
             job["preflight"] = result
 
     while len(cache) > 1000:
