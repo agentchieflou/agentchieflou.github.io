@@ -1636,30 +1636,6 @@
   "heuristic": false,
   "scored_at": "2026-07-27T10:04:33.109000+00:00"
  },
- "b036731c4883a705046462384abebfa295992b42": {
-  "profile_version": "2a3c83a3226a",
-  "match_score": 70,
-  "confidence": 0.8,
-  "why": "Good fit for the 'Data Analyst' role, but PLM (Product Lifecycle Management) focus may require specific business domain knowledge the candidate lacks.",
-  "seniority_fit": "target",
-  "role_family": "Business & Data Analytics",
-  "matched_skills": [
-   "Data Modeling",
-   "Excel",
-   "SQL"
-  ],
-  "missing_skills": [
-   "PLM domain expertise"
-  ],
-  "resume_suggestions": [
-   "Highlight experience with physical operations data.",
-   "Emphasize reporting and analytical insight generation."
-  ],
-  "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.5244,
-  "heuristic": false,
-  "scored_at": "2026-07-27T09:59:57.965862+00:00"
- },
  "a25cdc921e44334335d7c47d2e6cc13b2c38ef83": {
   "profile_version": "2a3c83a3226a",
   "match_score": 70,
@@ -2050,28 +2026,6 @@
   ],
   "sector": "AI/ML Infra",
   "prefilter": 0.5297,
-  "heuristic": false,
-  "scored_at": "2026-07-27T10:04:33.109000+00:00"
- },
- "1e88b58c4863b75008feb72a908824b611858e0d": {
-  "profile_version": "ea07aad451ce",
-  "match_score": 65,
-  "confidence": 0.85,
-  "why": "The forward-deployed nature of this role is perfect for a consultant, but it is a management role that might be a reach from your current level.",
-  "seniority_fit": "stretch",
-  "role_family": "AI & Machine Learning",
-  "matched_skills": [
-   "Python",
-   "REST API Development"
-  ],
-  "missing_skills": [
-   "Team leadership"
-  ],
-  "resume_suggestions": [
-   "Focus on the 'customer-facing' and 'technical delivery' aspects of your current projects."
-  ],
-  "sector": "AI/ML Infra",
-  "prefilter": 0.5364,
   "heuristic": false,
   "scored_at": "2026-07-27T10:04:33.109000+00:00"
  },
@@ -3031,5 +2985,28 @@
   "prefilter": 0.5138,
   "heuristic": false,
   "scored_at": "2026-07-27T10:04:33.109000+00:00"
+ },
+ "25119b2830b930882c5f9665813169357bd7452f": {
+  "profile_version": "ea07aad451ce",
+  "match_score": 35,
+  "confidence": 0.8,
+  "why": "This role is a significant seniority mismatch, as it is a high-level Technical Program Manager position requiring complex cross-functional leadership beyond the candidate's current scope. Additionally, the role is not listed as remote, violating a hard constraint.",
+  "seniority_fit": "out-of-band",
+  "role_family": "Technical Strategy & Product",
+  "matched_skills": [
+   "Process Automation"
+  ],
+  "missing_skills": [
+   "Program Management",
+   "Strategic Operations"
+  ],
+  "resume_suggestions": [
+   "Highlight experience managing cross-functional technical stakeholders.",
+   "Emphasize large-scale project delivery timelines."
+  ],
+  "sector": "AI/ML Infra",
+  "prefilter": 0.5182,
+  "heuristic": false,
+  "scored_at": "2026-07-27T17:25:10.533901+00:00"
  }
 }
