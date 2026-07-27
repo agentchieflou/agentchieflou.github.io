@@ -1,33 +1,34 @@
 {
- "summary": "A highly technical business analytics consultant with 4 years of experience specializing in process optimization, internal developer tooling, and automated data architectures. Expert at building high-throughput Python automations and enterprise-grade REST APIs that modernize legacy banking workflows. Passionate about leveraging agentic frameworks to increase operational efficiency and developer productivity.",
+ "summary": "Michael is a technically-oriented Business Analytics Consultant with 4 years of experience specializing in process automation, enterprise-scale data migration, and internal tooling. He excels at building agentic workflows and RESTful services that eliminate operational bottlenecks, reduce technical debt, and optimize resource allocation. His professional expertise is complemented by a hands-on commitment to high-performance C++ and Python engineering, demonstrating a rare ability to bridge the gap between financial strategy and software implementation.",
  "skills": [
   {
    "name": "Python",
    "category": "engineering",
    "strength": 0.95,
    "evidence": [
-    "Bank-wide Python package maintainer",
-    "Custom scraper/orchestration suites",
-    "REST API development"
-   ]
-  },
-  {
-   "name": "Process Optimization",
-   "category": "domain",
-   "strength": 0.9,
-   "evidence": [
-    "Migration impact discovery reduction (6 weeks to 24h)",
-    "Pricing workflow automation",
-    "Document process management automation"
+    "Built enterprise-wide package for bank-wide analytics",
+    "Orchestrated complex scrapers and data validation frameworks",
+    "Maintains active GitHub repositories for automation and game simulation"
    ]
   },
   {
    "name": "SQL",
    "category": "analytics",
-   "strength": 0.85,
+   "strength": 0.9,
    "evidence": [
-    "Data modeling for asset class migrations",
-    "Oracle/Teradata query optimization"
+    "Expertise in Oracle, Teradata, and MongoDB",
+    "Developed grid-wide table usage analytics",
+    "Data reconciliation across legacy and modern platforms"
+   ]
+  },
+  {
+   "name": "Process Automation",
+   "category": "engineering",
+   "strength": 0.9,
+   "evidence": [
+    "Reduced migration impact discovery time by 98%",
+    "Automated pricing workflows saving 30-60 mins/day",
+    "Developed document sourcing orchestrator"
    ]
   },
   {
@@ -35,8 +36,9 @@
    "category": "engineering",
    "strength": 0.85,
    "evidence": [
-    "OpenShift deployment",
-    "Production ML serving for transaction detection"
+    "Deployed production APIs on OpenShift",
+    "Containerized scraper and parsing systems as services",
+    "Managed JSearch integrations via GitHub projects"
    ]
   },
   {
@@ -44,17 +46,17 @@
    "category": "analytics",
    "strength": 0.8,
    "evidence": [
-    "Semantic modeling",
-    "Executive-level competitive risk dashboards"
+    "Designed semantic models for portfolio-wide reporting",
+    "Built Peer Bank Analysis Dashboard for competitive stress monitoring"
    ]
   },
   {
-   "name": "Containerization (Docker/Helm/OpenShift)",
-   "category": "engineering",
+   "name": "Kubernetes / OpenShift",
+   "category": "tools",
    "strength": 0.8,
    "evidence": [
-    "Production API deployment",
-    "CI/CD pipeline governance"
+    "Managed deployment of production APIs via Helm",
+    "Navigated restricted-network governance and policy-as-code gates"
    ]
   },
   {
@@ -62,36 +64,36 @@
    "category": "analytics",
    "strength": 0.75,
    "evidence": [
-    "Migration validation frameworks",
-    "CECL reserve forecasting",
-    "M&A loan integration"
+    "Performed model suitability testing for 23,000 loans",
+    "Built data validation frameworks to reconcile MongoDB/SOM/OLNACS outputs"
    ]
   },
   {
-   "name": "Agentic Workflows",
+   "name": "Agentic Architecture",
    "category": "engineering",
    "strength": 0.75,
    "evidence": [
-    "Autonomous Career Agent project",
-    "RAG architecture evaluation for enterprise scale"
+    "Architected RAG systems with strict token-budget constraints",
+    "Built autonomous career-agent pipeline on GitHub",
+    "Developed agentic bridge plugins for Unreal Engine"
    ]
   },
   {
-   "name": "CI/CD",
+   "name": "C++",
    "category": "engineering",
    "strength": 0.7,
    "evidence": [
-    "Policy-as-code governance",
-    "Automated deployment gates"
+    "Developing physics-based football sim in Unreal Engine 5",
+    "Extensive work with JUCE framework for audio VST development"
    ]
   },
   {
-   "name": "Selenium/Headless Browsers",
+   "name": "CI/CD Pipelines",
    "category": "tools",
    "strength": 0.7,
    "evidence": [
-    "Document sourcing automation",
-    "Proof-of-concept scraper suites"
+    "Implemented Git version control best practices for quantitative teams",
+    "Cleared enterprise CI/CD gates for production API platforms"
    ]
   },
   {
@@ -99,54 +101,55 @@
    "category": "analytics",
    "strength": 0.7,
    "evidence": [
-    "CECL reserve modeling",
-    "Pricing elasticity research"
+    "Executed $70B+ reserve forecasting across 4 scenarios",
+    "Performed elasticity research for Home Equity pricing"
    ]
   },
   {
-   "name": "Git/Version Control",
+   "name": "Selenium",
    "category": "tools",
-   "strength": 0.8,
-   "evidence": [
-    "Overhauled team version control practices",
-    "Maintained enterprise Python repositories"
-   ]
-  },
-  {
-   "name": "C++ / C",
-   "category": "engineering",
    "strength": 0.65,
    "evidence": [
-    "Unreal Engine physics development",
-    "Audio VST plugin architecture"
+    "Developed multi-scraper automation suite",
+    "Transitioned proof-of-concepts to high-throughput headless browser APIs"
    ]
   },
   {
-   "name": "Data Validation Frameworks",
+   "name": "Forecasting",
+   "category": "analytics",
+   "strength": 0.65,
+   "evidence": [
+    "Managed CECL reserve forecasting for Mortgage/Home Equity",
+    "Back-testing and performance monitoring of financial models"
+   ]
+  },
+  {
+   "name": "Docker",
    "category": "tools",
    "strength": 0.7,
    "evidence": [
-    "Automated reconciliation for legacy mainframe migration"
+    "Containerized production ML serving and scraper systems",
+    "Standardizing deployment environments on OpenShift"
    ]
   },
   {
-   "name": "Project Management",
+   "name": "Requirements Gathering",
    "category": "domain",
-   "strength": 0.6,
+   "strength": 0.7,
    "evidence": [
-    "Stakeholder enablement",
-    "Requirements gathering for asset migrations"
+    "Stakeholder enablement through dashboard and API design",
+    "Led asset-class migration validation for 1,930 fields"
    ]
   }
  ],
  "target_titles": [
   "Senior Business Intelligence Engineer",
   "Analytics Engineer",
-  "Technical Product Manager (Internal Tools)",
+  "Technical Product Manager (Data Platforms)",
   "Automation Engineer",
-  "Process Optimization Lead"
+  "Quantitative Developer"
  ],
- "version": "2d8f68683856",
+ "version": "224fc3f424da",
  "remote_only": true,
- "generated_at": "2026-07-26T23:50:03.811086+00:00"
+ "generated_at": "2026-07-27T01:14:20.465153+00:00"
 }
