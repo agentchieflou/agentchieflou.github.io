@@ -12,8 +12,9 @@ postings rank lower going forward.
 
 See feedback.py for the shared mechanism, including why each rejection is
 recorded under both a job id and an opaque company+title role key (short
-version: the id is a URL hash, so it alone lets a re-post come back), and why
-that key is never company-only.
+version: the id is a URL hash, so it alone lets a re-post come back), why
+that key is never company-only, and an honest account of what "opaque ids on
+a public branch" does and does not protect.
 """
 import feedback
 from config import STATE_DIR

@@ -445,11 +445,21 @@ def fetch_all(target_titles, exclude_role_keys=()):
 
     now = dt.datetime.now(dt.timezone.utc)
     seen = load_json(SEEN_PATH, {})
+    # This file is committed to a public branch, and applied.json /
+    # rejected.json are keyed by the same job ids. Storing titles, companies
+    # and URLs here made those "opaque" ids trivially joinable — the whole
+    # application history was readable by anyone. Only the opaque role_key is
+    # kept now, which is the single thing feedback.py actually needed.
+    for entry in seen.values():
+        if isinstance(entry, dict):
+            for plaintext in ("title", "company", "url"):
+                entry.pop(plaintext, None)
+
     new_ids = [j["id"] for j in jobs if j["id"] not in seen]
     for j in jobs:
         entry = seen.setdefault(j["id"], {"first_seen": now.isoformat()})
         entry.update(last_seen=now.isoformat(), content_hash=j["content_hash"],
-                     title=j["title"], company=j["company"], source=j["source"], url=j["url"])
+                     role_key=role_key(j["company"], j["title"]), source=j["source"])
 
     cutoff = now - dt.timedelta(days=JOB_EXPIRY_DAYS)
     expired = [jid for jid, e in seen.items()

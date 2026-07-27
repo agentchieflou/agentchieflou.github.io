@@ -9,7 +9,9 @@ public graph.
 
 See feedback.py for the shared mechanism, including why each record carries
 an opaque company+title role key alongside the job id — without it, a role
-you already applied to reappears the moment it is re-posted at a new URL.
+you already applied to reappears the moment it is re-posted at a new URL —
+and for an honest account of what "opaque ids on a public branch" does and
+does not protect.
 """
 import feedback
 from config import STATE_DIR

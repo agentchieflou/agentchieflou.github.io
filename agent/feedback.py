@@ -15,8 +15,15 @@ Every record stores two identifiers:
               so suppressing "Data Analyst at Acme" never touches any other
               Acme posting. Employers are never blacklisted.
 
-Privacy: agent-data is a public branch, so these files hold only opaque ids,
-hashes and dates — never titles, companies, or URLs.
+Privacy, honestly stated: agent-data is a public branch, and these files hold
+only opaque ids, hashes and dates. That is necessary but NOT sufficient. The
+ids are sha1(posting URL), so anyone willing to re-fetch the same public ATS
+boards and hash the URLs can still test whether a given posting appears here.
+
+seen_jobs.json used to make that trivial by publishing title/company/url
+beside the same ids — a two-file join that exposed the entire application
+history. That is closed. Closing the remaining attack means moving this state
+off the public branch entirely; see agent/TRACKER_PLAN.md, phase 0.
 """
 import datetime as dt
 import email
@@ -49,9 +56,16 @@ def _message_text(msg):
 
 
 def _resolve_role_key(jid, body, seen):
+    """The opaque company+title key for a job id.
+
+    seen_jobs.json stores the key itself rather than the title and company it
+    came from — those were plaintext on a public branch and made the job ids
+    in this file joinable back to real postings. The digest's "(Title @
+    Company)" line is the fallback for anything not currently in seen state.
+    """
     entry = seen.get(jid) or {}
-    if entry.get("company") and entry.get("title"):
-        return role_key(entry["company"], entry["title"])
+    if entry.get("role_key"):
+        return entry["role_key"]
     m = _LABEL_RE.search(body or "")
     if m:
         return role_key(m.group(2), m.group(1))
