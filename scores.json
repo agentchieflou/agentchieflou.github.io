@@ -2263,31 +2263,6 @@
   "heuristic": false,
   "scored_at": "2026-07-27T09:59:57.965862+00:00"
  },
- "22c8e455fd42c4b24e891c4fc7226c2be7def4dc": {
-  "profile_version": "2a3c83a3226a",
-  "match_score": 60,
-  "confidence": 0.7,
-  "why": "Requires heavy pre-sales and architectural background which is a pivot from a pure engineer role, though the technical skills align.",
-  "seniority_fit": "stretch",
-  "role_family": "Solutions & Technical Consulting",
-  "matched_skills": [
-   "SQL",
-   "Python",
-   "Data Modeling"
-  ],
-  "missing_skills": [
-   "Pre-sales/Consulting experience",
-   "Value-based selling"
-  ],
-  "resume_suggestions": [
-   "Highlight customer-facing projects/stakeholder enablement.",
-   "Frame past work as technical solutions."
-  ],
-  "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.529,
-  "heuristic": false,
-  "scored_at": "2026-07-27T09:59:57.965862+00:00"
- },
  "9f48577d7e1fcf2cd94b121823a41d7d55042818": {
   "profile_version": "224fc3f424da",
   "match_score": 70,
@@ -3103,5 +3078,55 @@
   "prefilter": 0.5063,
   "heuristic": false,
   "scored_at": "2026-07-27T09:59:57.965862+00:00"
+ },
+ "7df70b63a27d0c16e6c1de5f57203fe484ae03c0": {
+  "profile_version": "2a3c83a3226a",
+  "match_score": 45,
+  "confidence": 0.8,
+  "why": "This is a Solutions Architect role requiring deep pre-sales experience and 'value selling' expertise, which is a significant pivot from the candidate's core background in process engineering and internal tooling.",
+  "seniority_fit": "out-of-band",
+  "role_family": "Solutions & Technical Consulting",
+  "matched_skills": [
+   "Python",
+   "SQL",
+   "Data Modeling"
+  ],
+  "missing_skills": [
+   "Pre-sales experience",
+   "Value selling",
+   "Technical account management"
+  ],
+  "resume_suggestions": [
+   "Highlight client-facing experiences where you influenced stakeholders or presented technical architectures.",
+   "Emphasize ROI outcomes of your automation projects to align with the 'value selling' requirement."
+  ],
+  "sector": "AI/ML Infra",
+  "prefilter": 0.529,
+  "heuristic": false,
+  "scored_at": "2026-07-27T10:01:13.576013+00:00"
+ },
+ "90f61ac7973639dc0895229111f2e63320cd6f03": {
+  "profile_version": "2a3c83a3226a",
+  "match_score": 85,
+  "confidence": 0.9,
+  "why": "The role directly leverages the candidate's strength in data modeling and quantitative analytics while providing a clear remote, full-time environment with competitive compensation.",
+  "seniority_fit": "target",
+  "role_family": "Business & Data Analytics",
+  "matched_skills": [
+   "SQL",
+   "Data Modeling",
+   "Excel"
+  ],
+  "missing_skills": [
+   "Litigation-specific statistical analysis"
+  ],
+  "resume_suggestions": [
+   "Explicitly quantify the impact of your data modeling work in your current role.",
+   "Highlight experience with data validation frameworks to demonstrate accuracy in reporting."
+  ],
+  "sector": "Other",
+  "prefilter": 0.5099,
+  "heuristic": false,
+  "scored_at": "2026-07-27T10:01:13.576013+00:00"
  }
 }
