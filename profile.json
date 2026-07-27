@@ -1,14 +1,15 @@
 {
- "summary": "Michael is a business analytics consultant with 4 years of experience building high-impact internal tools and automation frameworks within the banking sector. He specializes in process optimization through Python-based tooling, API development, and data engineering to solve complex integration and reporting challenges. His approach bridges the gap between high-level strategic requirements and low-level technical implementation, currently focusing on agentic workflows and resource-efficient automation.",
+ "summary": "Data-driven process engineer with 4 years of experience specializing in enterprise automation, migration, and developer tooling. Proven track record of architecting scalable REST APIs, containerized deployments, and agentic workflows to resolve operational bottlenecks in complex banking environments. Highly proficient in Python-based automation and data modeling with a focus on building systems that bridge the gap between technical infrastructure and strategic business requirements.",
  "skills": [
   {
    "name": "Python",
    "category": "engineering",
    "strength": 0.95,
    "evidence": [
-    "Built enterprise-wide package for bank-wide analytics",
-    "Developed scrapers and data validation frameworks",
-    "Maintains active agentic automation projects"
+    "Enterprise-wide package maintenance",
+    "REST API development",
+    "High-throughput scrapers",
+    "Automated orchestration tools"
    ]
   },
   {
@@ -16,54 +17,29 @@
    "category": "analytics",
    "strength": 0.9,
    "evidence": [
-    "Complex data modeling across Oracle and Teradata",
-    "Maintains grid-wide table usage analytics",
-    "High-frequency querying for reserve forecasting"
+    "Grid-wide table usage analytics",
+    "Database migration/reconciliation",
+    "Complex loan portfolio modeling"
    ]
   },
   {
-   "name": "Power BI",
-   "category": "analytics",
+   "name": "OpenShift / Kubernetes",
+   "category": "engineering",
    "strength": 0.85,
    "evidence": [
-    "Developed enterprise-wide semantic models",
-    "Built Peer Bank Analysis Dashboards for executive risk visibility"
+    "Deployment of production REST APIs",
+    "Helm chart management",
+    "Policy-as-code governance compliance"
    ]
   },
   {
-   "name": "Workflow Automation",
+   "name": "Process Automation",
    "category": "engineering",
    "strength": 0.9,
    "evidence": [
-    "Built multi-scraper suites to close DPM issues",
-    "Automated pricing workflows saving 30-60 mins daily"
-   ]
-  },
-  {
-   "name": "REST API Development",
-   "category": "engineering",
-   "strength": 0.85,
-   "evidence": [
-    "Containerized production APIs for credit risk systems",
-    "Transitioned scrapers to high-throughput API services"
-   ]
-  },
-  {
-   "name": "Docker / Kubernetes",
-   "category": "tools",
-   "strength": 0.8,
-   "evidence": [
-    "Production deployments on OpenShift",
-    "Managed Helm charts for enterprise CI/CD gates"
-   ]
-  },
-  {
-   "name": "Data Modeling",
-   "category": "analytics",
-   "strength": 0.8,
-   "evidence": [
-    "Managed asset class migrations",
-    "Performed M&A integration and back-testing for 23,000+ loans"
+    "Migration impact reduction (6wks to 24hrs)",
+    "Automated pricing workflows",
+    "Document sourcing and DPM remediation"
    ]
   },
   {
@@ -71,72 +47,115 @@
    "category": "engineering",
    "strength": 0.75,
    "evidence": [
-    "Built autonomous career-matching pipeline",
-    "Evaluated RAG cost-optimization models at scale"
+    "Autonomous career agent project",
+    "Evaluation of RAG architectures",
+    "Token-budget optimization patterns"
    ]
   },
   {
-   "name": "Process Optimization",
-   "category": "domain",
-   "strength": 0.9,
+   "name": "Power BI",
+   "category": "analytics",
+   "strength": 0.8,
    "evidence": [
-    "Reduced migration discovery time from 6 weeks to 24 hours",
-    "Achieved $1M in annual expense reduction via fee restructuring"
+    "Semantic modeling",
+    "Portfolio performance reporting",
+    "Peer bank stress analysis dashboards"
+   ]
+  },
+  {
+   "name": "Data Modeling",
+   "category": "analytics",
+   "strength": 0.85,
+   "evidence": [
+    "Asset class migration reconciliation",
+    "Loan portfolio back-testing",
+    "Database architecture overhauls"
+   ]
+  },
+  {
+   "name": "REST API Development",
+   "category": "engineering",
+   "strength": 0.85,
+   "evidence": [
+    "Production serving for ML models",
+    "Downstream credit risk integration",
+    "Containerized service deployment"
+   ]
+  },
+  {
+   "name": "CI/CD Pipelines",
+   "category": "engineering",
+   "strength": 0.75,
+   "evidence": [
+    "Enterprise-grade governance gates",
+    "Git version control",
+    "Automated release management"
    ]
   },
   {
    "name": "Quantitative Analytics",
    "category": "analytics",
-   "strength": 0.8,
-   "evidence": [
-    "CECL reserve forecasting ($70B+ assets)",
-    "Elasticity research using standard deviation proxies"
-   ]
-  },
-  {
-   "name": "CI/CD Pipelines",
-   "category": "tools",
-   "strength": 0.75,
-   "evidence": [
-    "Navigated enterprise policy-as-code governance gates",
-    "Git-based version control for model risk management"
-   ]
-  },
-  {
-   "name": "C++",
-   "category": "engineering",
-   "strength": 0.7,
-   "evidence": [
-    "Unreal Engine 5 project development",
-    "ReverbCore audio extraction development"
-   ]
-  },
-  {
-   "name": "Requirement Gathering",
-   "category": "domain",
    "strength": 0.85,
    "evidence": [
-    "Stakeholder enablement for migration-impact discovery",
-    "Bridging SME validation for 1,930 data fields"
+    "CECL reserve forecasting",
+    "Pricing elasticity research",
+    "Stress test modeling"
    ]
   },
   {
-   "name": "Data Visualization",
+   "name": "Docker",
+   "category": "engineering",
+   "strength": 0.85,
+   "evidence": [
+    "Containerizing scraping/parsing systems",
+    "Helm/OpenShift workflows"
+   ]
+  },
+  {
+   "name": "Data Validation Frameworks",
+   "category": "engineering",
+   "strength": 0.8,
+   "evidence": [
+    "Parameterized reconciliation across MongoDB/Mainframe",
+    "Field mapping verification for 1,930 fields"
+   ]
+  },
+  {
+   "name": "Excel",
    "category": "analytics",
+   "strength": 0.8,
+   "evidence": [
+    "Financial modeling",
+    "Ad-hoc analysis and stakeholder reporting"
+   ]
+  },
+  {
+   "name": "Selenium / Headless Browsers",
+   "category": "engineering",
    "strength": 0.75,
    "evidence": [
-    "Built interactive dashboards for portfolio-wide performance reporting"
+    "DPM document sourcing automation",
+    "High-throughput web scraping"
+   ]
+  },
+  {
+   "name": "Stakeholder Enablement",
+   "category": "domain",
+   "strength": 0.8,
+   "evidence": [
+    "Presenting cost models for AI architectures",
+    "Requirements gathering for bank-wide tooling"
    ]
   }
  ],
  "target_titles": [
-  "Business Process Automation Engineer",
+  "Senior Business Systems Analyst",
   "Analytics Engineer",
-  "Technical Product Manager (Internal Tooling)",
-  "AI Solutions Engineer",
-  "Business Systems Analyst"
+  "Process Automation Engineer",
+  "Technical Product Manager (Data/AI)",
+  "Senior Data Analyst (Operations focus)"
  ],
- "version": "e765e560c9c2",
+ "version": "2a3c83a3226a",
  "remote_only": true,
- "generated_at": "2026-07-27T03:29:13.026312+00:00"
+ "generated_at": "2026-07-27T09:59:04.746776+00:00"
 }
