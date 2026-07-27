@@ -31,9 +31,10 @@ import requests
 
 import role_filter
 from config import (ATS_BOARDS_PER_RUN, ATS_FETCH_WORKERS,
-                    ATS_MAX_JOBS_PER_BOARD, BOARDS_PATH, STATE_DIR, USER_AGENT)
-from util import (html_to_text, load_json, log, looks_genuinely_remote,
-                  save_json, us_friendly)
+                    ATS_MAX_JOBS_PER_BOARD, BOARDS_PATH,
+                    RELOCATION_SALARY_USD, STATE_DIR, USER_AGENT)
+from util import (find_salary_snippet, html_to_text, load_json, log,
+                  looks_us, salary_max_usd, save_json)
 
 DISCOVERED_PATH = STATE_DIR / "discovered_boards.json"
 POLL_PATH = STATE_DIR / "board_poll.json"
@@ -184,22 +185,49 @@ def _annualize(value, interval):
 
 # ---------------- Greenhouse ----------------
 
+def _relocation_grade(salary_or_text):
+    """True when stated pay is high enough to be worth moving for.
+
+    Prose has to go through find_salary_snippet, which validates the figure
+    looks like compensation. salary_max_usd() alone takes the largest number
+    it can find, so a posting mentioning "500,000 customers" or a $70B
+    portfolio reads as a relocation-grade salary — that mistake let roughly
+    180 on-site roles through before it was caught.
+    """
+    if not salary_or_text:
+        return False
+    text = str(salary_or_text)
+    figure = (salary_max_usd(text) if len(text) <= 60
+              else salary_max_usd(find_salary_snippet(text)))
+    return (figure or 0) >= RELOCATION_SALARY_USD
+
+
 def _greenhouse(slug):
-    """List is title+location only; description is fetched per surviving job."""
-    data = _get(f"https://boards-api.greenhouse.io/v1/boards/{slug}/jobs")
+    """One request per board, with the full posting text.
+
+    content=true returns every posting body in a single call. That is both
+    fewer requests than fetching each posting separately and the only way to
+    read pay: Greenhouse has no structured compensation field, so the figure
+    has to come out of the posting text — and without it there is no way to
+    tell whether an on-site role clears the relocation bar.
+    """
+    data = _get(f"https://boards-api.greenhouse.io/v1/boards/{slug}/jobs?content=true")
     out = []
     for j in (data.get("jobs") or [])[:ATS_MAX_JOBS_PER_BOARD]:
         title = j.get("title") or ""
         loc = ((j.get("location") or {}).get("name") or "").strip()
-        if not _title_ok(title):
+        if not _title_ok(title) or not looks_us(loc):
             continue
-        if "remote" not in loc.lower() or not us_friendly(loc):
+        remote = "remote" in loc.lower()
+        desc = html_to_text(html_mod.unescape(j.get("content") or ""))
+        # Parse pay here, from the untruncated text. _job() clips the
+        # description and find_salary_snippet only scans its opening, while
+        # Greenhouse postings put compensation at the very bottom — so a
+        # figure recovered later would miss the long ones.
+        salary = find_salary_snippet(desc)
+        # On-site roles only earn a slot by naming relocation-grade pay.
+        if not remote and (salary_max_usd(salary) or 0) < RELOCATION_SALARY_USD:
             continue
-        try:
-            detail = _get(f"https://boards-api.greenhouse.io/v1/boards/{slug}/jobs/{j['id']}")
-        except Exception:
-            continue
-        desc = html_to_text(html_mod.unescape(detail.get("content") or ""))
         out.append({
             "source": "greenhouse",
             # Kept so preflight.py can read the application form even when
@@ -210,9 +238,9 @@ def _greenhouse(slug):
             "location": loc or "Remote",
             "url": j.get("absolute_url"),
             "description": desc,
-            "salary": None,           # Greenhouse has no comp field; parsed from text
+            "salary": salary,         # Greenhouse has no comp field; parsed from text
             "posted_at": j.get("first_published") or j.get("updated_at"),
-            "remote": True,
+            "remote": remote,
         })
     return out
 
@@ -228,13 +256,11 @@ def _lever(slug):
         cats = j.get("categories") or {}
         if not _title_ok(title):
             continue
-        if str(j.get("workplaceType") or "").lower() != "remote":
-            continue
         country = (j.get("country") or "").upper()
         loc = cats.get("location") or "Remote"
         if country and country not in ("US", "USA"):
             continue
-        if not country and not us_friendly(loc):
+        if not country and not looks_us(loc):
             continue
         sal = j.get("salaryRange") or {}
         salary = None
@@ -242,8 +268,9 @@ def _lever(slug):
             interval = sal.get("interval") or ""
             salary = _fmt_range(_annualize(sal.get("min"), interval),
                                 _annualize(sal.get("max"), interval))
-        if not salary and j.get("salaryDescriptionPlain"):
-            salary = None  # left to the text parser in fetch_jobs
+        remote = str(j.get("workplaceType") or "").lower() == "remote"
+        if not remote and not _relocation_grade(salary or j.get("salaryDescriptionPlain")):
+            continue
         desc = " ".join(filter(None, [
             j.get("descriptionPlain") or html_to_text(j.get("description") or ""),
             " ".join(f"{l.get('text', '')}: {html_to_text(l.get('content', ''))}"
@@ -259,7 +286,7 @@ def _lever(slug):
             "description": desc,
             "salary": salary,
             "posted_at": j.get("createdAt"),
-            "remote": True,
+            "remote": remote,
             "employment_type": cats.get("commitment"),
         })
     return out
@@ -289,15 +316,17 @@ def _ashby(slug):
             continue
         if not _title_ok(j.get("title")):
             continue
-        # isRemote is true for hybrid roles too; workplaceType is the honest one.
-        if str(j.get("workplaceType") or "").lower() != "remote":
-            continue
         locs = [j.get("location") or ""] + [
             (s.get("location") or "") for s in (j.get("secondaryLocations") or [])]
         countries = [((s.get("address") or {}).get("postalAddress") or {}).get("addressCountry", "")
                      for s in (j.get("secondaryLocations") or [])]
         blob = " ".join(filter(None, locs + countries))
-        if not us_friendly(blob):
+        if not looks_us(blob):
+            continue
+        # isRemote is true for hybrid roles too; workplaceType is the honest one.
+        remote = str(j.get("workplaceType") or "").lower() == "remote"
+        salary = _ashby_salary(j.get("compensation"))
+        if not remote and not _relocation_grade(salary):
             continue
         out.append({
             "source": "ashby",
@@ -306,9 +335,9 @@ def _ashby(slug):
             "location": j.get("location") or "Remote",
             "url": j.get("jobUrl") or j.get("applyUrl"),
             "description": j.get("descriptionPlain") or html_to_text(j.get("descriptionHtml") or ""),
-            "salary": _ashby_salary(j.get("compensation")),
+            "salary": salary,
             "posted_at": j.get("publishedAt"),
-            "remote": True,
+            "remote": remote,
             "employment_type": j.get("employmentType"),
         })
     return out

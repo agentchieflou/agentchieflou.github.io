@@ -23,8 +23,8 @@ from applied import SUBJECT_TAG
 from config import (EMAIL_TO, GMAIL_ADDRESS, GMAIL_APP_PASSWORD,
                     MIN_SALARY_USD, NO_SALARY_MAX_AGE_DAYS,
                     NO_SALARY_MAX_IN_DIGEST, NO_SALARY_MIN_CONFIDENCE,
-                    NO_SALARY_MIN_SCORE, NO_SALARY_SENIORITY_FITS, STATE_DIR,
-                    TOP_N_DIGEST)
+                    NO_SALARY_MIN_SCORE, NO_SALARY_SENIORITY_FITS,
+                    RELOCATION_SALARY_USD, STATE_DIR, TOP_N_DIGEST)
 import standing_answers
 from rejected import SUBJECT_TAG as REJECTED_SUBJECT_TAG
 from util import log
@@ -129,6 +129,14 @@ def _card(i, j, s, is_new):
         tags.append(f"{j['years_required']}+ yrs asked")
     if j.get("no_salary"):
         tags.append(f"posted &lt;{NO_SALARY_MAX_AGE_DAYS}d &middot; verify pay")
+    relocation_html = ""
+    if j.get("relocation"):
+        relocation_html = (
+            f'<div style="margin:0 0 10px;padding:7px 10px;background:#fdf1e3;'
+            f'border-left:3px solid #b06000;border-radius:0 6px 6px 0;'
+            f'font:600 12px/1.5 {FONT};color:#8a5300;" class="chip">'
+            f'On-site &mdash; this one means moving. Cleared the '
+            f'${RELOCATION_SALARY_USD:,}+ relocation bar.</div>')
     tag_html = ""
     if tags:
         chips = "".join(
@@ -195,6 +203,7 @@ def _card(i, j, s, is_new):
       </tr>
     </table>
     {tag_html}
+    {relocation_html}
     <div style="font:400 14px/1.6 {FONT};color:#3c4043;margin:0 0 2px;" class="body">{e(s['why'])}</div>
     {missing_html}
     {pf_html}
@@ -289,8 +298,9 @@ def build_html(top, stats):
     <div style="font:400 13px/1.6 {FONT};color:#5f6368;margin:0 0 4px;" class="dim">
       Top {len(top)} matches &middot; {e(stats['date'])}</div>
     <div style="font:400 12px/1.6 {FONT};color:#80868b;margin:0 0 18px;" class="dim">
-      Fully remote &middot; full-time &middot; stated salary from ${MIN_SALARY_USD:,}
+      Remote &middot; full-time &middot; stated salary from ${MIN_SALARY_USD:,}
       &middot; applied and rejected roles suppressed<br>
+      On-site roles are included only at ${RELOCATION_SALARY_USD:,}+ and are flagged as such<br>
       Up to {NO_SALARY_MAX_IN_DIGEST} slots may go to employer-direct roles posted within
       {NO_SALARY_MAX_AGE_DAYS} days that don't disclose pay, and only at
       {NO_SALARY_MIN_SCORE}+ match with a clear step up in scope</div>

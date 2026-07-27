@@ -93,6 +93,14 @@ JOB_EXPIRY_DAYS = 14      # drop listings not seen at any source for this long
 # less coverage than it did when everything came from aggregators.
 MIN_SALARY_USD = 130_000
 
+# Remote is the default requirement, because the point of this search is to
+# be able to live somewhere other than where the job is. But it is a
+# preference with a price: at this figure the owner would relocate, so above
+# it location stops being a filter and on-site roles are allowed through.
+# Only ever applied to a *stated* salary — an on-site role that will not say
+# what it pays cannot clear a bar it never names.
+RELOCATION_SALARY_USD = 300_000
+
 # Narrow exception to the stated-salary rule. Employers who post through
 # their own ATS are reliable about the ROLE even when they withhold pay, and
 # dropping all of them was the single largest loss in the funnel. So a capped

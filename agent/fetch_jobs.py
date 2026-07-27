@@ -31,8 +31,9 @@ import ats
 import role_filter
 from config import (ADZUNA_APP_ID, ADZUNA_APP_KEY, JOB_EXPIRY_DAYS,
                     JOOBLE_API_KEY, MIN_SALARY_USD, NO_SALARY_MAX_AGE_DAYS,
-                    NO_SALARY_SOURCES, RAPIDAPI_KEY, SEARCH_QUERIES, STATE_DIR,
-                    USAJOBS_API_KEY, USAJOBS_USER_AGENT, USER_AGENT)
+                    NO_SALARY_SOURCES, RAPIDAPI_KEY, RELOCATION_SALARY_USD,
+                    SEARCH_QUERIES, STATE_DIR, USAJOBS_API_KEY,
+                    USAJOBS_USER_AGENT, USER_AGENT)
 from util import (find_salary_snippet, html_to_text, load_json, log,
                   looks_genuinely_remote, norm_key, posted_within_days,
                   role_key, salary_max_usd, save_json, sha1, us_friendly)
@@ -98,9 +99,13 @@ def _job(source, title, company, location, url, description, salary=None,
 
 
 def _from_ats(raw):
+    # remote comes from the fetcher: it used to be hardcoded True, which was
+    # harmless while every source was remote-only and silently discarded the
+    # whole relocation path once on-site roles were allowed through.
     job = _job(raw["source"], raw["title"], raw["company"], raw["location"],
                raw["url"], raw["description"], raw.get("salary"),
-               raw.get("posted_at"), True, raw.get("employment_type"))
+               raw.get("posted_at"), raw.get("remote", True),
+               raw.get("employment_type"))
     if raw.get("board"):
         job["board"] = raw["board"]  # lets preflight.py find the application form
     return job
@@ -365,14 +370,6 @@ def fetch_all(target_titles, exclude_role_keys=()):
     # registry a new board to poll directly from the next run onward.
     ats.record_discovered(jobs)
 
-    # Defense in depth: every job builder above is expected to set `remote`
-    # honestly, but a bad source integration must never be able to sneak a
-    # non-remote posting through just by omitting the check.
-    before_remote = len(jobs)
-    jobs = [j for j in jobs if j.get("remote")]
-    if len(jobs) != before_remote:
-        log.info("remote-only rule: dropped %d non-remote postings", before_remote - len(jobs))
-
     # Discipline, seniority and full-time gates. Runs before everything
     # expensive: these are the filters that decide whether the pool is
     # actually reachable roles or just remote roles.
@@ -386,20 +383,32 @@ def fetch_all(target_titles, exclude_role_keys=()):
         if len(jobs) != before:
             log.info("rejected-role rule: dropped %d re-posted rejected roles", before - len(jobs))
 
-    # Stated-salary requirement: a posting must state compensation somewhere
-    # (structured field, or extractable from its text) and it must reach the
-    # floor. The one exception is employer-direct postings that are recent
-    # enough to still be real — those carry `no_salary` and face a much
-    # higher bar again at digest time (see config.NO_SALARY_*).
+    # Combined pay + location gate. These two decide each other now, so they
+    # cannot be separate steps: remote is the requirement below
+    # RELOCATION_SALARY_USD, and above it location stops mattering because
+    # the owner would move. An on-site role therefore has to state its pay —
+    # it cannot clear a bar it never names.
     before = len(jobs)
-    kept, provisional, dropped_no_salary, below = [], 0, 0, 0
+    kept, provisional, relocation = [], 0, 0
+    dropped_onsite, dropped_no_salary, below = 0, 0, 0
     for j in jobs:
         if not j.get("salary"):
             snippet = find_salary_snippet(j.get("description"))
             if snippet:
                 j["salary"] = snippet + " (from posting text)"
         mx = salary_max_usd(j.get("salary"))
-        if mx is None:
+        remote = bool(j.get("remote"))
+
+        if mx is not None and mx >= RELOCATION_SALARY_USD:
+            if not remote:
+                j["relocation"] = True   # flagged in the digest: this one means moving
+                relocation += 1
+            kept.append(j)
+        elif not remote:
+            dropped_onsite += 1
+        elif mx is None:
+            # Employer-direct and freshly posted earns a provisional slot;
+            # it faces a much higher bar again at digest time.
             if (j["source"] in NO_SALARY_SOURCES
                     and posted_within_days(j.get("posted_at"), NO_SALARY_MAX_AGE_DAYS)):
                 j["no_salary"] = True
@@ -412,11 +421,12 @@ def fetch_all(target_titles, exclude_role_keys=()):
         else:
             below += 1
     jobs = kept
-    log.info("stated-salary rule: %d of %d kept (%d stated, %d employer-direct "
-             "and posted within %dd with pay undisclosed, %d dropped for no salary, "
-             "%d below $%s)",
-             len(jobs), before, len(jobs) - provisional, provisional,
-             NO_SALARY_MAX_AGE_DAYS, dropped_no_salary, below, f"{MIN_SALARY_USD:,}")
+    log.info("pay+location rule: %d of %d kept (%d remote with stated pay, "
+             "%d relocation-grade on-site >= $%s, %d pay-undisclosed provisional; "
+             "dropped %d on-site below the bar, %d no stated salary, %d below $%s)",
+             len(jobs), before, len(jobs) - provisional - relocation, relocation,
+             f"{RELOCATION_SALARY_USD:,}", provisional, dropped_onsite,
+             dropped_no_salary, below, f"{MIN_SALARY_USD:,}")
 
     # Dedupe across sources by URL id, then by normalized company+title.
     # Sorted so the employer's own ATS posting wins over an aggregator's copy

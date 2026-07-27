@@ -205,6 +205,54 @@ def us_friendly(location_text):
     return not location_text or bool(US_REMOTE_HINTS.search(location_text))
 
 
+_US_STATES = (
+    "AL|AK|AZ|AR|CA|CO|CT|DE|FL|GA|HI|ID|IL|IN|IA|KS|KY|LA|ME|MD|MA|MI|MN|MS|"
+    "MO|MT|NE|NV|NH|NJ|NM|NY|NC|ND|OH|OK|OR|PA|RI|SC|SD|TN|TX|UT|VT|VA|WA|WV|WI|WY|DC")
+_US_STATE_NAMES = (
+    "alabama|alaska|arizona|arkansas|california|colorado|connecticut|delaware|"
+    "florida|georgia|hawaii|idaho|illinois|indiana|iowa|kansas|kentucky|louisiana|"
+    "maine|maryland|massachusetts|michigan|minnesota|mississippi|missouri|montana|"
+    "nebraska|nevada|new hampshire|new jersey|new mexico|new york|north carolina|"
+    "north dakota|ohio|oklahoma|oregon|pennsylvania|rhode island|south carolina|"
+    "south dakota|tennessee|texas|utah|vermont|virginia|washington|west virginia|"
+    "wisconsin|wyoming|district of columbia")
+# "City, ST" is the convention; requiring the comma keeps "OR"/"IN"/"ME" from
+# matching ordinary words.
+_US_LOCATION = re.compile(rf",\s*(?:{_US_STATES})\b|\b(?:{_US_STATE_NAMES})\b", re.I)
+_NON_US = re.compile(
+    r"\b(?:canada|united kingdom|england|scotland|ireland|germany|france|spain|"
+    r"italy|netherlands|switzerland|sweden|norway|denmark|finland|poland|portugal|"
+    r"austria|belgium|czech|romania|greece|japan|china|korea|singapore|india|"
+    r"australia|new zealand|brazil|mexico|argentina|chile|colombia|israel|uae|"
+    r"south africa|nigeria|kenya|egypt|turkey|ukraine|philippines|vietnam|"
+    r"thailand|indonesia|malaysia|taiwan|hong kong|"
+    r"london|paris|berlin|munich|z[uü]rich|zug|tokyo|sydney|melbourne|toronto|"
+    r"vancouver|dublin|amsterdam|bengaluru|bangalore|mumbai|tel aviv|seoul|"
+    r"warsaw|lisbon|madrid|barcelona|milan|stockholm|oslo|copenhagen|helsinki|"
+    r"prague|vienna|brussels|s[ãa]o paulo|\buk\b|\bemea\b|\bapac\b)\b", re.I)
+
+
+def looks_us(location_text):
+    """True when a location reads as United States.
+
+    us_friendly() only recognises remote-style strings ("Remote - US"), which
+    is all it ever needed to see while every posting had to be remote. An
+    on-site posting says "San Francisco, CA" — no US token anywhere — so it
+    was being discarded as foreign. This reads concrete locations too.
+
+    A posting listing several offices counts as US if any one of them is.
+    """
+    if not location_text:
+        return True
+    if US_REMOTE_HINTS.search(location_text) or _US_LOCATION.search(location_text):
+        return True
+    if _NON_US.search(location_text):
+        return False
+    # No signal either way (a bare "Remote"): let it through and let the
+    # later gates judge it.
+    return True
+
+
 _REMOTE_DISQUALIFIERS = re.compile(
     r"\bhybrid\b|\bon-?site\b|\bin.office\b|\bin-person\b|"
     r"\d+\s*(?:-\s*\d+\s*)?days?\s*(?:a|per)\s*week\s*(?:in|on-?site|in.office)|"
