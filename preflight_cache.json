@@ -551,5 +551,59 @@
   ],
   "blockers": [],
   "v": 4
+ },
+ "7df70b63a27d0c16e6c1de5f57203fe484ae03c0": {
+  "total": 15,
+  "standing": 11,
+  "specific": [
+   {
+    "q": "Please confirm whether any of the below applies to you.  Select all that apply.\n\nNote: This information will only be used to ensure compliance with U.S. sanctions and export controls.",
+    "options": [
+     "Citizen or permanent resident of Cuba, Iran, North Korea, or",
+     "Ordinarily a resident of Cuba, Iran, North Korea, Syria or t",
+     "Ordinarily a resident of Russia or Belarus and not willing t",
+     "None of the above"
+    ]
+   },
+   {
+    "q": "If you selected a response to the prior question other than “none of the above,” please confirm whether any of the following also applies to you.  Select all that apply.",
+    "options": [
+     "U.S. citizen",
+     "U.S. non-citizen national",
+     "U.S. permanent resident (Green Card holder)",
+     "Individual granted asylum in the U.S.",
+     "Individual granted refugee status in the U.S.",
+     "Individual granted citizenship in a country other than Cuba,"
+    ]
+   }
+  ],
+  "uploads": [
+   "Resume/CV",
+   "Cover Letter"
+  ],
+  "blockers": [],
+  "v": 4
+ },
+ "12a0c74552b7e620c52b659f4b60ea8d52e2712c": {
+  "total": 12,
+  "standing": 8,
+  "specific": [
+   {
+    "q": "Point of Data Transfer",
+    "options": [
+     "I Acknowledge"
+    ]
+   },
+   {
+    "q": "What is your current visa status?",
+    "options": []
+   }
+  ],
+  "uploads": [
+   "Resume/CV",
+   "Cover Letter"
+  ],
+  "blockers": [],
+  "v": 4
  }
 }
