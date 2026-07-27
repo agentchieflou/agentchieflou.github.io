@@ -2778,5 +2778,75 @@
   "prefilter": 0.5067,
   "heuristic": false,
   "scored_at": "2026-07-27T01:15:23.964334+00:00"
+ },
+ "0013edcdf7ee3998aa27ec2f6842dc4340a4c89b": {
+  "profile_version": "224fc3f424da",
+  "match_score": 82,
+  "confidence": 0.9,
+  "why": "The role perfectly aligns with Michael's experience in enterprise-scale data migration and technical product ownership. It leverages his expertise in bridging business requirements with cloud-native data architectures.",
+  "seniority_fit": "stretch",
+  "role_family": "Business & Data Analytics",
+  "matched_skills": [
+   "SQL",
+   "Data Modeling",
+   "Requirements Gathering"
+  ],
+  "missing_skills": [
+   "Snowflake",
+   "DOMO",
+   "GCP"
+  ],
+  "resume_suggestions": [
+   "Highlight specific instances of managing cross-functional technical stakeholders.",
+   "Emphasize your data migration background to address the 'enterprise-scale' requirement."
+  ],
+  "sector": "Media/Gaming",
+  "prefilter": 0.5721,
+  "heuristic": false,
+  "scored_at": "2026-07-27T01:16:57.240376+00:00"
+ },
+ "67ee83f3f10b53997fb05c860564fc1639caacb7": {
+  "profile_version": "224fc3f424da",
+  "match_score": 35,
+  "confidence": 0.95,
+  "why": "This is a manager-level role requiring significant experience leading teams and high-stakes deployments, which is materially beyond the candidate's current 4-year tenure.",
+  "seniority_fit": "out-of-band",
+  "role_family": "AI & Machine Learning",
+  "matched_skills": [
+   "Python",
+   "Process Automation"
+  ],
+  "missing_skills": [
+   "People Management",
+   "Strategic GTM Experience"
+  ],
+  "resume_suggestions": [
+   "Focus on roles that emphasize individual contributor excellence over management.",
+   "Consider targeting 'Forward Deployed Engineer' roles rather than 'Manager, Forward Deployed Engineering'."
+  ],
+  "sector": "AI/ML Infra",
+  "prefilter": 0.5161,
+  "heuristic": false,
+  "scored_at": "2026-07-27T01:16:57.240376+00:00"
+ },
+ "7d62ac3cf71ebd8b38808d2eadd5378dc367f523": {
+  "profile_version": "224fc3f424da",
+  "match_score": 40,
+  "confidence": 0.8,
+  "why": "The role fits the technical requirements, but the maximum compensation ($130k) sits at the very bottom of the candidate's hard constraint, and the posting lacks technical depth regarding their specific stack.",
+  "seniority_fit": "target",
+  "role_family": "Analytics & Data Engineering",
+  "matched_skills": [
+   "SQL",
+   "Data Modeling"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "N/A"
+  ],
+  "sector": "Other",
+  "prefilter": 0.511,
+  "heuristic": false,
+  "scored_at": "2026-07-27T01:16:57.240376+00:00"
  }
 }
