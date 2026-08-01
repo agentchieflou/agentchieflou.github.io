@@ -1281,27 +1281,6 @@
   "heuristic": false,
   "scored_at": "2026-07-26T13:53:43.707763+00:00"
  },
- "d2d70fe555743d8b5be933da8100bab72dc359f3": {
-  "profile_version": "3b7a62d9b509",
-  "match_score": 40,
-  "confidence": 0.9,
-  "why": "Salary range is barely at the limit ($116k-$146k), making it a less desirable option given the constraints.",
-  "seniority_fit": "target",
-  "role_family": "Quantitative & Risk",
-  "matched_skills": [
-   "Quantitative Analytics"
-  ],
-  "missing_skills": [
-   "Transfer Pricing"
-  ],
-  "resume_suggestions": [
-   "None - likely a poor fit."
-  ],
-  "sector": "Fintech",
-  "prefilter": 0.4807,
-  "heuristic": false,
-  "scored_at": "2026-07-26T16:27:35.829260+00:00"
- },
  "bd46c40b4a1efc1dc2b1f4d73904be8bfa7635bc": {
   "profile_version": "3b7a62d9b509",
   "match_score": 70,
@@ -2833,5 +2812,48 @@
   "prefilter": 0.5009,
   "heuristic": false,
   "scored_at": "2026-07-31T17:10:44.357631+00:00"
+ },
+ "9a601ee766d9a7d4702756d38a94a22381fab077": {
+  "profile_version": "ea07aad451ce",
+  "match_score": 35,
+  "confidence": 0.9,
+  "why": "While the tech stack aligns with Michael's expertise in SQL and data pipelines, the role mandates in-office presence in Sacramento, violating the candidate's core remote requirement. Furthermore, the 6-year experience requirement places this as a slight stretch for a 4-year candidate.",
+  "seniority_fit": "stretch",
+  "role_family": "Analytics & Data Engineering",
+  "matched_skills": [
+   "SQL",
+   "Data Visualization"
+  ],
+  "missing_skills": [
+   "Enterprise Semantic Layer Architecture"
+  ],
+  "resume_suggestions": [
+   "Highlight specific 'Single Source of Truth' data modeling projects.",
+   "Emphasize experience with enterprise-grade data governance."
+  ],
+  "sector": "Healthcare",
+  "prefilter": 0.5451,
+  "heuristic": false,
+  "scored_at": "2026-08-01T14:50:36.618574+00:00"
+ },
+ "790e320d5530435ac5d3a4d6aedd22aec5aa2c5e": {
+  "profile_version": "ea07aad451ce",
+  "match_score": 20,
+  "confidence": 0.7,
+  "why": "The job posting text provided is for a market research firm (Coherent Market Insights), not the AI company Cohere, indicating a data mismatch. Without clear salary, remote, or specific scope details in the provided text, this role cannot be verified as meeting the candidate's core constraints.",
+  "seniority_fit": "out-of-band",
+  "role_family": "Technical Strategy & Product",
+  "matched_skills": [],
+  "missing_skills": [
+   "Machine Learning Infrastructure"
+  ],
+  "resume_suggestions": [
+   "Add a section detailing specific LLM/Agentic architecture deployments.",
+   "Quantify impact of developer tools on AI training cycle times."
+  ],
+  "sector": "Consulting",
+  "prefilter": 0.507,
+  "heuristic": false,
+  "scored_at": "2026-08-01T14:50:36.618574+00:00"
  }
 }
