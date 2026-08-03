@@ -2813,29 +2813,6 @@
   "heuristic": false,
   "scored_at": "2026-07-31T17:10:44.357631+00:00"
  },
- "9a601ee766d9a7d4702756d38a94a22381fab077": {
-  "profile_version": "ea07aad451ce",
-  "match_score": 35,
-  "confidence": 0.9,
-  "why": "While the tech stack aligns with Michael's expertise in SQL and data pipelines, the role mandates in-office presence in Sacramento, violating the candidate's core remote requirement. Furthermore, the 6-year experience requirement places this as a slight stretch for a 4-year candidate.",
-  "seniority_fit": "stretch",
-  "role_family": "Analytics & Data Engineering",
-  "matched_skills": [
-   "SQL",
-   "Data Visualization"
-  ],
-  "missing_skills": [
-   "Enterprise Semantic Layer Architecture"
-  ],
-  "resume_suggestions": [
-   "Highlight specific 'Single Source of Truth' data modeling projects.",
-   "Emphasize experience with enterprise-grade data governance."
-  ],
-  "sector": "Healthcare",
-  "prefilter": 0.5451,
-  "heuristic": false,
-  "scored_at": "2026-08-01T14:50:36.618574+00:00"
- },
  "790e320d5530435ac5d3a4d6aedd22aec5aa2c5e": {
   "profile_version": "ea07aad451ce",
   "match_score": 20,
@@ -2855,5 +2832,30 @@
   "prefilter": 0.507,
   "heuristic": false,
   "scored_at": "2026-08-01T14:50:36.618574+00:00"
+ },
+ "64aa413d8a0dd8aa2184c978f6ea66308e31d968": {
+  "profile_version": "ea07aad451ce",
+  "match_score": 78,
+  "confidence": 0.85,
+  "why": "Michael's expertise in pipeline orchestration and agentic architectures aligns perfectly with Astronomer's core product focus on Apache Airflow and Otto. The role allows him to leverage his experience in enterprise workflow automation in a high-impact, customer-facing capacity.",
+  "seniority_fit": "stretch",
+  "role_family": "Analytics & Data Engineering",
+  "matched_skills": [
+   "Python",
+   "Process Automation",
+   "Data Pipelines",
+   "Agentic Architecture"
+  ],
+  "missing_skills": [
+   "Apache Airflow (Specific Platform Knowledge)"
+  ],
+  "resume_suggestions": [
+   "Explicitly highlight Airflow or workflow orchestration tools in your 'Technical Skills' header.",
+   "Emphasize the 'developer-facing' nature of your internal tool projects to align with a platform engineering profile."
+  ],
+  "sector": "Enterprise SaaS/DevTools",
+  "prefilter": 0.5114,
+  "heuristic": false,
+  "scored_at": "2026-08-03T13:57:53.667025+00:00"
  }
 }
