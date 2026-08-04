@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-08-03T13:57:55.356336+00:00",
+ "generated_at": "2026-08-04T13:15:37.731145+00:00",
  "profile_version": "ea07aad451ce",
  "totals": {
-  "discovered_all_time": 1371,
-  "live": 232
+  "discovered_all_time": 1381,
+  "live": 229
  },
  "skills": [
   {
@@ -86,23 +86,13 @@
    "ghost": true
   },
   {
+   "id": "ghost-oracle cloud",
+   "name": "Oracle Cloud",
+   "ghost": true
+  },
+  {
    "id": "ghost-roadmap planning",
    "name": "Roadmap Planning",
-   "ghost": true
-  },
-  {
-   "id": "ghost-gtm platform integration",
-   "name": "GTM platform integration",
-   "ghost": true
-  },
-  {
-   "id": "ghost-security compliance frameworks",
-   "name": "Security compliance frameworks",
-   "ghost": true
-  },
-  {
-   "id": "ghost-financial domain knowledge",
-   "name": "Financial domain knowledge",
    "ghost": true
   },
   {
@@ -113,6 +103,11 @@
   {
    "id": "ghost-applied ml model deployment",
    "name": "Applied ML model deployment",
+   "ghost": true
+  },
+  {
+   "id": "ghost-forward deployed consulting experience",
+   "name": "Forward deployed consulting experience",
    "ghost": true
   },
   {
@@ -161,13 +156,8 @@
    "ghost": true
   },
   {
-   "id": "ghost-mlops platform tools",
-   "name": "MLOps platform tools",
-   "ghost": true
-  },
-  {
-   "id": "ghost-operations strategy",
-   "name": "Operations strategy",
+   "id": "ghost-customer support domain expertise",
+   "name": "Customer Support domain expertise",
    "ghost": true
   },
   {
@@ -189,23 +179,14 @@
    "id": "ghost-product experimentation",
    "name": "Product Experimentation",
    "ghost": true
+  },
+  {
+   "id": "ghost-leadership management",
+   "name": "Leadership/Management",
+   "ghost": true
   }
  ],
  "jobs": [
-  {
-   "id": "9aaac1a885a8fe5140e93a30cb2ac1e94b8f0fb7",
-   "title": "Forward Deployed AI Solutions Engineer",
-   "company": "Natera",
-   "sector": "Healthcare",
-   "company_description": "Natera: A global leader in cell-free DNA testing\nSkip navigation\nPay Bill\nPortals\nOur Tests\nOncology\nTESTS\nSignatera™\n–\nResidual Disease Test (MRD)\nLatitude™\n–\nTissue Free MRD\nAltera™\n–\nTumor Genomic profile\nEmpower™\n–\nHereditary Cancer Test\nFOR PATIENTS\nSignatera™ Patient Information\nAltera™ Patien",
-   "location": "US Remote",
-   "salary": null,
-   "url": "https://job-boards.greenhouse.io/natera/jobs/6115022004",
-   "source": "greenhouse",
-   "score": 95,
-   "confidence": 0.95,
-   "why": "This role is a mirror image of your experience, focusing on high-speed automation of business workflows via agentic architectures."
-  },
   {
    "id": "8edf72252e746e2688b42ccc769a82f1ac23ef59",
    "title": "Cloud Solutions Architect",
@@ -375,6 +356,20 @@
    "why": "Perfect match for technical consulting and process optimization within finance-focused tech."
   },
   {
+   "id": "e40aae493977602447884b20942425dad91fed81",
+   "title": "Technical Consultant, Oracle Cloud",
+   "company": "Ramp",
+   "sector": "Fintech",
+   "company_description": "Spend Management, Corporate Cards & Accounts Payable Solutions | Ramp\nclose\nNew: AI Token Spend Management — see, understand, and control your AI bill.\nLearn more\nProducts\nPartners\nSolutions\nResources\nCustomers\nPricing\nSign in\nSee a demo\narrow_back_ios\nBack\nUS corporate payments processed by Ramp:\n0",
+   "location": "Remote (US)",
+   "salary": "$212,000-$291,000",
+   "url": "https://jobs.ashbyhq.com/ramp/13fe8467-b624-4f30-8aad-af441dfb1797",
+   "source": "ashby",
+   "score": 88,
+   "confidence": 0.85,
+   "why": "Excellent match for 'Technical Consultant' in a finance-focused automation role."
+  },
+  {
    "id": "ab7d16a27dc75342e45dcfe3e9a60dc6d3be0272",
    "title": "Senior Analytics Engineer",
    "company": "Vanta",
@@ -487,48 +482,6 @@
    "why": "Great fit for Solutions Consulting at an AI-native finance platform; perfectly aligns with your financial and data background."
   },
   {
-   "id": "ba7d159d3a7ba6717a277dbb0709380d238c03d2",
-   "title": "Data Engineer - GTM & Analytics",
-   "company": "Sardine",
-   "sector": "Fintech",
-   "company_description": "Agentic Financial Crime Platform for Fraud Prevention & AML\nSardineCon SF/2026\nJoin us in San Francisco · August 19th\nLearn More\n→\nProducts\nAgentic AI\nCustomers\nResources\nSardineCon\n2026/SF\nUpcoming events\nPast events\nSardineCon\nWho attends\nSpeakers\nAgenda\nLocation\nLog in\nContact us\nRegister now\nDow",
-   "location": "United States",
-   "salary": "$150,000-$205,000",
-   "url": "https://jobs.ashbyhq.com/sardine/6c3dd41c-0ca6-47c5-86fb-bd5114f2a5ac",
-   "source": "ashby",
-   "score": 85,
-   "confidence": 0.9,
-   "why": "Perfect match for a 'Data Engineer' in GTM and Analytics, utilizing all core skills including automation and data modeling."
-  },
-  {
-   "id": "fd2e962c12fa2b866f34caf95b44a7e0f5962846",
-   "title": "IT Controls Data Engineer",
-   "company": "Openai",
-   "sector": "AI/ML Infra",
-   "company_description": "OpenAI | Research & Deployment\nSkip to main content\nResearch\nProducts\nBusiness\nDevelopers\nCompany\nFoundation\n(opens in a new window)\nLog in\nTry ChatGPT\n(opens in a new window)\nResearch\nProducts\nBusiness\nDevelopers\nCompany\nFoundation\n(opens in a new window)\nTry ChatGPT\n(opens in a new window)\nLogin\nO",
-   "location": "San Francisco",
-   "salary": "$293,000-$385,000",
-   "url": "https://jobs.ashbyhq.com/openai/5bc79fde-2f1d-4bb2-8186-4a700ecff37c",
-   "source": "ashby",
-   "score": 85,
-   "confidence": 0.9,
-   "why": "Perfect alignment with the IT controls, data, and security automation role; utilizes all of the candidate's core strengths."
-  },
-  {
-   "id": "26ad0e65a1b095105beecb0414585ba2e573e6e5",
-   "title": "Software Engineer, Data Platform",
-   "company": "Ramp",
-   "sector": "Fintech",
-   "company_description": "Spend Management, Corporate Cards & Accounts Payable Solutions | Ramp\nclose\nNew: AI Token Spend Management — see, understand, and control your AI bill.\nLearn more\nProducts\nPartners\nSolutions\nResources\nCustomers\nPricing\nSign in\nSee a demo\narrow_back_ios\nBack\nUS corporate payments processed by Ramp:\n0",
-   "location": "New York, NY (HQ)",
-   "salary": "$168,000-$324,500",
-   "url": "https://jobs.ashbyhq.com/ramp/bca0346c-b843-4795-96df-6091f51e421b",
-   "source": "ashby",
-   "score": 85,
-   "confidence": 0.9,
-   "why": "Excellent technical fit for a 'Data Platform' engineer; the role demands the exact 'builder' profile and data stack experience the candidate possesses."
-  },
-  {
    "id": "5140f0250fda6525ac9f70fdb82caa8ae56fa87e",
    "title": "Business Operations Senior Associate, Institutional",
    "company": "Coinbase",
@@ -555,6 +508,34 @@
    "score": 85,
    "confidence": 0.9,
    "why": "Perfect alignment with the candidate's current domain (banking) and target title; clearly within the 4-year experience target."
+  },
+  {
+   "id": "cce581bd2caeefb890c4f254e6669878b52d0d05",
+   "title": "Senior Data Analytics Engineer",
+   "company": "OneSignal",
+   "sector": "Enterprise SaaS/DevTools",
+   "company_description": "Customer Engagement Platform for Email, Push… - OneSignal\nSkip to Content\nProduct\nMessaging channels\nMobile push notifications\nDirect, highly visible, mobile-first\nWeb push notifications\nDirect, reach any browser visit\nEmail\nEasy email built for real impact\nIn-app messaging\nVisual, customizable, rea",
+   "location": "Remote (US)",
+   "salary": "$170,000 to $190,000 (from posting text)",
+   "url": "https://jobs.gem.com/onesignal/am9icG9zdDo6SHpUdQMGIovjQDRozyHr",
+   "source": "jsearch",
+   "score": 85,
+   "confidence": 0.9,
+   "why": "This role is a strong match for Michael's experience in building internal developer tools and data pipelines. The requirement for a 'Data & Analytics specialist' who understands both engineering and business operations aligns perfectly with his cross-functional background."
+  },
+  {
+   "id": "c7a020013e1b931d5893fd213048167a67bf10be",
+   "title": "Senior Data Engineer",
+   "company": "Vanta",
+   "sector": "Enterprise SaaS/DevTools",
+   "company_description": "SOC 2, HIPAA, ISO 27001, PCI, and GDPR Compliance\nPlatform\nProducts\nPlatform\nCompliance\nGet compliant quickly and painlessly with automation.\nContinuous GRC\nJoin the modern way to GRC.\nPersonnel and Access\nEasily control user access and permissions.\nRisk Management\nProactively manage risk to drive s",
+   "location": "Remote U.S.",
+   "salary": "$190,000-$224,000",
+   "url": "https://jobs.ashbyhq.com/vanta/7600575b-fb06-485e-bc13-626e661a34aa",
+   "source": "ashby",
+   "score": 85,
+   "confidence": 0.9,
+   "why": "A strong match for a Senior Data Engineer, leveraging your pipeline and internal tools experience."
   },
   {
    "id": "6d427f629004a54191b3a14c76f0b229b3eb922d",
@@ -585,18 +566,32 @@
    "why": "Very strong fit for ML engineering with operational scope (fraud/dispute logic)."
   },
   {
-   "id": "b62bd43debbcbb23e020b76cfa36ac9fcd79f430",
-   "title": "Senior Analytics Engineer",
-   "company": "Twilio",
-   "sector": "Enterprise SaaS/DevTools",
-   "company_description": "Conversational AI and APIs for SMS, Email, Voice | Twilio\nEnglish\nAn icon of a down chevron\nEnglish\nAn icon of a checkmark\nFrench\nGerman\nJapanese\nPortuguese\nSpanish\nSupport\nAn icon of a down chevron\nHelp Center\nSupport Plans\nPartner Solutions\nLogin\nAn icon of a down chevron\nLog in to\nTwilio Console\n",
-   "location": "Remote - US",
-   "salary": null,
-   "url": "https://job-boards.greenhouse.io/twilio/jobs/8044650",
+   "id": "832cd947d456cf2f8a1fa57b9e15092d7f08dc55",
+   "title": "Forward Deployed AI Engineer",
+   "company": "Sardine",
+   "sector": "Fintech",
+   "company_description": "Agentic Financial Crime Platform for Fraud Prevention & AML\nSardineCon SF/2026\nJoin us in San Francisco · August 19th\nLearn More\n→\nProducts\nAgentic AI\nCustomers\nResources\nSardineCon\n2026/SF\nUpcoming events\nPast events\nSardineCon\nWho attends\nSpeakers\nAgenda\nLocation\nLog in\nContact us\nRegister now\nDow",
+   "location": "United States",
+   "salary": "$160,000-$210,000",
+   "url": "https://jobs.ashbyhq.com/sardine/4ff32b5d-13c6-4024-826c-04ed2881d688",
+   "source": "ashby",
+   "score": 85,
+   "confidence": 0.8,
+   "why": "Matches your experience in agentic workflows; this 'Forward Deployed' role is a perfect match for your skillset."
+  },
+  {
+   "id": "b0d94b3c537784c825d6012a4e465f6363d64766",
+   "title": "Senior Data Scientist, CX Analytics",
+   "company": "Coinbase",
+   "sector": "Fintech",
+   "company_description": "Coinbase - Buy and Sell Bitcoin, Ethereum, and more with trust\nSkip to content\nSkip to site index\nEarn up to $2,000 when you buy $50 in crypto¹\nCryptocurrencies\nIndividuals\nTrade\n󰨂\nCrypto\nBuy and sell cryptocurrencies\n󰨈\nPrediction markets\nNew\nTrade on sports, crypto, politics, and more\n󰧶\nDerivatives",
+   "location": "Remote - USA",
+   "salary": "$180,370\n—\n$212,000",
+   "url": "https://www.coinbase.com/careers/positions/8009392?gh_jid=8009392",
    "source": "greenhouse",
-   "score": 82,
+   "score": 80,
    "confidence": 0.9,
-   "why": "The role perfectly aligns with Michael's expertise in agentic architecture and data engineering for internal developer tools at an enterprise SaaS company. It is a solid seniority match for a 4-year professional."
+   "why": "Good fit for Data Science, bridging technical model work with financial operational impact."
   },
   {
    "id": "9f48577d7e1fcf2cd94b121823a41d7d55042818",
@@ -627,18 +622,18 @@
    "why": "Excellent alignment with his consultant and software engineering skill set. The 'Forward Deployed' role is a perfect match for his expertise."
   },
   {
-   "id": "b0d94b3c537784c825d6012a4e465f6363d64766",
-   "title": "Senior Data Scientist, CX Analytics",
-   "company": "Coinbase",
+   "id": "77aba851d1c01d052cd34ac348cb94a5cf292427",
+   "title": "Senior Machine Learning Operations Engineer",
+   "company": "Mercury",
    "sector": "Fintech",
-   "company_description": "Coinbase - Buy and Sell Bitcoin, Ethereum, and more with trust\nSkip to content\nSkip to site index\nEarn up to $2,000 when you buy $50 in crypto¹\nCryptocurrencies\nIndividuals\nTrade\n󰨂\nCrypto\nBuy and sell cryptocurrencies\n󰨈\nPrediction markets\nNew\nTrade on sports, crypto, politics, and more\n󰧶\nDerivatives",
-   "location": "Remote - USA",
-   "salary": "$180,370\n—\n$212,000",
-   "url": "https://www.coinbase.com/careers/positions/8009392?gh_jid=8009392",
+   "company_description": "Online Business Banking For Startups, Small Businesses & Scaling Companies\nMercury logo\nThe logo for Mercury, featuring a circular emblem with abstract, interconnected swirling lines on the left, and the word \"MERCURY\" in clean, uppercase letters to the right.\nProducts\nBusiness Banking\nManage your b",
+   "location": "San Francisco, CA, New York, NY, Portland, OR, or Remote within Canada or United States",
+   "salary": "$166,600 - $208,300",
+   "url": "https://job-boards.greenhouse.io/mercury/jobs/6097372004",
    "source": "greenhouse",
    "score": 80,
    "confidence": 0.9,
-   "why": "Good fit for Data Science, bridging technical model work with financial operational impact."
+   "why": "Strong match for an MLOps engineering role. Leverages your skills in CI/CD and production observability."
   },
   {
    "id": "2eaec1a31080d1ff3550671f309fffa802186b66",
@@ -697,20 +692,6 @@
    "why": "Michael's expertise in pipeline orchestration and agentic architectures aligns perfectly with Astronomer's core product focus on Apache Airflow and Otto. The role allows him to leverage his experience in enterprise workflow automation in a high-impact, customer-facing capacity."
   },
   {
-   "id": "1bed5cd07cdb96a8d77dcb9fdc29d5d18693119b",
-   "title": "Senior Decision Science Analyst, Car",
-   "company": "Lemonade",
-   "sector": "Fintech",
-   "company_description": "Lemonade: An Insurance Company Built for the 21st Century\nSkip to main content\nRenters\nHomeowners\nCar\nPet\nLife\nGiveback\nMy Account\nForget everything you\nknow about insurance\nInstant everything. Incredible prices. Big heart.\nCheck our Prices\nIncredible Prices. Pay Monthly.\nBundle Discounts.\nAmazing s",
-   "location": "Remote",
-   "salary": "$125,000 - $140,000 (from posting text)",
-   "url": "https://jobs.ashbyhq.com/lemonade/670b39c3-26fe-481d-af56-3ad17655e0d3",
-   "source": "ashby",
-   "score": 75,
-   "confidence": 0.85,
-   "why": "This aligns well with Michael's financial modeling and quantitative analytics background, though it is slightly less focused on the 'developer tools/infrastructure' side of his skill set. It meets the compensation threshold and remote requirements."
-  },
-  {
    "id": "ad834df9964a38583859f3a655e128d4161791a7",
    "title": "Solutions Engineer - Commercial (Expansion Sales)",
    "company": "Tailscale",
@@ -723,6 +704,20 @@
    "score": 75,
    "confidence": 0.85,
    "why": "This role is a high-compensation, fully remote fit that leverages your background in complex technical environments. It is slightly more sales-focused than your ideal, but offers high career growth and aligns with your technical process engineering experience."
+  },
+  {
+   "id": "d580ae9dae1678cc6aaa2022c9e870ba315eafb0",
+   "title": "Data Analyst  - Fraud Intelligence",
+   "company": "Sardine",
+   "sector": "Fintech",
+   "company_description": "Agentic Financial Crime Platform for Fraud Prevention & AML\nSardineCon SF/2026\nJoin us in San Francisco · August 19th\nLearn More\n→\nProducts\nAgentic AI\nCustomers\nResources\nSardineCon\n2026/SF\nUpcoming events\nPast events\nSardineCon\nWho attends\nSpeakers\nAgenda\nLocation\nLog in\nContact us\nRegister now\nDow",
+   "location": "United States",
+   "salary": "$115,000-$145,000",
+   "url": "https://jobs.ashbyhq.com/sardine/f065e606-5a46-46c1-9adf-d3bce7f673bd",
+   "source": "ashby",
+   "score": 75,
+   "confidence": 0.85,
+   "why": "Solid technical analyst role within your domain interest of fraud/fintech."
   },
   {
    "id": "930a9226570d7f864f9ef44770b2b7cec6c85b30",
@@ -781,18 +776,18 @@
    "why": "Strong fit for 'Lead Forward Deployed Engineer'; high alignment with migration/delivery focus, despite the 'Lead' title."
   },
   {
-   "id": "55940461583109fdc50ca33060d1fdf742811c8f",
-   "title": "Senior MLOps Engineer II (AI Native)",
-   "company": "Life360",
-   "sector": "Consumer/E-commerce",
-   "company_description": "Life360 is a Remote First company, which means a remote work environment will be the primary experience for all employees.",
-   "location": "Remote, USA ; Remote, Canada",
-   "salary": "$148,000 to $216,000",
-   "url": "https://job-boards.greenhouse.io/life360/jobs/8580612002",
-   "source": "greenhouse",
+   "id": "18e1fee1025160d1a0f176c875828f970dc19f71",
+   "title": "AI Optimization Specialist, Support",
+   "company": "Vanta",
+   "sector": "Enterprise SaaS/DevTools",
+   "company_description": "SOC 2, HIPAA, ISO 27001, PCI, and GDPR Compliance\nPlatform\nProducts\nPlatform\nCompliance\nGet compliant quickly and painlessly with automation.\nContinuous GRC\nJoin the modern way to GRC.\nPersonnel and Access\nEasily control user access and permissions.\nRisk Management\nProactively manage risk to drive s",
+   "location": "Remote U.S.",
+   "salary": "$129,000-$152,000",
+   "url": "https://jobs.ashbyhq.com/vanta/f987d41a-d0e1-4260-9129-f64aee6122ae",
+   "source": "ashby",
    "score": 75,
    "confidence": 0.8,
-   "why": "Strong overlap on MLOps and AI-native platform engineering; matches your background in technical process improvement."
+   "why": "Fits your interest in automation and agentic workflows, though it is slightly below your compensation floor/target if the offer stays near $152k."
   },
   {
    "id": "a3a2ed38ebe307db8db17c9fa81cf5ce2b1afbaa",
@@ -821,20 +816,6 @@
    "score": 70,
    "confidence": 0.8,
    "why": "Revenue Operations Manager for a FinTech platform aligns with the candidate's desire for both engineering and banking-domain expertise."
-  },
-  {
-   "id": "45f0ed52db53cc92a6979e4181f6165469d85c7e",
-   "title": "Senior Business Operations Manager",
-   "company": "Aurorasolar",
-   "sector": "Other",
-   "company_description": "Director of Business Operations. This is a senior individual contributor role for someone who excels at breaking down complex business challenges using first-principles thinking, executing rigorous analysis with minimal oversight, and driving high-impact initiatives from concept through implementati",
-   "location": "United States",
-   "salary": "$149,200-$201,800",
-   "url": "https://jobs.ashbyhq.com/aurorasolar/6b64833e-42e5-4bf4-9079-93ac58d2b529",
-   "source": "ashby",
-   "score": 70,
-   "confidence": 0.7,
-   "why": "Strong business operations focus that rewards technical automation. Matches the candidate's aptitude for complex process problem solving."
   },
   {
    "id": "977285f3b4fc2d2e05bbf4b19773bc02fe7cbd84",
@@ -891,39 +872,23 @@
    "score": 45,
    "confidence": 0.7,
    "why": "Role is titled 'Data Scientist' and asks for 5 years; the candidate's profile is stronger in engineering and automation than applied research/data science."
+  },
+  {
+   "id": "00b57f7c758a953c0fb807c91239f646f06ad99c",
+   "title": "Lead Data Scientist",
+   "company": "Cohere",
+   "sector": "AI/ML Infra",
+   "company_description": "Coherent Market Insights: Market Research and B2B Consulting\nContact Us\nCareers\nRegister\nLogo\nAbout Us\nCorporate Profile\nCredibility and Certifications\nServices\nCase Studies\nClientele\nTestimonials\nMedia Coverages\nPhasexs\nCareers\nLatest Insights\nIndustries\nHealthcare\nBiotechnology\nClinical Diagnostic",
+   "location": "United States",
+   "salary": "$75 (from posting text)",
+   "url": "https://jobs.ashbyhq.com/cohere/39cab400-c976-41d9-9002-880ac6985b64",
+   "source": "ashby",
+   "score": 40,
+   "confidence": 0.7,
+   "why": "This is a 'Lead' Data Scientist role which is significantly out of band; also, salary data appears erroneous."
   }
  ],
  "edges": [
-  {
-   "skill": "python",
-   "job": "9aaac1a885a8fe5140e93a30cb2ac1e94b8f0fb7",
-   "weight": 1.0,
-   "missing": false
-  },
-  {
-   "skill": "process automation",
-   "job": "9aaac1a885a8fe5140e93a30cb2ac1e94b8f0fb7",
-   "weight": 0.88,
-   "missing": false
-  },
-  {
-   "skill": "agentic architecture",
-   "job": "9aaac1a885a8fe5140e93a30cb2ac1e94b8f0fb7",
-   "weight": 0.76,
-   "missing": false
-  },
-  {
-   "skill": "rest api development",
-   "job": "9aaac1a885a8fe5140e93a30cb2ac1e94b8f0fb7",
-   "weight": 0.64,
-   "missing": false
-  },
-  {
-   "skill": "containerization orchestration",
-   "job": "9aaac1a885a8fe5140e93a30cb2ac1e94b8f0fb7",
-   "weight": 0.52,
-   "missing": false
-  },
   {
    "skill": "python",
    "job": "8edf72252e746e2688b42ccc769a82f1ac23ef59",
@@ -1135,6 +1100,18 @@
    "missing": false
   },
   {
+   "skill": "rest api development",
+   "job": "e40aae493977602447884b20942425dad91fed81",
+   "weight": 0.76,
+   "missing": false
+  },
+  {
+   "skill": "ghost-oracle cloud",
+   "job": "e40aae493977602447884b20942425dad91fed81",
+   "weight": 0.5,
+   "missing": true
+  },
+  {
    "skill": "python",
    "job": "ab7d16a27dc75342e45dcfe3e9a60dc6d3be0272",
    "weight": 1.0,
@@ -1292,72 +1269,6 @@
   },
   {
    "skill": "sql",
-   "job": "ba7d159d3a7ba6717a277dbb0709380d238c03d2",
-   "weight": 1.0,
-   "missing": false
-  },
-  {
-   "skill": "python",
-   "job": "ba7d159d3a7ba6717a277dbb0709380d238c03d2",
-   "weight": 0.76,
-   "missing": false
-  },
-  {
-   "skill": "process automation",
-   "job": "ba7d159d3a7ba6717a277dbb0709380d238c03d2",
-   "weight": 0.64,
-   "missing": false
-  },
-  {
-   "skill": "ghost-gtm platform integration",
-   "job": "ba7d159d3a7ba6717a277dbb0709380d238c03d2",
-   "weight": 0.5,
-   "missing": true
-  },
-  {
-   "skill": "python",
-   "job": "fd2e962c12fa2b866f34caf95b44a7e0f5962846",
-   "weight": 1.0,
-   "missing": false
-  },
-  {
-   "skill": "sql",
-   "job": "fd2e962c12fa2b866f34caf95b44a7e0f5962846",
-   "weight": 0.88,
-   "missing": false
-  },
-  {
-   "skill": "process automation",
-   "job": "fd2e962c12fa2b866f34caf95b44a7e0f5962846",
-   "weight": 0.76,
-   "missing": false
-  },
-  {
-   "skill": "ghost-security compliance frameworks",
-   "job": "fd2e962c12fa2b866f34caf95b44a7e0f5962846",
-   "weight": 0.5,
-   "missing": true
-  },
-  {
-   "skill": "python",
-   "job": "26ad0e65a1b095105beecb0414585ba2e573e6e5",
-   "weight": 1.0,
-   "missing": false
-  },
-  {
-   "skill": "sql",
-   "job": "26ad0e65a1b095105beecb0414585ba2e573e6e5",
-   "weight": 0.88,
-   "missing": false
-  },
-  {
-   "skill": "ghost-financial domain knowledge",
-   "job": "26ad0e65a1b095105beecb0414585ba2e573e6e5",
-   "weight": 0.5,
-   "missing": true
-  },
-  {
-   "skill": "sql",
    "job": "5140f0250fda6525ac9f70fdb82caa8ae56fa87e",
    "weight": 0.76,
    "missing": false
@@ -1379,6 +1290,48 @@
    "job": "c8c8abd040b770b5f7465ed801a85ed1e922d6bf",
    "weight": 0.5,
    "missing": true
+  },
+  {
+   "skill": "python",
+   "job": "cce581bd2caeefb890c4f254e6669878b52d0d05",
+   "weight": 1.0,
+   "missing": false
+  },
+  {
+   "skill": "sql",
+   "job": "cce581bd2caeefb890c4f254e6669878b52d0d05",
+   "weight": 0.88,
+   "missing": false
+  },
+  {
+   "skill": "data visualization",
+   "job": "cce581bd2caeefb890c4f254e6669878b52d0d05",
+   "weight": 0.76,
+   "missing": false
+  },
+  {
+   "skill": "ci cd",
+   "job": "cce581bd2caeefb890c4f254e6669878b52d0d05",
+   "weight": 0.64,
+   "missing": false
+  },
+  {
+   "skill": "sql",
+   "job": "c7a020013e1b931d5893fd213048167a67bf10be",
+   "weight": 1.0,
+   "missing": false
+  },
+  {
+   "skill": "python",
+   "job": "c7a020013e1b931d5893fd213048167a67bf10be",
+   "weight": 0.88,
+   "missing": false
+  },
+  {
+   "skill": "data validation",
+   "job": "c7a020013e1b931d5893fd213048167a67bf10be",
+   "weight": 0.76,
+   "missing": false
   },
   {
    "skill": "python",
@@ -1418,38 +1371,38 @@
   },
   {
    "skill": "python",
-   "job": "b62bd43debbcbb23e020b76cfa36ac9fcd79f430",
+   "job": "832cd947d456cf2f8a1fa57b9e15092d7f08dc55",
    "weight": 1.0,
    "missing": false
   },
   {
+   "skill": "rest api development",
+   "job": "832cd947d456cf2f8a1fa57b9e15092d7f08dc55",
+   "weight": 0.88,
+   "missing": false
+  },
+  {
+   "skill": "ghost-forward deployed consulting experience",
+   "job": "832cd947d456cf2f8a1fa57b9e15092d7f08dc55",
+   "weight": 0.5,
+   "missing": true
+  },
+  {
    "skill": "sql",
-   "job": "b62bd43debbcbb23e020b76cfa36ac9fcd79f430",
+   "job": "b0d94b3c537784c825d6012a4e465f6363d64766",
+   "weight": 1.0,
+   "missing": false
+  },
+  {
+   "skill": "financial modeling",
+   "job": "b0d94b3c537784c825d6012a4e465f6363d64766",
    "weight": 0.88,
    "missing": false
   },
   {
    "skill": "data visualization",
-   "job": "b62bd43debbcbb23e020b76cfa36ac9fcd79f430",
+   "job": "b0d94b3c537784c825d6012a4e465f6363d64766",
    "weight": 0.76,
-   "missing": false
-  },
-  {
-   "skill": "agentic architecture",
-   "job": "b62bd43debbcbb23e020b76cfa36ac9fcd79f430",
-   "weight": 0.64,
-   "missing": false
-  },
-  {
-   "skill": "ci cd",
-   "job": "b62bd43debbcbb23e020b76cfa36ac9fcd79f430",
-   "weight": 0.52,
-   "missing": false
-  },
-  {
-   "skill": "containerization orchestration",
-   "job": "b62bd43debbcbb23e020b76cfa36ac9fcd79f430",
-   "weight": 0.4,
    "missing": false
   },
   {
@@ -1483,20 +1436,20 @@
    "missing": false
   },
   {
-   "skill": "sql",
-   "job": "b0d94b3c537784c825d6012a4e465f6363d64766",
+   "skill": "python",
+   "job": "77aba851d1c01d052cd34ac348cb94a5cf292427",
    "weight": 1.0,
    "missing": false
   },
   {
-   "skill": "financial modeling",
-   "job": "b0d94b3c537784c825d6012a4e465f6363d64766",
+   "skill": "containerization orchestration",
+   "job": "77aba851d1c01d052cd34ac348cb94a5cf292427",
    "weight": 0.88,
    "missing": false
   },
   {
-   "skill": "data visualization",
-   "job": "b0d94b3c537784c825d6012a4e465f6363d64766",
+   "skill": "ci cd",
+   "job": "77aba851d1c01d052cd34ac348cb94a5cf292427",
    "weight": 0.76,
    "missing": false
   },
@@ -1579,30 +1532,6 @@
    "missing": true
   },
   {
-   "skill": "python",
-   "job": "1bed5cd07cdb96a8d77dcb9fdc29d5d18693119b",
-   "weight": 1.0,
-   "missing": false
-  },
-  {
-   "skill": "sql",
-   "job": "1bed5cd07cdb96a8d77dcb9fdc29d5d18693119b",
-   "weight": 0.88,
-   "missing": false
-  },
-  {
-   "skill": "quantitative analytics",
-   "job": "1bed5cd07cdb96a8d77dcb9fdc29d5d18693119b",
-   "weight": 0.76,
-   "missing": false
-  },
-  {
-   "skill": "financial modeling",
-   "job": "1bed5cd07cdb96a8d77dcb9fdc29d5d18693119b",
-   "weight": 0.64,
-   "missing": false
-  },
-  {
    "skill": "rest api development",
    "job": "ad834df9964a38583859f3a655e128d4161791a7",
    "weight": 1.0,
@@ -1631,6 +1560,18 @@
    "job": "ad834df9964a38583859f3a655e128d4161791a7",
    "weight": 0.5,
    "missing": true
+  },
+  {
+   "skill": "sql",
+   "job": "d580ae9dae1678cc6aaa2022c9e870ba315eafb0",
+   "weight": 1.0,
+   "missing": false
+  },
+  {
+   "skill": "quantitative analytics",
+   "job": "d580ae9dae1678cc6aaa2022c9e870ba315eafb0",
+   "weight": 0.88,
+   "missing": false
   },
   {
    "skill": "sql",
@@ -1706,19 +1647,13 @@
   },
   {
    "skill": "python",
-   "job": "55940461583109fdc50ca33060d1fdf742811c8f",
+   "job": "18e1fee1025160d1a0f176c875828f970dc19f71",
    "weight": 1.0,
    "missing": false
   },
   {
-   "skill": "process automation",
-   "job": "55940461583109fdc50ca33060d1fdf742811c8f",
-   "weight": 0.76,
-   "missing": false
-  },
-  {
-   "skill": "ghost-mlops platform tools",
-   "job": "55940461583109fdc50ca33060d1fdf742811c8f",
+   "skill": "ghost-customer support domain expertise",
+   "job": "18e1fee1025160d1a0f176c875828f970dc19f71",
    "weight": 0.5,
    "missing": true
   },
@@ -1733,18 +1668,6 @@
    "job": "1e48d783ff5e6aeaef1dd382be8cbeb8d3dda383",
    "weight": 1.0,
    "missing": false
-  },
-  {
-   "skill": "process automation",
-   "job": "45f0ed52db53cc92a6979e4181f6165469d85c7e",
-   "weight": 1.0,
-   "missing": false
-  },
-  {
-   "skill": "ghost-operations strategy",
-   "job": "45f0ed52db53cc92a6979e4181f6165469d85c7e",
-   "weight": 0.5,
-   "missing": true
   },
   {
    "skill": "python",
@@ -1815,6 +1738,30 @@
   {
    "skill": "ghost-product experimentation",
    "job": "02e9c547f5f12a0c4cca5021cca2e398b6d6b524",
+   "weight": 0.5,
+   "missing": true
+  },
+  {
+   "skill": "python",
+   "job": "00b57f7c758a953c0fb807c91239f646f06ad99c",
+   "weight": 1.0,
+   "missing": false
+  },
+  {
+   "skill": "sql",
+   "job": "00b57f7c758a953c0fb807c91239f646f06ad99c",
+   "weight": 0.88,
+   "missing": false
+  },
+  {
+   "skill": "quantitative analytics",
+   "job": "00b57f7c758a953c0fb807c91239f646f06ad99c",
+   "weight": 0.76,
+   "missing": false
+  },
+  {
+   "skill": "ghost-leadership management",
+   "job": "00b57f7c758a953c0fb807c91239f646f06ad99c",
    "weight": 0.5,
    "missing": true
   }
