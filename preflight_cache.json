@@ -680,5 +680,37 @@
   ],
   "blockers": [],
   "v": 4
+ },
+ "34e698350a48be6be9ed682fb77bb4be5a1ddcd4": {
+  "total": 15,
+  "standing": 11,
+  "specific": [
+   {
+    "q": "Please confirm whether any of the below applies to you.  Select all that apply.\n\nNote: This information will only be used to ensure compliance with U.S. sanctions and export controls.",
+    "options": [
+     "Citizen or permanent resident of Cuba, Iran, North Korea, or",
+     "Ordinarily a resident of Cuba, Iran, North Korea, Syria or t",
+     "Ordinarily a resident of Russia or Belarus and not willing t",
+     "None of the above"
+    ]
+   },
+   {
+    "q": "If you selected a response to the prior question other than “none of the above,” please confirm whether any of the following also applies to you.  Select all that apply.",
+    "options": [
+     "U.S. citizen",
+     "U.S. non-citizen national",
+     "U.S. permanent resident (Green Card holder)",
+     "Individual granted asylum in the U.S.",
+     "Individual granted refugee status in the U.S.",
+     "Individual granted citizenship in a country other than Cuba,"
+    ]
+   }
+  ],
+  "uploads": [
+   "Resume/CV",
+   "Cover Letter"
+  ],
+  "blockers": [],
+  "v": 4
  }
 }

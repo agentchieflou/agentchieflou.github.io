@@ -1321,26 +1321,6 @@
   "heuristic": false,
   "scored_at": "2026-07-27T10:04:33.109000+00:00"
  },
- "96eba80904702bc69b285627e8846d13814e4fae": {
-  "profile_version": "ea07aad451ce",
-  "match_score": 80,
-  "confidence": 0.9,
-  "why": "Perfect fit for your interest in knowledge management systems and internal AI Ops infrastructure.",
-  "seniority_fit": "target",
-  "role_family": "Process Optimization & Business Operations",
-  "matched_skills": [
-   "Process Automation",
-   "Data Validation"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Highlight your experience in building 'internal knowledge infrastructure'."
-  ],
-  "sector": "Fintech",
-  "prefilter": 0.5124,
-  "heuristic": false,
-  "scored_at": "2026-07-27T10:04:33.109000+00:00"
- },
  "7dd3a440b940bdedb37e49a4f21b46f391bfb802": {
   "profile_version": "9741a9d03e5e",
   "match_score": 60,
@@ -1385,29 +1365,6 @@
   "prefilter": 0.4865,
   "heuristic": false,
   "scored_at": "2026-07-26T23:03:33.364523+00:00"
- },
- "96ad4f121d06c1d63cc8da26cec8101cf5512f8f": {
-  "profile_version": "2d8f68683856",
-  "match_score": 90,
-  "confidence": 0.85,
-  "why": "Perfect fit for an engineer with a background in data/process engineering, pivoting to AI observability.",
-  "seniority_fit": "stretch",
-  "role_family": "AI & Machine Learning",
-  "matched_skills": [
-   "Python",
-   "Agentic Workflows"
-  ],
-  "missing_skills": [
-   "LLM observability specialized stack"
-  ],
-  "resume_suggestions": [
-   "Highlight your technical 'systems' thinking.",
-   "Frame existing observability projects around AI/LLMs."
-  ],
-  "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.4867,
-  "heuristic": false,
-  "scored_at": "2026-07-26T23:51:05.100980+00:00"
  },
  "12a0c74552b7e620c52b659f4b60ea8d52e2712c": {
   "profile_version": "ea07aad451ce",
@@ -2777,5 +2734,122 @@
   "prefilter": 0.5083,
   "heuristic": false,
   "scored_at": "2026-08-05T13:10:24.993471+00:00"
+ },
+ "34e698350a48be6be9ed682fb77bb4be5a1ddcd4": {
+  "profile_version": "ea07aad451ce",
+  "match_score": 88,
+  "confidence": 0.9,
+  "why": "Perfectly aligns with the candidate's background in agentic architectures and data pipelines for enterprise clients. The role offers a clear path to high-impact technical consulting within a top-tier AI/data company.",
+  "seniority_fit": "stretch",
+  "role_family": "Solutions & Technical Consulting",
+  "matched_skills": [
+   "Python",
+   "SQL",
+   "Agentic Architecture",
+   "REST API Development"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Emphasize experience in designing 'big data architectures' for financial clients.",
+   "Highlight experience with cloud platforms (AWS/Azure) commonly used with Databricks."
+  ],
+  "sector": "AI/ML Infra",
+  "prefilter": 0.5578,
+  "heuristic": false,
+  "scored_at": "2026-08-06T13:09:24.259415+00:00"
+ },
+ "9f10eeb960b21112257126ea9ea654fa5aee86c6": {
+  "profile_version": "ea07aad451ce",
+  "match_score": 75,
+  "confidence": 0.85,
+  "why": "Excellent alignment on process automation and workflow design, which are core to the candidate's expertise. The years of experience requirement aligns exactly with the candidate's 4-year tenure.",
+  "seniority_fit": "target",
+  "role_family": "Solutions & Technical Consulting",
+  "matched_skills": [
+   "Process Automation",
+   "Data Visualization",
+   "SQL"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Focus on metrics regarding 'reduction in operational costs' through automation.",
+   "Explicitly list experience building solutions for cross-functional business partners."
+  ],
+  "sector": "Enterprise SaaS/DevTools",
+  "prefilter": 0.5348,
+  "heuristic": false,
+  "scored_at": "2026-08-06T13:09:24.259415+00:00"
+ },
+ "6496051c2aae76b2ec63b74635dfa7515e565379": {
+  "profile_version": "ea07aad451ce",
+  "match_score": 30,
+  "confidence": 0.95,
+  "why": "Fails hard constraints: the role is office-based in San Francisco and focuses on hardware silicon programs rather than the candidate's software/data analytics expertise.",
+  "seniority_fit": "out-of-band",
+  "role_family": "Technical Strategy & Product",
+  "matched_skills": [
+   "CI/CD"
+  ],
+  "missing_skills": [
+   "Hardware Engineering",
+   "Silicon Lifecycle Management"
+  ],
+  "resume_suggestions": [
+   "Do not apply; role is incompatible with remote requirements and primary skill set."
+  ],
+  "sector": "AI/ML Infra",
+  "prefilter": 0.5303,
+  "heuristic": false,
+  "scored_at": "2026-08-06T13:09:24.259415+00:00"
+ },
+ "11b145f80b81241b50acda469eb1afa2252d8a76": {
+  "profile_version": "ea07aad451ce",
+  "match_score": 60,
+  "confidence": 0.7,
+  "why": "The role fits the process optimization profile, but the 'Marketing Operations' title represents a pivot away from the candidate's technical core in developer tools and data pipelines.",
+  "seniority_fit": "target",
+  "role_family": "Process Optimization & Business Operations",
+  "matched_skills": [
+   "Process Automation",
+   "SQL",
+   "Data Validation"
+  ],
+  "missing_skills": [
+   "Marketing Automation Platforms (Marketo/HubSpot)"
+  ],
+  "resume_suggestions": [
+   "Highlight experience with data movement/integration projects.",
+   "Frame business process improvements using the terminology of 'marketing ops' KPIs."
+  ],
+  "sector": "Enterprise SaaS/DevTools",
+  "prefilter": 0.5141,
+  "heuristic": false,
+  "scored_at": "2026-08-06T13:09:24.259415+00:00"
+ },
+ "e0f2b97f5318dfcda2b31656553f62b3e3e6f5f8": {
+  "profile_version": "ea07aad451ce",
+  "match_score": 35,
+  "confidence": 0.9,
+  "why": "Fails the remote constraint (role is in Seattle) and emphasizes specialized statistical experimentation/causal inference beyond the candidate's current professional profile.",
+  "seniority_fit": "stretch",
+  "role_family": "Analytics & Data Engineering",
+  "matched_skills": [
+   "Python",
+   "SQL",
+   "Data Pipeline",
+   "Containerization & Orchestration"
+  ],
+  "missing_skills": [
+   "Causal Inference",
+   "Statistical Experimentation Methodology"
+  ],
+  "resume_suggestions": [
+   "Focus on 'Data Engineer' and 'Analytics' keywords to bridge the gap if applying for future remote openings.",
+   "Remove irrelevant references to C++ if applying for Python/SQL focused data roles."
+  ],
+  "sector": "AI/ML Infra",
+  "prefilter": 0.5086,
+  "heuristic": false,
+  "scored_at": "2026-08-06T13:09:24.259415+00:00"
  }
 }
