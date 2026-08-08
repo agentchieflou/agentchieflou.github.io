@@ -712,5 +712,62 @@
   ],
   "blockers": [],
   "v": 4
+ },
+ "efc82ce8230aa0fe825ac896ccfe116d5181524b": {
+  "total": 19,
+  "standing": 7,
+  "specific": [
+   {
+    "q": "Are you located in or willing to relocate to the United States?",
+    "options": [
+     "Yes, I live in the United States.",
+     "No, but I am willing to relocate.",
+     "No, and I am not willing to relocate."
+    ]
+   },
+   {
+    "q": "Why are you interested in joining Tailscale? Thoughtful responses are encouraged.",
+    "options": []
+   },
+   {
+    "q": "We're always curious - have you used Tailscale before?",
+    "options": [
+     "Yes, on my personal devices.",
+     "Yes, at work.",
+     "Yes, both personally and at work.",
+     "I haven’t used it, but I’m excited to learn more!"
+    ]
+   },
+   {
+    "q": "I have read and understand Tailscale's \"Candidate Privacy Policy\" and \"AI Guidelines\" regarding the collection and use of my personal information and use of AI tools in the hiring and interviewing process. These can also be reviewed on the Tailscale career site.",
+    "options": [
+     "Yes"
+    ]
+   },
+   {
+    "q": "Address Line 1",
+    "options": []
+   },
+   {
+    "q": "City",
+    "options": []
+   },
+   {
+    "q": "State/Province",
+    "options": []
+   },
+   {
+    "q": "Postal/Zip Code",
+    "options": []
+   }
+  ],
+  "uploads": [
+   "Resume/CV",
+   "Cover Letter"
+  ],
+  "blockers": [
+   "Are you located in or willing to relocate to the United States? — on-site location requirement"
+  ],
+  "v": 4
  }
 }
