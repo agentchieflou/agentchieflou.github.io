@@ -1041,29 +1041,6 @@
   "heuristic": false,
   "scored_at": "2026-07-26T13:53:43.707763+00:00"
  },
- "0b1268b0688631be8ebb1c3af9f0375436036116": {
-  "profile_version": "2d8f68683856",
-  "match_score": 40,
-  "confidence": 0.8,
-  "why": "Low-end salary falls short of threshold.",
-  "seniority_fit": "target",
-  "role_family": "Business & Data Analytics",
-  "matched_skills": [
-   "Process Optimization",
-   "Project Management"
-  ],
-  "missing_skills": [
-   "ServiceNow expertise"
-  ],
-  "resume_suggestions": [
-   "Highlight your technical modernization work.",
-   "Emphasize your Agile delivery experience."
-  ],
-  "sector": "Government/Public Sector",
-  "prefilter": 0.4773,
-  "heuristic": false,
-  "scored_at": "2026-07-26T23:51:05.100980+00:00"
- },
  "10b503eb2e44eb8c65daacc83b8a6b30aea80c93": {
   "profile_version": "72aaaf7b6035-h",
   "match_score": 60,
@@ -1129,31 +1106,6 @@
   "prefilter": 0.4876,
   "heuristic": false,
   "scored_at": "2026-07-26T23:51:05.100980+00:00"
- },
- "c8c8abd040b770b5f7465ed801a85ed1e922d6bf": {
-  "profile_version": "2a3c83a3226a",
-  "match_score": 85,
-  "confidence": 0.9,
-  "why": "Perfect alignment with the candidate's current domain (banking) and target title; clearly within the 4-year experience target.",
-  "seniority_fit": "target",
-  "role_family": "Solutions & Technical Consulting",
-  "matched_skills": [
-   "SQL",
-   "Data Modeling",
-   "Process Automation",
-   "Stakeholder Enablement"
-  ],
-  "missing_skills": [
-   "ServiceNow specific platform experience"
-  ],
-  "resume_suggestions": [
-   "Highlight experience with banking regulations/compliance projects.",
-   "Emphasize system testing/UAT experience."
-  ],
-  "sector": "Fintech",
-  "prefilter": 0.5441,
-  "heuristic": false,
-  "scored_at": "2026-07-27T09:59:57.965862+00:00"
  },
  "5ab4e62e917f5ee4127744a256e39a082d4aa78b": {
   "profile_version": "72aaaf7b6035-h",
@@ -1280,26 +1232,6 @@
   "prefilter": 0.4586,
   "heuristic": false,
   "scored_at": "2026-07-26T13:53:43.707763+00:00"
- },
- "6d900242bc8fd235f08c4c4a39dc08e3555b0e8b": {
-  "profile_version": "ea07aad451ce",
-  "match_score": 80,
-  "confidence": 0.9,
-  "why": "A solid match for a Solutions Engineer, leveraging your process automation experience in a SaaS context.",
-  "seniority_fit": "target",
-  "role_family": "Solutions & Technical Consulting",
-  "matched_skills": [
-   "Process Automation",
-   "Data Visualization"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Highlight your technical agility."
-  ],
-  "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.5215,
-  "heuristic": false,
-  "scored_at": "2026-07-27T10:04:33.109000+00:00"
  },
  "12a0c74552b7e620c52b659f4b60ea8d52e2712c": {
   "profile_version": "ea07aad451ce",
@@ -2241,26 +2173,6 @@
   "heuristic": false,
   "scored_at": "2026-07-28T17:04:31.572961+00:00"
  },
- "b6160639f8f483a895d192842b7267de29d779b1": {
-  "profile_version": "ea07aad451ce",
-  "match_score": 45,
-  "confidence": 0.8,
-  "why": "The role requires onsite presence in Menlo Park, Chicago, or Denver, which violates your hard constraint for fully-remote work. While the mission aligns with your interest in agentic AI, the location mismatch makes this a non-starter.",
-  "seniority_fit": "target",
-  "role_family": "Process Optimization & Business Operations",
-  "matched_skills": [
-   "Process Automation"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Emphasize your experience with Snowflake-based data architectures to improve relevance.",
-   "Highlight specific 'agentic' outcomes to match their AI-native focus."
-  ],
-  "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.5242,
-  "heuristic": false,
-  "scored_at": "2026-07-29T16:40:16.719977+00:00"
- },
  "1e1cc08f619c7684724efe26d54040046d83f111": {
   "profile_version": "ea07aad451ce",
   "match_score": 40,
@@ -2602,29 +2514,6 @@
   "heuristic": false,
   "scored_at": "2026-08-05T13:10:24.993471+00:00"
  },
- "34e698350a48be6be9ed682fb77bb4be5a1ddcd4": {
-  "profile_version": "ea07aad451ce",
-  "match_score": 88,
-  "confidence": 0.9,
-  "why": "Perfectly aligns with the candidate's background in agentic architectures and data pipelines for enterprise clients. The role offers a clear path to high-impact technical consulting within a top-tier AI/data company.",
-  "seniority_fit": "stretch",
-  "role_family": "Solutions & Technical Consulting",
-  "matched_skills": [
-   "Python",
-   "SQL",
-   "Agentic Architecture",
-   "REST API Development"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Emphasize experience in designing 'big data architectures' for financial clients.",
-   "Highlight experience with cloud platforms (AWS/Azure) commonly used with Databricks."
-  ],
-  "sector": "AI/ML Infra",
-  "prefilter": 0.5578,
-  "heuristic": false,
-  "scored_at": "2026-08-06T13:09:24.259415+00:00"
- },
  "9f10eeb960b21112257126ea9ea654fa5aee86c6": {
   "profile_version": "ea07aad451ce",
   "match_score": 75,
@@ -2719,78 +2608,6 @@
   "heuristic": false,
   "scored_at": "2026-08-06T13:09:24.259415+00:00"
  },
- "f54865c0556fb1b7a8726777feda43a1f52f2673": {
-  "profile_version": "ea07aad451ce",
-  "match_score": 85,
-  "confidence": 0.9,
-  "why": "Excellent alignment with internal tooling and data pipeline expertise. The role supports operational priorities through analytics and AI integration, mirroring Michael's experience.",
-  "seniority_fit": "stretch",
-  "role_family": "Analytics & Data Engineering",
-  "matched_skills": [
-   "SQL",
-   "Data Visualization",
-   "CI/CD"
-  ],
-  "missing_skills": [
-   "dbt"
-  ],
-  "resume_suggestions": [
-   "Highlight specific examples of reducing operational costs.",
-   "Emphasize internal developer tools projects."
-  ],
-  "sector": "Healthcare",
-  "prefilter": 0.5283,
-  "heuristic": false,
-  "scored_at": "2026-08-07T12:07:31.552778+00:00"
- },
- "1cc1c8417a8fe867a9786d229a82c1717efd8d60": {
-  "profile_version": "ea07aad451ce",
-  "match_score": 80,
-  "confidence": 0.85,
-  "why": "Strong fit for a 'Senior' designation that matches Michael's 4-year tenure. The focus on API-based financial analytics maps directly to his background in financial operations.",
-  "seniority_fit": "target",
-  "role_family": "Analytics & Data Engineering",
-  "matched_skills": [
-   "SQL",
-   "Data Visualization",
-   "REST API Development"
-  ],
-  "missing_skills": [
-   "dbt"
-  ],
-  "resume_suggestions": [
-   "Explicitly list 'Financial Modeling' and 'REST API Development' at the top of your skills section.",
-   "Quantify the scale of the financial operations you have optimized."
-  ],
-  "sector": "Fintech",
-  "prefilter": 0.5226,
-  "heuristic": false,
-  "scored_at": "2026-08-07T12:07:31.552778+00:00"
- },
- "7fbf8ed8d811517c0a7bee32589ff2544945c0af": {
-  "profile_version": "ea07aad451ce",
-  "match_score": 75,
-  "confidence": 0.8,
-  "why": "The AI Enablement focus perfectly leverages Michael's experience in agentic architectures and process automation. The lower end of the salary range is acceptable given his experience level.",
-  "seniority_fit": "target",
-  "role_family": "Analytics & Data Engineering",
-  "matched_skills": [
-   "Python",
-   "Process Automation",
-   "Agentic Architecture"
-  ],
-  "missing_skills": [
-   "Cloud architecture certifications"
-  ],
-  "resume_suggestions": [
-   "Emphasize your 'agentic architecture' projects as they match the core product (docstream).",
-   "Highlight cross-functional work in your resume."
-  ],
-  "sector": "Fintech",
-  "prefilter": 0.5221,
-  "heuristic": false,
-  "scored_at": "2026-08-07T12:07:31.552778+00:00"
- },
  "234af4d4abc2b6d78f67bd427b2f83be3cb08976": {
   "profile_version": "ea07aad451ce",
   "match_score": 30,
@@ -2839,5 +2656,29 @@
   "prefilter": 0.5055,
   "heuristic": false,
   "scored_at": "2026-08-07T12:07:31.552778+00:00"
+ },
+ "d77485a9c1e48a74e6857323e369b0bc014bc3d3": {
+  "profile_version": "ea07aad451ce",
+  "match_score": 92,
+  "confidence": 0.95,
+  "why": "The role perfectly aligns with Michael's expertise in automating complex enterprise workflows and building scalable data pipelines. It mirrors his goal of blending technical process engineering with high-impact data strategy within an Enterprise SaaS environment.",
+  "seniority_fit": "target",
+  "role_family": "Analytics & Data Engineering",
+  "matched_skills": [
+   "Python",
+   "Process Automation",
+   "SQL",
+   "Data Visualization",
+   "Data Validation"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Highlight specific instances of reducing operational friction and migration timelines.",
+   "Emphasize the 'architectural' nature of your data pipelines to show you can handle the scale requested."
+  ],
+  "sector": "Enterprise SaaS/DevTools",
+  "prefilter": 0.5526,
+  "heuristic": false,
+  "scored_at": "2026-08-09T11:54:42.130890+00:00"
  }
 }
