@@ -996,28 +996,6 @@
   "heuristic": false,
   "scored_at": "2026-07-26T13:47:17.146467+00:00"
  },
- "e1da835fb4c260babb24cae4380bac47a06fe1dc": {
-  "profile_version": "db9bf83da9b0",
-  "match_score": 75,
-  "confidence": 0.75,
-  "why": "Operational role fit, though the focus is on finance operations rather than dev tooling/data engineering.",
-  "seniority_fit": "target",
-  "role_family": "Process Optimization & Business Operations",
-  "matched_skills": [
-   "Process Automation",
-   "SQL"
-  ],
-  "missing_skills": [
-   "Finance operations experience"
-  ],
-  "resume_suggestions": [
-   "Highlight your automation and technical analytical work."
-  ],
-  "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.488,
-  "heuristic": false,
-  "scored_at": "2026-07-26T13:56:40.694076+00:00"
- },
  "832cd947d456cf2f8a1fa57b9e15092d7f08dc55": {
   "profile_version": "46fae8d62f25",
   "match_score": 85,
@@ -1062,29 +1040,6 @@
   "prefilter": 0.501,
   "heuristic": false,
   "scored_at": "2026-07-26T13:04:27.029207+00:00"
- },
- "0868f6ea869a24b8edf36a6cdf754347f09363aa": {
-  "profile_version": "2a3c83a3226a",
-  "match_score": 80,
-  "confidence": 0.8,
-  "why": "Strong fit for 'Senior Business Analyst' title and function; high overlap in requirements, documentation, and technical solution translation.",
-  "seniority_fit": "target",
-  "role_family": "Business & Data Analytics",
-  "matched_skills": [
-   "Stakeholder Enablement",
-   "Process Automation"
-  ],
-  "missing_skills": [
-   "ServiceNow platform experience"
-  ],
-  "resume_suggestions": [
-   "Highlight federal/mission-critical experience.",
-   "Emphasize business requirements translation to technical solutions."
-  ],
-  "sector": "Government/Public Sector",
-  "prefilter": 0.5207,
-  "heuristic": false,
-  "scored_at": "2026-07-27T09:59:57.965862+00:00"
  },
  "9b78f3b24adacb34b0c62037606a92b3e7f52d1f": {
   "profile_version": "2d8f68683856",
@@ -1909,27 +1864,6 @@
   "heuristic": false,
   "scored_at": "2026-07-27T03:29:45.919558+00:00"
  },
- "c7a020013e1b931d5893fd213048167a67bf10be": {
-  "profile_version": "ea07aad451ce",
-  "match_score": 85,
-  "confidence": 0.9,
-  "why": "A strong match for a Senior Data Engineer, leveraging your pipeline and internal tools experience.",
-  "seniority_fit": "target",
-  "role_family": "Analytics & Data Engineering",
-  "matched_skills": [
-   "SQL",
-   "Python",
-   "Data Validation"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Mention your work on 'data quality' in your pipelines."
-  ],
-  "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.5207,
-  "heuristic": false,
-  "scored_at": "2026-07-27T10:04:33.109000+00:00"
- },
  "4566447aa540fe4f43d49012f19d59ebb4fa07cc": {
   "profile_version": "2a3c83a3226a",
   "match_score": 80,
@@ -2243,26 +2177,6 @@
   "heuristic": false,
   "scored_at": "2026-07-30T17:07:54.705141+00:00"
  },
- "8c210f2dcd611dc1fa9488cbd0da23a854416658": {
-  "profile_version": "ea07aad451ce",
-  "match_score": 35,
-  "confidence": 0.8,
-  "why": "While the domain of 'agentic enterprise' is a strong match, the role is not fully remote and requires a relocation to California, violating a hard constraint.",
-  "seniority_fit": "target",
-  "role_family": "Technical Strategy & Product",
-  "matched_skills": [
-   "Process Automation",
-   "Agentic Architecture"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Highlight strategic business transformation projects rather than just technical implementation."
-  ],
-  "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.522,
-  "heuristic": false,
-  "scored_at": "2026-07-30T17:07:54.705141+00:00"
- },
  "2ae8ea8bb7887e38719b0309d08a9e4156379230": {
   "profile_version": "ea07aad451ce",
   "match_score": 40,
@@ -2283,29 +2197,6 @@
   "prefilter": 0.5139,
   "heuristic": false,
   "scored_at": "2026-07-30T17:07:54.705141+00:00"
- },
- "ab7d16a27dc75342e45dcfe3e9a60dc6d3be0272": {
-  "profile_version": "ea07aad451ce",
-  "match_score": 85,
-  "confidence": 0.9,
-  "why": "This role is a strong match for your background in data pipelines and process automation. It allows you to build internal analytics foundations at a high-growth scale-up.",
-  "seniority_fit": "target",
-  "role_family": "Analytics & Data Engineering",
-  "matched_skills": [
-   "Python",
-   "SQL",
-   "Data Visualization",
-   "CI/CD"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Highlight instances where your internal data pipelines improved audit efficiency.",
-   "Emphasize experience building self-serve analytics tools for non-technical stakeholders."
-  ],
-  "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.5606,
-  "heuristic": false,
-  "scored_at": "2026-07-31T17:10:44.357631+00:00"
  },
  "dd52014b8b277a04ed29145dec8592512791da8f": {
   "profile_version": "ea07aad451ce",
@@ -2395,27 +2286,6 @@
   "heuristic": false,
   "scored_at": "2026-08-03T13:57:53.667025+00:00"
  },
- "6f9a4797e7f2ad9ae621c8938a3267e0c9cfbd27": {
-  "profile_version": "ea07aad451ce",
-  "match_score": 70,
-  "confidence": 0.8,
-  "why": "The focus on 'internal platforms and business systems' directly mirrors Michael's specialty in process automation and internal tool development. It offers the desired blend of technical strategy and execution within a high-stakes environment.",
-  "seniority_fit": "target",
-  "role_family": "Technical Strategy & Product",
-  "matched_skills": [
-   "Process Automation",
-   "REST API Development"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Highlight your 'Technical Program Management' capabilities, specifically how you bridge the gap between engineering teams and non-technical business stakeholders.",
-   "Quantify the 'operational costs' saved through your automation initiatives to fit the high-impact culture at Coinbase."
-  ],
-  "sector": "Fintech",
-  "prefilter": 0.5032,
-  "heuristic": false,
-  "scored_at": "2026-08-04T13:15:35.529341+00:00"
- },
  "e4a34993e889ea98aa8cc6777931090f59ac0f2a": {
   "profile_version": "ea07aad451ce",
   "match_score": 45,
@@ -2437,56 +2307,6 @@
   ],
   "sector": "Enterprise SaaS/DevTools",
   "prefilter": 0.5589,
-  "heuristic": false,
-  "scored_at": "2026-08-05T13:10:24.993471+00:00"
- },
- "c08e547fd1db94b82bfba7fdc85d31f2b6226ec9": {
-  "profile_version": "ea07aad451ce",
-  "match_score": 75,
-  "confidence": 0.7,
-  "why": "This aligns perfectly with his expertise in agentic architectures and data engineering, offering a strong career progression path. The lack of posted salary is the only factor preventing a higher score.",
-  "seniority_fit": "target",
-  "role_family": "Solutions & Technical Consulting",
-  "matched_skills": [
-   "Python",
-   "SQL",
-   "Data Visualization",
-   "Agentic Architecture",
-   "Containerization & Orchestration"
-  ],
-  "missing_skills": [
-   "Apache Spark",
-   "MLflow"
-  ],
-  "resume_suggestions": [
-   "Explicitly list 'Lakehouse' or 'Data Platform' project experience.",
-   "Frame past work in terms of building 'Unified' architectures."
-  ],
-  "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.5478,
-  "heuristic": false,
-  "scored_at": "2026-08-05T13:10:24.993471+00:00"
- },
- "efc82ce8230aa0fe825ac896ccfe116d5181524b": {
-  "profile_version": "ea07aad451ce",
-  "match_score": 85,
-  "confidence": 0.9,
-  "why": "This is an ideal match as it directly mirrors his experience in data pipelines and process automation at a high-growth tech company. The salary range meets his requirements and the role level is a perfect fit for a 4-year professional.",
-  "seniority_fit": "target",
-  "role_family": "Analytics & Data Engineering",
-  "matched_skills": [
-   "SQL",
-   "Python",
-   "Data Visualization",
-   "CI/CD"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Emphasize your ability to 'untangle complex models' and build scalable infrastructure.",
-   "Use the phrase 'high-impact analytics' in your summary."
-  ],
-  "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.5346,
   "heuristic": false,
   "scored_at": "2026-08-05T13:10:24.993471+00:00"
  },
@@ -2680,5 +2500,55 @@
   "prefilter": 0.5526,
   "heuristic": false,
   "scored_at": "2026-08-09T11:54:42.130890+00:00"
+ },
+ "cce581bd2caeefb890c4f254e6669878b52d0d05": {
+  "profile_version": "ea07aad451ce",
+  "match_score": 85,
+  "confidence": 0.9,
+  "why": "The role perfectly aligns with your experience in building internal developer tools and data pipelines to bridge the gap between technical and business operations. It offers a clear career progression into a senior role with high compensation that meets all your constraints.",
+  "seniority_fit": "stretch",
+  "role_family": "Analytics & Data Engineering",
+  "matched_skills": [
+   "SQL",
+   "Data Visualization",
+   "Data Validation",
+   "CI/CD"
+  ],
+  "missing_skills": [
+   "Experience with specific GTM tools like Salesforce/Marketo"
+  ],
+  "resume_suggestions": [
+   "Highlight specific cross-functional automation projects that integrated engineering backends with business stakeholders.",
+   "Quantify the 'migration timelines' you reduced as these metrics directly support the company's stated goal of improved visibility."
+  ],
+  "sector": "Enterprise SaaS/DevTools",
+  "prefilter": 0.5825,
+  "heuristic": false,
+  "scored_at": "2026-08-11T12:06:43.690911+00:00"
+ },
+ "586e79810c39dd41097a0ec5809a7e7c15eb272c": {
+  "profile_version": "ea07aad451ce",
+  "match_score": 70,
+  "confidence": 0.8,
+  "why": "The focus on AI-enabled workflows and high-scale product tooling is a strong match for your expertise in agentic architectures and internal tools. However, the salary is undisclosed and it falls right at the edge of your experience band, making it a competitive but standard fit.",
+  "seniority_fit": "target",
+  "role_family": "Analytics & Data Engineering",
+  "matched_skills": [
+   "Python",
+   "SQL",
+   "Data Visualization",
+   "Agentic Architecture"
+  ],
+  "missing_skills": [
+   "Specific warehouse/pipeline orchestration technologies"
+  ],
+  "resume_suggestions": [
+   "Explicitly frame your work on 'internal developer tools' as 'Product Development Systems' to mirror their internal terminology.",
+   "Emphasize your experience with high-velocity, fast-execution environments."
+  ],
+  "sector": "Enterprise SaaS/DevTools",
+  "prefilter": 0.5004,
+  "heuristic": false,
+  "scored_at": "2026-08-11T12:06:43.690911+00:00"
  }
 }
