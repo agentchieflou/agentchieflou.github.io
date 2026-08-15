@@ -1408,29 +1408,6 @@
   "heuristic": false,
   "scored_at": "2026-07-27T09:59:57.965862+00:00"
  },
- "ae9a47788a8de7462f65f4a465832b2bcba8d67a": {
-  "profile_version": "2a3c83a3226a",
-  "match_score": 70,
-  "confidence": 0.8,
-  "why": "Strong TPM fit for API platform scaling; overlaps well with the candidate's interest in enterprise software/dev tools.",
-  "seniority_fit": "stretch",
-  "role_family": "Technical Strategy & Product",
-  "matched_skills": [
-   "REST API Development",
-   "Stakeholder Enablement"
-  ],
-  "missing_skills": [
-   "Infrastructure/Cloud platform management"
-  ],
-  "resume_suggestions": [
-   "Highlight large-scale system program management.",
-   "Emphasize technical coordination."
-  ],
-  "sector": "AI/ML Infra",
-  "prefilter": 0.5062,
-  "heuristic": false,
-  "scored_at": "2026-07-27T09:59:57.965862+00:00"
- },
  "0dac8e1a52213bf471d91cb92b84813daf1c16ce": {
   "profile_version": "2a3c83a3226a",
   "match_score": 75,
@@ -1606,28 +1583,6 @@
   "prefilter": 0.5206,
   "heuristic": false,
   "scored_at": "2026-07-27T09:59:57.965862+00:00"
- },
- "f92f6678b6837524f0568770f2192bbcf7559847": {
-  "profile_version": "224fc3f424da",
-  "match_score": 60,
-  "confidence": 0.75,
-  "why": "Solid TPM role connecting platform capabilities. Fits his technical depth and aspiration to work at a frontier AI lab.",
-  "seniority_fit": "stretch",
-  "role_family": "Technical Strategy & Product",
-  "matched_skills": [
-   "Requirements Gathering",
-   "REST API Development"
-  ],
-  "missing_skills": [
-   "Program Management"
-  ],
-  "resume_suggestions": [
-   "Focus on the 'connective tissue' projects you've led."
-  ],
-  "sector": "AI/ML Infra",
-  "prefilter": 0.5078,
-  "heuristic": false,
-  "scored_at": "2026-07-27T01:15:23.964334+00:00"
  },
  "930a9226570d7f864f9ef44770b2b7cec6c85b30": {
   "profile_version": "2a3c83a3226a",
@@ -1969,26 +1924,6 @@
   "heuristic": false,
   "scored_at": "2026-07-31T17:10:44.357631+00:00"
  },
- "790e320d5530435ac5d3a4d6aedd22aec5aa2c5e": {
-  "profile_version": "ea07aad451ce",
-  "match_score": 20,
-  "confidence": 0.7,
-  "why": "The job posting text provided is for a market research firm (Coherent Market Insights), not the AI company Cohere, indicating a data mismatch. Without clear salary, remote, or specific scope details in the provided text, this role cannot be verified as meeting the candidate's core constraints.",
-  "seniority_fit": "out-of-band",
-  "role_family": "Technical Strategy & Product",
-  "matched_skills": [],
-  "missing_skills": [
-   "Machine Learning Infrastructure"
-  ],
-  "resume_suggestions": [
-   "Add a section detailing specific LLM/Agentic architecture deployments.",
-   "Quantify impact of developer tools on AI training cycle times."
-  ],
-  "sector": "Consulting",
-  "prefilter": 0.507,
-  "heuristic": false,
-  "scored_at": "2026-08-01T14:50:36.618574+00:00"
- },
  "64aa413d8a0dd8aa2184c978f6ea66308e31d968": {
   "profile_version": "ea07aad451ce",
   "match_score": 78,
@@ -2322,29 +2257,6 @@
   "heuristic": false,
   "scored_at": "2026-08-13T12:07:28.348938+00:00"
  },
- "34e698350a48be6be9ed682fb77bb4be5a1ddcd4": {
-  "profile_version": "ea07aad451ce",
-  "match_score": 92,
-  "confidence": 0.95,
-  "why": "This is an ideal 'Solutions Architect' fit, leveraging your expertise in agentic architectures and API-driven automation for a premier AI-native company.",
-  "seniority_fit": "stretch",
-  "role_family": "Solutions & Technical Consulting",
-  "matched_skills": [
-   "Python",
-   "REST API Development",
-   "Agentic Architecture",
-   "SQL"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Frame your internal tool projects as architecture consulting engagements.",
-   "Quantify the financial impact of your automation projects to appeal to the 'Strategic' business focus."
-  ],
-  "sector": "AI/ML Infra",
-  "prefilter": 0.5578,
-  "heuristic": false,
-  "scored_at": "2026-08-13T12:07:28.348938+00:00"
- },
  "6e1369978b33f9e72e77bcae1d9f34469c70f5a9": {
   "profile_version": "ea07aad451ce",
   "match_score": 40,
@@ -2462,27 +2374,78 @@
   "heuristic": false,
   "scored_at": "2026-08-14T12:07:09.162143+00:00"
  },
- "591b7cf778705295c416fe865a30e5e8095ad682": {
+ "d7b5a2ddf03a3049f21d95cd02091dff3d647830": {
   "profile_version": "ea07aad451ce",
-  "match_score": 85,
-  "confidence": 0.85,
-  "why": "The role perfectly matches the candidate's desire for remote work, analytics engineering, and business strategy within a complex industry. At 5 years required, it is a slight but realistic stretch that rewards his high-impact automation experience.",
-  "seniority_fit": "stretch",
+  "match_score": 35,
+  "confidence": 0.9,
+  "why": "While the salary and seniority level align, the requirement for an active government security clearance is a non-negotiable blocker for a candidate who does not currently hold one. The technology stack (SAS, Tableau) is also less aligned with your modern Python/Agentic architecture background.",
+  "seniority_fit": "target",
+  "role_family": "Business & Data Analytics",
+  "matched_skills": [
+   "Python",
+   "SQL",
+   "Data Visualization"
+  ],
+  "missing_skills": [
+   "Active Security Clearance",
+   "SAS"
+  ],
+  "resume_suggestions": [
+   "Mention any specific data-warehousing projects if relevant.",
+   "Do not apply if you do not have an active public trust clearance."
+  ],
+  "sector": "Government/Public Sector",
+  "prefilter": 0.5599,
+  "heuristic": false,
+  "scored_at": "2026-08-15T11:43:04.369446+00:00"
+ },
+ "898cf80295fe656337b543c0ab76b1508ff2323b": {
+  "profile_version": "ea07aad451ce",
+  "match_score": 35,
+  "confidence": 0.9,
+  "why": "This is a duplicate of the previous posting; it carries the same disqualifying requirement for a government security clearance. It offers a solid salary, but your profile lacks the specific clearance required for this role.",
+  "seniority_fit": "target",
+  "role_family": "Business & Data Analytics",
+  "matched_skills": [
+   "Python",
+   "SQL",
+   "Data Visualization"
+  ],
+  "missing_skills": [
+   "Active Security Clearance",
+   "SAS"
+  ],
+  "resume_suggestions": [
+   "Focus on commercial-sector roles to avoid clearance blockers.",
+   "Emphasize Python over legacy tools like SAS."
+  ],
+  "sector": "Government/Public Sector",
+  "prefilter": 0.5547,
+  "heuristic": false,
+  "scored_at": "2026-08-15T11:43:04.369446+00:00"
+ },
+ "a7753663dc9ceb5a8758d91425996ce2c7d4819e": {
+  "profile_version": "ea07aad451ce",
+  "match_score": 20,
+  "confidence": 0.8,
+  "why": "The role is location-restricted to San Francisco, failing your hard constraint for fully-remote work. Additionally, it requires deep infrastructure engineering experience with ClickHouse that falls outside your core focus on process automation.",
+  "seniority_fit": "target",
   "role_family": "Analytics & Data Engineering",
   "matched_skills": [
-   "SQL",
    "Python",
-   "Data Visualization",
-   "Process Automation"
+   "SQL"
   ],
-  "missing_skills": [],
+  "missing_skills": [
+   "ClickHouse",
+   "Distributed Systems Infrastructure"
+  ],
   "resume_suggestions": [
-   "Highlight specific financial or healthcare data modeling projects to demonstrate industry readiness.",
-   "Quantify the cost-reduction metrics of previous automation projects."
+   "Highlight experience with data pipelines if applying for platform-focused roles.",
+   "Explicitly state your preference for remote work in application cover letters."
   ],
-  "sector": "Healthcare",
-  "prefilter": 0.5331,
+  "sector": "Enterprise SaaS/DevTools",
+  "prefilter": 0.5155,
   "heuristic": false,
-  "scored_at": "2026-08-14T12:07:09.162143+00:00"
+  "scored_at": "2026-08-15T11:43:04.369446+00:00"
  }
 }
