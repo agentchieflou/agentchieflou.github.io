@@ -2350,30 +2350,6 @@
   "heuristic": false,
   "scored_at": "2026-08-13T12:07:28.348938+00:00"
  },
- "9a601ee766d9a7d4702756d38a94a22381fab077": {
-  "profile_version": "ea07aad451ce",
-  "match_score": 30,
-  "confidence": 0.9,
-  "why": "This role fails the hard constraint of being fully remote (requires 2 days in office) and asks for 6 years of experience, exceeding the candidate's 4 years. While the semantic layer work aligns with his analytics background, the logistical and seniority mismatches are disqualifying.",
-  "seniority_fit": "out-of-band",
-  "role_family": "Analytics & Data Engineering",
-  "matched_skills": [
-   "SQL",
-   "Data Visualization"
-  ],
-  "missing_skills": [
-   "Enterprise Data Modeling",
-   "Governance frameworks"
-  ],
-  "resume_suggestions": [
-   "Highlight data pipeline orchestration projects to show 'Logic Architect' capability.",
-   "Emphasize enterprise-scale automation results."
-  ],
-  "sector": "Healthcare",
-  "prefilter": 0.5451,
-  "heuristic": false,
-  "scored_at": "2026-08-14T12:07:09.162143+00:00"
- },
  "d7b5a2ddf03a3049f21d95cd02091dff3d647830": {
   "profile_version": "ea07aad451ce",
   "match_score": 35,
@@ -2396,31 +2372,6 @@
   ],
   "sector": "Government/Public Sector",
   "prefilter": 0.5599,
-  "heuristic": false,
-  "scored_at": "2026-08-15T11:43:04.369446+00:00"
- },
- "898cf80295fe656337b543c0ab76b1508ff2323b": {
-  "profile_version": "ea07aad451ce",
-  "match_score": 35,
-  "confidence": 0.9,
-  "why": "This is a duplicate of the previous posting; it carries the same disqualifying requirement for a government security clearance. It offers a solid salary, but your profile lacks the specific clearance required for this role.",
-  "seniority_fit": "target",
-  "role_family": "Business & Data Analytics",
-  "matched_skills": [
-   "Python",
-   "SQL",
-   "Data Visualization"
-  ],
-  "missing_skills": [
-   "Active Security Clearance",
-   "SAS"
-  ],
-  "resume_suggestions": [
-   "Focus on commercial-sector roles to avoid clearance blockers.",
-   "Emphasize Python over legacy tools like SAS."
-  ],
-  "sector": "Government/Public Sector",
-  "prefilter": 0.5547,
   "heuristic": false,
   "scored_at": "2026-08-15T11:43:04.369446+00:00"
  },
@@ -2447,5 +2398,32 @@
   "prefilter": 0.5155,
   "heuristic": false,
   "scored_at": "2026-08-15T11:43:04.369446+00:00"
+ },
+ "34e698350a48be6be9ed682fb77bb4be5a1ddcd4": {
+  "profile_version": "ea07aad451ce",
+  "match_score": 78,
+  "confidence": 0.85,
+  "why": "The role perfectly aligns with your expertise in data pipelines, agentic architectures, and technical process consulting. It offers an ideal step up in scope by moving into a high-level customer-facing architectural role within the AI/Data infrastructure space.",
+  "seniority_fit": "stretch",
+  "role_family": "Solutions & Technical Consulting",
+  "matched_skills": [
+   "Python",
+   "SQL",
+   "REST API Development",
+   "Data Visualization",
+   "Agentic Architecture"
+  ],
+  "missing_skills": [
+   "Big Data Architecture expertise (Spark/Delta Lake)",
+   "Pre-sales technical experience"
+  ],
+  "resume_suggestions": [
+   "Highlight specific instances where you advised stakeholders or product teams on technical architectural choices.",
+   "Emphasize the 'Consultant' and 'Strategy' aspects of your current role to bridge the gap toward a formal Solutions Architect title."
+  ],
+  "sector": "AI/ML Infra",
+  "prefilter": 0.5578,
+  "heuristic": false,
+  "scored_at": "2026-08-16T11:43:19.327346+00:00"
  }
 }
