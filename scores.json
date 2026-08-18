@@ -164,27 +164,6 @@
   "heuristic": false,
   "scored_at": "2026-07-27T10:04:33.109000+00:00"
  },
- "49d7e7b4c2e43ebeb84c7a0072d4f25de6854046": {
-  "profile_version": "ea07aad451ce",
-  "match_score": 75,
-  "confidence": 0.9,
-  "why": "A sales-led 'AI Specialist' role; good for your agentic expertise but requires more of a commercial/sales-person approach.",
-  "seniority_fit": "target",
-  "role_family": "AI & Machine Learning",
-  "matched_skills": [
-   "Agentic Architecture"
-  ],
-  "missing_skills": [
-   "Sales/Quota carrying"
-  ],
-  "resume_suggestions": [
-   "Highlight any previous experience with customer-facing 'value pitching'."
-  ],
-  "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.5004,
-  "heuristic": false,
-  "scored_at": "2026-07-27T10:04:33.109000+00:00"
- },
  "00b57f7c758a953c0fb807c91239f646f06ad99c": {
   "profile_version": "2a3c83a3226a",
   "match_score": 40,
@@ -998,27 +977,6 @@
   "prefilter": 0.501,
   "heuristic": false,
   "scored_at": "2026-07-26T13:04:27.029207+00:00"
- },
- "9b78f3b24adacb34b0c62037606a92b3e7f52d1f": {
-  "profile_version": "2d8f68683856",
-  "match_score": 60,
-  "confidence": 0.8,
-  "why": "Below-target salary, but relevant domain experience.",
-  "seniority_fit": "target",
-  "role_family": "Business & Data Analytics",
-  "matched_skills": [
-   "SQL",
-   "Quantitative Analytics"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Emphasize your technical impact on AI-driven products.",
-   "Showcase data optimization for user outcomes."
-  ],
-  "sector": "Healthcare",
-  "prefilter": 0.4876,
-  "heuristic": false,
-  "scored_at": "2026-07-26T23:51:05.100980+00:00"
  },
  "5ab4e62e917f5ee4127744a256e39a082d4aa78b": {
   "profile_version": "72aaaf7b6035-h",
@@ -2350,31 +2308,6 @@
   "heuristic": false,
   "scored_at": "2026-08-13T12:07:28.348938+00:00"
  },
- "d7b5a2ddf03a3049f21d95cd02091dff3d647830": {
-  "profile_version": "ea07aad451ce",
-  "match_score": 35,
-  "confidence": 0.9,
-  "why": "While the salary and seniority level align, the requirement for an active government security clearance is a non-negotiable blocker for a candidate who does not currently hold one. The technology stack (SAS, Tableau) is also less aligned with your modern Python/Agentic architecture background.",
-  "seniority_fit": "target",
-  "role_family": "Business & Data Analytics",
-  "matched_skills": [
-   "Python",
-   "SQL",
-   "Data Visualization"
-  ],
-  "missing_skills": [
-   "Active Security Clearance",
-   "SAS"
-  ],
-  "resume_suggestions": [
-   "Mention any specific data-warehousing projects if relevant.",
-   "Do not apply if you do not have an active public trust clearance."
-  ],
-  "sector": "Government/Public Sector",
-  "prefilter": 0.5599,
-  "heuristic": false,
-  "scored_at": "2026-08-15T11:43:04.369446+00:00"
- },
  "a7753663dc9ceb5a8758d91425996ce2c7d4819e": {
   "profile_version": "ea07aad451ce",
   "match_score": 20,
@@ -2421,5 +2354,55 @@
   "prefilter": 0.5062,
   "heuristic": false,
   "scored_at": "2026-08-17T11:49:05.213892+00:00"
+ },
+ "34e698350a48be6be9ed682fb77bb4be5a1ddcd4": {
+  "profile_version": "ea07aad451ce",
+  "match_score": 88,
+  "confidence": 0.9,
+  "why": "This role is a high-impact 'stretch' opportunity that perfectly aligns with Michael's background in building agentic architectures and internal dev tools. The focus on big data architecture and technical consulting mirrors his desire to blend strategy with engineering.",
+  "seniority_fit": "stretch",
+  "role_family": "Solutions & Technical Consulting",
+  "matched_skills": [
+   "Python",
+   "SQL",
+   "REST API Development",
+   "Agentic Architecture"
+  ],
+  "missing_skills": [
+   "None explicitly listed"
+  ],
+  "resume_suggestions": [
+   "Highlight specific instances of designing and deploying 'agentic architectures' in production.",
+   "Emphasize technical leadership in cross-functional projects to justify the Solutions Architect title."
+  ],
+  "sector": "AI/ML Infra",
+  "prefilter": 0.5578,
+  "heuristic": false,
+  "scored_at": "2026-08-18T11:49:45.275757+00:00"
+ },
+ "9eaab610a6ba899ff4b01f20896212d264552840": {
+  "profile_version": "ea07aad451ce",
+  "match_score": 72,
+  "confidence": 0.85,
+  "why": "This is a strong fit for Michael's data pipeline and automation experience, though it lacks clear compensation data to confirm the $130k+ constraint. The role sits well within his target seniority band of 2-5 years.",
+  "seniority_fit": "target",
+  "role_family": "Solutions & Technical Consulting",
+  "matched_skills": [
+   "Python",
+   "SQL",
+   "REST API Development",
+   "Process Automation"
+  ],
+  "missing_skills": [
+   "None explicitly listed"
+  ],
+  "resume_suggestions": [
+   "Focus on 'automated data movement' and pipeline reliability achievements.",
+   "Include metrics regarding operational cost savings achieved through data automation."
+  ],
+  "sector": "Enterprise SaaS/DevTools",
+  "prefilter": 0.5115,
+  "heuristic": false,
+  "scored_at": "2026-08-18T11:49:45.275757+00:00"
  }
 }
