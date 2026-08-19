@@ -706,27 +706,6 @@
   "heuristic": false,
   "scored_at": "2026-07-26T13:56:40.694076+00:00"
  },
- "6d427f629004a54191b3a14c76f0b229b3eb922d": {
-  "profile_version": "db9bf83da9b0",
-  "match_score": 85,
-  "confidence": 0.85,
-  "why": "Perfect role for someone bridging engineering and revenue/AI agents.",
-  "seniority_fit": "target",
-  "role_family": "AI & Machine Learning",
-  "matched_skills": [
-   "Python",
-   "Agentic & RAG Architecture",
-   "REST API Development"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Detail your work in customer-facing technical roles."
-  ],
-  "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.4794,
-  "heuristic": false,
-  "scored_at": "2026-07-26T13:56:40.694076+00:00"
- },
  "fa8edc60e0238dde4311120dc4a7b442d1114f5a": {
   "profile_version": "2d8f68683856",
   "match_score": 85,
@@ -1931,30 +1910,6 @@
   "heuristic": false,
   "scored_at": "2026-08-05T13:10:24.993471+00:00"
  },
- "c064150d5df644f839e8de449b7695bf216db44a": {
-  "profile_version": "ea07aad451ce",
-  "match_score": 60,
-  "confidence": 0.8,
-  "why": "The MLOps focus is a strong technical fit for his agentic and pipeline experience, and the company context is well-aligned with his data background. However, it is a slight seniority stretch as it is a specific Senior role.",
-  "seniority_fit": "stretch",
-  "role_family": "AI & Machine Learning",
-  "matched_skills": [
-   "Python",
-   "Containerization & Orchestration",
-   "CI/CD"
-  ],
-  "missing_skills": [
-   "MLOps lifecycle management"
-  ],
-  "resume_suggestions": [
-   "Add a section specifically detailing your experience with model deployment and monitoring pipelines.",
-   "Highlight any experience integrating automated financial data into ML models."
-  ],
-  "sector": "Healthcare",
-  "prefilter": 0.5083,
-  "heuristic": false,
-  "scored_at": "2026-08-05T13:10:24.993471+00:00"
- },
  "9f10eeb960b21112257126ea9ea654fa5aee86c6": {
   "profile_version": "ea07aad451ce",
   "match_score": 75,
@@ -2097,31 +2052,6 @@
   "prefilter": 0.5055,
   "heuristic": false,
   "scored_at": "2026-08-07T12:07:31.552778+00:00"
- },
- "586e79810c39dd41097a0ec5809a7e7c15eb272c": {
-  "profile_version": "ea07aad451ce",
-  "match_score": 70,
-  "confidence": 0.8,
-  "why": "The focus on AI-enabled workflows and high-scale product tooling is a strong match for your expertise in agentic architectures and internal tools. However, the salary is undisclosed and it falls right at the edge of your experience band, making it a competitive but standard fit.",
-  "seniority_fit": "target",
-  "role_family": "Analytics & Data Engineering",
-  "matched_skills": [
-   "Python",
-   "SQL",
-   "Data Visualization",
-   "Agentic Architecture"
-  ],
-  "missing_skills": [
-   "Specific warehouse/pipeline orchestration technologies"
-  ],
-  "resume_suggestions": [
-   "Explicitly frame your work on 'internal developer tools' as 'Product Development Systems' to mirror their internal terminology.",
-   "Emphasize your experience with high-velocity, fast-execution environments."
-  ],
-  "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.5004,
-  "heuristic": false,
-  "scored_at": "2026-08-11T12:06:43.690911+00:00"
  },
  "1221d8ed8b921f9c9cbdf2e3d21661e806db1766": {
   "profile_version": "ea07aad451ce",
@@ -2404,5 +2334,145 @@
   "prefilter": 0.5115,
   "heuristic": false,
   "scored_at": "2026-08-18T11:49:45.275757+00:00"
+ },
+ "bdbc830631c48271e6a6c5ece7db493d617f5de4": {
+  "profile_version": "ea07aad451ce",
+  "match_score": 75,
+  "confidence": 0.85,
+  "why": "The role directly aligns with your experience in SQL, Python, and ETL-based workflow automation. It is a solid match for your 4-year experience profile, though the requirement for a specific security clearance is a hard gating factor.",
+  "seniority_fit": "target",
+  "role_family": "Business & Data Analytics",
+  "matched_skills": [
+   "Python",
+   "SQL",
+   "Data Visualization"
+  ],
+  "missing_skills": [
+   "SAS",
+   "Security Clearance"
+  ],
+  "resume_suggestions": [
+   "Highlight data quality assurance projects.",
+   "Explicitly list experience with ETL/EDW migrations."
+  ],
+  "sector": "Government/Public Sector",
+  "prefilter": 0.561,
+  "heuristic": false,
+  "scored_at": "2026-08-19T11:49:39.797781+00:00"
+ },
+ "e03053bf00e3cf10688e7ce45811a21aed97a6ae": {
+  "profile_version": "ea07aad451ce",
+  "match_score": 85,
+  "confidence": 0.9,
+  "why": "This role is a high-impact fit for a Senior Analytics Engineer, mirroring your expertise in building scalable data foundations and internal tools. The scope fits your career progression perfectly as a step up into a high-growth environment.",
+  "seniority_fit": "stretch",
+  "role_family": "Analytics & Data Engineering",
+  "matched_skills": [
+   "Python",
+   "SQL",
+   "Data Visualization"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Quantify impact of 'internal developer tools' on operational speed.",
+   "Emphasize your 'agentic architecture' experience as a differentiator."
+  ],
+  "sector": "Enterprise SaaS/DevTools",
+  "prefilter": 0.5369,
+  "heuristic": false,
+  "scored_at": "2026-08-19T11:49:39.797781+00:00"
+ },
+ "109767ceb16ce844e011854353ea43217f8cc65e": {
+  "profile_version": "ea07aad451ce",
+  "match_score": 80,
+  "confidence": 0.8,
+  "why": "This is an ideal career pivot into Technical Product Management, leveraging your background in building agentic architectures and automating workflows. It is a clear step up into an AI-focused product leadership role.",
+  "seniority_fit": "stretch",
+  "role_family": "AI & Machine Learning",
+  "matched_skills": [
+   "Process Automation",
+   "Agentic Architecture"
+  ],
+  "missing_skills": [
+   "Product Roadmap management"
+  ],
+  "resume_suggestions": [
+   "Focus on the 'internal tools' product lifecycle in your bullets.",
+   "Frame your automation projects as product deliverables."
+  ],
+  "sector": "Enterprise SaaS/DevTools",
+  "prefilter": 0.5367,
+  "heuristic": false,
+  "scored_at": "2026-08-19T11:49:39.797781+00:00"
+ },
+ "670475fd46dabc58bff3fb0ceb31641fe309ba25": {
+  "profile_version": "ea07aad451ce",
+  "match_score": 82,
+  "confidence": 0.85,
+  "why": "The focus on agentic AI and enterprise data platforms aligns perfectly with your technical stack and consulting background. It represents an ideal growth opportunity into the high-demand AI infrastructure sector.",
+  "seniority_fit": "stretch",
+  "role_family": "Solutions & Technical Consulting",
+  "matched_skills": [
+   "Python",
+   "SQL",
+   "Agentic Architecture",
+   "REST API Development"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Highlight your experience with cloud-native or containerized deployments.",
+   "Showcase your ability to explain complex technical solutions to non-technical stakeholders."
+  ],
+  "sector": "AI/ML Infra",
+  "prefilter": 0.5184,
+  "heuristic": false,
+  "scored_at": "2026-08-19T11:49:39.797781+00:00"
+ },
+ "5ee82bfd5dff3ace246a2d07339a69b771db1100": {
+  "profile_version": "ea07aad451ce",
+  "match_score": 70,
+  "confidence": 0.75,
+  "why": "The GTM Strategy & Ops role leverages your financial modeling and process optimization skills in a high-stakes setting. It is a pivot towards operations management that utilizes your business-consultant background.",
+  "seniority_fit": "target",
+  "role_family": "Process Optimization & Business Operations",
+  "matched_skills": [
+   "Process Automation",
+   "Financial Modeling",
+   "SQL"
+  ],
+  "missing_skills": [
+   "Go-to-market strategy"
+  ],
+  "resume_suggestions": [
+   "Translate technical automation outcomes into 'revenue impact' metrics.",
+   "Emphasize your process optimization work in financial contexts."
+  ],
+  "sector": "Consumer/E-commerce",
+  "prefilter": 0.5109,
+  "heuristic": false,
+  "scored_at": "2026-08-19T11:49:39.797781+00:00"
+ },
+ "a6efd83e5ba2702a513540b8d57eb7af0ab1813e": {
+  "profile_version": "ea07aad451ce",
+  "match_score": 80,
+  "confidence": 0.8,
+  "why": "As a Solutions Architect role at a data-movement leader, this fits your technical stack and consulting experience well. It leverages your deep understanding of pipelines and data architectures.",
+  "seniority_fit": "stretch",
+  "role_family": "Solutions & Technical Consulting",
+  "matched_skills": [
+   "Python",
+   "SQL",
+   "REST API Development",
+   "Containerization & Orchestration"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Highlight your architecture diagrams and systems-design experience.",
+   "Emphasize how you've handled data at scale."
+  ],
+  "sector": "Enterprise SaaS/DevTools",
+  "prefilter": 0.5104,
+  "heuristic": false,
+  "scored_at": "2026-08-19T11:49:39.797781+00:00"
  }
 }
