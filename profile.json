@@ -1,36 +1,56 @@
 {
- "summary": "Michael is a high-impact Business Analytics Consultant with four years of experience automating complex enterprise workflows and optimizing high-stakes financial operations. He specializes in building internal developer tools, data pipelines, and agentic architectures that significantly reduce operational costs and migration timelines. He is seeking a remote, full-time role that blends technical process engineering with data-driven strategy and AI-enabled automation.",
+ "summary": "Michael is a highly technical Business Analytics Consultant with 4 years of experience specializing in internal developer tooling, process automation, and data engineering. He excels at building agentic workflows and RESTful services that optimize enterprise operations, evidenced by his work refactoring bank-wide Python packages and automating complex legacy migrations. He combines deep quantitative modeling expertise with a modern engineering mindset, focusing on cost-efficient AI/RAG architectures and robust CI/CD integration.",
  "skills": [
   {
    "name": "Python",
    "category": "engineering",
    "strength": 0.95,
    "evidence": [
-    "Enterprise-wide package maintenance",
-    "Production API development",
-    "High-throughput web scraping",
-    "Automated orchestration tools"
-   ]
-  },
-  {
-   "name": "Process Automation",
-   "category": "engineering",
-   "strength": 0.9,
-   "evidence": [
-    "Document sourcing automation",
-    "Pricing workflow optimization",
-    "Elimination of manual entry errors",
-    "Development of agentic job-matching pipelines"
+    "Enterprise Python tool maintainer",
+    "REST API development",
+    "Scraping/automation suites",
+    "Custom Python packaging"
    ]
   },
   {
    "name": "SQL",
    "category": "analytics",
-   "strength": 0.85,
+   "strength": 0.9,
    "evidence": [
     "Grid-wide table usage analytics",
-    "Teradata/Oracle data modeling",
-    "Complex reconciliation across heterogeneous databases"
+    "Database reconciliation frameworks",
+    "Complex query optimization"
+   ]
+  },
+  {
+   "name": "Data Engineering",
+   "category": "engineering",
+   "strength": 0.85,
+   "evidence": [
+    "Legacy mainframe migration",
+    "Data validation frameworks",
+    "ETL orchestration",
+    "Oracle/Teradata/MongoDB experience"
+   ]
+  },
+  {
+   "name": "Workflow Automation",
+   "category": "engineering",
+   "strength": 0.9,
+   "evidence": [
+    "Automated pricing workflows",
+    "Multi-scraper document sourcing",
+    "Internal developer tooling for bank-wide migration discovery"
+   ]
+  },
+  {
+   "name": "Power BI",
+   "category": "analytics",
+   "strength": 0.8,
+   "evidence": [
+    "Semantic modeling",
+    "Portfolio-wide performance dashboards",
+    "Competitive risk visualization"
    ]
   },
   {
@@ -38,98 +58,98 @@
    "category": "engineering",
    "strength": 0.85,
    "evidence": [
-    "Deployment on OpenShift via Helm",
-    "Production-grade microservices for credit risk systems",
-    "Headless browser API endpoints"
+    "Containerized APIs on OpenShift",
+    "Helm charts",
+    "Policy-as-code and governance implementation"
+   ]
+  },
+  {
+   "name": "Agentic Workflows",
+   "category": "engineering",
+   "strength": 0.75,
+   "evidence": [
+    "Enterprise RAG architecture optimization",
+    "Token-budget constrained LLM deployment",
+    "Autonomous career-matching pipeline"
+   ]
+  },
+  {
+   "name": "Docker / Kubernetes",
+   "category": "engineering",
+   "strength": 0.8,
+   "evidence": [
+    "OpenShift deployment",
+    "Helm chart management",
+    "Containerizing scrapers/services"
+   ]
+  },
+  {
+   "name": "Quantitative Analysis",
+   "category": "analytics",
+   "strength": 0.85,
+   "evidence": [
+    "Reserve forecasting",
+    "Loan portfolio analysis",
+    "Back-testing and M&A model integration"
+   ]
+  },
+  {
+   "name": "Git / Version Control",
+   "category": "engineering",
+   "strength": 0.85,
+   "evidence": [
+    "CI/CD pipeline management",
+    "Repo maintenance across personal/enterprise projects",
+    "Branching/Merging logic"
    ]
   },
   {
    "name": "Data Visualization",
    "category": "analytics",
-   "strength": 0.8,
-   "evidence": [
-    "Power BI semantic models",
-    "Peer bank stress analysis dashboards",
-    "Stakeholder-facing performance reporting"
-   ]
-  },
-  {
-   "name": "Agentic Architecture",
-   "category": "engineering",
    "strength": 0.75,
    "evidence": [
-    "RAG/agentic workflow evaluation",
-    "Token-budget optimization",
-    "Autonomous career agent development"
-   ]
-  },
-  {
-   "name": "Containerization & Orchestration",
-   "category": "engineering",
-   "strength": 0.75,
-   "evidence": [
-    "OpenShift deployment",
-    "Docker-based environment management",
-    "Helm chart configuration"
-   ]
-  },
-  {
-   "name": "Financial Modeling",
-   "category": "domain",
-   "strength": 0.7,
-   "evidence": [
-    "CECL reserve forecasting",
-    "Pricing elasticity research",
-    "M&A loan integration and back-testing"
-   ]
-  },
-  {
-   "name": "Data Validation",
-   "category": "analytics",
-   "strength": 0.75,
-   "evidence": [
-    "Parameterized frameworks for migration reconciliation",
-    "Asset class migration integrity checks"
+    "Peer bank stress analysis",
+    "Executive-level reporting tools"
    ]
   },
   {
    "name": "C++",
    "category": "engineering",
-   "strength": 0.65,
+   "strength": 0.7,
    "evidence": [
     "Unreal Engine 5 project architecture",
     "Physics-based game systems development"
    ]
   },
   {
-   "name": "Quantitative Analytics",
-   "category": "analytics",
-   "strength": 0.7,
+   "name": "Process Optimization",
+   "category": "domain",
+   "strength": 0.9,
    "evidence": [
-    "Macroeconomic scenario forecasting",
-    "Competitive stress analysis",
-    "Statistical performance monitoring"
+    "Operationalizing manual workflows",
+    "Reducing vendor costs by $1M",
+    "Removing alert fatigue for bank-wide migration notices"
    ]
   },
   {
-   "name": "CI/CD",
-   "category": "tools",
-   "strength": 0.7,
+   "name": "Requirements Gathering",
+   "category": "domain",
+   "strength": 0.8,
    "evidence": [
-    "Policy-as-code governance",
-    "Enterprise security compliance",
-    "Automated pipeline management"
+    "Stakeholder enablement",
+    "Migration mapping",
+    "SME validation of 1,930 data fields"
    ]
   }
  ],
  "target_titles": [
-  "Technical Product Manager (Internal Tools)",
-  "Senior Data & Analytics Engineer",
-  "Process Automation Engineer",
-  "Solutions Architect (Analytics)",
-  "Business Operations & Strategy Manager"
+  "Technical Product Manager (Developer Tools)",
+  "Analytics Engineer",
+  "Solutions Engineer (AI & Automation)",
+  "Automation & Process Architect",
+  "Senior Data Analyst (Engineering-Focused)"
  ],
- "version": "ea07aad451ce",
+ "version": "098ec1c50043",
  "remote_only": true,
- "generated_at": "2026-07-27T10:03:31.127203+00:00"
+ "generated_at": "2026-08-21T11:49:57.803973+00:00"
 }

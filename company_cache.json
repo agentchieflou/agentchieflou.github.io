@@ -3340,7 +3340,7 @@
   "accessible": true,
   "description": "This role is ideal for someone who thrives in a fast-moving, low-ego environment where data makes a difference for patients.",
   "checked_at": "2026-08-07T12:07:22.143419+00:00",
-  "sector": "Fintech"
+  "sector": "Healthcare"
  },
  "symetra financial": {
   "company": "Symetra Financial",
@@ -3495,5 +3495,33 @@
   "accessible": true,
   "description": "CBP, you will be joining a workforce that is dedicated to accomplishing our mission while maintaining the trust of our Nation by strictly adhering to all government ethics standards.",
   "checked_at": "2026-08-20T11:51:43.743370+00:00"
+ },
+ "alloy": {
+  "company": "Alloy",
+  "domain": "alloy.com",
+  "accessible": true,
+  "description": "AI-Powered Financial Crime and Customer Risk Management… | Alloy\nRisk-based authentication: your next growth lever\nRead the blog\nChoose site:\nUS\nUnited States\n(Selected)\nUnited Kingdom\nSign In\nSchedule a Demo\nPlatform\nPlatform\nAlloy's open data ecosystem, orchestration engine, and Actionable AI form a unified platform that gets smarter with every signal and every decision.\nActionable AI suite\nPredictive and agentic AI to help your team spend time on what matters most.\nContinuous fraud management\nDetect and prevent fraud across the entire customer lifecycle.\nCustomer onboarding\nAccelerate onboarding with orchestrated identity verification.\nData partner ecosystem\nAccess 270+ data solutions with a vendor-neutral approach.\nIdentity verification\nVerify customer identities with confidence across all touchpoints.\nOrchestration & decisioning engine\nRoute inputs, sequence vendor calls, and manage dependencies.\nUse Cases\nUse Cases\nAlloy solves for omnichannel identity risk across the entire customer lifecycle.\nFull-lifecycle fraud prevention\nATO fraud\nBusiness fraud\nCredit fraud\nFraud ring attacks\nIdentity fraud\nMoney muling\nNew account fraud\nScams\nSynthetic identity fraud\nRisk-based authentication\nExternal account ownership\nLogin and device management\nRisk-based authentication\nStep-up verification management\nOnboarding\nCommercial\nConsumer\nMerchant\nSmall business\nEnd-to-end compliance\n(perpetual) KYC/KYB\nAML & watchlist screening\nCase management\nEmbedded finance\nSAR/CTR filing\nTransact",
+  "checked_at": "2026-08-21T11:50:22.657620+00:00"
+ },
+ "prefect": {
+  "company": "Prefect",
+  "domain": "prefect.io",
+  "accessible": true,
+  "description": "Prefect - Workflow Orchestration for Data, ML, and Agents\nSkip to content\nPrefect\nUse Cases\nProducts\nDocs\nCustomers\nPricing\nResources\n51k+\nContact\nLog in\nSign up\nProduct\nPrefect Cloud\nPrefect Open Source\nFastMCP\nPrefect Horizon\nNEW\nPricing\nEnterprise\nHow Prefect Works\nPrefect Cloud vs OSS\nPrefect vs Airflow\nResources\nDocs\nCase Studies\nBlog\nResources\nChangelog\nCommunity\nLearn\nSupport\nCloud Status\nCompany\nAbout\nContact\nCareers\nLegal\nSecurity\nBrand Assets\nOpen Source Pledge\nSocial\nTwitter\nGitHub\nLinkedIn\nYouTube\n© Copyright 2026 Prefect Technologies, Inc. All rights reserved.\nStart with one flow.\nScale to millions.\nDurable orchestration for data, ML, and agents.\nStart free\nBook a demo\nwith our team\nLooking for the MCP gateway? Visit\nPrefect Horizon\nTrusted in Production by:\nCase study →\nCase study →\nCase study →\nCase study →\nCase study →\nCase study →\nCase study →\nCase study →\nCase study →\nCase study →\nCase study →\nCase study →\nCase study →\nCase study →\nCase study →\nCase study →\nCase study →\nCase study →\nEnterprise Grade\nSOC 2 Type II\nHIPAA\nGDPR\nHybrid & VPC\n99.99% uptime\nOne platform\nfrom ML to AI\nData pipelines\nML\nDurable execution\nAgents\nEnterprise\nData you can depend on\nReplace brittle cron jobs with pipelines that heal themselves, so your data always arrives on time.\n</>\nflow.py\nfrom prefect import flow, task\n@task(retries=3)\ndef extract(source):\n...\n@flow\ndef daily_revenue_elt():\nload(transform(extract(\"warehouse\")))\nDeployments\n/\ndaily_revenue_elt\n·\nk8s-prod\nRunning · 0:00",
+  "checked_at": "2026-08-21T11:50:22.657620+00:00"
+ },
+ "cedars sinai": {
+  "company": "CEDARS-SINAI",
+  "domain": "cedars-sinai.org",
+  "accessible": false,
+  "description": null,
+  "checked_at": "2026-08-21T11:50:22.657620+00:00"
+ },
+ "vaco by highspring": {
+  "company": "Vaco by Highspring",
+  "domain": null,
+  "accessible": true,
+  "description": "Overview Our Business Analysis team is expanding to support a critical Oracle Fusion Cloud implementation.",
+  "checked_at": "2026-08-21T11:50:22.657620+00:00"
  }
 }
