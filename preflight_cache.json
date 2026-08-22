@@ -769,5 +769,56 @@
    "Are you located in or willing to relocate to the United States? — on-site location requirement"
   ],
   "v": 4
+ },
+ "e4a34993e889ea98aa8cc6777931090f59ac0f2a": {
+  "total": 22,
+  "standing": 10,
+  "specific": [
+   {
+    "q": "Address Line 1",
+    "options": []
+   },
+   {
+    "q": "City",
+    "options": []
+   },
+   {
+    "q": "Province/State",
+    "options": []
+   },
+   {
+    "q": "Postal/Zip Code",
+    "options": []
+   },
+   {
+    "q": "Country",
+    "options": []
+   },
+   {
+    "q": "Are you currently or have you ever provided services to Fivetran (or any of its global subsidiaries or affiliated entities) as a consultant or independent contractor, or through an employment agency or placement firm of any kind?",
+    "options": [
+     "Yes",
+     "No"
+    ]
+   },
+   {
+    "q": "Do you have the right to work in the country for which you are applying?",
+    "options": [
+     "Yes",
+     "No"
+    ]
+   },
+   {
+    "q": "By submitting this application, I acknowledge that I have read and understand Fivetran's Applicant Privacy Notice regarding the collection, use, and sharing of my personal information for recruitment and hiring purposes.",
+    "options": [
+     "Acknowledge/Confirm"
+    ]
+   }
+  ],
+  "uploads": [
+   "Resume/CV"
+  ],
+  "blockers": [],
+  "v": 4
  }
 }
