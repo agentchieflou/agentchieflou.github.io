@@ -1,14 +1,14 @@
 {
- "summary": "Data-driven process engineer with 4 years of experience specializing in internal developer tooling, automation, and enterprise analytics. Expert at building high-impact Python utilities that bridge the gap between complex data infrastructure and stakeholder accessibility. Proven track record in scaling automation workflows, optimizing AI/RAG cost models, and architecting robust, production-grade API services.",
+ "summary": "Michael is a technically-adept Business Analytics Consultant with four years of experience building high-impact automation tools and enterprise-scale data platforms. He excels at bridging the gap between business requirements and engineering execution, evidenced by his creation of a bank-wide Python package that optimized grid-wide telemetry and reduced migration impact discovery time by 98%. He combines advanced quantitative analysis with a systems-engineering mindset to build custom tools, internal developer platforms, and agentic workflows that solve complex operational bottlenecks.",
  "skills": [
   {
    "name": "Python",
    "category": "engineering",
    "strength": 0.95,
    "evidence": [
-    "Built enterprise-wide package for bank-wide analytics",
-    "Created twiceMeasured toolchain",
-    "Scripting and API orchestration"
+    "Maintainer of bank-wide Python package",
+    "Author of 'twiceMeasured' PBI tooling",
+    "Multi-scraper automation architecture"
    ]
   },
   {
@@ -16,17 +16,9 @@
    "category": "analytics",
    "strength": 0.9,
    "evidence": [
-    "Complex data modeling across Oracle and Teradata",
-    "Deep experience with grid-wide telemetry queries"
-   ]
-  },
-  {
-   "name": "API Development",
-   "category": "engineering",
-   "strength": 0.85,
-   "evidence": [
-    "Production REST APIs on OpenShift",
-    "Custom toolchains for Power BI metadata interaction"
+    "Complex table usage analytics",
+    "Oracle/Teradata/MongoDB query optimization",
+    "Large-scale asset class migration reconciliations"
    ]
   },
   {
@@ -34,117 +26,110 @@
    "category": "analytics",
    "strength": 0.85,
    "evidence": [
-    "Development of complex semantic models",
-    "Built portfolio-wide performance dashboards"
+    "Built deep-stack semantic models",
+    "Created peer-bank analysis and portfolio performance dashboards",
+    "Developed 'twiceMeasured' toolchain to replace GUIs"
+   ]
+  },
+  {
+   "name": "REST API Development",
+   "category": "engineering",
+   "strength": 0.85,
+   "evidence": [
+    "Deployment of production APIs for risk systems",
+    "Containerization of scrappers into consumable services",
+    "Implementation of robust API endpoints for internal tools"
+   ]
+  },
+  {
+   "name": "Data Architecture",
+   "category": "engineering",
+   "strength": 0.8,
+   "evidence": [
+    "Migration of legacy mainframe asset classes",
+    "Design of parameterized data validation frameworks",
+    "Overhaul of team version control and storage architectures"
    ]
   },
   {
    "name": "Workflow Automation",
-   "category": "engineering",
-   "strength": 0.85,
+   "category": "analytics",
+   "strength": 0.9,
    "evidence": [
-    "Automated loan document sourcing",
-    "Pricing workflow automation reducing manual errors"
+    "Document sourcing automation suite",
+    "Automated pricing workflow reduction of manual errors",
+    "Automated daily job-matching pipeline"
    ]
   },
   {
-   "name": "OpenShift/Kubernetes",
-   "category": "engineering",
+   "name": "OpenShift / Kubernetes",
+   "category": "tools",
+   "strength": 0.75,
+   "evidence": [
+    "Containerized production APIs for banking risk systems",
+    "Deployment of Helm charts for enterprise governance",
+    "Management of production ML serving environments"
+   ]
+  },
+  {
+   "name": "Quantitative Analysis",
+   "category": "domain",
    "strength": 0.8,
    "evidence": [
-    "Containerizing scrapers and parsing systems",
-    "Production deployment of REST APIs"
+    "Mortgage reserve forecasting on $70B assets",
+    "Elasticity research and back-testing",
+    "Competitor stress analysis"
+   ]
+  },
+  {
+   "name": "Agentic Workflows",
+   "category": "engineering",
+   "strength": 0.7,
+   "evidence": [
+    "Evaluation of RAG architectures under budget constraints",
+    "Autonomous Career Agent pipeline",
+    "Agentic orchestration in data-driven tools"
+   ]
+  },
+  {
+   "name": "Git & CI/CD",
+   "category": "tools",
+   "strength": 0.8,
+   "evidence": [
+    "Enterprise CI/CD pipeline management",
+    "Version control standardization for quantitative teams",
+    "GitHub-integrated automation tooling"
+   ]
+  },
+  {
+   "name": "Regulatory Compliance",
+   "category": "domain",
+   "strength": 0.7,
+   "evidence": [
+    "Application of OCC and Federal Reserve (SR 11-7) standards",
+    "Managed restricted-network governance gates",
+    "Enterprise-level data validation frameworks"
    ]
   },
   {
    "name": "Data Modeling",
    "category": "analytics",
-   "strength": 0.8,
-   "evidence": [
-    "Asset class migration validation",
-    "Back-testing and monitoring for mortgage portfolios"
-   ]
-  },
-  {
-   "name": "RAG Architecture",
-   "category": "engineering",
    "strength": 0.75,
    "evidence": [
-    "Evaluated agentic workflows against enterprise token budgets",
-    "Optimization of retrieval scoping and caching"
-   ]
-  },
-  {
-   "name": "CI/CD",
-   "category": "engineering",
-   "strength": 0.75,
-   "evidence": [
-    "Helm deployments",
-    "Passing strict enterprise governance/policy-as-code gates"
-   ]
-  },
-  {
-   "name": "Selenium/Headless Browsers",
-   "category": "engineering",
-   "strength": 0.75,
-   "evidence": [
-    "Multi-scraper automation for loan file retrieval",
-    "Transitions to high-throughput API headless browsers"
-   ]
-  },
-  {
-   "name": "Data Validation",
-   "category": "analytics",
-   "strength": 0.75,
-   "evidence": [
-    "Designed parameterized frameworks for MongoDB/Mainframe reconciliation"
-   ]
-  },
-  {
-   "name": "Docker",
-   "category": "engineering",
-   "strength": 0.75,
-   "evidence": [
-    "Containerization of production APIs",
-    "Environment consistency for tool distribution"
-   ]
-  },
-  {
-   "name": "Quantitative Analytics",
-   "category": "analytics",
-   "strength": 0.7,
-   "evidence": [
-    "CECL reserve forecasting for $70B+ portfolio",
-    "Elasticity research using standard deviation"
-   ]
-  },
-  {
-   "name": "Version Control",
-   "category": "tools",
-   "strength": 0.8,
-   "evidence": [
-    "Git workflow management",
-    "Overhauled team version control practices for data integrity"
-   ]
-  },
-  {
-   "name": "Requirement Gathering",
-   "category": "domain",
-   "strength": 0.7,
-   "evidence": [
-    "Stakeholder enablement",
-    "Translating operational pain points into automated tools"
+    "Integration of M&A assets into existing models",
+    "Semantic layer design",
+    "Table usage pattern modeling"
    ]
   }
  ],
  "target_titles": [
+  "Senior Business Intelligence Engineer",
   "Analytics Engineering Manager",
-  "Senior Data Automation Engineer",
-  "Technical Product Manager, Internal Tools",
-  "Senior Business Intelligence Developer",
-  "Solutions Architect, Data & Automation"
+  "Technical Product Manager (Data & Tools)",
+  "Senior Data Operations Engineer",
+  "Technical Strategy Lead (Analytics)"
  ],
- "version": "3d92753669ee",
+ "version": "1a45b9c8e6a3",
  "remote_only": true,
- "generated_at": "2026-08-26T11:54:10.543664+00:00"
+ "generated_at": "2026-08-27T21:04:49.636571+00:00"
 }
