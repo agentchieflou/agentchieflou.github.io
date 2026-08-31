@@ -397,26 +397,27 @@
   "scored_at": "2026-07-26T23:51:05.100980+00:00"
  },
  "05a61506404b3f10a7abae04f8fae73fcf78a5f8": {
-  "profile_version": "3d92753669ee",
-  "match_score": 80,
+  "profile_version": "dd3810bdbbc8",
+  "match_score": 85,
   "confidence": 0.9,
-  "why": "Strong match for Senior AI engineering role in product.",
+  "why": "The role perfectly aligns with the candidate's 4-5 year experience target and expertise in Agentic/RAG architecture and Python. It meets all hard constraints including remote status and compensation requirements.",
   "seniority_fit": "stretch",
   "role_family": "AI & Machine Learning",
   "matched_skills": [
    "Python",
+   "Process Automation",
    "API Development",
-   "Workflow Automation"
+   "Agentic/RAG Architecture"
   ],
   "missing_skills": [],
   "resume_suggestions": [
-   "Highlight 'LLM-powered' user-facing features.",
-   "Showcase 'Scalable and reliable' AI-backend systems."
+   "Emphasize specific user-facing AI features or workflows you've built.",
+   "Highlight how your automation tools improve end-user productivity."
   ],
   "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.4955,
+  "prefilter": 0.5003,
   "heuristic": false,
-  "scored_at": "2026-08-26T11:56:39.553175+00:00"
+  "scored_at": "2026-08-31T18:04:35.000034+00:00"
  },
  "2eaec1a31080d1ff3550671f309fffa802186b66": {
   "profile_version": "9741a9d03e5e",
@@ -1752,50 +1753,6 @@
   "heuristic": false,
   "scored_at": "2026-08-30T15:24:54.903644+00:00"
  },
- "28bdabe69cfc82cc85e3fd6b291d21d06597f062": {
-  "profile_version": "1a45b9c8e6a3",
-  "match_score": 75,
-  "confidence": 0.8,
-  "why": "Fits your strategy and operations experience well. A strong career pivot into high-growth public sector operations.",
-  "seniority_fit": "target",
-  "role_family": "Process Optimization & Business Operations",
-  "matched_skills": [
-   "SQL",
-   "Quantitative Analysis"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Highlight your project management/strategy experience.",
-   "Emphasize your data-driven decision-making processes."
-  ],
-  "sector": "Other",
-  "prefilter": 0.5168,
-  "heuristic": false,
-  "scored_at": "2026-08-27T21:06:10.399047+00:00"
- },
- "e03053bf00e3cf10688e7ce45811a21aed97a6ae": {
-  "profile_version": "dd3810bdbbc8",
-  "match_score": 82,
-  "confidence": 0.85,
-  "why": "Fits your experience well, focusing on scaling analytical foundations. The domain of real-estate AI agents aligns with your RAG/Agentic architecture interest.",
-  "seniority_fit": "target",
-  "role_family": "Analytics & Data Engineering",
-  "matched_skills": [
-   "Python",
-   "SQL",
-   "Data Modeling",
-   "Process Automation"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Quantify the impact of the analytical tools you've built.",
-   "Frame your experience as 'Analytics Engineering' in your summary."
-  ],
-  "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.5164,
-  "heuristic": false,
-  "scored_at": "2026-08-29T15:43:13.004720+00:00"
- },
  "109767ceb16ce844e011854353ea43217f8cc65e": {
   "profile_version": "dd3810bdbbc8",
   "match_score": 85,
@@ -2251,31 +2208,6 @@
   "heuristic": false,
   "scored_at": "2026-08-28T21:28:48.686521+00:00"
  },
- "d7b5a2ddf03a3049f21d95cd02091dff3d647830": {
-  "profile_version": "dd3810bdbbc8",
-  "match_score": 75,
-  "confidence": 0.8,
-  "why": "Matches years of experience and core technical stack; however, it requires specialized clearance and specific legacy tools (SAS) not listed in the candidate profile.",
-  "seniority_fit": "target",
-  "role_family": "Business & Data Analytics",
-  "matched_skills": [
-   "Python",
-   "SQL",
-   "Data Modeling"
-  ],
-  "missing_skills": [
-   "SAS",
-   "Security Clearance"
-  ],
-  "resume_suggestions": [
-   "Mention any past experience with public sector work.",
-   "Highlight Python/Tableau capabilities."
-  ],
-  "sector": "Government/Public Sector",
-  "prefilter": 0.5619,
-  "heuristic": false,
-  "scored_at": "2026-08-28T21:28:48.686521+00:00"
- },
  "79153501ed25cf99bcd3daa3772149178b3c0c96": {
   "profile_version": "dd3810bdbbc8",
   "match_score": 10,
@@ -2475,26 +2407,29 @@
   "scored_at": "2026-08-30T15:24:54.903644+00:00"
  },
  "c04dafa8df207fad075cf06844a465a29c9bb644": {
-  "profile_version": "3d92753669ee",
-  "match_score": 75,
-  "confidence": 0.9,
-  "why": "Solid solutions engineer fit for observability/AI platforms.",
-  "seniority_fit": "stretch",
+  "profile_version": "dd3810bdbbc8",
+  "match_score": 78,
+  "confidence": 0.85,
+  "why": "Matches the candidate's experience level and skill set in data-heavy enterprise consulting; however, it is slightly more focused on pre-sales/solutions than core engineering.",
+  "seniority_fit": "target",
   "role_family": "Solutions & Technical Consulting",
   "matched_skills": [
    "SQL",
    "Data Modeling",
-   "API Development"
+   "Agentic/RAG Architecture",
+   "Python"
   ],
-  "missing_skills": [],
+  "missing_skills": [
+   "Customer-facing presentation experience"
+  ],
   "resume_suggestions": [
-   "Highlight 'Observability' and 'Time-series' data projects.",
-   "Emphasize 'Customer solutioning' expertise."
+   "Quantify the ROI of the data infrastructure projects you have architected.",
+   "Focus on your ability to translate technical data requirements into business solutions."
   ],
   "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.4914,
+  "prefilter": 0.4997,
   "heuristic": false,
-  "scored_at": "2026-08-26T11:56:39.553175+00:00"
+  "scored_at": "2026-08-31T18:04:35.000034+00:00"
  },
  "b018d19ed3165fdc43c27ab238b49fb4c7f290cc": {
   "profile_version": "3d92753669ee",
@@ -2826,5 +2761,29 @@
   "prefilter": 0.5012,
   "heuristic": false,
   "scored_at": "2026-08-30T15:24:54.903644+00:00"
+ },
+ "6600325ab440cbf28c70a35eb3b0e83cfea3bb73": {
+  "profile_version": "dd3810bdbbc8",
+  "match_score": 35,
+  "confidence": 0.8,
+  "why": "This is a Management-level role requiring deep leadership experience, which is an 'out-of-band' jump from the candidate's 4-year individual contributor background. It also fails the remote constraint, as it is based in San Francisco.",
+  "seniority_fit": "out-of-band",
+  "role_family": "AI & Machine Learning",
+  "matched_skills": [
+   "Python",
+   "API Development"
+  ],
+  "missing_skills": [
+   "People Management",
+   "Strategic Leadership"
+  ],
+  "resume_suggestions": [
+   "Focus on project leadership/mentorship if applying for future management roles.",
+   "Highlight team-wide impact of your automation initiatives."
+  ],
+  "sector": "AI/ML Infra",
+  "prefilter": 0.5061,
+  "heuristic": false,
+  "scored_at": "2026-08-31T18:04:35.000034+00:00"
  }
 }
