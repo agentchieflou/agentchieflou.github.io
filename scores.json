@@ -2276,30 +2276,6 @@
   "heuristic": false,
   "scored_at": "2026-08-30T15:24:54.903644+00:00"
  },
- "9f9fff923a696b1224900cb69f1c1799f0a90d19": {
-  "profile_version": "dd3810bdbbc8",
-  "match_score": 60,
-  "confidence": 0.75,
-  "why": "Requires 6 years of experience; potentially a stretch for a 4-year candidate.",
-  "seniority_fit": "stretch",
-  "role_family": "Analytics & Data Engineering",
-  "matched_skills": [
-   "SQL",
-   "Data Modeling",
-   "Python"
-  ],
-  "missing_skills": [
-   "Member experience domain knowledge"
-  ],
-  "resume_suggestions": [
-   "Highlight data-driven product insights.",
-   "Focus on customer-facing data metrics."
-  ],
-  "sector": "Consumer/E-commerce",
-  "prefilter": 0.5013,
-  "heuristic": false,
-  "scored_at": "2026-08-30T15:24:54.903644+00:00"
- },
  "3ff413b0b4305a6a8e95b01432efc5280df81ffa": {
   "profile_version": "dd3810bdbbc8",
   "match_score": 30,
@@ -2739,29 +2715,6 @@
   "heuristic": false,
   "scored_at": "2026-08-30T15:24:54.903644+00:00"
  },
- "9eaab610a6ba899ff4b01f20896212d264552840": {
-  "profile_version": "dd3810bdbbc8",
-  "match_score": 85,
-  "confidence": 0.85,
-  "why": "Strong alignment for a Resident Solutions Architect role; maps well to his consulting and technical skills.",
-  "seniority_fit": "target",
-  "role_family": "Solutions & Technical Consulting",
-  "matched_skills": [
-   "Data Modeling",
-   "Python",
-   "SQL",
-   "API Development"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Highlight experience with data automation and movement.",
-   "Showcase technical problem-solving for clients."
-  ],
-  "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.5012,
-  "heuristic": false,
-  "scored_at": "2026-08-30T15:24:54.903644+00:00"
- },
  "6600325ab440cbf28c70a35eb3b0e83cfea3bb73": {
   "profile_version": "dd3810bdbbc8",
   "match_score": 35,
@@ -2785,5 +2738,50 @@
   "prefilter": 0.5061,
   "heuristic": false,
   "scored_at": "2026-08-31T18:04:35.000034+00:00"
+ },
+ "e03053bf00e3cf10688e7ce45811a21aed97a6ae": {
+  "profile_version": "dd3810bdbbc8",
+  "match_score": 92,
+  "confidence": 0.95,
+  "why": "This is an ideal career step-up into a Senior role that leverages Michael's background in both enterprise data architecture and internal automation. The salary comfortably exceeds his $130k floor, and the focus on AI growth platforms aligns perfectly with his RAG/Agentic architecture experience.",
+  "seniority_fit": "stretch",
+  "role_family": "Analytics & Data Engineering",
+  "matched_skills": [
+   "Python",
+   "SQL",
+   "Data Modeling"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Highlight specific examples of building scalable data infrastructure that reduced manual team workload.",
+   "Emphasize the 'Senior' aspects of your current role, focusing on architectural decision-making and cross-functional leadership."
+  ],
+  "sector": "Enterprise SaaS/DevTools",
+  "prefilter": 0.5164,
+  "heuristic": false,
+  "scored_at": "2026-09-01T15:31:00.971503+00:00"
+ },
+ "c444c8b0d38dd0ccadb1a416003983557089d74e": {
+  "profile_version": "dd3810bdbbc8",
+  "match_score": 75,
+  "confidence": 0.85,
+  "why": "This role is a strong technical match for an analytics-focused engineer, utilizing his deep knowledge of data movement and API development. However, the salary is not disclosed, requiring verification to ensure it meets his $130k constraint.",
+  "seniority_fit": "target",
+  "role_family": "Solutions & Technical Consulting",
+  "matched_skills": [
+   "API Development",
+   "Python",
+   "SQL",
+   "Data Modeling"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Frame your experience as 'Solutions-Oriented' by showcasing how you have architected custom internal toolchains that act like a platform for your users.",
+   "Highlight your exposure to 'Data Movement' or ETL pipeline maintenance."
+  ],
+  "sector": "Enterprise SaaS/DevTools",
+  "prefilter": 0.5012,
+  "heuristic": false,
+  "scored_at": "2026-09-01T15:31:00.971503+00:00"
  }
 }
