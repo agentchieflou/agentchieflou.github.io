@@ -1,34 +1,45 @@
 {
- "summary": "Michael is a highly technical Business Analytics Consultant with 4 years of experience specializing in internal developer tooling, process automation, and data platform optimization. He excels at building CLI-driven toolchains and automated frameworks that replace manual, legacy-heavy workflows with performant, scalable RESTful services. He is adept at architecting cost-conscious AI and RAG implementations while maintaining high-level expertise in semantic modeling and enterprise data infrastructure.",
+ "summary": "Data-driven strategist and automation engineer with 4 years of experience specializing in internal developer tooling and process optimization. Expert in building bespoke automation frameworks that bridge technical gaps between legacy infrastructure and modern API-first architectures. Highly skilled in resource-constrained AI implementation and creating high-performance CLI tools to streamline team workflows.",
  "skills": [
   {
    "name": "Python",
    "category": "engineering",
    "strength": 0.95,
    "evidence": [
-    "Built bank-wide Python package for table analytics",
-    "Authored complex CLI toolchains like twiceMeasured",
-    "Multi-scraper automation suites"
-   ]
-  },
-  {
-   "name": "Power BI",
-   "category": "analytics",
-   "strength": 0.9,
-   "evidence": [
-    "Development of enterprise semantic models",
-    "Created peer bank analysis dashboards",
-    "Built custom PBI tooling for DAX/TMDL/XMLA analysis"
+    "Enterprise-wide package maintenance",
+    "Production REST API development",
+    "Custom CLI tool development",
+    "High-throughput scrapers"
    ]
   },
   {
    "name": "SQL",
    "category": "analytics",
+   "strength": 0.9,
+   "evidence": [
+    "Data modeling at enterprise scale",
+    "Complex migration validation",
+    "Performance tuning and Grid-wide telemetry"
+   ]
+  },
+  {
+   "name": "Power BI",
+   "category": "analytics",
    "strength": 0.85,
    "evidence": [
-    "Migration of complex asset classes",
-    "Table usage analytics for grid-wide monitoring",
-    "Legacy-to-MongoDB data validation frameworks"
+    "Semantic model design",
+    "Peer Bank Analysis Dashboard",
+    "Portfolio-wide performance reporting"
+   ]
+  },
+  {
+   "name": "Workflow Automation",
+   "category": "engineering",
+   "strength": 0.9,
+   "evidence": [
+    "Migration impact discovery reduction",
+    "Pricing workflow automation",
+    "Document processing pipelines"
    ]
   },
   {
@@ -36,59 +47,49 @@
    "category": "engineering",
    "strength": 0.85,
    "evidence": [
-    "Containerized scraping systems as APIs",
-    "Deployed production transaction-detection services on OpenShift",
-    "Built custom XMLA/OAuth2 transport layer"
+    "Deployment on OpenShift/Kubernetes",
+    "Containerization of scrapers",
+    "Production-grade microservices"
    ]
   },
   {
-   "name": "Docker / Kubernetes / OpenShift",
+   "name": "Docker/Kubernetes",
    "category": "engineering",
    "strength": 0.8,
    "evidence": [
-    "Deployed services with Helm",
-    "Managed policy-as-code and network governance gates",
-    "Containerized production ML serving"
+    "OpenShift deployment",
+    "Helm chart management",
+    "Containerizing legacy systems"
    ]
   },
   {
-   "name": "Process Automation",
-   "category": "engineering",
-   "strength": 0.9,
-   "evidence": [
-    "Automated manual pricing workflows (3+ hours daily savings)",
-    "Multi-scraper automation for loan file retrieval",
-    "Document process management remediation"
-   ]
-  },
-  {
-   "name": "Data Modeling",
+   "name": "Agentic & RAG Architectures",
    "category": "analytics",
    "strength": 0.75,
    "evidence": [
-    "Semantic model architecture in Power BI",
-    "Data validation frameworks for asset class migrations",
-    "Back-testing and integration of M&A datasets"
+    "Token-budget optimization research",
+    "Copilot orchestration tools",
+    "Enterprise security/cost modeling"
    ]
   },
   {
-   "name": "Agentic & RAG Architecture",
-   "category": "engineering",
+   "name": "Data Architecture",
+   "category": "analytics",
    "strength": 0.75,
    "evidence": [
-    "Established cost-model patterns for enterprise RAG",
-    "Built autonomous career agent and job-matching pipelines",
-    "Implemented agentic workflows for PBI model orchestration"
+    "Legacy migration frameworks",
+    "Model risk management (SR 11-7)",
+    "Version control/reproducibility overhaul"
    ]
   },
   {
-   "name": "CI/CD Pipelines",
+   "name": "Git & CI/CD",
    "category": "tools",
-   "strength": 0.75,
+   "strength": 0.85,
    "evidence": [
-    "Clearing enterprise governance gates",
-    "Git version control for enterprise tool distribution",
-    "Automated deployment of REST APIs"
+    "Helm-based deployment pipelines",
+    "Production policy-as-code",
+    "GitHub Actions workflows"
    ]
   },
   {
@@ -96,47 +97,49 @@
    "category": "analytics",
    "strength": 0.8,
    "evidence": [
-    "CECL reserve forecasting for $70B portfolio",
-    "Elasticity research for pricing teams",
-    "Competitor stress analysis"
+    "Mortgage reserve forecasting",
+    "Elasticity research",
+    "Back-testing/Performance monitoring"
    ]
   },
   {
-   "name": "Data Validation Frameworks",
+   "name": "Selenium/Headless Browsers",
    "category": "engineering",
-   "strength": 0.8,
+   "strength": 0.75,
    "evidence": [
-    "Parameterized reconciliation across MongoDB/SOM DI/OLNACS",
-    "Migration of 1,930 data fields with 207 business-critical fields"
+    "High-throughput scraper orchestration",
+    "POC automation workflows"
    ]
   },
   {
-   "name": "Selenium / Headless Browsers",
-   "category": "tools",
-   "strength": 0.7,
-   "evidence": [
-    "Proof-of-concept scraper for document sourcing",
-    "Transitioned to high-throughput API headless browser connection"
-   ]
-  },
-  {
-   "name": "JavaScript / Node.js",
+   "name": "Internal Tooling/DevEx",
    "category": "engineering",
-   "strength": 0.65,
+   "strength": 0.9,
    "evidence": [
-    "Built ccred CLI for GitHub Copilot credit efficiency tracking",
-    "Zero-runtime dependency toolchain development"
+    "twiceMeasured framework",
+    "Python CLI development",
+    "Copilot credit-tracking tools"
+   ]
+  },
+  {
+   "name": "Stakeholder Enablement",
+   "category": "domain",
+   "strength": 0.75,
+   "evidence": [
+    "Requirements gathering",
+    "Alert fatigue reduction project",
+    "Dashboard reporting for executives"
    ]
   }
  ],
  "target_titles": [
-  "Senior Business Analytics Engineer",
-  "Analytics Engineer (Internal Tooling)",
-  "Senior Data Automation Engineer",
-  "Technical Product Manager (Data Platforms)",
-  "AI/ML Operations Engineer"
+  "Senior Business Intelligence Developer",
+  "Analytics Engineer",
+  "Internal Tools Developer",
+  "Technical Product Manager (Data/Platform)",
+  "Automation Engineer"
  ],
- "version": "d07b68caf711",
+ "version": "6ddc095f9575",
  "remote_only": true,
- "generated_at": "2026-09-02T15:11:12.168489+00:00"
+ "generated_at": "2026-09-03T15:04:56.975889+00:00"
 }
