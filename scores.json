@@ -2322,27 +2322,6 @@
   "heuristic": false,
   "scored_at": "2026-09-04T15:03:55.456686+00:00"
  },
- "2b04b0ed1f0cac9097d9db83736851b3f62fe204": {
-  "profile_version": "6ddc095f9575",
-  "match_score": 35,
-  "confidence": 0.8,
-  "why": "Strong skill match but violates location (NYC) and salary ($200/yr looks like a typo, but implies ambiguity).",
-  "seniority_fit": "target",
-  "role_family": "Analytics & Data Engineering",
-  "matched_skills": [
-   "SQL",
-   "Docker/Kubernetes",
-   "Data Architecture"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Emphasize Snowflake/Databricks expertise"
-  ],
-  "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.5469,
-  "heuristic": false,
-  "scored_at": "2026-09-03T15:06:13.909981+00:00"
- },
  "6600325ab440cbf28c70a35eb3b0e83cfea3bb73": {
   "profile_version": "86f87384cc45",
   "match_score": 50,
@@ -2446,28 +2425,6 @@
   "prefilter": 0.5094,
   "heuristic": false,
   "scored_at": "2026-09-02T15:12:36.796943+00:00"
- },
- "4b5566bd56ab70b21233e55e3464315de924e65b": {
-  "profile_version": "86f87384cc45",
-  "match_score": 75,
-  "confidence": 0.85,
-  "why": "Good fit for the level and technical stack, with strong overlap in data foundation building for compliance operations.",
-  "seniority_fit": "target",
-  "role_family": "Analytics & Data Engineering",
-  "matched_skills": [
-   "Python",
-   "SQL",
-   "Data Modeling",
-   "CI/CD Pipelines"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Highlight cross-functional work with compliance and operations stakeholders."
-  ],
-  "sector": "Fintech",
-  "prefilter": 0.5379,
-  "heuristic": false,
-  "scored_at": "2026-09-04T15:03:55.456686+00:00"
  },
  "7c8463dcc59bc7af37bcbe03f47959de35e2b2ff": {
   "profile_version": "86f87384cc45",
@@ -2575,29 +2532,6 @@
   "heuristic": false,
   "scored_at": "2026-09-03T15:06:13.909981+00:00"
  },
- "ee740398fa57079f5e45857af57c5427e0cfeea5": {
-  "profile_version": "86f87384cc45",
-  "match_score": 80,
-  "confidence": 0.9,
-  "why": "Strong alignment with the candidate's background in revenue analytics and AI enablement. Salary is competitive for this level.",
-  "seniority_fit": "stretch",
-  "role_family": "Analytics & Data Engineering",
-  "matched_skills": [
-   "Python",
-   "SQL",
-   "Data Modeling",
-   "Agentic & RAG Architecture",
-   "Process Automation"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Quantify impact on revenue modeling and automated workflows."
-  ],
-  "sector": "Fintech",
-  "prefilter": 0.5339,
-  "heuristic": false,
-  "scored_at": "2026-09-04T15:03:55.456686+00:00"
- },
  "fd922646374ac1eff2bd2ebcd1dac5233f468cbb": {
   "profile_version": "86f87384cc45",
   "match_score": 70,
@@ -2685,5 +2619,96 @@
   "prefilter": 0.5139,
   "heuristic": false,
   "scored_at": "2026-09-04T15:03:55.456686+00:00"
+ },
+ "aa17ae8297081685782683a772a33fd1163f5f4d": {
+  "profile_version": "86f87384cc45",
+  "match_score": 88,
+  "confidence": 0.9,
+  "why": "This role aligns perfectly with Michael's background in enterprise tooling and high-growth environments. The focus on GTM analytics and AI-driven platforms directly leverages his expertise in Python frameworks and agentic/RAG architectures.",
+  "seniority_fit": "target",
+  "role_family": "Business & Data Analytics",
+  "matched_skills": [
+   "Python",
+   "SQL"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Highlight experience with GTM-specific metrics and data-driven business process optimization.",
+   "Emphasize past projects involving AI-integrated CRM or sales-enablement tools."
+  ],
+  "sector": "Enterprise SaaS/DevTools",
+  "prefilter": 0.5304,
+  "heuristic": false,
+  "scored_at": "2026-09-05T13:57:43.480840+00:00"
+ },
+ "bc1ff0868bd5cf6012e22c10e3ccbf957c8d2ac0": {
+  "profile_version": "86f87384cc45",
+  "match_score": 65,
+  "confidence": 0.8,
+  "why": "While the skill set is a strong match, the salary floor is slightly lower than the target, and the requirement for in-person meetings once a month violates the fully-remote constraint.",
+  "seniority_fit": "target",
+  "role_family": "Business & Data Analytics",
+  "matched_skills": [
+   "Python",
+   "Power BI",
+   "SQL"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Ensure your data modeling experience is emphasized to meet the ETL/ELT focus.",
+   "Highlight agile cross-functional collaboration successes."
+  ],
+  "sector": "Consulting",
+  "prefilter": 0.5302,
+  "heuristic": false,
+  "scored_at": "2026-09-05T13:57:43.480840+00:00"
+ },
+ "38fd3bdc705e969d63ea8657b4b73610f18d9713": {
+  "profile_version": "86f87384cc45",
+  "match_score": 45,
+  "confidence": 0.7,
+  "why": "This is a business-centric BA role that lacks the heavy engineering/dev-tooling focus of Michael's current expertise, representing a move away from his preferred technical stack.",
+  "seniority_fit": "target",
+  "role_family": "Solutions & Technical Consulting",
+  "matched_skills": [
+   "SQL"
+  ],
+  "missing_skills": [
+   "Financial Crime/AML domain knowledge"
+  ],
+  "resume_suggestions": [
+   "Focus on projects involving complex system requirements gathering if pursuing this path.",
+   "De-emphasize raw engineering if applying for non-technical BA roles."
+  ],
+  "sector": "Consulting",
+  "prefilter": 0.522,
+  "heuristic": false,
+  "scored_at": "2026-09-05T13:57:43.480840+00:00"
+ },
+ "6960211798bc9bde70aec7602682922d1c94d241": {
+  "profile_version": "86f87384cc45",
+  "match_score": 40,
+  "confidence": 0.85,
+  "why": "This is a 'Senior' role at a high-intensity firm where 'Senior' often implies 6-8+ years of experience in market data engineering; it is likely a material stretch beyond the 4-year mark.",
+  "seniority_fit": "stretch",
+  "role_family": "Analytics & Data Engineering",
+  "matched_skills": [
+   "Python",
+   "SQL",
+   "Docker / Kubernetes / OpenShift",
+   "CI/CD Pipelines"
+  ],
+  "missing_skills": [
+   "Low-latency market data processing",
+   "High-frequency trading system experience"
+  ],
+  "resume_suggestions": [
+   "If applying, quantify the latency/performance metrics of your current high-throughput Python frameworks.",
+   "Emphasize architectural decision-making experience rather than just implementation."
+  ],
+  "sector": "Fintech",
+  "prefilter": 0.5094,
+  "heuristic": false,
+  "scored_at": "2026-09-05T13:57:43.480840+00:00"
  }
 }
