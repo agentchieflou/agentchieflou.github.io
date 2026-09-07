@@ -2864,26 +2864,6 @@
   "heuristic": false,
   "scored_at": "2026-09-06T14:18:02.114842+00:00"
  },
- "86db59ca7ffea39cd2d512ecb9db6f337d750af3": {
-  "profile_version": "21a4299d92a0",
-  "match_score": 70,
-  "confidence": 0.85,
-  "why": "Strong solution engineering role in communication/AI space.",
-  "seniority_fit": "stretch",
-  "role_family": "Solutions & Technical Consulting",
-  "matched_skills": [
-   "REST API Development",
-   "Python"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Highlight the agentic AI capabilities you've implemented."
-  ],
-  "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.509,
-  "heuristic": false,
-  "scored_at": "2026-09-06T14:18:02.114842+00:00"
- },
  "ebaa211bacd480bb49efb5b75ab762c68ecdf065": {
   "profile_version": "21a4299d92a0",
   "match_score": 60,
@@ -2925,5 +2905,31 @@
   "prefilter": 0.5062,
   "heuristic": false,
   "scored_at": "2026-09-06T14:18:02.114842+00:00"
+ },
+ "7b0e6d0e129f036399cf4b9b867ed61229f1ee0d": {
+  "profile_version": "21a4299d92a0",
+  "match_score": 85,
+  "confidence": 0.9,
+  "why": "The role perfectly aligns with your experience in building custom Python tooling and agentic architectures for internal platform optimization. Your background in data modeling and infrastructure is highly relevant to PostHog's data warehouse and autonomous AI agent ecosystem.",
+  "seniority_fit": "stretch",
+  "role_family": "Process Optimization & Business Operations",
+  "matched_skills": [
+   "Python",
+   "Docker/Kubernetes",
+   "Agentic Architecture",
+   "Data Modeling",
+   "REST API Development"
+  ],
+  "missing_skills": [
+   "ClickHouse specific internals"
+  ],
+  "resume_suggestions": [
+   "Emphasize your 'headless' infrastructure projects to highlight your ability to build tools for autonomous agent consumption.",
+   "Highlight specific instances where you built internal developer platforms that improved stakeholder self-sufficiency."
+  ],
+  "sector": "Enterprise SaaS/DevTools",
+  "prefilter": 0.5054,
+  "heuristic": false,
+  "scored_at": "2026-09-07T16:35:10.818759+00:00"
  }
 }
