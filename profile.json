@@ -1,15 +1,15 @@
 {
- "summary": "Technical Business Analyst and developer with four years of experience optimizing enterprise workflows through custom Python tooling and automated data systems. Proven ability to build 'headless' infrastructure that replaces heavy proprietary software, significantly reducing operational overhead and migration costs. Passionate about LLM agentic architecture and building developer-centric internal platforms that enable stakeholder self-sufficiency.",
+ "summary": "Michael is a technically-adept Business Analytics Consultant with four years of experience driving enterprise-scale process optimization and internal tool development. He excels at bridging the gap between business requirements and scalable engineering solutions, evidenced by his work on bank-wide Python tooling and automated data validation frameworks. He is a pragmatic builder who leverages agentic architectures and custom software to eliminate operational debt, reduce costs, and modernize legacy workflows.",
  "skills": [
   {
    "name": "Python",
    "category": "engineering",
    "strength": 0.95,
    "evidence": [
-    "Enterprise Python packaging",
-    "API orchestration",
-    "Automated scraper suites",
-    "CLI tool development"
+    "Enterprise-wide package maintenance",
+    "REST API development",
+    "High-throughput scrapers",
+    "Custom toolchain development for PBI"
    ]
   },
   {
@@ -17,9 +17,9 @@
    "category": "analytics",
    "strength": 0.9,
    "evidence": [
-    "Grid-wide table analytics",
-    "Parameterized data validation frameworks",
-    "Query performance optimization"
+    "Complex data modeling",
+    "Grid-wide telemetry analytics",
+    "Production API data retrieval"
    ]
   },
   {
@@ -27,9 +27,9 @@
    "category": "analytics",
    "strength": 0.85,
    "evidence": [
-    "Semantic model design",
-    "Portfolio-wide reporting dashboards",
-    "Competitive benchmarking tools"
+    "Semantic model architecture",
+    "Peer bank analysis dashboards",
+    "Custom toolchain development for PBI management"
    ]
   },
   {
@@ -37,58 +37,59 @@
    "category": "engineering",
    "strength": 0.9,
    "evidence": [
-    "Headless browser automation",
-    "Workflow orchestration",
-    "Reduction of manual pricing and reporting tasks"
+    "Mainframe migration framework",
+    "Document sourcing orchestration",
+    "Automated pricing workflows"
    ]
   },
   {
    "name": "REST API Development",
    "category": "engineering",
-   "strength": 0.85,
+   "strength": 0.8,
    "evidence": [
-    "OpenShift/Helm deployment",
+    "OpenShift/Helm deployments",
     "Production ML serving APIs",
     "Internal developer tooling"
    ]
   },
   {
-   "name": "Docker/Kubernetes",
-   "category": "tools",
-   "strength": 0.8,
+   "name": "Data Modeling",
+   "category": "analytics",
+   "strength": 0.75,
    "evidence": [
-    "Containerizing scrapers",
-    "OpenShift service deployments",
-    "Policy-as-code adherence"
+    "Asset class migration",
+    "Semantic model design",
+    "Integration of disparate data sources"
+   ]
+  },
+  {
+   "name": "Kubernetes/OpenShift",
+   "category": "engineering",
+   "strength": 0.75,
+   "evidence": [
+    "Helm chart management",
+    "Production container orchestration",
+    "Policy-as-code deployments"
+   ]
+  },
+  {
+   "name": "CI/CD",
+   "category": "engineering",
+   "strength": 0.7,
+   "evidence": [
+    "GitHub Actions orchestration",
+    "Production pipeline compliance",
+    "Enterprise release governance"
    ]
   },
   {
    "name": "Agentic Architecture",
    "category": "engineering",
-   "strength": 0.75,
+   "strength": 0.7,
    "evidence": [
-    "Copilot orchestration tools",
-    "RAG cost-model evaluation",
-    "MCP server development"
-   ]
-  },
-  {
-   "name": "Data Modeling",
-   "category": "analytics",
-   "strength": 0.8,
-   "evidence": [
-    "Asset class migration",
-    "Semantic model architecture",
-    "Model risk management (SR 11-7)"
-   ]
-  },
-  {
-   "name": "CI/CD",
-   "category": "tools",
-   "strength": 0.75,
-   "evidence": [
-    "Enterprise-restricted environment deployments",
-    "Automated testing workflows"
+    "Copilot orchestration tool development",
+    "RAG cost-budget modeling",
+    "MCP server implementation"
    ]
   },
   {
@@ -98,37 +99,67 @@
    "evidence": [
     "CECL reserve forecasting",
     "Pricing elasticity research",
-    "Stress analysis"
+    "Model risk management (SR 11-7)"
    ]
   },
   {
-   "name": "Infrastructure as Code",
+   "name": "Docker",
+   "category": "engineering",
+   "strength": 0.75,
+   "evidence": [
+    "Tool containerization",
+    "Environment parity across dev/prod",
+    "Restricted network governance"
+   ]
+  },
+  {
+   "name": "Data Engineering",
    "category": "engineering",
    "strength": 0.7,
    "evidence": [
-    "TMDL/TMSL tooling",
-    "Version control overhauls",
-    "Deployment planning automation"
+    "Grid-wide table usage analytics",
+    "Python-based data validation frameworks",
+    "Scraping orchestrators"
    ]
   },
   {
-   "name": "Git",
-   "category": "tools",
+   "name": "Git/Version Control",
+   "category": "engineering",
    "strength": 0.85,
    "evidence": [
-    "Active open-source maintenance",
-    "Team-wide version control standards"
+    "Enterprise-wide repo maintenance",
+    "Advanced branching strategies",
+    "Toolchain versioning"
+   ]
+  },
+  {
+   "name": "JavaScript/Node.js",
+   "category": "engineering",
+   "strength": 0.65,
+   "evidence": [
+    "Copilot credit tracker implementation",
+    "npm-linked CLI tooling"
+   ]
+  },
+  {
+   "name": "Stakeholder Enablement",
+   "category": "domain",
+   "strength": 0.8,
+   "evidence": [
+    "Migration impact discovery reduction",
+    "Internal developer tooling training",
+    "Executive-level reporting"
    ]
   }
  ],
  "target_titles": [
-  "Senior Business Intelligence Engineer",
-  "Analytics Engineer",
-  "Technical Product Manager (Internal Platforms)",
-  "Automation Engineer",
-  "Decision Support Lead"
+  "Analytics Engineering Manager",
+  "Senior Business Intelligence Developer",
+  "Analytics Operations Lead",
+  "Senior Data Product Manager",
+  "Process Automation Engineer"
  ],
- "version": "21a4299d92a0",
+ "version": "2c074391722f",
  "remote_only": true,
- "generated_at": "2026-09-06T14:17:10.379709+00:00"
+ "generated_at": "2026-09-08T15:13:03.480908+00:00"
 }

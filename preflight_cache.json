@@ -927,5 +927,72 @@
   ],
   "blockers": [],
   "v": 4
+ },
+ "723fdd54876ec8b629ddacfa92d961e5dd8d9928": {
+  "total": 12,
+  "standing": 9,
+  "specific": [],
+  "uploads": [
+   "Resume/CV",
+   "Cover Letter",
+   "Upload anything"
+  ],
+  "blockers": [],
+  "v": 4
+ },
+ "a3a2ed38ebe307db8db17c9fa81cf5ce2b1afbaa": {
+  "total": 20,
+  "standing": 13,
+  "specific": [
+   {
+    "q": "Pronouns",
+    "options": [
+     "He/him/his",
+     "She/her/hers",
+     "They/them/theirs",
+     "My pronouns are not listed",
+     "I prefer not to say",
+     "I prefer to self describe"
+    ]
+   }
+  ],
+  "uploads": [
+   "Resume/CV",
+   "Cover Letter"
+  ],
+  "blockers": [],
+  "v": 4
+ },
+ "109767ceb16ce844e011854353ea43217f8cc65e": {
+  "total": 14,
+  "standing": 9,
+  "specific": [
+   {
+    "q": "Applicant Privacy Notice",
+    "options": [
+     "I acknowledge receipt of the Applicant Privacy Notice."
+    ]
+   },
+   {
+    "q": "Do you know anyone who works at Smartsheet?",
+    "options": []
+   },
+   {
+    "q": "In our pursuit of AI-driven advancements, how would you rate your overall familiarity with artificial intelligence (AI) concepts and tools?",
+    "options": [
+     "1 - Not familiar at all",
+     "2 - Slightly familiar (e.g., have read about AI but no hands",
+     "3 - Moderately familiar (e.g., used AI tools like ChatGPT, G",
+     "4 - Very familiar (e.g., regularly incorporate AI tools pers",
+     "5 - Expert level (e.g., build or train AI models, work with "
+    ]
+   }
+  ],
+  "uploads": [
+   "Resume/CV",
+   "Cover Letter"
+  ],
+  "blockers": [],
+  "v": 4
  }
 }
