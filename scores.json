@@ -21,52 +21,49 @@
   "scored_at": "2026-09-09T15:13:59.712026+00:00"
  },
  "b0d94b3c537784c825d6012a4e465f6363d64766": {
-  "profile_version": "41e0def99680",
-  "match_score": 75,
-  "confidence": 0.8,
-  "why": "Strong analytic role; candidate's quantitative analytics and SQL skills are highly relevant.",
+  "profile_version": "ac71b866715b",
+  "match_score": 85,
+  "confidence": 0.9,
+  "why": "Fits the candidate's analytics experience within a financial/operational framework, specifically leveraging ML/calibration modeling.",
   "seniority_fit": "target",
   "role_family": "Analytics & Data Engineering",
   "matched_skills": [
+   "Python",
    "SQL",
-   "Quantitative Analytics",
-   "Python"
+   "Quantitative Analytics"
   ],
-  "missing_skills": [
-   "Data Science (Research-heavy)"
-  ],
+  "missing_skills": [],
   "resume_suggestions": [
-   "Highlight financial impact of previous analytics projects.",
-   "Emphasize Revenue-facing metrics ownership."
+   "Highlight experience with CX/Revenue modeling.",
+   "Emphasize experimentation impact."
   ],
   "sector": "Fintech",
-  "prefilter": 0.5303,
+  "prefilter": 0.515,
   "heuristic": false,
-  "scored_at": "2026-09-09T15:13:59.712026+00:00"
+  "scored_at": "2026-09-10T15:06:24.746435+00:00"
  },
  "91cff4d7b70ef0c1c832028971ebd7980a0a39b2": {
-  "profile_version": "41e0def99680",
-  "match_score": 80,
-  "confidence": 0.8,
-  "why": "Strong alignment with infrastructure for internal tools and AI support systems.",
+  "profile_version": "ac71b866715b",
+  "match_score": 55,
+  "confidence": 0.85,
+  "why": "TPM role focusing on knowledge systems and AI-assisted support; it aligns with the candidate's desire to build developer/internal tools.",
   "seniority_fit": "target",
   "role_family": "Technical Strategy & Product",
   "matched_skills": [
-   "Workflow Automation",
-   "REST API Development",
-   "Python"
+   "AI/LLM Operations",
+   "Stakeholder Enablement"
   ],
   "missing_skills": [
-   "Large-scale program management"
+   "Technical Program Management"
   ],
   "resume_suggestions": [
-   "Highlight your work in 'internal tools'.",
-   "Focus on how you power accurate knowledge systems."
+   "Focus on the 'internal tools' aspect of the role.",
+   "Highlight experience in building system infrastructure."
   ],
   "sector": "Fintech",
-  "prefilter": 0.5173,
+  "prefilter": 0.5285,
   "heuristic": false,
-  "scored_at": "2026-09-09T15:13:59.712026+00:00"
+  "scored_at": "2026-09-10T15:06:24.746435+00:00"
  },
  "00b57f7c758a953c0fb807c91239f646f06ad99c": {
   "profile_version": "21a4299d92a0",
@@ -89,51 +86,48 @@
   "scored_at": "2026-09-06T14:18:02.114842+00:00"
  },
  "2959fbfcc0f305f06a1daaab92c877cb4ba25e16": {
-  "profile_version": "41e0def99680",
-  "match_score": 65,
-  "confidence": 0.75,
-  "why": "Good fit for security/governance, but seniority and specialized TPM requirements are at the edge of the candidate's profile.",
+  "profile_version": "ac71b866715b",
+  "match_score": 50,
+  "confidence": 0.8,
+  "why": "While security-related, this is a TPM role, shifting away from the candidate's hands-on development core competency.",
   "seniority_fit": "stretch",
   "role_family": "Technical Strategy & Product",
   "matched_skills": [
-   "Python",
-   "SQL",
-   "CI/CD & Git"
+   "Process Automation"
   ],
   "missing_skills": [
-   "Compliance/Security certification background"
+   "Technical Program Management"
   ],
   "resume_suggestions": [
-   "Highlight experience building security-hardened developer tools.",
-   "Focus on cross-functional alignment projects."
+   "Highlight security-based automations you have built.",
+   "Emphasize risk/compliance project delivery."
   ],
   "sector": "AI/ML Infra",
-  "prefilter": 0.5307,
+  "prefilter": 0.5423,
   "heuristic": false,
-  "scored_at": "2026-09-09T15:13:59.712026+00:00"
+  "scored_at": "2026-09-10T15:06:24.746435+00:00"
  },
  "7ebd76624bf042c97da6963963c30afd2bf6895e": {
-  "profile_version": "41e0def99680",
-  "match_score": 92,
-  "confidence": 0.9,
-  "why": "Direct match for the candidate's specialization in multi-agent frameworks and workflow optimization.",
+  "profile_version": "ac71b866715b",
+  "match_score": 90,
+  "confidence": 0.95,
+  "why": "Strong alignment with multi-agent framework building and backend engineering, leveraging the candidate's Python and automation expertise.",
   "seniority_fit": "target",
   "role_family": "AI & Machine Learning",
   "matched_skills": [
    "Python",
-   "Workflow Automation",
-   "Agentic Architecture",
-   "REST API Development"
+   "Process Automation",
+   "AI/LLM Operations"
   ],
   "missing_skills": [],
   "resume_suggestions": [
-   "Feature specific multi-agent orchestration projects.",
-   "Highlight experience with LLM integration in workflow design."
+   "Include specific frameworks/architectures used for agentic systems.",
+   "Highlight backend scalability results."
   ],
-  "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.5352,
+  "sector": "AI/ML Infra",
+  "prefilter": 0.5339,
   "heuristic": false,
-  "scored_at": "2026-09-09T15:13:59.712026+00:00"
+  "scored_at": "2026-09-10T15:06:24.746435+00:00"
  },
  "8dc8f6f37abe5af60d0d4429d216584b4e5a7fcb": {
   "profile_version": "2d8f68683856",
@@ -330,26 +324,25 @@
   "scored_at": "2026-07-26T23:51:05.100980+00:00"
  },
  "05a61506404b3f10a7abae04f8fae73fcf78a5f8": {
-  "profile_version": "21a4299d92a0",
-  "match_score": 80,
-  "confidence": 0.9,
-  "why": "Strong AI engineering role with direct relevance to LLM features.",
-  "seniority_fit": "stretch",
+  "profile_version": "ac71b866715b",
+  "match_score": 90,
+  "confidence": 0.95,
+  "why": "Direct fit for a Senior AI Engineer role focusing on product and feature delivery.",
+  "seniority_fit": "target",
   "role_family": "AI & Machine Learning",
   "matched_skills": [
    "Python",
-   "Agentic Architecture"
+   "AI/LLM Operations"
   ],
-  "missing_skills": [
-   "Machine Learning"
-  ],
+  "missing_skills": [],
   "resume_suggestions": [
-   "Highlight the technical backend aspects of your AI-enabled projects."
+   "Highlight your ability to deliver features that users actually see/touch.",
+   "Emphasize collaboration with design/product."
   ],
   "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.5153,
+  "prefilter": 0.5167,
   "heuristic": false,
-  "scored_at": "2026-09-06T14:18:02.114842+00:00"
+  "scored_at": "2026-09-10T15:06:24.746435+00:00"
  },
  "2eaec1a31080d1ff3550671f309fffa802186b66": {
   "profile_version": "9741a9d03e5e",
@@ -397,26 +390,26 @@
   "scored_at": "2026-07-26T23:51:05.100980+00:00"
  },
  "f0ffea56584027502d2af5171677c222f03476ba": {
-  "profile_version": "41e0def99680",
+  "profile_version": "ac71b866715b",
   "match_score": 90,
-  "confidence": 0.9,
-  "why": "Strong overlap with ClickUp's focus on AI platform engineering and LLM application.",
+  "confidence": 0.95,
+  "why": "Direct fit for a Senior AI Engineer role focusing on platform work and LLM applications.",
   "seniority_fit": "target",
   "role_family": "AI & Machine Learning",
   "matched_skills": [
    "Python",
-   "Agentic Architecture",
+   "AI/LLM Operations",
    "REST API Development"
   ],
   "missing_skills": [],
   "resume_suggestions": [
-   "Highlight AI agent infrastructure work.",
-   "Focus on backend systems for reliability and scale."
+   "Highlight experience with building secure and scalable AI backends.",
+   "Emphasize your AI-fluency and daily LLM usage."
   ],
   "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.5105,
+  "prefilter": 0.5269,
   "heuristic": false,
-  "scored_at": "2026-09-09T15:13:59.712026+00:00"
+  "scored_at": "2026-09-10T15:06:24.746435+00:00"
  },
  "8393dab1ca3d36207bd575c2fcba3f39979ebe26": {
   "profile_version": "1a45b9c8e6a3",
@@ -722,160 +715,161 @@
   "scored_at": "2026-07-26T13:53:43.707763+00:00"
  },
  "48f48a2040b18c98dece5eb6e42be573b21a3d3d": {
-  "profile_version": "41e0def99680",
+  "profile_version": "ac71b866715b",
   "match_score": 85,
-  "confidence": 0.85,
-  "why": "Strong alignment with agentic AI adoption on platform and B2B products.",
+  "confidence": 0.9,
+  "why": "Excellent alignment for a data-driven platform role, requiring strong analytics and ability to measure API/B2B outcomes.",
   "seniority_fit": "target",
   "role_family": "Analytics & Data Engineering",
   "matched_skills": [
-   "Agentic Architecture",
+   "Python",
+   "SQL",
+   "AI/LLM Operations",
+   "Data Modeling"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Highlight API/Platform metrics measurement experience.",
+   "Focus on cost/reliability analytics."
+  ],
+  "sector": "AI/ML Infra",
+  "prefilter": 0.5206,
+  "heuristic": false,
+  "scored_at": "2026-09-10T15:06:24.746435+00:00"
+ },
+ "55b2020f6d8571c1a6456e57908de0b274d310ce": {
+  "profile_version": "ac71b866715b",
+  "match_score": 40,
+  "confidence": 0.8,
+  "why": "The role is at a level (TPM) that focuses more on infrastructure program management rather than the hands-on engineering/tooling work where the candidate excels.",
+  "seniority_fit": "out-of-band",
+  "role_family": "Technical Strategy & Product",
+  "matched_skills": [
+   "Python"
+  ],
+  "missing_skills": [
+   "Technical Program Management",
+   "Infrastructure project management"
+  ],
+  "resume_suggestions": [
+   "Frame your internal tooling projects as 'infrastructure programs'.",
+   "Focus more on delivery and cross-team coordination."
+  ],
+  "sector": "AI/ML Infra",
+  "prefilter": 0.5509,
+  "heuristic": false,
+  "scored_at": "2026-09-10T15:06:24.746435+00:00"
+ },
+ "02e9c547f5f12a0c4cca5021cca2e398b6d6b524": {
+  "profile_version": "ac71b866715b",
+  "match_score": 85,
+  "confidence": 0.9,
+  "why": "Strong fit for a data science role with a focus on product measurement and application development in the AI space.",
+  "seniority_fit": "stretch",
+  "role_family": "Analytics & Data Engineering",
+  "matched_skills": [
+   "Python",
+   "SQL",
+   "Quantitative Analytics",
+   "AI/LLM Operations"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Highlight experience with product-focused data science.",
+   "Emphasize your role in product launch metrics."
+  ],
+  "sector": "AI/ML Infra",
+  "prefilter": 0.5106,
+  "heuristic": false,
+  "scored_at": "2026-09-10T15:06:24.746435+00:00"
+ },
+ "ac4fec408bf7b613b982ddb2f60d272518152b42": {
+  "profile_version": "ac71b866715b",
+  "match_score": 90,
+  "confidence": 0.9,
+  "why": "Strong overlap with data pipeline engineering and safety systems, aligning with the candidate's experience in building robust data architecture.",
+  "seniority_fit": "target",
+  "role_family": "Analytics & Data Engineering",
+  "matched_skills": [
    "Python",
    "SQL"
   ],
   "missing_skills": [],
   "resume_suggestions": [
-   "Highlight developer-success metric tracking.",
-   "Emphasize working with PMs/engineers on API product quality."
+   "Highlight experience with safety/integrity-focused data pipelines.",
+   "Focus on cross-functional collaboration with research/product."
   ],
   "sector": "AI/ML Infra",
-  "prefilter": 0.5146,
+  "prefilter": 0.5378,
   "heuristic": false,
-  "scored_at": "2026-09-09T15:13:59.712026+00:00"
- },
- "55b2020f6d8571c1a6456e57908de0b274d310ce": {
-  "profile_version": "41e0def99680",
-  "match_score": 70,
-  "confidence": 0.7,
-  "why": "Good technical overlap, but role is TPM and requires 5 years; at the upper bound of candidate's stretch capacity.",
-  "seniority_fit": "stretch",
-  "role_family": "Technical Strategy & Product",
-  "matched_skills": [
-   "Docker & Kubernetes/OpenShift",
-   "CI/CD & Git"
-  ],
-  "missing_skills": [
-   "TPM specific experience"
-  ],
-  "resume_suggestions": [
-   "Emphasize hardware-infrastructure knowledge if applicable.",
-   "Highlight large-scale cluster management experience."
-  ],
-  "sector": "AI/ML Infra",
-  "prefilter": 0.5322,
-  "heuristic": false,
-  "scored_at": "2026-09-09T15:13:59.712026+00:00"
- },
- "02e9c547f5f12a0c4cca5021cca2e398b6d6b524": {
-  "profile_version": "21a4299d92a0",
-  "match_score": 80,
-  "confidence": 0.9,
-  "why": "Strong data science/analytics match for a product-focused team.",
-  "seniority_fit": "stretch",
-  "role_family": "Analytics & Data Engineering",
-  "matched_skills": [
-   "Python",
-   "SQL",
-   "Quantitative Analytics"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Highlight the metrics and experimentation results you've influenced."
-  ],
-  "sector": "AI/ML Infra",
-  "prefilter": 0.5058,
-  "heuristic": false,
-  "scored_at": "2026-09-06T14:18:02.114842+00:00"
- },
- "ac4fec408bf7b613b982ddb2f60d272518152b42": {
-  "profile_version": "41e0def99680",
-  "match_score": 75,
-  "confidence": 0.8,
-  "why": "High-tier organization with a focus on data platforms, but role is strictly San Francisco-based.",
-  "seniority_fit": "target",
-  "role_family": "Analytics & Data Engineering",
-  "matched_skills": [
-   "Python",
-   "SQL",
-   "CI/CD & Git",
-   "Data Modeling"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Emphasize building scalable data products for high-impact teams.",
-   "Highlight work in safety/compliance-oriented data systems."
-  ],
-  "sector": "AI/ML Infra",
-  "prefilter": 0.5356,
-  "heuristic": false,
-  "scored_at": "2026-09-09T15:13:59.712026+00:00"
+  "scored_at": "2026-09-10T15:06:24.746435+00:00"
  },
  "8fc1ed3a62c6a2f03589623cb788602e02a44aa2": {
-  "profile_version": "86f87384cc45",
-  "match_score": 95,
+  "profile_version": "ac71b866715b",
+  "match_score": 90,
   "confidence": 0.95,
-  "why": "Near-perfect fit for agentic architecture skills and backend engineering expertise. Salary and role level align well.",
+  "why": "Strong alignment with Agentic AI and research/engineering, leveraging the candidate's technical skills.",
   "seniority_fit": "target",
   "role_family": "AI & Machine Learning",
   "matched_skills": [
    "Python",
-   "Agentic & RAG Architecture",
-   "CI/CD Pipelines"
+   "AI/LLM Operations"
   ],
   "missing_skills": [],
   "resume_suggestions": [
-   "Highlight RL-specific or model training infrastructure experience."
+   "Highlight experience with reinforcement learning or data foundation work.",
+   "Focus on research-oriented problem solving."
   ],
   "sector": "AI/ML Infra",
-  "prefilter": 0.5249,
+  "prefilter": 0.5148,
   "heuristic": false,
-  "scored_at": "2026-09-04T15:03:55.456686+00:00"
+  "scored_at": "2026-09-10T15:06:24.746435+00:00"
  },
  "43aeb8c15f3a3fc67949f4ee72e6b19a8dc7c5a3": {
-  "profile_version": "41e0def99680",
+  "profile_version": "ac71b866715b",
   "match_score": 85,
-  "confidence": 0.85,
-  "why": "Strong alignment with experimentation, revenue modeling, and data engineering foundations at OpenAI.",
+  "confidence": 0.9,
+  "why": "Fits the candidate's quantitative analytics and SQL/Python experience within a specialized financial engineering context.",
   "seniority_fit": "target",
   "role_family": "Analytics & Data Engineering",
   "matched_skills": [
    "Python",
    "SQL",
-   "Data Modeling",
-   "Quantitative Analytics"
+   "Quantitative Analytics",
+   "Data Modeling"
   ],
   "missing_skills": [],
   "resume_suggestions": [
-   "Highlight financial data pipeline experience.",
-   "Emphasize conversion/churn metrics ownership."
+   "Highlight experience with checkout/subscription metrics.",
+   "Emphasize experimentation and A/B testing."
   ],
-  "sector": "AI/ML Infra",
-  "prefilter": 0.515,
+  "sector": "Fintech",
+  "prefilter": 0.5332,
   "heuristic": false,
-  "scored_at": "2026-09-09T15:13:59.712026+00:00"
+  "scored_at": "2026-09-10T15:06:24.746435+00:00"
  },
  "9f48577d7e1fcf2cd94b121823a41d7d55042818": {
-  "profile_version": "41e0def99680",
-  "match_score": 75,
-  "confidence": 0.8,
-  "why": "Strong fit for 'technical operator' roles that bridge research and production data acquisition.",
+  "profile_version": "ac71b866715b",
+  "match_score": 55,
+  "confidence": 0.85,
+  "why": "A research program management role that focuses on the data acquisition process; a good fit for operational/process automation experience.",
   "seniority_fit": "target",
   "role_family": "Technical Strategy & Product",
   "matched_skills": [
-   "Python",
-   "Data Modeling"
+   "Process Automation",
+   "Stakeholder Enablement"
   ],
   "missing_skills": [
-   "Data Acquisition strategy"
+   "Program Management"
   ],
   "resume_suggestions": [
-   "Highlight experience defining success criteria for data projects.",
-   "Emphasize the bridge between research and production."
+   "Highlight technical project/research coordination.",
+   "Emphasize experience building data workflows."
   ],
   "sector": "AI/ML Infra",
-  "prefilter": 0.5091,
+  "prefilter": 0.5135,
   "heuristic": false,
-  "scored_at": "2026-09-09T15:13:59.712026+00:00"
+  "scored_at": "2026-09-10T15:06:24.746435+00:00"
  },
  "a14694178d77cf89bfdc6354ec8bee8d959fd9da": {
   "profile_version": "21a4299d92a0",
@@ -899,48 +893,46 @@
   "scored_at": "2026-09-06T14:18:02.114842+00:00"
  },
  "0dac8e1a52213bf471d91cb92b84813daf1c16ce": {
-  "profile_version": "41e0def99680",
+  "profile_version": "ac71b866715b",
   "match_score": 85,
-  "confidence": 0.85,
-  "why": "Strong research/engineering hybrid fit focusing on data foundations for agentic systems.",
+  "confidence": 0.9,
+  "why": "Fits the data foundation and AI research engineering aspects well, which are central to the candidate's expertise.",
   "seniority_fit": "target",
   "role_family": "AI & Machine Learning",
   "matched_skills": [
    "Python",
-   "Data Modeling",
-   "Agentic Architecture"
+   "AI/LLM Operations"
   ],
   "missing_skills": [],
   "resume_suggestions": [
-   "Highlight experience with data pipelines for generative AI.",
-   "Emphasize research-engineering collaboration."
+   "Focus on the agentic-data and foundation-building aspects of your resume.",
+   "Highlight cutting-edge research experience."
   ],
   "sector": "AI/ML Infra",
-  "prefilter": 0.5041,
+  "prefilter": 0.5132,
   "heuristic": false,
-  "scored_at": "2026-09-09T15:13:59.712026+00:00"
+  "scored_at": "2026-09-10T15:06:24.746435+00:00"
  },
  "9afb06ec119d0344ec52c06af3284aaaba58a7d5": {
-  "profile_version": "21a4299d92a0",
-  "match_score": 65,
-  "confidence": 0.85,
-  "why": "Interesting role at the intersection of ML and enterprise systems; might be a stretch technically.",
-  "seniority_fit": "stretch",
+  "profile_version": "ac71b866715b",
+  "match_score": 85,
+  "confidence": 0.9,
+  "why": "Relevant to post-training and agent-based ML systems, which aligns with the candidate's technical skills.",
+  "seniority_fit": "target",
   "role_family": "AI & Machine Learning",
   "matched_skills": [
    "Python",
-   "Agentic Architecture"
+   "AI/LLM Operations"
   ],
-  "missing_skills": [
-   "Machine Learning"
-  ],
+  "missing_skills": [],
   "resume_suggestions": [
-   "Frame your background as a 'systems-focused engineer building AI capabilities'."
+   "Highlight any ML research or algorithm optimization work.",
+   "Focus on scaling data-heavy systems."
   ],
   "sector": "AI/ML Infra",
-  "prefilter": 0.5071,
+  "prefilter": 0.5228,
   "heuristic": false,
-  "scored_at": "2026-09-06T14:18:02.114842+00:00"
+  "scored_at": "2026-09-10T15:06:24.746435+00:00"
  },
  "5a58ec7efed0dc3be10a05aa69d5904817181f78": {
   "profile_version": "6ddc095f9575",
@@ -964,50 +956,49 @@
   "scored_at": "2026-09-03T15:06:13.909981+00:00"
  },
  "74873e6753a853c0dd2b2e0ba2589e9e58e6850d": {
-  "profile_version": "098ec1c50043",
-  "match_score": 75,
+  "profile_version": "ac71b866715b",
+  "match_score": 50,
   "confidence": 0.85,
-  "why": "Fits your profile for managing complex infrastructure programs; the company's focus on inference and dev-tooling is right in your wheelhouse.",
+  "why": "A technical program manager role focusing on infrastructure, which relies on the candidate's understanding of technical systems despite not being a pure engineering role.",
   "seniority_fit": "target",
   "role_family": "Technical Strategy & Product",
   "matched_skills": [
-   "Data Engineering",
-   "Process Optimization",
-   "Requirements Gathering"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Emphasize your work on high-performance infrastructure.",
-   "Highlight how you drive 'cross-cutting' projects to completion."
-  ],
-  "sector": "AI/ML Infra",
-  "prefilter": 0.5086,
-  "heuristic": false,
-  "scored_at": "2026-08-24T11:52:08.694643+00:00"
- },
- "1f7bd9e8739ea8c6ef888de0930690a36c95d8d7": {
-  "profile_version": "098ec1c50043",
-  "match_score": 60,
-  "confidence": 0.7,
-  "why": "Your background in tooling and process optimization makes you a good fit for product-led growth, but this is a pivot from a technical engineer to a PM role.",
-  "seniority_fit": "target",
-  "role_family": "Technical Strategy & Product",
-  "matched_skills": [
-   "Requirements Gathering",
-   "Process Optimization",
-   "Data Visualization"
+   "Docker/Kubernetes",
+   "AI/LLM Operations"
   ],
   "missing_skills": [
-   "Product Roadmap Strategy"
+   "Technical Program Management"
   ],
   "resume_suggestions": [
-   "Highlight past 'product-thinking' in your developer tooling projects.",
-   "Emphasize how you've measured success in previous automation deployments."
+   "Highlight experience with infrastructure projects.",
+   "Emphasize your technical understanding of AI inference platforms."
+  ],
+  "sector": "AI/ML Infra",
+  "prefilter": 0.5132,
+  "heuristic": false,
+  "scored_at": "2026-09-10T15:06:24.746435+00:00"
+ },
+ "1f7bd9e8739ea8c6ef888de0930690a36c95d8d7": {
+  "profile_version": "ac71b866715b",
+  "match_score": 65,
+  "confidence": 0.85,
+  "why": "AI-focused PM role that allows for technical product influence, though it is a transition away from a pure engineering career path.",
+  "seniority_fit": "stretch",
+  "role_family": "Technical Strategy & Product",
+  "matched_skills": [
+   "AI/LLM Operations"
+  ],
+  "missing_skills": [
+   "Product Management"
+  ],
+  "resume_suggestions": [
+   "Highlight technical experience as a basis for product decisions.",
+   "Emphasize growth/data-driven metric management."
   ],
   "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.5151,
+  "prefilter": 0.5229,
   "heuristic": false,
-  "scored_at": "2026-08-24T11:52:08.694643+00:00"
+  "scored_at": "2026-09-10T15:06:24.746435+00:00"
  },
  "977285f3b4fc2d2e05bbf4b19773bc02fe7cbd84": {
   "profile_version": "86f87384cc45",
@@ -1098,27 +1089,26 @@
   "scored_at": "2026-09-03T15:06:13.909981+00:00"
  },
  "fd2e962c12fa2b866f34caf95b44a7e0f5962846": {
-  "profile_version": "41e0def99680",
+  "profile_version": "ac71b866715b",
   "match_score": 90,
-  "confidence": 0.9,
-  "why": "The mandate here is literally 'build data products for IT controls/automation', which is exactly what the candidate excels at.",
+  "confidence": 0.95,
+  "why": "Fits the candidate's desire to build internal tooling and automated systems for IT controls, directly utilizing Python/SQL skills.",
   "seniority_fit": "target",
   "role_family": "Analytics & Data Engineering",
   "matched_skills": [
    "Python",
    "SQL",
-   "Workflow Automation",
-   "Data Modeling"
+   "Process Automation"
   ],
   "missing_skills": [],
   "resume_suggestions": [
-   "Highlight automation projects that resulted in 'repeatable/defensible' evidence.",
-   "Emphasize data product development."
+   "Highlight experience with building audit/compliance data tools.",
+   "Focus on automation of evidence collection."
   ],
   "sector": "AI/ML Infra",
-  "prefilter": 0.506,
+  "prefilter": 0.5201,
   "heuristic": false,
-  "scored_at": "2026-09-09T15:13:59.712026+00:00"
+  "scored_at": "2026-09-10T15:06:24.746435+00:00"
  },
  "26ad0e65a1b095105beecb0414585ba2e573e6e5": {
   "profile_version": "6ddc095f9575",
@@ -1241,26 +1231,26 @@
   "scored_at": "2026-09-09T15:13:59.712026+00:00"
  },
  "2ae8ea8bb7887e38719b0309d08a9e4156379230": {
-  "profile_version": "41e0def99680",
-  "match_score": 70,
-  "confidence": 0.75,
-  "why": "A solid match for operational planning, though potentially less technical than other roles on the list.",
-  "seniority_fit": "target",
+  "profile_version": "ac71b866715b",
+  "match_score": 40,
+  "confidence": 0.8,
+  "why": "This is a non-technical launch programs management role, missing the candidate's engineering/development core.",
+  "seniority_fit": "stretch",
   "role_family": "Technical Strategy & Product",
   "matched_skills": [
-   "CI/CD & Git"
+   "Stakeholder Enablement"
   ],
   "missing_skills": [
-   "Large-scale launch program coordination"
+   "Program Management"
   ],
   "resume_suggestions": [
-   "Emphasize how you translate technical roadmap into actionable plans.",
-   "Showcase cross-functional alignment projects."
+   "Highlight cross-functional product launch experience.",
+   "Focus on strategic project management."
   ],
   "sector": "AI/ML Infra",
-  "prefilter": 0.5094,
+  "prefilter": 0.528,
   "heuristic": false,
-  "scored_at": "2026-09-09T15:13:59.712026+00:00"
+  "scored_at": "2026-09-10T15:06:24.746435+00:00"
  },
  "e84efc30e9ec2ea4322008c93adbd4d3515a2460": {
   "profile_version": "ea07aad451ce",
@@ -1284,97 +1274,88 @@
   "scored_at": "2026-07-31T17:10:44.357631+00:00"
  },
  "64aa413d8a0dd8aa2184c978f6ea66308e31d968": {
-  "profile_version": "41e0def99680",
+  "profile_version": "ac71b866715b",
   "match_score": 90,
-  "confidence": 0.9,
-  "why": "Astronomer is a leader in data orchestration; perfect match for the candidate's technical skills.",
+  "confidence": 0.95,
+  "why": "Perfect fit for an engineering role specializing in data platforms, Airflow, and agentic workflows.",
   "seniority_fit": "target",
   "role_family": "Analytics & Data Engineering",
   "matched_skills": [
    "Python",
-   "Workflow Automation",
-   "Docker & Kubernetes/OpenShift",
-   "CI/CD & Git"
+   "SQL",
+   "Docker/Kubernetes",
+   "CI/CD"
   ],
   "missing_skills": [],
   "resume_suggestions": [
-   "Highlight experience with data products and workflow reliability.",
-   "Emphasize client-facing technical guidance."
+   "Highlight your experience with Airflow/workflow orchestration.",
+   "Focus on building internal developer tools."
   ],
-  "sector": "AI/ML Infra",
-  "prefilter": 0.5143,
+  "sector": "Enterprise SaaS/DevTools",
+  "prefilter": 0.5114,
   "heuristic": false,
-  "scored_at": "2026-09-09T15:13:59.712026+00:00"
+  "scored_at": "2026-09-10T15:06:24.746435+00:00"
  },
  "e4a34993e889ea98aa8cc6777931090f59ac0f2a": {
-  "profile_version": "41e0def99680",
-  "match_score": 45,
-  "confidence": 0.8,
-  "why": "High technical alignment, but the posting requires residency in specific tech hubs, violating the remote-only constraint.",
-  "seniority_fit": "stretch",
+  "profile_version": "ac71b866715b",
+  "match_score": 85,
+  "confidence": 0.9,
+  "why": "Excellent alignment with data engineering/solutions architecture and the use of modern dbt/data stacks.",
+  "seniority_fit": "target",
   "role_family": "Solutions & Technical Consulting",
   "matched_skills": [
    "SQL",
-   "REST API Development",
-   "Data Modeling"
+   "Data Modeling",
+   "Stakeholder Enablement"
   ],
-  "missing_skills": [
-   "dbt expertise"
-  ],
+  "missing_skills": [],
   "resume_suggestions": [
-   "Focus on dbt experience if applicable.",
-   "Note: Will likely be rejected due to location requirements."
+   "Highlight your technical consulting/client enablement experience.",
+   "Mention experience with data integration tools."
   ],
   "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.5422,
+  "prefilter": 0.5321,
   "heuristic": false,
-  "scored_at": "2026-09-09T15:13:59.712026+00:00"
+  "scored_at": "2026-09-10T15:06:24.746435+00:00"
  },
  "6496051c2aae76b2ec63b74635dfa7515e565379": {
-  "profile_version": "41e0def99680",
-  "match_score": 50,
-  "confidence": 0.7,
-  "why": "Very high salary and domain specificity (Hardware/Silicon) likely requires deeper systems-level experience than 4 years.",
-  "seniority_fit": "stretch",
+  "profile_version": "ac71b866715b",
+  "match_score": 35,
+  "confidence": 0.8,
+  "why": "This is a hardware program management role, which is too far removed from the candidate's core expertise in software/analytics and data automation.",
+  "seniority_fit": "out-of-band",
   "role_family": "Technical Strategy & Product",
-  "matched_skills": [
-   "CI/CD & Git"
-  ],
+  "matched_skills": [],
   "missing_skills": [
-   "Silicon development/Hardware lifecycle"
+   "Hardware program management"
   ],
-  "resume_suggestions": [
-   "None — high mismatch in core domain experience."
-  ],
+  "resume_suggestions": [],
   "sector": "AI/ML Infra",
-  "prefilter": 0.5222,
+  "prefilter": 0.5422,
   "heuristic": false,
-  "scored_at": "2026-09-09T15:13:59.712026+00:00"
+  "scored_at": "2026-09-10T15:06:24.746435+00:00"
  },
  "e0f2b97f5318dfcda2b31656553f62b3e3e6f5f8": {
-  "profile_version": "41e0def99680",
-  "match_score": 85,
-  "confidence": 0.85,
-  "why": "Strong fit for experimentation platforms; candidate's data modeling and quantitative analytics background are key.",
+  "profile_version": "ac71b866715b",
+  "match_score": 90,
+  "confidence": 0.95,
+  "why": "Aligns with the candidate's interest in data infrastructure, experimentation, and building systems for scale.",
   "seniority_fit": "target",
   "role_family": "Analytics & Data Engineering",
   "matched_skills": [
    "Python",
    "SQL",
-   "Quantitative Analytics",
    "Data Modeling"
   ],
-  "missing_skills": [
-   "Causal inference"
-  ],
+  "missing_skills": [],
   "resume_suggestions": [
-   "Highlight any A/B testing or experimentation platform experience.",
-   "Mention scaling systems to high-volume data."
+   "Highlight experience with experimental data pipelines.",
+   "Emphasize statistical rigor."
   ],
   "sector": "AI/ML Infra",
-  "prefilter": 0.5274,
+  "prefilter": 0.5327,
   "heuristic": false,
-  "scored_at": "2026-09-09T15:13:59.712026+00:00"
+  "scored_at": "2026-09-10T15:06:24.746435+00:00"
  },
  "75c35f51c5b63b69e626def7d3097b44a1aeaa22": {
   "profile_version": "41e0def99680",
@@ -1400,96 +1381,91 @@
   "scored_at": "2026-09-09T15:13:59.712026+00:00"
  },
  "d1d277df8aca71b7c85ca1ddb3264257d6a48bd3": {
-  "profile_version": "21a4299d92a0",
-  "match_score": 60,
-  "confidence": 0.85,
-  "why": "Senior role with 6-year requirement; good fit for business systems background.",
+  "profile_version": "ac71b866715b",
+  "match_score": 50,
+  "confidence": 0.8,
+  "why": "A standard TPM role in Business Systems; fits the 'Process Automation' skill but the seniority/scope requirement of 6 years is slightly above target.",
   "seniority_fit": "stretch",
   "role_family": "Technical Strategy & Product",
   "matched_skills": [
-   "Process Automation",
-   "SQL"
+   "Process Automation"
   ],
-  "missing_skills": [],
+  "missing_skills": [
+   "Technical Program Management"
+  ],
   "resume_suggestions": [
-   "Focus on the strategic impact of your business system automations."
+   "Highlight your technical project management experience.",
+   "Focus on business/operational system improvement."
   ],
   "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.5101,
+  "prefilter": 0.5222,
   "heuristic": false,
-  "scored_at": "2026-09-06T14:18:02.114842+00:00"
+  "scored_at": "2026-09-10T15:06:24.746435+00:00"
  },
  "ab7d16a27dc75342e45dcfe3e9a60dc6d3be0272": {
-  "profile_version": "41e0def99680",
+  "profile_version": "ac71b866715b",
   "match_score": 90,
-  "confidence": 0.9,
-  "why": "Strong alignment with internal developer tooling and automation focus; mirrors candidate's expertise in orchestrating data for compliance and analytics workflows.",
-  "seniority_fit": "target",
-  "role_family": "Analytics & Data Engineering",
-  "matched_skills": [
-   "Python",
-   "Workflow Automation",
-   "SQL",
-   "Power BI & Semantic Modeling",
-   "Data Modeling",
-   "CI/CD & Git"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Highlight 'agent-driven workflows' specifically to target their 'Vanta AI' roadmap.",
-   "Emphasize experience with 'internal tooling' for engineering teams."
-  ],
-  "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.5789,
-  "heuristic": false,
-  "scored_at": "2026-09-09T15:13:59.712026+00:00"
- },
- "c7a020013e1b931d5893fd213048167a67bf10be": {
-  "profile_version": "41e0def99680",
-  "match_score": 90,
-  "confidence": 0.9,
-  "why": "Strong fit for the data pipeline and analytics infrastructure scope at Vanta.",
-  "seniority_fit": "target",
-  "role_family": "Analytics & Data Engineering",
-  "matched_skills": [
-   "Python",
-   "SQL",
-   "Data Modeling",
-   "CI/CD & Git"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Frame data engineering projects as 'foundation-building'.",
-   "Highlight ability to scale data platforms."
-  ],
-  "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.5276,
-  "heuristic": false,
-  "scored_at": "2026-09-09T15:13:59.712026+00:00"
- },
- "58c894520592b3fe36328082af407675924a2bf7": {
-  "profile_version": "41e0def99680",
-  "match_score": 80,
-  "confidence": 0.8,
-  "why": "Data modeling and quality are high-value areas that match the candidate's data orchestration experience.",
+  "confidence": 0.95,
+  "why": "The role perfectly matches the candidate's skill set in data modeling and analytics engineering with a focus on internal tooling and automation. It is a clear step up for a candidate with 4 years of experience.",
   "seniority_fit": "stretch",
   "role_family": "Analytics & Data Engineering",
   "matched_skills": [
-   "Data Modeling",
    "SQL",
-   "Python"
+   "Data Modeling"
   ],
-  "missing_skills": [
-   "Healthcare regulatory/compliance experience"
-  ],
+  "missing_skills": [],
   "resume_suggestions": [
-   "Highlight data quality projects and schema ownership.",
-   "Mention complex ETL pipeline management."
+   "Emphasize your experience in 'laying the foundation' for analytics functions.",
+   "Highlight cross-functional work with business stakeholders."
+  ],
+  "sector": "Enterprise SaaS/DevTools",
+  "prefilter": 0.5602,
+  "heuristic": false,
+  "scored_at": "2026-09-10T15:06:24.746435+00:00"
+ },
+ "c7a020013e1b931d5893fd213048167a67bf10be": {
+  "profile_version": "ac71b866715b",
+  "match_score": 90,
+  "confidence": 0.95,
+  "why": "Matches the candidate's core competency of building data platforms and engineering analytics at scale.",
+  "seniority_fit": "target",
+  "role_family": "Analytics & Data Engineering",
+  "matched_skills": [
+   "Python",
+   "SQL",
+   "Data Modeling",
+   "CI/CD"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Highlight recent data platform improvements.",
+   "Mention experience with security/compliance data."
+  ],
+  "sector": "Enterprise SaaS/DevTools",
+  "prefilter": 0.5256,
+  "heuristic": false,
+  "scored_at": "2026-09-10T15:06:24.746435+00:00"
+ },
+ "58c894520592b3fe36328082af407675924a2bf7": {
+  "profile_version": "ac71b866715b",
+  "match_score": 80,
+  "confidence": 0.85,
+  "why": "Fits the data modeling and quality engineering aspects well; the company context is somewhat confusing but the technical requirements align.",
+  "seniority_fit": "target",
+  "role_family": "Analytics & Data Engineering",
+  "matched_skills": [
+   "SQL",
+   "Data Modeling"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Emphasize data quality ownership and building reliable pipelines.",
+   "Focus on healthcare/regulated domain experience."
   ],
   "sector": "Healthcare",
-  "prefilter": 0.5194,
+  "prefilter": 0.5289,
   "heuristic": false,
-  "scored_at": "2026-09-09T15:13:59.712026+00:00"
+  "scored_at": "2026-09-10T15:06:24.746435+00:00"
  },
  "a7753663dc9ceb5a8758d91425996ce2c7d4819e": {
   "profile_version": "41e0def99680",
@@ -1517,26 +1493,27 @@
   "scored_at": "2026-09-09T15:13:59.712026+00:00"
  },
  "109767ceb16ce844e011854353ea43217f8cc65e": {
-  "profile_version": "41e0def99680",
-  "match_score": 85,
-  "confidence": 0.85,
-  "why": "Excellent alignment with internal AI platform and agent evaluation infrastructure needs.",
-  "seniority_fit": "target",
+  "profile_version": "ac71b866715b",
+  "match_score": 60,
+  "confidence": 0.8,
+  "why": "A good stretch role for an analytics-focused product manager, though the title shift to PM requires a pivot from the hands-on engineering focus.",
+  "seniority_fit": "stretch",
   "role_family": "AI & Machine Learning",
   "matched_skills": [
-   "Agentic Architecture",
-   "Workflow Automation",
-   "REST API Development"
+   "Process Automation",
+   "AI/LLM Operations"
   ],
-  "missing_skills": [],
+  "missing_skills": [
+   "Product Management"
+  ],
   "resume_suggestions": [
-   "Emphasize experience in agent evaluation infrastructure.",
-   "Highlight product roadmap experience if relevant."
+   "Emphasize your 'developer tooling' experience as product work.",
+   "Focus on evaluation/testing infrastructure."
   ],
   "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.5213,
+  "prefilter": 0.5346,
   "heuristic": false,
-  "scored_at": "2026-09-09T15:13:59.712026+00:00"
+  "scored_at": "2026-09-10T15:06:24.746435+00:00"
  },
  "670475fd46dabc58bff3fb0ceb31641fe309ba25": {
   "profile_version": "6ddc095f9575",
@@ -1559,25 +1536,27 @@
   "scored_at": "2026-09-03T15:06:13.909981+00:00"
  },
  "5ee82bfd5dff3ace246a2d07339a69b771db1100": {
-  "profile_version": "1a45b9c8e6a3",
-  "match_score": 70,
-  "confidence": 0.7,
-  "why": "Fits your strategy and operations focus. A good level-up in responsibility, though requires 6+ years experience.",
+  "profile_version": "ac71b866715b",
+  "match_score": 50,
+  "confidence": 0.85,
+  "why": "Strategy and Ops role that leverages business process understanding, though it is more business-heavy than the candidate's engineering focus.",
   "seniority_fit": "stretch",
   "role_family": "Process Optimization & Business Operations",
   "matched_skills": [
-   "SQL",
-   "Quantitative Analysis"
+   "Process Automation",
+   "Stakeholder Enablement"
   ],
-  "missing_skills": [],
+  "missing_skills": [
+   "Business Operations Strategy"
+  ],
   "resume_suggestions": [
-   "Highlight your GTM strategy experience.",
-   "Emphasize your analytical and operational impact."
+   "Highlight your experience in GTM process automation.",
+   "Focus on commercial outcomes."
   ],
   "sector": "Fintech",
-  "prefilter": 0.51,
+  "prefilter": 0.5116,
   "heuristic": false,
-  "scored_at": "2026-08-27T21:06:10.399047+00:00"
+  "scored_at": "2026-09-10T15:06:24.746435+00:00"
  },
  "80773a26f3fbf0785f445b95aebd0db634010d1f": {
   "profile_version": "ea07aad451ce",
@@ -1603,26 +1582,27 @@
   "scored_at": "2026-08-20T11:51:54.900677+00:00"
  },
  "116c8f025d7673fe968b27057511c1ea0d66e93a": {
-  "profile_version": "41e0def99680",
-  "match_score": 85,
-  "confidence": 0.8,
-  "why": "Matches the 'Agentic Enterprise' focus; fits nicely into the Solutions Engineer path given technical background.",
+  "profile_version": "ac71b866715b",
+  "match_score": 75,
+  "confidence": 0.85,
+  "why": "Fits the Solution Engineer profile well with its focus on data and AI agent deployment.",
   "seniority_fit": "target",
   "role_family": "Solutions & Technical Consulting",
   "matched_skills": [
-   "Python",
    "SQL",
-   "Agentic Architecture"
+   "Data Modeling",
+   "AI/LLM Operations",
+   "Stakeholder Enablement"
   ],
   "missing_skills": [],
   "resume_suggestions": [
-   "Highlight 'Agentic' implementation experience.",
-   "Showcase your ability to act as a technical advisor."
+   "Emphasize your AI/ML domain expertise.",
+   "Highlight experience with client-side architecture/solution design."
   ],
   "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.5226,
+  "prefilter": 0.5168,
   "heuristic": false,
-  "scored_at": "2026-09-09T15:13:59.712026+00:00"
+  "scored_at": "2026-09-10T15:06:24.746435+00:00"
  },
  "bf899cab88b0dc0d8937950f396cd1fc27cc153e": {
   "profile_version": "d07b68caf711",
@@ -1733,27 +1713,26 @@
   "scored_at": "2026-08-24T11:52:08.694643+00:00"
  },
  "0080b932af49ad3562b8e517e090f8b3b95b1e0a": {
-  "profile_version": "41e0def99680",
+  "profile_version": "ac71b866715b",
   "match_score": 85,
-  "confidence": 0.85,
-  "why": "Excellent fit for experimentation platforms; highly relevant to candidate's background in orchestration.",
+  "confidence": 0.9,
+  "why": "Strong overlap with experimentation platforms and data engineering, fitting the candidate's skillset in data systems.",
   "seniority_fit": "target",
   "role_family": "Analytics & Data Engineering",
   "matched_skills": [
    "Python",
    "SQL",
-   "Quantitative Analytics",
    "Data Modeling"
   ],
   "missing_skills": [],
   "resume_suggestions": [
-   "Highlight any A/B testing/experimentation projects.",
-   "Focus on 'trustworthy' and 'scalable' data platforms."
+   "Highlight experimental data infrastructure projects.",
+   "Emphasize scalability and statistical rigor."
   ],
   "sector": "AI/ML Infra",
-  "prefilter": 0.5178,
+  "prefilter": 0.5184,
   "heuristic": false,
-  "scored_at": "2026-09-09T15:13:59.712026+00:00"
+  "scored_at": "2026-09-10T15:06:24.746435+00:00"
  },
  "9f1a05413c2d984b7f902b4a0667bf1c21c5deab": {
   "profile_version": "6ddc095f9575",
@@ -1824,27 +1803,26 @@
   "scored_at": "2026-09-09T15:13:59.712026+00:00"
  },
  "19bc4163728fbdfbbf97262eb950f61a4fd19af6": {
-  "profile_version": "41e0def99680",
+  "profile_version": "ac71b866715b",
   "match_score": 90,
-  "confidence": 0.9,
-  "why": "Direct match for the 'Data Automation' team's charter, aligning perfectly with the candidate's professional background.",
+  "confidence": 0.95,
+  "why": "The Data Automation team title is practically synonymous with the candidate's stated goals and background in process automation.",
   "seniority_fit": "target",
   "role_family": "Analytics & Data Engineering",
   "matched_skills": [
    "Python",
-   "Workflow Automation",
    "SQL",
-   "Data Modeling"
+   "Process Automation"
   ],
   "missing_skills": [],
   "resume_suggestions": [
-   "Emphasize 'Data Automation' experience specifically.",
-   "Highlight high-precision/high-reliability data systems."
+   "Focus on the 'automation' aspect of your data engineering work.",
+   "Highlight experience in identity/risk domains."
   ],
   "sector": "Fintech",
-  "prefilter": 0.5169,
+  "prefilter": 0.5242,
   "heuristic": false,
-  "scored_at": "2026-09-09T15:13:59.712026+00:00"
+  "scored_at": "2026-09-10T15:06:24.746435+00:00"
  },
  "79153501ed25cf99bcd3daa3772149178b3c0c96": {
   "profile_version": "86f87384cc45",
@@ -1865,51 +1843,49 @@
   "scored_at": "2026-09-04T15:03:55.456686+00:00"
  },
  "5f8ca320d821126534d88fb018de186dbc914fb5": {
-  "profile_version": "41e0def99680",
-  "match_score": 85,
-  "confidence": 0.85,
-  "why": "Strong backend infrastructure and platform engineering fit at the core of OpenAI's API strategy.",
+  "profile_version": "ac71b866715b",
+  "match_score": 90,
+  "confidence": 0.95,
+  "why": "Direct fit for production ML systems, infrastructure, and agentic workload management.",
   "seniority_fit": "target",
   "role_family": "AI & Machine Learning",
   "matched_skills": [
    "Python",
-   "Docker & Kubernetes/OpenShift",
-   "REST API Development"
+   "Docker/Kubernetes",
+   "AI/LLM Operations"
   ],
-  "missing_skills": [
-   "Production ML experience"
-  ],
+  "missing_skills": [],
   "resume_suggestions": [
-   "Highlight work in production ML systems.",
-   "Emphasize infrastructure-level platform development."
+   "Highlight cloud-native (AWS) ML experience.",
+   "Emphasize stateful runtime/agentic infrastructure work."
   ],
   "sector": "AI/ML Infra",
-  "prefilter": 0.5052,
+  "prefilter": 0.5237,
   "heuristic": false,
-  "scored_at": "2026-09-09T15:13:59.712026+00:00"
+  "scored_at": "2026-09-10T15:06:24.746435+00:00"
  },
  "45edcbdeb0a3450d947ae5b9b6fecbfd19434b24": {
-  "profile_version": "41e0def99680",
-  "match_score": 75,
-  "confidence": 0.75,
-  "why": "Relevant engineering leadership role in safety ML, but requires more industry experience.",
+  "profile_version": "ac71b866715b",
+  "match_score": 60,
+  "confidence": 0.85,
+  "why": "Engineering Manager role at a significant scale. Likely a stretch for a 4-year candidate, but technically relevant.",
   "seniority_fit": "stretch",
   "role_family": "AI & Machine Learning",
   "matched_skills": [
    "Python",
-   "Docker & Kubernetes/OpenShift"
+   "AI/LLM Operations"
   ],
   "missing_skills": [
-   "Management/Leadership experience"
+   "People Management"
   ],
   "resume_suggestions": [
-   "Highlight your technical 'ownership' of previous projects.",
-   "Emphasize safety/compliance knowledge."
+   "Highlight leadership on large-scale ML systems.",
+   "Emphasize team-building or technical guidance."
   ],
   "sector": "Media/Gaming",
-  "prefilter": 0.5047,
+  "prefilter": 0.5251,
   "heuristic": false,
-  "scored_at": "2026-09-09T15:13:59.712026+00:00"
+  "scored_at": "2026-09-10T15:06:24.746435+00:00"
  },
  "3ff413b0b4305a6a8e95b01432efc5280df81ffa": {
   "profile_version": "21a4299d92a0",
@@ -1974,47 +1950,47 @@
   "scored_at": "2026-09-09T15:13:59.712026+00:00"
  },
  "68a280deae329b31766ab88f953e3d761eee84dc": {
-  "profile_version": "dd3810bdbbc8",
-  "match_score": 85,
-  "confidence": 0.85,
-  "why": "Excellent alignment for a Data Scientist role focused on growth, measurement, and experimentation.",
+  "profile_version": "ac71b866715b",
+  "match_score": 80,
+  "confidence": 0.9,
+  "why": "Fits the candidate's analytics experience and demand-generation growth metrics responsibilities well.",
   "seniority_fit": "target",
   "role_family": "Analytics & Data Engineering",
   "matched_skills": [
    "SQL",
-   "Python",
-   "Quantitative Analytics",
-   "Data Modeling"
+   "Data Modeling",
+   "Quantitative Analytics"
   ],
   "missing_skills": [],
   "resume_suggestions": [
-   "Quantify pipeline efficiencies you've created.",
-   "Highlight cross-functional partnership successes."
+   "Highlight your full-funnel measurement experience.",
+   "Focus on B2B demand gen growth impacts."
   ],
   "sector": "AI/ML Infra",
-  "prefilter": 0.5084,
+  "prefilter": 0.5124,
   "heuristic": false,
-  "scored_at": "2026-08-30T15:24:54.903644+00:00"
+  "scored_at": "2026-09-10T15:06:24.746435+00:00"
  },
  "fb80f30f326c1a52e4f84a704373a7959a8b56ae": {
-  "profile_version": "d07b68caf711",
-  "match_score": 40,
-  "confidence": 0.8,
-  "why": "On-site in South San Francisco; focus on financial modeling ML is a significant pivot from his current analytics platform focus.",
+  "profile_version": "ac71b866715b",
+  "match_score": 90,
+  "confidence": 0.95,
+  "why": "Excellent alignment for an ML Engineering role in a high-scale financial infrastructure environment.",
   "seniority_fit": "target",
   "role_family": "AI & Machine Learning",
   "matched_skills": [
    "Python",
-   "Data Modeling"
+   "AI/LLM Operations"
   ],
-  "missing_skills": [
-   "ML Modeling (Finance)"
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Highlight your experience in financial/underwriting ML.",
+   "Emphasize speed/scale of ML systems."
   ],
-  "resume_suggestions": [],
   "sector": "Fintech",
-  "prefilter": 0.515,
+  "prefilter": 0.5145,
   "heuristic": false,
-  "scored_at": "2026-09-02T15:12:36.796943+00:00"
+  "scored_at": "2026-09-10T15:06:24.746435+00:00"
  },
  "c04dafa8df207fad075cf06844a465a29c9bb644": {
   "profile_version": "41e0def99680",
@@ -2060,27 +2036,6 @@
   "prefilter": 0.491,
   "heuristic": false,
   "scored_at": "2026-08-26T11:56:39.553175+00:00"
- },
- "723fdd54876ec8b629ddacfa92d961e5dd8d9928": {
-  "profile_version": "41e0def99680",
-  "match_score": 80,
-  "confidence": 0.8,
-  "why": "Great alignment for 'Forward Deploy' roles where the candidate embeds with teams to optimize workflows.",
-  "seniority_fit": "target",
-  "role_family": "AI & Machine Learning",
-  "matched_skills": [
-   "Workflow Automation",
-   "Agentic Architecture"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Focus on cross-functional process optimization projects.",
-   "Highlight your work in embedding with technical teams."
-  ],
-  "sector": "Fintech",
-  "prefilter": 0.5098,
-  "heuristic": false,
-  "scored_at": "2026-09-09T15:13:59.712026+00:00"
  },
  "1d73e77862832bba71cfeb7f79014110a8beb5fa": {
   "profile_version": "1a45b9c8e6a3",
@@ -2129,27 +2084,28 @@
   "scored_at": "2026-09-09T15:13:59.712026+00:00"
  },
  "c0797645ee9e616395db96f30d0035e25e585af3": {
-  "profile_version": "41e0def99680",
-  "match_score": 40,
-  "confidence": 0.8,
-  "why": "This is an Engineering Manager role requiring prior leadership scope, which is a significant level-up above the candidate's 4-year contributor profile.",
+  "profile_version": "ac71b866715b",
+  "match_score": 45,
+  "confidence": 0.85,
+  "why": "An Engineering Manager role is a significant jump in career path for someone with 4 years of experience, likely requiring more direct management history than possessed.",
   "seniority_fit": "out-of-band",
   "role_family": "AI & Machine Learning",
   "matched_skills": [
    "Python",
-   "SQL",
-   "Docker & Kubernetes/OpenShift"
+   "Docker/Kubernetes",
+   "AI/LLM Operations"
   ],
   "missing_skills": [
-   "Team leadership/management experience"
+   "People Management"
   ],
   "resume_suggestions": [
-   "Focus on individual contributor growth before seeking Manager roles."
+   "Highlight mentoring or team-lead experience.",
+   "Emphasize architectural decision-making."
   ],
   "sector": "AI/ML Infra",
-  "prefilter": 0.5346,
+  "prefilter": 0.5374,
   "heuristic": false,
-  "scored_at": "2026-09-09T15:13:59.712026+00:00"
+  "scored_at": "2026-09-10T15:06:24.746435+00:00"
  },
  "3b03e0b8015e37959462bf8affe9e54f6a4ace80": {
   "profile_version": "1a45b9c8e6a3",
@@ -2236,210 +2192,178 @@
   "scored_at": "2026-09-04T15:03:55.456686+00:00"
  },
  "46bfbbdb95517aba6c11f7fcf6a47b7fac85e375": {
-  "profile_version": "41e0def99680",
-  "match_score": 85,
-  "confidence": 0.8,
-  "why": "Sigma's focus on AI workflows and warehouse-first architecture matches the candidate's automation and data infrastructure skills.",
+  "profile_version": "ac71b866715b",
+  "match_score": 75,
+  "confidence": 0.85,
+  "why": "Strong role for a solutions engineer given the candidate's SQL and analytics expertise, though it shifts towards customer-facing work.",
   "seniority_fit": "target",
   "role_family": "Solutions & Technical Consulting",
   "matched_skills": [
    "SQL",
    "Data Modeling",
-   "Workflow Automation"
+   "Stakeholder Enablement"
   ],
   "missing_skills": [],
   "resume_suggestions": [
-   "Highlight experience with cloud data warehouses (Snowflake/BigQuery).",
-   "Focus on simplifying technical workflows for users."
+   "Emphasize your client-facing technical communication.",
+   "Highlight your ability to translate analytics to business impact."
   ],
   "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.5264,
+  "prefilter": 0.5215,
   "heuristic": false,
-  "scored_at": "2026-09-09T15:13:59.712026+00:00"
- },
- "c63b845bac72b03b2e919bcad4eabf9a2ee56fde": {
-  "profile_version": "41e0def99680",
-  "match_score": 88,
-  "confidence": 0.85,
-  "why": "Temporal is the industry standard for workflow automation; candidate's background in agentic workflows makes this a high-value match.",
-  "seniority_fit": "target",
-  "role_family": "Solutions & Technical Consulting",
-  "matched_skills": [
-   "Python",
-   "Workflow Automation",
-   "REST API Development",
-   "Docker & Kubernetes/OpenShift"
-  ],
-  "missing_skills": [
-   "Distributed systems architecture"
-  ],
-  "resume_suggestions": [
-   "Emphasize experience building robust/fault-tolerant workflows.",
-   "Highlight ability to communicate complex architecture to technical decision-makers."
-  ],
-  "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.5359,
-  "heuristic": false,
-  "scored_at": "2026-09-09T15:13:59.712026+00:00"
+  "scored_at": "2026-09-10T15:06:24.746435+00:00"
  },
  "6600325ab440cbf28c70a35eb3b0e83cfea3bb73": {
-  "profile_version": "41e0def99680",
-  "match_score": 75,
-  "confidence": 0.75,
-  "why": "Excellent alignment for someone moving into a lead/management role in AI engineering for startups.",
+  "profile_version": "ac71b866715b",
+  "match_score": 60,
+  "confidence": 0.8,
+  "why": "Engineering Manager role requires significant management experience, which might be a gap compared to technical individual contributor paths.",
   "seniority_fit": "stretch",
   "role_family": "AI & Machine Learning",
   "matched_skills": [
    "Python",
-   "REST API Development",
-   "Agentic Architecture"
+   "AI/LLM Operations",
+   "Stakeholder Enablement"
   ],
   "missing_skills": [
-   "Management experience"
+   "People Management"
   ],
   "resume_suggestions": [
-   "Focus on how you provide technical guidance to others.",
-   "Emphasize product/deployment strategy expertise."
+   "Highlight experience managing startups/high-growth clients.",
+   "Emphasize technical advisory work."
   ],
   "sector": "AI/ML Infra",
-  "prefilter": 0.5106,
+  "prefilter": 0.5243,
   "heuristic": false,
-  "scored_at": "2026-09-09T15:13:59.712026+00:00"
+  "scored_at": "2026-09-10T15:06:24.746435+00:00"
  },
  "e03053bf00e3cf10688e7ce45811a21aed97a6ae": {
-  "profile_version": "41e0def99680",
+  "profile_version": "ac71b866715b",
   "match_score": 85,
-  "confidence": 0.85,
-  "why": "Excellent fit for a Series C company scaling analytics foundations; aligns with candidate's data orchestration background.",
-  "seniority_fit": "target",
+  "confidence": 0.95,
+  "why": "Fits perfectly with the candidate's target title (Analytics Engineer) and experience with building analytical foundations and AI-growth tools.",
+  "seniority_fit": "stretch",
   "role_family": "Analytics & Data Engineering",
   "matched_skills": [
    "Python",
    "SQL",
-   "Data Modeling",
-   "Power BI & Semantic Modeling"
+   "Data Modeling"
   ],
   "missing_skills": [],
   "resume_suggestions": [
-   "Mention scale of data systems managed.",
-   "Highlight experience with AI-adjacent analytics projects."
+   "Highlight your ability to scale data platforms.",
+   "Mention any experience specifically in growth-related metrics."
   ],
   "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.5395,
+  "prefilter": 0.5383,
   "heuristic": false,
-  "scored_at": "2026-09-09T15:13:59.712026+00:00"
+  "scored_at": "2026-09-10T15:06:24.746435+00:00"
  },
  "790e320d5530435ac5d3a4d6aedd22aec5aa2c5e": {
-  "profile_version": "41e0def99680",
-  "match_score": 80,
-  "confidence": 0.8,
-  "why": "Excellent alignment for someone with ML Infrastructure interest and a background in orchestration and automation.",
+  "profile_version": "ac71b866715b",
+  "match_score": 55,
+  "confidence": 0.85,
+  "why": "Relevant field (ML Infra), but a TPM role that may not lean into the candidate's deep hands-on Python/DevTooling strength as much as an engineering role.",
   "seniority_fit": "target",
   "role_family": "Technical Strategy & Product",
   "matched_skills": [
-   "Python",
-   "Docker & Kubernetes/OpenShift",
-   "CI/CD & Git"
-  ],
-  "missing_skills": [
-   "Large-scale ML infrastructure TPM experience"
-  ],
-  "resume_suggestions": [
-   "Focus on ML infra platform project management.",
-   "Highlight cross-functional alignment experience."
-  ],
-  "sector": "AI/ML Infra",
-  "prefilter": 0.5064,
-  "heuristic": false,
-  "scored_at": "2026-09-09T15:13:59.712026+00:00"
- },
- "de9890b6a6c4d8015529f966807db29308f87f9f": {
-  "profile_version": "41e0def99680",
-  "match_score": 30,
-  "confidence": 0.9,
-  "why": "Salary below $130k constraint. Role is good but not compliant with your compensation threshold.",
-  "seniority_fit": "target",
-  "role_family": "Technical Strategy & Product",
-  "matched_skills": [
-   "Workflow Automation",
-   "REST API Development"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "None — do not pursue due to salary constraint."
-  ],
-  "sector": "AI/ML Infra",
-  "prefilter": 0.5042,
-  "heuristic": false,
-  "scored_at": "2026-09-09T15:13:59.712026+00:00"
- },
- "0c5c485718a2642e67c8c367166f626968311c0e": {
-  "profile_version": "d07b68caf711",
-  "match_score": 75,
-  "confidence": 0.8,
-  "why": "Strong fit for a 'zero-to-one' technical role, even if the title is TPM; he can lean into the engineering aspect here.",
-  "seniority_fit": "target",
-  "role_family": "Technical Strategy & Product",
-  "matched_skills": [
-   "REST API Development",
-   "Python",
-   "Agentic & RAG Architecture"
+   "AI/LLM Operations"
   ],
   "missing_skills": [
    "Technical Program Management"
   ],
   "resume_suggestions": [
-   "Emphasize your technical architectural experience rather than pure management experience."
+   "Highlight your technical background in infrastructure.",
+   "Focus on program management of technical initiatives."
   ],
   "sector": "AI/ML Infra",
-  "prefilter": 0.5094,
+  "prefilter": 0.521,
   "heuristic": false,
-  "scored_at": "2026-09-02T15:12:36.796943+00:00"
+  "scored_at": "2026-09-10T15:06:24.746435+00:00"
  },
- "7c8463dcc59bc7af37bcbe03f47959de35e2b2ff": {
-  "profile_version": "41e0def99680",
-  "match_score": 85,
-  "confidence": 0.8,
-  "why": "Strong alignment with the mission of turning knowledge into action via agentic AI.",
+ "de9890b6a6c4d8015529f966807db29308f87f9f": {
+  "profile_version": "ac71b866715b",
+  "match_score": 20,
+  "confidence": 0.95,
+  "why": "Hard constraint violation: compensation explicitly listed as $100 for the role, which is below the $130k threshold.",
   "seniority_fit": "target",
   "role_family": "Technical Strategy & Product",
   "matched_skills": [
-   "Agentic Architecture",
-   "REST API Development"
+   "Process Automation",
+   "AI/LLM Operations"
   ],
   "missing_skills": [
-   "Direct Product Management experience"
+   "Technical Program Management"
   ],
   "resume_suggestions": [
-   "Highlight the impact of the 'agentic' features you've built.",
-   "Emphasize writing/communication skills."
+   "N/A - compensation constraint violation."
   ],
   "sector": "AI/ML Infra",
-  "prefilter": 0.5167,
+  "prefilter": 0.5184,
   "heuristic": false,
-  "scored_at": "2026-09-09T15:13:59.712026+00:00"
+  "scored_at": "2026-09-10T15:06:24.746435+00:00"
+ },
+ "0c5c485718a2642e67c8c367166f626968311c0e": {
+  "profile_version": "ac71b866715b",
+  "match_score": 50,
+  "confidence": 0.8,
+  "why": "TPM role focusing on model performance; lacks the hands-on engineering/coding focus compared to other roles.",
+  "seniority_fit": "target",
+  "role_family": "Technical Strategy & Product",
+  "matched_skills": [
+   "AI/LLM Operations"
+  ],
+  "missing_skills": [
+   "Technical Program Management"
+  ],
+  "resume_suggestions": [
+   "Highlight technical program/project leadership.",
+   "Emphasize model performance optimization projects."
+  ],
+  "sector": "AI/ML Infra",
+  "prefilter": 0.5189,
+  "heuristic": false,
+  "scored_at": "2026-09-10T15:06:24.746435+00:00"
+ },
+ "7c8463dcc59bc7af37bcbe03f47959de35e2b2ff": {
+  "profile_version": "ac71b866715b",
+  "match_score": 30,
+  "confidence": 0.7,
+  "why": "The description appears to be for a completely unrelated 'Escape Game' company in Ontario, making the tech stack and career potential unclear and likely a mismatch.",
+  "seniority_fit": "out-of-band",
+  "role_family": "Technical Strategy & Product",
+  "matched_skills": [],
+  "missing_skills": [
+   "Product Management"
+  ],
+  "resume_suggestions": [],
+  "sector": "Other",
+  "prefilter": 0.5457,
+  "heuristic": false,
+  "scored_at": "2026-09-10T15:06:24.746435+00:00"
  },
  "c13cd0ac064eee3fb909f41db288637db53bc519": {
-  "profile_version": "41e0def99680",
-  "match_score": 60,
-  "confidence": 0.7,
-  "why": "Sales operations is a bit of a lateral move/shift in focus, but high salary and Cohere's prestige make it worth noting.",
-  "seniority_fit": "target",
+  "profile_version": "ac71b866715b",
+  "match_score": 55,
+  "confidence": 0.85,
+  "why": "Senior Sales Operations position that leverages process automation/operational expertise but deviates from the engineering/platform path.",
+  "seniority_fit": "stretch",
   "role_family": "Process Optimization & Business Operations",
   "matched_skills": [
-   "SQL"
+   "Process Automation",
+   "Stakeholder Enablement"
   ],
   "missing_skills": [
-   "Sales Ops domain knowledge"
+   "Sales Operations"
   ],
   "resume_suggestions": [
-   "Focus on the 'Operational' and 'Data' aspects of previous roles.",
-   "Emphasize your technical edge for Sales Ops."
+   "Highlight your technical approach to operational efficiency.",
+   "Focus on process improvement at scale."
   ],
   "sector": "AI/ML Infra",
-  "prefilter": 0.5065,
+  "prefilter": 0.5112,
   "heuristic": false,
-  "scored_at": "2026-09-09T15:13:59.712026+00:00"
+  "scored_at": "2026-09-10T15:06:24.746435+00:00"
  },
  "9fee5c5e49c495963a9f401867a114fc64954af1": {
   "profile_version": "6ddc095f9575",
@@ -2507,164 +2431,138 @@
   "scored_at": "2026-09-03T15:06:13.909981+00:00"
  },
  "fd922646374ac1eff2bd2ebcd1dac5233f468cbb": {
-  "profile_version": "41e0def99680",
-  "match_score": 80,
-  "confidence": 0.8,
-  "why": "Matches the candidate's financial services and fraud/risk interest; technical stack for risk modeling is highly relevant.",
+  "profile_version": "ac71b866715b",
+  "match_score": 85,
+  "confidence": 0.9,
+  "why": "Strong overlap with risk/fraud ML and data science, fitting the candidate's quantitative and engineering background.",
   "seniority_fit": "target",
   "role_family": "Analytics & Data Engineering",
   "matched_skills": [
    "Python",
    "SQL",
-   "Quantitative Analytics"
+   "Quantitative Analytics",
+   "AI/LLM Operations"
   ],
   "missing_skills": [],
   "resume_suggestions": [
-   "Highlight fraud detection logic projects.",
-   "Emphasize working with mission-critical financial datasets."
+   "Focus on ML observability and production lifecycle.",
+   "Highlight domain knowledge in risk modeling."
   ],
   "sector": "Fintech",
-  "prefilter": 0.5275,
+  "prefilter": 0.526,
   "heuristic": false,
-  "scored_at": "2026-09-09T15:13:59.712026+00:00"
+  "scored_at": "2026-09-10T15:06:24.746435+00:00"
  },
  "75b4dc099c08abb291acc09630613e7aad3a4008": {
-  "profile_version": "41e0def99680",
-  "match_score": 85,
-  "confidence": 0.85,
-  "why": "Strong alignment with the candidate's background in automation and orchestrating workflows for business impact.",
+  "profile_version": "ac71b866715b",
+  "match_score": 70,
+  "confidence": 0.9,
+  "why": "Good fit for a solutions architect with Smartsheet's no-code and orchestration tools, leveraging stakeholder enablement skills.",
   "seniority_fit": "target",
   "role_family": "Solutions & Technical Consulting",
   "matched_skills": [
-   "Workflow Automation",
-   "Python",
-   "SQL"
+   "SQL",
+   "Process Automation",
+   "Stakeholder Enablement"
   ],
   "missing_skills": [],
   "resume_suggestions": [
-   "Emphasize no-code/low-code platform integration experience.",
-   "Highlight cross-functional work with product/innovation teams."
+   "Highlight experience in technical client advisory.",
+   "Emphasize no-code/orchestration workflow design."
   ],
   "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.5339,
+  "prefilter": 0.5129,
   "heuristic": false,
-  "scored_at": "2026-09-09T15:13:59.712026+00:00"
+  "scored_at": "2026-09-10T15:06:24.746435+00:00"
  },
  "27dd3eea24724289205f186f7c3b2d22957d6718": {
-  "profile_version": "41e0def99680",
-  "match_score": 95,
+  "profile_version": "ac71b866715b",
+  "match_score": 90,
   "confidence": 0.95,
-  "why": "Perfect alignment; Prefect is the industry standard for the workflow orchestration the candidate specializes in.",
+  "why": "Strongly matches the Analytics Engineer title and the company's focus on workflow orchestration and agentic data tooling.",
   "seniority_fit": "target",
   "role_family": "Analytics & Data Engineering",
   "matched_skills": [
    "Python",
-   "Workflow Automation",
-   "Docker & Kubernetes/OpenShift",
-   "CI/CD & Git"
+   "SQL",
+   "Data Modeling",
+   "AI/LLM Operations"
   ],
   "missing_skills": [],
   "resume_suggestions": [
-   "Highlight any existing familiarity with Prefect OSS.",
-   "Emphasize 'pythonic' workflow orchestration projects."
+   "Highlight your Pythonic/Engineering-heavy approach to analytics.",
+   "Focus on workflow orchestration (e.g., Prefect/Airflow)."
   ],
   "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.5158,
+  "prefilter": 0.5111,
   "heuristic": false,
-  "scored_at": "2026-09-09T15:13:59.712026+00:00"
+  "scored_at": "2026-09-10T15:06:24.746435+00:00"
  },
  "ab75c101189948f8188e72ce59df1d4cfcf9ceb9": {
-  "profile_version": "41e0def99680",
-  "match_score": 70,
-  "confidence": 0.75,
-  "why": "Strong fit for internal platform orchestration, though TPM requires strong cross-functional communication.",
-  "seniority_fit": "target",
+  "profile_version": "ac71b866715b",
+  "match_score": 50,
+  "confidence": 0.8,
+  "why": "General TPM role that doesn't explicitly leverage the candidate's deep technical engineering and AI tooling background.",
+  "seniority_fit": "stretch",
   "role_family": "Technical Strategy & Product",
   "matched_skills": [
-   "Workflow Automation",
-   "CI/CD & Git"
+   "Process Automation"
   ],
   "missing_skills": [
-   "Strategic planning/program management"
+   "Technical Program Management"
   ],
   "resume_suggestions": [
-   "Emphasize how you 'resolve critical tradeoffs' in your current technical role.",
-   "Highlight orchestration platform designs."
+   "Highlight your experience in managing technical project lifecycles.",
+   "Emphasize stakeholder enablement."
   ],
   "sector": "Fintech",
-  "prefilter": 0.5177,
+  "prefilter": 0.5322,
   "heuristic": false,
-  "scored_at": "2026-09-09T15:13:59.712026+00:00"
+  "scored_at": "2026-09-10T15:06:24.746435+00:00"
  },
  "aa17ae8297081685782683a772a33fd1163f5f4d": {
-  "profile_version": "41e0def99680",
+  "profile_version": "ac71b866715b",
   "match_score": 75,
-  "confidence": 0.8,
-  "why": "Very strong fit for GTM analytics; aligns well with current skill set in SQL and data modeling.",
+  "confidence": 0.9,
+  "why": "Matches the candidate's analytical skill set, though perhaps a slightly lower ceiling in terms of engineering complexity compared to their current role.",
   "seniority_fit": "target",
   "role_family": "Business & Data Analytics",
   "matched_skills": [
    "SQL",
-   "Data Modeling",
-   "Power BI & Semantic Modeling"
+   "Power BI",
+   "Data Modeling"
   ],
   "missing_skills": [],
   "resume_suggestions": [
-   "Highlight experience with business-critical metrics.",
-   "Showcase data influence on sales/marketing outcomes."
+   "Frame your analytics work as high-impact strategic projects.",
+   "Mention any automation used for GTM reporting."
   ],
   "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.5196,
+  "prefilter": 0.5328,
   "heuristic": false,
-  "scored_at": "2026-09-09T15:13:59.712026+00:00"
+  "scored_at": "2026-09-10T15:06:24.746435+00:00"
  },
  "6960211798bc9bde70aec7602682922d1c94d241": {
-  "profile_version": "41e0def99680",
+  "profile_version": "ac71b866715b",
   "match_score": 85,
-  "confidence": 0.85,
-  "why": "Matches the candidate's financial services and high-volume data engineering expertise.",
+  "confidence": 0.9,
+  "why": "Fits the data engineering profile well, specifically for high-throughput market data systems which match the candidate's scale/throughput interests.",
   "seniority_fit": "target",
   "role_family": "Analytics & Data Engineering",
   "matched_skills": [
    "Python",
    "SQL",
-   "REST API Development"
+   "Data Modeling"
   ],
-  "missing_skills": [
-   "Market data experience"
-  ],
+  "missing_skills": [],
   "resume_suggestions": [
-   "Highlight low-latency system experience.",
-   "Emphasize high-volume institutional trading data systems."
+   "Highlight your experience with high-throughput streaming/market data.",
+   "Focus on data reliability and system architecture."
   ],
   "sector": "Fintech",
-  "prefilter": 0.5106,
+  "prefilter": 0.5107,
   "heuristic": false,
-  "scored_at": "2026-09-09T15:13:59.712026+00:00"
- },
- "bd1e2fd7f9c4a49e98dbaf489fc9dcdbf3333c95": {
-  "profile_version": "41e0def99680",
-  "match_score": 85,
-  "confidence": 0.8,
-  "why": "Strong overlap with ML Engineering, LLM focus, and architecture duties matching the candidate's modern Python focus.",
-  "seniority_fit": "target",
-  "role_family": "AI & Machine Learning",
-  "matched_skills": [
-   "Python",
-   "Docker & Kubernetes/OpenShift",
-   "CI/CD & Git"
-  ],
-  "missing_skills": [
-   "Advanced ML research"
-  ],
-  "resume_suggestions": [
-   "Emphasize generative AI deployment experience.",
-   "Highlight software engineering lifecycle best practices."
-  ],
-  "sector": "Healthcare",
-  "prefilter": 0.5285,
-  "heuristic": false,
-  "scored_at": "2026-09-09T15:13:59.712026+00:00"
+  "scored_at": "2026-09-10T15:06:24.746435+00:00"
  },
  "5fc6c8750193fdefb7855af9388907bb31f2e5d4": {
   "profile_version": "21a4299d92a0",
@@ -2684,27 +2582,6 @@
   ],
   "sector": "Enterprise SaaS/DevTools",
   "prefilter": 0.5278,
-  "heuristic": false,
-  "scored_at": "2026-09-06T14:18:02.114842+00:00"
- },
- "f02dad28dd48ef0187a8a55084d3fe274516d861": {
-  "profile_version": "21a4299d92a0",
-  "match_score": 60,
-  "confidence": 0.8,
-  "why": "Good technical fit, but salary not disclosed and role family is less technical.",
-  "seniority_fit": "target",
-  "role_family": "Business & Data Analytics",
-  "matched_skills": [
-   "SQL",
-   "Power BI",
-   "Process Automation"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Focus on the business analytics portion of your background."
-  ],
-  "sector": "Fintech",
-  "prefilter": 0.5269,
   "heuristic": false,
   "scored_at": "2026-09-06T14:18:02.114842+00:00"
  },
@@ -2834,68 +2711,27 @@
   "heuristic": false,
   "scored_at": "2026-09-08T15:13:38.545639+00:00"
  },
- "1825b1d2e634d41480757bac384142ba8cb53f4e": {
-  "profile_version": "41e0def99680",
-  "match_score": 30,
-  "confidence": 0.9,
-  "why": "Salary falls well below the $130k constraint, and role is focused on traditional BI management rather than technical orchestration.",
-  "seniority_fit": "stretch",
-  "role_family": "Business & Data Analytics",
-  "matched_skills": [
-   "Power BI & Semantic Modeling",
-   "Data Modeling"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "None — do not pursue due to salary mismatch."
-  ],
-  "sector": "Healthcare",
-  "prefilter": 0.5363,
-  "heuristic": false,
-  "scored_at": "2026-09-09T15:13:59.712026+00:00"
- },
  "36e3d473f1603941422a8ddeef1bb0695419e245": {
-  "profile_version": "41e0def99680",
-  "match_score": 60,
-  "confidence": 0.7,
-  "why": "Fits the TPM title, but role is tied to Bulgaria and seems slightly adjacent to the candidate's primary technical depth.",
-  "seniority_fit": "target",
+  "profile_version": "ac71b866715b",
+  "match_score": 40,
+  "confidence": 0.85,
+  "why": "This is a TPM role that is remote for Bulgaria, but the candidate is in the US; furthermore, it lacks the technical engineering focus requested.",
+  "seniority_fit": "out-of-band",
   "role_family": "Technical Strategy & Product",
   "matched_skills": [
-   "Workflow Automation"
+   "Process Automation"
   ],
   "missing_skills": [
-   "Technical Program Management (Direct)"
+   "Technical Program Management"
   ],
   "resume_suggestions": [
-   "Frame current projects using TPM terminology (cross-functional alignment, roadmap, etc.)."
+   "Highlight experience with product-engineering collaboration.",
+   "Focus on AI-agent orchestration."
   ],
   "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.5344,
+  "prefilter": 0.5462,
   "heuristic": false,
-  "scored_at": "2026-09-09T15:13:59.712026+00:00"
- },
- "23d764b398b027e441536360aab03a80a96a9ad5": {
-  "profile_version": "41e0def99680",
-  "match_score": 85,
-  "confidence": 0.85,
-  "why": "Similar to the other Temporal role; strong alignment with distributed systems/workflow expertise.",
-  "seniority_fit": "target",
-  "role_family": "Solutions & Technical Consulting",
-  "matched_skills": [
-   "Python",
-   "Workflow Automation",
-   "REST API Development"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Emphasize customer-facing technical experience.",
-   "Highlight whiteboarding/design session skills."
-  ],
-  "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.5341,
-  "heuristic": false,
-  "scored_at": "2026-09-09T15:13:59.712026+00:00"
+  "scored_at": "2026-09-10T15:06:24.746435+00:00"
  },
  "f1307ae7c190a59b159a0a172177c485d1bcb81f": {
   "profile_version": "41e0def99680",
@@ -2943,47 +2779,177 @@
   "scored_at": "2026-09-09T15:13:59.712026+00:00"
  },
  "db5528b3547b151b2ad754202cc4faf26c1160bd": {
-  "profile_version": "41e0def99680",
+  "profile_version": "ac71b866715b",
   "match_score": 85,
-  "confidence": 0.8,
-  "why": "Fits perfectly with Alloy's focus on orchestration, identity, and fraud risk management.",
+  "confidence": 0.9,
+  "why": "Fits the Solutions Engineer role requirement perfectly, utilizing the candidate's ability to simplify complex systems (fraud/identity) for clients.",
   "seniority_fit": "target",
   "role_family": "Solutions & Technical Consulting",
   "matched_skills": [
-   "Python",
-   "REST API Development",
-   "Workflow Automation"
+   "SQL",
+   "Stakeholder Enablement"
   ],
   "missing_skills": [],
   "resume_suggestions": [
-   "Highlight experience with identity/risk orchestration platforms.",
-   "Emphasize customer-facing/solutions engineering work."
+   "Highlight experience with financial or risk systems.",
+   "Focus on client-facing technical communication."
   ],
   "sector": "Fintech",
-  "prefilter": 0.5105,
+  "prefilter": 0.5156,
   "heuristic": false,
-  "scored_at": "2026-09-09T15:13:59.712026+00:00"
+  "scored_at": "2026-09-10T15:06:24.746435+00:00"
  },
- "3e5a0a9121170c584281f95c15bb2bb48181486b": {
-  "profile_version": "41e0def99680",
-  "match_score": 85,
-  "confidence": 0.85,
-  "why": "Another high-fit Temporal role; perfect for the candidate's distributed systems/orchestration focus.",
+ "dc5ada665d363c642f3ef3e2ae34caa41919d907": {
+  "profile_version": "ac71b866715b",
+  "match_score": 95,
+  "confidence": 0.9,
+  "why": "This is a direct fit for the candidate's experience in Python, Docker/Kubernetes, and ML/AI operations within a high-stakes financial environment.",
   "seniority_fit": "target",
-  "role_family": "Solutions & Technical Consulting",
+  "role_family": "Process Optimization & Business Operations",
   "matched_skills": [
    "Python",
-   "Workflow Automation",
+   "Docker/Kubernetes",
+   "AI/LLM Operations"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Highlight your experience reducing operational overhead for data science teams.",
+   "Focus on low-latency system design projects."
+  ],
+  "sector": "Fintech",
+  "prefilter": 0.5504,
+  "heuristic": false,
+  "scored_at": "2026-09-10T15:06:24.746435+00:00"
+ },
+ "146ea49192e719c60d0ec72cc1b38b7a9a0f3b2d": {
+  "profile_version": "ac71b866715b",
+  "match_score": 90,
+  "confidence": 0.95,
+  "why": "Excellent alignment with ranking/retrieval systems engineering and the full ML lifecycle in a platform-heavy environment.",
+  "seniority_fit": "target",
+  "role_family": "AI & Machine Learning",
+  "matched_skills": [
+   "Python",
+   "AI/LLM Operations",
    "REST API Development"
   ],
   "missing_skills": [],
   "resume_suggestions": [
-   "Highlight customer-facing design experience.",
-   "Emphasize architectural knowledge (design patterns)."
+   "Highlight experience with ranking/retrieval models.",
+   "Focus on production deployment and serving."
   ],
   "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.5081,
+  "prefilter": 0.5179,
   "heuristic": false,
-  "scored_at": "2026-09-09T15:13:59.712026+00:00"
+  "scored_at": "2026-09-10T15:06:24.746435+00:00"
+ },
+ "c9bf117f351b4d06299521318d96e5146578fb13": {
+  "profile_version": "ac71b866715b",
+  "match_score": 60,
+  "confidence": 0.85,
+  "why": "A good opportunity for an AI platform product management role, which suits the candidate's technical background.",
+  "seniority_fit": "stretch",
+  "role_family": "Technical Strategy & Product",
+  "matched_skills": [
+   "AI/LLM Operations"
+  ],
+  "missing_skills": [
+   "Product Management"
+  ],
+  "resume_suggestions": [
+   "Highlight the 'developer' aspect of your work.",
+   "Focus on product-led growth metrics."
+  ],
+  "sector": "AI/ML Infra",
+  "prefilter": 0.5172,
+  "heuristic": false,
+  "scored_at": "2026-09-10T15:06:24.746435+00:00"
+ },
+ "00a0d1bc798624d8b80e469f135d1a29b196f26c": {
+  "profile_version": "ac71b866715b",
+  "match_score": 50,
+  "confidence": 0.8,
+  "why": "Enterprise Security TPM role is a solid fit for operational/process automation, though it deviates from the core engineering path.",
+  "seniority_fit": "target",
+  "role_family": "Technical Strategy & Product",
+  "matched_skills": [
+   "Process Automation",
+   "Stakeholder Enablement"
+  ],
+  "missing_skills": [
+   "Technical Program Management"
+  ],
+  "resume_suggestions": [
+   "Highlight your technical background in security projects.",
+   "Focus on program management of infrastructure."
+  ],
+  "sector": "Enterprise SaaS/DevTools",
+  "prefilter": 0.5146,
+  "heuristic": false,
+  "scored_at": "2026-09-10T15:06:24.746435+00:00"
+ },
+ "3eb2e4b41f0bd562cefc85a2cfb5031db4cf6c1a": {
+  "profile_version": "ac71b866715b",
+  "match_score": 90,
+  "confidence": 0.9,
+  "why": "Strong fit for a machine learning role within the connected-operations/IoT space.",
+  "seniority_fit": "stretch",
+  "role_family": "AI & Machine Learning",
+  "matched_skills": [
+   "Python",
+   "AI/LLM Operations",
+   "Docker/Kubernetes"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Highlight your work in IoT/connected operations.",
+   "Focus on productionization of ML models."
+  ],
+  "sector": "Enterprise SaaS/DevTools",
+  "prefilter": 0.5139,
+  "heuristic": false,
+  "scored_at": "2026-09-10T15:06:24.746435+00:00"
+ },
+ "46d4c2082242c61e182c098e470bf8feb3f4acb1": {
+  "profile_version": "ac71b866715b",
+  "match_score": 85,
+  "confidence": 0.9,
+  "why": "Matches the machine learning engineering focus and applied research approach within a clinical/healthcare setting.",
+  "seniority_fit": "target",
+  "role_family": "AI & Machine Learning",
+  "matched_skills": [
+   "Python",
+   "AI/LLM Operations"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Highlight experience with medical or high-precision AI.",
+   "Emphasize applied model research."
+  ],
+  "sector": "Healthcare",
+  "prefilter": 0.5114,
+  "heuristic": false,
+  "scored_at": "2026-09-10T15:06:24.746435+00:00"
+ },
+ "2b04b0ed1f0cac9097d9db83736851b3f62fe204": {
+  "profile_version": "ac71b866715b",
+  "match_score": 20,
+  "confidence": 0.95,
+  "why": "Hard constraint violation: compensation explicitly listed as $200 (likely a typo, but per instructions, we must treat it as written), which is below the $130k threshold.",
+  "seniority_fit": "target",
+  "role_family": "Analytics & Data Engineering",
+  "matched_skills": [
+   "Python",
+   "SQL",
+   "Data Modeling"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "N/A - compensation constraint violation."
+  ],
+  "sector": "Enterprise SaaS/DevTools",
+  "prefilter": 0.5106,
+  "heuristic": false,
+  "scored_at": "2026-09-10T15:06:24.746435+00:00"
  }
 }
