@@ -652,23 +652,6 @@
   "heuristic": false,
   "scored_at": "2026-07-26T13:53:43.707763+00:00"
  },
- "3c91f649948d6225c831d32750ac76aaa35aaa96": {
-  "profile_version": "46fae8d62f25",
-  "match_score": 10,
-  "confidence": 0.9,
-  "why": "Salary error listed ($100), likely a misrepresentation; not a safe bet.",
-  "seniority_fit": "out-of-band",
-  "role_family": "AI & Machine Learning",
-  "matched_skills": [],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "N/A"
-  ],
-  "sector": "AI/ML Infra",
-  "prefilter": 0.4749,
-  "heuristic": false,
-  "scored_at": "2026-07-26T13:53:43.707763+00:00"
- },
  "bd46c40b4a1efc1dc2b1f4d73904be8bfa7635bc": {
   "profile_version": "3b7a62d9b509",
   "match_score": 70,
@@ -1044,27 +1027,6 @@
   "prefilter": 0.5146,
   "heuristic": false,
   "scored_at": "2026-09-09T15:13:59.712026+00:00"
- },
- "18e1fee1025160d1a0f176c875828f970dc19f71": {
-  "profile_version": "6ddc095f9575",
-  "match_score": 90,
-  "confidence": 0.95,
-  "why": "Near-perfect skill match for AI optimization and workflow automation in an enterprise SaaS setting.",
-  "seniority_fit": "target",
-  "role_family": "AI & Machine Learning",
-  "matched_skills": [
-   "Workflow Automation",
-   "Internal Tooling/DevEx",
-   "Agentic & RAG Architectures"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Highlight customer-facing AI chat bot optimization"
-  ],
-  "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.5028,
-  "heuristic": false,
-  "scored_at": "2026-09-03T15:06:13.909981+00:00"
  },
  "4566447aa540fe4f43d49012f19d59ebb4fa07cc": {
   "profile_version": "6ddc095f9575",
@@ -2951,5 +2913,97 @@
   "prefilter": 0.5106,
   "heuristic": false,
   "scored_at": "2026-09-10T15:06:24.746435+00:00"
+ },
+ "8988fb2d44da3e3dd02eac3ae9bdbd3d0996ebcb": {
+  "profile_version": "ac71b866715b",
+  "match_score": 85,
+  "confidence": 0.9,
+  "why": "The role perfectly aligns with your experience in process automation and data engineering to drive operational efficiency. The salary range satisfies your constraint and matches your 4-year experience profile for a Senior title.",
+  "seniority_fit": "target",
+  "role_family": "Analytics & Data Engineering",
+  "matched_skills": [
+   "SQL",
+   "Process Automation",
+   "Data Modeling"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Highlight instances where your automation directly reduced costs or improved resource optimization.",
+   "Emphasize your 'Stakeholder Enablement' when describing cross-functional collaboration."
+  ],
+  "sector": "Consumer/E-commerce",
+  "prefilter": 0.5655,
+  "heuristic": false,
+  "scored_at": "2026-09-11T15:08:32.284864+00:00"
+ },
+ "253f02600f6328efad471e272dd2c8e8f44640e5": {
+  "profile_version": "ac71b866715b",
+  "match_score": 75,
+  "confidence": 0.85,
+  "why": "The focus on AI Enablement and internal data mart construction overlaps well with your background in AI/LLM operations and production engineering. While the title is not 'Senior', the company growth and alignment with your tech stack make it a strong functional fit.",
+  "seniority_fit": "target",
+  "role_family": "Analytics & Data Engineering",
+  "matched_skills": [
+   "Python",
+   "SQL",
+   "Data Modeling",
+   "AI/LLM Operations"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Explicitly list 'ETL pattern development' to match their requirement.",
+   "Feature your experience with Python-based pipeline optimization."
+  ],
+  "sector": "Fintech",
+  "prefilter": 0.5508,
+  "heuristic": false,
+  "scored_at": "2026-09-11T15:08:32.284864+00:00"
+ },
+ "c759a1225e4af74f3f48a527bd4011f72fdb302c": {
+  "profile_version": "ac71b866715b",
+  "match_score": 30,
+  "confidence": 0.95,
+  "why": "This is a management role requiring leadership experience outside your current scope, and the salary information provided is clearly erroneous or missing.",
+  "seniority_fit": "out-of-band",
+  "role_family": "Business & Data Analytics",
+  "matched_skills": [
+   "SQL",
+   "Data Modeling"
+  ],
+  "missing_skills": [
+   "People Management",
+   "Strategic Budgeting"
+  ],
+  "resume_suggestions": [
+   "Remove this search entirely as it is a level/role mismatch.",
+   "Do not apply for Management roles until you have direct report experience."
+  ],
+  "sector": "Healthcare",
+  "prefilter": 0.5377,
+  "heuristic": false,
+  "scored_at": "2026-09-11T15:08:32.284864+00:00"
+ },
+ "30baf20d6a473509c302b6d007ba659b4de19b37": {
+  "profile_version": "ac71b866715b",
+  "match_score": 40,
+  "confidence": 0.6,
+  "why": "The posting is missing critical compensation data and leans toward marketing operations rather than your core strength in backend developer tooling and quantitative risk modeling. It is a misalignment of functional domain despite the company's tech-forward nature.",
+  "seniority_fit": "target",
+  "role_family": "Process Optimization & Business Operations",
+  "matched_skills": [
+   "Process Automation",
+   "SQL"
+  ],
+  "missing_skills": [
+   "Marketing Automation Platforms (e.g., Marketo/HubSpot)"
+  ],
+  "resume_suggestions": [
+   "Reframe your 'Process Automation' experience to focus on marketing/user-journey triggers if applying for similar roles.",
+   "Add a 'Tools and Platforms' section to highlight relevant software."
+  ],
+  "sector": "Enterprise SaaS/DevTools",
+  "prefilter": 0.5117,
+  "heuristic": false,
+  "scored_at": "2026-09-11T15:08:32.284864+00:00"
  }
 }
