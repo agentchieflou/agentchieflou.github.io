@@ -216,48 +216,6 @@
   "heuristic": false,
   "scored_at": "2026-08-27T21:06:10.399047+00:00"
  },
- "116e9bc9e02a3740c418238c915cfaf4a8051e0d": {
-  "profile_version": "1a45b9c8e6a3",
-  "match_score": 72,
-  "confidence": 0.7,
-  "why": "A solid consultant fit. Meets your pay threshold and allows you to apply your technical experience in a client-facing role.",
-  "seniority_fit": "target",
-  "role_family": "Solutions & Technical Consulting",
-  "matched_skills": [
-   "REST API Development",
-   "Workflow Automation"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Focus on your past 'post-sales' or 'onboarding' success stories.",
-   "Emphasize your ability to work autonomously."
-  ],
-  "sector": "Fintech",
-  "prefilter": 0.5196,
-  "heuristic": false,
-  "scored_at": "2026-08-27T21:06:10.399047+00:00"
- },
- "3c641317b8bd9a0131268aece1ff694a02b6ab26": {
-  "profile_version": "1a45b9c8e6a3",
-  "match_score": 70,
-  "confidence": 0.7,
-  "why": "Similar to other consultant roles at Ramp, great for high-agency individuals who want to pivot into solutions consulting.",
-  "seniority_fit": "target",
-  "role_family": "Solutions & Technical Consulting",
-  "matched_skills": [
-   "REST API Development",
-   "Workflow Automation"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Focus on your technical ability to solve complex integration issues.",
-   "Call out your 'builder' mindset."
-  ],
-  "sector": "Fintech",
-  "prefilter": 0.5192,
-  "heuristic": false,
-  "scored_at": "2026-08-27T21:06:10.399047+00:00"
- },
  "9fce091ae879275fc8320bc73d265a65fdbeae00": {
   "profile_version": "1a45b9c8e6a3",
   "match_score": 68,
@@ -369,28 +327,6 @@
   "prefilter": 0.4896,
   "heuristic": false,
   "scored_at": "2026-07-26T22:55:51.839961+00:00"
- },
- "d580ae9dae1678cc6aaa2022c9e870ba315eafb0": {
-  "profile_version": "2d8f68683856",
-  "match_score": 75,
-  "confidence": 0.85,
-  "why": "Solid technical analyst role within your domain interest of fraud/fintech.",
-  "seniority_fit": "target",
-  "role_family": "Business & Data Analytics",
-  "matched_skills": [
-   "SQL",
-   "Quantitative Analytics",
-   "Project Management"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Highlight experience with fraud intelligence.",
-   "Emphasize your technical, data-driven approach."
-  ],
-  "sector": "Fintech",
-  "prefilter": 0.4878,
-  "heuristic": false,
-  "scored_at": "2026-07-26T23:51:05.100980+00:00"
  },
  "f0ffea56584027502d2af5171677c222f03476ba": {
   "profile_version": "f574fcf8a53e",
@@ -2081,26 +2017,26 @@
   "scored_at": "2026-09-15T15:39:14.833096+00:00"
  },
  "de9890b6a6c4d8015529f966807db29308f87f9f": {
-  "profile_version": "6a392f77423f",
-  "match_score": 60,
-  "confidence": 0.7,
-  "why": "A Program Management role with a good technical focus; compensation is clearly marked wrong/low, ignore the $100 label.",
+  "profile_version": "f574fcf8a53e",
+  "match_score": 35,
+  "confidence": 0.9,
+  "why": "While the role aligns well with Michael's experience in AI/ML infra and developer tooling, the salary of $100k falls significantly below the $130k hard constraint. The seniority requirement is a perfect match, but the financial constraint is a non-starter.",
   "seniority_fit": "target",
   "role_family": "Technical Strategy & Product",
   "matched_skills": [
-   "Requirement Gathering",
-   "CI/CD"
+   "Python",
+   "REST API Development",
+   "Agentic Architecture"
   ],
-  "missing_skills": [
-   "Program Management"
-  ],
+  "missing_skills": [],
   "resume_suggestions": [
-   "Highlight your experience managing complex technical releases."
+   "Highlight specific instances of scaling infrastructure or developer tools for high-concurrency environments.",
+   "Emphasize the 'technical' aspect of program management by showcasing previous projects that involved cross-functional stakeholder alignment."
   ],
   "sector": "AI/ML Infra",
-  "prefilter": 0.5156,
+  "prefilter": 0.5002,
   "heuristic": false,
-  "scored_at": "2026-09-12T14:16:44.679478+00:00"
+  "scored_at": "2026-09-17T15:37:40.705384+00:00"
  },
  "0c5c485718a2642e67c8c367166f626968311c0e": {
   "profile_version": "f574fcf8a53e",
@@ -2299,27 +2235,6 @@
   "prefilter": 0.5111,
   "heuristic": false,
   "scored_at": "2026-09-10T15:06:24.746435+00:00"
- },
- "ab75c101189948f8188e72ce59df1d4cfcf9ceb9": {
-  "profile_version": "f574fcf8a53e",
-  "match_score": 40,
-  "confidence": 0.8,
-  "why": "Likely a stretch for a senior TPM role; lacks specific salary details. Solid company, but role might be too administrative.",
-  "seniority_fit": "stretch",
-  "role_family": "Technical Strategy & Product",
-  "matched_skills": [
-   "Process Optimization",
-   "CI/CD & DevOps"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Highlight technical program management lifecycle experience.",
-   "Emphasize cross-functional stakeholder management."
-  ],
-  "sector": "Fintech",
-  "prefilter": 0.5095,
-  "heuristic": false,
-  "scored_at": "2026-09-15T15:39:14.833096+00:00"
  },
  "6960211798bc9bde70aec7602682922d1c94d241": {
   "profile_version": "ac71b866715b",
@@ -2668,27 +2583,6 @@
   "prefilter": 0.5106,
   "heuristic": false,
   "scored_at": "2026-09-10T15:06:24.746435+00:00"
- },
- "30baf20d6a473509c302b6d007ba659b4de19b37": {
-  "profile_version": "f574fcf8a53e",
-  "match_score": 40,
-  "confidence": 0.7,
-  "why": "Salary is undisclosed and title is slightly lower impact than your current tooling focus.",
-  "seniority_fit": "below",
-  "role_family": "Process Optimization & Business Operations",
-  "matched_skills": [
-   "Python",
-   "Process Optimization"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Focus on your 'agentic' experience to elevate the profile.",
-   "Highlight cross-functional process automation achievements."
-  ],
-  "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.5278,
-  "heuristic": false,
-  "scored_at": "2026-09-15T15:39:14.833096+00:00"
  },
  "c5857ce57612bfc362c894c6eb4258e18d628005": {
   "profile_version": "f574fcf8a53e",
