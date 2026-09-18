@@ -1,15 +1,15 @@
 {
- "summary": "Michael is a highly technical business analytics professional with 4 years of experience specializing in building internal developer tooling, process automation, and high-impact data infrastructure. He excels at bridging the gap between business strategy and technical execution, evidenced by his track record of deploying REST APIs, custom Python packages, and agentic workflows to streamline enterprise operations. Passionate about efficiency, he builds sophisticated tooling that replaces manual labor with high-throughput automation and robust monitoring frameworks.",
+ "summary": "Michael is a technically-oriented Business Analytics professional with four years of experience optimizing enterprise workflows and building internal developer tooling. He specializes in bridging the gap between raw data operations and scalable, automated service architectures, including RAG and agentic workflows. Proven track record of reducing operational costs and migration timelines through custom Python orchestration, REST API deployment, and robust data visualization.",
  "skills": [
   {
    "name": "Python",
    "category": "engineering",
    "strength": 0.95,
    "evidence": [
-    "Enterprise Python tooling maintainer",
-    "REST API development",
-    "Custom package distribution",
-    "Complex automation suites"
+    "Enterprise Python packaging",
+    "Custom orchestration engines",
+    "High-throughput scraper development",
+    "Production API construction"
    ]
   },
   {
@@ -17,19 +17,19 @@
    "category": "analytics",
    "strength": 0.9,
    "evidence": [
-    "Grid-wide table usage analytics",
-    "Database migration reconciliation",
-    "Complex join/aggregate analysis"
+    "Grid-wide telemetry analytics",
+    "Oracle/Teradata data modeling",
+    "Performance tuning for large-scale datasets"
    ]
   },
   {
-   "name": "REST API Development",
-   "category": "engineering",
+   "name": "Power BI",
+   "category": "analytics",
    "strength": 0.85,
    "evidence": [
-    "Production deployment on OpenShift",
-    "Containerized scraper and parsing services",
-    "Downstream system integration"
+    "Semantic model design",
+    "Portfolio-wide performance dashboards",
+    "Peer-bank competitor stress analysis"
    ]
   },
   {
@@ -37,49 +37,49 @@
    "category": "engineering",
    "strength": 0.9,
    "evidence": [
-    "Scraper orchestrators",
-    "Internal tool dev",
-    "Automated pricing/reporting workflows"
+    "Multi-scraper orchestrators",
+    "Pricing workflow automation (saving 30-60 min/day)",
+    "CI/CD pipeline integration"
    ]
   },
   {
-   "name": "Power BI",
-   "category": "analytics",
-   "strength": 0.8,
-   "evidence": [
-    "Semantic modeling",
-    "Portfolio-wide performance dashboards",
-    "Competitor stress analysis dashboards"
-   ]
-  },
-  {
-   "name": "CI/CD & DevOps",
-   "category": "engineering",
-   "strength": 0.8,
-   "evidence": [
-    "Helm/Docker/OpenShift",
-    "Policy as Code",
-    "Production deployment pipelines"
-   ]
-  },
-  {
-   "name": "Agentic Architecture",
+   "name": "Agentic & RAG Architecture",
    "category": "engineering",
    "strength": 0.75,
    "evidence": [
-    "RAG architecture evaluation",
-    "Copilot orchestration projects",
-    "Autonomous career agent project"
+    "Copilot orchestration tool",
+    "Enterprise retrieval scoping",
+    "Token-budget constraint modeling"
+   ]
+  },
+  {
+   "name": "REST API Development",
+   "category": "engineering",
+   "strength": 0.8,
+   "evidence": [
+    "Production deployment on OpenShift/Kubernetes",
+    "API usage in credit risk systems",
+    "Headless browser service endpoints"
+   ]
+  },
+  {
+   "name": "Docker/Kubernetes",
+   "category": "engineering",
+   "strength": 0.75,
+   "evidence": [
+    "Containerizing scraping systems",
+    "Helm chart management",
+    "OpenShift service deployment"
    ]
   },
   {
    "name": "Data Modeling",
    "category": "analytics",
-   "strength": 0.75,
+   "strength": 0.8,
    "evidence": [
-    "Asset class migration",
-    "Reserve forecasting models",
-    "Schema design for lineage tools"
+    "Migration reconciliation framework",
+    "Asset class migration mapping",
+    "Portfolio-wide semantic modeling"
    ]
   },
   {
@@ -87,36 +87,28 @@
    "category": "domain",
    "strength": 0.85,
    "evidence": [
-    "Migration impact reduction (6 weeks to 24 hours)",
-    "Automated QA frameworks",
-    "Expense reduction projects"
+    "Reduced migration impact discovery from 6 weeks to 24 hours",
+    "$1M annual expense reduction project",
+    "Alert fatigue mitigation"
    ]
   },
   {
-   "name": "Selenium",
-   "category": "tools",
+   "name": "Forecasting",
+   "category": "analytics",
    "strength": 0.7,
    "evidence": [
-    "Document sourcing scraper",
-    "Headless browser automation"
+    "CECL reserve forecasting",
+    "Macroeconomic scenario modeling",
+    "$70B+ asset portfolio analysis"
    ]
   },
   {
-   "name": "Kubernetes/OpenShift",
+   "name": "CI/CD",
    "category": "engineering",
-   "strength": 0.75,
+   "strength": 0.7,
    "evidence": [
-    "Production API platform deployment",
-    "Containerization and orchestration"
-   ]
-  },
-  {
-   "name": "Data Visualization",
-   "category": "analytics",
-   "strength": 0.75,
-   "evidence": [
-    "Executive-level risk reporting",
-    "Peer Bank Analysis Dashboard"
+    "Enterprise governance gate clearance",
+    "GitHub Actions workflows for Copilot tools"
    ]
   },
   {
@@ -124,38 +116,39 @@
    "category": "analytics",
    "strength": 0.8,
    "evidence": [
-    "Reserve forecasting",
-    "Price elasticity research",
-    "Model risk management (SR 11-7)"
+    "Model risk management (SR 11-7)",
+    "Pricing elasticity research",
+    "Transaction detection systems"
    ]
   },
   {
-   "name": "Git/Version Control",
+   "name": "Data Visualization",
    "category": "tools",
-   "strength": 0.85,
+   "strength": 0.75,
    "evidence": [
-    "Team-wide architecture overhaul",
-    "Complex branching and CI/CD integration"
+    "Competitive risk visibility dashboards",
+    "Rate-change effectiveness tools"
    ]
   },
   {
-   "name": "Enterprise Tooling",
+   "name": "Requirements Gathering",
    "category": "domain",
-   "strength": 0.85,
+   "strength": 0.75,
    "evidence": [
-    "Internal developer tool suite",
-    "Package distribution for bank-wide analytics"
+    "Stakeholder enablement",
+    "Integration of BBVA mortgage data",
+    "SME field validation coordination"
    ]
   }
  ],
  "target_titles": [
+  "Senior Business Intelligence Engineer",
   "Analytics Engineer",
-  "Senior Business Intelligence Developer",
-  "Technical Product Manager (Data/AI)",
-  "Automation Engineer",
-  "Solutions Engineer (Analytics Focus)"
+  "Data Operations Manager",
+  "Technical Product Manager (Internal Tools)",
+  "Automation Engineer (Business Strategy)"
  ],
- "version": "f574fcf8a53e",
+ "version": "76423b2d13d2",
  "remote_only": true,
- "generated_at": "2026-09-13T14:57:37.082098+00:00"
+ "generated_at": "2026-09-18T15:03:43.995631+00:00"
 }
