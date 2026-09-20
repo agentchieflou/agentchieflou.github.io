@@ -2622,31 +2622,6 @@
   "heuristic": false,
   "scored_at": "2026-09-18T15:05:30.018528+00:00"
  },
- "aa17ae8297081685782683a772a33fd1163f5f4d": {
-  "profile_version": "76423b2d13d2",
-  "match_score": 80,
-  "confidence": 0.85,
-  "why": "Solid alignment for a GTM analytics role; remote and appropriate seniority.",
-  "seniority_fit": "target",
-  "role_family": "Business & Data Analytics",
-  "matched_skills": [
-   "SQL",
-   "Data Visualization",
-   "Forecasting",
-   "Requirements Gathering"
-  ],
-  "missing_skills": [
-   "GTM/Sales metrics specific experience"
-  ],
-  "resume_suggestions": [
-   "Showcase your work on GTM/Sales funnel metrics.",
-   "Emphasize your impact on cross-functional business alignment."
-  ],
-  "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.5125,
-  "heuristic": false,
-  "scored_at": "2026-09-18T15:05:30.018528+00:00"
- },
  "693989cfc50fa49377aacc508e970794d7b1e51d": {
   "profile_version": "f574fcf8a53e",
   "match_score": 50,
@@ -3028,5 +3003,51 @@
   "prefilter": 0.4986,
   "heuristic": false,
   "scored_at": "2026-09-19T14:35:56.097922+00:00"
+ },
+ "fbfc0b6b6e410e90c1aae21f4af38cd02a2adb34": {
+  "profile_version": "76423b2d13d2",
+  "match_score": 35,
+  "confidence": 0.9,
+  "why": "The role violates the hard constraint for fully-remote work (requires 2 days in office) and asks for 6 years of experience, pushing it into a stretch/out-of-band category for a 4-year candidate.",
+  "seniority_fit": "stretch",
+  "role_family": "Analytics & Data Engineering",
+  "matched_skills": [
+   "SQL",
+   "Data Modeling",
+   "Requirements Gathering"
+  ],
+  "missing_skills": [
+   "Semantic Layer Architecture"
+  ],
+  "resume_suggestions": [
+   "Highlight experience with enterprise-wide data governance and modeling architecture.",
+   "Emphasize metrics definitions and single-source-of-truth projects."
+  ],
+  "sector": "Healthcare",
+  "prefilter": 0.5449,
+  "heuristic": false,
+  "scored_at": "2026-09-20T14:46:11.712525+00:00"
+ },
+ "2b421dfe74c1bdcef5db7274b46ff7d599916a9f": {
+  "profile_version": "76423b2d13d2",
+  "match_score": 65,
+  "confidence": 0.8,
+  "why": "This role aligns well with the 3-year experience requirement and core analytics engineering skillset, though the bottom of the pay range falls short of the $130k hard constraint.",
+  "seniority_fit": "target",
+  "role_family": "Analytics & Data Engineering",
+  "matched_skills": [
+   "SQL",
+   "Data Modeling",
+   "Process Optimization"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Quantify impact on operational efficiency in your summary to justify the high end of their salary band.",
+   "Highlight any previous experience with large-scale data integrations."
+  ],
+  "sector": "Other",
+  "prefilter": 0.5093,
+  "heuristic": false,
+  "scored_at": "2026-09-20T14:46:11.712525+00:00"
  }
 }
