@@ -1055,31 +1055,6 @@
   "heuristic": false,
   "scored_at": "2026-09-18T15:05:30.018528+00:00"
  },
- "e0f2b97f5318dfcda2b31656553f62b3e3e6f5f8": {
-  "profile_version": "76423b2d13d2",
-  "match_score": 60,
-  "confidence": 0.8,
-  "why": "Role is Seattle-based (not remote); otherwise excellent fit for technical skills.",
-  "seniority_fit": "stretch",
-  "role_family": "Analytics & Data Engineering",
-  "matched_skills": [
-   "Python",
-   "SQL",
-   "Docker/Kubernetes",
-   "Quantitative Analytics"
-  ],
-  "missing_skills": [
-   "Causal Inference"
-  ],
-  "resume_suggestions": [
-   "Emphasize your experience with experimental design.",
-   "Highlight your work on high-scale/production-grade data pipelines."
-  ],
-  "sector": "AI/ML Infra",
-  "prefilter": 0.5215,
-  "heuristic": false,
-  "scored_at": "2026-09-18T15:05:30.018528+00:00"
- },
  "75c35f51c5b63b69e626def7d3097b44a1aeaa22": {
   "profile_version": "6a392f77423f",
   "match_score": 90,
@@ -2931,30 +2906,6 @@
   "heuristic": false,
   "scored_at": "2026-09-19T14:35:56.097922+00:00"
  },
- "c50d541274974e2351deb524177a2af89097bff7": {
-  "profile_version": "76423b2d13d2",
-  "match_score": 40,
-  "confidence": 0.7,
-  "why": "The job description asks for an 'E4' Staff level role with a strong Oracle EPM background, which is a significant seniority and technology mismatch for the candidate. The role is aimed at a much more experienced architect-level profile.",
-  "seniority_fit": "out-of-band",
-  "role_family": "Business & Data Analytics",
-  "matched_skills": [
-   "Process Optimization",
-   "Requirements Gathering"
-  ],
-  "missing_skills": [
-   "Oracle EPM",
-   "Enterprise Architecture"
-  ],
-  "resume_suggestions": [
-   "Avoid applying to Staff-level roles unless your domain expertise in the specific ERP is significant.",
-   "Focus on roles prioritizing Python/Cloud tooling over legacy ERP management."
-  ],
-  "sector": "Government/Public Sector",
-  "prefilter": 0.5066,
-  "heuristic": false,
-  "scored_at": "2026-09-19T14:35:56.097922+00:00"
- },
  "bc12ef9755a652b9e4b46ac57468fd414e460f94": {
   "profile_version": "76423b2d13d2",
   "match_score": 30,
@@ -3049,5 +3000,77 @@
   "prefilter": 0.5093,
   "heuristic": false,
   "scored_at": "2026-09-20T14:46:11.712525+00:00"
+ },
+ "e0c51ddc7934f9eb0b43404e9de58a2c173d776f": {
+  "profile_version": "76423b2d13d2",
+  "match_score": 75,
+  "confidence": 0.85,
+  "why": "The role perfectly aligns with your experience in dashboard development, data modeling, and process optimization within a marketing context. It is a natural step up in scope and responsibility for someone with 4 years of experience.",
+  "seniority_fit": "stretch",
+  "role_family": "Process Optimization & Business Operations",
+  "matched_skills": [
+   "SQL",
+   "Power BI",
+   "Data Modeling",
+   "Process Optimization"
+  ],
+  "missing_skills": [
+   "Multi-touch attribution knowledge"
+  ],
+  "resume_suggestions": [
+   "Highlight specific instances where you managed marketing data governance.",
+   "Emphasize cross-functional stakeholder management in your past projects."
+  ],
+  "sector": "Enterprise SaaS/DevTools",
+  "prefilter": 0.5074,
+  "heuristic": false,
+  "scored_at": "2026-09-21T17:09:35.465187+00:00"
+ },
+ "8e2e2959ed9395825c824e3bebfe043514ea4663": {
+  "profile_version": "76423b2d13d2",
+  "match_score": 85,
+  "confidence": 0.9,
+  "why": "This is an exceptional fit for your specialization in Agentic & RAG architectures and Python automation. It directly utilizes your background in deploying scalable service architectures to solve real-world operational problems.",
+  "seniority_fit": "target",
+  "role_family": "AI & Machine Learning",
+  "matched_skills": [
+   "Python",
+   "Workflow Automation",
+   "Agentic & RAG Architecture",
+   "REST API Development"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Quantify the impact of your agentic workflows on operational efficiency.",
+   "Showcase your experience with CI/CD and containerization in your AI projects."
+  ],
+  "sector": "AI/ML Infra",
+  "prefilter": 0.4988,
+  "heuristic": false,
+  "scored_at": "2026-09-21T17:09:35.465187+00:00"
+ },
+ "4a0860c6ee047d99fa6810ed076a5c1756c3e5df": {
+  "profile_version": "76423b2d13d2",
+  "match_score": 0,
+  "confidence": 0.95,
+  "why": "While the role is a great professional fit, it is listed as New York City, NY, which violates your hard constraint for a fully remote position.",
+  "seniority_fit": "stretch",
+  "role_family": "Process Optimization & Business Operations",
+  "matched_skills": [
+   "Workflow Automation",
+   "Process Optimization",
+   "Requirements Gathering"
+  ],
+  "missing_skills": [
+   "Sales operations strategy"
+  ],
+  "resume_suggestions": [
+   "Highlight your experience in partnering directly with sales leadership.",
+   "Focus on your ability to design systems rather than just reporting."
+  ],
+  "sector": "Enterprise SaaS/DevTools",
+  "prefilter": 0.4966,
+  "heuristic": false,
+  "scored_at": "2026-09-21T17:09:35.465187+00:00"
  }
 }
