@@ -1,15 +1,14 @@
 {
- "summary": "Michael is a technically-oriented Business Analytics professional with four years of experience optimizing enterprise workflows and building internal developer tooling. He specializes in bridging the gap between raw data operations and scalable, automated service architectures, including RAG and agentic workflows. Proven track record of reducing operational costs and migration timelines through custom Python orchestration, REST API deployment, and robust data visualization.",
+ "summary": "Michael is a high-impact technical professional with 4 years of experience specializing in building developer tooling, automating complex operational workflows, and optimizing data architecture. He has a proven track record of delivering enterprise-wide Python packages and REST APIs that significantly improve team productivity and reduce operational costs. His current focus centers on agentic RAG architectures and leveraging LLMs to solve systemic inefficiencies in team workflows.",
  "skills": [
   {
    "name": "Python",
    "category": "engineering",
    "strength": 0.95,
    "evidence": [
-    "Enterprise Python packaging",
-    "Custom orchestration engines",
-    "High-throughput scraper development",
-    "Production API construction"
+    "Bank-wide package maintenance",
+    "Production API development",
+    "Advanced automation suite orchestration"
    ]
   },
   {
@@ -17,19 +16,9 @@
    "category": "analytics",
    "strength": 0.9,
    "evidence": [
-    "Grid-wide telemetry analytics",
-    "Oracle/Teradata data modeling",
-    "Performance tuning for large-scale datasets"
-   ]
-  },
-  {
-   "name": "Power BI",
-   "category": "analytics",
-   "strength": 0.85,
-   "evidence": [
-    "Semantic model design",
-    "Portfolio-wide performance dashboards",
-    "Peer-bank competitor stress analysis"
+    "Data validation frameworks",
+    "Complex querying for enterprise migrations",
+    "Grid-wide telemetry analytics"
    ]
   },
   {
@@ -37,118 +26,123 @@
    "category": "engineering",
    "strength": 0.9,
    "evidence": [
-    "Multi-scraper orchestrators",
-    "Pricing workflow automation (saving 30-60 min/day)",
-    "CI/CD pipeline integration"
+    "Automated scraper suites",
+    "Pricing workflow re-engineering",
+    "CI/CD pipeline implementation"
    ]
   },
   {
    "name": "Agentic & RAG Architecture",
    "category": "engineering",
-   "strength": 0.75,
+   "strength": 0.85,
    "evidence": [
-    "Copilot orchestration tool",
-    "Enterprise retrieval scoping",
-    "Token-budget constraint modeling"
+    "Resource-efficient AI deployment",
+    "Copilot orchestration tool development",
+    "Prompt engineering and cost modeling"
+   ]
+  },
+  {
+   "name": "Power BI",
+   "category": "analytics",
+   "strength": 0.8,
+   "evidence": [
+    "Semantic modeling for portfolio reporting",
+    "Executive-level competitive stress dashboards"
    ]
   },
   {
    "name": "REST API Development",
    "category": "engineering",
-   "strength": 0.8,
+   "strength": 0.85,
    "evidence": [
-    "Production deployment on OpenShift/Kubernetes",
-    "API usage in credit risk systems",
-    "Headless browser service endpoints"
+    "Containerized production APIs on OpenShift",
+    "Headless browser service deployment"
    ]
   },
   {
-   "name": "Docker/Kubernetes",
+   "name": "Kubernetes / OpenShift",
    "category": "engineering",
-   "strength": 0.75,
+   "strength": 0.8,
    "evidence": [
-    "Containerizing scraping systems",
-    "Helm chart management",
-    "OpenShift service deployment"
+    "Containerization of scraper systems",
+    "Managed production service deployments"
    ]
   },
   {
    "name": "Data Modeling",
    "category": "analytics",
+   "strength": 0.75,
+   "evidence": [
+    "Asset class migration validation",
+    "Back-testing and performance monitoring for mortgage models"
+   ]
+  },
+  {
+   "name": "CI/CD Pipelines",
+   "category": "engineering",
+   "strength": 0.75,
+   "evidence": [
+    "Enterprise-grade CI/CD implementation",
+    "Helm chart management for production APIs"
+   ]
+  },
+  {
+   "name": "Docker",
+   "category": "engineering",
    "strength": 0.8,
    "evidence": [
-    "Migration reconciliation framework",
-    "Asset class migration mapping",
-    "Portfolio-wide semantic modeling"
-   ]
-  },
-  {
-   "name": "Process Optimization",
-   "category": "domain",
-   "strength": 0.85,
-   "evidence": [
-    "Reduced migration impact discovery from 6 weeks to 24 hours",
-    "$1M annual expense reduction project",
-    "Alert fatigue mitigation"
-   ]
-  },
-  {
-   "name": "Forecasting",
-   "category": "analytics",
-   "strength": 0.7,
-   "evidence": [
-    "CECL reserve forecasting",
-    "Macroeconomic scenario modeling",
-    "$70B+ asset portfolio analysis"
-   ]
-  },
-  {
-   "name": "CI/CD",
-   "category": "engineering",
-   "strength": 0.7,
-   "evidence": [
-    "Enterprise governance gate clearance",
-    "GitHub Actions workflows for Copilot tools"
+    "Production environment containerization",
+    "Policy as Code governance"
    ]
   },
   {
    "name": "Quantitative Analytics",
-   "category": "analytics",
-   "strength": 0.8,
-   "evidence": [
-    "Model risk management (SR 11-7)",
-    "Pricing elasticity research",
-    "Transaction detection systems"
-   ]
-  },
-  {
-   "name": "Data Visualization",
-   "category": "tools",
-   "strength": 0.75,
-   "evidence": [
-    "Competitive risk visibility dashboards",
-    "Rate-change effectiveness tools"
-   ]
-  },
-  {
-   "name": "Requirements Gathering",
    "category": "domain",
+   "strength": 0.85,
+   "evidence": [
+    "CECL reserve forecasting",
+    "Pricing elasticity research",
+    "Stress analysis models"
+   ]
+  },
+  {
+   "name": "Git & Version Control",
+   "category": "tools",
+   "strength": 0.9,
+   "evidence": [
+    "Package distribution",
+    "Overhauled team version control practices",
+    "Active open-source portfolio maintenance"
+   ]
+  },
+  {
+   "name": "Stakeholder Enablement",
+   "category": "domain",
+   "strength": 0.85,
+   "evidence": [
+    "Migration-impact discovery tools",
+    "Developer tooling documentation",
+    "Executive-level reporting"
+   ]
+  },
+  {
+   "name": "Selenium / Headless Browsers",
+   "category": "engineering",
    "strength": 0.75,
    "evidence": [
-    "Stakeholder enablement",
-    "Integration of BBVA mortgage data",
-    "SME field validation coordination"
+    "Document sourcing automation",
+    "High-throughput web scraping"
    ]
   }
  ],
  "target_titles": [
-  "Senior Business Intelligence Engineer",
-  "Analytics Engineer",
-  "Data Operations Manager",
-  "Technical Product Manager (Internal Tools)",
-  "Automation Engineer (Business Strategy)"
+  "Senior Data & Automation Engineer",
+  "Technical Product Manager (Developer Tools)",
+  "Senior Analytics Engineer",
+  "AI Operations Engineer",
+  "Process Optimization Lead"
  ],
- "version": "76423b2d13d2",
+ "version": "15547dfe9647",
  "remote_only": true,
- "generated_at": "2026-09-18T15:03:43.995631+00:00"
+ "generated_at": "2026-09-22T15:34:19.612440+00:00"
 }
