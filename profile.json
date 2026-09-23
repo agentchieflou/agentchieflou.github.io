@@ -1,71 +1,42 @@
 {
- "summary": "Michael is a high-impact technical professional with 4 years of experience specializing in building developer tooling, automating complex operational workflows, and optimizing data architecture. He has a proven track record of delivering enterprise-wide Python packages and REST APIs that significantly improve team productivity and reduce operational costs. His current focus centers on agentic RAG architectures and leveraging LLMs to solve systemic inefficiencies in team workflows.",
+ "summary": "Michael is a highly technical analytics professional specializing in building high-impact developer tooling and process automation to solve enterprise-scale data problems. With four years of experience in the financial sector, he excels at converting manual, error-prone workflows into robust, containerized services using Python, APIs, and CI/CD pipelines. He is currently focused on agentic AI architecture and high-throughput orchestration to optimize organizational efficiency.",
  "skills": [
   {
    "name": "Python",
    "category": "engineering",
    "strength": 0.95,
    "evidence": [
-    "Bank-wide package maintenance",
-    "Production API development",
-    "Advanced automation suite orchestration"
+    "Maintains enterprise-wide Python packages",
+    "built automation scrapers",
+    "REST API development"
    ]
   },
   {
    "name": "SQL",
    "category": "analytics",
-   "strength": 0.9,
-   "evidence": [
-    "Data validation frameworks",
-    "Complex querying for enterprise migrations",
-    "Grid-wide telemetry analytics"
-   ]
-  },
-  {
-   "name": "Workflow Automation",
-   "category": "engineering",
-   "strength": 0.9,
-   "evidence": [
-    "Automated scraper suites",
-    "Pricing workflow re-engineering",
-    "CI/CD pipeline implementation"
-   ]
-  },
-  {
-   "name": "Agentic & RAG Architecture",
-   "category": "engineering",
    "strength": 0.85,
    "evidence": [
-    "Resource-efficient AI deployment",
-    "Copilot orchestration tool development",
-    "Prompt engineering and cost modeling"
+    "Complex data reconciliation across MongoDB/Oracle/Teradata",
+    "enterprise table usage analytics"
    ]
   },
   {
-   "name": "Power BI",
-   "category": "analytics",
-   "strength": 0.8,
+   "name": "Process Automation",
+   "category": "engineering",
+   "strength": 0.9,
    "evidence": [
-    "Semantic modeling for portfolio reporting",
-    "Executive-level competitive stress dashboards"
+    "Built scraper orchestrators",
+    "automated pricing workflows",
+    "reduced migration discovery time from weeks to 24 hours"
    ]
   },
   {
    "name": "REST API Development",
    "category": "engineering",
-   "strength": 0.85,
-   "evidence": [
-    "Containerized production APIs on OpenShift",
-    "Headless browser service deployment"
-   ]
-  },
-  {
-   "name": "Kubernetes / OpenShift",
-   "category": "engineering",
    "strength": 0.8,
    "evidence": [
-    "Containerization of scraper systems",
-    "Managed production service deployments"
+    "Deployed production APIs on OpenShift",
+    "containerized internal tools for service consumption"
    ]
   },
   {
@@ -73,17 +44,56 @@
    "category": "analytics",
    "strength": 0.75,
    "evidence": [
-    "Asset class migration validation",
-    "Back-testing and performance monitoring for mortgage models"
+    "Power BI semantic models",
+    "Home Equity portfolio modeling",
+    "large-scale asset reconciliation"
    ]
   },
   {
-   "name": "CI/CD Pipelines",
+   "name": "Power BI",
+   "category": "analytics",
+   "strength": 0.8,
+   "evidence": [
+    "Built portfolio-wide performance dashboards",
+    "peer bank stress analysis reporting"
+   ]
+  },
+  {
+   "name": "Kubernetes/OpenShift",
    "category": "engineering",
    "strength": 0.75,
    "evidence": [
-    "Enterprise-grade CI/CD implementation",
-    "Helm chart management for production APIs"
+    "Deployed production services with Helm",
+    "managed CI/CD pipelines in restricted networks"
+   ]
+  },
+  {
+   "name": "Agentic AI/RAG",
+   "category": "engineering",
+   "strength": 0.7,
+   "evidence": [
+    "Developed RAG architectures",
+    "evaluated token-budget patterns for enterprise scale",
+    "created Copilot orchestrator tools"
+   ]
+  },
+  {
+   "name": "Data Validation Frameworks",
+   "category": "engineering",
+   "strength": 0.85,
+   "evidence": [
+    "Parameterized framework for 1,930+ field reconciliation",
+    "asset class migration validation"
+   ]
+  },
+  {
+   "name": "Quantitative Analytics",
+   "category": "analytics",
+   "strength": 0.8,
+   "evidence": [
+    "CECL reserve forecasting",
+    "elasticity research",
+    "peer bank stress analysis"
    ]
   },
   {
@@ -91,58 +101,46 @@
    "category": "engineering",
    "strength": 0.8,
    "evidence": [
-    "Production environment containerization",
-    "Policy as Code governance"
+    "Containerization of scraper/API services",
+    "production ML serving"
    ]
   },
   {
-   "name": "Quantitative Analytics",
-   "category": "domain",
-   "strength": 0.85,
-   "evidence": [
-    "CECL reserve forecasting",
-    "Pricing elasticity research",
-    "Stress analysis models"
-   ]
-  },
-  {
-   "name": "Git & Version Control",
+   "name": "Git/CI/CD",
    "category": "tools",
-   "strength": 0.9,
-   "evidence": [
-    "Package distribution",
-    "Overhauled team version control practices",
-    "Active open-source portfolio maintenance"
-   ]
-  },
-  {
-   "name": "Stakeholder Enablement",
-   "category": "domain",
    "strength": 0.85,
    "evidence": [
-    "Migration-impact discovery tools",
-    "Developer tooling documentation",
-    "Executive-level reporting"
+    "Managed production deployment pipelines",
+    "implemented team-wide version control standards"
    ]
   },
   {
-   "name": "Selenium / Headless Browsers",
+   "name": "Selenium/Headless Browsers",
    "category": "engineering",
+   "strength": 0.7,
+   "evidence": [
+    "Multi-scraper automation suite",
+    "proof-of-concept high-throughput browser connection"
+   ]
+  },
+  {
+   "name": "Requirements Gathering",
+   "category": "domain",
    "strength": 0.75,
    "evidence": [
-    "Document sourcing automation",
-    "High-throughput web scraping"
+    "Stakeholder enablement at PNC",
+    "documented task files for coding agents"
    ]
   }
  ],
  "target_titles": [
-  "Senior Data & Automation Engineer",
-  "Technical Product Manager (Developer Tools)",
-  "Senior Analytics Engineer",
-  "AI Operations Engineer",
-  "Process Optimization Lead"
+  "Senior Business Intelligence Engineer",
+  "Analytics Engineering Lead",
+  "Technical Product Manager (Data/AI)",
+  "Senior Data Automation Engineer",
+  "Solutions Architect (Analytics)"
  ],
- "version": "15547dfe9647",
+ "version": "0686ba48029c",
  "remote_only": true,
- "generated_at": "2026-09-22T15:34:19.612440+00:00"
+ "generated_at": "2026-09-23T15:32:36.808756+00:00"
 }
