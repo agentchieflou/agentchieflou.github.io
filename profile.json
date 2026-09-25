@@ -1,24 +1,35 @@
 {
- "summary": "Michael is a high-impact Business Analytics Consultant with 4 years of experience specializing in internal developer tooling, process automation, and production-grade data engineering. He excels at bridging the gap between raw data and actionable business strategy by building scalable Python packages, REST APIs, and automated validation frameworks that drive significant operational efficiency. With a technical background in OpenShift, CI/CD, and agentic workflows, he is well-positioned to lead teams in optimizing internal workflows and implementing AI-driven enterprise tools.",
+ "summary": "Michael is a technically-driven Business Analytics Consultant with four years of experience building scalable internal developer tools and data-centric process optimizations. He excels at bridging the gap between business needs and engineering execution, evidenced by his work on bank-wide Python packages, automated data validation frameworks, and resource-efficient AI/RAG architectures. He is highly proficient in Python-based automation, API development, and data modeling, with a proven history of operationalizing workflows that yield significant cost and time savings.",
  "skills": [
   {
    "name": "Python",
    "category": "engineering",
    "strength": 0.95,
    "evidence": [
-    "Maintains bank-wide Python package",
-    "Built REST APIs for data scraping",
-    "Automated pricing workflows"
+    "Enterprise Python package distribution",
+    "REST API development",
+    "Scraping/Automation suites",
+    "Internal CLI tools"
    ]
   },
   {
    "name": "SQL",
    "category": "analytics",
+   "strength": 0.9,
+   "evidence": [
+    "Grid-wide table usage analytics",
+    "Database reconciliation across MongoDB/Oracle",
+    "Complex data modeling"
+   ]
+  },
+  {
+   "name": "API Development",
+   "category": "engineering",
    "strength": 0.85,
    "evidence": [
-    "Grid-wide telemetry analytics",
-    "Data reconciliation across MongoDB/Oracle",
-    "Complex portfolio modeling"
+    "Production REST APIs on OpenShift",
+    "Headless browser integration",
+    "High-throughput scraper architecture"
    ]
   },
   {
@@ -26,71 +37,69 @@
    "category": "engineering",
    "strength": 0.9,
    "evidence": [
-    "Reduced migration impact discovery by 6 weeks",
-    "Automated document sourcing and pricing workflows"
-   ]
-  },
-  {
-   "name": "API Development",
-   "category": "engineering",
-   "strength": 0.8,
-   "evidence": [
-    "Containerized REST APIs on OpenShift",
-    "Managed high-throughput scraper orchestration"
+    "Migration-impact discovery reduction",
+    "Workflow optimization for pricing teams",
+    "Automated data validation frameworks"
    ]
   },
   {
    "name": "Power BI",
    "category": "analytics",
-   "strength": 0.75,
+   "strength": 0.8,
    "evidence": [
-    "Built semantic models and performance reporting dashboards",
-    "Peer Bank Analysis Dashboard"
+    "Semantic model development",
+    "Peer Bank Analysis Dashboards",
+    "Executive-level performance reporting"
    ]
   },
   {
    "name": "Data Modeling",
    "category": "analytics",
-   "strength": 0.7,
-   "evidence": [
-    "Designed parameterized data validation frameworks",
-    "Integrated complex mortgage data for M&A"
-   ]
-  },
-  {
-   "name": "Kubernetes/OpenShift",
-   "category": "engineering",
-   "strength": 0.7,
-   "evidence": [
-    "Deployed production REST APIs",
-    "Helm charts for governance-gated deployment"
-   ]
-  },
-  {
-   "name": "CI/CD Pipelines",
-   "category": "engineering",
    "strength": 0.75,
    "evidence": [
-    "Navigated enterprise policy-as-code gates",
-    "Managed automated testing for tooling repo"
+    "BSAM Residential Modeling",
+    "Legacy asset class migration reconciliation",
+    "Multi-source lineage mapping"
    ]
   },
   {
-   "name": "Git & Version Control",
+   "name": "CI/CD & DevOps",
+   "category": "tools",
+   "strength": 0.8,
+   "evidence": [
+    "Docker/Kubernetes/OpenShift deployments",
+    "Helm chart management",
+    "Policy as Code integration"
+   ]
+  },
+  {
+   "name": "Agentic Architecture",
    "category": "engineering",
+   "strength": 0.7,
+   "evidence": [
+    "RAG architecture evaluation",
+    "Resource-efficient model selection",
+    "Agentic task orchestration projects"
+   ]
+  },
+  {
+   "name": "Financial Domain Knowledge",
+   "category": "domain",
    "strength": 0.85,
    "evidence": [
-    "Team-wide VCS overhauls",
-    "Active GitHub portfolio management"
+    "CECL reserve forecasting",
+    "OCC/SR 11-7 regulatory standards",
+    "M&A integration"
    ]
   },
   {
-   "name": "Agentic/RAG Architecture",
-   "category": "engineering",
-   "strength": 0.65,
+   "name": "Version Control",
+   "category": "tools",
+   "strength": 0.9,
    "evidence": [
-    "Evaluated enterprise token budgets",
-    "Built agentic orchestration logic in personal projects"
+    "GitHub portfolio management",
+    "Enterprise Git workflows",
+    "Collaborative package maintenance"
    ]
   },
   {
@@ -98,8 +107,19 @@
    "category": "analytics",
    "strength": 0.8,
    "evidence": [
-    "CECL Reserve Forecasting",
-    "Model risk management under SR 11-7"
+    "Macroeconomic scenario forecasting",
+    "Elasticity research",
+    "Peer bank stress analysis"
+   ]
+  },
+  {
+   "name": "Technical Documentation",
+   "category": "tools",
+   "strength": 0.75,
+   "evidence": [
+    "Internal tool READMEs",
+    "Agent-ready task specifications",
+    "Regulatory-compliant methodology documentation"
    ]
   },
   {
@@ -107,27 +127,20 @@
    "category": "domain",
    "strength": 0.7,
    "evidence": [
-    "Stakeholder enablement at PNC",
-    "Documenting technical project roadmaps"
-   ]
-  },
-  {
-   "name": "Forecasting",
-   "category": "analytics",
-   "strength": 0.65,
-   "evidence": [
-    "Reserve forecasting for $70B+ assets"
+    "Stakeholder enablement",
+    "Product redesign projects",
+    "Enterprise SME validation"
    ]
   }
  ],
  "target_titles": [
-  "Senior Business Intelligence Developer",
+  "Senior Business Intelligence Engineer",
   "Analytics Engineer",
-  "Technical Product Manager (Internal Tools)",
-  "Automation Engineer",
-  "Senior Data Analyst"
+  "Technical Product Manager (Data/Platform)",
+  "Senior Data Automation Engineer",
+  "Platform Operations Engineer"
  ],
- "version": "814aba647dc9",
+ "version": "02852bbbac4d",
  "remote_only": true,
- "generated_at": "2026-09-24T15:55:17.589960+00:00"
+ "generated_at": "2026-09-25T15:52:24.641359+00:00"
 }
