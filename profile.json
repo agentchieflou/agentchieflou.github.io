@@ -1,14 +1,15 @@
 {
- "summary": "Michael is a high-impact technical strategist and developer with 4 years of experience specializing in building automation tools, internal developer platforms, and data-driven process optimization. He has a proven track record of scaling enterprise-level analytics and automating complex workflows using Python, REST APIs, and containerization. Passionate about AI-assisted engineering and resource-efficient architecture, he bridges the gap between raw data operations and scalable, production-ready developer tooling.",
+ "summary": "Michael is a high-impact technical professional with 4 years of experience optimizing enterprise-scale data infrastructure and internal developer tooling. He excels at automating complex workflows—such as grid-wide table analytics and legacy migrations—while demonstrating advanced proficiency in Python, container orchestration, and API development. He is deeply focused on the intersection of agentic AI architectures and practical business enablement, with a proven track record of delivering developer tools that improve operational efficiency.",
  "skills": [
   {
    "name": "Python",
    "category": "engineering",
    "strength": 0.95,
    "evidence": [
-    "Enterprise-wide Python package maintainer",
-    "High-throughput scraper/API development",
-    "Automated data validation frameworks"
+    "Maintained bank-wide Python package",
+    "Automated scraper orchestrators",
+    "REST API development",
+    "Tooling for Copilot integration"
    ]
   },
   {
@@ -17,8 +18,38 @@
    "strength": 0.9,
    "evidence": [
     "Grid-wide table usage analytics",
-    "Database reconciliation across MongoDB/Oracle",
-    "Complex data modeling for financial systems"
+    "Database reconciliation across Oracle/MongoDB/Teradata",
+    "Asset class migration validation"
+   ]
+  },
+  {
+   "name": "Workflow Automation",
+   "category": "engineering",
+   "strength": 0.9,
+   "evidence": [
+    "Developed automated data validation frameworks",
+    "Built scrapers for loan document sourcing",
+    "Pricing workflow automation reducing manual rework"
+   ]
+  },
+  {
+   "name": "Docker & Kubernetes/OpenShift",
+   "category": "engineering",
+   "strength": 0.85,
+   "evidence": [
+    "Containerizing scrapers as REST APIs",
+    "Deployed production APIs on OpenShift",
+    "Helm-based CI/CD pipeline management"
+   ]
+  },
+  {
+   "name": "Data Modeling",
+   "category": "analytics",
+   "strength": 0.8,
+   "evidence": [
+    "Power BI semantic models",
+    "Asset class migration mapping",
+    "Financial reserve forecasting models"
    ]
   },
   {
@@ -26,8 +57,58 @@
    "category": "engineering",
    "strength": 0.85,
    "evidence": [
-    "Deployed multiple production APIs on OpenShift",
-    "Containerized scraper systems as callable services"
+    "Deployed three production APIs at PNC",
+    "Operationalized ML model serving via API",
+    "Created tools for API-driven scraping"
+   ]
+  },
+  {
+   "name": "Agentic & RAG Architecture",
+   "category": "engineering",
+   "strength": 0.75,
+   "evidence": [
+    "Evaluation of RAG retrieval scoping",
+    "Building agent-based CLI tools (this-next-please)",
+    "Agent-driven task execution frameworks"
+   ]
+  },
+  {
+   "name": "CI/CD & DevOps",
+   "category": "engineering",
+   "strength": 0.8,
+   "evidence": [
+    "Enterprise CI/CD pipeline implementation",
+    "Policy-as-Code governance gates",
+    "Git version control and automated testing"
+   ]
+  },
+  {
+   "name": "Quantitative Analytics",
+   "category": "analytics",
+   "strength": 0.8,
+   "evidence": [
+    "CECL reserve forecasting",
+    "Pricing elasticity research",
+    "Competitor stress analysis"
+   ]
+  },
+  {
+   "name": "Power BI",
+   "category": "analytics",
+   "strength": 0.75,
+   "evidence": [
+    "Portfolio-wide performance dashboards",
+    "Peer bank analysis monitoring tools"
+   ]
+  },
+  {
+   "name": "Requirements Gathering",
+   "category": "domain",
+   "strength": 0.85,
+   "evidence": [
+    "Stakeholder enablement",
+    "Asset class migration planning",
+    "Cross-team migration alert retargeting"
    ]
   },
   {
@@ -35,118 +116,20 @@
    "category": "domain",
    "strength": 0.9,
    "evidence": [
-    "Reduced migration impact discovery from 6 weeks to 24 hours",
-    "Eliminated manual pricing rework saving 3+ hours daily"
-   ]
-  },
-  {
-   "name": "Kubernetes/OpenShift",
-   "category": "engineering",
-   "strength": 0.8,
-   "evidence": [
-    "Deployment via Helm",
-    "Management of production API platforms in restricted network environments"
-   ]
-  },
-  {
-   "name": "Power BI",
-   "category": "analytics",
-   "strength": 0.8,
-   "evidence": [
-    "Built semantic models and interactive executive dashboards",
-    "Peer Bank Analysis performance monitoring"
-   ]
-  },
-  {
-   "name": "Docker",
-   "category": "engineering",
-   "strength": 0.85,
-   "evidence": [
-    "Containerized scraping and parsing systems",
-    "Policy as Code integration in CI/CD"
-   ]
-  },
-  {
-   "name": "CI/CD Pipelines",
-   "category": "engineering",
-   "strength": 0.75,
-   "evidence": [
-    "Managed enterprise CI/CD gates for production APIs",
-    "Automated testing workflows on GitHub Actions"
-   ]
-  },
-  {
-   "name": "Agentic & RAG Architecture",
-   "category": "engineering",
-   "strength": 0.7,
-   "evidence": [
-    "Evaluated cost models for RAG at enterprise scale",
-    "Built agentic job-matching pipelines"
-   ]
-  },
-  {
-   "name": "Data Modeling",
-   "category": "analytics",
-   "strength": 0.75,
-   "evidence": [
-    "Back-testing and performance monitoring of $70B+ loan portfolios",
-    "Reconciled multi-platform data schemas"
-   ]
-  },
-  {
-   "name": "Selenium/Headless Browsers",
-   "category": "engineering",
-   "strength": 0.7,
-   "evidence": [
-    "Multi-scraper automation suite",
-    "High-throughput API-based document sourcing"
-   ]
-  },
-  {
-   "name": "Quantitative Analytics",
-   "category": "analytics",
-   "strength": 0.85,
-   "evidence": [
-    "CECL reserve forecasting",
-    "Elasticity research",
-    "Model risk management (SR 11-7)"
-   ]
-  },
-  {
-   "name": "Git & Version Control",
-   "category": "tools",
-   "strength": 0.8,
-   "evidence": [
-    "Overhauled team version control practices",
-    "Maintains open-source CLI tools for developer efficiency"
-   ]
-  },
-  {
-   "name": "Requirement Gathering",
-   "category": "domain",
-   "strength": 0.75,
-   "evidence": [
-    "Stakeholder enablement for cross-functional migration projects",
-    "Defining roadmap phases for tool development"
-   ]
-  },
-  {
-   "name": "Excel",
-   "category": "analytics",
-   "strength": 0.7,
-   "evidence": [
-    "Analytical modeling and financial reporting"
+    "Reduced migration impact discovery from 6 weeks to 24h",
+    "Eliminated manual pricing entry errors",
+    "Saved $1M annually via expense reduction"
    ]
   }
  ],
  "target_titles": [
+  "Senior Data Operations Engineer",
   "Analytics Engineer",
-  "Technical Product Manager (Developer Tools)",
+  "Technical Product Manager (Data & AI)",
   "Automation Engineer",
-  "Solutions Architect (Data & AI)",
-  "Business Intelligence Developer"
+  "Strategic Business Systems Analyst"
  ],
- "version": "d25a943a17da",
+ "version": "63144cac3b7c",
  "remote_only": true,
- "generated_at": "2026-09-26T15:02:45.851920+00:00"
+ "generated_at": "2026-09-27T15:42:52.927325+00:00"
 }
