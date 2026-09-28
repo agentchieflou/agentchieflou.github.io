@@ -1,15 +1,15 @@
 {
- "summary": "Michael is a high-impact technical professional with 4 years of experience optimizing enterprise-scale data infrastructure and internal developer tooling. He excels at automating complex workflows—such as grid-wide table analytics and legacy migrations—while demonstrating advanced proficiency in Python, container orchestration, and API development. He is deeply focused on the intersection of agentic AI architectures and practical business enablement, with a proven track record of delivering developer tools that improve operational efficiency.",
+ "summary": "Michael Louard is a highly technical analyst and developer with 4 years of experience building automation tools and data infrastructure in the financial sector. He specializes in designing internal developer platforms, optimizing resource-heavy data workflows, and implementing LLM-based agentic architectures. His work focuses on transforming manual processes into scalable, high-throughput APIs that enhance team efficiency and reduce operational costs.",
  "skills": [
   {
    "name": "Python",
    "category": "engineering",
    "strength": 0.95,
    "evidence": [
-    "Maintained bank-wide Python package",
-    "Automated scraper orchestrators",
+    "Distributed bank-wide Python packages",
     "REST API development",
-    "Tooling for Copilot integration"
+    "CLI tool orchestration",
+    "Scraping automation"
    ]
   },
   {
@@ -18,38 +18,18 @@
    "strength": 0.9,
    "evidence": [
     "Grid-wide table usage analytics",
-    "Database reconciliation across Oracle/MongoDB/Teradata",
-    "Asset class migration validation"
+    "Oracle/Teradata/MongoDB expertise",
+    "Query optimization"
    ]
   },
   {
-   "name": "Workflow Automation",
-   "category": "engineering",
-   "strength": 0.9,
-   "evidence": [
-    "Developed automated data validation frameworks",
-    "Built scrapers for loan document sourcing",
-    "Pricing workflow automation reducing manual rework"
-   ]
-  },
-  {
-   "name": "Docker & Kubernetes/OpenShift",
+   "name": "Agentic & RAG Architecture",
    "category": "engineering",
    "strength": 0.85,
    "evidence": [
-    "Containerizing scrapers as REST APIs",
-    "Deployed production APIs on OpenShift",
-    "Helm-based CI/CD pipeline management"
-   ]
-  },
-  {
-   "name": "Data Modeling",
-   "category": "analytics",
-   "strength": 0.8,
-   "evidence": [
-    "Power BI semantic models",
-    "Asset class migration mapping",
-    "Financial reserve forecasting models"
+    "Enterprise token-budget modeling",
+    "RAG retrieval scoping",
+    "this-next-please agentic orchestration repository"
    ]
   },
   {
@@ -57,29 +37,59 @@
    "category": "engineering",
    "strength": 0.85,
    "evidence": [
-    "Deployed three production APIs at PNC",
-    "Operationalized ML model serving via API",
-    "Created tools for API-driven scraping"
+    "Deployment of production APIs on OpenShift",
+    "Containerized scraping services",
+    "Internal developer tooling"
    ]
   },
   {
-   "name": "Agentic & RAG Architecture",
+   "name": "Power BI",
+   "category": "analytics",
+   "strength": 0.8,
+   "evidence": [
+    "Semantic model creation",
+    "Peer Bank Analysis Dashboard",
+    "Portfolio-wide performance reporting"
+   ]
+  },
+  {
+   "name": "Kubernetes / OpenShift",
    "category": "engineering",
    "strength": 0.75,
    "evidence": [
-    "Evaluation of RAG retrieval scoping",
-    "Building agent-based CLI tools (this-next-please)",
-    "Agent-driven task execution frameworks"
+    "Containerized deployment of production ML services",
+    "Helm chart management",
+    "Enterprise CI/CD integration"
    ]
   },
   {
-   "name": "CI/CD & DevOps",
-   "category": "engineering",
+   "name": "Process Optimization",
+   "category": "domain",
+   "strength": 0.9,
+   "evidence": [
+    "Reduced migration impact discovery from weeks to hours",
+    "Automated pricing workflows",
+    "Eliminated manual entry errors in lending products"
+   ]
+  },
+  {
+   "name": "Data Modeling",
+   "category": "analytics",
    "strength": 0.8,
    "evidence": [
-    "Enterprise CI/CD pipeline implementation",
-    "Policy-as-Code governance gates",
-    "Git version control and automated testing"
+    "Asset class migration validation",
+    "Back-testing for M&A integration",
+    "Parameterization of validation frameworks"
+   ]
+  },
+  {
+   "name": "CI/CD Pipelines",
+   "category": "tools",
+   "strength": 0.75,
+   "evidence": [
+    "Policy as Code integration",
+    "Helm deployment workflows",
+    "Automated testing in GitHub Actions"
    ]
   },
   {
@@ -88,48 +98,66 @@
    "strength": 0.8,
    "evidence": [
     "CECL reserve forecasting",
-    "Pricing elasticity research",
-    "Competitor stress analysis"
+    "Elasticity research",
+    "Risk modeling under SR 11-7"
    ]
   },
   {
-   "name": "Power BI",
+   "name": "Docker",
+   "category": "engineering",
+   "strength": 0.8,
+   "evidence": [
+    "Containerizing legacy scrappers",
+    "Production ML serving"
+   ]
+  },
+  {
+   "name": "Git & Version Control",
+   "category": "tools",
+   "strength": 0.85,
+   "evidence": [
+    "Active open-source maintenance",
+    "Overhauled team versioning architecture"
+   ]
+  },
+  {
+   "name": "Forecasting",
    "category": "analytics",
    "strength": 0.75,
    "evidence": [
-    "Portfolio-wide performance dashboards",
-    "Peer bank analysis monitoring tools"
+    "Mortgage/Home Equity modeling",
+    "Macroeconomic scenario analysis"
    ]
   },
   {
-   "name": "Requirements Gathering",
-   "category": "domain",
+   "name": "Internal Developer Tooling",
+   "category": "engineering",
    "strength": 0.85,
    "evidence": [
-    "Stakeholder enablement",
-    "Asset class migration planning",
-    "Cross-team migration alert retargeting"
+    "Data-czars package maintainer",
+    "this-next-please CLI tool",
+    "ccred credit tracker"
    ]
   },
   {
-   "name": "Process Optimization",
+   "name": "Stakeholder Enablement",
    "category": "domain",
-   "strength": 0.9,
+   "strength": 0.8,
    "evidence": [
-    "Reduced migration impact discovery from 6 weeks to 24h",
-    "Eliminated manual pricing entry errors",
-    "Saved $1M annually via expense reduction"
+    "Requirements gathering",
+    "Executive-level competitive risk presentation",
+    "Workflow redesign for internal teams"
    ]
   }
  ],
  "target_titles": [
-  "Senior Data Operations Engineer",
-  "Analytics Engineer",
-  "Technical Product Manager (Data & AI)",
-  "Automation Engineer",
-  "Strategic Business Systems Analyst"
+  "Senior Data Automation Engineer",
+  "Analytics Engineer (Internal Tools)",
+  "AI Platform Engineer",
+  "Senior Business Intelligence Developer",
+  "Technical Product Manager (Data & AI)"
  ],
- "version": "63144cac3b7c",
+ "version": "3bf12a41e63c",
  "remote_only": true,
- "generated_at": "2026-09-27T15:42:52.927325+00:00"
+ "generated_at": "2026-09-28T18:39:42.551750+00:00"
 }
