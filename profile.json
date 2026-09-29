@@ -1,15 +1,14 @@
 {
- "summary": "Michael Louard is a highly technical analyst and developer with 4 years of experience building automation tools and data infrastructure in the financial sector. He specializes in designing internal developer platforms, optimizing resource-heavy data workflows, and implementing LLM-based agentic architectures. His work focuses on transforming manual processes into scalable, high-throughput APIs that enhance team efficiency and reduce operational costs.",
+ "summary": "Michael is a technically-driven business analytics professional with 4 years of experience building high-impact automation tools and data platforms. He excels at bridging the gap between complex enterprise data architecture and end-user productivity, having successfully deployed enterprise-wide Python packages and REST APIs that reduced operational costs by millions. He is deeply focused on the intersection of agentic workflows, LLM orchestration, and process optimization to improve team efficiency and technical strategy.",
  "skills": [
   {
    "name": "Python",
    "category": "engineering",
    "strength": 0.95,
    "evidence": [
-    "Distributed bank-wide Python packages",
-    "REST API development",
-    "CLI tool orchestration",
-    "Scraping automation"
+    "Enterprise-wide package distribution",
+    "REST API deployment",
+    "High-throughput automation suites"
    ]
   },
   {
@@ -18,28 +17,27 @@
    "strength": 0.9,
    "evidence": [
     "Grid-wide table usage analytics",
-    "Oracle/Teradata/MongoDB expertise",
-    "Query optimization"
+    "Database reconciliation across MongoDB/Oracle/Teradata"
    ]
   },
   {
-   "name": "Agentic & RAG Architecture",
+   "name": "Process Automation",
    "category": "engineering",
-   "strength": 0.85,
+   "strength": 0.9,
    "evidence": [
-    "Enterprise token-budget modeling",
-    "RAG retrieval scoping",
-    "this-next-please agentic orchestration repository"
+    "Multi-scraper orchestration",
+    "Headless browser integration",
+    "Elimination of manual pricing workflows"
    ]
   },
   {
-   "name": "REST API Development",
+   "name": "LLM/Agentic Architecture",
    "category": "engineering",
    "strength": 0.85,
    "evidence": [
-    "Deployment of production APIs on OpenShift",
-    "Containerized scraping services",
-    "Internal developer tooling"
+    "RAG/Agentic evaluation",
+    "Copilot orchestration tooling",
+    "Production ML serving"
    ]
   },
   {
@@ -47,29 +45,19 @@
    "category": "analytics",
    "strength": 0.8,
    "evidence": [
-    "Semantic model creation",
-    "Peer Bank Analysis Dashboard",
-    "Portfolio-wide performance reporting"
+    "Semantic modeling",
+    "Portfolio-wide performance dashboards",
+    "Competitive risk visualizations"
    ]
   },
   {
-   "name": "Kubernetes / OpenShift",
+   "name": "Docker/Kubernetes",
    "category": "engineering",
-   "strength": 0.75,
+   "strength": 0.85,
    "evidence": [
-    "Containerized deployment of production ML services",
+    "OpenShift deployments",
     "Helm chart management",
-    "Enterprise CI/CD integration"
-   ]
-  },
-  {
-   "name": "Process Optimization",
-   "category": "domain",
-   "strength": 0.9,
-   "evidence": [
-    "Reduced migration impact discovery from weeks to hours",
-    "Automated pricing workflows",
-    "Eliminated manual entry errors in lending products"
+    "Containerization of legacy scrapers"
    ]
   },
   {
@@ -77,87 +65,93 @@
    "category": "analytics",
    "strength": 0.8,
    "evidence": [
-    "Asset class migration validation",
-    "Back-testing for M&A integration",
-    "Parameterization of validation frameworks"
+    "Reserve forecasting",
+    "M&A integration back-testing",
+    "1,930+ field data validation"
    ]
   },
   {
    "name": "CI/CD Pipelines",
-   "category": "tools",
+   "category": "engineering",
    "strength": 0.75,
    "evidence": [
-    "Policy as Code integration",
-    "Helm deployment workflows",
-    "Automated testing in GitHub Actions"
+    "Helm-based automated deployment",
+    "GitHub Actions workflows",
+    "Enterprise governance compliance"
+   ]
+  },
+  {
+   "name": "REST API Development",
+   "category": "engineering",
+   "strength": 0.8,
+   "evidence": [
+    "Productionizing internal tools",
+    "Scaling batch model outputs to API consumers"
    ]
   },
   {
    "name": "Quantitative Analytics",
    "category": "analytics",
-   "strength": 0.8,
-   "evidence": [
-    "CECL reserve forecasting",
-    "Elasticity research",
-    "Risk modeling under SR 11-7"
-   ]
-  },
-  {
-   "name": "Docker",
-   "category": "engineering",
-   "strength": 0.8,
-   "evidence": [
-    "Containerizing legacy scrappers",
-    "Production ML serving"
-   ]
-  },
-  {
-   "name": "Git & Version Control",
-   "category": "tools",
    "strength": 0.85,
    "evidence": [
-    "Active open-source maintenance",
-    "Overhauled team versioning architecture"
-   ]
-  },
-  {
-   "name": "Forecasting",
-   "category": "analytics",
-   "strength": 0.75,
-   "evidence": [
-    "Mortgage/Home Equity modeling",
-    "Macroeconomic scenario analysis"
-   ]
-  },
-  {
-   "name": "Internal Developer Tooling",
-   "category": "engineering",
-   "strength": 0.85,
-   "evidence": [
-    "Data-czars package maintainer",
-    "this-next-please CLI tool",
-    "ccred credit tracker"
+    "CECL forecasting",
+    "$70B+ asset analysis",
+    "Elasticity research"
    ]
   },
   {
    "name": "Stakeholder Enablement",
    "category": "domain",
-   "strength": 0.8,
+   "strength": 0.75,
    "evidence": [
     "Requirements gathering",
-    "Executive-level competitive risk presentation",
-    "Workflow redesign for internal teams"
+    "End-user alerting frameworks",
+    "Presentation of cost-model approaches"
+   ]
+  },
+  {
+   "name": "Git/Version Control",
+   "category": "tools",
+   "strength": 0.85,
+   "evidence": [
+    "Internal tool maintenance",
+    "Repository management for agentic workflows"
+   ]
+  },
+  {
+   "name": "Forecasting",
+   "category": "analytics",
+   "strength": 0.7,
+   "evidence": [
+    "Mortgage/Home Equity reserve modeling",
+    "Macroeconomic scenario analysis"
+   ]
+  },
+  {
+   "name": "Node.js",
+   "category": "engineering",
+   "strength": 0.6,
+   "evidence": [
+    "CLI tool development for Copilot usage tracking"
+   ]
+  },
+  {
+   "name": "Data Validation",
+   "category": "engineering",
+   "strength": 0.8,
+   "evidence": [
+    "Parameterized frameworks for migration reconciliation"
    ]
   }
  ],
  "target_titles": [
-  "Senior Data Automation Engineer",
-  "Analytics Engineer (Internal Tools)",
-  "AI Platform Engineer",
-  "Senior Business Intelligence Developer",
-  "Technical Product Manager (Data & AI)"
+  "Technical Product Manager",
+  "Analytics Engineer",
+  "Automation Lead",
+  "Business Systems Analyst",
+  "Solutions Architect (Analytics)"
  ],
- "version": "3bf12a41e63c",
+ "version": "8e72e52e4a94",
  "remote_only": true,
- "generated_at": "2026-09-28T18:39:42.551750+00:00"
+ "generated_at": "2026-09-29T16:56:36.983081+00:00"
 }
