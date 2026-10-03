@@ -1,15 +1,14 @@
 {
- "summary": "Michael is a technically-adept analytics professional with 4 years of experience specializing in internal developer tooling, process automation, and enterprise data strategy. He excels at building agentic workflows and automated toolkits that reduce operational friction and migration overhead for large organizations. His work bridges the gap between deep quantitative model development and scalable software engineering, with a current focus on LLM orchestration and resource-efficient AI deployment.",
+ "summary": "Data professional with 4 years of experience specializing in internal developer tooling, automation, and high-impact business analytics. Proven track record of scaling enterprise processes through custom Python packages, CI/CD-integrated REST APIs, and agentic workflows. Combines technical engineering rigor with a strategic mindset to eliminate operational friction and optimize team performance.",
  "skills": [
   {
    "name": "Python",
    "category": "engineering",
    "strength": 0.95,
    "evidence": [
-    "Enterprise-wide package maintenance",
-    "Scraper orchestrator development",
-    "REST API construction",
-    "GitHub automation tools"
+    "Maintains bank-wide distribution packages",
+    "Builds complex CLI tooling",
+    "High-throughput automation"
    ]
   },
   {
@@ -17,39 +16,8 @@
    "category": "analytics",
    "strength": 0.9,
    "evidence": [
-    "Oracle/Teradata/MongoDB experience",
-    "Table usage analytics at grid scale",
-    "Complex query optimization for migration"
-   ]
-  },
-  {
-   "name": "Process Automation",
-   "category": "engineering",
-   "strength": 0.9,
-   "evidence": [
-    "Built grid-wide migration tooling",
-    "Automated pricing workflows",
-    "Eliminated manual entry errors in financial modeling"
-   ]
-  },
-  {
-   "name": "Agentic & RAG Architecture",
-   "category": "engineering",
-   "strength": 0.85,
-   "evidence": [
-    "Developed LLM cost-modeling patterns",
-    "Orchestrated Copilot workflows",
-    "Implemented agentic task execution frameworks"
-   ]
-  },
-  {
-   "name": "Power BI",
-   "category": "analytics",
-   "strength": 0.8,
-   "evidence": [
-    "Semantic modeling for portfolio-wide reporting",
-    "Peer bank analysis dashboards",
-    "Stakeholder enablement tools"
+    "Extensive experience in bank-wide telemetry and table usage analytics",
+    "Reconciled multi-source data across MongoDB and legacy platforms"
    ]
   },
   {
@@ -57,96 +25,110 @@
    "category": "engineering",
    "strength": 0.85,
    "evidence": [
-    "Production-grade API deployment on OpenShift",
-    "Containerized scrapers into callable services",
-    "Helm integration"
+    "Deployed production APIs on OpenShift",
+    "Containerized microservices for credit risk and transaction classification"
+   ]
+  },
+  {
+   "name": "Process Automation",
+   "category": "engineering",
+   "strength": 0.9,
+   "evidence": [
+    "Built multi-scraper suites",
+    "Automated pricing and document sourcing workflows reducing manual re-work by 3+ hours daily"
+   ]
+  },
+  {
+   "name": "Power BI",
+   "category": "analytics",
+   "strength": 0.8,
+   "evidence": [
+    "Developed enterprise-grade semantic models and peer bank stress-test dashboards"
+   ]
+  },
+  {
+   "name": "Agentic & RAG Architecture",
+   "category": "engineering",
+   "strength": 0.75,
+   "evidence": [
+    "Established enterprise-scale token-budget and caching patterns",
+    "Author of 'this-next-please' Copilot orchestration project"
    ]
   },
   {
    "name": "Kubernetes / OpenShift",
    "category": "engineering",
-   "strength": 0.8,
+   "strength": 0.75,
    "evidence": [
-    "Containerized production services",
-    "Policy-as-code and network governance experience",
-    "Helm chart management"
+    "Managed Helm charts and deployment pipelines for production microservices"
    ]
   },
   {
    "name": "Data Modeling",
    "category": "analytics",
-   "strength": 0.75,
+   "strength": 0.7,
    "evidence": [
-    "CECL reserve forecasting",
-    "M&A data integration (23k+ loans)",
-    "Migration-impact mapping (1,930 fields)"
+    "Designed schema mappings for 2,000+ fields during legacy migrations"
    ]
   },
   {
-   "name": "CI/CD Pipelines",
+   "name": "Git & CI/CD",
    "category": "engineering",
-   "strength": 0.75,
+   "strength": 0.85,
    "evidence": [
-    "Managed enterprise CI/CD gates for APIs",
-    "GitHub Actions integration for open-source tools"
+    "High GitHub activity across multiple projects",
+    "Policy-as-code and automated pipeline management"
+   ]
+  },
+  {
+   "name": "Forecasting",
+   "category": "analytics",
+   "strength": 0.7,
+   "evidence": [
+    "Executed CECL reserve forecasting on $70B+ asset portfolio"
    ]
   },
   {
    "name": "Quantitative Analytics",
-   "category": "analytics",
-   "strength": 0.75,
-   "evidence": [
-    "Macroeconomic scenario forecasting",
-    "Elasticity research",
-    "Model risk management (SR 11-7) compliance"
-   ]
-  },
-  {
-   "name": "Git & Version Control",
-   "category": "tools",
+   "category": "domain",
    "strength": 0.8,
    "evidence": [
-    "Maintained enterprise repo hygiene",
-    "Complex branch/merge workflows for shared tooling"
+    "Performed model back-testing and performance monitoring for mortgage products"
    ]
   },
   {
-   "name": "Selenium / Headless Browsers",
-   "category": "engineering",
-   "strength": 0.7,
-   "evidence": [
-    "Multi-scraper suite development",
-    "High-throughput API-based scraping"
-   ]
-  },
-  {
-   "name": "Technical Strategy",
+   "name": "Requirements Gathering",
    "category": "domain",
-   "strength": 0.7,
+   "strength": 0.8,
    "evidence": [
-    "Cost-model development for AI scaling",
-    "Stakeholder enablement",
-    "Asset-class migration strategy"
+    "Translated complex stakeholder pain points into high-ROI automated tooling"
    ]
   },
   {
-   "name": "JavaScript/Node.js",
+   "name": "Docker",
    "category": "engineering",
-   "strength": 0.65,
+   "strength": 0.75,
    "evidence": [
-    "Built CLI utility for Copilot billing tracking",
-    "Zero-dependency node tooling"
+    "Containerized legacy scraper systems for cloud deployment"
+   ]
+  },
+  {
+   "name": "Selenium",
+   "category": "tools",
+   "strength": 0.7,
+   "evidence": [
+    "Built proof-of-concept scraping frameworks prior to API transition"
    ]
   }
  ],
  "target_titles": [
-  "Senior Data & Analytics Engineer",
-  "Analytics Engineer - Tools & Infrastructure",
-  "Technical Product Manager (Internal Platforms)",
-  "Senior Process Automation Engineer",
-  "AI Systems Engineer"
+  "Senior Business Systems Analyst",
+  "Analytics Engineer",
+  "Technical Product Manager (Internal Tools)",
+  "Automation Engineer",
+  "Data Operations Lead"
  ],
- "version": "e21c1c228e86",
+ "version": "2f3d6777e58d",
  "remote_only": true,
- "generated_at": "2026-10-02T16:45:22.911392+00:00"
+ "generated_at": "2026-10-03T15:10:32.288743+00:00"
 }
