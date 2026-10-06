@@ -1,14 +1,14 @@
 {
- "summary": "Michael is a high-impact technical contributor specializing in business analytics, workflow automation, and internal developer tooling. With four years of experience in the banking sector, he bridges the gap between data-intensive quantitative modeling and operational efficiency through custom Python-based orchestration. He excels at building agentic architectures and automated systems that reduce technical debt, improve data reliability, and enable teams to work faster through thoughtful tool design.",
+ "summary": "Data professional with 4 years of experience specializing in business analytics, process automation, and internal developer tooling. Expert at building high-impact Python-based orchestration and agentic workflows that optimize complex banking operations. Combines strong technical delivery with a focus on stakeholder enablement, cost-conscious AI architecture, and enterprise-grade system deployment.",
  "skills": [
   {
    "name": "Python",
    "category": "engineering",
    "strength": 0.95,
    "evidence": [
-    "Maintains enterprise-wide data toolkits",
-    "High-throughput scraper orchestration",
-    "Production REST API development"
+    "Built bank-wide Python packages",
+    "Author of this-next-please orchestration tool",
+    "Developed multi-scraper automation suites"
    ]
   },
   {
@@ -16,19 +16,19 @@
    "category": "analytics",
    "strength": 0.9,
    "evidence": [
-    "Grid-wide table usage analytics",
-    "Data reconciliation across MongoDB/Oracle",
-    "Complex portfolio modeling"
+    "Experience with Oracle and Teradata",
+    "Data modeling for CECL reserve forecasting",
+    "Grid-wide table usage analytics"
    ]
   },
   {
-   "name": "Workflow Automation",
+   "name": "Process Automation",
    "category": "engineering",
    "strength": 0.9,
    "evidence": [
-    "Automated manual pricing workflows",
-    "Eliminated manual entry errors in high-stakes financial processes",
-    "REST API development for internal tools"
+    "Reduced migration impact discovery time by 98%",
+    "Automated loan document sourcing",
+    "Eliminated pricing workflow manual errors"
    ]
   },
   {
@@ -36,26 +36,44 @@
    "category": "analytics",
    "strength": 0.85,
    "evidence": [
-    "Built portfolio-wide performance reporting semantic models",
-    "Developed competitive risk dashboards"
+    "Built portfolio-wide performance dashboards",
+    "Developed complex semantic models for executive risk visibility"
    ]
   },
   {
-   "name": "Containerization (Docker/OpenShift)",
+   "name": "REST API Development",
    "category": "engineering",
-   "strength": 0.8,
+   "strength": 0.85,
    "evidence": [
-    "Deployed three production REST APIs",
-    "Helm charts for enterprise CI/CD gates"
+    "Deployed three production APIs on OpenShift",
+    "Containerized scraper systems into hosted services"
    ]
   },
   {
-   "name": "Agentic Architecture",
+   "name": "Kubernetes/OpenShift",
    "category": "engineering",
    "strength": 0.8,
    "evidence": [
-    "Developer of this-next-please/Koa orchestration systems",
-    "Evaluation of RAG architectures and token-budget constraints"
+    "Managed Helm charts and deployment pipelines",
+    "Policy as Code and restricted-network governance"
+   ]
+  },
+  {
+   "name": "Agentic & RAG Architecture",
+   "category": "engineering",
+   "strength": 0.75,
+   "evidence": [
+    "Built Copilot-orchestration tools",
+    "Developed enterprise-scale RAG retrieval and caching patterns"
+   ]
+  },
+  {
+   "name": "Quantitative Analytics",
+   "category": "analytics",
+   "strength": 0.8,
+   "evidence": [
+    "Reserve forecasting for $70B+ asset portfolio",
+    "Back-testing and M&A model integration"
    ]
   },
   {
@@ -63,27 +81,34 @@
    "category": "analytics",
    "strength": 0.75,
    "evidence": [
-    "CECL reserve forecasting for $70B+ assets",
-    "Integration of complex M&A datasets"
+    "MongoDB and legacy mainframe reconciliation frameworks",
+    "Optimized bank-wide data architecture"
    ]
   },
   {
-   "name": "Quantitative Analytics",
-   "category": "analytics",
+   "name": "CI/CD Pipelines",
+   "category": "engineering",
    "strength": 0.75,
    "evidence": [
-    "Elasticity research",
-    "Peer bank stress analysis",
-    "Mortgage/HELOC pricing optimization"
+    "Automated deployment workflows via Helm/OpenShift",
+    "Maintainer of package distribution for enterprise usage"
    ]
   },
   {
-   "name": "CI/CD & Version Control",
+   "name": "Git & Version Control",
    "category": "tools",
+   "strength": 0.8,
+   "evidence": [
+    "Maintained open-source repos",
+    "Overhauled team version control practices for reproducible data pipelines"
+   ]
+  },
+  {
+   "name": "Docker",
+   "category": "engineering",
    "strength": 0.75,
    "evidence": [
-    "Enterprise-grade Git workflows",
-    "Policy-as-code automation for production deployments"
+    "Containerization of production ML serving and scraping systems"
    ]
   },
   {
@@ -91,52 +116,27 @@
    "category": "domain",
    "strength": 0.7,
    "evidence": [
-    "Stakeholder enablement at PNC",
-    "Translating manual pricing workflows into automated services"
+    "Stakeholder enablement for developer tooling",
+    "Translation of business needs into technical migration frameworks"
    ]
   },
   {
-   "name": "Data Validation Frameworks",
-   "category": "engineering",
-   "strength": 0.7,
-   "evidence": [
-    "Built parameterized reconciler for 1,930+ data fields during asset migration"
-   ]
-  },
-  {
-   "name": "Web Scraping (Selenium/Headless)",
+   "name": "Excel",
    "category": "tools",
-   "strength": 0.65,
+   "strength": 0.8,
    "evidence": [
-    "Document sourcing automation",
-    "Transitioned scrapers to high-throughput API connections"
-   ]
-  },
-  {
-   "name": "PySpark",
-   "category": "analytics",
-   "strength": 0.6,
-   "evidence": [
-    "Data processing at scale within Hadoop environments"
-   ]
-  },
-  {
-   "name": "Regulatory Compliance (SR 11-7)",
-   "category": "domain",
-   "strength": 0.6,
-   "evidence": [
-    "Applied model risk management standards to production ML serving"
+    "Used for complex quantitative modeling and cross-functional reporting throughout tenure"
    ]
   }
  ],
  "target_titles": [
-  "Senior Business Systems Analyst",
+  "Business Automation Engineer",
   "Analytics Engineer",
-  "Technical Product Manager (Internal Tools)",
-  "Automation Engineer",
-  "Solutions Architect (Data & AI)"
+  "Technical Product Analyst",
+  "Data Operations Engineer",
+  "Business Intelligence Developer"
  ],
- "version": "7ed3ad516c4f",
+ "version": "d15e88c0f782",
  "remote_only": true,
- "generated_at": "2026-10-04T15:53:36.911798+00:00"
+ "generated_at": "2026-10-06T17:19:44.526320+00:00"
 }
