@@ -1,14 +1,15 @@
 {
- "summary": "Data professional with 4 years of experience specializing in business analytics, process automation, and internal developer tooling. Expert at building high-impact Python-based orchestration and agentic workflows that optimize complex banking operations. Combines strong technical delivery with a focus on stakeholder enablement, cost-conscious AI architecture, and enterprise-grade system deployment.",
+ "summary": "Data-driven professional with 4 years of experience specializing in internal developer tooling, process automation, and enterprise analytics. Proven track record of reducing operational overhead through Python-based orchestration, agentic workflows, and robust CI/CD integration. Highly technical, business-focused engineer adept at translating complex data needs into scalable, user-centric tools that optimize team productivity and reduce manual latency.",
  "skills": [
   {
    "name": "Python",
    "category": "engineering",
    "strength": 0.95,
    "evidence": [
-    "Built bank-wide Python packages",
-    "Author of this-next-please orchestration tool",
-    "Developed multi-scraper automation suites"
+    "Enterprise package maintenance",
+    "API orchestration",
+    "Multi-scraper suites",
+    "Agentic architecture"
    ]
   },
   {
@@ -16,19 +17,9 @@
    "category": "analytics",
    "strength": 0.9,
    "evidence": [
-    "Experience with Oracle and Teradata",
-    "Data modeling for CECL reserve forecasting",
-    "Grid-wide table usage analytics"
-   ]
-  },
-  {
-   "name": "Process Automation",
-   "category": "engineering",
-   "strength": 0.9,
-   "evidence": [
-    "Reduced migration impact discovery time by 98%",
-    "Automated loan document sourcing",
-    "Eliminated pricing workflow manual errors"
+    "Oracle/Teradata/MongoDB experience",
+    "Table usage analytics",
+    "Migration-impact discovery"
    ]
   },
   {
@@ -36,8 +27,29 @@
    "category": "analytics",
    "strength": 0.85,
    "evidence": [
-    "Built portfolio-wide performance dashboards",
-    "Developed complex semantic models for executive risk visibility"
+    "Semantic models",
+    "Executive peer bank dashboards",
+    "Stakeholder enablement"
+   ]
+  },
+  {
+   "name": "Process Automation",
+   "category": "engineering",
+   "strength": 0.9,
+   "evidence": [
+    "Eliminated manual pricing rework",
+    "Scraper orchestrators",
+    "Document process management"
+   ]
+  },
+  {
+   "name": "Agentic & RAG Architecture",
+   "category": "engineering",
+   "strength": 0.8,
+   "evidence": [
+    "this-next-please project",
+    "Enterprise token-budget modeling",
+    "Agent bridge plugins"
    ]
   },
   {
@@ -45,44 +57,19 @@
    "category": "engineering",
    "strength": 0.85,
    "evidence": [
-    "Deployed three production APIs on OpenShift",
-    "Containerized scraper systems into hosted services"
+    "OpenShift production deployment",
+    "Containerized scraping services",
+    "Jira/REST integrations"
    ]
   },
   {
-   "name": "Kubernetes/OpenShift",
+   "name": "Docker & Kubernetes",
    "category": "engineering",
    "strength": 0.8,
    "evidence": [
-    "Managed Helm charts and deployment pipelines",
-    "Policy as Code and restricted-network governance"
-   ]
-  },
-  {
-   "name": "Agentic & RAG Architecture",
-   "category": "engineering",
-   "strength": 0.75,
-   "evidence": [
-    "Built Copilot-orchestration tools",
-    "Developed enterprise-scale RAG retrieval and caching patterns"
-   ]
-  },
-  {
-   "name": "Quantitative Analytics",
-   "category": "analytics",
-   "strength": 0.8,
-   "evidence": [
-    "Reserve forecasting for $70B+ asset portfolio",
-    "Back-testing and M&A model integration"
-   ]
-  },
-  {
-   "name": "Data Modeling",
-   "category": "analytics",
-   "strength": 0.75,
-   "evidence": [
-    "MongoDB and legacy mainframe reconciliation frameworks",
-    "Optimized bank-wide data architecture"
+    "OpenShift deployments",
+    "Helm chart management",
+    "Containerization of legacy tools"
    ]
   },
   {
@@ -90,53 +77,88 @@
    "category": "engineering",
    "strength": 0.75,
    "evidence": [
-    "Automated deployment workflows via Helm/OpenShift",
-    "Maintainer of package distribution for enterprise usage"
+    "Enterprise Policy-as-Code gates",
+    "Automated testing in GitHub Actions",
+    "Deployment governance"
+   ]
+  },
+  {
+   "name": "Data Modeling",
+   "category": "analytics",
+   "strength": 0.75,
+   "evidence": [
+    "M&A integration back-testing",
+    "Migration reconciliation frameworks",
+    "Semantic modeling"
    ]
   },
   {
    "name": "Git & Version Control",
    "category": "tools",
-   "strength": 0.8,
+   "strength": 0.9,
    "evidence": [
-    "Maintained open-source repos",
-    "Overhauled team version control practices for reproducible data pipelines"
+    "Maintained bank-wide library",
+    "Complex project branching/merging",
+    "GitHub Actions workflow automation"
    ]
   },
   {
-   "name": "Docker",
-   "category": "engineering",
-   "strength": 0.75,
+   "name": "Quantitative Analytics",
+   "category": "analytics",
+   "strength": 0.8,
    "evidence": [
-    "Containerization of production ML serving and scraping systems"
+    "CECL reserve forecasting",
+    "Elasticity research",
+    "Model risk management (SR 11-7)"
+   ]
+  },
+  {
+   "name": "Stakeholder Enablement",
+   "category": "domain",
+   "strength": 0.85,
+   "evidence": [
+    "Requirements gathering",
+    "End-user alerting systems",
+    "Performance monitoring tools"
+   ]
+  },
+  {
+   "name": "Data Validation",
+   "category": "engineering",
+   "strength": 0.8,
+   "evidence": [
+    "Parameterized migration-reconciliation frameworks",
+    "JSON-to-DataTable ingestion",
+    "Migration impact surfacing"
+   ]
+  },
+  {
+   "name": "PySpark",
+   "category": "analytics",
+   "strength": 0.7,
+   "evidence": [
+    "Grid-wide telemetry analysis",
+    "Big data processing workflows"
    ]
   },
   {
    "name": "Requirements Gathering",
    "category": "domain",
-   "strength": 0.7,
+   "strength": 0.75,
    "evidence": [
-    "Stakeholder enablement for developer tooling",
-    "Translation of business needs into technical migration frameworks"
-   ]
-  },
-  {
-   "name": "Excel",
-   "category": "tools",
-   "strength": 0.8,
-   "evidence": [
-    "Used for complex quantitative modeling and cross-functional reporting throughout tenure"
+    "Cross-functional tool design",
+    "Process redesign for lending products"
    ]
   }
  ],
  "target_titles": [
-  "Business Automation Engineer",
+  "Senior Business Intelligence Engineer",
   "Analytics Engineer",
-  "Technical Product Analyst",
-  "Data Operations Engineer",
-  "Business Intelligence Developer"
+  "Technical Product Manager (Data/Tools)",
+  "Automation Engineer (Business Intelligence)",
+  "Operations Engineer"
  ],
- "version": "d15e88c0f782",
+ "version": "f0d0f31d78de",
  "remote_only": true,
- "generated_at": "2026-10-06T17:19:44.526320+00:00"
+ "generated_at": "2026-10-09T17:29:58.417687+00:00"
 }
