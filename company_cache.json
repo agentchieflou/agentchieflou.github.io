@@ -2775,7 +2775,7 @@
   "accessible": true,
   "description": "Snowflake AI Data Cloud\nSkip to content\nSnowflake World Tour hits your city\nSee how leading teams deploy agents at scale. Find a stop near you.\nRegister free\nProduct\nSolutions\nWhy Snowflake\nResources\nDevelopers\nPricing\nLanguage\nLanguages\nEnglish\n日本語\n한국어\n中文（简体）\nPortuguês\nDeutsch\nFrançais\nEspañol\nItaliano\nSign in\nCONTACT SALES\nstart for free\nCode\nWork\nBring agentic AI to all your data\nAsk anything with Snowflake CoWork. Build anything with Snowflake CoCo. Welcome to your one-stop shop for everyone in the enterprise.\nDiscover Snowflake CoCo\nMeet Snowflake CoWork\nSnowflake CoCo\nSnowflake CoWork\nBEST OF SUMMIT 26\nSummit 26 sessions now available on-demand\nExplore 40+ recorded sessions from this year’s annual user conference – Now on-demand!\nWatch now\nPLATFORM\nSimplify Enterprise\nData and AI\nFrom ingesting and processing data to analyzing and modeling it, to building and sharing data and AI applications, Snowflake helps you innovate faster and do more with your data.\nWhy Snowflake\nView Pricing\nEASY\nBring your data and AI strategies to life\nSave time on building, configuring and tuning infrastructure with an easy, fully managed platform that’s integrated across data types and clouds.\nCONNECTED\nConnect your business ecosystem\nSnowflake’s rich ecosystem and interoperability with open table formats means you can maximize value from all your data, apps and models.\nTRUSTED\nAchieve universal business continuity\nSupport your most demanding workloads with always-on, unified security, govern",
   "checked_at": "2026-07-26T12:55:38.773349+00:00",
-  "sector": "Enterprise SaaS/DevTools"
+  "sector": "AI/ML Infra"
  },
  "life360": {
   "company": "Life360",
@@ -3521,7 +3521,7 @@
   "accessible": true,
   "description": "Prefect - Workflow Orchestration for Data, ML, and Agents\nSkip to content\nPrefect\nUse Cases\nProducts\nDocs\nCustomers\nPricing\nResources\n51k+\nContact\nLog in\nSign up\nProduct\nPrefect Cloud\nPrefect Open Source\nFastMCP\nPrefect Horizon\nNEW\nPricing\nEnterprise\nHow Prefect Works\nPrefect Cloud vs OSS\nPrefect vs Airflow\nResources\nDocs\nCase Studies\nBlog\nResources\nChangelog\nCommunity\nLearn\nSupport\nCloud Status\nCompany\nAbout\nContact\nCareers\nLegal\nSecurity\nBrand Assets\nOpen Source Pledge\nSocial\nTwitter\nGitHub\nLinkedIn\nYouTube\n© Copyright 2026 Prefect Technologies, Inc. All rights reserved.\nStart with one flow.\nScale to millions.\nDurable orchestration for data, ML, and agents.\nStart free\nBook a demo\nwith our team\nLooking for the MCP gateway? Visit\nPrefect Horizon\nTrusted in Production by:\nCase study →\nCase study →\nCase study →\nCase study →\nCase study →\nCase study →\nCase study →\nCase study →\nCase study →\nCase study →\nCase study →\nCase study →\nCase study →\nCase study →\nCase study →\nCase study →\nCase study →\nCase study →\nEnterprise Grade\nSOC 2 Type II\nHIPAA\nGDPR\nHybrid & VPC\n99.99% uptime\nOne platform\nfrom ML to AI\nData pipelines\nML\nDurable execution\nAgents\nEnterprise\nData you can depend on\nReplace brittle cron jobs with pipelines that heal themselves, so your data always arrives on time.\n</>\nflow.py\nfrom prefect import flow, task\n@task(retries=3)\ndef extract(source):\n...\n@flow\ndef daily_revenue_elt():\nload(transform(extract(\"warehouse\")))\nDeployments\n/\ndaily_revenue_elt\n·\nk8s-prod\nRunning · 0:00",
   "checked_at": "2026-08-21T11:50:22.657620+00:00",
-  "sector": "Enterprise SaaS/DevTools"
+  "sector": "AI/ML Infra"
  },
  "cedars sinai": {
   "company": "CEDARS-SINAI",
@@ -3647,7 +3647,7 @@
   "accessible": true,
   "description": "Durable Execution Solutions | Temporal\nSkip to main content\nNew features for faster build and reliable AI |\nSee what you missed at Replay 2026 âº\nAbout\nCareers\nTalk to Sales\nPlatform\nOverview\nHow Temporal Works\nTemporal Cloud\nSecurity\nPlatform\nDocs\nPricing\nUse Cases\nCustomer Stories\nBy Industry\nAI\nFinancial Services\nBy Audience\nPlatform Engineering\nStartups\nPartners\nUse Cases\nResources\nResource Library\nLearn Temporal\nCommunity\nCode Exchange\nBlog\nChangelog\nResources\nTry Free\nLog In\nThe worldâs best AI runs on Temporal\nBuild applications the way OpenAI, Lovable, Replit, Cursor, and Retool do with our open-source platform. Add agentic capabilities to any application with your framework of choice.\nGet Started for Free\nRun Locally\nWrite code as if failure doesnât exist\nDistributed systems break, APIs fail, networks flake, and services crash. Thatâs not your problem anymore. Managing reliability shouldnât mean constant firefighting.\nTemporal Workflows automatically capture state at every step, and in the event of failure, can pick up exactly where they left off.\nNo lost progress, no orphaned processes, and no manual recovery required.\nYou have to see it to believe it\nTemporal doesnât work like anything youâve used before. Watch how we guarantee the\nDurable Execution\nof your code in the face of any failure.\nWatch a Demo\nHow It Works\nCreate failproof apps using our SDKs\nWrite your business logic in the programming languages you already use with our native SDKs. Your days",
   "checked_at": "2026-08-29T15:43:00.076788+00:00",
-  "sector": "Enterprise SaaS/DevTools"
+  "sector": "AI/ML Infra"
  },
  "novalink solutions llc": {
   "company": "Novalink Solutions LLC",
@@ -4232,6 +4232,35 @@
   "accessible": true,
   "description": "Agentic Infrastructure - Vercel\nSkip to content\nCopy Wordmark\nCopy Logo\nDownload Brand Assets\nBrand Guidelines\nProducts\nAgent Stack\nAI SDK\nAI Gateway\nSandbox\nPassport\nConnect\neve\nCore Platform\nSecurity\nContent Delivery\nFluid Compute\nObservability\nWorkflows\nCI/CD\nTools\nNext.js\nVercel Agent\nVercel Plugin\nOpen Source\nDomains\n↗\nv0\n↗\nResources\nLearn\nDocs\nAbout\nBlog\nChangelog\nKnowledge Base\nBuild\nAI Apps\nWeb Apps\nMarketing Sites\nPlatforms\nCommerce\nExplore\nCustomers\nMarketplace\nPartner Finder\nAWS\nCommunity\n↗\nEnterprise\nPricing\nGet a Demo\nLog In\nSign Up\nAsk AI\nDashboard\nProducts\nAgent Stack\nAI SDK\nAI Gateway\nSandbox\nPassport\nConnect\neve\nCore Platform\nSecurity\nContent Delivery\nFluid Compute\nObservability\nWorkflows\nCI/CD\nTools\nNext.js\nVercel Agent\nVercel Plugin\nOpen Source\nDomains\n↗\nv0\n↗\nResources\nLearn\nDocs\nAbout\nBlog\nChangelog\nKnowledge Base\nBuild\nAI Apps\nWeb Apps\nMarketing Sites\nPlatforms\nCommerce\nExplore\nCustomers\nMarketplace\nPartner Finder\nAWS\nCommunity\n↗\nEnterprise\nPricing\nGet a Demo\nLog In\nSign Up\nShip 26 is coming to SF\nGet your ticket\nDrop to deploy\nLoading\nAgentic Infrastructure\nTo ship apps and agents\nFor coding agents\nFor coding agents to ship apps and agents automated by agents.\nDeploy now\nTalk to sales\nFor coding agents\nto deploy in their native language, with Vercel's API, CLI, MCP, and Skills.\nTo ship apps and agents\nin Sandboxed VMs, with durable backends, powered by hundreds of models.\nAutomated by agents\nwho autonomously investigate errors, plan fixes, and open PRs.\n",
   "checked_at": "2026-10-09T17:31:06.929444+00:00",
-  "sector": "AI/ML Infra"
+  "sector": "Enterprise SaaS/DevTools"
+ },
+ "the toro company": {
+  "company": "The Toro Company",
+  "domain": "thetorocompany.com",
+  "accessible": true,
+  "description": "United States. We are unable to sponsor or take over sponsorship of a school/employment or any other visa, regardless of expiration date, now or in the future.",
+  "checked_at": "2026-10-10T16:18:59.887157+00:00"
+ },
+ "apnimed": {
+  "company": "Apnimed",
+  "domain": "apnimed.com",
+  "accessible": true,
+  "description": "Apnimed: Breathing New Life Into OSA & More\nSkip to content\nOpen Menu\nHOME\nAbout\nOur Story\nLeadership\nContact\nOur Focus\nObstructive Sleep Apnea\nProduct Development Program\nClinical Trials\nScientific Publications\nAD109\nOSA Stories + Community\nCareers\nNews\nInvestors\nChris is a real person living with OSA.\nRead Story\nMichael is a real person living with OSA.\nRead Story\nDEDICATED TO BREATHING\nNEW LIFE INTO SLEEP-RELATED\nBREATHING DISEASES\nOSA\nApnimed envisions a new era for\nobstructive sleep apnea (OSA) and\nother sleep-related breathing\ndiseases—where novel oral therapies\naim to simplify treatment and help\nmore people get the oxygen and\nrestorative sleep needed to thrive.\nDual Publication of Phase 3 AD109 Data\nDiscover the first-of-its-kind peer reviewed Phase 3 AD109 data now published in leading journals.\nStrategic Financing for AD109\nRead more about Apnimed’s strategic debt financing with HealthCare Royalty Partners, providing support for the potential commercial launch of AD109, if approved.\nAdditional Phase 3 AD109 Data Featured at CHEST 2025\nLearn more about additional Phase 3 data for AD109 presented at the CHEST Annual Meeting 2025.\nAD109:\nA Novel Neuromuscular Approach to Improve Oxygenation\nOur investigational oral therapy AD109 is designed to simplify treatment and make it more broadly acceptable to those living with OSA who are untreated and undertreated.\nMore About AD109\nApnimed:\nInnovation in Oxygenation\nWe are dedicated to the discovery, development, and commercial",
+  "checked_at": "2026-10-10T16:18:59.887157+00:00"
+ },
+ "hobbsmadison": {
+  "company": "hobbsmadison",
+  "domain": null,
+  "accessible": true,
+  "description": "Hobbs Madison is seeking a Data Analyst with strong data management experience in the financial services sector.",
+  "checked_at": "2026-10-10T16:18:59.887157+00:00"
+ },
+ "autodesk": {
+  "company": "Autodesk",
+  "domain": "autodesk.com",
+  "accessible": true,
+  "description": "About Autodesk Welcome to Autodesk! Amazing things are created every day with our software – from the greenest buildings and cleanest cars to the smartest factories and biggest hit movies.",
+  "checked_at": "2026-10-10T16:18:59.887157+00:00",
+  "sector": "Enterprise SaaS/DevTools"
  }
 }
