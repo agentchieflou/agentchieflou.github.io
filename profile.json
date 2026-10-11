@@ -1,15 +1,14 @@
 {
- "summary": "Michael is a highly technical Business Analytics Consultant with 4 years of experience specializing in internal developer tooling, process automation, and data platform engineering. He excels at building agentic workflows and RESTful services that bridge the gap between complex data infrastructure and team productivity. Passionate about developer experience, he develops high-throughput automation suites and maintains enterprise-wide Python packages that significantly reduce operational bottlenecks.",
+ "summary": "Michael is a technical business analytics professional with 4 years of experience building scalable automation and internal developer tooling at the enterprise level. He specializes in creating 'agentic' workflows and RESTful services that bridge the gap between complex data infrastructure and stakeholder productivity. His portfolio demonstrates a strong aptitude for engineering robust, cross-platform automation suites that transform manual processes into resilient, programmatic workflows.",
  "skills": [
   {
    "name": "Python",
    "category": "engineering",
    "strength": 0.95,
    "evidence": [
-    "Maintained bank-wide Python packages",
-    "Built REST API platforms on OpenShift",
-    "Developed multi-scraper automation suites",
-    "Created custom CLI tools for LLM/Copilot orchestration"
+    "Enterprise-wide package maintenance",
+    "REST API development",
+    "Orchestrator automation"
    ]
   },
   {
@@ -17,30 +16,9 @@
    "category": "analytics",
    "strength": 0.85,
    "evidence": [
-    "Data modeling for Oracle/Teradata/MongoDB",
-    "Grid-wide table usage analytics",
-    "Migration-impact discovery and field mapping"
-   ]
-  },
-  {
-   "name": "Power BI",
-   "category": "analytics",
-   "strength": 0.8,
-   "evidence": [
-    "Built semantic models",
-    "Developed executive-level Peer Bank Analysis dashboards",
-    "Automated performance monitoring visualization"
-   ]
-  },
-  {
-   "name": "CI/CD & DevOps",
-   "category": "engineering",
-   "strength": 0.85,
-   "evidence": [
-    "OpenShift/Kubernetes deployment",
-    "Helm charting",
-    "Enterprise-grade CI/CD pipelines",
-    "Production containerization of REST APIs"
+    "Data validation frameworks",
+    "Mainframe migration reconciliation",
+    "Complex schema interaction"
    ]
   },
   {
@@ -48,9 +26,39 @@
    "category": "engineering",
    "strength": 0.9,
    "evidence": [
-    "Automated pricing workflows saving 3+ hours of rework",
-    "Built document sourcing scrapers",
-    "Developed headless browser services for internal DPM issues"
+    "Document sourcing scrapers",
+    "Workflow re-engineering at PNC",
+    "FleetAgent orchestrator"
+   ]
+  },
+  {
+   "name": "REST API Development",
+   "category": "engineering",
+   "strength": 0.8,
+   "evidence": [
+    "Production OpenShift APIs",
+    "Containerized service deployment",
+    "Helm charting"
+   ]
+  },
+  {
+   "name": "Power BI",
+   "category": "analytics",
+   "strength": 0.75,
+   "evidence": [
+    "Semantic modeling",
+    "Portfolio performance dashboards",
+    "Peer bank analysis tool"
+   ]
+  },
+  {
+   "name": "Kubernetes/OpenShift",
+   "category": "engineering",
+   "strength": 0.7,
+   "evidence": [
+    "Production service hosting",
+    "CI/CD pipeline governance",
+    "Policy as Code integration"
    ]
   },
   {
@@ -58,57 +66,58 @@
    "category": "engineering",
    "strength": 0.8,
    "evidence": [
-    "Evaluated RAG/Agentic workflows under budget constraints",
-    "Built 'this-next-please' Copilot orchestration framework",
-    "Developed agent-based game simulation systems"
-   ]
-  },
-  {
-   "name": "API Development",
-   "category": "engineering",
-   "strength": 0.8,
-   "evidence": [
-    "Developed production REST APIs on OpenShift",
-    "Built headless browser/API-based scraper orchestrators",
-    "Streamed plugin editors via custom protocols"
+    "RAG architecture implementation",
+    "Copilot orchestration tool",
+    "FleetAgent deployment"
    ]
   },
   {
    "name": "Data Modeling",
    "category": "analytics",
+   "strength": 0.7,
+   "evidence": [
+    "M&A integration back-testing",
+    "Migration reconciliation frameworks",
+    "Asset class migration"
+   ]
+  },
+  {
+   "name": "CI/CD",
+   "category": "engineering",
    "strength": 0.75,
    "evidence": [
-    "Led M&A mortgage data integration",
-    "Standardized version control and data storage architectures",
-    "Parameter-driven data validation frameworks"
+    "Enterprise governance gate clearance",
+    "Automated testing/deployment",
+    "Python packaging pipelines"
    ]
   },
   {
-   "name": "Git & Version Control",
-   "category": "tools",
+   "name": "Git/Version Control",
+   "category": "engineering",
    "strength": 0.8,
    "evidence": [
-    "Active contributor across 5+ complex GitHub repositories",
-    "Maintains sophisticated CI/CD matrix and branch management strategies"
+    "Complex mono-repo management",
+    "Open source project leadership",
+    "Internal tooling source control"
    ]
   },
   {
-   "name": "Quantitative Analytics",
-   "category": "analytics",
+   "name": "Quantitative Analysis",
+   "category": "domain",
    "strength": 0.75,
    "evidence": [
     "CECL reserve forecasting",
     "Elasticity research",
-    "Model risk management under SR 11-7 standards"
+    "Model risk management (SR 11-7)"
    ]
   },
   {
-   "name": "C++",
-   "category": "engineering",
-   "strength": 0.7,
+   "name": "Docker",
+   "category": "tools",
+   "strength": 0.8,
    "evidence": [
-    "Developed physics-based game systems in Unreal Engine 5",
-    "Engineered plugin scaffolds and simulation state machines"
+    "Microservice containerization",
+    "Environment parity in CI/CD"
    ]
   },
   {
@@ -116,46 +125,38 @@
    "category": "engineering",
    "strength": 0.6,
    "evidence": [
-    "Browser-based stream handling and plugin UI development",
-    "NPM manifest management for dev tooling"
+    "Instrumental DSP development",
+    "Browser-based application suites"
    ]
   },
   {
-   "name": "Docker",
-   "category": "tools",
-   "strength": 0.85,
+   "name": "C++",
+   "category": "engineering",
+   "strength": 0.65,
    "evidence": [
-    "Containerized REST APIs",
-    "Operationalized ML serving through containerization"
+    "DSP/VST plugin development",
+    "Low-level audio processing"
    ]
   },
   {
-   "name": "Requirements Gathering",
+   "name": "Requirement Gathering",
    "category": "domain",
-   "strength": 0.7,
+   "strength": 0.8,
    "evidence": [
-    "Stakeholder enablement for bank-wide tool migrations",
-    "Redesigned print workflows and fee structures"
-   ]
-  },
-  {
-   "name": "Stakeholder Management",
-   "category": "domain",
-   "strength": 0.75,
-   "evidence": [
-    "Reduced operating expenses by $1M",
-    "Supported on-time project delivery for major $30M migration"
+    "Stakeholder enablement",
+    "Internal tooling design",
+    "Business process optimization"
    ]
   }
  ],
  "target_titles": [
-  "Senior Business Analytics Engineer",
-  "Technical Product Manager (Internal Tools)",
+  "Senior Business Intelligence Engineer",
   "Analytics Engineer",
+  "Technical Product Manager (Internal Tools)",
   "Automation Lead",
-  "Solutions Architect (Analytics & Data)"
+  "Data Strategy Consultant"
  ],
- "version": "5deb5ef226a8",
+ "version": "941e6f634434",
  "remote_only": true,
- "generated_at": "2026-10-10T16:18:24.615755+00:00"
+ "generated_at": "2026-10-11T16:41:55.895993+00:00"
 }
