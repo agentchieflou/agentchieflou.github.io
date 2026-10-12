@@ -1427,27 +1427,6 @@
   "heuristic": false,
   "scored_at": "2026-10-10T16:19:34.834251+00:00"
  },
- "8c55f494291430fa53f7e58fd00eae040746b235": {
-  "profile_version": "86f87384cc45",
-  "match_score": 70,
-  "confidence": 0.85,
-  "why": "Alignment with product analytics and business-facing roles; solid match for consultant background.",
-  "seniority_fit": "target",
-  "role_family": "Business & Data Analytics",
-  "matched_skills": [
-   "SQL",
-   "Data Modeling",
-   "Quantitative Analytics"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Highlight product metric ownership."
-  ],
-  "sector": "Healthcare",
-  "prefilter": 0.5073,
-  "heuristic": false,
-  "scored_at": "2026-09-04T15:03:55.456686+00:00"
- },
  "6600325ab440cbf28c70a35eb3b0e83cfea3bb73": {
   "profile_version": "941e6f634434",
   "match_score": 35,
@@ -2889,28 +2868,6 @@
   "heuristic": false,
   "scored_at": "2026-10-11T16:42:54.598310+00:00"
  },
- "e4a34993e889ea98aa8cc6777931090f59ac0f2a": {
-  "profile_version": "941e6f634434",
-  "match_score": 85,
-  "confidence": 0.9,
-  "why": "Great alignment on data infrastructure and REST APIs. Experience in designing enterprise-grade solutions for data integration is highly transferable.",
-  "seniority_fit": "stretch",
-  "role_family": "Solutions & Technical Consulting",
-  "matched_skills": [
-   "SQL",
-   "REST API Development",
-   "Data Modeling"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Emphasize customer-facing technical design work.",
-   "Highlight dbt expertise."
-  ],
-  "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.529,
-  "heuristic": false,
-  "scored_at": "2026-10-11T16:42:54.598310+00:00"
- },
  "b9e1f5987ecb51882ac43adb01d4de0532e2af06": {
   "profile_version": "941e6f634434",
   "match_score": 70,
@@ -2995,28 +2952,6 @@
   ],
   "sector": "AI/ML Infra",
   "prefilter": 0.5623,
-  "heuristic": false,
-  "scored_at": "2026-10-11T16:42:54.598310+00:00"
- },
- "b1c064b1baa0731ab3f8325aa099659752d9a4f0": {
-  "profile_version": "941e6f634434",
-  "match_score": 85,
-  "confidence": 0.9,
-  "why": "Strong alignment on SQL/Data modeling and forecasting. The role requires building trust and documentation for data models, which aligns with the candidate's quantitative analysis and requirement gathering skills.",
-  "seniority_fit": "target",
-  "role_family": "Analytics & Data Engineering",
-  "matched_skills": [
-   "SQL",
-   "Data Modeling",
-   "Quantitative Analysis"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Highlight experience with dbt if applicable.",
-   "Focus on ownership of end-to-end data pipelines."
-  ],
-  "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.5484,
   "heuristic": false,
   "scored_at": "2026-10-11T16:42:54.598310+00:00"
  },
@@ -3181,5 +3116,52 @@
   "prefilter": 0.5234,
   "heuristic": false,
   "scored_at": "2026-10-11T16:42:54.598310+00:00"
+ },
+ "8bd2eb32146cdfbc98feb1bf77bb8475fa05612b": {
+  "profile_version": "941e6f634434",
+  "match_score": 35,
+  "confidence": 0.8,
+  "why": "While Michael has excellent experience in agentic architecture, this is a Manager role that requires leadership experience he lacks at his 4-year tenure. Additionally, the role is based in NYC, failing the hard constraint for fully-remote work.",
+  "seniority_fit": "out-of-band",
+  "role_family": "AI & Machine Learning",
+  "matched_skills": [
+   "Python",
+   "Requirement Gathering"
+  ],
+  "missing_skills": [
+   "People Management",
+   "Strategic Leadership"
+  ],
+  "resume_suggestions": [
+   "Highlight cross-functional leadership of technical projects to prepare for future management roles.",
+   "Emphasize executive stakeholder management experience."
+  ],
+  "sector": "AI/ML Infra",
+  "prefilter": 0.545,
+  "heuristic": false,
+  "scored_at": "2026-10-12T20:23:19.485883+00:00"
+ },
+ "fcca7598e7a25054768f359a44df56e535cf5360": {
+  "profile_version": "941e6f634434",
+  "match_score": 85,
+  "confidence": 0.9,
+  "why": "This is a perfect seniority match and aligns with his expertise in REST APIs, data modeling, and automation workflows. It is a 'stretch' role that builds upon his existing experience in enterprise developer tooling.",
+  "seniority_fit": "stretch",
+  "role_family": "Solutions & Technical Consulting",
+  "matched_skills": [
+   "SQL",
+   "REST API Development",
+   "Data Modeling",
+   "Process Automation"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Explicitly quantify the business impact (ROI) of the internal developer tools you have built.",
+   "Highlight experience with data movement/integration patterns to align with Fivetran's core product."
+  ],
+  "sector": "Enterprise SaaS/DevTools",
+  "prefilter": 0.5032,
+  "heuristic": false,
+  "scored_at": "2026-10-12T20:23:19.485883+00:00"
  }
 }
