@@ -117,27 +117,6 @@
   "heuristic": false,
   "scored_at": "2026-10-11T16:42:54.598310+00:00"
  },
- "8dc8f6f37abe5af60d0d4429d216584b4e5a7fcb": {
-  "profile_version": "2d8f68683856",
-  "match_score": 75,
-  "confidence": 0.85,
-  "why": "Strong fit for 'Technical Consulting' and biotech process work.",
-  "seniority_fit": "target",
-  "role_family": "Solutions & Technical Consulting",
-  "matched_skills": [
-   "Process Optimization",
-   "Project Management"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Frame scientific data work as technical engineering.",
-   "Highlight your ability to structure complex data."
-  ],
-  "sector": "Healthcare",
-  "prefilter": 0.487,
-  "heuristic": false,
-  "scored_at": "2026-07-26T23:51:05.100980+00:00"
- },
  "5140f0250fda6525ac9f70fdb82caa8ae56fa87e": {
   "profile_version": "2bac36e73a58",
   "match_score": 80,
@@ -2247,29 +2226,6 @@
   "heuristic": false,
   "scored_at": "2026-10-01T17:27:49.349407+00:00"
  },
- "14255715db3da18c5be7d5886e0345d72395675c": {
-  "profile_version": "d15e88c0f782",
-  "match_score": 80,
-  "confidence": 0.85,
-  "why": "Strong domain fit for your banking ops and fraud prevention background. Allows for deep cross-functional partnership across Product and Engineering.",
-  "seniority_fit": "target",
-  "role_family": "Business & Data Analytics",
-  "matched_skills": [
-   "Python",
-   "SQL",
-   "Requirements Gathering",
-   "Data Modeling"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Detail your impact on fraud/identity verification flows.",
-   "Emphasize your leadership in cross-functional risk initiatives."
-  ],
-  "sector": "Fintech",
-  "prefilter": 0.4971,
-  "heuristic": false,
-  "scored_at": "2026-10-06T17:21:27.544472+00:00"
- },
  "cc6419f5d8fde087a8bf5b468bcdcf2b9233e255": {
   "profile_version": "941e6f634434",
   "match_score": 90,
@@ -3094,29 +3050,6 @@
   "heuristic": false,
   "scored_at": "2026-10-10T16:19:34.834251+00:00"
  },
- "11fc96488f65fc89ec07635a8dd525a6fd808397": {
-  "profile_version": "941e6f634434",
-  "match_score": 40,
-  "confidence": 0.9,
-  "why": "The salary range is too low ($101k-$155k) and significantly undercuts the candidate's $130k+ hard constraint for a role of this complexity.",
-  "seniority_fit": "target",
-  "role_family": "Analytics & Data Engineering",
-  "matched_skills": [
-   "Python",
-   "SQL",
-   "CI/CD"
-  ],
-  "missing_skills": [
-   "AWS data services"
-  ],
-  "resume_suggestions": [
-   "Pass on this role due to compensation."
-  ],
-  "sector": "Government/Public Sector",
-  "prefilter": 0.5234,
-  "heuristic": false,
-  "scored_at": "2026-10-11T16:42:54.598310+00:00"
- },
  "8bd2eb32146cdfbc98feb1bf77bb8475fa05612b": {
   "profile_version": "941e6f634434",
   "match_score": 35,
@@ -3141,27 +3074,124 @@
   "heuristic": false,
   "scored_at": "2026-10-12T20:23:19.485883+00:00"
  },
- "fcca7598e7a25054768f359a44df56e535cf5360": {
+ "b73a094c8355b48d63cc67c933820f02c2b5d987": {
   "profile_version": "941e6f634434",
   "match_score": 85,
   "confidence": 0.9,
-  "why": "This is a perfect seniority match and aligns with his expertise in REST APIs, data modeling, and automation workflows. It is a 'stretch' role that builds upon his existing experience in enterprise developer tooling.",
-  "seniority_fit": "stretch",
-  "role_family": "Solutions & Technical Consulting",
+  "why": "Strong alignment with your experience in building scalable data models and automation; utilizes your core SQL and CI/CD skill sets in a high-impact engineering role.",
+  "seniority_fit": "target",
+  "role_family": "Analytics & Data Engineering",
   "matched_skills": [
    "SQL",
-   "REST API Development",
-   "Data Modeling",
-   "Process Automation"
+   "CI/CD",
+   "Git/Version Control"
   ],
-  "missing_skills": [],
+  "missing_skills": [
+   "dbt",
+   "Snowflake"
+  ],
   "resume_suggestions": [
-   "Explicitly quantify the business impact (ROI) of the internal developer tools you have built.",
-   "Highlight experience with data movement/integration patterns to align with Fivetran's core product."
+   "Highlight experience with data lineage and reproducibility.",
+   "Emphasize past collaboration with business stakeholders."
   ],
   "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.5032,
+  "prefilter": 0.568,
   "heuristic": false,
-  "scored_at": "2026-10-12T20:23:19.485883+00:00"
+  "scored_at": "2026-10-13T18:26:09.569977+00:00"
+ },
+ "1cda59b2cf8f7971ababa9650ef799d0c22c66dd": {
+  "profile_version": "941e6f634434",
+  "match_score": 85,
+  "confidence": 0.9,
+  "why": "This role is a clear match for your technical analytics background, focusing on data model maintenance and CI/CD processes.",
+  "seniority_fit": "target",
+  "role_family": "Analytics & Data Engineering",
+  "matched_skills": [
+   "SQL",
+   "CI/CD",
+   "Git/Version Control"
+  ],
+  "missing_skills": [
+   "dbt",
+   "Snowflake"
+  ],
+  "resume_suggestions": [
+   "Explicitly mention your process for ensuring data quality in automation workflows.",
+   "Include any prior experience with stakeholder-facing dashboarding."
+  ],
+  "sector": "Enterprise SaaS/DevTools",
+  "prefilter": 0.5651,
+  "heuristic": false,
+  "scored_at": "2026-10-13T18:26:09.569977+00:00"
+ },
+ "f9b659dda1f854ffebe858c648707d835d7bdf6c": {
+  "profile_version": "941e6f634434",
+  "match_score": 40,
+  "confidence": 0.8,
+  "why": "While your 'agentic' workflow background is a perfect thematic fit, the 'Senior' TPM title at a company like Snowflake usually demands significantly more than 4 years of experience.",
+  "seniority_fit": "stretch",
+  "role_family": "Technical Strategy & Product",
+  "matched_skills": [
+   "Agentic Architecture",
+   "Requirement Gathering"
+  ],
+  "missing_skills": [
+   "Program Management experience"
+  ],
+  "resume_suggestions": [
+   "Focus on projects where you led cross-functional technical initiatives.",
+   "Quantify the scale of the automation/agentic systems you have designed."
+  ],
+  "sector": "Enterprise SaaS/DevTools",
+  "prefilter": 0.5318,
+  "heuristic": false,
+  "scored_at": "2026-10-13T18:26:09.569977+00:00"
+ },
+ "09cd0926f1daefaf4743c4d394ba17083531a5c7": {
+  "profile_version": "941e6f634434",
+  "match_score": 75,
+  "confidence": 0.85,
+  "why": "The 5-year requirement aligns well with your 4-year tenure; the focus on revenue cycle intelligence allows for the application of your analytics and automation skills.",
+  "seniority_fit": "target",
+  "role_family": "Analytics & Data Engineering",
+  "matched_skills": [
+   "SQL",
+   "Process Automation"
+  ],
+  "missing_skills": [
+   "Healthcare domain expertise"
+  ],
+  "resume_suggestions": [
+   "Highlight 'Process Automation' projects that directly impacted financial or operational KPIs.",
+   "Emphasize scalable architectural patterns in your previous roles."
+  ],
+  "sector": "Healthcare",
+  "prefilter": 0.5184,
+  "heuristic": false,
+  "scored_at": "2026-10-13T18:26:09.569977+00:00"
+ },
+ "94134dafcd56f1af2548b41aad27d6c47737ea27": {
+  "profile_version": "941e6f634434",
+  "match_score": 30,
+  "confidence": 0.95,
+  "why": "This is a 'Principal AI Architect' role, which is a significant step above your current 4-year experience level.",
+  "seniority_fit": "out-of-band",
+  "role_family": "AI & Machine Learning",
+  "matched_skills": [
+   "Agentic Architecture",
+   "Python"
+  ],
+  "missing_skills": [
+   "Principal-level system design",
+   "Deep ML architecture expertise"
+  ],
+  "resume_suggestions": [
+   "Do not apply if you are strictly looking for mid-to-senior individual contributor roles.",
+   "Focus on architect-level experience if you choose to pursue."
+  ],
+  "sector": "AI/ML Infra",
+  "prefilter": 0.5089,
+  "heuristic": false,
+  "scored_at": "2026-10-13T18:26:09.569977+00:00"
  }
 }
