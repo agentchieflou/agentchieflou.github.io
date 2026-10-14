@@ -1063,25 +1063,6 @@
   "heuristic": false,
   "scored_at": "2026-10-06T17:21:27.544472+00:00"
  },
- "9c83c8fce647331c41c2ab88dab1f5ac5f6f6941": {
-  "profile_version": "941e6f634434",
-  "match_score": 30,
-  "confidence": 0.9,
-  "why": "Engineering Manager role; too senior based on the candidate's current experience level.",
-  "seniority_fit": "out-of-band",
-  "role_family": "AI & Machine Learning",
-  "matched_skills": [],
-  "missing_skills": [
-   "Engineering management experience"
-  ],
-  "resume_suggestions": [
-   "Ignore this listing."
-  ],
-  "sector": "AI/ML Infra",
-  "prefilter": 0.4989,
-  "heuristic": false,
-  "scored_at": "2026-10-11T16:42:54.598310+00:00"
- },
  "a945cc4582c07401ac1415997adc28337b31c0dd": {
   "profile_version": "941e6f634434",
   "match_score": 80,
@@ -1426,24 +1407,6 @@
   "prefilter": 0.5055,
   "heuristic": false,
   "scored_at": "2026-10-11T16:42:54.598310+00:00"
- },
- "de9890b6a6c4d8015529f966807db29308f87f9f": {
-  "profile_version": "2bac36e73a58",
-  "match_score": 30,
-  "confidence": 0.9,
-  "why": "Fails hard constraint: salary is significantly below $130,000.",
-  "seniority_fit": "target",
-  "role_family": "Technical Strategy & Product",
-  "matched_skills": [
-   "Requirements Gathering",
-   "Agentic Workflows"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [],
-  "sector": "AI/ML Infra",
-  "prefilter": 0.5106,
-  "heuristic": false,
-  "scored_at": "2026-10-01T17:27:49.349407+00:00"
  },
  "0c5c485718a2642e67c8c367166f626968311c0e": {
   "profile_version": "941e6f634434",
@@ -2053,24 +2016,6 @@
   "heuristic": false,
   "scored_at": "2026-10-10T16:19:34.834251+00:00"
  },
- "0d60a64b309629a3c3ec5449ee795930e986771b": {
-  "profile_version": "7ed3ad516c4f",
-  "match_score": 30,
-  "confidence": 0.8,
-  "why": "Toronto-based location violation.",
-  "seniority_fit": "target",
-  "role_family": "AI & Machine Learning",
-  "matched_skills": [
-   "Python",
-   "Workflow Automation"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [],
-  "sector": "AI/ML Infra",
-  "prefilter": 0.5082,
-  "heuristic": false,
-  "scored_at": "2026-10-04T15:54:31.744194+00:00"
- },
  "7ee7d9b422982036e0740b705babc15f3a893925": {
   "profile_version": "3bf12a41e63c",
   "match_score": 78,
@@ -2140,27 +2085,6 @@
   "prefilter": 0.4964,
   "heuristic": false,
   "scored_at": "2026-09-29T16:58:12.800153+00:00"
- },
- "59d08d0bfa470c1e397eb59922e65191c01e9d4d": {
-  "profile_version": "941e6f634434",
-  "match_score": 75,
-  "confidence": 0.8,
-  "why": "Analytics engineering role in healthcare. Good match for data-centric building, though the company domain is slightly niche.",
-  "seniority_fit": "target",
-  "role_family": "Analytics & Data Engineering",
-  "matched_skills": [
-   "SQL",
-   "Data Modeling"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Highlight experience in product analytics and dashboarding.",
-   "Emphasize stakeholder alignment."
-  ],
-  "sector": "Healthcare",
-  "prefilter": 0.5022,
-  "heuristic": false,
-  "scored_at": "2026-10-11T16:42:54.598310+00:00"
  },
  "b991e9eccee639ddc68f78c9395437a8c15c1ce4": {
   "profile_version": "941e6f634434",
@@ -3099,31 +3023,6 @@
   "heuristic": false,
   "scored_at": "2026-10-13T18:26:09.569977+00:00"
  },
- "1cda59b2cf8f7971ababa9650ef799d0c22c66dd": {
-  "profile_version": "941e6f634434",
-  "match_score": 85,
-  "confidence": 0.9,
-  "why": "This role is a clear match for your technical analytics background, focusing on data model maintenance and CI/CD processes.",
-  "seniority_fit": "target",
-  "role_family": "Analytics & Data Engineering",
-  "matched_skills": [
-   "SQL",
-   "CI/CD",
-   "Git/Version Control"
-  ],
-  "missing_skills": [
-   "dbt",
-   "Snowflake"
-  ],
-  "resume_suggestions": [
-   "Explicitly mention your process for ensuring data quality in automation workflows.",
-   "Include any prior experience with stakeholder-facing dashboarding."
-  ],
-  "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.5651,
-  "heuristic": false,
-  "scored_at": "2026-10-13T18:26:09.569977+00:00"
- },
  "f9b659dda1f854ffebe858c648707d835d7bdf6c": {
   "profile_version": "941e6f634434",
   "match_score": 40,
@@ -3170,28 +3069,95 @@
   "heuristic": false,
   "scored_at": "2026-10-13T18:26:09.569977+00:00"
  },
- "94134dafcd56f1af2548b41aad27d6c47737ea27": {
+ "6beff42900b9b99c8ae97ecd0cbda32d41316bbb": {
   "profile_version": "941e6f634434",
-  "match_score": 30,
-  "confidence": 0.95,
-  "why": "This is a 'Principal AI Architect' role, which is a significant step above your current 4-year experience level.",
-  "seniority_fit": "out-of-band",
-  "role_family": "AI & Machine Learning",
+  "match_score": 82,
+  "confidence": 0.9,
+  "why": "Strong alignment with your expertise in data modeling and business analytics for revenue operations at an enterprise scale. It perfectly mirrors your background in bridging complex data infrastructure with stakeholder needs.",
+  "seniority_fit": "target",
+  "role_family": "Analytics & Data Engineering",
   "matched_skills": [
-   "Agentic Architecture",
-   "Python"
+   "SQL",
+   "Data Modeling"
   ],
   "missing_skills": [
-   "Principal-level system design",
-   "Deep ML architecture expertise"
+   "dbt"
   ],
   "resume_suggestions": [
-   "Do not apply if you are strictly looking for mid-to-senior individual contributor roles.",
-   "Focus on architect-level experience if you choose to pursue."
+   "Emphasize your experience with 'tested and documented' data models.",
+   "Highlight specific metrics impacted by your automated workflows."
   ],
-  "sector": "AI/ML Infra",
-  "prefilter": 0.5089,
+  "sector": "Enterprise SaaS/DevTools",
+  "prefilter": 0.5482,
   "heuristic": false,
-  "scored_at": "2026-10-13T18:26:09.569977+00:00"
+  "scored_at": "2026-10-14T15:53:19.673951+00:00"
+ },
+ "fbfc0b6b6e410e90c1aae21f4af38cd02a2adb34": {
+  "profile_version": "941e6f634434",
+  "match_score": 15,
+  "confidence": 0.95,
+  "why": "This role explicitly violates your hard constraint for fully-remote work (requires 2 days in office) and asks for 6 years of experience.",
+  "seniority_fit": "stretch",
+  "role_family": "Analytics & Data Engineering",
+  "matched_skills": [
+   "SQL",
+   "Data Modeling"
+  ],
+  "missing_skills": [
+   "Healthcare Compliance/HIPAA"
+  ],
+  "resume_suggestions": [],
+  "sector": "Healthcare",
+  "prefilter": 0.5399,
+  "heuristic": false,
+  "scored_at": "2026-10-14T15:53:19.673951+00:00"
+ },
+ "e4a34993e889ea98aa8cc6777931090f59ac0f2a": {
+  "profile_version": "941e6f634434",
+  "match_score": 40,
+  "confidence": 0.85,
+  "why": "While your tech stack is strong, the 'Solutions Architect' title and the requirement to reside in specific regional hubs make this an out-of-band stretch for your current seniority level.",
+  "seniority_fit": "out-of-band",
+  "role_family": "Solutions & Technical Consulting",
+  "matched_skills": [
+   "REST API Development",
+   "SQL"
+  ],
+  "missing_skills": [
+   "dbt",
+   "Customer-facing technical consulting"
+  ],
+  "resume_suggestions": [
+   "Highlight experience managing external stakeholder expectations.",
+   "Frame your internal tool development as solutions architecture."
+  ],
+  "sector": "Enterprise SaaS/DevTools",
+  "prefilter": 0.529,
+  "heuristic": false,
+  "scored_at": "2026-10-14T15:53:19.673951+00:00"
+ },
+ "11fc96488f65fc89ec07635a8dd525a6fd808397": {
+  "profile_version": "941e6f634434",
+  "match_score": 75,
+  "confidence": 0.8,
+  "why": "Matches your 'AI-ready' and 'Automation' focus well, and fits your technical background in Python and cloud infrastructure. It offers a clear path to utilize your agentic architecture and automation skills.",
+  "seniority_fit": "target",
+  "role_family": "Analytics & Data Engineering",
+  "matched_skills": [
+   "Python",
+   "SQL",
+   "CI/CD"
+  ],
+  "missing_skills": [
+   "AWS"
+  ],
+  "resume_suggestions": [
+   "Explicitly list 'AI/ML-ready data pipeline' projects.",
+   "Quantify your efficiency improvements using automation."
+  ],
+  "sector": "Government/Public Sector",
+  "prefilter": 0.5234,
+  "heuristic": false,
+  "scored_at": "2026-10-14T15:53:19.673951+00:00"
  }
 }
