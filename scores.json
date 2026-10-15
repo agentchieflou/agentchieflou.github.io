@@ -2086,27 +2086,6 @@
   "heuristic": false,
   "scored_at": "2026-09-29T16:58:12.800153+00:00"
  },
- "b991e9eccee639ddc68f78c9395437a8c15c1ce4": {
-  "profile_version": "941e6f634434",
-  "match_score": 65,
-  "confidence": 0.8,
-  "why": "Good match for a Data Analyst role, but perhaps lacking the engineering complexity and compensation potential of other roles in the list.",
-  "seniority_fit": "target",
-  "role_family": "Business & Data Analytics",
-  "matched_skills": [
-   "SQL",
-   "Data Modeling"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Highlight 'agentic' data modeling projects.",
-   "Emphasize stakeholder collaboration."
-  ],
-  "sector": "Healthcare",
-  "prefilter": 0.5159,
-  "heuristic": false,
-  "scored_at": "2026-10-11T16:42:54.598310+00:00"
- },
  "2be404d7233dbe583df5bc74d382c7477ba63398": {
   "profile_version": "941e6f634434",
   "match_score": 70,
@@ -2998,31 +2977,6 @@
   "heuristic": false,
   "scored_at": "2026-10-12T20:23:19.485883+00:00"
  },
- "b73a094c8355b48d63cc67c933820f02c2b5d987": {
-  "profile_version": "941e6f634434",
-  "match_score": 85,
-  "confidence": 0.9,
-  "why": "Strong alignment with your experience in building scalable data models and automation; utilizes your core SQL and CI/CD skill sets in a high-impact engineering role.",
-  "seniority_fit": "target",
-  "role_family": "Analytics & Data Engineering",
-  "matched_skills": [
-   "SQL",
-   "CI/CD",
-   "Git/Version Control"
-  ],
-  "missing_skills": [
-   "dbt",
-   "Snowflake"
-  ],
-  "resume_suggestions": [
-   "Highlight experience with data lineage and reproducibility.",
-   "Emphasize past collaboration with business stakeholders."
-  ],
-  "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.568,
-  "heuristic": false,
-  "scored_at": "2026-10-13T18:26:09.569977+00:00"
- },
  "f9b659dda1f854ffebe858c648707d835d7bdf6c": {
   "profile_version": "941e6f634434",
   "match_score": 40,
@@ -3092,72 +3046,52 @@
   "heuristic": false,
   "scored_at": "2026-10-14T15:53:19.673951+00:00"
  },
- "fbfc0b6b6e410e90c1aae21f4af38cd02a2adb34": {
+ "fcca7598e7a25054768f359a44df56e535cf5360": {
   "profile_version": "941e6f634434",
-  "match_score": 15,
-  "confidence": 0.95,
-  "why": "This role explicitly violates your hard constraint for fully-remote work (requires 2 days in office) and asks for 6 years of experience.",
-  "seniority_fit": "stretch",
-  "role_family": "Analytics & Data Engineering",
-  "matched_skills": [
-   "SQL",
-   "Data Modeling"
-  ],
-  "missing_skills": [
-   "Healthcare Compliance/HIPAA"
-  ],
-  "resume_suggestions": [],
-  "sector": "Healthcare",
-  "prefilter": 0.5399,
-  "heuristic": false,
-  "scored_at": "2026-10-14T15:53:19.673951+00:00"
- },
- "e4a34993e889ea98aa8cc6777931090f59ac0f2a": {
-  "profile_version": "941e6f634434",
-  "match_score": 40,
+  "match_score": 85,
   "confidence": 0.85,
-  "why": "While your tech stack is strong, the 'Solutions Architect' title and the requirement to reside in specific regional hubs make this an out-of-band stretch for your current seniority level.",
-  "seniority_fit": "out-of-band",
+  "why": "This is a strong match for a candidate with 4 years of experience looking to step into a Senior role that leverages their expertise in REST APIs and data infrastructure. The role perfectly aligns with Michael's background in bridging complex data systems and enterprise automation.",
+  "seniority_fit": "stretch",
   "role_family": "Solutions & Technical Consulting",
-  "matched_skills": [
-   "REST API Development",
-   "SQL"
-  ],
-  "missing_skills": [
-   "dbt",
-   "Customer-facing technical consulting"
-  ],
-  "resume_suggestions": [
-   "Highlight experience managing external stakeholder expectations.",
-   "Frame your internal tool development as solutions architecture."
-  ],
-  "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.529,
-  "heuristic": false,
-  "scored_at": "2026-10-14T15:53:19.673951+00:00"
- },
- "11fc96488f65fc89ec07635a8dd525a6fd808397": {
-  "profile_version": "941e6f634434",
-  "match_score": 75,
-  "confidence": 0.8,
-  "why": "Matches your 'AI-ready' and 'Automation' focus well, and fits your technical background in Python and cloud infrastructure. It offers a clear path to utilize your agentic architecture and automation skills.",
-  "seniority_fit": "target",
-  "role_family": "Analytics & Data Engineering",
   "matched_skills": [
    "Python",
    "SQL",
-   "CI/CD"
+   "REST API Development",
+   "Data Modeling",
+   "Requirement Gathering"
   ],
-  "missing_skills": [
-   "AWS"
-  ],
+  "missing_skills": [],
   "resume_suggestions": [
-   "Explicitly list 'AI/ML-ready data pipeline' projects.",
-   "Quantify your efficiency improvements using automation."
+   "Emphasize experience in designing architectures for scalable data movement.",
+   "Highlight specific projects involving enterprise-grade integrations."
   ],
-  "sector": "Government/Public Sector",
-  "prefilter": 0.5234,
+  "sector": "Enterprise SaaS/DevTools",
+  "prefilter": 0.5032,
   "heuristic": false,
-  "scored_at": "2026-10-14T15:53:19.673951+00:00"
+  "scored_at": "2026-10-15T15:41:00.998653+00:00"
+ },
+ "604c93d9965678437b3990fa23e53c516617be9e": {
+  "profile_version": "941e6f634434",
+  "match_score": 78,
+  "confidence": 0.75,
+  "why": "This role is a logical step up into a technical consulting position, utilizing Michael's skills in agentic workflows and REST services for partner-facing solutions. It aligns well with his goal of moving into higher-level data strategy and internal tooling consulting.",
+  "seniority_fit": "target",
+  "role_family": "Solutions & Technical Consulting",
+  "matched_skills": [
+   "Python",
+   "SQL",
+   "REST API Development",
+   "Agentic Architecture",
+   "Requirement Gathering"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Focus on customer/stakeholder-facing projects where you gathered requirements for automation.",
+   "Showcase your ability to explain complex technical pipelines to non-technical stakeholders."
+  ],
+  "sector": "Enterprise SaaS/DevTools",
+  "prefilter": 0.5008,
+  "heuristic": false,
+  "scored_at": "2026-10-15T15:41:00.998653+00:00"
  }
 }
