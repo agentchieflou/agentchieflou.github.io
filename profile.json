@@ -1,162 +1,161 @@
 {
- "summary": "Michael is a technical business analytics professional with 4 years of experience building scalable automation and internal developer tooling at the enterprise level. He specializes in creating 'agentic' workflows and RESTful services that bridge the gap between complex data infrastructure and stakeholder productivity. His portfolio demonstrates a strong aptitude for engineering robust, cross-platform automation suites that transform manual processes into resilient, programmatic workflows.",
+ "summary": "Michael is a high-impact technical professional with 4 years of experience specializing in business analytics, process automation, and internal developer tooling. He bridges the gap between complex quantitative modeling and scalable engineering by building Python-based tools that optimize team workflows and reduce operational friction. Highly skilled in deploying REST APIs, containerized architectures, and agentic workflows, he consistently delivers data-driven solutions that improve executive-level visibility and reduce costs.",
  "skills": [
   {
    "name": "Python",
    "category": "engineering",
    "strength": 0.95,
    "evidence": [
-    "Enterprise-wide package maintenance",
-    "REST API development",
-    "Orchestrator automation"
+    "Maintains bank-wide Python package",
+    "Automated document scraping suite",
+    "Designed production REST APIs"
    ]
   },
   {
    "name": "SQL",
    "category": "analytics",
-   "strength": 0.85,
-   "evidence": [
-    "Data validation frameworks",
-    "Mainframe migration reconciliation",
-    "Complex schema interaction"
-   ]
-  },
-  {
-   "name": "Process Automation",
-   "category": "engineering",
    "strength": 0.9,
    "evidence": [
-    "Document sourcing scrapers",
-    "Workflow re-engineering at PNC",
-    "FleetAgent orchestrator"
-   ]
-  },
-  {
-   "name": "REST API Development",
-   "category": "engineering",
-   "strength": 0.8,
-   "evidence": [
-    "Production OpenShift APIs",
-    "Containerized service deployment",
-    "Helm charting"
+    "Extensive work with Oracle, Teradata, and MongoDB",
+    "Grid-wide table usage analytics",
+    "Data reconciliation across platforms"
    ]
   },
   {
    "name": "Power BI",
    "category": "analytics",
-   "strength": 0.75,
+   "strength": 0.85,
    "evidence": [
-    "Semantic modeling",
-    "Portfolio performance dashboards",
-    "Peer bank analysis tool"
+    "Built semantic models and interactive dashboards",
+    "Peer Bank Analysis Dashboard",
+    "Portfolio performance reporting"
    ]
   },
   {
-   "name": "Kubernetes/OpenShift",
+   "name": "Workflow Automation",
    "category": "engineering",
-   "strength": 0.7,
+   "strength": 0.9,
    "evidence": [
-    "Production service hosting",
-    "CI/CD pipeline governance",
-    "Policy as Code integration"
+    "Automated manual pricing workflows",
+    "Built multi-scraper suites",
+    "Agentic orchestration tools"
    ]
   },
   {
-   "name": "Agentic Architecture",
+   "name": "Docker / Kubernetes / OpenShift",
    "category": "engineering",
    "strength": 0.8,
    "evidence": [
-    "RAG architecture implementation",
-    "Copilot orchestration tool",
-    "FleetAgent deployment"
+    "Deployed production APIs on OpenShift",
+    "Containerized legacy scraper systems",
+    "Helm chart management"
+   ]
+  },
+  {
+   "name": "API Development",
+   "category": "engineering",
+   "strength": 0.85,
+   "evidence": [
+    "Deployed REST APIs for transaction detection",
+    "Production ML serving APIs",
+    "High-throughput headless browser APIs"
+   ]
+  },
+  {
+   "name": "Quantitative Analytics",
+   "category": "analytics",
+   "strength": 0.8,
+   "evidence": [
+    "CECL reserve forecasting",
+    "Stress testing and back-testing",
+    "Elasticity research initiatives"
    ]
   },
   {
    "name": "Data Modeling",
    "category": "analytics",
-   "strength": 0.7,
-   "evidence": [
-    "M&A integration back-testing",
-    "Migration reconciliation frameworks",
-    "Asset class migration"
-   ]
-  },
-  {
-   "name": "CI/CD",
-   "category": "engineering",
    "strength": 0.75,
    "evidence": [
-    "Enterprise governance gate clearance",
-    "Automated testing/deployment",
-    "Python packaging pipelines"
+    "Migration-impact mappings",
+    "Semantic modeling for Power BI",
+    "Data architecture overhauls"
    ]
   },
   {
-   "name": "Git/Version Control",
+   "name": "CI/CD & Git",
    "category": "engineering",
    "strength": 0.8,
    "evidence": [
-    "Complex mono-repo management",
-    "Open source project leadership",
-    "Internal tooling source control"
-   ]
-  },
-  {
-   "name": "Quantitative Analysis",
-   "category": "domain",
-   "strength": 0.75,
-   "evidence": [
-    "CECL reserve forecasting",
-    "Elasticity research",
-    "Model risk management (SR 11-7)"
-   ]
-  },
-  {
-   "name": "Docker",
-   "category": "tools",
-   "strength": 0.8,
-   "evidence": [
-    "Microservice containerization",
-    "Environment parity in CI/CD"
-   ]
-  },
-  {
-   "name": "TypeScript",
-   "category": "engineering",
-   "strength": 0.6,
-   "evidence": [
-    "Instrumental DSP development",
-    "Browser-based application suites"
+    "Clearance of enterprise CI/CD and policy gates",
+    "Version control architecture redesigns"
    ]
   },
   {
    "name": "C++",
    "category": "engineering",
-   "strength": 0.65,
+   "strength": 0.7,
    "evidence": [
-    "DSP/VST plugin development",
-    "Low-level audio processing"
+    "Built DAW/Audio plugin platform (v-loudio-t)",
+    "Rebuilt VST3 plugins without JUCE"
    ]
   },
   {
-   "name": "Requirement Gathering",
+   "name": "TypeScript",
+   "category": "engineering",
+   "strength": 0.7,
+   "evidence": [
+    "Developed browser-based DAW (noprod)",
+    "Frontend pattern engine orchestration"
+   ]
+  },
+  {
+   "name": "Agentic Architecture",
+   "category": "engineering",
+   "strength": 0.75,
+   "evidence": [
+    "Evaluation of RAG architectures",
+    "Internal tooling for agent-driven job matching",
+    "FleetAgent Power Platform integration"
+   ]
+  },
+  {
+   "name": "Requirements Gathering",
    "category": "domain",
-   "strength": 0.8,
+   "strength": 0.85,
    "evidence": [
     "Stakeholder enablement",
-    "Internal tooling design",
-    "Business process optimization"
+    "Migration impact discovery",
+    "Business-critical field identification"
+   ]
+  },
+  {
+   "name": "Excel",
+   "category": "tools",
+   "strength": 0.8,
+   "evidence": [
+    "Standard professional financial modeling",
+    "Operations reporting",
+    "Data validation support"
+   ]
+  },
+  {
+   "name": "Data Validation Frameworks",
+   "category": "engineering",
+   "strength": 0.85,
+   "evidence": [
+    "Parameterized framework for asset class migration",
+    "Reconciled outputs for 1,930+ data fields"
    ]
   }
  ],
  "target_titles": [
   "Senior Business Intelligence Engineer",
   "Analytics Engineer",
-  "Technical Product Manager (Internal Tools)",
-  "Automation Lead",
-  "Data Strategy Consultant"
+  "Technical Product Manager (Data/AI)",
+  "Senior Process Automation Engineer",
+  "Internal Tools Developer"
  ],
- "version": "941e6f634434",
+ "version": "c5530a45c8f8",
  "remote_only": true,
- "generated_at": "2026-10-11T16:41:55.895993+00:00"
+ "generated_at": "2026-10-17T14:18:29.331748+00:00"
 }
