@@ -3029,5 +3029,29 @@
   "prefilter": 0.5087,
   "heuristic": false,
   "scored_at": "2026-10-17T14:19:21.805929+00:00"
+ },
+ "fbfc0b6b6e410e90c1aae21f4af38cd02a2adb34": {
+  "profile_version": "c5530a45c8f8",
+  "match_score": 35,
+  "confidence": 0.9,
+  "why": "The role violates the hard constraint for fully-remote work (requires 2 days in office) and asks for 6 years of experience, pushing it into the penalized 'out-of-band' seniority category.",
+  "seniority_fit": "out-of-band",
+  "role_family": "Analytics & Data Engineering",
+  "matched_skills": [
+   "SQL",
+   "Data Modeling",
+   "Python"
+  ],
+  "missing_skills": [
+   "Semantic Layer Architecture"
+  ],
+  "resume_suggestions": [
+   "Focus on 'Semantic Layer' or 'Data Modeling' projects to align with the 'Logic Architect' requirements of similar senior roles.",
+   "Highlight experience with data governance if aiming for larger enterprise health systems."
+  ],
+  "sector": "Healthcare",
+  "prefilter": 0.5386,
+  "heuristic": false,
+  "scored_at": "2026-10-18T14:44:00.033276+00:00"
  }
 }
