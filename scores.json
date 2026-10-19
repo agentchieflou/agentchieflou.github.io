@@ -1793,29 +1793,6 @@
   "heuristic": false,
   "scored_at": "2026-10-11T16:42:54.598310+00:00"
  },
- "c07bacf4f7433a97a064db62528facdefa3c13cb": {
-  "profile_version": "814aba647dc9",
-  "match_score": 65,
-  "confidence": 0.75,
-  "why": "Fits your quantitative skills and interest in healthcare. Pricing management is an excellent pivot for an analytics consultant.",
-  "seniority_fit": "stretch",
-  "role_family": "Quantitative & Risk",
-  "matched_skills": [
-   "SQL",
-   "Quantitative Analytics",
-   "Requirements Gathering"
-  ],
-  "missing_skills": [
-   "Pricing domain expertise"
-  ],
-  "resume_suggestions": [
-   "Tailor to showcase your analytical rigor and ability to translate complex data into pricing/business strategy."
-  ],
-  "sector": "Healthcare",
-  "prefilter": 0.5019,
-  "heuristic": false,
-  "scored_at": "2026-09-24T15:56:38.436624+00:00"
- },
  "2a00a880ffb06d73adeaece3a107333a4c61a6e7": {
   "profile_version": "814aba647dc9",
   "match_score": 60,
@@ -2310,28 +2287,6 @@
   "heuristic": false,
   "scored_at": "2026-10-17T14:19:21.805929+00:00"
  },
- "6a10cb973aa4d3246f4ff3e61671331309f02c7a": {
-  "profile_version": "f0d0f31d78de",
-  "match_score": 85,
-  "confidence": 0.85,
-  "why": "Samsara's focus on connected operations and IoT data is a great fit for your pipeline and data modeling background.",
-  "seniority_fit": "target",
-  "role_family": "Analytics & Data Engineering",
-  "matched_skills": [
-   "Python",
-   "SQL",
-   "Data Modeling",
-   "CI/CD Pipelines"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Emphasize experience with physical operation data or high-scale streaming."
-  ],
-  "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.5144,
-  "heuristic": false,
-  "scored_at": "2026-10-09T17:31:38.964056+00:00"
- },
  "2bc759366420ad091e807fb40f148d3caa7b4572": {
   "profile_version": "d15e88c0f782",
   "match_score": 85,
@@ -2618,28 +2573,6 @@
   "heuristic": false,
   "scored_at": "2026-10-09T17:31:38.964056+00:00"
  },
- "b401a964756b979f625360959a556634a2ac111f": {
-  "profile_version": "f0d0f31d78de",
-  "match_score": 88,
-  "confidence": 0.9,
-  "why": "Strong alignment with product analytics, data engineering, and self-serve tooling foundations.",
-  "seniority_fit": "target",
-  "role_family": "Analytics & Data Engineering",
-  "matched_skills": [
-   "Python",
-   "SQL",
-   "Data Modeling",
-   "Stakeholder Enablement"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Showcase your experience in building 'self-serve' analytical tools for other teams."
-  ],
-  "sector": "AI/ML Infra",
-  "prefilter": 0.5113,
-  "heuristic": false,
-  "scored_at": "2026-10-09T17:31:38.964056+00:00"
- },
  "01c3e3b9ba1d3094a6a502377cc4a417bbd31f13": {
   "profile_version": "c5530a45c8f8",
   "match_score": 92,
@@ -2871,30 +2804,6 @@
   "heuristic": false,
   "scored_at": "2026-10-17T14:19:21.805929+00:00"
  },
- "fcca7598e7a25054768f359a44df56e535cf5360": {
-  "profile_version": "941e6f634434",
-  "match_score": 85,
-  "confidence": 0.85,
-  "why": "This is a strong match for a candidate with 4 years of experience looking to step into a Senior role that leverages their expertise in REST APIs and data infrastructure. The role perfectly aligns with Michael's background in bridging complex data systems and enterprise automation.",
-  "seniority_fit": "stretch",
-  "role_family": "Solutions & Technical Consulting",
-  "matched_skills": [
-   "Python",
-   "SQL",
-   "REST API Development",
-   "Data Modeling",
-   "Requirement Gathering"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Emphasize experience in designing architectures for scalable data movement.",
-   "Highlight specific projects involving enterprise-grade integrations."
-  ],
-  "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.5032,
-  "heuristic": false,
-  "scored_at": "2026-10-15T15:41:00.998653+00:00"
- },
  "604c93d9965678437b3990fa23e53c516617be9e": {
   "profile_version": "941e6f634434",
   "match_score": 78,
@@ -3030,28 +2939,29 @@
   "heuristic": false,
   "scored_at": "2026-10-17T14:19:21.805929+00:00"
  },
- "fbfc0b6b6e410e90c1aae21f4af38cd02a2adb34": {
+ "e4a34993e889ea98aa8cc6777931090f59ac0f2a": {
   "profile_version": "c5530a45c8f8",
-  "match_score": 35,
-  "confidence": 0.9,
-  "why": "The role violates the hard constraint for fully-remote work (requires 2 days in office) and asks for 6 years of experience, pushing it into the penalized 'out-of-band' seniority category.",
+  "match_score": 40,
+  "confidence": 0.85,
+  "why": "While the salary and company sector are excellent, this is a Solutions Architect role requiring deep enterprise-level client-facing experience beyond your 4-year tenure. Additionally, the location constraint for specific hub cities violates your fully-remote requirement.",
   "seniority_fit": "out-of-band",
-  "role_family": "Analytics & Data Engineering",
+  "role_family": "Solutions & Technical Consulting",
   "matched_skills": [
    "SQL",
-   "Data Modeling",
-   "Python"
+   "API Development"
   ],
   "missing_skills": [
-   "Semantic Layer Architecture"
+   "dbt",
+   "Enterprise Solution Architecture",
+   "Client-facing/Field Engineering"
   ],
   "resume_suggestions": [
-   "Focus on 'Semantic Layer' or 'Data Modeling' projects to align with the 'Logic Architect' requirements of similar senior roles.",
-   "Highlight experience with data governance if aiming for larger enterprise health systems."
+   "Highlight instances where you led stakeholder requirements gathering for data infrastructure.",
+   "Emphasize projects involving automated data movement or pipeline optimization."
   ],
-  "sector": "Healthcare",
-  "prefilter": 0.5386,
+  "sector": "Enterprise SaaS/DevTools",
+  "prefilter": 0.5288,
   "heuristic": false,
-  "scored_at": "2026-10-18T14:44:00.033276+00:00"
+  "scored_at": "2026-10-19T17:38:29.290795+00:00"
  }
 }
