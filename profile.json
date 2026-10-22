@@ -1,34 +1,24 @@
 {
- "summary": "Michael is a high-impact technical professional with 4 years of experience specializing in business analytics, process automation, and internal developer tooling. He bridges the gap between complex quantitative modeling and scalable engineering by building Python-based tools that optimize team workflows and reduce operational friction. Highly skilled in deploying REST APIs, containerized architectures, and agentic workflows, he consistently delivers data-driven solutions that improve executive-level visibility and reduce costs.",
+ "summary": "Michael is a technically-oriented business analytics professional with 4 years of experience building scalable internal developer tooling and data automation frameworks. He combines expertise in Python-based pipeline orchestration and REST API development with a strong foundation in quantitative analysis and financial modeling. A prolific builder of agentic architectures, he specializes in optimizing team workflows through high-throughput automation and intelligent system integration.",
  "skills": [
   {
    "name": "Python",
    "category": "engineering",
    "strength": 0.95,
    "evidence": [
-    "Maintains bank-wide Python package",
-    "Automated document scraping suite",
-    "Designed production REST APIs"
+    "Maintains bank-wide Python packages",
+    "Builds complex CLI tooling",
+    "Orchestrates multi-scraper suites"
    ]
   },
   {
    "name": "SQL",
    "category": "analytics",
-   "strength": 0.9,
+   "strength": 0.85,
    "evidence": [
     "Extensive work with Oracle, Teradata, and MongoDB",
     "Grid-wide table usage analytics",
-    "Data reconciliation across platforms"
-   ]
-  },
-  {
-   "name": "Power BI",
-   "category": "analytics",
-   "strength": 0.85,
-   "evidence": [
-    "Built semantic models and interactive dashboards",
-    "Peer Bank Analysis Dashboard",
-    "Portfolio performance reporting"
+    "Migration-impact data validation"
    ]
   },
   {
@@ -36,29 +26,49 @@
    "category": "engineering",
    "strength": 0.9,
    "evidence": [
-    "Automated manual pricing workflows",
-    "Built multi-scraper suites",
-    "Agentic orchestration tools"
+    "Reduced migration impact discovery from 6 weeks to 24 hours",
+    "Automated pricing workflows",
+    "High-throughput headless browser scrapers"
    ]
   },
   {
-   "name": "Docker / Kubernetes / OpenShift",
-   "category": "engineering",
+   "name": "Power BI",
+   "category": "analytics",
    "strength": 0.8,
    "evidence": [
-    "Deployed production APIs on OpenShift",
-    "Containerized legacy scraper systems",
-    "Helm chart management"
+    "Semantic modeling",
+    "Portfolio-wide performance dashboards",
+    "Peer Bank Analysis reporting"
    ]
   },
   {
-   "name": "API Development",
+   "name": "REST API Development",
    "category": "engineering",
    "strength": 0.85,
    "evidence": [
-    "Deployed REST APIs for transaction detection",
-    "Production ML serving APIs",
-    "High-throughput headless browser APIs"
+    "Deployed production APIs on OpenShift",
+    "Containerized microservices",
+    "Integration with credit risk systems"
+   ]
+  },
+  {
+   "name": "Agentic Architecture",
+   "category": "engineering",
+   "strength": 0.75,
+   "evidence": [
+    "RAG architecture implementation",
+    "Autonomous agent development in GitHub portfolio",
+    "Token-budget optimization patterns"
+   ]
+  },
+  {
+   "name": "Kubernetes/OpenShift",
+   "category": "engineering",
+   "strength": 0.75,
+   "evidence": [
+    "Helm chart management",
+    "Policy-as-Code implementation",
+    "Service containerization"
    ]
   },
   {
@@ -67,27 +77,8 @@
    "strength": 0.8,
    "evidence": [
     "CECL reserve forecasting",
-    "Stress testing and back-testing",
-    "Elasticity research initiatives"
-   ]
-  },
-  {
-   "name": "Data Modeling",
-   "category": "analytics",
-   "strength": 0.75,
-   "evidence": [
-    "Migration-impact mappings",
-    "Semantic modeling for Power BI",
-    "Data architecture overhauls"
-   ]
-  },
-  {
-   "name": "CI/CD & Git",
-   "category": "engineering",
-   "strength": 0.8,
-   "evidence": [
-    "Clearance of enterprise CI/CD and policy gates",
-    "Version control architecture redesigns"
+    "Loan portfolio back-testing",
+    "Pricing elasticity research"
    ]
   },
   {
@@ -95,67 +86,67 @@
    "category": "engineering",
    "strength": 0.7,
    "evidence": [
-    "Built DAW/Audio plugin platform (v-loudio-t)",
-    "Rebuilt VST3 plugins without JUCE"
+    "Developed DAW/VST plugins from scratch",
+    "Memory-efficient audio engine work"
+   ]
+  },
+  {
+   "name": "Data Modeling",
+   "category": "analytics",
+   "strength": 0.75,
+   "evidence": [
+    "Semantic layer design in Power BI",
+    "Mainframe migration data reconciliation",
+    "Field-level validation frameworks"
+   ]
+  },
+  {
+   "name": "CI/CD Pipelines",
+   "category": "tools",
+   "strength": 0.75,
+   "evidence": [
+    "Enterprise-grade governance gates",
+    "GitHub Actions integration",
+    "Automated testing workflows"
    ]
   },
   {
    "name": "TypeScript",
    "category": "engineering",
-   "strength": 0.7,
+   "strength": 0.65,
    "evidence": [
-    "Developed browser-based DAW (noprod)",
-    "Frontend pattern engine orchestration"
+    "Browser-based DAW development",
+    "Frontend systems for agentic tools"
    ]
   },
   {
-   "name": "Agentic Architecture",
-   "category": "engineering",
-   "strength": 0.75,
+   "name": "Git",
+   "category": "tools",
+   "strength": 0.85,
    "evidence": [
-    "Evaluation of RAG architectures",
-    "Internal tooling for agent-driven job matching",
-    "FleetAgent Power Platform integration"
+    "Advanced version control",
+    "Package distribution workflows",
+    "Repo management"
    ]
   },
   {
    "name": "Requirements Gathering",
    "category": "domain",
-   "strength": 0.85,
-   "evidence": [
-    "Stakeholder enablement",
-    "Migration impact discovery",
-    "Business-critical field identification"
-   ]
-  },
-  {
-   "name": "Excel",
-   "category": "tools",
    "strength": 0.8,
    "evidence": [
-    "Standard professional financial modeling",
-    "Operations reporting",
-    "Data validation support"
-   ]
-  },
-  {
-   "name": "Data Validation Frameworks",
-   "category": "engineering",
-   "strength": 0.85,
-   "evidence": [
-    "Parameterized framework for asset class migration",
-    "Reconciled outputs for 1,930+ data fields"
+    "Stakeholder enablement at PNC",
+    "Translation of business needs into automated tooling"
    ]
   }
  ],
  "target_titles": [
-  "Senior Business Intelligence Engineer",
-  "Analytics Engineer",
-  "Technical Product Manager (Data/AI)",
-  "Senior Process Automation Engineer",
-  "Internal Tools Developer"
+  "Senior Business Analytics Engineer",
+  "Analytics Automation Lead",
+  "Technical Product Analyst",
+  "Strategy & Operations Engineer",
+  "Data Solutions Architect"
  ],
- "version": "c5530a45c8f8",
+ "version": "156a74411f2c",
  "remote_only": true,
- "generated_at": "2026-10-17T14:18:29.331748+00:00"
+ "generated_at": "2026-10-22T15:56:31.700548+00:00"
 }
