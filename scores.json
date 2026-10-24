@@ -515,29 +515,6 @@
   "heuristic": false,
   "scored_at": "2026-10-17T14:19:21.805929+00:00"
  },
- "26ad0e65a1b095105beecb0414585ba2e573e6e5": {
-  "profile_version": "5deb5ef226a8",
-  "match_score": 85,
-  "confidence": 0.85,
-  "why": "Perfect fit. Data platform engineering at a finance company like Ramp leverages your skills in Python, SQL, and data modeling perfectly.",
-  "seniority_fit": "target",
-  "role_family": "Analytics & Data Engineering",
-  "matched_skills": [
-   "Python",
-   "SQL",
-   "Data Modeling",
-   "CI/CD & DevOps"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Focus on the 'high-stakes' nature of your data engineering projects.",
-   "Highlight your ability to deliver end-to-end infrastructure."
-  ],
-  "sector": "Fintech",
-  "prefilter": 0.5024,
-  "heuristic": false,
-  "scored_at": "2026-10-10T16:19:34.834251+00:00"
- },
  "2c6d61de71cddb4b6faddbec0b6ffba9f099dfdc": {
   "profile_version": "d25a943a17da",
   "match_score": 85,
@@ -1754,26 +1731,6 @@
   "heuristic": false,
   "scored_at": "2026-10-22T15:57:44.239391+00:00"
  },
- "cc0cb22d40f6641c65d251ed4a1dc0c8e4b96985": {
-  "profile_version": "f0d0f31d78de",
-  "match_score": 40,
-  "confidence": 0.95,
-  "why": "Hard constraint violation: compensation range ($107k-$177k) overlaps with your floor, but the role asks for 2 years (below your level) and is onsite-preferred.",
-  "seniority_fit": "below",
-  "role_family": "AI & Machine Learning",
-  "matched_skills": [
-   "Python",
-   "Quantitative Analytics"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Look for higher-level roles given your 4 years of experience."
-  ],
-  "sector": "Healthcare",
-  "prefilter": 0.518,
-  "heuristic": false,
-  "scored_at": "2026-10-09T17:31:38.964056+00:00"
- },
  "fa319ee7de8d94f5774a244a984dac59caba2e66": {
   "profile_version": "c5530a45c8f8",
   "match_score": 80,
@@ -2349,28 +2306,6 @@
   "heuristic": false,
   "scored_at": "2026-10-22T15:57:44.239391+00:00"
  },
- "e4a34993e889ea98aa8cc6777931090f59ac0f2a": {
-  "profile_version": "156a74411f2c",
-  "match_score": 60,
-  "confidence": 0.8,
-  "why": "Excellent alignment with your background in analytics engineering and REST APIs, but the regional requirements (Seattle/Portland/SF) conflict with your full-remote constraint.",
-  "seniority_fit": "stretch",
-  "role_family": "Solutions & Technical Consulting",
-  "matched_skills": [
-   "Python",
-   "SQL",
-   "REST API Development",
-   "Data Modeling"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Highlight experience with data transformation platforms like dbt."
-  ],
-  "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.5593,
-  "heuristic": false,
-  "scored_at": "2026-10-22T15:57:44.239391+00:00"
- },
  "ac6bb610d83566d4212e6dee204a34a4ce6fd395": {
   "profile_version": "156a74411f2c",
   "match_score": 75,
@@ -2560,29 +2495,6 @@
   "heuristic": false,
   "scored_at": "2026-10-22T15:57:44.239391+00:00"
  },
- "fbfc0b6b6e410e90c1aae21f4af38cd02a2adb34": {
-  "profile_version": "156a74411f2c",
-  "match_score": 40,
-  "confidence": 0.9,
-  "why": "The tech stack and seniority level are a good match, but the hard constraint for fully-remote work is violated by the requirement for 2 days in-office.",
-  "seniority_fit": "target",
-  "role_family": "Analytics & Data Engineering",
-  "matched_skills": [
-   "SQL",
-   "Data Modeling"
-  ],
-  "missing_skills": [
-   "Healthcare domain knowledge"
-  ],
-  "resume_suggestions": [
-   "Highlight experience with semantic layers and data governance frameworks.",
-   "Emphasize past experience with enterprise-scale data modeling."
-  ],
-  "sector": "Healthcare",
-  "prefilter": 0.5317,
-  "heuristic": false,
-  "scored_at": "2026-10-23T15:49:18.338107+00:00"
- },
  "a8f19fc7e3aabf547fc3173ae68c3100005b503b": {
   "profile_version": "156a74411f2c",
   "match_score": 65,
@@ -2603,52 +2515,6 @@
   ],
   "sector": "Other",
   "prefilter": 0.5177,
-  "heuristic": false,
-  "scored_at": "2026-10-23T15:49:18.338107+00:00"
- },
- "87d624321838a3c79622cbe8957dc170bf9d7921": {
-  "profile_version": "156a74411f2c",
-  "match_score": 30,
-  "confidence": 0.7,
-  "why": "This is a product management role rather than an engineering role, failing to leverage your core technical skills in Python and automation.",
-  "seniority_fit": "stretch",
-  "role_family": "Technical Strategy & Product",
-  "matched_skills": [],
-  "missing_skills": [
-   "Product management lifecycle",
-   "Market strategy"
-  ],
-  "resume_suggestions": [
-   "Pivot focus toward technical strategy outcomes if pursuing PM roles.",
-   "Emphasize product-thinking in your current automation projects."
-  ],
-  "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.5105,
-  "heuristic": false,
-  "scored_at": "2026-10-23T15:49:18.338107+00:00"
- },
- "d8f993bb18d82a4c779a029deba9371197b84c43": {
-  "profile_version": "156a74411f2c",
-  "match_score": 30,
-  "confidence": 0.9,
-  "why": "It is an on-site role in San Francisco, which violates your fully-remote hard constraint.",
-  "seniority_fit": "target",
-  "role_family": "Analytics & Data Engineering",
-  "matched_skills": [
-   "Python",
-   "SQL",
-   "Data Modeling"
-  ],
-  "missing_skills": [
-   "Snowflake",
-   "Databricks"
-  ],
-  "resume_suggestions": [
-   "Add specific projects involving cloud-based data warehouses like Snowflake.",
-   "Highlight your experience building ETL pipelines for production data platforms."
-  ],
-  "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.5063,
   "heuristic": false,
   "scored_at": "2026-10-23T15:49:18.338107+00:00"
  },
@@ -2675,5 +2541,171 @@
   "prefilter": 0.5003,
   "heuristic": false,
   "scored_at": "2026-10-23T15:49:18.338107+00:00"
+ },
+ "e1591ee5b21311994ffb2eb8b3a35370e795a245": {
+  "profile_version": "156a74411f2c",
+  "match_score": 88,
+  "confidence": 0.9,
+  "why": "The role perfectly aligns with your experience in building production-quality Python pipelines and scalable developer tooling. It represents a clear step up into a senior, high-autonomy architecture role.",
+  "seniority_fit": "stretch",
+  "role_family": "Analytics & Data Engineering",
+  "matched_skills": [
+   "Python",
+   "Data Modeling",
+   "CI/CD Pipelines"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Emphasize your end-to-end ownership of past automation projects.",
+   "Highlight 'production-quality' coding standards in your descriptions."
+  ],
+  "sector": "Consulting",
+  "prefilter": 0.5805,
+  "heuristic": false,
+  "scored_at": "2026-10-24T14:43:35.089399+00:00"
+ },
+ "175c9557a29392e3e4e3325b8714de5ab671bf8f": {
+  "profile_version": "156a74411f2c",
+  "match_score": 75,
+  "confidence": 0.85,
+  "why": "Fits your 4 years of experience well and leverages your analytics and data engineering background. However, it lacks explicit compensation information and is not necessarily a 'Senior/Lead' title.",
+  "seniority_fit": "target",
+  "role_family": "Analytics & Data Engineering",
+  "matched_skills": [
+   "SQL",
+   "Data Modeling"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Highlight cross-functional work with Data Scientists.",
+   "Emphasize your experience deploying data models to production."
+  ],
+  "sector": "Media/Gaming",
+  "prefilter": 0.5186,
+  "heuristic": false,
+  "scored_at": "2026-10-24T14:43:35.089399+00:00"
+ },
+ "2b04b0ed1f0cac9097d9db83736851b3f62fe204": {
+  "profile_version": "156a74411f2c",
+  "match_score": 30,
+  "confidence": 0.95,
+  "why": "Violates the location constraint as it is based in New York City. The salary stated ($200) is also dangerously low compared to the $130k+ requirement.",
+  "seniority_fit": "target",
+  "role_family": "Analytics & Data Engineering",
+  "matched_skills": [
+   "SQL",
+   "Data Modeling"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [],
+  "sector": "Enterprise SaaS/DevTools",
+  "prefilter": 0.5133,
+  "heuristic": false,
+  "scored_at": "2026-10-24T14:43:35.089399+00:00"
+ },
+ "fa3a1c1244db638bcb92003f01b864a34ba3b8a2": {
+  "profile_version": "156a74411f2c",
+  "match_score": 82,
+  "confidence": 0.8,
+  "why": "A strong match for your 'agentic architecture' expertise and interest in AI-native engineering. As a Senior Architect role, it represents an ideal career progression from your current work.",
+  "seniority_fit": "stretch",
+  "role_family": "AI & Machine Learning",
+  "matched_skills": [
+   "Python",
+   "SQL",
+   "Agentic Architecture",
+   "REST API Development"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Focus on the 'agentic' and 'automation' aspects of your previous projects.",
+   "Frame your experience as AI-first or AI-enabled development."
+  ],
+  "sector": "AI/ML Infra",
+  "prefilter": 0.5119,
+  "heuristic": false,
+  "scored_at": "2026-10-24T14:43:35.089399+00:00"
+ },
+ "c03fa9986941fcc5399c3c3f376b2565c21d3127": {
+  "profile_version": "156a74411f2c",
+  "match_score": 45,
+  "confidence": 0.7,
+  "why": "Role is based in Cyprus, violating the remote location constraint. It is also a Product Management focus rather than an Engineering/Analytics role.",
+  "seniority_fit": "stretch",
+  "role_family": "Technical Strategy & Product",
+  "matched_skills": [
+   "Workflow Automation"
+  ],
+  "missing_skills": [
+   "Product Management experience"
+  ],
+  "resume_suggestions": [],
+  "sector": "Enterprise SaaS/DevTools",
+  "prefilter": 0.5105,
+  "heuristic": false,
+  "scored_at": "2026-10-24T14:43:35.089399+00:00"
+ },
+ "e2543ad6b8a109d1456bc0bb1b543335e93586ef": {
+  "profile_version": "156a74411f2c",
+  "match_score": 40,
+  "confidence": 0.9,
+  "why": "Requires on-site presence in San Francisco, failing the hard constraint for fully remote work. It also appears to be a very senior/staff-level architect role.",
+  "seniority_fit": "out-of-band",
+  "role_family": "AI & Machine Learning",
+  "matched_skills": [
+   "Python",
+   "REST API Development",
+   "Agentic Architecture"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [],
+  "sector": "AI/ML Infra",
+  "prefilter": 0.5072,
+  "heuristic": false,
+  "scored_at": "2026-10-24T14:43:35.089399+00:00"
+ },
+ "97b9b8353aafb2f39c0eac0df2e63e183c2fc813": {
+  "profile_version": "156a74411f2c",
+  "match_score": 45,
+  "confidence": 0.85,
+  "why": "This is a senior-level role requiring 6 years of experience, exceeding your 4-year tenure. While the skills match well, the seniority mismatch makes it a stretch.",
+  "seniority_fit": "out-of-band",
+  "role_family": "Business & Data Analytics",
+  "matched_skills": [
+   "SQL",
+   "Data Modeling"
+  ],
+  "missing_skills": [
+   "Advanced Statistics",
+   "Deep learning"
+  ],
+  "resume_suggestions": [],
+  "sector": "Consumer/E-commerce",
+  "prefilter": 0.5068,
+  "heuristic": false,
+  "scored_at": "2026-10-24T14:43:35.089399+00:00"
+ },
+ "8c4bd472b318e04ecb50668e60ff5600804d02a9": {
+  "profile_version": "156a74411f2c",
+  "match_score": 50,
+  "confidence": 0.85,
+  "why": "Fits the experience and remote requirements, but the salary band ($90k-$140k) is at the very bottom of your target, and it is not a growth role or step up.",
+  "seniority_fit": "target",
+  "role_family": "Analytics & Data Engineering",
+  "matched_skills": [
+   "Python",
+   "SQL",
+   "CI/CD Pipelines",
+   "Git"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Highlight your experience with observability platforms.",
+   "Focus on your ability to build and maintain high-throughput pipelines."
+  ],
+  "sector": "Consulting",
+  "prefilter": 0.5067,
+  "heuristic": false,
+  "scored_at": "2026-10-24T14:43:35.089399+00:00"
  }
 }
