@@ -2495,29 +2495,6 @@
   "heuristic": false,
   "scored_at": "2026-10-22T15:57:44.239391+00:00"
  },
- "a8f19fc7e3aabf547fc3173ae68c3100005b503b": {
-  "profile_version": "156a74411f2c",
-  "match_score": 65,
-  "confidence": 0.8,
-  "why": "Strong alignment with business analysis and requirement gathering skills; compensation and remote status meet requirements.",
-  "seniority_fit": "target",
-  "role_family": "Business & Data Analytics",
-  "matched_skills": [
-   "SQL",
-   "Requirements Gathering"
-  ],
-  "missing_skills": [
-   "Oracle EBS"
-  ],
-  "resume_suggestions": [
-   "Frame your technical automation work in the context of business process optimization.",
-   "Include specific examples of requirements gathering for financial/ERP systems."
-  ],
-  "sector": "Other",
-  "prefilter": 0.5177,
-  "heuristic": false,
-  "scored_at": "2026-10-23T15:49:18.338107+00:00"
- },
  "1454fde36563c0d38a4dc7ace829776ddf225f1f": {
   "profile_version": "156a74411f2c",
   "match_score": 85,
@@ -2542,28 +2519,6 @@
   "heuristic": false,
   "scored_at": "2026-10-23T15:49:18.338107+00:00"
  },
- "e1591ee5b21311994ffb2eb8b3a35370e795a245": {
-  "profile_version": "156a74411f2c",
-  "match_score": 88,
-  "confidence": 0.9,
-  "why": "The role perfectly aligns with your experience in building production-quality Python pipelines and scalable developer tooling. It represents a clear step up into a senior, high-autonomy architecture role.",
-  "seniority_fit": "stretch",
-  "role_family": "Analytics & Data Engineering",
-  "matched_skills": [
-   "Python",
-   "Data Modeling",
-   "CI/CD Pipelines"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Emphasize your end-to-end ownership of past automation projects.",
-   "Highlight 'production-quality' coding standards in your descriptions."
-  ],
-  "sector": "Consulting",
-  "prefilter": 0.5805,
-  "heuristic": false,
-  "scored_at": "2026-10-24T14:43:35.089399+00:00"
- },
  "175c9557a29392e3e4e3325b8714de5ab671bf8f": {
   "profile_version": "156a74411f2c",
   "match_score": 75,
@@ -2582,24 +2537,6 @@
   ],
   "sector": "Media/Gaming",
   "prefilter": 0.5186,
-  "heuristic": false,
-  "scored_at": "2026-10-24T14:43:35.089399+00:00"
- },
- "2b04b0ed1f0cac9097d9db83736851b3f62fe204": {
-  "profile_version": "156a74411f2c",
-  "match_score": 30,
-  "confidence": 0.95,
-  "why": "Violates the location constraint as it is based in New York City. The salary stated ($200) is also dangerously low compared to the $130k+ requirement.",
-  "seniority_fit": "target",
-  "role_family": "Analytics & Data Engineering",
-  "matched_skills": [
-   "SQL",
-   "Data Modeling"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [],
-  "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.5133,
   "heuristic": false,
   "scored_at": "2026-10-24T14:43:35.089399+00:00"
  },
@@ -2623,25 +2560,6 @@
   ],
   "sector": "AI/ML Infra",
   "prefilter": 0.5119,
-  "heuristic": false,
-  "scored_at": "2026-10-24T14:43:35.089399+00:00"
- },
- "c03fa9986941fcc5399c3c3f376b2565c21d3127": {
-  "profile_version": "156a74411f2c",
-  "match_score": 45,
-  "confidence": 0.7,
-  "why": "Role is based in Cyprus, violating the remote location constraint. It is also a Product Management focus rather than an Engineering/Analytics role.",
-  "seniority_fit": "stretch",
-  "role_family": "Technical Strategy & Product",
-  "matched_skills": [
-   "Workflow Automation"
-  ],
-  "missing_skills": [
-   "Product Management experience"
-  ],
-  "resume_suggestions": [],
-  "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.5105,
   "heuristic": false,
   "scored_at": "2026-10-24T14:43:35.089399+00:00"
  },
@@ -2685,27 +2603,75 @@
   "heuristic": false,
   "scored_at": "2026-10-24T14:43:35.089399+00:00"
  },
- "8c4bd472b318e04ecb50668e60ff5600804d02a9": {
+ "dc76530eec86660ff21a245be4cea974603d0d79": {
   "profile_version": "156a74411f2c",
-  "match_score": 50,
-  "confidence": 0.85,
-  "why": "Fits the experience and remote requirements, but the salary band ($90k-$140k) is at the very bottom of your target, and it is not a growth role or step up.",
+  "match_score": 85,
+  "confidence": 0.9,
+  "why": "The role perfectly aligns with Michael's background in analytics and developer tooling, emphasizing building foundational data platforms.",
   "seniority_fit": "target",
   "role_family": "Analytics & Data Engineering",
   "matched_skills": [
    "Python",
    "SQL",
-   "CI/CD Pipelines",
-   "Git"
+   "Data Modeling",
+   "CI/CD Pipelines"
   ],
   "missing_skills": [],
   "resume_suggestions": [
-   "Highlight your experience with observability platforms.",
-   "Focus on your ability to build and maintain high-throughput pipelines."
+   "Emphasize the 'foundational' nature of your previous data platform work.",
+   "Highlight specific projects involving data democratization and team workflow optimization."
   ],
-  "sector": "Consulting",
-  "prefilter": 0.5067,
+  "sector": "Other",
+  "prefilter": 0.5141,
   "heuristic": false,
-  "scored_at": "2026-10-24T14:43:35.089399+00:00"
+  "scored_at": "2026-10-25T15:00:19.343753+00:00"
+ },
+ "87d624321838a3c79622cbe8957dc170bf9d7921": {
+  "profile_version": "156a74411f2c",
+  "match_score": 40,
+  "confidence": 0.7,
+  "why": "This is a Product Management role, which represents a shift away from Michael's core engineering and hands-on builder profile.",
+  "seniority_fit": "out-of-band",
+  "role_family": "Technical Strategy & Product",
+  "matched_skills": [
+   "Agentic Architecture",
+   "Workflow Automation"
+  ],
+  "missing_skills": [
+   "Product Strategy",
+   "Market Research",
+   "Stakeholder Management"
+  ],
+  "resume_suggestions": [
+   "Include a section on cross-functional technical leadership if interested in PM pivots.",
+   "Focus on the 'Technical Product Analyst' title alignment rather than pure engineering."
+  ],
+  "sector": "Enterprise SaaS/DevTools",
+  "prefilter": 0.5105,
+  "heuristic": false,
+  "scored_at": "2026-10-25T15:00:19.343753+00:00"
+ },
+ "d8f993bb18d82a4c779a029deba9371197b84c43": {
+  "profile_version": "156a74411f2c",
+  "match_score": 30,
+  "confidence": 0.8,
+  "why": "While technically a strong fit, this role is location-constrained to San Francisco and does not meet the candidate's fully-remote hard constraint.",
+  "seniority_fit": "target",
+  "role_family": "Analytics & Data Engineering",
+  "matched_skills": [
+   "Python",
+   "SQL",
+   "Data Modeling",
+   "CI/CD Pipelines"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Highlight expertise in Snowflake and Databricks if available in your project history.",
+   "Emphasize your 'builder mindset' and greenfield project experience."
+  ],
+  "sector": "Enterprise SaaS/DevTools",
+  "prefilter": 0.5063,
+  "heuristic": false,
+  "scored_at": "2026-10-25T15:00:19.343753+00:00"
  }
 }
