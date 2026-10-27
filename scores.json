@@ -1399,24 +1399,6 @@
   "heuristic": false,
   "scored_at": "2026-10-22T15:57:44.239391+00:00"
  },
- "c3a50af0916c9d7232751a3ac6d0c4b13660bcad": {
-  "profile_version": "7ed3ad516c4f",
-  "match_score": 30,
-  "confidence": 0.8,
-  "why": "San Francisco/Seattle/NYC location violation.",
-  "seniority_fit": "stretch",
-  "role_family": "Analytics & Data Engineering",
-  "matched_skills": [
-   "SQL",
-   "Data Modeling"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [],
-  "sector": "AI/ML Infra",
-  "prefilter": 0.5156,
-  "heuristic": false,
-  "scored_at": "2026-10-04T15:54:31.744194+00:00"
- },
  "efc82ce8230aa0fe825ac896ccfe116d5181524b": {
   "profile_version": "156a74411f2c",
   "match_score": 85,
@@ -2095,27 +2077,6 @@
   "heuristic": false,
   "scored_at": "2026-10-22T15:57:44.239391+00:00"
  },
- "181ec4d02f49f3c50464a811f9fd755c8377a96b": {
-  "profile_version": "156a74411f2c",
-  "match_score": 85,
-  "confidence": 0.9,
-  "why": "Duplicate of the other Baseten role; excellent fit for your skills and experience.",
-  "seniority_fit": "stretch",
-  "role_family": "Solutions & Technical Consulting",
-  "matched_skills": [
-   "Python",
-   "REST API Development",
-   "Agentic Architecture"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "N/A"
-  ],
-  "sector": "AI/ML Infra",
-  "prefilter": 0.5073,
-  "heuristic": false,
-  "scored_at": "2026-10-22T15:57:44.239391+00:00"
- },
  "8bd2eb32146cdfbc98feb1bf77bb8475fa05612b": {
   "profile_version": "156a74411f2c",
   "match_score": 40,
@@ -2201,28 +2162,6 @@
   "prefilter": 0.4995,
   "heuristic": false,
   "scored_at": "2026-10-16T15:26:23.918450+00:00"
- },
- "989299c80a23223a03c6911fb9033c1c51321009": {
-  "profile_version": "156a74411f2c",
-  "match_score": 30,
-  "confidence": 0.95,
-  "why": "Compensation falls significantly below your $130,000 floor, making this an unattractive financial fit despite the skill overlap.",
-  "seniority_fit": "target",
-  "role_family": "Analytics & Data Engineering",
-  "matched_skills": [
-   "SQL",
-   "Data Modeling"
-  ],
-  "missing_skills": [
-   "Advanced Automation"
-  ],
-  "resume_suggestions": [
-   "Not recommended for application due to low salary."
-  ],
-  "sector": "Consumer/E-commerce",
-  "prefilter": 0.5651,
-  "heuristic": false,
-  "scored_at": "2026-10-22T15:57:44.239391+00:00"
  },
  "061a46b8aec43413fff63987c26e370b3ca797c2": {
   "profile_version": "156a74411f2c",
@@ -2453,27 +2392,6 @@
   "heuristic": false,
   "scored_at": "2026-10-22T15:57:44.239391+00:00"
  },
- "b2598a8fcc80e7e2b796eb98c5a7b5420e55b9c1": {
-  "profile_version": "156a74411f2c",
-  "match_score": 30,
-  "confidence": 0.95,
-  "why": "The salary is at the absolute bottom of your requirement floor, and the scope is potentially too narrow compared to your full-stack capabilities.",
-  "seniority_fit": "target",
-  "role_family": "Business & Data Analytics",
-  "matched_skills": [
-   "SQL",
-   "Workflow Automation",
-   "Data Modeling"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Only apply if you are comfortable at the lower end of your desired compensation range."
-  ],
-  "sector": "Consumer/E-commerce",
-  "prefilter": 0.5041,
-  "heuristic": false,
-  "scored_at": "2026-10-22T15:57:44.239391+00:00"
- },
  "1454fde36563c0d38a4dc7ace829776ddf225f1f": {
   "profile_version": "156a74411f2c",
   "match_score": 85,
@@ -2608,53 +2526,96 @@
   "heuristic": false,
   "scored_at": "2026-10-26T17:31:19.506606+00:00"
  },
- "c03fa9986941fcc5399c3c3f376b2565c21d3127": {
+ "e1591ee5b21311994ffb2eb8b3a35370e795a245": {
   "profile_version": "156a74411f2c",
-  "match_score": 40,
-  "confidence": 0.8,
-  "why": "This is a Product Manager role rather than the engineering/automation focus of the candidate, despite the strong alignment with agentic architectures.",
+  "match_score": 88,
+  "confidence": 0.9,
+  "why": "The role perfectly aligns with Michael's expertise in Python-based pipeline orchestration and internal developer tooling. The salary range is competitive and supports the candidate's compensation floor.",
   "seniority_fit": "stretch",
-  "role_family": "Technical Strategy & Product",
+  "role_family": "Analytics & Data Engineering",
+  "matched_skills": [
+   "Python",
+   "Data Modeling",
+   "CI/CD Pipelines",
+   "SQL"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Explicitly highlight 'production-quality' code examples in your portfolio.",
+   "Emphasize the financial impact/quant ROI of the automation tools you have built."
+  ],
+  "sector": "Consulting",
+  "prefilter": 0.5804,
+  "heuristic": false,
+  "scored_at": "2026-10-27T16:46:41.315215+00:00"
+ },
+ "9df987aac76b2ff4a17bef4e7f8e34479a464c2a": {
+  "profile_version": "156a74411f2c",
+  "match_score": 75,
+  "confidence": 0.8,
+  "why": "This is a direct fit for the candidate's 4-year experience level and focuses on the exact technical stack (REST APIs, data movement, agentic AI). The lack of explicit salary data keeps this from a higher score.",
+  "seniority_fit": "target",
+  "role_family": "Solutions & Technical Consulting",
+  "matched_skills": [
+   "REST API Development",
+   "SQL",
+   "Python",
+   "Data Modeling"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Feature your experience with 'agentic architectures' prominently, as this is a core Fivetran focus.",
+   "Quantify the scale of data pipelines you've managed (e.g., volume/throughput)."
+  ],
+  "sector": "Enterprise SaaS/DevTools",
+  "prefilter": 0.5289,
+  "heuristic": false,
+  "scored_at": "2026-10-27T16:46:41.315215+00:00"
+ },
+ "6bbb06c5ab71621f3ebafd057a60f264d3e27cb6": {
+  "profile_version": "156a74411f2c",
+  "match_score": 55,
+  "confidence": 0.7,
+  "why": "While the domain (Agentic Workflow Management) is a perfect match, this is a consulting-heavy implementation role rather than a technical engineering build role.",
+  "seniority_fit": "target",
+  "role_family": "Solutions & Technical Consulting",
   "matched_skills": [
    "Workflow Automation",
-   "REST API Development"
+   "Requirements Gathering"
   ],
   "missing_skills": [
-   "Product Management",
-   "Strategic Roadmapping"
+   "Customer Success/Implementation experience"
   ],
   "resume_suggestions": [
-   "Frame your automation projects as product-led solutions rather than just technical implementations.",
-   "Emphasize your 'requirements gathering' skills to lean into the PM aspects of this role."
+   "Highlight your stakeholder management and 'Requirements Gathering' experience over pure coding tasks.",
+   "Add a 'Technical Communication' section to demonstrate the ability to guide non-technical users."
+  ],
+  "sector": "Enterprise SaaS/DevTools",
+  "prefilter": 0.5134,
+  "heuristic": false,
+  "scored_at": "2026-10-27T16:46:41.315215+00:00"
+ },
+ "87d624321838a3c79622cbe8957dc170bf9d7921": {
+  "profile_version": "156a74411f2c",
+  "match_score": 40,
+  "confidence": 0.6,
+  "why": "This role is based in Lithuania; the candidate specifically requested fully remote US roles, and the Product Management scope is a significant pivot from his Engineering/Analytics background.",
+  "seniority_fit": "out-of-band",
+  "role_family": "Technical Strategy & Product",
+  "matched_skills": [
+   "Workflow Automation"
+  ],
+  "missing_skills": [
+   "Product Management Lifecycle",
+   "Market Analysis"
+  ],
+  "resume_suggestions": [
+   "Include a project where you acted as the 'product owner' for a tool you built.",
+   "Focus on the 'why' and user impact of your automated tools."
   ],
   "sector": "Enterprise SaaS/DevTools",
   "prefilter": 0.5105,
   "heuristic": false,
-  "scored_at": "2026-10-26T17:31:19.506606+00:00"
- },
- "fb36aac58e87cff91db81d3e4b9c78daac9e234d": {
-  "profile_version": "156a74411f2c",
-  "match_score": 88,
-  "confidence": 0.95,
-  "why": "Excellent alignment with the candidate's core strengths in Python pipelines, data modeling, and high-throughput analytics, well within the target compensation and remote requirements.",
-  "seniority_fit": "target",
-  "role_family": "Analytics & Data Engineering",
-  "matched_skills": [
-   "Python",
-   "SQL",
-   "Data Modeling",
-   "CI/CD Pipelines"
-  ],
-  "missing_skills": [
-   "Identity Resolution/Graph Theory"
-  ],
-  "resume_suggestions": [
-   "Emphasize 'data quality' and 'monitoring' metrics from your past projects.",
-   "Highlight your ability to bridge the gap between software engineering and analytics."
-  ],
-  "sector": "Media/Gaming",
-  "prefilter": 0.4982,
-  "heuristic": false,
-  "scored_at": "2026-10-26T17:31:19.506606+00:00"
+  "scored_at": "2026-10-27T16:46:41.315215+00:00"
  }
 }
