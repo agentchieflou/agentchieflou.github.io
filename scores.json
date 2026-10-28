@@ -1355,28 +1355,6 @@
   "heuristic": false,
   "scored_at": "2026-10-17T14:19:21.805929+00:00"
  },
- "46d4c2082242c61e182c098e470bf8feb3f4acb1": {
-  "profile_version": "c5530a45c8f8",
-  "match_score": 80,
-  "confidence": 0.8,
-  "why": "Great alignment on applied research/model development work for a high-impact technical contributor.",
-  "seniority_fit": "target",
-  "role_family": "AI & Machine Learning",
-  "matched_skills": [
-   "Python",
-   "Data Modeling",
-   "Quantitative Analytics"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Emphasize your ability to work with research-heavy data.",
-   "Focus on the translational outcomes of your work."
-  ],
-  "sector": "Healthcare",
-  "prefilter": 0.5063,
-  "heuristic": false,
-  "scored_at": "2026-10-17T14:19:21.805929+00:00"
- },
  "c5857ce57612bfc362c894c6eb4258e18d628005": {
   "profile_version": "156a74411f2c",
   "match_score": 90,
@@ -2121,48 +2099,6 @@
   "heuristic": false,
   "scored_at": "2026-10-23T15:49:18.338107+00:00"
  },
- "604c93d9965678437b3990fa23e53c516617be9e": {
-  "profile_version": "156a74411f2c",
-  "match_score": 65,
-  "confidence": 0.75,
-  "why": "Solid match for your technical background, though the job lacks stated compensation, introducing risk.",
-  "seniority_fit": "stretch",
-  "role_family": "Solutions & Technical Consulting",
-  "matched_skills": [
-   "SQL",
-   "REST API Development"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Emphasize your partner-facing/consulting experience."
-  ],
-  "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.5268,
-  "heuristic": false,
-  "scored_at": "2026-10-22T15:57:44.239391+00:00"
- },
- "9df7f815af57f3d94268af38df2eaf831cd35fbf": {
-  "profile_version": "941e6f634434",
-  "match_score": 45,
-  "confidence": 0.8,
-  "why": "The role aligns with the candidate's desire for remote enterprise work, but the job description is generic and fails to confirm salary or specific technical requirements.",
-  "seniority_fit": "target",
-  "role_family": "Technical Strategy & Product",
-  "matched_skills": [
-   "Requirement Gathering"
-  ],
-  "missing_skills": [
-   "Not specified"
-  ],
-  "resume_suggestions": [
-   "Highlight experience managing cross-functional stakeholder relationships in your current analytics role.",
-   "Emphasize your background in business strategy to pivot into a Partner/Operations role."
-  ],
-  "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.4995,
-  "heuristic": false,
-  "scored_at": "2026-10-16T15:26:23.918450+00:00"
- },
  "061a46b8aec43413fff63987c26e370b3ca797c2": {
   "profile_version": "156a74411f2c",
   "match_score": 85,
@@ -2526,29 +2462,6 @@
   "heuristic": false,
   "scored_at": "2026-10-26T17:31:19.506606+00:00"
  },
- "e1591ee5b21311994ffb2eb8b3a35370e795a245": {
-  "profile_version": "156a74411f2c",
-  "match_score": 88,
-  "confidence": 0.9,
-  "why": "The role perfectly aligns with Michael's expertise in Python-based pipeline orchestration and internal developer tooling. The salary range is competitive and supports the candidate's compensation floor.",
-  "seniority_fit": "stretch",
-  "role_family": "Analytics & Data Engineering",
-  "matched_skills": [
-   "Python",
-   "Data Modeling",
-   "CI/CD Pipelines",
-   "SQL"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Explicitly highlight 'production-quality' code examples in your portfolio.",
-   "Emphasize the financial impact/quant ROI of the automation tools you have built."
-  ],
-  "sector": "Consulting",
-  "prefilter": 0.5804,
-  "heuristic": false,
-  "scored_at": "2026-10-27T16:46:41.315215+00:00"
- },
  "9df987aac76b2ff4a17bef4e7f8e34479a464c2a": {
   "profile_version": "156a74411f2c",
   "match_score": 75,
@@ -2617,5 +2530,75 @@
   "prefilter": 0.5105,
   "heuristic": false,
   "scored_at": "2026-10-27T16:46:41.315215+00:00"
+ },
+ "cb2af04bcd51d9c8ff31a6a4eb9da022e7baf7cc": {
+  "profile_version": "156a74411f2c",
+  "match_score": 65,
+  "confidence": 0.8,
+  "why": "The role focuses on workflow orchestration and AI-driven automation, which aligns perfectly with the candidate's expertise in agentic architectures. However, the salary is unstated, presenting a risk regarding the $130k hard constraint.",
+  "seniority_fit": "target",
+  "role_family": "Solutions & Technical Consulting",
+  "matched_skills": [
+   "Workflow Automation",
+   "Agentic Architecture"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Highlight specific instances of building 'workflow orchestration' systems in your summary.",
+   "Emphasize experience integrating third-party APIs into existing financial platforms."
+  ],
+  "sector": "Enterprise SaaS/DevTools",
+  "prefilter": 0.5242,
+  "heuristic": false,
+  "scored_at": "2026-10-28T17:15:08.339881+00:00"
+ },
+ "1615e3c9fa338dd38fe10853683cc98ca41c9cf3": {
+  "profile_version": "156a74411f2c",
+  "match_score": 45,
+  "confidence": 0.9,
+  "why": "While the candidate hits the skill requirements, the role is heavily focused on data governance and master data management rather than the technical engineering and automation build-heavy focus of the candidate. The low end of the compensation ($90k) fails the hard constraint, and the upper end barely meets it.",
+  "seniority_fit": "target",
+  "role_family": "Business & Data Analytics",
+  "matched_skills": [
+   "SQL",
+   "Data Modeling",
+   "Requirements Gathering"
+  ],
+  "missing_skills": [
+   "Data Governance",
+   "Process Mapping"
+  ],
+  "resume_suggestions": [
+   "Focus resume more on process optimization and stakeholder requirements to match the BA nature of the role.",
+   "Downplay high-end software engineering in favor of data quality and governance achievements."
+  ],
+  "sector": "Other",
+  "prefilter": 0.5235,
+  "heuristic": false,
+  "scored_at": "2026-10-28T17:15:08.339881+00:00"
+ },
+ "b71ff81f48ed37ea130c06418a3087d12d66f273": {
+  "profile_version": "156a74411f2c",
+  "match_score": 92,
+  "confidence": 0.95,
+  "why": "This is an ideal match as it explicitly seeks 'AI-native thinkers' for agentic architectures, mirroring the candidate’s primary specializations. The compensation package is well above the required threshold.",
+  "seniority_fit": "stretch",
+  "role_family": "Solutions & Technical Consulting",
+  "matched_skills": [
+   "Python",
+   "SQL",
+   "REST API Development",
+   "Agentic Architecture",
+   "CI/CD Pipelines"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Lead with your 'agentic architecture' and 'high-throughput automation' projects at the top of your resume.",
+   "Quantify the business impact of your automation frameworks to align with the consultative nature of a Solution Engineer role."
+  ],
+  "sector": "AI/ML Infra",
+  "prefilter": 0.5159,
+  "heuristic": false,
+  "scored_at": "2026-10-28T17:15:08.339881+00:00"
  }
 }
