@@ -875,28 +875,6 @@
   "heuristic": false,
   "scored_at": "2026-10-06T17:21:27.544472+00:00"
  },
- "a521af85962fe1916160eccb4948eed39baaee02": {
-  "profile_version": "156a74411f2c",
-  "match_score": 80,
-  "confidence": 0.85,
-  "why": "Perfect alignment with your agentic infrastructure and data engineering expertise.",
-  "seniority_fit": "stretch",
-  "role_family": "Solutions & Technical Consulting",
-  "matched_skills": [
-   "Python",
-   "SQL",
-   "Agentic Architecture",
-   "REST API Development"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Mention specific experiences with data integration at scale."
-  ],
-  "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.5089,
-  "heuristic": false,
-  "scored_at": "2026-10-22T15:57:44.239391+00:00"
- },
  "68a280deae329b31766ab88f953e3d761eee84dc": {
   "profile_version": "156a74411f2c",
   "match_score": 80,
@@ -2287,30 +2265,6 @@
   "heuristic": false,
   "scored_at": "2026-10-22T15:57:44.239391+00:00"
  },
- "1454fde36563c0d38a4dc7ace829776ddf225f1f": {
-  "profile_version": "156a74411f2c",
-  "match_score": 85,
-  "confidence": 0.8,
-  "why": "Strong overlap with your analytical background and desire for remote work; the seniority and requirements fit perfectly.",
-  "seniority_fit": "target",
-  "role_family": "Business & Data Analytics",
-  "matched_skills": [
-   "SQL",
-   "Quantitative Analytics",
-   "Data Modeling"
-  ],
-  "missing_skills": [
-   "Statistical software packages"
-  ],
-  "resume_suggestions": [
-   "Quantify the impact of your automated models on business outcomes.",
-   "Explicitly list your statistical analysis methodology alongside your coding skills."
-  ],
-  "sector": "Other",
-  "prefilter": 0.5003,
-  "heuristic": false,
-  "scored_at": "2026-10-23T15:49:18.338107+00:00"
- },
  "fa3a1c1244db638bcb92003f01b864a34ba3b8a2": {
   "profile_version": "156a74411f2c",
   "match_score": 82,
@@ -2373,55 +2327,6 @@
   "prefilter": 0.5068,
   "heuristic": false,
   "scored_at": "2026-10-24T14:43:35.089399+00:00"
- },
- "2b04b0ed1f0cac9097d9db83736851b3f62fe204": {
-  "profile_version": "156a74411f2c",
-  "match_score": 35,
-  "confidence": 0.9,
-  "why": "The job description does not mention remote work and the salary is listed as $200 (likely a typo for 200k, but the location is NYC), failing the remote hard constraint.",
-  "seniority_fit": "target",
-  "role_family": "Analytics & Data Engineering",
-  "matched_skills": [
-   "Python",
-   "Data Modeling",
-   "SQL"
-  ],
-  "missing_skills": [
-   "Snowflake",
-   "Databricks",
-   "ETL"
-  ],
-  "resume_suggestions": [
-   "Highlight experience with Snowflake/Databricks if applicable.",
-   "Explicitly list experience building 'production data pipelines' to mirror the job description."
-  ],
-  "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.5133,
-  "heuristic": false,
-  "scored_at": "2026-10-26T17:31:19.506606+00:00"
- },
- "9df987aac76b2ff4a17bef4e7f8e34479a464c2a": {
-  "profile_version": "156a74411f2c",
-  "match_score": 75,
-  "confidence": 0.8,
-  "why": "This is a direct fit for the candidate's 4-year experience level and focuses on the exact technical stack (REST APIs, data movement, agentic AI). The lack of explicit salary data keeps this from a higher score.",
-  "seniority_fit": "target",
-  "role_family": "Solutions & Technical Consulting",
-  "matched_skills": [
-   "REST API Development",
-   "SQL",
-   "Python",
-   "Data Modeling"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Feature your experience with 'agentic architectures' prominently, as this is a core Fivetran focus.",
-   "Quantify the scale of data pipelines you've managed (e.g., volume/throughput)."
-  ],
-  "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.5289,
-  "heuristic": false,
-  "scored_at": "2026-10-27T16:46:41.315215+00:00"
  },
  "6bbb06c5ab71621f3ebafd057a60f264d3e27cb6": {
   "profile_version": "156a74411f2c",
@@ -2516,46 +2421,6 @@
   "heuristic": false,
   "scored_at": "2026-10-28T17:15:08.339881+00:00"
  },
- "fbfc0b6b6e410e90c1aae21f4af38cd02a2adb34": {
-  "profile_version": "156a74411f2c",
-  "match_score": 35,
-  "confidence": 0.9,
-  "why": "The role requires 2 days in office, violating your hard constraint for fully remote work.",
-  "seniority_fit": "target",
-  "role_family": "Analytics & Data Engineering",
-  "matched_skills": [
-   "Python",
-   "SQL"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [],
-  "sector": "Healthcare",
-  "prefilter": 0.5318,
-  "heuristic": false,
-  "scored_at": "2026-10-29T17:30:07.585606+00:00"
- },
- "dc76530eec86660ff21a245be4cea974603d0d79": {
-  "profile_version": "156a74411f2c",
-  "match_score": 85,
-  "confidence": 0.85,
-  "why": "This role is a direct fit for your skill set in data engineering and pipeline automation, and fully satisfies your remote work and compensation requirements.",
-  "seniority_fit": "target",
-  "role_family": "Analytics & Data Engineering",
-  "matched_skills": [
-   "Python",
-   "SQL",
-   "Data Modeling"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Emphasize experience in data democratization and self-service analytics frameworks.",
-   "Highlight your REST API work in the context of building foundational data platforms."
-  ],
-  "sector": "Consumer/E-commerce",
-  "prefilter": 0.5141,
-  "heuristic": false,
-  "scored_at": "2026-10-29T17:30:07.585606+00:00"
- },
  "c03fa9986941fcc5399c3c3f376b2565c21d3127": {
   "profile_version": "156a74411f2c",
   "match_score": 40,
@@ -2601,5 +2466,120 @@
   "prefilter": 0.5008,
   "heuristic": false,
   "scored_at": "2026-10-29T17:30:07.585606+00:00"
+ },
+ "7f309b23c73cf5667dc3f9d5eafb1ec346e2ce9d": {
+  "profile_version": "156a74411f2c",
+  "match_score": 82,
+  "confidence": 0.9,
+  "why": "The role perfectly aligns with your experience in building data automation frameworks and REST API development for developer-focused platforms. It is a logical career step into a more architecture-focused senior role within the data movement space.",
+  "seniority_fit": "stretch",
+  "role_family": "Solutions & Technical Consulting",
+  "matched_skills": [
+   "REST API Development",
+   "Data Modeling",
+   "SQL",
+   "CI/CD Pipelines"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Highlight your experience with 'agentic architectures' as Fivetran is heavily pivoting into agentic AI data infrastructure.",
+   "Emphasize the scale (throughput) of the data automation frameworks you have built."
+  ],
+  "sector": "Enterprise SaaS/DevTools",
+  "prefilter": 0.5289,
+  "heuristic": false,
+  "scored_at": "2026-10-30T17:15:49.296694+00:00"
+ },
+ "2bdacbfa8fa7529ffac4e94fb974e6cb795b07f0": {
+  "profile_version": "156a74411f2c",
+  "match_score": 75,
+  "confidence": 0.85,
+  "why": "Your specialization in agentic architectures and Python-based automation is highly relevant to OpenAI's GTM growth engineering. However, the location is listed as San Francisco, failing your hard constraint for remote work.",
+  "seniority_fit": "target",
+  "role_family": "AI & Machine Learning",
+  "matched_skills": [
+   "Python",
+   "Agentic Architecture",
+   "REST API Development"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Quantify the business impact of your automation tools on internal team efficiency.",
+   "Highlight specific agentic frameworks or orchestration logic you have implemented."
+  ],
+  "sector": "AI/ML Infra",
+  "prefilter": 0.5237,
+  "heuristic": false,
+  "scored_at": "2026-10-30T17:15:49.296694+00:00"
+ },
+ "d8f993bb18d82a4c779a029deba9371197b84c43": {
+  "profile_version": "156a74411f2c",
+  "match_score": 40,
+  "confidence": 0.9,
+  "why": "While your technical stack is a strong match, the provided salary ($200) is a clear failure to meet your minimum compensation floor of $130,000. Additionally, the role requires on-site presence in San Francisco.",
+  "seniority_fit": "target",
+  "role_family": "Analytics & Data Engineering",
+  "matched_skills": [
+   "Python",
+   "SQL",
+   "Data Modeling"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Focus on Snowflake/Databricks experience if you have it.",
+   "Ensure 'Data Engineering' is clearly defined as a primary function in your summary."
+  ],
+  "sector": "Enterprise SaaS/DevTools",
+  "prefilter": 0.5063,
+  "heuristic": false,
+  "scored_at": "2026-10-30T17:15:49.296694+00:00"
+ },
+ "3430557e4780d6056a313796fc4532982b7ea263": {
+  "profile_version": "156a74411f2c",
+  "match_score": 35,
+  "confidence": 0.7,
+  "why": "This is a non-technical operations role that would be a step down in technical depth for your profile. The salary range caps out barely above your minimum requirement.",
+  "seniority_fit": "below",
+  "role_family": "Process Optimization & Business Operations",
+  "matched_skills": [
+   "Workflow Automation"
+  ],
+  "missing_skills": [
+   "Sales Operations",
+   "Revenue Forecasting"
+  ],
+  "resume_suggestions": [
+   "Reframe your 'Business Analytics' experience specifically toward GTM/Sales metrics if pursuing this.",
+   "Focus less on developer tooling and more on business process optimization."
+  ],
+  "sector": "Enterprise SaaS/DevTools",
+  "prefilter": 0.5041,
+  "heuristic": false,
+  "scored_at": "2026-10-30T17:15:49.296694+00:00"
+ },
+ "54fafb765c19b4a6225b800a677cc691d8536d5d": {
+  "profile_version": "156a74411f2c",
+  "match_score": 70,
+  "confidence": 0.8,
+  "why": "The role aligns well with your workflow automation skills and fits your remote work and compensation requirements. It is a solid match for your seniority, though it leans more toward RPA than the full-stack engineering work you typically perform.",
+  "seniority_fit": "target",
+  "role_family": "Business & Data Analytics",
+  "matched_skills": [
+   "Python",
+   "SQL",
+   "Workflow Automation",
+   "Requirements Gathering"
+  ],
+  "missing_skills": [
+   "RPA Platforms"
+  ],
+  "resume_suggestions": [
+   "Highlight your 'Requirements Gathering' and cross-functional project experience.",
+   "Emphasize the 'Business Analytics' aspect of your background to differentiate from pure engineering candidates."
+  ],
+  "sector": "Government/Public Sector",
+  "prefilter": 0.5021,
+  "heuristic": false,
+  "scored_at": "2026-10-30T17:15:49.296694+00:00"
  }
 }
