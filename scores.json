@@ -2469,56 +2469,6 @@
   "heuristic": false,
   "scored_at": "2026-10-31T16:13:31.875404+00:00"
  },
- "2b04b0ed1f0cac9097d9db83736851b3f62fe204": {
-  "profile_version": "156a74411f2c",
-  "match_score": 40,
-  "confidence": 0.85,
-  "why": "While the technical stack is a strong match, the role is location-constrained to New York City and fails your hard constraint for a fully remote position.",
-  "seniority_fit": "target",
-  "role_family": "Analytics & Data Engineering",
-  "matched_skills": [
-   "Python",
-   "SQL",
-   "Workflow Automation",
-   "Data Modeling"
-  ],
-  "missing_skills": [
-   "Snowflake (experience implies, but not listed)",
-   "Databricks (experience implies, but not listed)"
-  ],
-  "resume_suggestions": [
-   "Ensure your remote work history is clearly visible to explain why you are targeting remote roles.",
-   "Add experience with specific cloud data warehouses."
-  ],
-  "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.5133,
-  "heuristic": false,
-  "scored_at": "2026-10-31T16:13:31.875404+00:00"
- },
- "f50fbc1b36e1c53e10c476ed7fd6d77860ebc598": {
-  "profile_version": "156a74411f2c",
-  "match_score": 60,
-  "confidence": 0.7,
-  "why": "This is a product-oriented management role rather than an engineering one, but it leverages your background in agentic architectures and workflow automation perfectly.",
-  "seniority_fit": "stretch",
-  "role_family": "Technical Strategy & Product",
-  "matched_skills": [
-   "Workflow Automation",
-   "Agentic Architecture",
-   "Requirements Gathering"
-  ],
-  "missing_skills": [
-   "Product Management experience"
-  ],
-  "resume_suggestions": [
-   "Frame your past projects in terms of product lifecycle and technical strategy.",
-   "Emphasize your role in gathering requirements for your internal developer tools."
-  ],
-  "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.5105,
-  "heuristic": false,
-  "scored_at": "2026-10-31T16:13:31.875404+00:00"
- },
  "50fd9eaa78656528cde6642bba9cdf0427c1b256": {
   "profile_version": "156a74411f2c",
   "match_score": 80,
@@ -2570,5 +2520,84 @@
   "prefilter": 0.4956,
   "heuristic": false,
   "scored_at": "2026-10-31T16:13:31.875404+00:00"
+ },
+ "39922ea67a09fb8d0be3cf79406a87f6e7783ef4": {
+  "profile_version": "156a74411f2c",
+  "match_score": 92,
+  "confidence": 0.95,
+  "why": "The role perfectly aligns with your expertise in workflow automation, pipeline development, and data modeling within a fintech/gaming context. It offers a clear career progression into a lead-style oversight role for a candidate with your 4 years of experience.",
+  "seniority_fit": "stretch",
+  "role_family": "Analytics & Data Engineering",
+  "matched_skills": [
+   "Python",
+   "SQL",
+   "Workflow Automation",
+   "Data Modeling",
+   "CI/CD Pipelines",
+   "Requirements Gathering"
+  ],
+  "missing_skills": [
+   "dbt"
+  ],
+  "resume_suggestions": [
+   "Highlight specific instances of building automated validation layers or audit-readiness frameworks.",
+   "Emphasize experience interacting with cross-functional stakeholders to align with the 'regulatory reporting' focus."
+  ],
+  "sector": "Media/Gaming",
+  "prefilter": 0.5415,
+  "heuristic": false,
+  "scored_at": "2026-11-01T17:12:40.355208+00:00"
+ },
+ "c03fa9986941fcc5399c3c3f376b2565c21d3127": {
+  "profile_version": "156a74411f2c",
+  "match_score": 30,
+  "confidence": 0.8,
+  "why": "While your agentic architecture skills are relevant, this is a Product Management role rather than a technical engineering one, and the location requirement (Cyprus) is potentially restrictive. It is a pivot away from your current engineering trajectory.",
+  "seniority_fit": "out-of-band",
+  "role_family": "Technical Strategy & Product",
+  "matched_skills": [
+   "Requirements Gathering",
+   "Agentic Architecture"
+  ],
+  "missing_skills": [
+   "Product Strategy",
+   "Market Analysis",
+   "Feature Prioritization"
+  ],
+  "resume_suggestions": [
+   "If interested in PM, highlight product-oriented outcomes from your technical automation projects.",
+   "Frame your engineering work around business-value metrics rather than just technical implementation."
+  ],
+  "sector": "Enterprise SaaS/DevTools",
+  "prefilter": 0.5105,
+  "heuristic": false,
+  "scored_at": "2026-11-01T17:12:40.355208+00:00"
+ },
+ "d8f993bb18d82a4c779a029deba9371197b84c43": {
+  "profile_version": "156a74411f2c",
+  "match_score": 20,
+  "confidence": 0.9,
+  "why": "The role is explicitly onsite in San Francisco, which violates your hard constraint for fully-remote work. While the tech stack match is excellent, the location mismatch results in a failing score.",
+  "seniority_fit": "target",
+  "role_family": "Analytics & Data Engineering",
+  "matched_skills": [
+   "Python",
+   "SQL",
+   "Data Modeling",
+   "CI/CD Pipelines",
+   "Git"
+  ],
+  "missing_skills": [
+   "Snowflake",
+   "Databricks"
+  ],
+  "resume_suggestions": [
+   "Explicitly list cloud data warehouse experience (Snowflake/Databricks) if applicable.",
+   "Highlight your 'builder mindset' in the summary to match the job's tone."
+  ],
+  "sector": "Enterprise SaaS/DevTools",
+  "prefilter": 0.5063,
+  "heuristic": false,
+  "scored_at": "2026-11-01T17:12:40.355208+00:00"
  }
 }
