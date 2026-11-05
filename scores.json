@@ -1214,28 +1214,6 @@
   "heuristic": false,
   "scored_at": "2026-10-22T15:57:44.239391+00:00"
  },
- "efc82ce8230aa0fe825ac896ccfe116d5181524b": {
-  "profile_version": "156a74411f2c",
-  "match_score": 85,
-  "confidence": 0.85,
-  "why": "Strong alignment with your analytics engineering and data platform skills.",
-  "seniority_fit": "stretch",
-  "role_family": "Analytics & Data Engineering",
-  "matched_skills": [
-   "Python",
-   "SQL",
-   "Data Modeling",
-   "Kubernetes/OpenShift"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Highlight your experience in securing infrastructure and network connectivity."
-  ],
-  "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.5039,
-  "heuristic": false,
-  "scored_at": "2026-10-22T15:57:44.239391+00:00"
- },
  "693989cfc50fa49377aacc508e970794d7b1e51d": {
   "profile_version": "5deb5ef226a8",
   "match_score": 85,
@@ -2252,33 +2230,6 @@
   "heuristic": false,
   "scored_at": "2026-10-31T16:13:31.875404+00:00"
  },
- "d8f993bb18d82a4c779a029deba9371197b84c43": {
-  "profile_version": "156a74411f2c",
-  "match_score": 20,
-  "confidence": 0.9,
-  "why": "The role is explicitly onsite in San Francisco, which violates your hard constraint for fully-remote work. While the tech stack match is excellent, the location mismatch results in a failing score.",
-  "seniority_fit": "target",
-  "role_family": "Analytics & Data Engineering",
-  "matched_skills": [
-   "Python",
-   "SQL",
-   "Data Modeling",
-   "CI/CD Pipelines",
-   "Git"
-  ],
-  "missing_skills": [
-   "Snowflake",
-   "Databricks"
-  ],
-  "resume_suggestions": [
-   "Explicitly list cloud data warehouse experience (Snowflake/Databricks) if applicable.",
-   "Highlight your 'builder mindset' in the summary to match the job's tone."
-  ],
-  "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.5063,
-  "heuristic": false,
-  "scored_at": "2026-11-01T17:12:40.355208+00:00"
- },
  "4ae8a36d107012ceff753b6967d0d20c0480216c": {
   "profile_version": "156a74411f2c",
   "match_score": 90,
@@ -2395,53 +2346,6 @@
   "heuristic": false,
   "scored_at": "2026-11-03T18:33:04.239768+00:00"
  },
- "bb4aad7f155a8b860ecff8cdc20f8f37f976ef39": {
-  "profile_version": "156a74411f2c",
-  "match_score": 75,
-  "confidence": 0.85,
-  "why": "The role perfectly aligns with your experience in data infrastructure and self-service BI automation. The salary range meets your floor requirements, and it effectively leverages your Python and SQL background.",
-  "seniority_fit": "target",
-  "role_family": "Analytics & Data Engineering",
-  "matched_skills": [
-   "Python",
-   "SQL",
-   "Data Modeling"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Highlight specific examples of how you improved KPI tracking through data pipeline automation.",
-   "Emphasize your experience designing self-service BI platforms to align with the core job requirement."
-  ],
-  "sector": "Consumer/E-commerce",
-  "prefilter": 0.5307,
-  "heuristic": false,
-  "scored_at": "2026-11-04T18:45:02.983316+00:00"
- },
- "7f309b23c73cf5667dc3f9d5eafb1ec346e2ce9d": {
-  "profile_version": "156a74411f2c",
-  "match_score": 40,
-  "confidence": 0.7,
-  "why": "This is a 'Senior Solutions Architect' role, which is a structural level above your current experience, making it a difficult sell for a 4-year professional. While the tech stack is perfect, the title suggests a seniority level you have not yet reached.",
-  "seniority_fit": "stretch",
-  "role_family": "Solutions & Technical Consulting",
-  "matched_skills": [
-   "Python",
-   "REST API Development",
-   "Git"
-  ],
-  "missing_skills": [
-   "Technical Sales",
-   "Pre-sales experience"
-  ],
-  "resume_suggestions": [
-   "Frame your project experience around customer-facing technical outcomes rather than just internal tooling.",
-   "Highlight any instances where you served as a technical liaison to non-engineering business stakeholders."
-  ],
-  "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.5289,
-  "heuristic": false,
-  "scored_at": "2026-11-04T18:45:02.983316+00:00"
- },
  "c95c533c42e25b2451a6a21d0db306fe7b4a74db": {
   "profile_version": "156a74411f2c",
   "match_score": 85,
@@ -2464,5 +2368,145 @@
   "prefilter": 0.5171,
   "heuristic": false,
   "scored_at": "2026-11-04T18:45:02.983316+00:00"
+ },
+ "2a80f893a348917fffafab244371ddc3d9f695a1": {
+  "profile_version": "156a74411f2c",
+  "match_score": 45,
+  "confidence": 0.8,
+  "why": "While the compensation is excellent, the role is a senior-level strategic position requiring 5+ years of experience and is location-locked to San Francisco. Your background in data automation is relevant, but the focus here is on high-stakes business strategy rather than tool building.",
+  "seniority_fit": "stretch",
+  "role_family": "Analytics & Data Engineering",
+  "matched_skills": [
+   "Python",
+   "SQL",
+   "Data Modeling"
+  ],
+  "missing_skills": [
+   "Growth Marketing Analytics",
+   "Product Strategy"
+  ],
+  "resume_suggestions": [
+   "Emphasize the business outcomes and revenue impact of your automation projects.",
+   "Highlight experience with cross-functional partnership and requirement gathering."
+  ],
+  "sector": "AI/ML Infra",
+  "prefilter": 0.559,
+  "heuristic": false,
+  "scored_at": "2026-11-05T18:54:33.437848+00:00"
+ },
+ "9df987aac76b2ff4a17bef4e7f8e34479a464c2a": {
+  "profile_version": "156a74411f2c",
+  "match_score": 85,
+  "confidence": 0.9,
+  "why": "This is a strong match for your skills in pipeline orchestration and REST APIs, and Fivetran's focus on data movement aligns perfectly with your experience building developer tooling.",
+  "seniority_fit": "target",
+  "role_family": "Solutions & Technical Consulting",
+  "matched_skills": [
+   "Python",
+   "SQL",
+   "Workflow Automation",
+   "REST API Development",
+   "Git"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Highlight specific projects involving external-facing APIs or data integration pipelines.",
+   "Showcase any experience with cloud-native data warehousing."
+  ],
+  "sector": "Enterprise SaaS/DevTools",
+  "prefilter": 0.5289,
+  "heuristic": false,
+  "scored_at": "2026-11-05T18:54:33.437848+00:00"
+ },
+ "13e3eae73477612daad52bd5f6f34dd84898b00d": {
+  "profile_version": "156a74411f2c",
+  "match_score": 30,
+  "confidence": 0.9,
+  "why": "The role explicitly requires 10+ years of experience and direct management responsibility, which is outside your current career stage.",
+  "seniority_fit": "out-of-band",
+  "role_family": "Analytics & Data Engineering",
+  "matched_skills": [
+   "Python",
+   "SQL",
+   "CI/CD Pipelines"
+  ],
+  "missing_skills": [
+   "10+ years experience",
+   "Clinical data management"
+  ],
+  "resume_suggestions": [],
+  "sector": "Consulting",
+  "prefilter": 0.5226,
+  "heuristic": false,
+  "scored_at": "2026-11-05T18:54:33.437848+00:00"
+ },
+ "81085dd6169c3aafd8f549c136411ef38e272900": {
+  "profile_version": "156a74411f2c",
+  "match_score": 40,
+  "confidence": 0.7,
+  "why": "This is a Manager role that requires leading a team of Solution Architects, which is a significant jump from your current 4 years of experience.",
+  "seniority_fit": "stretch",
+  "role_family": "Solutions & Technical Consulting",
+  "matched_skills": [
+   "Python",
+   "REST API Development",
+   "Requirements Gathering"
+  ],
+  "missing_skills": [
+   "Team management",
+   "Pre-sales engineering"
+  ],
+  "resume_suggestions": [
+   "Highlight any instances where you mentored junior engineers or led technical project scoping."
+  ],
+  "sector": "AI/ML Infra",
+  "prefilter": 0.5209,
+  "heuristic": false,
+  "scored_at": "2026-11-05T18:54:33.437848+00:00"
+ },
+ "2b04b0ed1f0cac9097d9db83736851b3f62fe204": {
+  "profile_version": "156a74411f2c",
+  "match_score": 10,
+  "confidence": 0.9,
+  "why": "The stated salary of $200 (presumably per hour or a data error) and the location requirement in NYC violate your hard constraints for salary and remote work.",
+  "seniority_fit": "target",
+  "role_family": "Analytics & Data Engineering",
+  "matched_skills": [
+   "Python",
+   "SQL",
+   "Data Modeling",
+   "Git"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [],
+  "sector": "Enterprise SaaS/DevTools",
+  "prefilter": 0.5133,
+  "heuristic": false,
+  "scored_at": "2026-11-05T18:54:33.437848+00:00"
+ },
+ "828619d8e9d846204fbdd74ff1c937a32ed131bd": {
+  "profile_version": "156a74411f2c",
+  "match_score": 75,
+  "confidence": 0.8,
+  "why": "This role aligns well with your agentic architecture specialization and Python proficiency, though it is a senior-level role that may test the upper limit of your experience.",
+  "seniority_fit": "stretch",
+  "role_family": "AI & Machine Learning",
+  "matched_skills": [
+   "Python",
+   "Agentic Architecture",
+   "CI/CD Pipelines",
+   "Git"
+  ],
+  "missing_skills": [
+   "AI Model Evaluation frameworks"
+  ],
+  "resume_suggestions": [
+   "Create a specific section for your AI agent projects, detailing the architecture and performance metrics.",
+   "Emphasize scalable backend system design."
+  ],
+  "sector": "Enterprise SaaS/DevTools",
+  "prefilter": 0.5051,
+  "heuristic": false,
+  "scored_at": "2026-11-05T18:54:33.437848+00:00"
  }
 }
