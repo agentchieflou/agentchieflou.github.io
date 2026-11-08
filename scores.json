@@ -950,27 +950,29 @@
   "scored_at": "2026-10-02T16:46:57.885200+00:00"
  },
  "fd922646374ac1eff2bd2ebcd1dac5233f468cbb": {
-  "profile_version": "d15e88c0f782",
+  "profile_version": "156a74411f2c",
   "match_score": 85,
-  "confidence": 0.9,
-  "why": "Direct hit on your banking operations domain combined with Risk/ML engineering. Perfect career fit for your current 4-5 year trajectory.",
+  "confidence": 0.85,
+  "why": "The role perfectly aligns with your financial modeling and Python expertise, and sits squarely in your target seniority band. It leverages your background in automation and data-driven risk monitoring at a high-growth Fintech firm.",
   "seniority_fit": "target",
   "role_family": "Analytics & Data Engineering",
   "matched_skills": [
    "Python",
    "SQL",
-   "Quantitative Analytics",
-   "Process Automation"
+   "Data Modeling",
+   "Quantitative Analytics"
   ],
-  "missing_skills": [],
+  "missing_skills": [
+   "Machine Learning Engineering"
+  ],
   "resume_suggestions": [
-   "Focus on the precision and quality of your analytics work.",
-   "Detail your contribution to fraud mitigation."
+   "Highlight specific instances of building automated fraud or risk-detection pipelines using Python.",
+   "Emphasize the 'scalable' nature of your data models and how they reduced manual overhead for finance/risk stakeholders."
   ],
   "sector": "Fintech",
-  "prefilter": 0.5028,
+  "prefilter": 0.4938,
   "heuristic": false,
-  "scored_at": "2026-10-06T17:21:27.544472+00:00"
+  "scored_at": "2026-11-08T17:10:10.647521+00:00"
  },
  "27dd3eea24724289205f186f7c3b2d22957d6718": {
   "profile_version": "156a74411f2c",
@@ -2285,30 +2287,6 @@
   ],
   "sector": "Healthcare",
   "prefilter": 0.5317,
-  "heuristic": false,
-  "scored_at": "2026-11-07T16:56:43.533064+00:00"
- },
- "f4190be7a3f1c5e32a99d222087ac759cac73971": {
-  "profile_version": "156a74411f2c",
-  "match_score": 75,
-  "confidence": 0.85,
-  "why": "This is a strong match for a Lead Technical Business Analyst, leveraging the candidate's requirements gathering and workflow automation skills in a large-scale integration project.",
-  "seniority_fit": "stretch",
-  "role_family": "Business & Data Analytics",
-  "matched_skills": [
-   "Requirements Gathering",
-   "Workflow Automation",
-   "SQL"
-  ],
-  "missing_skills": [
-   "ERP Implementation (Oracle/SAP/PeopleSoft)"
-  ],
-  "resume_suggestions": [
-   "Add a section specifically detailing your process for gathering complex business requirements for technical projects.",
-   "Highlight experience collaborating with non-technical business stakeholders on process improvement."
-  ],
-  "sector": "Consulting",
-  "prefilter": 0.5209,
   "heuristic": false,
   "scored_at": "2026-11-07T16:56:43.533064+00:00"
  },
