@@ -1634,5 +1634,119 @@
   ],
   "blockers": [],
   "v": 4
+ },
+ "7f309b23c73cf5667dc3f9d5eafb1ec346e2ce9d": {
+  "total": 22,
+  "standing": 10,
+  "specific": [
+   {
+    "q": "Address Line 1",
+    "options": []
+   },
+   {
+    "q": "City",
+    "options": []
+   },
+   {
+    "q": "Province/State",
+    "options": []
+   },
+   {
+    "q": "Postal/Zip Code",
+    "options": []
+   },
+   {
+    "q": "Country",
+    "options": []
+   },
+   {
+    "q": "Are you currently or have you ever provided services to Fivetran (or any of its global subsidiaries or affiliated entities) as a consultant or independent contractor, or through an employment agency or placement firm of any kind?",
+    "options": [
+     "Yes",
+     "No"
+    ]
+   },
+   {
+    "q": "Do you have the right to work in the country for which you are applying?",
+    "options": [
+     "Yes",
+     "No"
+    ]
+   },
+   {
+    "q": "By submitting this application, I acknowledge that I have read and understand Fivetran's Applicant Privacy Notice regarding the collection, use, and sharing of my personal information for recruitment and hiring purposes.",
+    "options": [
+     "Acknowledge/Confirm"
+    ]
+   }
+  ],
+  "uploads": [
+   "Resume/CV"
+  ],
+  "blockers": [],
+  "v": 4
+ },
+ "f35304f423c6938363ddf28431c98aa9abb8cd9f": {
+  "total": 15,
+  "standing": 6,
+  "specific": [
+   {
+    "q": "Who is your current or previous employer?",
+    "options": []
+   },
+   {
+    "q": "What is your current or previous job title?",
+    "options": []
+   },
+   {
+    "q": "Please select the country where you currently reside.",
+    "options": [
+     "Australia",
+     "Belgium",
+     "Brazil",
+     "Canada",
+     "Egypt",
+     "France"
+    ]
+   },
+   {
+    "q": "Please select the country or countries you anticipate working in for the role in which you are applying.",
+    "options": [
+     "Australia",
+     "Belgium",
+     "Brazil",
+     "Canada",
+     "France",
+     "Germany"
+    ]
+   },
+   {
+    "q": "Will you require Stripe to sponsor you for a work permit now or in the future for the location(s) you selected in in your previous response?",
+    "options": [
+     "Yes",
+     "No"
+    ]
+   },
+   {
+    "q": "If this role offers the option to work from a remote location, do you plan to work remotely?",
+    "options": [
+     "Yes, I intend to work remotely.",
+     "No, I intend to work from an office location."
+    ]
+   },
+   {
+    "q": "Do you opt-in to receive WhatsApp messages from Stripe Recruiting?",
+    "options": [
+     "Yes",
+     "No"
+    ]
+   }
+  ],
+  "uploads": [
+   "Resume/CV",
+   "Cover Letter"
+  ],
+  "blockers": [],
+  "v": 4
  }
 }
