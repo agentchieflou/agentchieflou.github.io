@@ -1874,28 +1874,6 @@
   "heuristic": false,
   "scored_at": "2026-10-31T16:13:31.875404+00:00"
  },
- "b0166389433b46d0e391ad6cdfbc94553be33b3c": {
-  "profile_version": "156a74411f2c",
-  "match_score": 75,
-  "confidence": 0.85,
-  "why": "GitLab's emphasis on CI/CD and agentic AI platforms strongly aligns with Michael's background in developer tooling and pipeline automation.",
-  "seniority_fit": "stretch",
-  "role_family": "Solutions & Technical Consulting",
-  "matched_skills": [
-   "CI/CD Pipelines",
-   "Workflow Automation",
-   "REST API Development"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Highlight your proficiency in CI/CD and developer infrastructure beyond just business analytics.",
-   "Focus on the 'architect' aspect of your experience in your resume summary."
-  ],
-  "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.4944,
-  "heuristic": false,
-  "scored_at": "2026-11-02T20:51:01.586870+00:00"
- },
  "8166377b99e2383024fc383ae7d6410582a77ec6": {
   "profile_version": "156a74411f2c",
   "match_score": 85,
@@ -2109,29 +2087,6 @@
   "heuristic": false,
   "scored_at": "2026-11-06T18:10:54.544617+00:00"
  },
- "fbfc0b6b6e410e90c1aae21f4af38cd02a2adb34": {
-  "profile_version": "156a74411f2c",
-  "match_score": 40,
-  "confidence": 0.9,
-  "why": "The technical scope aligns well with the candidate's background in semantic modeling and data pipelines, but the role requires 2 days onsite, violating the hard constraint.",
-  "seniority_fit": "target",
-  "role_family": "Analytics & Data Engineering",
-  "matched_skills": [
-   "SQL",
-   "Data Modeling"
-  ],
-  "missing_skills": [
-   "Enterprise Semantic Layer Architecture"
-  ],
-  "resume_suggestions": [
-   "Explicitly highlight your experience designing 'reusable data models' or semantic layers in past projects.",
-   "Emphasize your 'Logic Architect' experience in building metrics-driven systems."
-  ],
-  "sector": "Healthcare",
-  "prefilter": 0.5317,
-  "heuristic": false,
-  "scored_at": "2026-11-07T16:56:43.533064+00:00"
- },
  "2b04b0ed1f0cac9097d9db83736851b3f62fe204": {
   "profile_version": "156a74411f2c",
   "match_score": 30,
@@ -2206,30 +2161,6 @@
   "heuristic": false,
   "scored_at": "2026-11-09T21:32:49.105448+00:00"
  },
- "bb4aad7f155a8b860ecff8cdc20f8f37f976ef39": {
-  "profile_version": "156a74411f2c",
-  "match_score": 65,
-  "confidence": 0.85,
-  "why": "Strong alignment on core technical requirements like SQL and data pipeline design, but it lacks the specific emphasis on agentic automation found in the candidate's profile. Compensation range has a risk of falling below the $130k threshold at the lower end.",
-  "seniority_fit": "target",
-  "role_family": "Analytics & Data Engineering",
-  "matched_skills": [
-   "SQL",
-   "Data Modeling",
-   "Requirements Gathering"
-  ],
-  "missing_skills": [
-   "Self-Service BI Deployment"
-  ],
-  "resume_suggestions": [
-   "Highlight your experience in 'designing research aimed at improving KPIs'.",
-   "Ensure your resume clearly quantifies past improvements in 'customer insight' and 'revenue optimization'."
-  ],
-  "sector": "Consumer/E-commerce",
-  "prefilter": 0.5307,
-  "heuristic": false,
-  "scored_at": "2026-11-09T21:32:49.105448+00:00"
- },
  "7f309b23c73cf5667dc3f9d5eafb1ec346e2ce9d": {
   "profile_version": "156a74411f2c",
   "match_score": 88,
@@ -2254,75 +2185,147 @@
   "heuristic": false,
   "scored_at": "2026-11-09T21:32:49.105448+00:00"
  },
- "20760f6a5d72594be12faeb2d56acb21405c3205": {
+ "7b6ce8e2913af245d01514e20f5ec9707405a57c": {
   "profile_version": "156a74411f2c",
-  "match_score": 40,
-  "confidence": 0.8,
-  "why": "The location requirement is set to New York, violating the 'fully-remote' hard constraint. Additionally, the role is highly competitive and effectively a Senior-plus position, potentially exceeding the candidate's current scope.",
-  "seniority_fit": "stretch",
-  "role_family": "Solutions & Technical Consulting",
-  "matched_skills": [
-   "Python",
-   "SQL",
-   "Agentic Architecture",
-   "REST API Development"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Ensure 'agentic AI' project examples are front and center.",
-   "Highlight complex system integrations that demonstrate 'high-trust collaboration' with AI tools."
-  ],
-  "sector": "AI/ML Infra",
-  "prefilter": 0.5094,
-  "heuristic": false,
-  "scored_at": "2026-11-09T21:32:49.105448+00:00"
- },
- "d03e679e41104861d35e67d2427ca21874df1b63": {
-  "profile_version": "156a74411f2c",
-  "match_score": 40,
-  "confidence": 0.8,
-  "why": "The location requirement is set to California, violating the 'fully-remote' hard constraint. The seniority level is a 6-year target, which is a stretch for a 4-year candidate.",
-  "seniority_fit": "stretch",
-  "role_family": "Solutions & Technical Consulting",
-  "matched_skills": [
-   "Python",
-   "SQL",
-   "Agentic Architecture",
-   "REST API Development"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Emphasize 'customer-facing' or 'stakeholder-facing' problem solving.",
-   "Highlight your ability to translate complex technical concepts into business value."
-  ],
-  "sector": "AI/ML Infra",
-  "prefilter": 0.5074,
-  "heuristic": false,
-  "scored_at": "2026-11-09T21:32:49.105448+00:00"
- },
- "60c9485c26921996ceba9a1c095d25c8d2a49cd3": {
-  "profile_version": "156a74411f2c",
-  "match_score": 55,
+  "match_score": 65,
   "confidence": 0.9,
-  "why": "While the skills match, the role is titled 'Business Analyst IV', which often implies a more traditional reporting/analysis scope rather than the 'engineering-heavy' builder role the candidate excels in. Compensation risks being on the lower end.",
+  "why": "The role aligns well with Michael's experience in workflow automation and business analytics. However, the salary floor is slightly lower than his requirements and the scope is heavily focused on GTM systems.",
   "seniority_fit": "target",
   "role_family": "Business & Data Analytics",
   "matched_skills": [
    "SQL",
-   "Data Modeling",
-   "Requirements Gathering",
-   "Power BI"
+   "Requirements Gathering"
   ],
   "missing_skills": [
-   "Advanced business process analysis"
+   "Salesforce/CPQ"
   ],
   "resume_suggestions": [
-   "Focus on the 'technical/engineering' side of your analysis work to avoid being bucketed as a reporting analyst.",
-   "Highlight any experience with 'operational gap analysis' that led to automated solutions."
+   "Highlight experience with revenue operations and CRM integrations.",
+   "Emphasize quantitative business modeling over pure software engineering."
+  ],
+  "sector": "Media/Gaming",
+  "prefilter": 0.5177,
+  "heuristic": false,
+  "scored_at": "2026-11-10T18:45:01.291004+00:00"
+ },
+ "b71ff81f48ed37ea130c06418a3087d12d66f273": {
+  "profile_version": "156a74411f2c",
+  "match_score": 92,
+  "confidence": 0.95,
+  "why": "Excellent alignment with Michael's expertise in agentic architectures and REST APIs for enterprise data platforms. The seniority and compensation offer a perfect growth opportunity.",
+  "seniority_fit": "stretch",
+  "role_family": "Solutions & Technical Consulting",
+  "matched_skills": [
+   "Python",
+   "SQL",
+   "REST API Development",
+   "Agentic Architecture",
+   "Data Modeling"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Explicitly list 'Agentic AI' and 'LLM-based automation' projects at the top.",
+   "Highlight 'Consultative' or 'Customer-Facing' experiences."
+  ],
+  "sector": "Enterprise SaaS/DevTools",
+  "prefilter": 0.5159,
+  "heuristic": false,
+  "scored_at": "2026-11-10T18:45:01.291004+00:00"
+ },
+ "c04dafa8df207fad075cf06844a465a29c9bb644": {
+  "profile_version": "156a74411f2c",
+  "match_score": 90,
+  "confidence": 0.95,
+  "why": "Strong overlap in observability and data engineering technologies with the exact agentic focus Michael possesses. The seniority level is appropriate for his career trajectory.",
+  "seniority_fit": "stretch",
+  "role_family": "Solutions & Technical Consulting",
+  "matched_skills": [
+   "Python",
+   "SQL",
+   "Agentic Architecture",
+   "Data Modeling",
+   "CI/CD Pipelines"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Focus on performance optimization and observability tools in your projects.",
+   "Emphasize ability to explain complex technical solutions to non-technical stakeholders."
+  ],
+  "sector": "Enterprise SaaS/DevTools",
+  "prefilter": 0.5094,
+  "heuristic": false,
+  "scored_at": "2026-11-10T18:45:01.291004+00:00"
+ },
+ "12be147596420f379f4b6c94907e39d0551b36d9": {
+  "profile_version": "156a74411f2c",
+  "match_score": 70,
+  "confidence": 0.85,
+  "why": "The technical requirements for data modeling and analytics are a strong fit for his profile. The salary range is acceptable, though the scope is more traditional analytics than agentic engineering.",
+  "seniority_fit": "target",
+  "role_family": "Analytics & Data Engineering",
+  "matched_skills": [
+   "SQL",
+   "Python",
+   "Data Modeling",
+   "Power BI"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Emphasize work with healthcare-specific data sets or regulatory compliance.",
+   "Highlight your ability to translate 'business requirements into technical requirements' using specific examples."
   ],
   "sector": "Healthcare",
-  "prefilter": 0.4946,
+  "prefilter": 0.5024,
   "heuristic": false,
-  "scored_at": "2026-11-09T21:32:49.105448+00:00"
+  "scored_at": "2026-11-10T18:45:01.291004+00:00"
+ },
+ "1dad29d6d658605d9dae27f4c751b383ebb3863e": {
+  "profile_version": "156a74411f2c",
+  "match_score": 40,
+  "confidence": 0.9,
+  "why": "This role is location-specific (Dallas/Austin) and violates the candidate's remote-only constraint. It also emphasizes heavy pre-sales engineering which may be a shift from his current backend/automation focus.",
+  "seniority_fit": "stretch",
+  "role_family": "Solutions & Technical Consulting",
+  "matched_skills": [
+   "SQL",
+   "Data Modeling",
+   "Python"
+  ],
+  "missing_skills": [
+   "Pre-sales engineering",
+   "Customer-facing technical design"
+  ],
+  "resume_suggestions": [
+   "Highlight experience designing systems for external customers.",
+   "Emphasize performance-critical architecture work."
+  ],
+  "sector": "Enterprise SaaS/DevTools",
+  "prefilter": 0.4964,
+  "heuristic": false,
+  "scored_at": "2026-11-10T18:45:01.291004+00:00"
+ },
+ "e3455aa0a8d8e55a57d5dafd173b39598a3dac95": {
+  "profile_version": "156a74411f2c",
+  "match_score": 40,
+  "confidence": 0.9,
+  "why": "Violates the remote-only constraint as the role requires being based in the North Central region (Chicago/Minneapolis). Technical alignment is high, but the logistical fit is poor.",
+  "seniority_fit": "stretch",
+  "role_family": "Solutions & Technical Consulting",
+  "matched_skills": [
+   "SQL",
+   "Data Modeling",
+   "Python"
+  ],
+  "missing_skills": [
+   "Regional enterprise sales support"
+  ],
+  "resume_suggestions": [
+   "Clearly state remote willingness if you are considering relocation.",
+   "Include projects demonstrating scaling production systems."
+  ],
+  "sector": "Enterprise SaaS/DevTools",
+  "prefilter": 0.4944,
+  "heuristic": false,
+  "scored_at": "2026-11-10T18:45:01.291004+00:00"
  }
 }
