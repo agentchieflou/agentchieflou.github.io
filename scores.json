@@ -710,28 +710,6 @@
   "heuristic": false,
   "scored_at": "2026-10-22T15:57:44.239391+00:00"
  },
- "c0797645ee9e616395db96f30d0035e25e585af3": {
-  "profile_version": "156a74411f2c",
-  "match_score": 40,
-  "confidence": 0.9,
-  "why": "This is an Engineering Manager role requiring significant leadership experience beyond your 4 years.",
-  "seniority_fit": "out-of-band",
-  "role_family": "AI & Machine Learning",
-  "matched_skills": [
-   "Python",
-   "Kubernetes/OpenShift"
-  ],
-  "missing_skills": [
-   "Engineering Leadership"
-  ],
-  "resume_suggestions": [
-   "Not a fit for your level."
-  ],
-  "sector": "AI/ML Infra",
-  "prefilter": 0.5162,
-  "heuristic": false,
-  "scored_at": "2026-10-22T15:57:44.239391+00:00"
- },
  "3b03e0b8015e37959462bf8affe9e54f6a4ace80": {
   "profile_version": "941e6f634434",
   "match_score": 85,
@@ -910,46 +888,54 @@
   "scored_at": "2026-10-22T15:57:44.239391+00:00"
  },
  "6960211798bc9bde70aec7602682922d1c94d241": {
-  "profile_version": "f0d0f31d78de",
-  "match_score": 85,
-  "confidence": 0.85,
-  "why": "Market data engineering role matches your data pipeline and SQL strengths.",
-  "seniority_fit": "target",
+  "profile_version": "156a74411f2c",
+  "match_score": 92,
+  "confidence": 0.9,
+  "why": "The technical stack requirements (Python, SQL, CI/CD, Data Modeling) are an almost perfect match for the candidate's experience in building scalable data systems. The compensation is excellent and fits the candidate's goal for a high-impact, senior-level role.",
+  "seniority_fit": "stretch",
   "role_family": "Analytics & Data Engineering",
   "matched_skills": [
    "Python",
    "SQL",
-   "Data Modeling"
+   "Data Modeling",
+   "CI/CD Pipelines",
+   "Git"
   ],
   "missing_skills": [],
   "resume_suggestions": [
-   "Highlight experience with high-frequency market data pipelines."
+   "Emphasize the 'scalable' nature of your tooling, as Coinbase values high-throughput architecture.",
+   "Highlight your financial modeling experience as it directly supports their mission."
   ],
   "sector": "Fintech",
-  "prefilter": 0.5072,
+  "prefilter": 0.493,
   "heuristic": false,
-  "scored_at": "2026-10-09T17:31:38.964056+00:00"
+  "scored_at": "2026-11-11T18:49:07.890920+00:00"
  },
  "5fc6c8750193fdefb7855af9388907bb31f2e5d4": {
-  "profile_version": "f0d0f31d78de",
-  "match_score": 30,
-  "confidence": 0.9,
-  "why": "Hard constraint violation: salary range ($133k-$156k) is close to your floor, but lower than many other options.",
+  "profile_version": "156a74411f2c",
+  "match_score": 88,
+  "confidence": 0.95,
+  "why": "This role perfectly maps the candidate's expertise in business analytics, financial modeling, and agentic architecture for internal tools. It matches the 4-year experience level exactly and offers a clear path into strategic finance engineering.",
   "seniority_fit": "target",
   "role_family": "Business & Data Analytics",
   "matched_skills": [
+   "Python",
    "SQL",
-   "Quantitative Analytics",
-   "Data Modeling"
+   "Data Modeling",
+   "Agentic Architecture",
+   "Requirements Gathering"
   ],
-  "missing_skills": [],
+  "missing_skills": [
+   "Financial Forecasting"
+  ],
   "resume_suggestions": [
-   "N/A"
+   "Explicitly list 'Financial Modeling' and 'Strategic Analysis' to appeal to the finance team.",
+   "Showcase your work on internal tooling that provided data insights to business stakeholders."
   ],
   "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.5177,
+  "prefilter": 0.4926,
   "heuristic": false,
-  "scored_at": "2026-10-09T17:31:38.964056+00:00"
+  "scored_at": "2026-11-11T18:49:07.890920+00:00"
  },
  "11259bf9ab844215a04aef5e131f66a576e8f550": {
   "profile_version": "156a74411f2c",
@@ -1246,25 +1232,28 @@
   "scored_at": "2026-10-20T15:43:37.075749+00:00"
  },
  "fa319ee7de8d94f5774a244a984dac59caba2e66": {
-  "profile_version": "c5530a45c8f8",
-  "match_score": 80,
-  "confidence": 0.8,
-  "why": "The technical consulting function is a great fit for the candidate's mix of process automation and requirements gathering, though the salary is on the lower end of the band.",
+  "profile_version": "156a74411f2c",
+  "match_score": 78,
+  "confidence": 0.85,
+  "why": "This is a great match as it blends the candidate's Python and REST API development skills with his experience in workflow automation for an AI-powered SaaS platform. The salary is well within the required range and represents a strong growth opportunity.",
   "seniority_fit": "target",
   "role_family": "Solutions & Technical Consulting",
   "matched_skills": [
+   "Python",
    "Workflow Automation",
-   "Requirements Gathering"
+   "REST API Development"
   ],
-  "missing_skills": [],
+  "missing_skills": [
+   "Technical Consulting"
+  ],
   "resume_suggestions": [
-   "Frame your internal tooling work as customer solutions projects.",
-   "Highlight your ability to present technical concepts to non-technical partners."
+   "Frame your automation projects in terms of 'solutions' for internal users to mirror the consulting aspect.",
+   "Mention specific API integrations you have managed."
   ],
-  "sector": "Consulting",
-  "prefilter": 0.518,
+  "sector": "Enterprise SaaS/DevTools",
+  "prefilter": 0.4937,
   "heuristic": false,
-  "scored_at": "2026-10-17T14:19:21.805929+00:00"
+  "scored_at": "2026-11-11T18:49:07.890920+00:00"
  },
  "30e170315f8381533a75c51f8d4896fbaf40ee6c": {
   "profile_version": "f0d0f31d78de",
@@ -1758,27 +1747,6 @@
   "heuristic": false,
   "scored_at": "2026-10-24T14:43:35.089399+00:00"
  },
- "cb2af04bcd51d9c8ff31a6a4eb9da022e7baf7cc": {
-  "profile_version": "156a74411f2c",
-  "match_score": 65,
-  "confidence": 0.8,
-  "why": "The role focuses on workflow orchestration and AI-driven automation, which aligns perfectly with the candidate's expertise in agentic architectures. However, the salary is unstated, presenting a risk regarding the $130k hard constraint.",
-  "seniority_fit": "target",
-  "role_family": "Solutions & Technical Consulting",
-  "matched_skills": [
-   "Workflow Automation",
-   "Agentic Architecture"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Highlight specific instances of building 'workflow orchestration' systems in your summary.",
-   "Emphasize experience integrating third-party APIs into existing financial platforms."
-  ],
-  "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.5242,
-  "heuristic": false,
-  "scored_at": "2026-10-28T17:15:08.339881+00:00"
- },
  "8fb503649c571ecce625812912a706d755c31594": {
   "profile_version": "156a74411f2c",
   "match_score": 30,
@@ -2137,30 +2105,6 @@
   "heuristic": false,
   "scored_at": "2026-11-07T16:56:43.533064+00:00"
  },
- "b16f065e989bd5481213c13a313219b855090b0a": {
-  "profile_version": "156a74411f2c",
-  "match_score": 92,
-  "confidence": 0.95,
-  "why": "This is a perfect fit for a Senior Analytics Engineer focused on workflow automation and data infrastructure. The seniority level is a logical growth step for someone with 4 years of experience and matches the target compensation and remote requirements.",
-  "seniority_fit": "target",
-  "role_family": "Analytics & Data Engineering",
-  "matched_skills": [
-   "Python",
-   "SQL",
-   "Workflow Automation",
-   "Data Modeling",
-   "CI/CD Pipelines"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Highlight your experience in 'data governance' and 'building scalable analytical assets' specifically for internal stakeholders.",
-   "Emphasize your 'agentic architecture' work in the context of improving data pipeline reliability."
-  ],
-  "sector": "Healthcare",
-  "prefilter": 0.5517,
-  "heuristic": false,
-  "scored_at": "2026-11-09T21:32:49.105448+00:00"
- },
  "7f309b23c73cf5667dc3f9d5eafb1ec346e2ce9d": {
   "profile_version": "156a74411f2c",
   "match_score": 88,
@@ -2184,29 +2128,6 @@
   "prefilter": 0.5289,
   "heuristic": false,
   "scored_at": "2026-11-09T21:32:49.105448+00:00"
- },
- "7b6ce8e2913af245d01514e20f5ec9707405a57c": {
-  "profile_version": "156a74411f2c",
-  "match_score": 65,
-  "confidence": 0.9,
-  "why": "The role aligns well with Michael's experience in workflow automation and business analytics. However, the salary floor is slightly lower than his requirements and the scope is heavily focused on GTM systems.",
-  "seniority_fit": "target",
-  "role_family": "Business & Data Analytics",
-  "matched_skills": [
-   "SQL",
-   "Requirements Gathering"
-  ],
-  "missing_skills": [
-   "Salesforce/CPQ"
-  ],
-  "resume_suggestions": [
-   "Highlight experience with revenue operations and CRM integrations.",
-   "Emphasize quantitative business modeling over pure software engineering."
-  ],
-  "sector": "Media/Gaming",
-  "prefilter": 0.5177,
-  "heuristic": false,
-  "scored_at": "2026-11-10T18:45:01.291004+00:00"
  },
  "b71ff81f48ed37ea130c06418a3087d12d66f273": {
   "profile_version": "156a74411f2c",
@@ -2253,29 +2174,6 @@
   ],
   "sector": "Enterprise SaaS/DevTools",
   "prefilter": 0.5094,
-  "heuristic": false,
-  "scored_at": "2026-11-10T18:45:01.291004+00:00"
- },
- "12be147596420f379f4b6c94907e39d0551b36d9": {
-  "profile_version": "156a74411f2c",
-  "match_score": 70,
-  "confidence": 0.85,
-  "why": "The technical requirements for data modeling and analytics are a strong fit for his profile. The salary range is acceptable, though the scope is more traditional analytics than agentic engineering.",
-  "seniority_fit": "target",
-  "role_family": "Analytics & Data Engineering",
-  "matched_skills": [
-   "SQL",
-   "Python",
-   "Data Modeling",
-   "Power BI"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Emphasize work with healthcare-specific data sets or regulatory compliance.",
-   "Highlight your ability to translate 'business requirements into technical requirements' using specific examples."
-  ],
-  "sector": "Healthcare",
-  "prefilter": 0.5024,
   "heuristic": false,
   "scored_at": "2026-11-10T18:45:01.291004+00:00"
  },
@@ -2327,5 +2225,28 @@
   "prefilter": 0.4944,
   "heuristic": false,
   "scored_at": "2026-11-10T18:45:01.291004+00:00"
+ },
+ "2459d0b1e1f25a11cc8e21a9fe05628474201c4a": {
+  "profile_version": "156a74411f2c",
+  "match_score": 45,
+  "confidence": 0.9,
+  "why": "This role is a clear step up into a senior program management function, but the requirement for 6 years experience puts it outside the candidate's current tenure. While the focus on AI workflow orchestration aligns with his background, the focus is more on program management than technical engineering.",
+  "seniority_fit": "out-of-band",
+  "role_family": "Process Optimization & Business Operations",
+  "matched_skills": [
+   "Workflow Automation"
+  ],
+  "missing_skills": [
+   "Project Management",
+   "Stakeholder Management"
+  ],
+  "resume_suggestions": [
+   "Highlight instances where you led cross-functional workflows rather than just building them.",
+   "Emphasize high-level business strategy outcomes over specific code implementations."
+  ],
+  "sector": "Enterprise SaaS/DevTools",
+  "prefilter": 0.5229,
+  "heuristic": false,
+  "scored_at": "2026-11-11T18:49:07.890920+00:00"
  }
 }
