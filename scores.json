@@ -840,31 +840,6 @@
   "heuristic": false,
   "scored_at": "2026-10-02T16:46:57.885200+00:00"
  },
- "fd922646374ac1eff2bd2ebcd1dac5233f468cbb": {
-  "profile_version": "156a74411f2c",
-  "match_score": 85,
-  "confidence": 0.85,
-  "why": "The role perfectly aligns with your financial modeling and Python expertise, and sits squarely in your target seniority band. It leverages your background in automation and data-driven risk monitoring at a high-growth Fintech firm.",
-  "seniority_fit": "target",
-  "role_family": "Analytics & Data Engineering",
-  "matched_skills": [
-   "Python",
-   "SQL",
-   "Data Modeling",
-   "Quantitative Analytics"
-  ],
-  "missing_skills": [
-   "Machine Learning Engineering"
-  ],
-  "resume_suggestions": [
-   "Highlight specific instances of building automated fraud or risk-detection pipelines using Python.",
-   "Emphasize the 'scalable' nature of your data models and how they reduced manual overhead for finance/risk stakeholders."
-  ],
-  "sector": "Fintech",
-  "prefilter": 0.4938,
-  "heuristic": false,
-  "scored_at": "2026-11-08T17:10:10.647521+00:00"
- },
  "27dd3eea24724289205f186f7c3b2d22957d6718": {
   "profile_version": "156a74411f2c",
   "match_score": 95,
@@ -957,31 +932,6 @@
   "prefilter": 0.5289,
   "heuristic": false,
   "scored_at": "2026-10-22T15:57:44.239391+00:00"
- },
- "db5528b3547b151b2ad754202cc4faf26c1160bd": {
-  "profile_version": "156a74411f2c",
-  "match_score": 90,
-  "confidence": 0.9,
-  "why": "Excellent alignment with your skills in REST APIs, automation, and agentic architectures; fits remote and compensation requirements perfectly.",
-  "seniority_fit": "target",
-  "role_family": "Solutions & Technical Consulting",
-  "matched_skills": [
-   "Python",
-   "REST API Development",
-   "Agentic Architecture",
-   "Workflow Automation"
-  ],
-  "missing_skills": [
-   "Fintech compliance/fraud domain knowledge"
-  ],
-  "resume_suggestions": [
-   "Highlight your experience with API-driven integrations and orchestration engines.",
-   "Emphasize work on high-throughput, latency-sensitive automation."
-  ],
-  "sector": "Fintech",
-  "prefilter": 0.4973,
-  "heuristic": false,
-  "scored_at": "2026-10-23T15:49:18.338107+00:00"
  },
  "146ea49192e719c60d0ec72cc1b38b7a9a0f3b2d": {
   "profile_version": "c5530a45c8f8",
@@ -2248,5 +2198,52 @@
   "prefilter": 0.5229,
   "heuristic": false,
   "scored_at": "2026-11-11T18:49:07.890920+00:00"
+ },
+ "bf90f92904b9195c653a83558585b63f66ae7a5c": {
+  "profile_version": "156a74411f2c",
+  "match_score": 35,
+  "confidence": 0.8,
+  "why": "The role is focused on SOX compliance and PMO, which lacks the engineering and agentic architecture focus core to the candidate's profile. Additionally, the salary is undisclosed, failing to provide evidence of meeting the minimum compensation constraint.",
+  "seniority_fit": "out-of-band",
+  "role_family": "Process Optimization & Business Operations",
+  "matched_skills": [
+   "Workflow Automation"
+  ],
+  "missing_skills": [
+   "SOX Compliance",
+   "Project Management"
+  ],
+  "resume_suggestions": [
+   "Include examples of data compliance/governance projects if any",
+   "Emphasize cross-functional operational leadership experience"
+  ],
+  "sector": "Enterprise SaaS/DevTools",
+  "prefilter": 0.4967,
+  "heuristic": false,
+  "scored_at": "2026-11-12T19:02:22.347160+00:00"
+ },
+ "441ec078e678e67084a7b81b644f73e690db5e6b": {
+  "profile_version": "156a74411f2c",
+  "match_score": 88,
+  "confidence": 0.95,
+  "why": "The role perfectly aligns with the candidate's 4-year experience requirement and focus on AI-powered enterprise automation. The tech stack and product focus on LLM orchestration mirror the candidate's specialization in agentic architectures.",
+  "seniority_fit": "target",
+  "role_family": "Analytics & Data Engineering",
+  "matched_skills": [
+   "Python",
+   "SQL",
+   "Workflow Automation",
+   "Data Modeling",
+   "CI/CD Pipelines"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Highlight the specific agentic workflows developed in Python",
+   "Emphasize experience with LLM orchestration frameworks to match their core product"
+  ],
+  "sector": "AI/ML Infra",
+  "prefilter": 0.4926,
+  "heuristic": false,
+  "scored_at": "2026-11-12T19:02:22.347160+00:00"
  }
 }
