@@ -554,26 +554,28 @@
   "scored_at": "2026-10-22T15:57:44.239391+00:00"
  },
  "45edcbdeb0a3450d947ae5b9b6fecbfd19434b24": {
-  "profile_version": "c5530a45c8f8",
+  "profile_version": "156a74411f2c",
   "match_score": 30,
-  "confidence": 0.7,
-  "why": "Engineering Manager role requiring deep ML systems expertise and team management experience; far exceeds current seniority.",
-  "seniority_fit": "stretch",
+  "confidence": 0.9,
+  "why": "This is an Engineering Manager role requiring leadership experience the candidate does not have, putting it out of the realistic hiring band for someone with 4 years of individual contributor experience.",
+  "seniority_fit": "out-of-band",
   "role_family": "AI & Machine Learning",
   "matched_skills": [
    "Python"
   ],
   "missing_skills": [
-   "ML systems experience",
-   "People Management"
+   "People Management",
+   "Engineering Leadership",
+   "Machine Learning Lifecycle Management"
   ],
   "resume_suggestions": [
-   "This level is a substantial leap. Focus on Lead Individual Contributor roles instead."
+   "Focus on senior IC technical leadership roles rather than management.",
+   "Omit this if not pursuing a direct management transition."
   ],
   "sector": "Media/Gaming",
-  "prefilter": 0.5196,
+  "prefilter": 0.4917,
   "heuristic": false,
-  "scored_at": "2026-10-17T14:19:21.805929+00:00"
+  "scored_at": "2026-11-16T21:09:16.573671+00:00"
  },
  "dc00cf5595e49f89aca283e067da2d4d03cb1b92": {
   "profile_version": "d15e88c0f782",
@@ -934,26 +936,29 @@
   "scored_at": "2026-11-15T17:54:26.908089+00:00"
  },
  "67ee83f3f10b53997fb05c860564fc1639caacb7": {
-  "profile_version": "c5530a45c8f8",
-  "match_score": 45,
-  "confidence": 0.75,
-  "why": "Requires leadership of Forward Deployed Engineers at a high-stakes, client-facing level that exceeds current management scope.",
-  "seniority_fit": "stretch",
+  "profile_version": "156a74411f2c",
+  "match_score": 40,
+  "confidence": 0.95,
+  "why": "This is a Manager role that requires established experience in high-stakes customer-facing leadership, which exceeds the candidate's current 4-year experience trajectory.",
+  "seniority_fit": "out-of-band",
   "role_family": "AI & Machine Learning",
   "matched_skills": [
    "Python",
-   "API Development"
+   "REST API Development",
+   "Agentic Architecture"
   ],
   "missing_skills": [
-   "Management experience"
+   "Customer-facing leadership experience",
+   "Sales/GTM strategy alignment"
   ],
   "resume_suggestions": [
-   "Focus on individual contributor roles at this level unless you have team lead experience."
+   "Target senior technical IC roles rather than management.",
+   "Highlight 'Forward Deployed' or consulting-style project outcomes."
   ],
   "sector": "AI/ML Infra",
-  "prefilter": 0.5141,
+  "prefilter": 0.4914,
   "heuristic": false,
-  "scored_at": "2026-10-17T14:19:21.805929+00:00"
+  "scored_at": "2026-11-16T21:09:16.573671+00:00"
  },
  "966bbdc676784f9ecf18d2ce8116947f47a4ca10": {
   "profile_version": "d15e88c0f782",
@@ -1480,27 +1485,6 @@
   "heuristic": false,
   "scored_at": "2026-10-22T15:57:44.239391+00:00"
  },
- "34e4bb0786b5a2d0e6597e7224db51530e77ec4c": {
-  "profile_version": "156a74411f2c",
-  "match_score": 75,
-  "confidence": 0.85,
-  "why": "Strong match for your technical skill set, though it requires slightly more seniority than your 4 years of experience.",
-  "seniority_fit": "stretch",
-  "role_family": "Solutions & Technical Consulting",
-  "matched_skills": [
-   "Python",
-   "REST API Development",
-   "Workflow Automation"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Focus on your experience working with cloud-scale infrastructure."
-  ],
-  "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.5213,
-  "heuristic": false,
-  "scored_at": "2026-10-22T15:57:44.239391+00:00"
- },
  "84dcbe5d950e4bfc6e070bb581b8ad55853ddfc4": {
   "profile_version": "156a74411f2c",
   "match_score": 65,
@@ -1965,55 +1949,6 @@
   "heuristic": false,
   "scored_at": "2026-11-10T18:45:01.291004+00:00"
  },
- "1dad29d6d658605d9dae27f4c751b383ebb3863e": {
-  "profile_version": "156a74411f2c",
-  "match_score": 40,
-  "confidence": 0.9,
-  "why": "This role is location-specific (Dallas/Austin) and violates the candidate's remote-only constraint. It also emphasizes heavy pre-sales engineering which may be a shift from his current backend/automation focus.",
-  "seniority_fit": "stretch",
-  "role_family": "Solutions & Technical Consulting",
-  "matched_skills": [
-   "SQL",
-   "Data Modeling",
-   "Python"
-  ],
-  "missing_skills": [
-   "Pre-sales engineering",
-   "Customer-facing technical design"
-  ],
-  "resume_suggestions": [
-   "Highlight experience designing systems for external customers.",
-   "Emphasize performance-critical architecture work."
-  ],
-  "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.4964,
-  "heuristic": false,
-  "scored_at": "2026-11-10T18:45:01.291004+00:00"
- },
- "e3455aa0a8d8e55a57d5dafd173b39598a3dac95": {
-  "profile_version": "156a74411f2c",
-  "match_score": 40,
-  "confidence": 0.9,
-  "why": "Violates the remote-only constraint as the role requires being based in the North Central region (Chicago/Minneapolis). Technical alignment is high, but the logistical fit is poor.",
-  "seniority_fit": "stretch",
-  "role_family": "Solutions & Technical Consulting",
-  "matched_skills": [
-   "SQL",
-   "Data Modeling",
-   "Python"
-  ],
-  "missing_skills": [
-   "Regional enterprise sales support"
-  ],
-  "resume_suggestions": [
-   "Clearly state remote willingness if you are considering relocation.",
-   "Include projects demonstrating scaling production systems."
-  ],
-  "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.4944,
-  "heuristic": false,
-  "scored_at": "2026-11-10T18:45:01.291004+00:00"
- },
  "2459d0b1e1f25a11cc8e21a9fe05628474201c4a": {
   "profile_version": "156a74411f2c",
   "match_score": 45,
@@ -2083,29 +2018,6 @@
   "prefilter": 0.4926,
   "heuristic": false,
   "scored_at": "2026-11-12T19:02:22.347160+00:00"
- },
- "6abaeaf020d0e07c1239e048c363c2a0fabb41cb": {
-  "profile_version": "156a74411f2c",
-  "match_score": 30,
-  "confidence": 0.9,
-  "why": "This is a staffing/placement role rather than a direct hire at a company, offering less career growth than a dedicated engineering position.",
-  "seniority_fit": "below",
-  "role_family": "Business & Data Analytics",
-  "matched_skills": [
-   "Python",
-   "SQL",
-   "Power BI",
-   "REST API Development"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Focus on targeting direct-hire internal product or engineering teams.",
-   "Avoid staffing agency roles for better salary and growth outcomes."
-  ],
-  "sector": "Consulting",
-  "prefilter": 0.5065,
-  "heuristic": false,
-  "scored_at": "2026-11-13T18:38:23.783773+00:00"
  },
  "352c1111f18dfa28309219c64827e536fb81b691": {
   "profile_version": "156a74411f2c",
@@ -2178,5 +2090,55 @@
   "prefilter": 0.4938,
   "heuristic": false,
   "scored_at": "2026-11-13T18:38:23.783773+00:00"
+ },
+ "7c79ebf5acea708568189b33ca09e7919ec2b315": {
+  "profile_version": "156a74411f2c",
+  "match_score": 75,
+  "confidence": 0.85,
+  "why": "The role aligns well with the candidate's background in Python and data automation, and the compensation comfortably exceeds the minimum. It is a solid step up for a professional with 4 years of experience looking to scale their impact.",
+  "seniority_fit": "stretch",
+  "role_family": "AI & Machine Learning",
+  "matched_skills": [
+   "Python",
+   "SQL",
+   "Git"
+  ],
+  "missing_skills": [
+   "Machine Learning Engineering specific domain knowledge"
+  ],
+  "resume_suggestions": [
+   "Highlight specific instances of building scalable internal tooling using Python.",
+   "Emphasize experience with high-throughput data processing to mirror ML infrastructure requirements."
+  ],
+  "sector": "Fintech",
+  "prefilter": 0.4919,
+  "heuristic": false,
+  "scored_at": "2026-11-16T21:09:16.573671+00:00"
+ },
+ "64a554e241bd30c3d57bed3108b6351013340604": {
+  "profile_version": "156a74411f2c",
+  "match_score": 85,
+  "confidence": 0.8,
+  "why": "This role is a strong match for the candidate's expertise in Python and agentic architectures, and falls perfectly within the seniority progression for a 4-year professional moving into a Solutions Engineer position.",
+  "seniority_fit": "target",
+  "role_family": "Solutions & Technical Consulting",
+  "matched_skills": [
+   "Python",
+   "SQL",
+   "Data Modeling",
+   "REST API Development",
+   "Agentic Architecture"
+  ],
+  "missing_skills": [
+   "Pre-sales experience"
+  ],
+  "resume_suggestions": [
+   "Quantify your success in automating workflows to showcase your ability to deliver technical business value.",
+   "Highlight your capability to translate complex requirements into technical solutions."
+  ],
+  "sector": "Enterprise SaaS/DevTools",
+  "prefilter": 0.4912,
+  "heuristic": false,
+  "scored_at": "2026-11-16T21:09:16.573671+00:00"
  }
 }
