@@ -553,30 +553,6 @@
   "heuristic": false,
   "scored_at": "2026-10-22T15:57:44.239391+00:00"
  },
- "45edcbdeb0a3450d947ae5b9b6fecbfd19434b24": {
-  "profile_version": "156a74411f2c",
-  "match_score": 30,
-  "confidence": 0.9,
-  "why": "This is an Engineering Manager role requiring leadership experience the candidate does not have, putting it out of the realistic hiring band for someone with 4 years of individual contributor experience.",
-  "seniority_fit": "out-of-band",
-  "role_family": "AI & Machine Learning",
-  "matched_skills": [
-   "Python"
-  ],
-  "missing_skills": [
-   "People Management",
-   "Engineering Leadership",
-   "Machine Learning Lifecycle Management"
-  ],
-  "resume_suggestions": [
-   "Focus on senior IC technical leadership roles rather than management.",
-   "Omit this if not pursuing a direct management transition."
-  ],
-  "sector": "Media/Gaming",
-  "prefilter": 0.4917,
-  "heuristic": false,
-  "scored_at": "2026-11-16T21:09:16.573671+00:00"
- },
  "dc00cf5595e49f89aca283e067da2d4d03cb1b92": {
   "profile_version": "d15e88c0f782",
   "match_score": 70,
@@ -1593,28 +1569,6 @@
   "heuristic": false,
   "scored_at": "2026-10-24T14:43:35.089399+00:00"
  },
- "2bdacbfa8fa7529ffac4e94fb974e6cb795b07f0": {
-  "profile_version": "156a74411f2c",
-  "match_score": 75,
-  "confidence": 0.85,
-  "why": "Your specialization in agentic architectures and Python-based automation is highly relevant to OpenAI's GTM growth engineering. However, the location is listed as San Francisco, failing your hard constraint for remote work.",
-  "seniority_fit": "target",
-  "role_family": "AI & Machine Learning",
-  "matched_skills": [
-   "Python",
-   "Agentic Architecture",
-   "REST API Development"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Quantify the business impact of your automation tools on internal team efficiency.",
-   "Highlight specific agentic frameworks or orchestration logic you have implemented."
-  ],
-  "sector": "AI/ML Infra",
-  "prefilter": 0.5237,
-  "heuristic": false,
-  "scored_at": "2026-10-30T17:15:49.296694+00:00"
- },
  "3430557e4780d6056a313796fc4532982b7ea263": {
   "profile_version": "156a74411f2c",
   "match_score": 35,
@@ -1659,54 +1613,6 @@
   ],
   "sector": "Enterprise SaaS/DevTools",
   "prefilter": 0.5278,
-  "heuristic": false,
-  "scored_at": "2026-11-03T18:33:04.239768+00:00"
- },
- "c3984d535fb4d58b94fe8f929a210e95943207d6": {
-  "profile_version": "156a74411f2c",
-  "match_score": 88,
-  "confidence": 0.85,
-  "why": "Your expertise in agentic architectures and REST API orchestration is highly sought after by Alloy's platform, which centers on decisioning engines.",
-  "seniority_fit": "stretch",
-  "role_family": "Solutions & Technical Consulting",
-  "matched_skills": [
-   "Python",
-   "REST API Development",
-   "Workflow Automation",
-   "SQL",
-   "Agentic Architecture"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Explicitly link your 'Agentic Architecture' work to financial decision-making or fraud prevention.",
-   "Highlight experience managing complex API dependencies."
-  ],
-  "sector": "Fintech",
-  "prefilter": 0.5254,
-  "heuristic": false,
-  "scored_at": "2026-11-03T18:33:04.239768+00:00"
- },
- "e873a1a011223fc790fd2d0f68fe3d01702a9549": {
-  "profile_version": "156a74411f2c",
-  "match_score": 82,
-  "confidence": 0.85,
-  "why": "The IAM focus aligns well with your strong backend background in automation and security-oriented architecture, ideal for your experience level.",
-  "seniority_fit": "stretch",
-  "role_family": "Solutions & Technical Consulting",
-  "matched_skills": [
-   "Python",
-   "REST API Development",
-   "Workflow Automation",
-   "SQL",
-   "CI/CD Pipelines"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Emphasize any past experience securing REST APIs or implementing authentication workflows.",
-   "Highlight your capability in systems orchestration and CI/CD."
-  ],
-  "sector": "Fintech",
-  "prefilter": 0.5147,
   "heuristic": false,
   "scored_at": "2026-11-03T18:33:04.239768+00:00"
  },
@@ -2140,5 +2046,144 @@
   "prefilter": 0.4912,
   "heuristic": false,
   "scored_at": "2026-11-16T21:09:16.573671+00:00"
+ },
+ "541ee1a6f8c3e95258b4cf7b448b3715dac4a877": {
+  "profile_version": "156a74411f2c",
+  "match_score": 88,
+  "confidence": 0.9,
+  "why": "The role perfectly aligns with Michael's expertise in workflow automation and distributed systems. The focus on agentic capabilities directly leverages his background in agentic architectures and Python-based orchestration.",
+  "seniority_fit": "stretch",
+  "role_family": "Solutions & Technical Consulting",
+  "matched_skills": [
+   "Python",
+   "Workflow Automation",
+   "REST API Development",
+   "Agentic Architecture"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Highlight specific examples of building 'durable' workflows using orchestration tools.",
+   "Emphasize past experience with system failure recovery strategies."
+  ],
+  "sector": "Enterprise SaaS/DevTools",
+  "prefilter": 0.532,
+  "heuristic": false,
+  "scored_at": "2026-11-17T19:58:19.620651+00:00"
+ },
+ "2423592a9b516290dcaa1eff9a7ef8b9ef7efa44": {
+  "profile_version": "156a74411f2c",
+  "match_score": 75,
+  "confidence": 0.8,
+  "why": "This role is a direct fit for Michael's data-driven background and experience with REST APIs and pipeline automation. Fivetran's focus on data movement aligns well with his skills in data modeling and SQL.",
+  "seniority_fit": "target",
+  "role_family": "Solutions & Technical Consulting",
+  "matched_skills": [
+   "SQL",
+   "Data Modeling",
+   "REST API Development",
+   "Workflow Automation"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Highlight experience with ETL/ELT pipelines and data warehouse integrations.",
+   "Emphasize customer-facing technical project work."
+  ],
+  "sector": "Enterprise SaaS/DevTools",
+  "prefilter": 0.5262,
+  "heuristic": false,
+  "scored_at": "2026-11-17T19:58:19.620651+00:00"
+ },
+ "be8948aa538d484434414218e81d9a8ec6803516": {
+  "profile_version": "156a74411f2c",
+  "match_score": 65,
+  "confidence": 0.75,
+  "why": "This is a strong fit for Michael's analytical profile and SQL/Power BI expertise. However, it is more focused on client-facing solution engineering than his current backend-heavy architecture work.",
+  "seniority_fit": "target",
+  "role_family": "Solutions & Technical Consulting",
+  "matched_skills": [
+   "SQL",
+   "Data Modeling",
+   "Requirements Gathering"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Add a section on technical pre-sales or consultative client engagements.",
+   "Emphasize business value generated from analytics dashboards."
+  ],
+  "sector": "Enterprise SaaS/DevTools",
+  "prefilter": 0.514,
+  "heuristic": false,
+  "scored_at": "2026-11-17T19:58:19.620651+00:00"
+ },
+ "e60d698a4aa3363a813c13ef54f5ef7b5a067e0d": {
+  "profile_version": "156a74411f2c",
+  "match_score": 92,
+  "confidence": 0.85,
+  "why": "The focus on embedding AI agents into existing workflows to drive marketing efficiency is a direct match for Michael's specialization in agentic architectures and automation.",
+  "seniority_fit": "stretch",
+  "role_family": "AI & Machine Learning",
+  "matched_skills": [
+   "Python",
+   "Workflow Automation",
+   "Agentic Architecture",
+   "REST API Development"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Explicitly list 'AI Agentic Architecture' as a core competency.",
+   "Showcase projects where you optimized business-team productivity through automation."
+  ],
+  "sector": "Fintech",
+  "prefilter": 0.5078,
+  "heuristic": false,
+  "scored_at": "2026-11-17T19:58:19.620651+00:00"
+ },
+ "a70c02ad24b666661124b734e541d02df99408a2": {
+  "profile_version": "156a74411f2c",
+  "match_score": 95,
+  "confidence": 0.9,
+  "why": "This is the most technically aligned role, requiring deep agentic architecture experience and Python development at scale. It leverages all of Michael's niche expertise in observability and agent design.",
+  "seniority_fit": "stretch",
+  "role_family": "AI & Machine Learning",
+  "matched_skills": [
+   "Python",
+   "SQL",
+   "Agentic Architecture",
+   "REST API Development",
+   "Git",
+   "CI/CD Pipelines"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Highlight experience with observability tooling (logs/traces).",
+   "Emphasize any experience contributing to open-source or building internal tools for developers."
+  ],
+  "sector": "AI/ML Infra",
+  "prefilter": 0.506,
+  "heuristic": false,
+  "scored_at": "2026-11-17T19:58:19.620651+00:00"
+ },
+ "79326cf7cb1e102b314085707bcf01838319491c": {
+  "profile_version": "156a74411f2c",
+  "match_score": 65,
+  "confidence": 0.75,
+  "why": "Strong overlap with Michael's data visualization and business logic expertise. The regional constraint matches his requirements, and the technical scope fits his background in analytics.",
+  "seniority_fit": "target",
+  "role_family": "Solutions & Technical Consulting",
+  "matched_skills": [
+   "SQL",
+   "Data Modeling",
+   "Power BI",
+   "Requirements Gathering"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Highlight experience in technical solution design for data platforms.",
+   "Translate complex data pipeline projects into high-level business impact statements."
+  ],
+  "sector": "Enterprise SaaS/DevTools",
+  "prefilter": 0.5025,
+  "heuristic": false,
+  "scored_at": "2026-11-17T19:58:19.620651+00:00"
  }
 }

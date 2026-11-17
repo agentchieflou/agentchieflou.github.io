@@ -1748,5 +1748,54 @@
   ],
   "blockers": [],
   "v": 4
+ },
+ "e60d698a4aa3363a813c13ef54f5ef7b5a067e0d": {
+  "total": 14,
+  "standing": 7,
+  "specific": [
+   {
+    "q": "Please select the country where you currently reside.",
+    "options": [
+     "Australia",
+     "Belgium",
+     "Brazil",
+     "Canada",
+     "Egypt",
+     "France"
+    ]
+   },
+   {
+    "q": "Where do you plan to work from?",
+    "options": [
+     "Chicago - I am located in Chicago, and plan to work from the",
+     "Toronto - I am located in Toronto, and plan to work from the",
+     "Atlanta - I am located in Atlanta, and plan to work from the",
+     "New York - I am located in New York, and plan to work from t",
+     "San Francisco - I am located in San Francisco, and plan to w",
+     "Seattle - I am located in Seattle, and plan to work from the"
+    ]
+   },
+   {
+    "q": "Will you require Stripe to sponsor you for a work permit now or in the future for the location(s) you selected in in your previous response?",
+    "options": [
+     "Yes",
+     "No"
+    ]
+   },
+   {
+    "q": "Who is your current or previous employer?",
+    "options": []
+   },
+   {
+    "q": "What is your current or previous job title?",
+    "options": []
+   }
+  ],
+  "uploads": [
+   "Resume/CV",
+   "Cover Letter"
+  ],
+  "blockers": [],
+  "v": 4
  }
 }
