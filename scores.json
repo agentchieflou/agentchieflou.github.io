@@ -1757,31 +1757,6 @@
   "heuristic": false,
   "scored_at": "2026-11-06T18:10:54.544617+00:00"
  },
- "2b04b0ed1f0cac9097d9db83736851b3f62fe204": {
-  "profile_version": "156a74411f2c",
-  "match_score": 30,
-  "confidence": 0.9,
-  "why": "The technical fit is strong, but the role is located in New York City and does not specify remote flexibility, failing the hard constraint.",
-  "seniority_fit": "target",
-  "role_family": "Analytics & Data Engineering",
-  "matched_skills": [
-   "Python",
-   "SQL",
-   "Data Modeling",
-   "CI/CD Pipelines"
-  ],
-  "missing_skills": [
-   "Snowflake/Databricks"
-  ],
-  "resume_suggestions": [
-   "Highlight your expertise with 'builder' mindsets and greenfield project development.",
-   "Specifically list experience with production-grade ETL pipeline development."
-  ],
-  "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.5133,
-  "heuristic": false,
-  "scored_at": "2026-11-07T16:56:43.533064+00:00"
- },
  "6ebc53b29a359374f7146f59b4b05af3a04547f8": {
   "profile_version": "156a74411f2c",
   "match_score": 85,
@@ -2185,5 +2160,53 @@
   "prefilter": 0.5025,
   "heuristic": false,
   "scored_at": "2026-11-17T19:58:19.620651+00:00"
+ },
+ "0e47e5610abc0d9c857129f28981ed077d17e328": {
+  "profile_version": "156a74411f2c",
+  "match_score": 72,
+  "confidence": 0.85,
+  "why": "This role aligns well with Michael's background in business analytics and process automation, offering a senior-level title that supports his career progression. The remote nature and compensation band meet his hard constraints.",
+  "seniority_fit": "stretch",
+  "role_family": "Business & Data Analytics",
+  "matched_skills": [
+   "Requirements Gathering"
+  ],
+  "missing_skills": [
+   "Identity and Access Management",
+   "Information Security Frameworks"
+  ],
+  "resume_suggestions": [
+   "Highlight experience managing stakeholder requirements for complex technical systems.",
+   "Emphasize technical project management and governance experience."
+  ],
+  "sector": "Healthcare",
+  "prefilter": 0.5215,
+  "heuristic": false,
+  "scored_at": "2026-11-18T19:28:49.075230+00:00"
+ },
+ "d8f993bb18d82a4c779a029deba9371197b84c43": {
+  "profile_version": "156a74411f2c",
+  "match_score": 15,
+  "confidence": 0.9,
+  "why": "While the skill set overlap is strong, the position is office-based in San Francisco and the stated salary is $200 (well below the $130,000 threshold), failing both hard constraints.",
+  "seniority_fit": "target",
+  "role_family": "Analytics & Data Engineering",
+  "matched_skills": [
+   "Python",
+   "SQL",
+   "Data Modeling"
+  ],
+  "missing_skills": [
+   "Snowflake",
+   "Databricks"
+  ],
+  "resume_suggestions": [
+   "No recommendation due to location and compensation mismatch.",
+   "Consider pivoting to roles explicitly emphasizing remote work."
+  ],
+  "sector": "Enterprise SaaS/DevTools",
+  "prefilter": 0.5063,
+  "heuristic": false,
+  "scored_at": "2026-11-18T19:28:49.075230+00:00"
  }
 }
