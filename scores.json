@@ -375,27 +375,6 @@
   "heuristic": false,
   "scored_at": "2026-10-22T15:57:44.239391+00:00"
  },
- "58c894520592b3fe36328082af407675924a2bf7": {
-  "profile_version": "156a74411f2c",
-  "match_score": 75,
-  "confidence": 0.8,
-  "why": "Strong alignment with your data engineering and modeling experience, especially for healthcare analytics.",
-  "seniority_fit": "stretch",
-  "role_family": "Analytics & Data Engineering",
-  "matched_skills": [
-   "Python",
-   "SQL",
-   "Data Modeling"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Focus on your ability to own end-to-end data quality initiatives."
-  ],
-  "sector": "Healthcare",
-  "prefilter": 0.5129,
-  "heuristic": false,
-  "scored_at": "2026-10-22T15:57:44.239391+00:00"
- },
  "80773a26f3fbf0785f445b95aebd0db634010d1f": {
   "profile_version": "ea07aad451ce",
   "match_score": 85,
@@ -596,27 +575,6 @@
   "prefilter": 0.4994,
   "heuristic": false,
   "scored_at": "2026-10-11T16:42:54.598310+00:00"
- },
- "38e0bb8a97439044c0d76ead29892fcfed32b3c5": {
-  "profile_version": "156a74411f2c",
-  "match_score": 80,
-  "confidence": 0.85,
-  "why": "Strong operational fit for a high-performance, frontier-AI company.",
-  "seniority_fit": "stretch",
-  "role_family": "Process Optimization & Business Operations",
-  "matched_skills": [
-   "Python",
-   "Data Modeling",
-   "Requirements Gathering"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Emphasize your operational strategy and project management skills."
-  ],
-  "sector": "AI/ML Infra",
-  "prefilter": 0.5056,
-  "heuristic": false,
-  "scored_at": "2026-10-22T15:57:44.239391+00:00"
  },
  "3b03e0b8015e37959462bf8affe9e54f6a4ace80": {
   "profile_version": "941e6f634434",
@@ -2090,29 +2048,6 @@
   "heuristic": false,
   "scored_at": "2026-11-17T19:58:19.620651+00:00"
  },
- "e60d698a4aa3363a813c13ef54f5ef7b5a067e0d": {
-  "profile_version": "156a74411f2c",
-  "match_score": 92,
-  "confidence": 0.85,
-  "why": "The focus on embedding AI agents into existing workflows to drive marketing efficiency is a direct match for Michael's specialization in agentic architectures and automation.",
-  "seniority_fit": "stretch",
-  "role_family": "AI & Machine Learning",
-  "matched_skills": [
-   "Python",
-   "Workflow Automation",
-   "Agentic Architecture",
-   "REST API Development"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Explicitly list 'AI Agentic Architecture' as a core competency.",
-   "Showcase projects where you optimized business-team productivity through automation."
-  ],
-  "sector": "Fintech",
-  "prefilter": 0.5078,
-  "heuristic": false,
-  "scored_at": "2026-11-17T19:58:19.620651+00:00"
- },
  "a70c02ad24b666661124b734e541d02df99408a2": {
   "profile_version": "156a74411f2c",
   "match_score": 95,
@@ -2161,52 +2096,88 @@
   "heuristic": false,
   "scored_at": "2026-11-17T19:58:19.620651+00:00"
  },
- "0e47e5610abc0d9c857129f28981ed077d17e328": {
+ "2b04b0ed1f0cac9097d9db83736851b3f62fe204": {
   "profile_version": "156a74411f2c",
-  "match_score": 72,
-  "confidence": 0.85,
-  "why": "This role aligns well with Michael's background in business analytics and process automation, offering a senior-level title that supports his career progression. The remote nature and compensation band meet his hard constraints.",
-  "seniority_fit": "stretch",
-  "role_family": "Business & Data Analytics",
-  "matched_skills": [
-   "Requirements Gathering"
-  ],
-  "missing_skills": [
-   "Identity and Access Management",
-   "Information Security Frameworks"
-  ],
-  "resume_suggestions": [
-   "Highlight experience managing stakeholder requirements for complex technical systems.",
-   "Emphasize technical project management and governance experience."
-  ],
-  "sector": "Healthcare",
-  "prefilter": 0.5215,
-  "heuristic": false,
-  "scored_at": "2026-11-18T19:28:49.075230+00:00"
- },
- "d8f993bb18d82a4c779a029deba9371197b84c43": {
-  "profile_version": "156a74411f2c",
-  "match_score": 15,
+  "match_score": 35,
   "confidence": 0.9,
-  "why": "While the skill set overlap is strong, the position is office-based in San Francisco and the stated salary is $200 (well below the $130,000 threshold), failing both hard constraints.",
+  "why": "This is an on-site role in NYC, violating the remote hard constraint. While the technical stack matches, the geographic restriction disqualifies it.",
   "seniority_fit": "target",
   "role_family": "Analytics & Data Engineering",
   "matched_skills": [
    "Python",
-   "SQL",
-   "Data Modeling"
+   "SQL"
   ],
-  "missing_skills": [
-   "Snowflake",
-   "Databricks"
-  ],
+  "missing_skills": [],
   "resume_suggestions": [
-   "No recommendation due to location and compensation mismatch.",
-   "Consider pivoting to roles explicitly emphasizing remote work."
+   "Explicitly highlight your experience with Snowflake and Databricks.",
+   "Emphasize large-scale data modeling projects."
   ],
   "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.5063,
+  "prefilter": 0.5133,
   "heuristic": false,
-  "scored_at": "2026-11-18T19:28:49.075230+00:00"
+  "scored_at": "2026-11-19T19:33:50.122131+00:00"
+ },
+ "bbaeaf2c07d3de327d9c7ab072b3d6f45bb84c40": {
+  "profile_version": "156a74411f2c",
+  "match_score": 85,
+  "confidence": 0.85,
+  "why": "This role aligns with your background in technical business analytics and automation, while offering a strong salary and remote work flexibility.",
+  "seniority_fit": "target",
+  "role_family": "Solutions & Technical Consulting",
+  "matched_skills": [
+   "SQL",
+   "Requirements Gathering"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Focus your resume on client-facing technical problem solving and translating complex requirements.",
+   "Highlight your proficiency in data-driven storytelling."
+  ],
+  "sector": "Enterprise SaaS/DevTools",
+  "prefilter": 0.5131,
+  "heuristic": false,
+  "scored_at": "2026-11-19T19:33:50.122131+00:00"
+ },
+ "17cba9f02d650fcac08c5f1571020d93218bfbec": {
+  "profile_version": "156a74411f2c",
+  "match_score": 40,
+  "confidence": 0.9,
+  "why": "The compensation range fails to meet the minimum threshold of $130,000, and the role requires relocation to Seattle.",
+  "seniority_fit": "target",
+  "role_family": "AI & Machine Learning",
+  "matched_skills": [
+   "Python",
+   "Agentic Architecture"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Showcase your specific implementations of agentic architectures to stand out.",
+   "Quantify the impact of your workflow automation on team productivity."
+  ],
+  "sector": "AI/ML Infra",
+  "prefilter": 0.5047,
+  "heuristic": false,
+  "scored_at": "2026-11-19T19:33:50.122131+00:00"
+ },
+ "096309482033857d12cd5a8a9223a8a3b41e6dca": {
+  "profile_version": "156a74411f2c",
+  "match_score": 75,
+  "confidence": 0.7,
+  "why": "This is a strong potential match for your operational strategy and engineering background at a remote-first, high-growth company.",
+  "seniority_fit": "stretch",
+  "role_family": "Process Optimization & Business Operations",
+  "matched_skills": [
+   "Workflow Automation",
+   "Requirements Gathering"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Highlight cross-functional leadership and business process optimization projects.",
+   "Frame your technical skills in the context of scaling internal operations."
+  ],
+  "sector": "Enterprise SaaS/DevTools",
+  "prefilter": 0.4916,
+  "heuristic": false,
+  "scored_at": "2026-11-19T19:33:50.122131+00:00"
  }
 }
