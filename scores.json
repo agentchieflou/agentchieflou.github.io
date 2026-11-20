@@ -1692,29 +1692,6 @@
   "heuristic": false,
   "scored_at": "2026-11-06T18:10:54.544617+00:00"
  },
- "f35304f423c6938363ddf28431c98aa9abb8cd9f": {
-  "profile_version": "156a74411f2c",
-  "match_score": 85,
-  "confidence": 0.9,
-  "why": "Strong alignment with the candidate's background in business analytics, Python, SQL, and strategy operations. It fits the seniority band perfectly and aligns with their interest in internal data solutions.",
-  "seniority_fit": "target",
-  "role_family": "Business & Data Analytics",
-  "matched_skills": [
-   "Python",
-   "SQL",
-   "Data Modeling",
-   "Requirements Gathering"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Highlight quantitative modeling and financial impact metrics.",
-   "Emphasize your experience driving cross-functional strategy through data automation."
-  ],
-  "sector": "Fintech",
-  "prefilter": 0.5078,
-  "heuristic": false,
-  "scored_at": "2026-11-06T18:10:54.544617+00:00"
- },
  "6ebc53b29a359374f7146f59b4b05af3a04547f8": {
   "profile_version": "156a74411f2c",
   "match_score": 85,
@@ -2003,29 +1980,6 @@
   "heuristic": false,
   "scored_at": "2026-11-17T19:58:19.620651+00:00"
  },
- "2423592a9b516290dcaa1eff9a7ef8b9ef7efa44": {
-  "profile_version": "156a74411f2c",
-  "match_score": 75,
-  "confidence": 0.8,
-  "why": "This role is a direct fit for Michael's data-driven background and experience with REST APIs and pipeline automation. Fivetran's focus on data movement aligns well with his skills in data modeling and SQL.",
-  "seniority_fit": "target",
-  "role_family": "Solutions & Technical Consulting",
-  "matched_skills": [
-   "SQL",
-   "Data Modeling",
-   "REST API Development",
-   "Workflow Automation"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Highlight experience with ETL/ELT pipelines and data warehouse integrations.",
-   "Emphasize customer-facing technical project work."
-  ],
-  "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.5262,
-  "heuristic": false,
-  "scored_at": "2026-11-17T19:58:19.620651+00:00"
- },
  "be8948aa538d484434414218e81d9a8ec6803516": {
   "profile_version": "156a74411f2c",
   "match_score": 65,
@@ -2096,27 +2050,6 @@
   "heuristic": false,
   "scored_at": "2026-11-17T19:58:19.620651+00:00"
  },
- "2b04b0ed1f0cac9097d9db83736851b3f62fe204": {
-  "profile_version": "156a74411f2c",
-  "match_score": 35,
-  "confidence": 0.9,
-  "why": "This is an on-site role in NYC, violating the remote hard constraint. While the technical stack matches, the geographic restriction disqualifies it.",
-  "seniority_fit": "target",
-  "role_family": "Analytics & Data Engineering",
-  "matched_skills": [
-   "Python",
-   "SQL"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Explicitly highlight your experience with Snowflake and Databricks.",
-   "Emphasize large-scale data modeling projects."
-  ],
-  "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.5133,
-  "heuristic": false,
-  "scored_at": "2026-11-19T19:33:50.122131+00:00"
- },
  "bbaeaf2c07d3de327d9c7ab072b3d6f45bb84c40": {
   "profile_version": "156a74411f2c",
   "match_score": 85,
@@ -2179,5 +2112,155 @@
   "prefilter": 0.4916,
   "heuristic": false,
   "scored_at": "2026-11-19T19:33:50.122131+00:00"
+ },
+ "39922ea67a09fb8d0be3cf79406a87f6e7783ef4": {
+  "profile_version": "156a74411f2c",
+  "match_score": 88,
+  "confidence": 0.9,
+  "why": "The role perfectly aligns with Michael's expertise in pipeline orchestration and data automation. It leverages his background in financial modeling and regulatory requirements within a high-stakes environment.",
+  "seniority_fit": "stretch",
+  "role_family": "Analytics & Data Engineering",
+  "matched_skills": [
+   "Python",
+   "SQL",
+   "Workflow Automation",
+   "Data Modeling",
+   "CI/CD Pipelines"
+  ],
+  "missing_skills": [
+   "dbt"
+  ],
+  "resume_suggestions": [
+   "Highlight experience with regulatory reporting or data compliance.",
+   "Emphasize past projects where you automated data quality testing."
+  ],
+  "sector": "Media/Gaming",
+  "prefilter": 0.5467,
+  "heuristic": false,
+  "scored_at": "2026-11-20T19:12:05.196372+00:00"
+ },
+ "b152b4cdd0e91050ac263c4ac0cba73e26ea1caa": {
+  "profile_version": "156a74411f2c",
+  "match_score": 65,
+  "confidence": 0.7,
+  "why": "This aligns with Michael's experience in agentic architectures and workflow optimization. It is a strategic pivot that rewards his technical-business hybrid background.",
+  "seniority_fit": "target",
+  "role_family": "AI & Machine Learning",
+  "matched_skills": [
+   "Python",
+   "Workflow Automation",
+   "Agentic Architecture",
+   "REST API Development"
+  ],
+  "missing_skills": [
+   "Stakeholder management for marketing"
+  ],
+  "resume_suggestions": [
+   "Highlight instances where your automation directly impacted business outcomes.",
+   "Frame 'agentic architecture' work within a business-process optimization context."
+  ],
+  "sector": "Fintech",
+  "prefilter": 0.5166,
+  "heuristic": false,
+  "scored_at": "2026-11-20T19:12:05.196372+00:00"
+ },
+ "58c894520592b3fe36328082af407675924a2bf7": {
+  "profile_version": "156a74411f2c",
+  "match_score": 82,
+  "confidence": 0.85,
+  "why": "This matches his focus on data quality and modeling. The 'Lead' title is a strong career progression opportunity that aligns with his 4 years of hands-on experience.",
+  "seniority_fit": "stretch",
+  "role_family": "Analytics & Data Engineering",
+  "matched_skills": [
+   "SQL",
+   "Data Modeling",
+   "Python",
+   "Quantitative Analytics"
+  ],
+  "missing_skills": [
+   "Healthcare domain knowledge"
+  ],
+  "resume_suggestions": [
+   "Include specific examples of data quality frameworks you've built.",
+   "Highlight any experience handling large-scale complex datasets."
+  ],
+  "sector": "Healthcare",
+  "prefilter": 0.5129,
+  "heuristic": false,
+  "scored_at": "2026-11-20T19:12:05.196372+00:00"
+ },
+ "244905e6c7b5fb3bfba40f2191e8ec8ffd605977": {
+  "profile_version": "156a74411f2c",
+  "match_score": 65,
+  "confidence": 0.7,
+  "why": "Similar to the other Stripe role, this focuses on AI transformation which fits his specialization in agentic architectures. Compensation is not stated, but Stripe is a tier-one employer.",
+  "seniority_fit": "target",
+  "role_family": "AI & Machine Learning",
+  "matched_skills": [
+   "Python",
+   "Workflow Automation",
+   "Agentic Architecture"
+  ],
+  "missing_skills": [
+   "Marketing domain knowledge"
+  ],
+  "resume_suggestions": [
+   "Emphasize cross-functional collaboration and internal tooling projects.",
+   "Quantify efficiency gains from your automation systems."
+  ],
+  "sector": "Fintech",
+  "prefilter": 0.5078,
+  "heuristic": false,
+  "scored_at": "2026-11-20T19:12:05.196372+00:00"
+ },
+ "d8f993bb18d82a4c779a029deba9371197b84c43": {
+  "profile_version": "156a74411f2c",
+  "match_score": 40,
+  "confidence": 0.8,
+  "why": "The salary is clearly below the threshold (listed as '$200' instead of $200k) and the role is location-restricted to San Francisco, violating remote constraints.",
+  "seniority_fit": "target",
+  "role_family": "Analytics & Data Engineering",
+  "matched_skills": [
+   "SQL",
+   "Python",
+   "Data Modeling",
+   "Git"
+  ],
+  "missing_skills": [
+   "Snowflake",
+   "Databricks"
+  ],
+  "resume_suggestions": [
+   "Mention specific ETL orchestration tools like Airflow or Prefect.",
+   "Highlight cloud-native data architecture experience."
+  ],
+  "sector": "Enterprise SaaS/DevTools",
+  "prefilter": 0.5063,
+  "heuristic": false,
+  "scored_at": "2026-11-20T19:12:05.196372+00:00"
+ },
+ "3bcb6acf69a08c7867a48bd0e4f2362b2883b590": {
+  "profile_version": "156a74411f2c",
+  "match_score": 45,
+  "confidence": 0.9,
+  "why": "While it meets compensation and seniority requirements, it is a contract-based AI trainer role that is below the technical complexity level of his current 'Architect' and 'Lead' target roles.",
+  "seniority_fit": "below",
+  "role_family": "Business & Data Analytics",
+  "matched_skills": [
+   "Python",
+   "SQL",
+   "Quantitative Analytics"
+  ],
+  "missing_skills": [
+   "None"
+  ],
+  "resume_suggestions": [
+   "Focus on full-time engineering leadership roles instead of training data.",
+   "Highlight systems architecture experience instead of task-based AI training."
+  ],
+  "sector": "AI/ML Infra",
+  "prefilter": 0.5033,
+  "heuristic": false,
+  "scored_at": "2026-11-20T19:12:05.196372+00:00"
  }
 }
