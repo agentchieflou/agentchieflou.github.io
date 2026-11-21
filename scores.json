@@ -822,28 +822,6 @@
   "heuristic": false,
   "scored_at": "2026-10-10T16:19:34.834251+00:00"
  },
- "b326519df2818356e717d245859478e97745c480": {
-  "profile_version": "941e6f634434",
-  "match_score": 70,
-  "confidence": 0.85,
-  "why": "A solid match for a BI engineer role, though slightly lower in potential impact compared to the AI-native roles listed. The salary is on the lower end of the candidate's expectations.",
-  "seniority_fit": "target",
-  "role_family": "Business & Data Analytics",
-  "matched_skills": [
-   "SQL",
-   "Data Modeling",
-   "Power BI"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Emphasize work on 'AI-powered' data systems.",
-   "Highlight any automation improvements."
-  ],
-  "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.5193,
-  "heuristic": false,
-  "scored_at": "2026-10-11T16:42:54.598310+00:00"
- },
  "9f0a65a6a4f01b6bd5163bb4021eb7f2bd1b6b2e": {
   "profile_version": "156a74411f2c",
   "match_score": 85,
@@ -2113,32 +2091,6 @@
   "heuristic": false,
   "scored_at": "2026-11-19T19:33:50.122131+00:00"
  },
- "39922ea67a09fb8d0be3cf79406a87f6e7783ef4": {
-  "profile_version": "156a74411f2c",
-  "match_score": 88,
-  "confidence": 0.9,
-  "why": "The role perfectly aligns with Michael's expertise in pipeline orchestration and data automation. It leverages his background in financial modeling and regulatory requirements within a high-stakes environment.",
-  "seniority_fit": "stretch",
-  "role_family": "Analytics & Data Engineering",
-  "matched_skills": [
-   "Python",
-   "SQL",
-   "Workflow Automation",
-   "Data Modeling",
-   "CI/CD Pipelines"
-  ],
-  "missing_skills": [
-   "dbt"
-  ],
-  "resume_suggestions": [
-   "Highlight experience with regulatory reporting or data compliance.",
-   "Emphasize past projects where you automated data quality testing."
-  ],
-  "sector": "Media/Gaming",
-  "prefilter": 0.5467,
-  "heuristic": false,
-  "scored_at": "2026-11-20T19:12:05.196372+00:00"
- },
  "b152b4cdd0e91050ac263c4ac0cba73e26ea1caa": {
   "profile_version": "156a74411f2c",
   "match_score": 65,
@@ -2213,54 +2165,77 @@
   "heuristic": false,
   "scored_at": "2026-11-20T19:12:05.196372+00:00"
  },
- "d8f993bb18d82a4c779a029deba9371197b84c43": {
+ "20edaf7d0a4f164f2bc765cc10b4461d888376f4": {
   "profile_version": "156a74411f2c",
-  "match_score": 40,
+  "match_score": 35,
   "confidence": 0.8,
-  "why": "The salary is clearly below the threshold (listed as '$200' instead of $200k) and the role is location-restricted to San Francisco, violating remote constraints.",
+  "why": "The candidate fails the hard constraint of fully-remote status, as the role requires 2 days per week in-office. While the technical scope matches well, the geographic limitation disqualifies the role.",
   "seniority_fit": "target",
   "role_family": "Analytics & Data Engineering",
   "matched_skills": [
    "SQL",
-   "Python",
    "Data Modeling",
-   "Git"
+   "Python"
+  ],
+  "missing_skills": [
+   "Healthcare Regulatory Compliance"
+  ],
+  "resume_suggestions": [
+   "Emphasize your experience with building semantic layers and metric definitions.",
+   "Highlight any experience working in hospital systems or healthcare data."
+  ],
+  "sector": "Healthcare",
+  "prefilter": 0.5317,
+  "heuristic": false,
+  "scored_at": "2026-11-21T18:08:10.729503+00:00"
+ },
+ "2b04b0ed1f0cac9097d9db83736851b3f62fe204": {
+  "profile_version": "156a74411f2c",
+  "match_score": 20,
+  "confidence": 0.9,
+  "why": "This role is physically located in New York City, failing the candidate's hard constraint for a fully-remote position. Compensation is also unclear and potentially low if misinterpreted.",
+  "seniority_fit": "target",
+  "role_family": "Analytics & Data Engineering",
+  "matched_skills": [
+   "Python",
+   "SQL",
+   "Data Modeling"
   ],
   "missing_skills": [
    "Snowflake",
    "Databricks"
   ],
   "resume_suggestions": [
-   "Mention specific ETL orchestration tools like Airflow or Prefect.",
-   "Highlight cloud-native data architecture experience."
+   "Mention any direct experience working with cloud data warehouses like Snowflake or Databricks.",
+   "Highlight your builder mindset by listing specific greenfield projects you have delivered."
   ],
   "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.5063,
+  "prefilter": 0.5133,
   "heuristic": false,
-  "scored_at": "2026-11-20T19:12:05.196372+00:00"
+  "scored_at": "2026-11-21T18:08:10.729503+00:00"
  },
- "3bcb6acf69a08c7867a48bd0e4f2362b2883b590": {
+ "5b3c2d6d3a396d62b9a488fa2661fb2f95c853a3": {
   "profile_version": "156a74411f2c",
-  "match_score": 45,
-  "confidence": 0.9,
-  "why": "While it meets compensation and seniority requirements, it is a contract-based AI trainer role that is below the technical complexity level of his current 'Architect' and 'Lead' target roles.",
-  "seniority_fit": "below",
-  "role_family": "Business & Data Analytics",
+  "match_score": 85,
+  "confidence": 0.7,
+  "why": "This role offers full remote flexibility and aligns perfectly with the candidate's background in agentic architectures and clinical data productivity. The seniority level is an ideal growth step from 4 years of experience.",
+  "seniority_fit": "stretch",
+  "role_family": "Analytics & Data Engineering",
   "matched_skills": [
    "Python",
    "SQL",
-   "Quantitative Analytics"
+   "Agentic Architecture",
+   "CI/CD Pipelines",
+   "REST API Development"
   ],
-  "missing_skills": [
-   "None"
-  ],
+  "missing_skills": [],
   "resume_suggestions": [
-   "Focus on full-time engineering leadership roles instead of training data.",
-   "Highlight systems architecture experience instead of task-based AI training."
+   "Explicitly link your agentic architecture projects to clinician-facing productivity workflows.",
+   "Detail your experience with high-throughput pipeline maintenance and CI/CD."
   ],
-  "sector": "AI/ML Infra",
-  "prefilter": 0.5033,
+  "sector": "Healthcare",
+  "prefilter": 0.4939,
   "heuristic": false,
-  "scored_at": "2026-11-20T19:12:05.196372+00:00"
+  "scored_at": "2026-11-21T18:08:10.729503+00:00"
  }
 }
