@@ -1789,30 +1789,6 @@
   "heuristic": false,
   "scored_at": "2026-11-12T19:02:22.347160+00:00"
  },
- "441ec078e678e67084a7b81b644f73e690db5e6b": {
-  "profile_version": "156a74411f2c",
-  "match_score": 88,
-  "confidence": 0.95,
-  "why": "The role perfectly aligns with the candidate's 4-year experience requirement and focus on AI-powered enterprise automation. The tech stack and product focus on LLM orchestration mirror the candidate's specialization in agentic architectures.",
-  "seniority_fit": "target",
-  "role_family": "Analytics & Data Engineering",
-  "matched_skills": [
-   "Python",
-   "SQL",
-   "Workflow Automation",
-   "Data Modeling",
-   "CI/CD Pipelines"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Highlight the specific agentic workflows developed in Python",
-   "Emphasize experience with LLM orchestration frameworks to match their core product"
-  ],
-  "sector": "AI/ML Infra",
-  "prefilter": 0.4926,
-  "heuristic": false,
-  "scored_at": "2026-11-12T19:02:22.347160+00:00"
- },
  "352c1111f18dfa28309219c64827e536fb81b691": {
   "profile_version": "156a74411f2c",
   "match_score": 40,
@@ -2237,5 +2213,71 @@
   "prefilter": 0.4939,
   "heuristic": false,
   "scored_at": "2026-11-21T18:08:10.729503+00:00"
+ },
+ "7f86a2c3ee7e1d3ce8e78b7e00f4ecb2aa479321": {
+  "profile_version": "156a74411f2c",
+  "match_score": 85,
+  "confidence": 0.9,
+  "why": "This role aligns well with the candidate's background in pipeline orchestration and data engineering, offering a strong technical challenge using Azure/Databricks.",
+  "seniority_fit": "target",
+  "role_family": "Analytics & Data Engineering",
+  "matched_skills": [
+   "Python",
+   "SQL",
+   "Data Modeling"
+  ],
+  "missing_skills": [
+   "Azure Data Factory",
+   "Databricks"
+  ],
+  "resume_suggestions": [
+   "Emphasize experience with building scalable ETL/ELT pipelines.",
+   "Highlight data governance and stakeholder collaboration in your project descriptions."
+  ],
+  "sector": "Enterprise SaaS/DevTools",
+  "prefilter": 0.526,
+  "heuristic": false,
+  "scored_at": "2026-11-22T18:36:32.711606+00:00"
+ },
+ "0e47e5610abc0d9c857129f28981ed077d17e328": {
+  "profile_version": "156a74411f2c",
+  "match_score": 60,
+  "confidence": 0.85,
+  "why": "While it matches the senior requirement, the role is heavily focused on IAM and business analysis rather than the candidate's strong suit of technical automation and agentic architecture.",
+  "seniority_fit": "target",
+  "role_family": "Business & Data Analytics",
+  "matched_skills": [
+   "Requirements Gathering"
+  ],
+  "missing_skills": [
+   "Identity and Access Management",
+   "Security Compliance"
+  ],
+  "resume_suggestions": [
+   "Shift focus toward information security and compliance-related automation if relevant.",
+   "Highlight your ability to translate security requirements into technical specifications."
+  ],
+  "sector": "Healthcare",
+  "prefilter": 0.5215,
+  "heuristic": false,
+  "scored_at": "2026-11-22T18:36:32.711606+00:00"
+ },
+ "198186d5d5d2ccfb60e92dec754057632c993a1a": {
+  "profile_version": "156a74411f2c",
+  "match_score": 30,
+  "confidence": 0.95,
+  "why": "This is an on-site role in San Francisco, violating the candidate's core constraint of fully remote work.",
+  "seniority_fit": "stretch",
+  "role_family": "Technical Strategy & Product",
+  "matched_skills": [],
+  "missing_skills": [
+   "Technical Program Management",
+   "AI Policy/Safety"
+  ],
+  "resume_suggestions": [],
+  "sector": "AI/ML Infra",
+  "prefilter": 0.5109,
+  "heuristic": false,
+  "scored_at": "2026-11-22T18:36:32.711606+00:00"
  }
 }
