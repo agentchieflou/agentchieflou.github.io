@@ -201,29 +201,6 @@
   "heuristic": false,
   "scored_at": "2026-07-26T23:51:05.100980+00:00"
  },
- "832cd947d456cf2f8a1fa57b9e15092d7f08dc55": {
-  "profile_version": "46fae8d62f25",
-  "match_score": 85,
-  "confidence": 0.8,
-  "why": "Matches your experience in agentic workflows; this 'Forward Deployed' role is a perfect match for your skillset.",
-  "seniority_fit": "target",
-  "role_family": "AI & Machine Learning",
-  "matched_skills": [
-   "Python",
-   "REST API Development",
-   "Agentic Workflows"
-  ],
-  "missing_skills": [
-   "Forward deployed consulting experience"
-  ],
-  "resume_suggestions": [
-   "Focus on the 'customer-facing' aspects of your previous internal automation projects."
-  ],
-  "sector": "Fintech",
-  "prefilter": 0.4563,
-  "heuristic": false,
-  "scored_at": "2026-07-26T13:53:43.707763+00:00"
- },
  "ac4fec408bf7b613b982ddb2f60d272518152b42": {
   "profile_version": "156a74411f2c",
   "match_score": 40,
@@ -727,32 +704,6 @@
   ],
   "sector": "Fintech",
   "prefilter": 0.493,
-  "heuristic": false,
-  "scored_at": "2026-11-11T18:49:07.890920+00:00"
- },
- "5fc6c8750193fdefb7855af9388907bb31f2e5d4": {
-  "profile_version": "156a74411f2c",
-  "match_score": 88,
-  "confidence": 0.95,
-  "why": "This role perfectly maps the candidate's expertise in business analytics, financial modeling, and agentic architecture for internal tools. It matches the 4-year experience level exactly and offers a clear path into strategic finance engineering.",
-  "seniority_fit": "target",
-  "role_family": "Business & Data Analytics",
-  "matched_skills": [
-   "Python",
-   "SQL",
-   "Data Modeling",
-   "Agentic Architecture",
-   "Requirements Gathering"
-  ],
-  "missing_skills": [
-   "Financial Forecasting"
-  ],
-  "resume_suggestions": [
-   "Explicitly list 'Financial Modeling' and 'Strategic Analysis' to appeal to the finance team.",
-   "Showcase your work on internal tooling that provided data insights to business stakeholders."
-  ],
-  "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.4926,
   "heuristic": false,
   "scored_at": "2026-11-11T18:49:07.890920+00:00"
  },
@@ -2214,31 +2165,6 @@
   "heuristic": false,
   "scored_at": "2026-11-21T18:08:10.729503+00:00"
  },
- "7f86a2c3ee7e1d3ce8e78b7e00f4ecb2aa479321": {
-  "profile_version": "156a74411f2c",
-  "match_score": 85,
-  "confidence": 0.9,
-  "why": "This role aligns well with the candidate's background in pipeline orchestration and data engineering, offering a strong technical challenge using Azure/Databricks.",
-  "seniority_fit": "target",
-  "role_family": "Analytics & Data Engineering",
-  "matched_skills": [
-   "Python",
-   "SQL",
-   "Data Modeling"
-  ],
-  "missing_skills": [
-   "Azure Data Factory",
-   "Databricks"
-  ],
-  "resume_suggestions": [
-   "Emphasize experience with building scalable ETL/ELT pipelines.",
-   "Highlight data governance and stakeholder collaboration in your project descriptions."
-  ],
-  "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.526,
-  "heuristic": false,
-  "scored_at": "2026-11-22T18:36:32.711606+00:00"
- },
  "0e47e5610abc0d9c857129f28981ed077d17e328": {
   "profile_version": "156a74411f2c",
   "match_score": 60,
@@ -2279,5 +2205,50 @@
   "prefilter": 0.5109,
   "heuristic": false,
   "scored_at": "2026-11-22T18:36:32.711606+00:00"
+ },
+ "9511a3644d8ac0adb58e52cf08e7f091933cfeac": {
+  "profile_version": "156a74411f2c",
+  "match_score": 75,
+  "confidence": 0.85,
+  "why": "This role aligns well with the candidate's background in business analytics and data automation, offering a logical step up in scope toward semantic modeling and data strategy.",
+  "seniority_fit": "target",
+  "role_family": "Analytics & Data Engineering",
+  "matched_skills": [
+   "SQL",
+   "Data Modeling"
+  ],
+  "missing_skills": [
+   "Data Visualization/Dashboarding (specific tool expertise)"
+  ],
+  "resume_suggestions": [
+   "Highlight specific examples of building semantic models or data pipelines that improved cross-team data consistency.",
+   "Emphasize your 'data storytelling' experience by detailing a project where complex analytics directly influenced business strategy."
+  ],
+  "sector": "Other",
+  "prefilter": 0.5147,
+  "heuristic": false,
+  "scored_at": "2026-11-23T22:47:54.917573+00:00"
+ },
+ "6186e99d151af4f351a68657a17401efa31f8879": {
+  "profile_version": "156a74411f2c",
+  "match_score": 30,
+  "confidence": 0.9,
+  "why": "This is a project management and client-facing implementation role rather than the technical engineering or architecture role the candidate specializes in.",
+  "seniority_fit": "out-of-band",
+  "role_family": "Solutions & Technical Consulting",
+  "matched_skills": [],
+  "missing_skills": [
+   "Project Management",
+   "EHR domain expertise",
+   "Client Implementation"
+  ],
+  "resume_suggestions": [
+   "This role is not recommended as it lacks the technical depth required for your specific skillset.",
+   "If applying, pivot your resume to highlight stakeholder management and project lifecycle ownership rather than technical architecture."
+  ],
+  "sector": "Healthcare",
+  "prefilter": 0.5023,
+  "heuristic": false,
+  "scored_at": "2026-11-23T22:47:54.917573+00:00"
  }
 }
