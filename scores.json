@@ -1717,29 +1717,6 @@
   "heuristic": false,
   "scored_at": "2026-11-11T18:49:07.890920+00:00"
  },
- "bf90f92904b9195c653a83558585b63f66ae7a5c": {
-  "profile_version": "156a74411f2c",
-  "match_score": 35,
-  "confidence": 0.8,
-  "why": "The role is focused on SOX compliance and PMO, which lacks the engineering and agentic architecture focus core to the candidate's profile. Additionally, the salary is undisclosed, failing to provide evidence of meeting the minimum compensation constraint.",
-  "seniority_fit": "out-of-band",
-  "role_family": "Process Optimization & Business Operations",
-  "matched_skills": [
-   "Workflow Automation"
-  ],
-  "missing_skills": [
-   "SOX Compliance",
-   "Project Management"
-  ],
-  "resume_suggestions": [
-   "Include examples of data compliance/governance projects if any",
-   "Emphasize cross-functional operational leadership experience"
-  ],
-  "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.4967,
-  "heuristic": false,
-  "scored_at": "2026-11-12T19:02:22.347160+00:00"
- },
  "352c1111f18dfa28309219c64827e536fb81b691": {
   "profile_version": "156a74411f2c",
   "match_score": 40,
@@ -1811,30 +1788,6 @@
   "prefilter": 0.4938,
   "heuristic": false,
   "scored_at": "2026-11-13T18:38:23.783773+00:00"
- },
- "7c79ebf5acea708568189b33ca09e7919ec2b315": {
-  "profile_version": "156a74411f2c",
-  "match_score": 75,
-  "confidence": 0.85,
-  "why": "The role aligns well with the candidate's background in Python and data automation, and the compensation comfortably exceeds the minimum. It is a solid step up for a professional with 4 years of experience looking to scale their impact.",
-  "seniority_fit": "stretch",
-  "role_family": "AI & Machine Learning",
-  "matched_skills": [
-   "Python",
-   "SQL",
-   "Git"
-  ],
-  "missing_skills": [
-   "Machine Learning Engineering specific domain knowledge"
-  ],
-  "resume_suggestions": [
-   "Highlight specific instances of building scalable internal tooling using Python.",
-   "Emphasize experience with high-throughput data processing to mirror ML infrastructure requirements."
-  ],
-  "sector": "Fintech",
-  "prefilter": 0.4919,
-  "heuristic": false,
-  "scored_at": "2026-11-16T21:09:16.573671+00:00"
  },
  "64a554e241bd30c3d57bed3108b6351013340604": {
   "profile_version": "156a74411f2c",
@@ -2092,55 +2045,6 @@
   "heuristic": false,
   "scored_at": "2026-11-20T19:12:05.196372+00:00"
  },
- "20edaf7d0a4f164f2bc765cc10b4461d888376f4": {
-  "profile_version": "156a74411f2c",
-  "match_score": 35,
-  "confidence": 0.8,
-  "why": "The candidate fails the hard constraint of fully-remote status, as the role requires 2 days per week in-office. While the technical scope matches well, the geographic limitation disqualifies the role.",
-  "seniority_fit": "target",
-  "role_family": "Analytics & Data Engineering",
-  "matched_skills": [
-   "SQL",
-   "Data Modeling",
-   "Python"
-  ],
-  "missing_skills": [
-   "Healthcare Regulatory Compliance"
-  ],
-  "resume_suggestions": [
-   "Emphasize your experience with building semantic layers and metric definitions.",
-   "Highlight any experience working in hospital systems or healthcare data."
-  ],
-  "sector": "Healthcare",
-  "prefilter": 0.5317,
-  "heuristic": false,
-  "scored_at": "2026-11-21T18:08:10.729503+00:00"
- },
- "2b04b0ed1f0cac9097d9db83736851b3f62fe204": {
-  "profile_version": "156a74411f2c",
-  "match_score": 20,
-  "confidence": 0.9,
-  "why": "This role is physically located in New York City, failing the candidate's hard constraint for a fully-remote position. Compensation is also unclear and potentially low if misinterpreted.",
-  "seniority_fit": "target",
-  "role_family": "Analytics & Data Engineering",
-  "matched_skills": [
-   "Python",
-   "SQL",
-   "Data Modeling"
-  ],
-  "missing_skills": [
-   "Snowflake",
-   "Databricks"
-  ],
-  "resume_suggestions": [
-   "Mention any direct experience working with cloud data warehouses like Snowflake or Databricks.",
-   "Highlight your builder mindset by listing specific greenfield projects you have delivered."
-  ],
-  "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.5133,
-  "heuristic": false,
-  "scored_at": "2026-11-21T18:08:10.729503+00:00"
- },
  "5b3c2d6d3a396d62b9a488fa2661fb2f95c853a3": {
   "profile_version": "156a74411f2c",
   "match_score": 85,
@@ -2250,5 +2154,75 @@
   "prefilter": 0.5023,
   "heuristic": false,
   "scored_at": "2026-11-23T22:47:54.917573+00:00"
+ },
+ "5035ed9a4104b0b423f9241f3034135d64c77314": {
+  "profile_version": "156a74411f2c",
+  "match_score": 78,
+  "confidence": 0.9,
+  "why": "The role directly aligns with your focus on pipeline optimization and analytics automation, utilizing a skill set that perfectly matches your expertise in Python and data modeling.",
+  "seniority_fit": "target",
+  "role_family": "Analytics & Data Engineering",
+  "matched_skills": [
+   "Python",
+   "Data Modeling",
+   "SQL"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Highlight specific projects involving customer acquisition insight pipelines.",
+   "Emphasize your role in cross-functional collaboration with data scientists."
+  ],
+  "sector": "Other",
+  "prefilter": 0.537,
+  "heuristic": false,
+  "scored_at": "2026-11-24T21:25:51.899288+00:00"
+ },
+ "e1beb3dd3f8cbaeff8d9d34c1512eb5183f6ad24": {
+  "profile_version": "156a74411f2c",
+  "match_score": 72,
+  "confidence": 0.8,
+  "why": "Your background in REST APIs and agentic architectures is a strong match for a Resident Solution Architect position within a platform-focused company like Fivetran.",
+  "seniority_fit": "stretch",
+  "role_family": "Solutions & Technical Consulting",
+  "matched_skills": [
+   "REST API Development",
+   "Agentic Architecture"
+  ],
+  "missing_skills": [
+   "Technical Consulting",
+   "Client-facing communication"
+  ],
+  "resume_suggestions": [
+   "Highlight your technical communication skills and any experience presenting data solutions to stakeholders.",
+   "Add a summary of your experience architecting integrations for external users."
+  ],
+  "sector": "Enterprise SaaS/DevTools",
+  "prefilter": 0.5262,
+  "heuristic": false,
+  "scored_at": "2026-11-24T21:25:51.899288+00:00"
+ },
+ "d8f993bb18d82a4c779a029deba9371197b84c43": {
+  "profile_version": "156a74411f2c",
+  "match_score": 35,
+  "confidence": 0.95,
+  "why": "While the technical work is a perfect match, the role is based in San Francisco and does not indicate remote work, violating your primary location constraint.",
+  "seniority_fit": "target",
+  "role_family": "Analytics & Data Engineering",
+  "matched_skills": [
+   "SQL",
+   "Data Modeling"
+  ],
+  "missing_skills": [
+   "Snowflake",
+   "Databricks"
+  ],
+  "resume_suggestions": [
+   "If interested, focus your resume on high-visibility infrastructure projects to match the 'builder mindset' request.",
+   "Clarify your capacity for high-throughput pipeline management."
+  ],
+  "sector": "Enterprise SaaS/DevTools",
+  "prefilter": 0.5063,
+  "heuristic": false,
+  "scored_at": "2026-11-24T21:25:51.899288+00:00"
  }
 }
