@@ -177,30 +177,6 @@
   "heuristic": false,
   "scored_at": "2026-07-26T13:53:43.707763+00:00"
  },
- "cc597e65af1a690d18eb86bf95d0a5ac80119b7e": {
-  "profile_version": "2d8f68683856",
-  "match_score": 88,
-  "confidence": 0.9,
-  "why": "Perfect match for a technical engineer working on agentic risk platforms.",
-  "seniority_fit": "stretch",
-  "role_family": "AI & Machine Learning",
-  "matched_skills": [
-   "Python",
-   "SQL",
-   "Agentic Workflows"
-  ],
-  "missing_skills": [
-   "ML-specific research stack"
-  ],
-  "resume_suggestions": [
-   "Highlight production-level ML engineering.",
-   "Emphasize your background in automated architectures."
-  ],
-  "sector": "Fintech",
-  "prefilter": 0.4791,
-  "heuristic": false,
-  "scored_at": "2026-07-26T23:51:05.100980+00:00"
- },
  "ac4fec408bf7b613b982ddb2f60d272518152b42": {
   "profile_version": "156a74411f2c",
   "match_score": 40,
@@ -1694,29 +1670,6 @@
   "heuristic": false,
   "scored_at": "2026-11-10T18:45:01.291004+00:00"
  },
- "2459d0b1e1f25a11cc8e21a9fe05628474201c4a": {
-  "profile_version": "156a74411f2c",
-  "match_score": 45,
-  "confidence": 0.9,
-  "why": "This role is a clear step up into a senior program management function, but the requirement for 6 years experience puts it outside the candidate's current tenure. While the focus on AI workflow orchestration aligns with his background, the focus is more on program management than technical engineering.",
-  "seniority_fit": "out-of-band",
-  "role_family": "Process Optimization & Business Operations",
-  "matched_skills": [
-   "Workflow Automation"
-  ],
-  "missing_skills": [
-   "Project Management",
-   "Stakeholder Management"
-  ],
-  "resume_suggestions": [
-   "Highlight instances where you led cross-functional workflows rather than just building them.",
-   "Emphasize high-level business strategy outcomes over specific code implementations."
-  ],
-  "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.5229,
-  "heuristic": false,
-  "scored_at": "2026-11-11T18:49:07.890920+00:00"
- },
  "352c1111f18dfa28309219c64827e536fb81b691": {
   "profile_version": "156a74411f2c",
   "match_score": 40,
@@ -2069,29 +2022,6 @@
   "heuristic": false,
   "scored_at": "2026-11-21T18:08:10.729503+00:00"
  },
- "0e47e5610abc0d9c857129f28981ed077d17e328": {
-  "profile_version": "156a74411f2c",
-  "match_score": 60,
-  "confidence": 0.85,
-  "why": "While it matches the senior requirement, the role is heavily focused on IAM and business analysis rather than the candidate's strong suit of technical automation and agentic architecture.",
-  "seniority_fit": "target",
-  "role_family": "Business & Data Analytics",
-  "matched_skills": [
-   "Requirements Gathering"
-  ],
-  "missing_skills": [
-   "Identity and Access Management",
-   "Security Compliance"
-  ],
-  "resume_suggestions": [
-   "Shift focus toward information security and compliance-related automation if relevant.",
-   "Highlight your ability to translate security requirements into technical specifications."
-  ],
-  "sector": "Healthcare",
-  "prefilter": 0.5215,
-  "heuristic": false,
-  "scored_at": "2026-11-22T18:36:32.711606+00:00"
- },
  "198186d5d5d2ccfb60e92dec754057632c993a1a": {
   "profile_version": "156a74411f2c",
   "match_score": 30,
@@ -2201,28 +2131,126 @@
   "heuristic": false,
   "scored_at": "2026-11-24T21:25:51.899288+00:00"
  },
- "d8f993bb18d82a4c779a029deba9371197b84c43": {
+ "b035c25053bea3730bd9a0947657db35397c38c3": {
   "profile_version": "156a74411f2c",
-  "match_score": 35,
+  "match_score": 88,
   "confidence": 0.95,
-  "why": "While the technical work is a perfect match, the role is based in San Francisco and does not indicate remote work, violating your primary location constraint.",
+  "why": "This role is a direct match for the candidate's 4-year experience profile, focusing on Python, SQL, and data pipeline orchestration within a cloud environment.",
   "seniority_fit": "target",
   "role_family": "Analytics & Data Engineering",
   "matched_skills": [
+   "Python",
    "SQL",
-   "Data Modeling"
+   "Workflow Automation",
+   "Data Modeling",
+   "CI/CD Pipelines"
   ],
   "missing_skills": [
-   "Snowflake",
-   "Databricks"
+   "Azure"
   ],
   "resume_suggestions": [
-   "If interested, focus your resume on high-visibility infrastructure projects to match the 'builder mindset' request.",
-   "Clarify your capacity for high-throughput pipeline management."
+   "Highlight specific examples of managing Databricks-based ETL pipelines.",
+   "Emphasize production-level automated testing achievements."
+  ],
+  "sector": "Other",
+  "prefilter": 0.5515,
+  "heuristic": false,
+  "scored_at": "2026-11-25T20:33:05.299247+00:00"
+ },
+ "878adfc807ea5a40ab49dc5fd785ce4f48c36b3a": {
+  "profile_version": "156a74411f2c",
+  "match_score": 75,
+  "confidence": 0.85,
+  "why": "The role perfectly aligns with the candidate's focus on building agentic architectures and automated productivity tools in a high-growth environment.",
+  "seniority_fit": "target",
+  "role_family": "Business & Data Analytics",
+  "matched_skills": [
+   "Python",
+   "SQL",
+   "Workflow Automation",
+   "Agentic Architecture"
+  ],
+  "missing_skills": [
+   "Pigment"
+  ],
+  "resume_suggestions": [
+   "Frame your agentic architecture projects as 'productivity engineering' solutions.",
+   "Quantify the time-saving impact of your previous automated workflows."
+  ],
+  "sector": "Consumer/E-commerce",
+  "prefilter": 0.5383,
+  "heuristic": false,
+  "scored_at": "2026-11-25T20:33:05.299247+00:00"
+ },
+ "6ee025bfd0ef94d521599b76e825de20b3ae30c7": {
+  "profile_version": "156a74411f2c",
+  "match_score": 82,
+  "confidence": 0.9,
+  "why": "The candidate has significant expertise in REST API development and agentic architectures, which are the core technologies behind the Temporal platform.",
+  "seniority_fit": "stretch",
+  "role_family": "Solutions & Technical Consulting",
+  "matched_skills": [
+   "Python",
+   "REST API Development",
+   "Agentic Architecture",
+   "Requirements Gathering"
+  ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Focus on your experience building robust, fail-safe distributed system components.",
+   "Highlight your ability to translate complex technical requirements for external stakeholders."
   ],
   "sector": "Enterprise SaaS/DevTools",
-  "prefilter": 0.5063,
+  "prefilter": 0.5192,
   "heuristic": false,
-  "scored_at": "2026-11-24T21:25:51.899288+00:00"
+  "scored_at": "2026-11-25T20:33:05.299247+00:00"
+ },
+ "aa70b17c4f81bf9b787e446ebf9112781ebb2b9e": {
+  "profile_version": "156a74411f2c",
+  "match_score": 60,
+  "confidence": 0.8,
+  "why": "While a good fit for data-driven strategy and business analytics, the role leans more toward operational business process management than the candidate's technical build-heavy background.",
+  "seniority_fit": "target",
+  "role_family": "Process Optimization & Business Operations",
+  "matched_skills": [
+   "SQL",
+   "Data Modeling",
+   "Requirements Gathering"
+  ],
+  "missing_skills": [
+   "Salesforce/Marketing Automation platforms"
+  ],
+  "resume_suggestions": [
+   "Emphasize your background in business modeling and quantitative analytics to show business impact.",
+   "Highlight cross-functional collaboration successes."
+  ],
+  "sector": "Enterprise SaaS/DevTools",
+  "prefilter": 0.5133,
+  "heuristic": false,
+  "scored_at": "2026-11-25T20:33:05.299247+00:00"
+ },
+ "2b04b0ed1f0cac9097d9db83736851b3f62fe204": {
+  "profile_version": "156a74411f2c",
+  "match_score": 10,
+  "confidence": 0.95,
+  "why": "The candidate explicitly requires a fully-remote role, and this posting is onsite in New York City.",
+  "seniority_fit": "target",
+  "role_family": "Analytics & Data Engineering",
+  "matched_skills": [
+   "Python",
+   "SQL",
+   "Data Modeling",
+   "CI/CD Pipelines"
+  ],
+  "missing_skills": [
+   "Snowflake"
+  ],
+  "resume_suggestions": [
+   "No changes advised due to non-remote status."
+  ],
+  "sector": "Enterprise SaaS/DevTools",
+  "prefilter": 0.5133,
+  "heuristic": false,
+  "scored_at": "2026-11-25T20:33:05.299247+00:00"
  }
 }
