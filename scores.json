@@ -2063,50 +2063,6 @@
   "heuristic": false,
   "scored_at": "2026-11-23T22:47:54.917573+00:00"
  },
- "6186e99d151af4f351a68657a17401efa31f8879": {
-  "profile_version": "156a74411f2c",
-  "match_score": 30,
-  "confidence": 0.9,
-  "why": "This is a project management and client-facing implementation role rather than the technical engineering or architecture role the candidate specializes in.",
-  "seniority_fit": "out-of-band",
-  "role_family": "Solutions & Technical Consulting",
-  "matched_skills": [],
-  "missing_skills": [
-   "Project Management",
-   "EHR domain expertise",
-   "Client Implementation"
-  ],
-  "resume_suggestions": [
-   "This role is not recommended as it lacks the technical depth required for your specific skillset.",
-   "If applying, pivot your resume to highlight stakeholder management and project lifecycle ownership rather than technical architecture."
-  ],
-  "sector": "Healthcare",
-  "prefilter": 0.5023,
-  "heuristic": false,
-  "scored_at": "2026-11-23T22:47:54.917573+00:00"
- },
- "5035ed9a4104b0b423f9241f3034135d64c77314": {
-  "profile_version": "156a74411f2c",
-  "match_score": 78,
-  "confidence": 0.9,
-  "why": "The role directly aligns with your focus on pipeline optimization and analytics automation, utilizing a skill set that perfectly matches your expertise in Python and data modeling.",
-  "seniority_fit": "target",
-  "role_family": "Analytics & Data Engineering",
-  "matched_skills": [
-   "Python",
-   "Data Modeling",
-   "SQL"
-  ],
-  "missing_skills": [],
-  "resume_suggestions": [
-   "Highlight specific projects involving customer acquisition insight pipelines.",
-   "Emphasize your role in cross-functional collaboration with data scientists."
-  ],
-  "sector": "Other",
-  "prefilter": 0.537,
-  "heuristic": false,
-  "scored_at": "2026-11-24T21:25:51.899288+00:00"
- },
  "e1beb3dd3f8cbaeff8d9d34c1512eb5183f6ad24": {
   "profile_version": "156a74411f2c",
   "match_score": 72,
@@ -2252,5 +2208,31 @@
   "prefilter": 0.5133,
   "heuristic": false,
   "scored_at": "2026-11-25T20:33:05.299247+00:00"
+ },
+ "7236c9798ff5681002d3f43ee11c969d4387066f": {
+  "profile_version": "156a74411f2c",
+  "match_score": 85,
+  "confidence": 0.9,
+  "why": "The role perfectly aligns with your experience in building data pipelines and agentic architectures for internal analytics. While the bottom of the salary range is slightly below your threshold, the mid-to-high point is competitive.",
+  "seniority_fit": "target",
+  "role_family": "Analytics & Data Engineering",
+  "matched_skills": [
+   "Python",
+   "SQL",
+   "Data Modeling"
+  ],
+  "missing_skills": [
+   "Snowflake",
+   "dbt",
+   "Fivetran"
+  ],
+  "resume_suggestions": [
+   "Explicitly highlight your experience building 'semantic layers' or governance frameworks for data products.",
+   "Emphasize your ability to support 'AI agents' as requested by the posting."
+  ],
+  "sector": "Consumer/E-commerce",
+  "prefilter": 0.5311,
+  "heuristic": false,
+  "scored_at": "2026-11-26T20:21:12.816162+00:00"
  }
 }
