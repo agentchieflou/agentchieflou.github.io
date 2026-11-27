@@ -1694,29 +1694,6 @@
   "heuristic": false,
   "scored_at": "2026-11-13T18:38:23.783773+00:00"
  },
- "238bcb831c339bf3978ace51a584fb8e2ba0ba47": {
-  "profile_version": "156a74411f2c",
-  "match_score": 45,
-  "confidence": 0.7,
-  "why": "The posting title is a Product Manager role, which requires a pivot from your core technical engineering and analytics building experience.",
-  "seniority_fit": "target",
-  "role_family": "Technical Strategy & Product",
-  "matched_skills": [
-   "Requirements Gathering"
-  ],
-  "missing_skills": [
-   "Product Strategy",
-   "Product Lifecycle Management"
-  ],
-  "resume_suggestions": [
-   "Frame your technical building as technical product leadership.",
-   "Highlight experience where you worked closely with product/design stakeholders."
-  ],
-  "sector": "Media/Gaming",
-  "prefilter": 0.4963,
-  "heuristic": false,
-  "scored_at": "2026-11-13T18:38:23.783773+00:00"
- },
  "fd922646374ac1eff2bd2ebcd1dac5233f468cbb": {
   "profile_version": "156a74411f2c",
   "match_score": 80,
@@ -2040,29 +2017,6 @@
   "heuristic": false,
   "scored_at": "2026-11-22T18:36:32.711606+00:00"
  },
- "9511a3644d8ac0adb58e52cf08e7f091933cfeac": {
-  "profile_version": "156a74411f2c",
-  "match_score": 75,
-  "confidence": 0.85,
-  "why": "This role aligns well with the candidate's background in business analytics and data automation, offering a logical step up in scope toward semantic modeling and data strategy.",
-  "seniority_fit": "target",
-  "role_family": "Analytics & Data Engineering",
-  "matched_skills": [
-   "SQL",
-   "Data Modeling"
-  ],
-  "missing_skills": [
-   "Data Visualization/Dashboarding (specific tool expertise)"
-  ],
-  "resume_suggestions": [
-   "Highlight specific examples of building semantic models or data pipelines that improved cross-team data consistency.",
-   "Emphasize your 'data storytelling' experience by detailing a project where complex analytics directly influenced business strategy."
-  ],
-  "sector": "Other",
-  "prefilter": 0.5147,
-  "heuristic": false,
-  "scored_at": "2026-11-23T22:47:54.917573+00:00"
- },
  "e1beb3dd3f8cbaeff8d9d34c1512eb5183f6ad24": {
   "profile_version": "156a74411f2c",
   "match_score": 72,
@@ -2086,32 +2040,6 @@
   "prefilter": 0.5262,
   "heuristic": false,
   "scored_at": "2026-11-24T21:25:51.899288+00:00"
- },
- "b035c25053bea3730bd9a0947657db35397c38c3": {
-  "profile_version": "156a74411f2c",
-  "match_score": 88,
-  "confidence": 0.95,
-  "why": "This role is a direct match for the candidate's 4-year experience profile, focusing on Python, SQL, and data pipeline orchestration within a cloud environment.",
-  "seniority_fit": "target",
-  "role_family": "Analytics & Data Engineering",
-  "matched_skills": [
-   "Python",
-   "SQL",
-   "Workflow Automation",
-   "Data Modeling",
-   "CI/CD Pipelines"
-  ],
-  "missing_skills": [
-   "Azure"
-  ],
-  "resume_suggestions": [
-   "Highlight specific examples of managing Databricks-based ETL pipelines.",
-   "Emphasize production-level automated testing achievements."
-  ],
-  "sector": "Other",
-  "prefilter": 0.5515,
-  "heuristic": false,
-  "scored_at": "2026-11-25T20:33:05.299247+00:00"
  },
  "878adfc807ea5a40ab49dc5fd785ce4f48c36b3a": {
   "profile_version": "156a74411f2c",
@@ -2209,30 +2137,77 @@
   "heuristic": false,
   "scored_at": "2026-11-25T20:33:05.299247+00:00"
  },
- "7236c9798ff5681002d3f43ee11c969d4387066f": {
+ "dd236ab0dd2e7a70fd4109a7c0d6006c4acd8811": {
   "profile_version": "156a74411f2c",
-  "match_score": 85,
-  "confidence": 0.9,
-  "why": "The role perfectly aligns with your experience in building data pipelines and agentic architectures for internal analytics. While the bottom of the salary range is slightly below your threshold, the mid-to-high point is competitive.",
-  "seniority_fit": "target",
-  "role_family": "Analytics & Data Engineering",
+  "match_score": 45,
+  "confidence": 0.85,
+  "why": "The compensation range is at the floor of the candidate's requirements, and the role lacks the technical depth suitable for someone with agentic architecture experience. It is a step down in technical complexity given the candidate's background in developer tooling.",
+  "seniority_fit": "below",
+  "role_family": "Business & Data Analytics",
   "matched_skills": [
    "Python",
    "SQL",
    "Data Modeling"
   ],
+  "missing_skills": [],
+  "resume_suggestions": [
+   "Highlight financial modeling projects to appeal to the Fintech domain.",
+   "Emphasize data-driven product growth results over pure automation infrastructure."
+  ],
+  "sector": "Fintech",
+  "prefilter": 0.5218,
+  "heuristic": false,
+  "scored_at": "2026-11-27T20:08:10.127882+00:00"
+ },
+ "0e38e9bba81bfd125d95c75663f81be92d9a77be": {
+  "profile_version": "156a74411f2c",
+  "match_score": 88,
+  "confidence": 0.9,
+  "why": "The role perfectly aligns with the candidate's 4-5 years of experience and core strengths in Python-based data engineering and internal platform development. It represents an ideal growth opportunity in the Healthcare/Fintech intersection.",
+  "seniority_fit": "target",
+  "role_family": "Analytics & Data Engineering",
+  "matched_skills": [
+   "Python",
+   "SQL",
+   "REST API Development",
+   "CI/CD Pipelines",
+   "Data Modeling"
+  ],
   "missing_skills": [
-   "Snowflake",
-   "dbt",
-   "Fivetran"
+   "SnowPro Certification"
   ],
   "resume_suggestions": [
-   "Explicitly highlight your experience building 'semantic layers' or governance frameworks for data products.",
-   "Emphasize your ability to support 'AI agents' as requested by the posting."
+   "Highlight experience with Salesforce and Stripe integrations if available.",
+   "Explicitly list CI/CD and pipeline orchestration as key metrics-driven successes."
+  ],
+  "sector": "Healthcare",
+  "prefilter": 0.5025,
+  "heuristic": false,
+  "scored_at": "2026-11-27T20:08:10.127882+00:00"
+ },
+ "ecacdb4076410a94ca9e2ca017eb569346c2b605": {
+  "profile_version": "156a74411f2c",
+  "match_score": 35,
+  "confidence": 0.75,
+  "why": "This is a Manager-level role which is a significant jump in scope from the candidate's current engineering focus. The lack of posted compensation makes it risky against the candidate's hard constraints.",
+  "seniority_fit": "stretch",
+  "role_family": "Business & Data Analytics",
+  "matched_skills": [
+   "SQL",
+   "Data Modeling",
+   "Requirements Gathering"
+  ],
+  "missing_skills": [
+   "Team Management",
+   "Strategy Leadership"
+  ],
+  "resume_suggestions": [
+   "Focus on leadership of technical projects if applying for managerial roles.",
+   "Showcase cross-functional requirements gathering to bridge the engineering-to-management gap."
   ],
   "sector": "Consumer/E-commerce",
-  "prefilter": 0.5311,
+  "prefilter": 0.4923,
   "heuristic": false,
-  "scored_at": "2026-11-26T20:21:12.816162+00:00"
+  "scored_at": "2026-11-27T20:08:10.127882+00:00"
  }
 }
