@@ -1797,5 +1797,59 @@
   ],
   "blockers": [],
   "v": 4
+ },
+ "152f55197d2c3e0853b8e9acec4fac7a7a5608a0": {
+  "total": 19,
+  "standing": 9,
+  "specific": [
+   {
+    "q": "Are you currently based in any of these countries? Please note these are the only countries where we are accepting applications",
+    "options": [
+     "United States",
+     "Germany",
+     "United Kingdom",
+     "Argentina",
+     "Australia",
+     "Canada"
+    ]
+   },
+   {
+    "q": "Do you live in one of the following states?\nAlabama, Alaska, Delaware, Kansas, Maine, Mississippi, Montana, Nebraska, New Mexico, North Dakota, South Dakota, West Virginia, or Wyoming.",
+    "options": [
+     "Yes",
+     "No"
+    ]
+   },
+   {
+    "q": "Do you have hands on experience with React, Next.js, or another modern framework? Please specify.",
+    "options": []
+   },
+   {
+    "q": "What's your experience with AI?",
+    "options": []
+   },
+   {
+    "q": "By submitting my application, I acknowledge that I have read and understand Vercel’s Job Applicant Privacy Notice - https://vercel.com/legal/job-applicant-privacy-notice",
+    "options": [
+     "Acknowledge/Confirm"
+    ]
+   },
+   {
+    "q": "Please double-check all the information provided above. Ensuring accuracy is crucial, as any errors or omissions may impact the review of your application.",
+    "options": [
+     "I have reviewed and confirmed that all the information provi"
+    ]
+   },
+   {
+    "q": "Why are you interested in the Solutions Architect role at Vercel?",
+    "options": []
+   }
+  ],
+  "uploads": [
+   "Resume/CV",
+   "Cover Letter"
+  ],
+  "blockers": [],
+  "v": 4
  }
 }

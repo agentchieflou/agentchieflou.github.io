@@ -2159,32 +2159,6 @@
   "heuristic": false,
   "scored_at": "2026-11-27T20:08:10.127882+00:00"
  },
- "0e38e9bba81bfd125d95c75663f81be92d9a77be": {
-  "profile_version": "156a74411f2c",
-  "match_score": 88,
-  "confidence": 0.9,
-  "why": "The role perfectly aligns with the candidate's 4-5 years of experience and core strengths in Python-based data engineering and internal platform development. It represents an ideal growth opportunity in the Healthcare/Fintech intersection.",
-  "seniority_fit": "target",
-  "role_family": "Analytics & Data Engineering",
-  "matched_skills": [
-   "Python",
-   "SQL",
-   "REST API Development",
-   "CI/CD Pipelines",
-   "Data Modeling"
-  ],
-  "missing_skills": [
-   "SnowPro Certification"
-  ],
-  "resume_suggestions": [
-   "Highlight experience with Salesforce and Stripe integrations if available.",
-   "Explicitly list CI/CD and pipeline orchestration as key metrics-driven successes."
-  ],
-  "sector": "Healthcare",
-  "prefilter": 0.5025,
-  "heuristic": false,
-  "scored_at": "2026-11-27T20:08:10.127882+00:00"
- },
  "ecacdb4076410a94ca9e2ca017eb569346c2b605": {
   "profile_version": "156a74411f2c",
   "match_score": 35,
@@ -2209,5 +2183,29 @@
   "prefilter": 0.4923,
   "heuristic": false,
   "scored_at": "2026-11-27T20:08:10.127882+00:00"
+ },
+ "7c41f45987dd09cd073c2108dabe6d82f58309e5": {
+  "profile_version": "156a74411f2c",
+  "match_score": 75,
+  "confidence": 0.85,
+  "why": "This role aligns well with Michael's 4 years of experience and combines technical analytics with the requirements gathering skills he possesses. While the bottom of the pay range is below the threshold, the upper end meets his compensation goal.",
+  "seniority_fit": "target",
+  "role_family": "Business & Data Analytics",
+  "matched_skills": [
+   "SQL",
+   "Power BI",
+   "Requirements Gathering"
+  ],
+  "missing_skills": [
+   "Tableau"
+  ],
+  "resume_suggestions": [
+   "Emphasize experience with client-facing requirements gathering to lean into the 'Consultant' aspect of the role.",
+   "Highlight cloud analytics projects specifically involving GCP, AWS, or Azure."
+  ],
+  "sector": "Consulting",
+  "prefilter": 0.5318,
+  "heuristic": false,
+  "scored_at": "2026-11-28T19:02:45.926335+00:00"
  }
 }
